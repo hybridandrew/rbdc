@@ -27,30 +27,48 @@ function parseItems(xml, source, count = 1) {
       return m ? m[1].trim() : '';
     };
 
-    // Letterboxd: rating from dedicated tag only (avoid double)
+    // Letterboxd: rating ONLY from dedicated tag — never from description
     let rating = null;
     if (source === 'letterboxd') {
       const ratingMatch = block.match(/<letterboxd:memberRating>([^<]+)<\/letterboxd:memberRating>/);
       if (ratingMatch) rating = parseFloat(ratingMatch[1]);
     }
 
-    // Thumbnail: parse first <img src> from description
-    const desc = get('description');
-    const imgMatch = desc.match(/<img[^>]+src=["']([^"']+)["']/i);
-    const thumbnail = imgMatch ? imgMatch[1] : null;
+    // Thumbnail: check multiple locations
+    let cover = null;
 
-    // For Letterboxd, also try the enclosure or media:thumbnail tags
-    const enclosureMatch = block.match(/<enclosure[^>]+url=["']([^"']+)["']/i) ||
-                           block.match(/<media:thumbnail[^>]+url=["']([^"']+)["']/i);
-    const cover = thumbnail || (enclosureMatch ? enclosureMatch[1] : null);
+    // Goodreads: book_image_url tag has the cleanest cover
+    const bookImageMatch = block.match(/<book_image_url><!?\[?CDATA\[?([^\]<]+)\]?\]?<\/book_image_url>/) ||
+                           block.match(/<book_image_url>([^<]+)<\/book_image_url>/);
+    if (bookImageMatch) {
+      // Upgrade to full size by removing size suffixes like ._SY75_, ._SX98_, etc.
+      cover = bookImageMatch[1].trim().replace(/\._S[XY]\d+_/g, '');
+    }
 
-    items.push({
-      title:  get('title'),
-      link:   get('link'),
-      date:   getPubDate(),
-      rating,
-      cover,
-    });
+    // Fallback: media:thumbnail or media:content
+    if (!cover) {
+      const mediaThumbnail = block.match(/<media:thumbnail[^>]+url=["']([^"']+)["']/i) ||
+                             block.match(/<media:content[^>]+url=["']([^"']+)["']/i);
+      if (mediaThumbnail) cover = mediaThumbnail[1];
+    }
+
+    // Fallback: enclosure tag
+    if (!cover) {
+      const enclosure = block.match(/<enclosure[^>]+url=["']([^"']+)["']/i);
+      if (enclosure) cover = enclosure[1];
+    }
+
+    // Fallback: img src inside description CDATA — upgrade size
+    if (!cover) {
+      const desc = get('description');
+      const imgMatch = desc.match(/<img[^>]+src=["']([^"']+)["']/i);
+      if (imgMatch) cover = imgMatch[1].replace(/\._S[XY]\d+_/g, '');
+    }
+
+    // Clean title: strip trailing " - " and rating text Letterboxd appends
+    let title = get('title').replace(/\s*-\s*$/, '').trim();
+
+    items.push({ title, link: get('link'), date: getPubDate(), rating, cover });
   }
   return items;
 }
