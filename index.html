@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Richard Bramlett</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet" />
+  <style>
+    /* ── Variables ── */
+    :root {
+      --bg:        #08080d;
+      --surface:   #0f0f18;
+      --surface2:  #161622;
+      --border:    rgba(180,160,255,0.08);
+      --text:      #e8e6f0;
+      --muted:     #6b6878;
+      --accent:    #7c4daa;
+      --accent2:   #b388e8;
+      --glow:      rgba(124,77,170,0.18);
+      --font-head: 'Bebas Neue', sans-serif;
+      --font-body: 'DM Sans', sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+    }
+
+    /* ── Reset ── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--font-body);
+      font-weight: 300;
+      line-height: 1.65;
+      overflow-x: hidden;
+    }
+
+    /* ── Grain overlay ── */
+    body::before {
+      content: '';
+      position: fixed; inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+      pointer-events: none;
+      z-index: 999;
+      opacity: 0.4;
+    }
+
+    /* ── Canvas starfield ── */
+    #starfield {
+      position: fixed; inset: 0;
+      z-index: 0;
+      opacity: 0.5;
+    }
+
+    /* ── Scroll progress bar ── */
+    #progress {
+      position: fixed; top: 0; left: 0;
+      height: 2px;
+      background: linear-gradient(90deg, var(--accent), var(--accent2));      width: 0%;
+      z-index: 100;
+      transition: width 0.1s linear;
+    }
+
+    /* ── Layout wrapper ── */
+    .site-wrapper {
+      position: relative; z-index: 1;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    /* ────────────────────────────
+       HERO
+    ──────────────────────────── */
+    #hero {
+      min-height: 100vh;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: 4rem;
+      padding: 6rem 0 4rem;
+      position: relative;
+    }
+
+    .hero-left { position: relative; }
+
+    .hero-eyebrow {
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    .hero-eyebrow::before {
+      content: '';
+      display: inline-block;
+      width: 2rem; height: 1px;
+      background: var(--accent);
+    }
+
+    .hero-name {
+      font-family: var(--font-head);
+      font-size: clamp(4rem, 8vw, 7.5rem);
+      line-height: 0.92;
+      letter-spacing: 0.02em;
+      color: var(--text);
+      margin-bottom: 0.5rem;
+    }
+    .hero-name span {
+      display: block;
+      -webkit-text-stroke: 1px rgba(179,136,232,0.7);
+      color: transparent;
+    }
+
+    .hero-tagline {
+      font-size: 1rem;
+      color: var(--muted);
+      font-weight: 300;
+      margin: 1.5rem 0 2.5rem;
+      max-width: 38ch;
+      font-style: italic;
+      line-height: 1.8;
+    }
+
+    .hero-cta {
+      display: flex; gap: 1rem; flex-wrap: wrap;
+    }
+    .btn {
+      display: inline-block;
+      padding: 0.7rem 1.6rem;
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      text-decoration: none;
+      border-radius: 2px;
+      cursor: pointer;
+      transition: all 0.25s;
+    }
+    .btn-primary {
+      background: var(--accent);
+      color: #fff;
+      border: 1px solid var(--accent);
+    }
+    .btn-primary:hover {
+      background: transparent;
+      color: var(--accent);
+      box-shadow: 0 0 20px var(--glow);
+    }
+    .btn-ghost {
+      background: transparent;
+      color: var(--muted);
+      border: 1px solid var(--border);
+    }
+    .btn-ghost:hover {
+      border-color: var(--muted);
+      color: var(--text);
+    }
+
+    /* Hero right — visual block */
+    .hero-right {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      position: relative;
+    }
+
+    .signal-block {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--accent);
+      padding: 1.5rem 1.75rem;
+      border-radius: 2px;
+      position: relative;
+      overflow: hidden;
+      transition: border-color 0.3s, background 0.3s;
+    }
+    .signal-block:hover {
+      background: var(--surface2);
+      border-left-color: var(--accent2);
+    }
+    .signal-block::after {
+      content: '';
+      position: absolute; top: 0; right: 0;
+      width: 60px; height: 60px;
+      background: radial-gradient(circle at top right, var(--glow), transparent 70%);
+    }
+    .signal-label {
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 0.5rem;
+    }
+    .signal-value {
+      font-size: 0.95rem;
+      color: var(--text);
+      font-weight: 400;
+    }
+    .signal-sub {
+      font-size: 0.8rem;
+      color: var(--muted);
+      margin-top: 0.25rem;
+    }
+
+    .hero-scroll {
+      position: absolute;
+      bottom: 2.5rem; left: 0;
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      letter-spacing: 0.2em;
+      color: var(--muted);
+      display: flex; align-items: center; gap: 0.75rem;
+    }
+    .hero-scroll::after {
+      content: '';
+      display: block;
+      width: 1px; height: 40px;
+      background: linear-gradient(to bottom, var(--muted), transparent);
+    }
+
+    /* ────────────────────────────
+       ABOUT
+    ──────────────────────────── */
+    #about {
+      padding: 8rem 0;
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 6rem;
+      align-items: start;
+    }
+
+    .section-label {
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 1rem;
+      display: flex; align-items: center; gap: 0.75rem;
+    }
+    .section-label::after {
+      content: '';
+      flex: 1; height: 1px;
+      background: var(--border);
+      max-width: 3rem;
+    }
+
+    .section-number {
+      font-family: var(--font-head);
+      font-size: 6rem;
+      color: var(--surface2);
+      line-height: 1;
+      -webkit-text-stroke: 1px var(--border);
+    }
+
+    .about-body p {
+      font-size: 1.05rem;
+      line-height: 1.85;
+      color: var(--muted);
+      margin-bottom: 1.25rem;
+    }
+    .about-body p strong {
+      color: var(--text);
+      font-weight: 500;
+    }
+    .about-body p em {
+      color: var(--accent2);
+      font-style: italic;
+    }
+
+    /* ────────────────────────────
+       WHAT I DO — ORBIT
+    ──────────────────────────── */
+    #orbit {
+      padding: 6rem 0;
+      position: relative;
+    }
+
+    .orbit-header {
+      display: flex; justify-content: space-between; align-items: flex-end;
+      margin-bottom: 3rem;
+    }
+    .orbit-title {
+      font-family: var(--font-head);
+      font-size: clamp(2.5rem, 5vw, 4rem);
+      line-height: 1;
+      letter-spacing: 0.02em;
+    }
+
+    .orbit-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+      background: var(--border);
+      border: 1px solid var(--border);
+    }
+
+    .orbit-card {
+      background: var(--bg);
+      padding: 2.5rem 2rem;
+      position: relative;
+      overflow: hidden;
+      transition: background 0.3s;
+      cursor: default;
+    }
+    .orbit-card:hover { background: var(--surface); }
+    .orbit-card:hover .orbit-card-glow { opacity: 1; }
+
+    .orbit-card-glow {
+      position: absolute; inset: 0;
+      background: radial-gradient(circle at 50% 0%, var(--glow), transparent 60%);
+      opacity: 0;
+      transition: opacity 0.4s;
+    }
+    .orbit-card-icon {
+      font-size: 1.5rem;
+      margin-bottom: 1.25rem;
+      display: block;
+    }
+    .orbit-card-title {
+      font-family: var(--font-head);
+      font-size: 1.4rem;
+      letter-spacing: 0.04em;
+      margin-bottom: 0.75rem;
+      color: var(--text);
+    }
+    .orbit-card-body {
+      font-size: 0.875rem;
+      color: var(--muted);
+      line-height: 1.75;
+    }
+    .orbit-card-tag {
+      display: inline-block;
+      margin-top: 1.25rem;
+      font-family: var(--font-mono);
+      font-size: 0.62rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--accent);
+      border: 1px solid var(--accent);
+      padding: 0.25rem 0.6rem;
+      border-radius: 1px;
+    }
+
+    /* ────────────────────────────
+       NOW PLAYING
+    ──────────────────────────── */
+    #now {
+      padding: 6rem 0;
+    }
+
+    .now-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem;
+      margin-top: 3rem;
+    }
+
+    .now-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 2px;
+      padding: 1.5rem;
+      position: relative;
+      transition: border-color 0.3s, transform 0.3s;
+    }
+    .now-card:hover {
+      border-color: rgba(192,57,43,0.3);
+      transform: translateY(-3px);
+    }
+    .now-card-platform {
+      font-family: var(--font-mono);
+      font-size: 0.6rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 0.75rem;
+    }
+    .now-card-title {
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--text);
+      line-height: 1.4;
+      margin-bottom: 0.4rem;
+    }
+    .now-card-meta {
+      font-size: 0.78rem;
+      color: var(--muted);
+    }
+    .now-card-link {
+      display: block;
+      margin-top: 1rem;
+      font-family: var(--font-mono);
+      font-size: 0.62rem;
+      letter-spacing: 0.1em;
+      color: var(--accent2);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .now-card-link:hover { color: var(--text); }
+
+    /* ────────────────────────────
+       WRITING / SIGNAL LINE
+    ──────────────────────────── */
+    .divider-line {
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--border), var(--accent2), var(--border), transparent);
+      margin: 2rem 0;
+    }
+
+    /* ────────────────────────────
+       CONNECT / SOCIAL
+    ──────────────────────────── */
+    #connect {
+      padding: 6rem 0 8rem;
+    }
+
+    .connect-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 6rem;
+      align-items: center;
+    }
+
+    .connect-headline {
+      font-family: var(--font-head);
+      font-size: clamp(2.5rem, 5vw, 4.5rem);
+      line-height: 0.95;
+      letter-spacing: 0.02em;
+      margin-bottom: 1.5rem;
+    }
+    .connect-headline span { color: var(--accent); }
+
+    .connect-body {
+      font-size: 0.95rem;
+      color: var(--muted);
+      line-height: 1.8;
+      margin-bottom: 2rem;
+    }
+
+    .social-row {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+    .social-link {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 1rem 0;
+      border-bottom: 1px solid var(--border);
+      text-decoration: none;
+      color: var(--muted);
+      font-size: 0.875rem;
+      transition: color 0.2s, padding-left 0.2s;
+      position: relative;
+    }
+    .social-link:first-child { border-top: 1px solid var(--border); }
+    .social-link:hover {
+      color: var(--text);
+      padding-left: 0.5rem;
+    }
+    .social-link:hover .social-arrow { opacity: 1; transform: translateX(0); }
+    .social-icon {
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--accent);
+      min-width: 5rem;
+    }
+    .social-handle { flex: 1; }
+    .social-arrow {
+      opacity: 0;
+      transform: translateX(-8px);
+      transition: all 0.2s;
+      color: var(--accent2);
+    }
+
+    /* ────────────────────────────
+       FOOTER
+    ──────────────────────────── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 2rem 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .footer-left {
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      letter-spacing: 0.1em;
+      color: var(--muted);
+    }
+    .footer-right {
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      letter-spacing: 0.1em;
+      color: var(--muted);
+    }
+    .footer-right span { color: var(--accent); }
+
+    /* ────────────────────────────
+       ANIMATIONS
+    ──────────────────────────── */
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .hero-left > * {
+      animation: fadeIn 0.8s ease forwards;
+      opacity: 0;
+    }
+    .hero-eyebrow  { animation-delay: 0.1s; }
+    .hero-name     { animation-delay: 0.25s; }
+    .hero-tagline  { animation-delay: 0.4s; }
+    .hero-cta      { animation-delay: 0.55s; }
+    .hero-scroll   { animation-delay: 0.7s; }
+
+    .hero-right { animation: fadeIn 0.8s 0.4s ease forwards; opacity: 0; }
+
+    /* ────────────────────────────
+       RESPONSIVE
+    ──────────────────────────── */
+    /* ── Skeleton loading ── */
+    .skeleton {
+      display: block;
+      height: 0.9rem;
+      background: linear-gradient(90deg, var(--surface2) 25%, var(--surface) 50%, var(--surface2) 75%);
+      background-size: 200% 100%;
+      animation: shimmer 1.5s infinite;
+      border-radius: 2px;
+      margin-bottom: 0.4rem;
+      width: 100%;
+    }
+    .skeleton.short { width: 60%; }
+    @keyframes shimmer {
+      0%   { background-position: 200% 0; }
+      100% { background-position: -200% 0; }
+    }
+    .now-card-stars { color: var(--accent2); font-size: 0.8rem; margin-top: 0.35rem; letter-spacing: 0.05em; }
+
+    @media (max-width: 900px) {
+      #hero { grid-template-columns: 1fr; gap: 2rem; padding: 5rem 0 3rem; }
+      .hero-scroll { display: none; }
+      #about { grid-template-columns: 1fr; gap: 2rem; }
+      .orbit-grid { grid-template-columns: 1fr; }
+      .now-grid { grid-template-columns: repeat(2, 1fr); }
+      .connect-inner { grid-template-columns: 1fr; gap: 3rem; }
+    }
+    @media (max-width: 600px) {
+      .now-grid { grid-template-columns: 1fr; }
+      footer { flex-direction: column; gap: 0.5rem; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Progress bar -->
+<div id="progress"></div>
+
+<!-- Starfield canvas -->
+<canvas id="starfield"></canvas>
+
+<div class="site-wrapper">
+
+  <!-- ── HERO ── -->
+  <section id="hero">
+    <div class="hero-left">
+      <p class="hero-eyebrow">://richardbramlett.com</p>
+      <h1 class="hero-name">
+        Richard<span>Bramlett</span>
+      </h1>
+      <p class="hero-tagline">
+        Builder. Creator. 25 years in the deep end of technology —
+        now surfacing into something that actually excites me.
+      </p>
+      <div class="hero-cta">
+        <a href="#orbit" class="btn btn-primary">What I Do</a>
+        <a href="#connect" class="btn btn-ghost">Get in Touch</a>
+      </div>
+      <div class="hero-scroll">scroll</div>
+    </div>
+
+    <div class="hero-right">
+      <div class="signal-block">
+        <div class="signal-label">// current role</div>
+        <div class="signal-value">CTO — The Why Files</div>
+        <div class="signal-sub">Media & YouTube · Nevada</div>
+      </div>
+      <div class="signal-block">
+        <div class="signal-label">// previously</div>
+        <div class="signal-value">President & CEO — BramTech Solutions</div>
+        <div class="signal-sub">MSP · Covington, LA · acquired</div>
+      </div>
+      <div class="signal-block">
+        <div class="signal-label">// also doing</div>
+        <div class="signal-value">Music &nbsp;·&nbsp; Letterboxd &nbsp;·&nbsp; Goodreads &nbsp;·&nbsp; On the water</div>
+        <div class="signal-sub">Human things.</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider-line"></div>
+
+  <!-- ── ABOUT ── -->
+  <section id="about">
+    <div class="about-left reveal">
+      <div class="section-label">About</div>
+      <div class="section-number">01</div>
+    </div>
+    <div class="about-body reveal">
+      <p>
+        <strong>New Orleans raised. Always wired.</strong> For 25 years I ran BramTech Solutions out of Covington, LA — a managed services provider built on the unglamorous but essential work of keeping other people's technology alive. Cybersecurity, cloud infrastructure, client relationships that lasted a decade. Then I sold it.
+      </p>
+      <p>
+        The exit wasn't an ending. It was permission. Permission to stop being the person who fixes everything for everyone else and start building things that <em>spread outward</em> — content, stories, systems that grow rather than just sustain.
+      </p>
+      <p>
+        <strong>Now I'm CTO at The Why Files</strong>, a YouTube and streaming brand doing something genuinely interesting at the intersection of mystery, storytelling, and digital media. I still think in systems. I still care about craft. The context just changed.
+      </p>
+      <p>
+        Outside of work: I kayak. I write heavy music — the kind with breakdowns and choir sections and things that shouldn't go together but do. I watch everything and have opinions about all of it. I read. I'm based in Louisiana, moving toward Nevada.
+        Handle: <strong style="font-family: var(--font-mono); color: var(--accent);">hybridxer0</strong>.
+      </p>
+    </div>
+  </section>
+
+  <div class="divider-line"></div>
+
+  <!-- ── ORBIT / WHAT I DO ── -->
+  <section id="orbit">
+    <div class="orbit-header reveal">
+      <div>
+        <div class="section-label">What I Do</div>
+        <h2 class="orbit-title">Where I<br>Operate</h2>
+      </div>
+    </div>
+
+    <div class="orbit-grid reveal">
+      <div class="orbit-card">
+        <div class="orbit-card-glow"></div>
+        <span class="orbit-card-icon">⬡</span>
+        <div class="orbit-card-title">Media & Growth</div>
+        <div class="orbit-card-body">Building the technical and content infrastructure behind The Why Files. YouTube strategy, streaming systems, audience growth, brand architecture. Where IT operations meet creative production.</div>
+        <span class="orbit-card-tag">Current</span>
+      </div>
+      <div class="orbit-card">
+        <div class="orbit-card-glow"></div>
+        <span class="orbit-card-icon">◈</span>
+        <div class="orbit-card-title">Technology</div>
+        <div class="orbit-card-body">25 years of enterprise IT, cybersecurity, and cloud infrastructure. Self-hosted systems, automation workflows, home lab tinkering. I read the README and know where it's wrong.</div>
+        <span class="orbit-card-tag">Always</span>
+      </div>
+      <div class="orbit-card">
+        <div class="orbit-card-glow"></div>
+        <span class="orbit-card-icon">◎</span>
+        <div class="orbit-card-title">Creative Work</div>
+        <div class="orbit-card-body">Music that earns its breakdowns. Reviewing films and books with actual stakes. Writing that doesn't apologize for going somewhere heavy. The creative output is real, not decorative.</div>
+        <span class="orbit-card-tag">Personal</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider-line"></div>
+
+  <!-- ── NOW ── -->
+  <section id="now">
+    <div class="section-label reveal">Now</div>
+    <h2 class="orbit-title reveal" style="margin-bottom: 0.5rem;">Currently<br>Tracking</h2>
+    <p style="color: var(--muted); font-size: 0.875rem; font-family: var(--font-mono); letter-spacing: 0.05em;" class="reveal">Updated manually. Approximate. Human.</p>
+
+    <div class="now-grid">
+      <!-- Letterboxd live card -->
+      <div class="now-card reveal" id="card-letterboxd">
+        <div class="now-card-platform">// watching</div>
+        <div class="now-card-title now-card-loading">
+          <span class="skeleton"></span>
+          <span class="skeleton short"></span>
+        </div>
+        <div class="now-card-meta" id="lb-meta">Fetching latest...</div>
+        <a href="https://letterboxd.com/hybridxer0/" class="now-card-link" target="_blank">→ hybridxer0 on Letterboxd</a>
+      </div>
+      <!-- Goodreads live card -->
+      <div class="now-card reveal" id="card-goodreads">
+        <div class="now-card-platform">// reading</div>
+        <div class="now-card-title now-card-loading">
+          <span class="skeleton"></span>
+          <span class="skeleton short"></span>
+        </div>
+        <div class="now-card-meta" id="gr-meta">Fetching latest...</div>
+        <a href="https://www.goodreads.com/hybridxer0" class="now-card-link" target="_blank">→ hybridxer0 on Goodreads</a>
+      </div>
+      <!-- Static cards -->
+      <div class="now-card reveal">
+        <div class="now-card-platform">// working on</div>
+        <div class="now-card-title">The Why Files</div>
+        <div class="now-card-meta">Media infrastructure · CTO</div>
+        <a href="https://thewhyfiles.net" class="now-card-link" target="_blank">→ thewhyfiles.net</a>
+      </div>
+      <div class="now-card reveal">
+        <div class="now-card-platform">// making music</div>
+        <div class="now-card-title">Writing things that earn their breakdowns</div>
+        <div class="now-card-meta">Modern metal · post-hardcore</div>
+        <div class="now-card-link" style="color: var(--muted); cursor: default;">→ always in progress</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider-line"></div>
+
+  <!-- ── CONNECT ── -->
+  <section id="connect">
+    <div class="connect-inner">
+      <div class="reveal">
+        <div class="section-label">Connect</div>
+        <h2 class="connect-headline">Find<br>The <span>Signal</span></h2>
+        <p class="connect-body">
+          I'm not hard to find. If you're building something interesting, want to talk tech or media, or just want to argue about a film — the links are there.
+        </p>
+        <a href="https://www.linkedin.com/in/richard-bramlett/" class="btn btn-primary" target="_blank">LinkedIn</a>
+      </div>
+
+      <div class="social-row reveal">
+        <a href="https://www.linkedin.com/in/richard-bramlett/" class="social-link" target="_blank">
+          <span class="social-icon">LinkedIn</span>
+          <span class="social-handle">richard-bramlett</span>
+          <span class="social-arrow">→</span>
+        </a>
+        <a href="https://x.com/hybridxer0" class="social-link" target="_blank">
+          <span class="social-icon">X / Twitter</span>
+          <span class="social-handle">@hybridxer0</span>
+          <span class="social-arrow">→</span>
+        </a>
+        <a href="https://www.instagram.com/richardbramlett/" class="social-link" target="_blank">
+          <span class="social-icon">Instagram</span>
+          <span class="social-handle">@richardbramlett</span>
+          <span class="social-arrow">→</span>
+        </a>
+        <a href="https://www.facebook.com/rbramlett" class="social-link" target="_blank">
+          <span class="social-icon">Facebook</span>
+          <span class="social-handle">rbramlett</span>
+          <span class="social-arrow">→</span>
+        </a>
+        <a href="https://letterboxd.com/hybridxer0/" class="social-link" target="_blank">
+          <span class="social-icon">Letterboxd</span>
+          <span class="social-handle">hybridxer0</span>
+          <span class="social-arrow">→</span>
+        </a>
+        <a href="https://www.goodreads.com/hybridxer0" class="social-link" target="_blank">
+          <span class="social-icon">Goodreads</span>
+          <span class="social-handle">hybridxer0</span>
+          <span class="social-arrow">→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</div><!-- /site-wrapper -->
+
+<!-- ── FOOTER ── -->
+<footer>
+  <div class="site-wrapper" style="display:flex; justify-content:space-between; align-items:center; width:100%; max-width:1200px;">
+    <div class="footer-left">://richardbramlett.com</div>
+    <div class="footer-right">hybridxer0 &nbsp;·&nbsp; <span>Louisiana → Nevada</span></div>
+  </div>
+</footer>
+
+<!-- ── SCRIPTS ── -->
+<script>
+  /* Starfield */
+  (function() {
+    const canvas = document.getElementById('starfield');
+    const ctx = canvas.getContext('2d');
+    let stars = [];
+
+    function resize() {
+      canvas.width  = window.innerWidth;
+      canvas.height = window.innerHeight;
+    }
+
+    function initStars() {
+      stars = [];
+      const count = Math.floor((canvas.width * canvas.height) / 6000);
+      for (let i = 0; i < count; i++) {
+        stars.push({
+          x: Math.random() * canvas.width,
+          y: Math.random() * canvas.height,
+          r: Math.random() * 1.2 + 0.2,
+          a: Math.random(),
+          speed: Math.random() * 0.003 + 0.001,
+          drift: (Math.random() - 0.5) * 0.05
+        });
+      }
+    }
+
+    function draw() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      stars.forEach(s => {
+        s.a += s.speed;
+        if (s.a > 1) s.a = 0;
+        s.x += s.drift;
+        if (s.x < 0) s.x = canvas.width;
+        if (s.x > canvas.width) s.x = 0;
+        ctx.beginPath();
+        ctx.arc(s.x, s.y, s.r, 0, Math.PI * 2);
+        ctx.fillStyle = `rgba(220,215,200,${Math.sin(s.a * Math.PI) * 0.7})`;
+        ctx.fill();
+      });
+      requestAnimationFrame(draw);
+    }
+
+    resize();
+    initStars();
+    draw();
+    window.addEventListener('resize', () => { resize(); initStars(); });
+  })();
+
+  /* Scroll progress */
+  window.addEventListener('scroll', () => {
+    const el = document.getElementById('progress');
+    const total = document.body.scrollHeight - window.innerHeight;
+    el.style.width = (window.scrollY / total * 100) + '%';
+  });
+
+  /* Reveal on scroll */
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach((e, i) => {
+      if (e.isIntersecting) {
+        setTimeout(() => e.target.classList.add('visible'), i * 80);
+        observer.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.12 });
+  reveals.forEach(r => observer.observe(r));
+</script>
+
+<!-- ── RSS Live Feed ── -->
+<script>
+  function starsHTML(rating) {
+    if (!rating) return '';
+    const full  = Math.floor(rating);
+    const half  = rating % 1 >= 0.5 ? 1 : 0;
+    const empty = 5 - full - half;
+    return '★'.repeat(full) + (half ? '½' : '') + '☆'.repeat(empty);
+  }
+
+  function formatDate(str) {
+    if (!str) return '';
+    const d = new Date(str);
+    return isNaN(d) ? '' : d.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+  }
+
+  async function loadFeed(source, cardId, metaId) {
+    try {
+      const res  = await fetch(`/.netlify/functions/rss?source=${source}`);
+      const data = await res.json();
+      const card = document.getElementById(cardId);
+      if (!data.items || !data.items.length) return;
+
+      const item  = data.items[0];
+      const title = card.querySelector('.now-card-title');
+      title.innerHTML = `<a href="${item.link}" target="_blank" style="color:var(--text);text-decoration:none;">${item.title}</a>`;
+      if (item.rating) {
+        title.innerHTML += `<div class="now-card-stars">${starsHTML(item.rating)}</div>`;
+      }
+      document.getElementById(metaId).textContent = formatDate(item.date) || (source === 'letterboxd' ? 'Recently logged' : 'Currently reading');
+    } catch(e) {
+      console.warn(`RSS fetch failed for ${source}:`, e);
+    }
+  }
+
+  loadFeed('letterboxd', 'card-letterboxd', 'lb-meta');
+  loadFeed('goodreads',  'card-goodreads',  'gr-meta');
+</script>
+
+</body>
+</html>
