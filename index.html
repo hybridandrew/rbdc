@@ -580,17 +580,113 @@
       border: 1px solid var(--border);
     }
 
+    /* ────────────────────────────
+       RESPONSIVE — TABLET (≤900px)
+    ──────────────────────────── */
     @media (max-width: 900px) {
-      #hero { grid-template-columns: 1fr; gap: 2rem; padding: 5rem 0 3rem; }
+      .site-wrapper { padding: 0 1.5rem; }
+
+      /* Hero: stack vertically, signal blocks below */
+      #hero {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+        padding: 5rem 0 3rem;
+        min-height: auto;
+      }
       .hero-scroll { display: none; }
-      #about { grid-template-columns: 1fr; gap: 2rem; }
+      .hero-name { font-size: clamp(3.5rem, 12vw, 5.5rem); }
+
+      /* Signal blocks: horizontal scroll row on tablet */
+      .hero-right {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        overflow-x: auto;
+        padding-bottom: 0.5rem;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+      }
+      .hero-right::-webkit-scrollbar { display: none; }
+      .signal-block {
+        min-width: 220px;
+        flex-shrink: 0;
+      }
+
+      /* About: single column */
+      #about {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding: 5rem 0;
+      }
+      .section-number { font-size: 4rem; }
+
+      /* Orbit cards: single column */
       .orbit-grid { grid-template-columns: 1fr; }
+      .orbit-card { padding: 2rem 1.5rem; }
+
+      /* Now grid: 2 columns */
       .now-grid { grid-template-columns: repeat(2, 1fr); }
+
+      /* Connect: stack */
       .connect-inner { grid-template-columns: 1fr; gap: 3rem; }
+      .connect-headline { font-size: clamp(2rem, 8vw, 3.5rem); }
     }
+
+    /* ────────────────────────────
+       RESPONSIVE — MOBILE (≤600px)
+    ──────────────────────────── */
     @media (max-width: 600px) {
-      .now-grid { grid-template-columns: 1fr; }
-      footer { flex-direction: column; gap: 0.5rem; text-align: center; }
+      .site-wrapper { padding: 0 1.25rem; }
+
+      /* Hero */
+      #hero { padding: 4rem 0 2.5rem; gap: 2rem; }
+      .hero-name { font-size: clamp(3rem, 16vw, 4.5rem); line-height: 0.9; }
+      .hero-tagline { font-size: 0.95rem; }
+      .hero-cta { flex-direction: column; gap: 0.75rem; }
+      .hero-cta .btn { text-align: center; }
+
+      /* Signal blocks: vertical stack on mobile */
+      .hero-right {
+        flex-direction: column;
+        overflow-x: visible;
+      }
+      .signal-block { min-width: unset; }
+
+      /* About */
+      #about { padding: 4rem 0; }
+      .about-body p { font-size: 0.95rem; }
+
+      /* Orbit: hide section number on mobile, simplify */
+      .section-number { display: none; }
+      .orbit-title { font-size: clamp(2rem, 10vw, 3rem); }
+
+      /* Now: single column, images slightly shorter */
+      .now-grid { grid-template-columns: 1fr; gap: 1rem; }
+      .now-card-thumb,
+      .now-card-thumb-book { height: 160px; }
+
+      /* Connect */
+      #connect { padding: 4rem 0 6rem; }
+      .connect-inner { gap: 2.5rem; }
+
+      /* Footer */
+      footer { flex-direction: column; gap: 0.5rem; text-align: center; padding: 1.5rem 0; }
+
+      /* Divider lines: slightly dimmer on mobile */
+      .divider-line { margin: 1rem 0; }
+
+      /* Sections: tighter padding */
+      #orbit, #now { padding: 4rem 0; }
+    }
+
+    /* ────────────────────────────
+       RESPONSIVE — SMALL (≤380px)
+    ──────────────────────────── */
+    @media (max-width: 380px) {
+      .hero-name { font-size: 2.8rem; }
+      .hero-eyebrow { font-size: 0.6rem; }
+      .now-card { padding: 1.25rem; }
+      .signal-block { padding: 1.25rem 1.5rem; }
     }
   </style>
 </head>
