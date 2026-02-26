@@ -51,7 +51,7 @@ exports.handler = async event => {
 
   const feeds = {
     letterboxd: 'https://letterboxd.com/hybridxer0/rss/',
-    goodreads:  'https://www.goodreads.com/review/list_rss/hybridxer0?shelf=currently-reading',
+    goodreads:  process.env.GOODREADS_RSS_URL,
   };
 
   if (!feeds[source]) {
