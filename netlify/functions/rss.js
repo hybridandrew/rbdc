@@ -12,7 +12,7 @@ function fetch(url) {
   });
 }
 
-function parseItems(xml, count = 3) {
+function parseItems(xml, source, count = 1) {
   const items = [];
   const itemRegex = /<item>([\s\S]*?)<\/item>/g;
   let match;
@@ -26,19 +26,28 @@ function parseItems(xml, count = 3) {
       const m = block.match(/<pubDate>([^<]*)<\/pubDate>/);
       return m ? m[1].trim() : '';
     };
-    // Letterboxd-specific: star rating
-    const ratingMatch = block.match(/letterboxd:memberRating>([^<]+)<\/letterboxd:memberRating/) ||
-                        block.match(/<description>[^<]*(\d+\.?\d*)\s*star/i);
-    const rating = ratingMatch ? parseFloat(ratingMatch[1]) : null;
 
-    // Goodreads-specific: extract book cover from description img tag
-    const imgMatch = block.match(/<img[^>]+src="([^"]+)"/);
-    const cover = imgMatch ? imgMatch[1] : null;
+    // Letterboxd: rating from dedicated tag only (avoid double)
+    let rating = null;
+    if (source === 'letterboxd') {
+      const ratingMatch = block.match(/<letterboxd:memberRating>([^<]+)<\/letterboxd:memberRating>/);
+      if (ratingMatch) rating = parseFloat(ratingMatch[1]);
+    }
+
+    // Thumbnail: parse first <img src> from description
+    const desc = get('description');
+    const imgMatch = desc.match(/<img[^>]+src=["']([^"']+)["']/i);
+    const thumbnail = imgMatch ? imgMatch[1] : null;
+
+    // For Letterboxd, also try the enclosure or media:thumbnail tags
+    const enclosureMatch = block.match(/<enclosure[^>]+url=["']([^"']+)["']/i) ||
+                           block.match(/<media:thumbnail[^>]+url=["']([^"']+)["']/i);
+    const cover = thumbnail || (enclosureMatch ? enclosureMatch[1] : null);
 
     items.push({
-      title:   get('title'),
-      link:    get('link'),
-      date:    getPubDate(),
+      title:  get('title'),
+      link:   get('link'),
+      date:   getPubDate(),
       rating,
       cover,
     });
@@ -60,7 +69,7 @@ exports.handler = async event => {
 
   try {
     const xml   = await fetch(feeds[source]);
-    const items = parseItems(xml, source === 'letterboxd' ? 1 : 1);
+    const items = parseItems(xml, source, 1);
     return {
       statusCode: 200,
       headers: { 'Content-Type': 'application/json', 'Cache-Control': 'public, s-maxage=3600' },

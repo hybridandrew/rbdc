@@ -559,6 +559,25 @@
     }
     .now-card-stars { color: var(--accent2); font-size: 0.8rem; margin-top: 0.35rem; letter-spacing: 0.05em; }
 
+    .now-card-thumb {
+      width: 100%;
+      aspect-ratio: 2/3;
+      object-fit: cover;
+      border-radius: 2px;
+      margin-bottom: 1rem;
+      display: block;
+      border: 1px solid var(--border);
+      max-height: 160px;
+      object-position: top;
+    }
+    .now-card-thumb-book {
+      aspect-ratio: 2/3;
+      max-height: 140px;
+      width: auto;
+      margin: 0 auto 1rem;
+      display: block;
+    }
+
     @media (max-width: 900px) {
       #hero { grid-template-columns: 1fr; gap: 2rem; padding: 5rem 0 3rem; }
       .hero-scroll { display: none; }
@@ -880,10 +899,22 @@
 
       const item  = data.items[0];
       const title = card.querySelector('.now-card-title');
-      title.innerHTML = `<a href="${item.link}" target="_blank" style="color:var(--text);text-decoration:none;">${item.title}</a>`;
-      if (item.rating) {
-        title.innerHTML += `<div class="now-card-stars">${starsHTML(item.rating)}</div>`;
+
+      // Thumbnail
+      if (item.cover) {
+        const img = document.createElement('img');
+        img.src = item.cover;
+        img.alt = item.title;
+        img.className = source === 'goodreads' ? 'now-card-thumb now-card-thumb-book' : 'now-card-thumb';
+        img.loading = 'lazy';
+        card.insertBefore(img, title);
       }
+
+      // Title + stars (single render only)
+      let html = `<a href="${item.link}" target="_blank" style="color:var(--text);text-decoration:none;">${item.title}</a>`;
+      if (item.rating) html += `<div class="now-card-stars">${starsHTML(item.rating)}</div>`;
+      title.innerHTML = html;
+
       document.getElementById(metaId).textContent = formatDate(item.date) || (source === 'letterboxd' ? 'Recently logged' : 'Currently reading');
     } catch(e) {
       console.warn(`RSS fetch failed for ${source}:`, e);
