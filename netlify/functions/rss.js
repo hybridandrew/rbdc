@@ -34,22 +34,23 @@ function parseItems(xml, source, count = 1) {
       if (ratingMatch) rating = parseFloat(ratingMatch[1]);
     }
 
+    // Get raw description block regardless of CDATA or plain text
+    const getRaw = tag => {
+      const m = block.match(new RegExp(`<${tag}[^>]*>([\\s\\S]*?)<\\/${tag}>`));
+      return m ? m[1].replace(/<!\[CDATA\[|\]\]>/g, '').trim() : '';
+    };
+
     // Thumbnail
     let cover = null;
 
-    // Letterboxd: full size poster is in description <img src="...">
-    // Goodreads: book_image_url tag or description img
-    const desc = get('description');
+    const desc = getRaw('description');
     const descImgMatch = desc.match(/<img[^>]+src=["']([^"']+)["']/i);
-    if (descImgMatch) cover = descImgMatch[1];
-
-    // Goodreads: book_image_url tag (strip size suffix for full res)
-    if (!cover) {
-      const bookImg = block.match(/<book_image_url>\s*([^<\s]+)\s*<\/book_image_url>/);
-      if (bookImg) cover = bookImg[1].replace(/\._S[XY]\d+_/g, '');
+    if (descImgMatch) {
+      // Upgrade Goodreads tiny thumbnails to full size
+      cover = descImgMatch[1].replace(/\._S[XY]\d+_/g, '');
     }
 
-    // Goodreads: image_url tag
+    // Goodreads: image_url tag as fallback
     if (!cover) {
       const imageUrl = block.match(/<image_url>\s*([^<\s]+)\s*<\/image_url>/);
       if (imageUrl) cover = imageUrl[1].replace(/\._S[XY]\d+_/g, '');
