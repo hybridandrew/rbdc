@@ -663,7 +663,11 @@
       /* Now: single column, images slightly shorter */
       .now-grid { grid-template-columns: 1fr; gap: 1rem; }
       .now-card-thumb,
-      .now-card-thumb-book { height: 160px; }
+      .now-card-thumb-book {
+        height: 160px;
+        width: 100%;
+        object-fit: cover;
+      }
 
       /* Connect */
       #connect { padding: 4rem 0 6rem; }
