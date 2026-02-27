@@ -75,12 +75,25 @@
     ──────────────────────────── */
     #hero {
       min-height: 100vh;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      align-items: stretch;
-      gap: 4rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 2rem;
       padding: 6rem 0 4rem;
       position: relative;
+    }
+
+    .hero-top {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: stretch;
+    }
+
+    .hero-signals {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
     }
 
     .hero-left {
@@ -202,16 +215,12 @@
       background: var(--accent);
     }
 
-    /* Hero right — visual block */
-    .hero-right {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-      position: relative;
-    }
+    /* Hero right — photo */
     .hero-photo-wrap {
-      flex: 1;
-      min-height: 0;
+      position: relative;
+      display: block;
+      width: 100%;
+      min-height: 300px;
     }
 
     .signal-block {
@@ -740,31 +749,11 @@
     @media (max-width: 900px) {
       .site-wrapper { padding: 0 1.5rem; }
 
-      /* Hero: stack vertically, signal blocks below */
-      #hero {
-        grid-template-columns: 1fr;
-        gap: 2.5rem;
-        padding: 5rem 0 3rem;
-        min-height: auto;
-      }
+      /* Hero: stack top row, signals go 1-col */
+      #hero { gap: 1.5rem; padding: 5rem 0 3rem; min-height: auto; }
+      .hero-top { grid-template-columns: 1fr; gap: 2rem; }
+      .hero-signals { grid-template-columns: 1fr; }
       .hero-scroll { display: none; }
-      .hero-name { font-size: clamp(3.5rem, 12vw, 5.5rem); }
-
-      /* Signal blocks: horizontal scroll row on tablet */
-      .hero-right {
-        display: flex;
-        flex-direction: row;
-        gap: 1rem;
-        overflow-x: auto;
-        padding-bottom: 0.5rem;
-        -webkit-overflow-scrolling: touch;
-        scrollbar-width: none;
-      }
-      .hero-right::-webkit-scrollbar { display: none; }
-      .signal-block {
-        min-width: 220px;
-        flex-shrink: 0;
-      }
 
       /* About: single column */
       #about {
@@ -793,18 +782,13 @@
       .site-wrapper { padding: 0 1.25rem; }
 
       /* Hero */
-      #hero { padding: 4rem 0 2.5rem; gap: 2rem; }
+      #hero { padding: 4rem 0 2.5rem; }
+      .hero-top { gap: 1.5rem; }
       .hero-name { font-size: clamp(3rem, 16vw, 4.5rem); line-height: 0.9; }
       .hero-tagline { font-size: 0.95rem; }
       .hero-cta { flex-direction: column; gap: 0.75rem; }
       .hero-cta .btn { text-align: center; }
-
-      /* Signal blocks: vertical stack on mobile */
-      .hero-right {
-        flex-direction: column;
-        overflow-x: visible;
-      }
-      .signal-block { min-width: unset; }
+      .hero-signals { grid-template-columns: 1fr; }
 
       /* About */
       #about { padding: 4rem 0; }
@@ -864,27 +848,34 @@
 
   <!-- ── HERO ── -->
   <section id="hero">
-    <div class="hero-left">
-      <p class="hero-eyebrow">://richardbramlett.com</p>
-      <h1 class="hero-name">
-        Richard<span>Bramlett</span>
-      </h1>
-      <p class="hero-tagline">
-        Builder. Creator. 25 years in the deep end of technology —
-        now surfacing into something that actually excites me.
-      </p>
-      <div class="hero-cta">
-        <a href="#orbit" class="btn btn-primary">What I Do</a>
-        <a href="#connect" class="btn btn-ghost">Get in Touch</a>
-      </div>
-      <div class="hero-scroll">scroll</div>
-    </div>
 
-    <div class="hero-right">
+    <div class="hero-top">
+      <!-- Left: name + text -->
+      <div class="hero-left">
+        <p class="hero-eyebrow">://richardbramlett.com</p>
+        <h1 class="hero-name">
+          Richard<span>Bramlett</span>
+        </h1>
+        <p class="hero-tagline">
+          Builder. Creator. 25 years in the deep end of technology —
+          now surfacing into something that actually excites me.
+        </p>
+        <div class="hero-cta">
+          <a href="#orbit" class="btn btn-primary">What I Do</a>
+          <a href="#connect" class="btn btn-ghost">Get in Touch</a>
+        </div>
+        <div class="hero-scroll">scroll</div>
+      </div>
+
+      <!-- Right: photo -->
       <div class="hero-photo-wrap">
         <img src="img/me/headshot02.jpg" alt="Richard Bramlett" class="hero-photo" />
         <div class="hero-photo-frame"></div>
       </div>
+    </div>
+
+    <!-- Signal blocks: full width horizontal row -->
+    <div class="hero-signals">
       <div class="signal-block">
         <div class="signal-label">// current role</div>
         <div class="signal-value">CTO — The Why Files</div>
@@ -901,6 +892,7 @@
         <div class="signal-sub">Human things.</div>
       </div>
     </div>
+
   </section>
 
   <div class="divider-line"></div>
