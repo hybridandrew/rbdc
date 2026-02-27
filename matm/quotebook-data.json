@@ -1,0 +1,577 @@
+{
+  "stats": {
+    "totalQuotes": 81,
+    "sessionsCovered": 14,
+    "topQuoter": "GM",
+    "punCount": 2
+  },
+  "quotes": [
+    {
+      "text": "I thought you elves were supposed to be smart.",
+      "speaker": "Belden",
+      "session": 1,
+      "context": "The first of many burns",
+      "category": "epic"
+    },
+    {
+      "text": "I thought you dwarfs were supposed to be short.",
+      "speaker": "Semaj",
+      "session": 1,
+      "context": "The perfect clap-back",
+      "category": "epic"
+    },
+    {
+      "text": "I do a backflip and land on my feet.",
+      "speaker": "Semaj",
+      "session": 1,
+      "context": "Nat 20 athletics after being thrown from the wagon",
+      "category": "epic"
+    },
+    {
+      "text": "What a show.",
+      "speaker": "Ekran",
+      "session": 1,
+      "context": "Watching Semaj's acrobatics",
+      "category": "epic"
+    },
+    {
+      "text": "I won't do what you tell me!",
+      "speaker": "GM (Alex)",
+      "session": 1,
+      "context": "Setting the Rage Against the Machine tone from the start",
+      "category": "funny"
+    },
+    {
+      "text": "Stupid floor.",
+      "speaker": "Belden",
+      "session": 2,
+      "context": "His only thought after the rat battle",
+      "category": "epic"
+    },
+    {
+      "text": "Am I the only one hanging on by a thread here?",
+      "speaker": "Kaelia",
+      "session": 2,
+      "context": "Realizing she almost died to rats",
+      "category": "epic"
+    },
+    {
+      "text": "Bored him to death.",
+      "speaker": "Semaj",
+      "session": 2,
+      "context": "After Ekran was knocked out by Borby",
+      "category": "pun"
+    },
+    {
+      "text": "This is no time to be cooking.",
+      "speaker": "Belden",
+      "session": 2,
+      "context": "Watching Periwinkle attack the dead boar",
+      "category": "epic"
+    },
+    {
+      "text": "Think these things carry rabies?",
+      "speaker": "Ekran",
+      "session": 2,
+      "context": "Examining his wounds",
+      "category": "epic"
+    },
+    {
+      "text": "I'm gonna be squishy but I can do cool looking things.",
+      "speaker": "Kaelia",
+      "session": 3,
+      "context": "After creating the fire wolf",
+      "category": "epic"
+    },
+    {
+      "text": "Badass. Sleep Now with the Fire Wolf.",
+      "speaker": "Belden",
+      "session": 3,
+      "context": "Naming the Rage Against the Machine song for Kaelia's fire wolf",
+      "category": "pun"
+    },
+    {
+      "text": "I stare him down.",
+      "speaker": "Semaj",
+      "session": 3,
+      "context": "Facing the alpha wolf",
+      "category": "epic"
+    },
+    {
+      "text": "It's not always about killing stuff.",
+      "speaker": "Kaelia",
+      "session": 3,
+      "context": "After the wolves retreated peacefully",
+      "category": "epic"
+    },
+    {
+      "text": "How long have you been playing that? I guess just a few minutes.",
+      "speaker": "Ekran",
+      "session": 3,
+      "context": "After his nat 20 pan flute performance",
+      "category": "epic"
+    },
+    {
+      "text": "This soundtrack sounds like straight up Star Trek.",
+      "speaker": "Semaj",
+      "session": 3,
+      "context": "Breaking the fourth wall",
+      "category": "epic"
+    },
+    {
+      "text": "Quite refreshing, the water's fine.",
+      "speaker": "Ekran",
+      "session": 4,
+      "context": "After falling face-first into the stream",
+      "category": "epic"
+    },
+    {
+      "text": "Sounds like he met his end.",
+      "speaker": "Semaj",
+      "session": 4,
+      "context": "After Ekran shot a goblin in the rear",
+      "category": "epic"
+    },
+    {
+      "text": "My arrow certainly did.",
+      "speaker": "Ekran",
+      "session": 4,
+      "context": "Response to Semaj's pun",
+      "category": "epic"
+    },
+    {
+      "text": "But it's fire and water.",
+      "speaker": "Kaelia",
+      "session": 4,
+      "context": "Refusing to cross the stream",
+      "category": "burn"
+    },
+    {
+      "text": "Anything to make everyone forget about the foot thing.",
+      "speaker": "Belden",
+      "session": 4,
+      "context": "After carrying Kaelia across",
+      "category": "epic"
+    },
+    {
+      "text": "We should do Bulls on Parade with old school medieval instruments.",
+      "speaker": "Belden",
+      "session": 4,
+      "context": "Suggesting the campaign's theme song",
+      "category": "epic"
+    },
+    {
+      "text": "This wolf had it out for Klarg. Klarg must have tortured this wolf pretty hard.",
+      "speaker": "GM",
+      "session": 5,
+      "context": "As the wolf delivers the killing blow",
+      "category": "epic"
+    },
+    {
+      "text": "Retribution is the boy's name. That boy's name is Retribution.",
+      "speaker": "Semaj",
+      "session": 5,
+      "context": "First naming the wolf (later became Larry)",
+      "category": "epic"
+    },
+    {
+      "text": "That was a straight Han Solo and Chewie running right into the wall of Stormtroopers.",
+      "speaker": "GM",
+      "session": 5,
+      "context": "Describing Semaj's failed solo charge",
+      "category": "burn"
+    },
+    {
+      "text": "Well, Semaj is able to live again. But, man, MVP ain't dog, ain't my buddy.",
+      "speaker": "GM",
+      "session": 5,
+      "context": "End of session - the wolf was the real hero",
+      "category": "epic"
+    },
+    {
+      "text": "I can keep you barely alive.",
+      "speaker": "Kaelia",
+      "session": 5,
+      "context": "On the party's healing capabilities",
+      "category": "epic"
+    },
+    {
+      "text": "You made wolf paste.",
+      "speaker": "GM",
+      "session": 5,
+      "context": "After Belden's hammer crit",
+      "category": "epic"
+    },
+    {
+      "text": "That was a brutal duel. It was an upset victory\u2014without the victory. It was just upset.",
+      "speaker": "GM",
+      "session": 6,
+      "context": "After Belden lost the duel",
+      "category": "funny"
+    },
+    {
+      "text": "That was so dramatic, clownish, and anti-climactic all at the same time.",
+      "speaker": "Kaelia",
+      "session": 6,
+      "context": "Describing the duel",
+      "category": "epic"
+    },
+    {
+      "text": "STOP! Fight me one-on-one!",
+      "speaker": "Belden",
+      "session": 6,
+      "context": "Challenging Yeemic to a duel",
+      "category": "epic"
+    },
+    {
+      "text": "As a rogue, I'm not gonna honor any\u2014now you lost a duel, like, I'mma shoot him in the face.",
+      "speaker": "Ekran",
+      "session": 6,
+      "context": "Planning revenge after Belden fell",
+      "category": "epic"
+    },
+    {
+      "text": "One of these other wolves I'll name him Gary. Gary and Ace.",
+      "speaker": "Belden",
+      "session": 6,
+      "context": "Trying to name the other wolves",
+      "category": "epic"
+    },
+    {
+      "text": "Belden, you got like Wil Wheaton level luck with those ones, man.",
+      "speaker": "Semaj",
+      "session": 6,
+      "context": "After Belden's string of misses",
+      "category": "epic"
+    },
+    {
+      "text": "COWARDS!",
+      "speaker": "GM",
+      "session": 7,
+      "context": "Yeemic's dying word to Belden",
+      "category": "burn"
+    },
+    {
+      "text": "If the Black Spider unlocks this cave before we do, gods help us all.",
+      "speaker": "GM",
+      "session": 7,
+      "context": "Revealing the stakes",
+      "category": "epic"
+    },
+    {
+      "text": "Ruxithid is not a goblin. It's something older. Something patient. Something that waits.",
+      "speaker": "GM",
+      "session": 7,
+      "context": "The mysterious whisper",
+      "category": "epic"
+    },
+    {
+      "text": "Larry looks to Samaj with viscera and gore around his mouth like: Did I do a good job?",
+      "speaker": "Semaj",
+      "session": 7,
+      "context": "After Larry decapitates the snake",
+      "category": "epic"
+    },
+    {
+      "text": "Frickin' Larry the GOAT.",
+      "speaker": "GM",
+      "session": 7,
+      "context": "After Larry's snake kill",
+      "category": "epic"
+    },
+    {
+      "text": "I should have, as the life was fading from his eyes, been like: Coward! COWARD!",
+      "speaker": "Belden",
+      "session": 7,
+      "context": "Belden's regret",
+      "category": "burn"
+    },
+    {
+      "text": "Your hammer hits harder than you think. And your heart's even stronger. Don't forget that.",
+      "speaker": "GM",
+      "session": 8,
+      "context": "Ekran's farewell to Belden",
+      "category": "epic"
+    },
+    {
+      "text": "Firelight doesn't just burn\u2014it guides.",
+      "speaker": "GM",
+      "session": 8,
+      "context": "Ekran's farewell to Kaelia",
+      "category": "burn"
+    },
+    {
+      "text": "To Ekran!",
+      "speaker": "Semaj",
+      "session": 8,
+      "context": "Toast as Ekran departs",
+      "category": "epic"
+    },
+    {
+      "text": "Joseph, you idiot.",
+      "speaker": "GM",
+      "session": 8,
+      "context": "Redbrands watching their friend trip down stairs",
+      "category": "funny"
+    },
+    {
+      "text": "The last time this happened, I heard someone was eating dwarves and I failed my rage save. This time, I'm just drunk.",
+      "speaker": "Belden",
+      "session": 8,
+      "context": "Explaining why he charged in",
+      "category": "burn"
+    },
+    {
+      "text": "Let's gut these heroes and use their skulls for mugs!",
+      "speaker": "GM",
+      "session": 8,
+      "context": "Redbrand battle cry before tripping",
+      "category": "epic"
+    },
+    {
+      "text": "The drunken master for the win\u2014he was dodging every dude and killing everybody.",
+      "speaker": "GM",
+      "session": 9,
+      "context": "Praising Belden's combat performance",
+      "category": "epic"
+    },
+    {
+      "text": "I went into a big battle, killed a couple guys, and then went down in a blaze of glory. Woke up to dead bodies.",
+      "speaker": "Belden",
+      "session": 9,
+      "context": "Summarizing his session",
+      "category": "epic"
+    },
+    {
+      "text": "His brain just fizzles out and explodes and falls down.",
+      "speaker": "GM",
+      "session": 9,
+      "context": "Valrex's Toll the Dead",
+      "category": "epic"
+    },
+    {
+      "text": "He lunges into the air, catches the Redbrand by the throat. And he just starts ripping.",
+      "speaker": "GM",
+      "session": 9,
+      "context": "Larry's kill",
+      "category": "epic"
+    },
+    {
+      "text": "I was dealing with the personal turmoil of losing a duel with a goblin.",
+      "speaker": "Belden",
+      "session": 9,
+      "context": "Explaining why he was drunk",
+      "category": "epic"
+    },
+    {
+      "text": "Hammer smash face! It's a Cannibal Corpse song.",
+      "speaker": "GM",
+      "session": 9,
+      "context": "Describing Belden's attacks",
+      "category": "epic"
+    },
+    {
+      "text": "I don't see a hippo.",
+      "speaker": "Kaelia",
+      "session": 10,
+      "context": "Gaslighting Belden",
+      "category": "epic"
+    },
+    {
+      "text": "Either I'm dead or I'm still drunk. What is going on?",
+      "speaker": "Belden",
+      "session": 10,
+      "context": "Confused by the Aster prank",
+      "category": "epic"
+    },
+    {
+      "text": "You taste different. Magic in your blood. Pain in your past.",
+      "speaker": "GM",
+      "session": 10,
+      "context": "The Nothic probing Semaj's mind",
+      "category": "epic"
+    },
+    {
+      "text": "Grista mutters: I'm going to need to kill another pig.",
+      "speaker": "GM",
+      "session": 10,
+      "context": "After Aster devoured breakfast",
+      "category": "epic"
+    },
+    {
+      "text": "Let's remind these Redbrands what happens when good people stop standing alone.",
+      "speaker": "Semaj",
+      "session": 10,
+      "context": "Rallying the town",
+      "category": "epic"
+    },
+    {
+      "text": "It's the ghost of hippo past!",
+      "speaker": "GM",
+      "session": 10,
+      "context": "Belden trying to understand Aster",
+      "category": "epic"
+    },
+    {
+      "text": "And by the time the flames finish, and you can see again in front of you, there is nothing. Absolutely nothing.",
+      "speaker": "GM",
+      "session": 11,
+      "context": "Belden's Dragon's Breath vaporizing an enemy",
+      "category": "burn"
+    },
+    {
+      "text": "Today, you meet water.",
+      "speaker": "Aster",
+      "session": 11,
+      "context": "Aster launching a water bullet",
+      "category": "epic"
+    },
+    {
+      "text": "I'm just very unusually happy with the amount of fire going on in the general vicinity.",
+      "speaker": "Kaelia",
+      "session": 11,
+      "context": "After giving Belden Dragon's Breath",
+      "category": "burn"
+    },
+    {
+      "text": "You cannot steal this from Shiva!",
+      "speaker": "Aster",
+      "session": 11,
+      "context": "Complaining about Kaelia taking his kills",
+      "category": "epic"
+    },
+    {
+      "text": "Both of these bugbears are now nearly disintegrated.",
+      "speaker": "GM",
+      "session": 11,
+      "context": "Semaj's bouncing Chromatic Orb",
+      "category": "epic"
+    },
+    {
+      "text": "This was an entire session of combat. We didn't leave a room.",
+      "speaker": "GM",
+      "session": 11,
+      "context": "End of session",
+      "category": "epic"
+    },
+    {
+      "text": "I didn't use my hammer once at all. I fought the whole thing with traveler's clothes.",
+      "speaker": "Belden",
+      "session": 12,
+      "context": "After the cistern battle",
+      "category": "epic"
+    },
+    {
+      "text": "The wet traveler's clothes is the last thing he sees.",
+      "speaker": "GM",
+      "session": 12,
+      "context": "Redbrand's death by rat-tail",
+      "category": "epic"
+    },
+    {
+      "text": "The traveler's clothes whip\u2014chef's kiss.",
+      "speaker": "GM",
+      "session": 12,
+      "context": "End of session appreciation",
+      "category": "epic"
+    },
+    {
+      "text": "This is the session I've decided that if there's a trap, I must test to see how well the trap is made.",
+      "speaker": "Belden",
+      "session": 12,
+      "context": "Belden's new philosophy",
+      "category": "epic"
+    },
+    {
+      "text": "I grab him by the throat, strangle him in one hand, and toss his dead body back in the cistern.",
+      "speaker": "Valrex",
+      "session": 12,
+      "context": "Undertaker-style kill",
+      "category": "epic"
+    },
+    {
+      "text": "Shrapnel damage!",
+      "speaker": "GM",
+      "session": 12,
+      "context": "Skeleton breastplate hitting another skeleton",
+      "category": "epic"
+    },
+    {
+      "text": "He doesn't even scream. The fire just robs him of his breath before it robs him of his life.",
+      "speaker": "GM",
+      "session": 13,
+      "context": "Kaelia's killing blow on Glasstaff",
+      "category": "burn"
+    },
+    {
+      "text": "He's double dead.",
+      "speaker": "GM",
+      "session": 13,
+      "context": "Confirming overkill on Glasstaff",
+      "category": "epic"
+    },
+    {
+      "text": "When you started using teleport, I said NO.",
+      "speaker": "Valrex",
+      "session": 13,
+      "context": "During the chase",
+      "category": "epic"
+    },
+    {
+      "text": "This Phoenix Sorcerer is absolutely badass.",
+      "speaker": "GM",
+      "session": 13,
+      "context": "Praising Kaelia's build",
+      "category": "funny"
+    },
+    {
+      "text": "He was supposed to protect Phandalin. Instead he terrorized it.",
+      "speaker": "Semaj",
+      "session": 13,
+      "context": "Realizing Iarno's betrayal",
+      "category": "funny"
+    },
+    {
+      "text": "That was a well-earned kill. We went through 20 rounds.",
+      "speaker": "GM",
+      "session": 13,
+      "context": "Post-session appreciation",
+      "category": "epic"
+    },
+    {
+      "text": "Those are the ones that killed the Redbrands.",
+      "speaker": "GM",
+      "session": 14,
+      "context": "Townsfolk recognizing the party",
+      "category": "epic"
+    },
+    {
+      "text": "Bugbears hurt Droop. Droop was just stuck.",
+      "speaker": "GM",
+      "session": 14,
+      "context": "Droop's pathetic backstory",
+      "category": "epic"
+    },
+    {
+      "text": "We killed him by the skin of his teeth.",
+      "speaker": "Valrex",
+      "session": 14,
+      "context": "Remembering Glasstaff's near-escape",
+      "category": "epic"
+    },
+    {
+      "text": "That removes the knife at Phandalin's throat.",
+      "speaker": "GM",
+      "session": 14,
+      "context": "Hearing about Glasstaff's death",
+      "category": "epic"
+    },
+    {
+      "text": "I rolled a natural one. I've never seen that before in my life.",
+      "speaker": "Semaj",
+      "session": 14,
+      "context": "Failing to recognize the Lion Shield symbol",
+      "category": "epic"
+    }
+  ]
+}

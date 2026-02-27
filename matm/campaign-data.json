@@ -1,0 +1,821 @@
+{
+  "guild": {
+    "id": "1004050819454337085",
+    "name": "The Game Masters Guild",
+    "iconUrl": "https://cdn.discordapp.com/icons/1004050819454337085/f53c8ef2c2ef3cb2ce2e0e8224cabb8a.png"
+  },
+  "channel": {
+    "id": "1213586755249508423",
+    "type": "GuildTextChat",
+    "category": "Mage Against The Machine",
+    "name": "📰â”‚recaps",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "messages": [
+    {
+      "id": "1269779430096764969",
+      "type": "Default",
+      "timestamp": "2024-08-04T22:10:07.496+00:00",
+      "timestampEdited": "2024-08-04T22:12:57.04+00:00",
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Session One: \nYou all found yourselves in the bustling city of Neverwinter, where your paths first crossed at the Driftwood Tavern by the wharf. It's the year 1491, and fate—or perhaps something more—has brought you together.\n\nFive hundred years ago, the Phandelver Pact united gnomes, dwarves, and human spellcasters in creating the Forge of Spells within Wave Echo Cave. This mine, filled with magical ores, was a beacon of prosperity until it was destroyed by marauding orcs. The once-thriving town of Phandalin was left in ruins, and the location of Wave Echo Cave became a mystery lost to time.\n\nYour journey began with a crucial meeting with Gundren Rockseeker, a determined dwarf, and his companion, Sildar Hallwinter, a seasoned sellsword. They tasked you with gathering supplies in Neverwinter and transporting them to Barthens Provisions in Phandalin. Gundren hinted at even more lucrative opportunities awaiting you there.\n\nStarting with Brandy's Brewery, you met Brandy and her towering half-orc sister, Grogula, and picked up two kegs of strong ale. Ekran, after tasting some of Brandy's new alcohol she was making, you couldn't resist purchasing some bottles of the special brew she called 'Brandy.'\n\nNext, you visited Patty's General Store, where the nervous halfling owner informed you about a rat infestation in the storehouse where Gundren's supplies were kept. Despite Patty's reluctance to tell you what the problem was at first, you agreed to help clear out the rats.\n\nIn the dimly lit storehouse, you faced multiple swarms of rats. Beldan, you demonstrated your strength on the front lines with your Warhammer, though you struggled when your foot got stuck in a crack. Kaelia, your fire magic lit up the storehouse and torched the rat swarms effectively. Semaj, your Magic Missile and precise crossbow shots took down the rats with meticulous targeting. Ekran, you executed adept sneak attacks and provided crucial assistance to Beldan.\n\nAfter a chaotic yet victorious battle, Kaelia extinguished the flames, plunging the storehouse back into darkness. With the last rat defeated, you all stood victorious, ready to continue your journey to gather the rest of the supplies in Neverwinter.",
+      "author": {
+        "id": "238485647034155011",
+        "name": "tr3m0r45",
+        "discriminator": "0000",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/238485647034155011/11c180ca4334c4bcdc1a2e9b090a3410.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "1270203477318045696",
+      "type": "18",
+      "timestamp": "2024-08-06T02:15:08.232+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Mage Against The Machine: A Novel",
+      "author": {
+        "id": "227913590139518976",
+        "name": "hybridxer0",
+        "discriminator": "0000",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/227913590139518976/dd156c2c6a12601887126e81cf80c005.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": [],
+      "reference": {
+        "messageId": null,
+        "channelId": "1270203477318045696",
+        "guildId": "1004050819454337085"
+      }
+    },
+    {
+      "id": "1271492494332268637",
+      "type": "Default",
+      "timestamp": "2024-08-09T15:37:13.837+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "**Mage Against The Machine: Campaign One, Session One**\n**Transcription Summary: **\n\nThe session kicks off with Alex, the game master, welcoming the players to the campaign \"Mage Against the Machine.\" He gives a brief backstory of the campaign, introducing the Phandelver Pact, a historical alliance between gnomes, dwarves, and human spellcasters that created the legendary Forge of Spells. The players find themselves in the city of Neverwinter in 1491, where they gather at the Driftwood Tavern. After a night's rest, they meet Gundren Rockseeker and Sildar Hallwinter, who encourage them to introduce their characters. The first character introduced is Semaj, an astral elf from a wealthy and noble background, accustomed to a life of luxury.\n\nAs the group continues to introduce their characters, Semaj, an astral elf with a noble but tarnished background, seeks to restore his family's name through adventure. Kaelia, a half-elf with fiery, glowing hair, struggles to control her phoenix sorcery and hopes to bring harmony between her dual heritage. Beldan, a dwarf raised by hill giants, stands out with his unusually short hair and beard, which causes tension with other dwarves. Ekran, a human who appears clean-cut and practical, is driven by the prospect of riches in a tomb, leading him to join the group. After introductions, Gundren tasks the party with gathering supplies in Neverwinter for delivery to Phandalin, offering payment and hinting at further opportunities for wealth. The group prepares to undertake the mission, with some members displaying playful antics, such as manipulating flames or examining maps humorously.\n\nAs the party continues their discussion, Gundren provides further instructions for gathering supplies in Neverwinter, emphasizing the need to remain cautious due to potential dangers such as highwaymen and goblins. The group is given a shopping list and a signed note from Gundren to facilitate their purchases. After some playful banter and misunderstandings, particularly regarding the use of a map, the party decides to head to the bakery first to begin collecting the necessary supplies. They discuss the best approach, ultimately deciding to stick together rather than split up, with Ekran taking the lead on the shopping task. The session captures the group's dynamic, combining humor with their mission-focused planning.\n\nThe group prepares to embark on their mission to gather supplies, with some final instructions from Gundren and a brief interaction with a barmaid who shows them to the stables. The party humorously debates their approach, with some light-hearted teasing and misunderstandings about maps and logistics. As they set off with the wagon and oxen, Beldan struggles briefly with handling the animals, leading to a moment where Semaj shows off his agility. The group arrives at Brandy's Brewery, where they are greeted by the cheerful halfling Brandy and her towering half-orc sister, Grogala, who helps them load two large barrels of ale onto the wagon. The contrast between the sisters amuses the group as they continue their task.",
+      "author": {
+        "id": "227913590139518976",
+        "name": "hybridxer0",
+        "discriminator": "0000",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/227913590139518976/dd156c2c6a12601887126e81cf80c005.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "1271492541430370497",
+      "type": "Default",
+      "timestamp": "2024-08-09T15:37:25.066+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "The group continues their interactions at Brandy's Brewery, where they secure the kegs of ale for their journey. As the half-orc sister, Grogala, loads the kegs onto the wagon, her heavy-handedness startles the oxen, causing Beldan to briefly lose control and tumble backward. Inside, Semaj discreetly attempts to gather more information from Brandy, who reveals concerns about recent bandit activity along the road to Phandalin. Ekran, intrigued by Brandy's new homemade liquor, \"Brandy,\" decides to purchase a bottle, while Kaelia grows increasingly impatient, her agitation subtly affecting the nearby flames. The team prepares to continue their supply-gathering mission.\n\nThe group continues their journey, with Ekran purchasing a bottle of Brandy's special brew, while Semaj slyly steals some bacon to feed the oxen, gaining their favor. Kaelia becomes increasingly irritated by the group's slow progress, and her agitation subtly influences the nearby flames. Beldan struggles comically to maneuver the oxen, taking an unnecessarily long time to turn the cart around. As they proceed through the city, the group encounters various vendors, with Kaelia stopping to purchase some food since she skipped breakfast. They eventually arrive at Patty's General Store, ready to continue their supply-gathering mission.\n\nAs the group continues their journey, Kaelia purchases some chicken on a stick from a street vendor, tipping the old man with a missing tooth. Semaj attempts to steal one of Kaelia's chicken sticks but does so clumsily, prompting Kaelia's frustration to manifest through her sorcery, causing nearby flames to flare up. Inside Patty's General Store, Kaelia inspects the tools, drawing on her background as a blacksmith's daughter, while Ekran inquires about Gundren's order and indulges in some dice shopping. Beldan enters the store, surprising Kaelia, who then steps outside as Semaj seizes the opportunity to take control of the cart. The group continues to interact with the halfling shopkeeper as they gather supplies for their journey.\n\nThe party, after finishing their purchases at Patty's General Store, is guided by the nervous shopkeeper to a storehouse where Gundren's supplies are stored. Suspicion grows as Ekran and Beldan notice the shopkeeper's increasing anxiety, prompting Beldan to attempt to intimidate him into revealing more. Despite their efforts, the shopkeeper insists on staying outside while they retrieve the supplies, heightening the group's distrust. As Ekran moves to open the storehouse, Kaelia and Semaj position themselves to further pressure the shopkeeper, who is visibly rattled, hinting at something more sinister possibly awaiting them inside.",
+      "author": {
+        "id": "227913590139518976",
+        "name": "hybridxer0",
+        "discriminator": "0000",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/227913590139518976/dd156c2c6a12601887126e81cf80c005.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "1271492659164479630",
+      "type": "Default",
+      "timestamp": "2024-08-09T15:37:53.136+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "The party confronts the nervous shopkeeper, Patty, who eventually admits that his storehouse is overrun with rats after he unsuccessfully attempted to get rid of them. Despite his initial reluctance, Patty confesses his fear and requests the group's help in dealing with the infestation. Kaelia, displaying confidence and focus, takes the key from Ekran, opens the storehouse, and immediately lights all the torches inside using her fire magic, revealing the chaotic state of the storeroom. The party prepares to handle the rat problem, with Kaelia taking the lead, while the rest of the group gears up for what lies ahead.\n\nSemaj initially stays with the cart, trying to ensure the supplies are safe, while the rest of the group prepares to deal with the rats inside the storehouse. Patty, the shopkeeper, nervously closes the doors behind the group, not wanting the public to see the rat infestation. Inside, the group begins to hear the unsettling sounds of rats and prepares for combat. Beldan climbs onto some crates to get a better view, spotting a swarm of rats emerging from one of the boxes. As the group gets ready to engage the rats, Semaj decides to intimidate Patty, threatening him if anything goes wrong with the cart or the supplies while he is inside dealing with the rats.\n\nSemaj intimidates Patty into staying with the cart, successfully making him even more nervous. Semaj then enters the storehouse where the rest of the party is preparing to fight a swarm of rats. Kaelia activates her \"Mantle of Flame,\" illuminating the area with a fiery aura. She then attacks the swarm of rats with a firebolt, incinerating several of them and drawing the attention of the remaining rats. Meanwhile, the rest of the party members ready themselves for the battle against the rats, with Beldan positioning himself to jump into the fray if necessary.\n\nAs the battle against the rat swarms intensifies, another swarm emerges from a barrel and charges toward Kaelia. However, before they reach her, Beldan leaps down from a box to attack the rats but ends up with his foot stuck in the floorboards, although he still manages to deal significant damage to the rats. Meanwhile, more rat swarms appear and begin advancing on the group. Ekran attempts to help free Beldan's foot but is unsuccessful. Semaj uses his \"Starlight Step\" to teleport onto a crate and then casts \"Magic Missile,\" targeting two different rat swarms with precision. The group is now fully engaged in combat, fending off the swarming rats in the dimly lit storehouse.",
+      "author": {
+        "id": "227913590139518976",
+        "name": "hybridxer0",
+        "discriminator": "0000",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/227913590139518976/dd156c2c6a12601887126e81cf80c005.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "1271492706413318217",
+      "type": "Default",
+      "timestamp": "2024-08-09T15:38:04.401+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Semaj teleports to the top of the crates to get a better view of the battle and casts Magic Missile, striking two different rat swarms with precise hits. Beldan, still stuck in the floorboards, attempts to attack the rats but ends up accidentally dropping his war hammer. Kaelia moves onto a box to get a better position and casts Firebolt at a rat swarm, almost completely incinerating it, leaving only one rat alive. The rat swarms continue their attacks, but they fail to land any hits on the adventurers, who manage to dodge and block their assaults effectively.\n\nEkran attempts to attack the rat swarm near Beldan but misses, while Semaj targets the rats attacking Kaelia with Toll the Dead, though the rats resist the spell. Beldan successfully frees his foot from the floorboards, retrieves his warhammer, and moves back to his original position, avoiding attacks from the rats. Kaelia heals herself with Healing Word and then casts Burning Hands, incinerating many of the rats around her, though the flames also cause the surrounding wooden boxes to catch fire. Despite the damage, a few rats from the swarm remain.\n\nKaelia, after healing herself, casts Burning Hands on a rat swarm, incinerating many of them while also setting parts of the warehouse on fire. As she moves to a safer position, the remaining rats bite her, but they are burned by her Mantle of Flame. Ekran attempts to attack another rat swarm but misses, while Semaj successfully kills the last rat with a precise crossbow shot. Beldan, still surrounded by rats, attacks with his warhammer, managing to hit only a few. Kaelia then casts Firebolt at the remaining rats in the swarm she had previously attacked, successfully hitting them.\n\nKaelia finishes off the remaining rats with a well-aimed Firebolt, ensuring that Beldan is safe from further attacks. Meanwhile, Ekran and the others continue to fend off the remaining swarms, with some of the rats falling through the floorboards, reducing their numbers. The party manages to reduce the rat swarms significantly, and Kaelia's magic proves to be highly effective in dealing with the pests. Despite the chaos, the team works together to eliminate the remaining threats, with only a few rats left to handle.\n\nIn this game session, the group dealt with a rat infestation in a warehouse. Kaelia used her fire magic, while the others fought with weapons and spells, successfully eliminating nearly all the rats, although some fell through the cracks in the floor. In the end, Ekran killed the last remaining rat, and Kaelia extinguished the flames that had been ignited during the battle. The session concluded with the promise of continuing the adventure in the future.",
+      "author": {
+        "id": "227913590139518976",
+        "name": "hybridxer0",
+        "discriminator": "0000",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/227913590139518976/dd156c2c6a12601887126e81cf80c005.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "1286355241100382360",
+      "type": "Default",
+      "timestamp": "2024-09-19T15:56:28.803+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Session 2:\nThe session begins with a recap of the previous events, where the party gathered supplies in Neverwinter and fought off swarms of rats in a storehouse. The current session picks up immediately after that battle, with the characters still in the dimly lit storehouse.\n\nAs they exit the storehouse, they hear a commotion and discover that boars have escaped from a nearby pen. The party engages in combat with the rampaging boars, with Kaelia using fire magic, Ekran getting knocked unconscious, and Beldan delivering the final blow. During the fight, they protect townsfolk and work together to subdue the boars.\n\nAfter the battle, the party visits the bloody butcher shop to collect supplies for their journey. The butcher, Periwinkle, rewards them with additional meats and a healing potion for their help. They then proceed to Milhouse's bakery, where they meet an eccentric gnome baker who uses magic in his baking. Milhouse provides them with their ordered supplies and some magical cookies.\n\nThe party inquires about their destination, Phandalin, and learns about key locations like the Stonehill Inn and Edermath's Orchard. They also get information about a magic shop called Eldren's Enchantments in Neverwinter.\n\nFinally, the group returns to the Driftwood Tavern, stables their wagon and oxen, and retires to their room. The session ends with plans for the characters to do some shopping in Neverwinter before departing for Phandalin in the next session.",
+      "author": {
+        "id": "238485647034155011",
+        "name": "tr3m0r45",
+        "discriminator": "0000",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/238485647034155011/11c180ca4334c4bcdc1a2e9b090a3410.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "1302786327242211380",
+      "type": "Default",
+      "timestamp": "2024-11-04T00:07:45.014+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Mage Against the Machine: The Journey Continues\n\nThe aftermath of the rat battle left the party standing amidst a ruined storeroom, the gnawed-through crates a testament to their recent struggle. Exhausted but victorious, they gathered their breath, checking themselves and their gear in the dim light. The room was eerily quiet now, a stark contrast to the frenzied chaos of only moments before.\n\nKailea wiped a bit of soot from her cheek, still feeling the strain of having cast several spells in rapid succession. She frowned, noting the sliver of health left in her, her body aching from rat bites and the exhaustion of overexerting her magic. \"Am I the only one hanging on by a thread here?\" she grumbled.\n\nBeldan, the group's sturdy warrior, grunted, flexing his arm. \"Better than falling on your face because of a floorboard,\" he muttered, clearly still embarrassed by his earlier mishap in the fight. His pride was bruised, but his warhammer had done some damage regardless.\n\nEkran, their rogue, glanced down at the scratches and bite marks crisscrossing his skin. \"Think these things carry rabies?\" he quipped, only half-joking as he examined his wounds. \"Could really use a rabies potion about now.\"\n\nSimaj, their arcane tactician, was busy fiddling with his crossbow, his eyes narrowed in frustration. \"Blasted thing missed one shot. One shot!\" He muttered under his breath as he reloaded it with precision, clearly still focused on improving his weapon's reliability for the next fight.\n\nThe silence of the storeroom lingered for a moment longer, before the group stirred back into action. The crates and barrels, though mostly destroyed, still held some undamaged goods. Semaj walked carefully along the edges of the room, his sharp eyes searching for any remaining signs of danger.\n\nEkran spoke up from near a set of damaged supplies, his voice carrying a note of concern. \"Think the rats got into everything, or did we save some of the good stuff?\" He nudged a few crates with his boot, peering inside with cautious curiosity.\n\nAfter a brief investigation, the group determined that while the rats had chewed through much of the food, most of the essential supplies remained intact. Semaj approached a door near the back of the room, eyeing it suspiciously. \"Let's see if this door's hiding any surprises,\" he muttered before inspecting it for traps.",
+      "author": {
+        "id": "227913590139518976",
+        "name": "hybridxer0",
+        "discriminator": "0000",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/227913590139518976/dd156c2c6a12601887126e81cf80c005.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "1302786367260201030",
+      "type": "Default",
+      "timestamp": "2024-11-04T00:07:54.555+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "The door appeared to be secured from the outside, as if someone had tried to keep something—or someone—inside. Ekran leaned in, narrowing his eyes at the door. \"Someone wanted to keep something in here, huh? Or maybe out.\"\n\nKailea, regaining some of her energy, decided to investigate as well, muttering a quick incantation to check for any traces of magic, but nothing came up. She sighed, still weary from the fight. \"Well, no ghosts here. At least not yet.\"\n\nIn the middle of their inspection, Simaj turned his attention to Kailea, who was clearly still hurting from the fight. Without much fanfare, he cast Healing Word in her direction, smirking slightly as he said, \"You look like crap.\"\n\nKailea felt the warmth of the spell wash over her, healing her wounds. She smirked back. \"And now I look...less like crap. Thanks.\"\n\nEkran, still worried about his scratches, piped up. \"Hey, while you're healing people, got anything to prevent rat infections? Not really looking to start foaming at the mouth here.\"\n\nBeldan chuckled, rolling his eyes as he rummaged through what remained of the storeroom. \"You're paranoid, you know that?\"\n\nThe conversation was interrupted by a loud thud, followed by a startled yelp from behind the door. It burst open, revealing Paddy, the halfling shopkeeper, who had been eavesdropping on the battle. His face flushed with embarrassment, and he tumbled into the room, stammering incoherently.\n\nBefore the others could react, Simaj grabbed Paddy by the tunic, hoisting him onto a nearby crate. \"Stay put, and no more sneaking around,\" Simaj growled, eyes narrowed. Paddy, still shaking, nodded fervently, his feet dangling from the crate.\n\nEkran wasted no time stepping forward, a sly grin on his face. \"You know, Paddy,\" he began, \"saving your store from a rat infestation isn't exactly an easy job. Seems like the kind of work that deserves some payment, don't you think?\"\n\nPaddy's eyes widened, his hands shaking as he fumbled through his pockets. With trembling fingers, he produced a small sack of coins, offering it to Ekran with a shaky smile. \"Here...five gold. That's...that's all I can offer.\"",
+      "author": {
+        "id": "227913590139518976",
+        "name": "hybridxer0",
+        "discriminator": "0000",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/227913590139518976/dd156c2c6a12601887126e81cf80c005.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "1302786398171959368",
+      "type": "Default",
+      "timestamp": "2024-11-04T00:08:01.925+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Ekran raised an eyebrow, unimpressed. \"Five? That's hardly enough for the trouble we went through.\"\n\nSemaj, ever the opportunist, chimed in. \"Maybe we revive the rats and let them run loose again? You know, give you something to remember us by.\"\n\nPaddy's face turned pale as he scrambled to offer more. \"N-no! Please, take this! An additional twenty gold, for each of you!\" he pleaded, shoving another pouch of coins into Ekran's hands.\n\nSatisfied with the new deal, the group accepted the payment, leaving Paddy visibly shaken. Kailea stepped forward, her voice calm but firm. \"Gold's nice, but information could be more valuable. What else can you tell us that might help on our journey?\"\n\nPaddy stammered, unsure of what to say. He was still clearly rattled by the ordeal. \"I...I don't know! What do you want to know?\"\n\nEkran rolled his eyes, leaning on his shortbow. \"Why so nervous, Paddy? You hiding something?\"\n\nSemaj, his curiosity piqued, tried reading the halfling's behavior. His insight revealed nothing out of the ordinary—Paddy was just a naturally anxious type, dealing with an unfortunate infestation.\n\nSatisfied that there wasn't any deeper secret to uncover, Semaj changed the subject. \"We need the supplies for Gundren's mission. Where are they?\"\n\nPaddy, eager to be helpful and avoid further confrontation, immediately began gathering the supplies—lanterns, shovels, pickaxes, and barrels of oil. With the goods gathered, he piled everything near the door, out of breath from the effort.\n\nAs he placed the last of the supplies by the door, Paddy pleaded one last time. \"Please...don't tell anyone about the rats. My reputation—\"\n\nEkran cut him off with a grin. \"Maybe. For the right price.\"\n\nSemaj, checking through the supplies to ensure everything was accounted for, threw a quick glance at Paddy. \"You got anything else to offer?\"",
+      "author": {
+        "id": "227913590139518976",
+        "name": "hybridxer0",
+        "discriminator": "0000",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/227913590139518976/dd156c2c6a12601887126e81cf80c005.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "1302786422394327122",
+      "type": "Default",
+      "timestamp": "2024-11-04T00:08:07.7+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "With a resigned sigh, Paddy opened a nearby crate and pulled out an intricately designed flute, etched with carvings of rats. \"This...I don't know how to play it, but it might be valuable.\"\n\nKailea took one look at the flute and couldn't help but laugh. \"A flute...covered in rats? You're not doing yourself any favors, Paddy.\"\n\nDespite the irony, they accepted the flute, and with everything accounted for, they loaded the supplies onto the cart. Paddy seemed eager to see them leave, clearly still frazzled by the encounter.\n\nWith their supplies in tow, they turned their attention to the next leg of their journey. But before they could depart, they had to prepare the cart. Semaj handled the oxen, skillfully guiding them into position and loading their gear with precision.\n\nAs they made their way toward the town square, Kailea, still struggling with some lingering exhaustion, sighed as she climbed onto the cart. \"Can't we take a break after all this? We've been through a lot today.\"\n\nThe journey through the city streets was uneventful, as they navigated toward the butcher and bakery to finish gathering the remaining supplies for their mission. They discussed their next moves, planning out what they needed to purchase before heading to Phandalin.\n\nTheir next stop was Periwinkle's shop, the Bloody Butcher. As they entered the small, dimly lit establishment, the scent of fresh meat filled the air. Periwinkle, a tiefling butcher with blood-streaked hands and a cleaver at his side, greeted them warmly. \"What can I do for you fine adventurers?\"",
+      "author": {
+        "id": "227913590139518976",
+        "name": "hybridxer0",
+        "discriminator": "0000",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/227913590139518976/dd156c2c6a12601887126e81cf80c005.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "1302786449225023521",
+      "type": "Default",
+      "timestamp": "2024-11-04T00:08:14.097+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Ekran stepped forward, producing the list for Gundren's supplies. \"We're here for Gundren's order.\"\n\nPeriwinkle nodded, bustling around the shop as he prepared the salted pork for their journey. \"I've got it all ready for you, but tell me—what's Gundren up to these days?\" His curiosity was evident, but Ekran deflected with a joke. \"New diet, probably.\"\n\nBefore they could gather the supplies, however, chaos erupted outside. The sound of panicked townsfolk echoed through the square as Periwinkle cursed under his breath. \"The boars...they've escaped!\"\n\nWithout hesitation, the party rushed outside, bracing themselves for another battle.",
+      "author": {
+        "id": "227913590139518976",
+        "name": "hybridxer0",
+        "discriminator": "0000",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/227913590139518976/dd156c2c6a12601887126e81cf80c005.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "1302786537192161280",
+      "type": "Default",
+      "timestamp": "2024-11-04T00:08:35.07+00:00",
+      "timestampEdited": "2024-11-04T00:09:58.847+00:00",
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "**Mage Against the Machine: The Boar Battle and Beyond**\n\nAs the adventurers burst out of Periwinkle's shop, the town square was in disarray. Panicked shouts and the sound of heavy hooves clashing against the cobblestones filled the air. Four wild boars, massive and enraged, were tearing through the square, charging at terrified townsfolk.\n\nKailea, still seated on the cart, quickly assessed the situation. \"I guess the butcher's in trouble now. No point trying to calm these down,\" she muttered. Raising her hands, she cast Firebolt, the familiar sensation of flame surging through her fingertips. A bolt of fire shot from her hand, striking one of the boars across its flank. The creature squealed in pain, its hide singed but still very much a threat.\n\nEkran was next. Springing from the butcher's door with bow in hand, he nocked an arrow and loosed it, targeting the same boar Kailea had struck. The arrow flew true, embedding itself deep in the beast's side. The boar stumbled and crashed into the ground, sliding to a halt, lifeless.\n\nOne down.\n\nBut the battle was far from over. Another boar—larger, angrier, and seemingly more determined—charged directly at a hapless civilian, goring the poor soul with its tusks. The commoner screamed in agony before collapsing in a heap. A second boar charged, tusks gleaming, straight at Ekran. He barely had time to react before the beast slammed into him with full force. The blow knocked him to the ground, the breath ripped from his lungs as pain shot through his body. Blood seeped from the gash in his side, and the rogue's vision began to blur.\n\n\"Ekran's down!\" Kailea shouted.\n\nBeldan, not one to waste time, hefted his warhammer and charged forward. With a powerful swing, he struck the second boar on the side, the impact cracking ribs and sending the beast reeling. Despite the injury, the boar wasn't finished yet. Beldan scowled, tightening his grip on his hammer, ready for another strike.\n\nMeanwhile, Semaj took a different approach. Standing back from the fray, he lifted his hand and summoned radiant energy, casting Sacred Flame down upon the wounded boar. The creature squealed as the holy fire engulfed it, burning with purifying light. It collapsed in a heap, its rampage finally over.\n\nPeriwinkle, ever the nervous wreck, ran up to the nearest boar carcass, still brandishing his cleavers. He hacked at the dead beast frantically, as if making sure it wouldn't rise again. \"You're not getting up, not on my watch!\" he cried, though the creature was already quite dead. His panicked actions were met with a mixture of amusement and exasperation from the group.\n\nFrom her position on the cart, Kailea spotted another boar still charging through the square. Focusing her magic once more, she hurled another Firebolt, this time striking the boar cleanly across its back. The flames scorched its hide, and the creature faltered, but it remained on its feet, driven by primal fury.\n\nAs the chaos unfolded around them, Ekran lay on the ground, barely clinging to life. His vision swam as his body fought to stay conscious. In his mind, he knew he had to do something—anything—but darkness loomed closer. He made a weak attempt to reach for his weapon, but his strength failed him. His body lay still as his mind began to fade into the abyss.",
+      "author": {
+        "id": "227913590139518976",
+        "name": "hybridxer0",
+        "discriminator": "0000",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/227913590139518976/dd156c2c6a12601887126e81cf80c005.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "1302786571577200681",
+      "type": "Default",
+      "timestamp": "2024-11-04T00:08:43.268+00:00",
+      "timestampEdited": "2024-11-04T00:09:49.318+00:00",
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "**Ekren's Fate Hangs in the Balance**\n\nThe party scrambled to deal with the remaining threats, but their companion lay dying in the dust. Samaj, his spells spent, dashed toward Ekran. But without magic to heal him, there was little he could do immediately. Samaj knelt beside his fallen comrade, preparing to administer what little first aid he could when the moment was right.\n\nBut the boars weren't done yet. One of the last remaining beasts charged at another innocent bystander. The unfortunate commoner had no time to react as the boar's tusks struck, sending them sprawling, unconscious and bleeding.\n\nBeldan, now fueled by frustration, rushed toward the final standing boar. His warhammer at the ready, he took another mighty swing, aiming to bring the beast down for good. The hammer connected, sending a shockwave through the boar's body as bones snapped under the force. The beast squealed in agony before crumpling to the ground, lifeless.\n\nAt last, the square was quiet. The danger had passed.\n\nKailea, seeing that the immediate threat was gone, hurried to Ekran's side. With quick precision, she placed her hands on his chest and cast Spare the Dying. The spell stabilized him, though he remained unconscious, his breathing now shallow but steady. \"You're not dying on us, rogue,\" she muttered, patting his cheek lightly before standing.",
+      "author": {
+        "id": "227913590139518976",
+        "name": "hybridxer0",
+        "discriminator": "0000",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/227913590139518976/dd156c2c6a12601887126e81cf80c005.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "1302786594792538162",
+      "type": "Default",
+      "timestamp": "2024-11-04T00:08:48.803+00:00",
+      "timestampEdited": "2024-11-04T00:09:42.146+00:00",
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "**Tending to the Wounded**\n\nWith the battle over, the group turned their attention to the injured townsfolk. Samaj, though drained, did what he could to offer aid to the nearest civilian. But his medical skills fell short, and the situation grew worse for the bleeding commoner. \"darn it, I'm not cut out for this,\" he growled, searching for someone more qualified to help.\n\nKailea quickly took over, her healing magic still potent. She cast her spell, stabilizing the injured townsfolk with ease. \"I've got it,\" she said simply, her tone calm and focused as she moved from one person to the next.\n\nPeriwinkle, now calmer but still anxious, started hauling the boar carcasses back to his shop. Kailea, ever practical, grabbed one of the beasts to help. With the townsfolk tending to their own wounded and the butcher focused on his work, the party took a moment to breathe.\n\n\"I could use a drink,\" Ekran muttered groggily as he came to, his head pounding from the pain. Kailea smirked and handed him her flask. \"Don't drink it all. We've still got a bakery to visit.\"",
+      "author": {
+        "id": "227913590139518976",
+        "name": "hybridxer0",
+        "discriminator": "0000",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/227913590139518976/dd156c2c6a12601887126e81cf80c005.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "1302786623909662743",
+      "type": "Default",
+      "timestamp": "2024-11-04T00:08:55.745+00:00",
+      "timestampEdited": "2024-11-04T00:09:33.885+00:00",
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "**At Millhouse's Bakery**\n\nAfter regrouping, healing up, and loading the cart with the butcher's supplies, the adventurers made their way to the next stop on their errand list: Millhouse's Bakery. The sweet scent of freshly baked bread and pastries wafted toward them as they approached. The bakery was quaint, with a large sign shaped like a cookie hanging out front.\n\nInside, they were greeted by Millhouse, a gnome with a long beard that nearly touched the floor. His spectacles perched on his nose, he beamed as they entered. \"Ah, adventurers! Welcome, welcome! You simply must try one of my famous cookies!\"\n\nThe gnome waved his hand, and a tray of cookies magically appeared, seemingly out of nowhere. He offered the tray with a flourish. \"I used to dabble in spells, you know. Now I dabble in sugar and spice.\"\n\nKailea eyed the tray cautiously but grabbed one of the cookies. The sweet smell was too tempting to resist. \"So... what's the trick here? Are these enchanted too?\"\n\nMillhouse chuckled, clearly delighted by the question. \"Oh, why yes! A touch of magic to make the crust crisp and the crumb fluffy. Nothing too grand, mind you, but it does make a difference!\"\n\nSimaj, ever the curious mage, inspected the loaves of bread lining the shelves. \"Magic bread, huh?\" He muttered a few words under his breath and cast an investigation spell. Sure enough, he could sense faint traces of magic woven into the very dough.\n\nMillhouse grinned, noticing Simaj's intrigue. \"You've got a sharp eye for the arcane, I see. Each loaf is baked with care and just a hint of enchantment.\"\n\nSimaj raised an eyebrow. \"Just a hint, eh? No plans to animate the bread, I hope.\"\n\nThe gnome's eyes twinkled with mischief. \"Oh, I could...but I won't. Not unless you want a walking loaf of bread chasing you down the street.\"\n\nEkran groaned from the back, still recovering from the boar battle. \"Please, no more running. I'm done for the day.\"",
+      "author": {
+        "id": "227913590139518976",
+        "name": "hybridxer0",
+        "discriminator": "0000",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/227913590139518976/dd156c2c6a12601887126e81cf80c005.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "1302786650371395646",
+      "type": "Default",
+      "timestamp": "2024-11-04T00:09:02.054+00:00",
+      "timestampEdited": "2024-11-04T00:09:25.535+00:00",
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "**Finishing Their Errands**\n\nMillhouse led them to the back of the bakery, where several sacks of flour and other goods were packed up and ready to go. \"Gundren's order is all set, with a few extra treats for the road,\" he said, handing a small bag of cookies to Simaj. \"And don't forget, if you ever need more sustenance for your adventures, you're always welcome here!\"\n\nSimaj, with a wave of his hand and a quick mutter of \"bibbidi-bobbidi-boop,\" directed the floating sacks of flour toward the cart, courtesy of Millhouse's magical assistance. They loaded the supplies with ease, thanking the gnome for his hospitality.\n\nAs they prepared to leave, Simaj asked, \"Anything you can tell us about Phandalin? That's where we're headed.\"\n\nMillhouse stroked his long beard thoughtfully. \"Phandalin, hmm? It's been years since I've been there. A quiet little town, though it's seen its share of trouble. Keep your wits about you. There's the Stonehill Inn for lodging, and if you're in need of gossip or equipment, look for Edermath, the blacksmith.\"\n\nWith that bit of advice, the adventurers thanked Millhouse once more and departed, their cart loaded with provisions and their minds set on the journey ahead.",
+      "author": {
+        "id": "227913590139518976",
+        "name": "hybridxer0",
+        "discriminator": "0000",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/227913590139518976/dd156c2c6a12601887126e81cf80c005.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "1302786687243517965",
+      "type": "Default",
+      "timestamp": "2024-11-04T00:09:10.845+00:00",
+      "timestampEdited": "2024-11-04T00:09:19.58+00:00",
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "**The Road to Phandalin**\n\nAs they made their way back to the tavern for a much-needed rest, they reflected on the day's events. The rat infestation, the rampaging boars, and the enchanted bread—they'd seen it all. With their supplies gathered and their wounds mostly healed, they were ready for the road ahead.\n\nThe sun began to set as they stabled their oxen and secured the cart. The Citrus Wood Tavern, warm and inviting, welcomed them back. The familiar chatter of patrons and the clink of mugs created a cozy atmosphere as they settled in for the night.\n\nTheir room awaited, and so did the next chapter of their adventure. Phandalin beckoned, but first, a night of rest and preparation. Tomorrow, their journey would continue.\n\nThe party exchanged knowing glances, each one understanding that while today had been chaotic, the real adventure was only just beginning.",
+      "author": {
+        "id": "227913590139518976",
+        "name": "hybridxer0",
+        "discriminator": "0000",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/227913590139518976/dd156c2c6a12601887126e81cf80c005.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "1337152628429160488",
+      "type": "Default",
+      "timestamp": "2025-02-06T20:07:09.712+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Session 3",
+      "author": {
+        "id": "227913590139518976",
+        "name": "hybridxer0",
+        "discriminator": "0000",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/227913590139518976/dd156c2c6a12601887126e81cf80c005.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "1337152748080336978",
+      "type": "Default",
+      "timestamp": "2025-02-06T20:07:38.239+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "**Aftermath of the Last Battle**\nThe session picks up in a dimly lit storehouse immediately following a battle against swarms of rats. As the party exits, they hear a commotion and discover that boars have escaped from a nearby pen. A battle ensues, during which Kaelia uses fire magic, Ekran is knocked unconscious, and Beldan delivers the final blow. The party protects the townsfolk and successfully subdues the boars.\n\nAfterward, they visit the Bloody Butcher Shop, where the butcher, Periwinkle, rewards them with extra meat and a healing potion. They then proceed to Millhouse's Bakery, where they meet an eccentric gnome baker who infuses magic into his pastries. He provides their ordered supplies along with some magical cookies.\n\nThe party inquires about Phandalin, their next destination, and learns about key locations such as Stonehill Inn and Edermath's Orchard. They also hear of a magic shop, Eldren's Enchantments, in Neverwinter. Returning to the Driftwood Tavern, they stable their oxen and wagon before retiring to their rooms for the night.",
+      "author": {
+        "id": "227913590139518976",
+        "name": "hybridxer0",
+        "discriminator": "0000",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/227913590139518976/dd156c2c6a12601887126e81cf80c005.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "1337153843103928484",
+      "type": "Default",
+      "timestamp": "2025-02-06T20:11:59.313+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "**Reflections and Downtime**\nGathered around a fire in their suite, the party reflects on the day's events. Ekran sits back, shuffling cards and contemplating the journey ahead. Kaelia, having narrowly avoided death, realizes her vulnerability and considers acquiring better equipment. Beldan, while cleaning his hammer, thinks about his embarrassing moment when his foot got stuck during the boar fight. Semaj, inspecting his worn armor, ponders the decline of his family's status and the need for better protection.\n\nEkran finds a pan flute among his belongings and casually plays a few notes, surprising himself with his sudden proficiency. The group is taken aback by his unexpected skill. Meanwhile, Semaj, intrigued by his newfound wand, tests it on Beldan and Kaelia, attempting to make them smile by magic. Both resist its effects, and the group humorously experiments with the wand, discovering its quirky nature.\n\nBefore resting, the party divides sleeping arrangements. Kaelia wins the master suite in a game of chance, while the others settle into bunks. They take a long rest, regaining their strength for the journey ahead.",
+      "author": {
+        "id": "227913590139518976",
+        "name": "hybridxer0",
+        "discriminator": "0000",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/227913590139518976/dd156c2c6a12601887126e81cf80c005.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "1337153984007508030",
+      "type": "Default",
+      "timestamp": "2025-02-06T20:12:32.907+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "**Departing Neverwinter and Journey to Phandalin**\nIn the morning, the party wakes to the smell of breakfast and gathers in the tavern. The innkeeper, grateful for their help with the boars, provides a free meal. Kaelia stores some bread and cheese for the road, while Beldan eagerly devours his meal. The group discusses their plans for the day, deciding to make a few final purchases before leaving Neverwinter.\n\nAt the marketplace, Kaelia looks for healing supplies but finds potions too expensive. Instead, Semaj purchases a healer's kit. Beldan inquires about better armor, but discovers it is far beyond his budget. Meanwhile, Ekran returns to the tavern and hustles a few patrons in a dice game, earning some extra gold.\n\nWith preparations complete, the party sets off on the High Road toward Phandalin. The path is well-traveled, with guards and merchants passing by. As the city fades into the distance, the sounds of civilization give way to the creaking of the wagon and the rustling of the forest. The journey is peaceful, and during a midday break, Semaj engages Beldan in conversation, learning about his past being raised by giants. In turn, Semaj shares his story of a noble family fallen into disgrace. Ekran, though quiet, overhears their exchange.",
+      "author": {
+        "id": "227913590139518976",
+        "name": "hybridxer0",
+        "discriminator": "0000",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/227913590139518976/dd156c2c6a12601887126e81cf80c005.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "1337154121723019304",
+      "type": "Default",
+      "timestamp": "2025-02-06T20:13:05.741+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "**Setting Up Camp and the Fire Wolf**\nAfter a full day of travel, the party reaches the halfway point to Phandalin. They spot a bridge spanning a river and a dark cave entrance nearby. Concerned about potential dangers, they decide to scout the cave before settling down. Inside, they discover scattered animal carcasses and large canine footprints mixed with smaller goblin tracks. Ekran, recognizing the signs of goblins and wolves, warns the group against staying inside. They decide to set up camp near the river instead.\n\nAs night falls, Semaj takes the first watch, with Kaelia remaining semi-conscious due to her elven trance. A few hours later, distant wolf howls pierce the silence. As the howls grow closer, Semaj wakes the others. Kaelia, using Control Flames, reshapes the campfire into the form of a fiery wolf, making it prowl around the campsite in an intimidating display.\n\nThe party arms themselves, and Ekran takes position in a tree with his bow, preparing for potential threats.",
+      "author": {
+        "id": "227913590139518976",
+        "name": "hybridxer0",
+        "discriminator": "0000",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/227913590139518976/dd156c2c6a12601887126e81cf80c005.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "1337154212815175760",
+      "type": "Default",
+      "timestamp": "2025-02-06T20:13:27.459+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "**The Wolf Standoff and Goblin Ambush**\nThe party remains tense as the pack of wolves approaches, their eyes reflecting the flickering firelight. The fire wolf, animated by Kaelia's magic, prowls around the camp in a protective stance. The alpha wolf, uncertain of the strange fiery entity before it, hesitates. Semaj, sensing the need for control, locks eyes with the alpha and holds its gaze. With a steady, authoritative stance, he conveys a silent message of dominance. The alpha, after a long moment of study, lowers its posture slightly, signaling to the pack to relax. The younger wolves sit back, seemingly entranced by the glowing fire wolf. Eventually, the pack retreats into a nearby cave, leaving the party unharmed.\n\nWith the immediate threat avoided, the party resumes their watch rotations. Kaelia remains awake to maintain the fire wolf, knowing it will fade if she rests too long. As the hours pass, the night quiets. Beldan takes the next watch but struggles to stay fully awake, dozing off for brief moments before snapping back to attention.\n\nJust as things seem to settle, Semaj discovers tracks near the road—goblin footprints leading into the thicket on both sides of the path. Realizing the potential for an ambush, he signals the others, using silent hand gestures to alert them.",
+      "author": {
+        "id": "227913590139518976",
+        "name": "hybridxer0",
+        "discriminator": "0000",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/227913590139518976/dd156c2c6a12601887126e81cf80c005.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "1337154310277959751",
+      "type": "Default",
+      "timestamp": "2025-02-06T20:13:50.696+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "**The Goblin Attack**\nAs dawn approaches, the party cautiously investigates the surroundings. Ekran, climbing a tree for a better vantage point, spots movement near a pair of dead horses on the road. The corpses emit a strong stench, and as Beldan approaches, an arrow suddenly flies from the bushes, barely missing him.\n\nEkran, already prepared, looses an arrow in response. It strikes true, piercing the attacking goblin's skull, killing it instantly. However, more goblins lurk in the shadows. Another goblin emerges, aiming at Beldan. Semaj, having readied a spell, unleashes frostbite, coating the goblin's limbs in ice.\n\nThe fight intensifies as goblins fire from hidden positions. Kaelia, standing by the cart, readies a firebolt, waiting for a clear target. Ekran and Beldan advance cautiously, keeping low to avoid incoming arrows. The goblins attempt to retreat into the undergrowth, but Ekran's elevated position allows him to spot their movements.\n\nAs the session closes, the last remaining goblin flees into the forest, disappearing from view. The party, though victorious, remains wary, knowing their enemies could regroup. The session ends with the party standing over the fallen goblins, uncertain of what awaits them further down the road.",
+      "author": {
+        "id": "227913590139518976",
+        "name": "hybridxer0",
+        "discriminator": "0000",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/227913590139518976/dd156c2c6a12601887126e81cf80c005.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "1355264596528726358",
+      "type": "Default",
+      "timestamp": "2025-03-28T19:37:39.411+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Going to be launching the podcast",
+      "author": {
+        "id": "227913590139518976",
+        "name": "hybridxer0",
+        "discriminator": "0000",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/227913590139518976/dd156c2c6a12601887126e81cf80c005.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "1355264600085495909",
+      "type": "Default",
+      "timestamp": "2025-03-28T19:37:40.259+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "LOL",
+      "author": {
+        "id": "227913590139518976",
+        "name": "hybridxer0",
+        "discriminator": "0000",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/227913590139518976/dd156c2c6a12601887126e81cf80c005.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "1355264922400985248",
+      "type": "Default",
+      "timestamp": "2025-03-28T19:38:57.105+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "lol",
+      "author": {
+        "id": "227913590139518976",
+        "name": "hybridxer0",
+        "discriminator": "0000",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/227913590139518976/dd156c2c6a12601887126e81cf80c005.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "1355264923797688624",
+      "type": "Default",
+      "timestamp": "2025-03-28T19:38:57.438+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "It's a work in progress",
+      "author": {
+        "id": "227913590139518976",
+        "name": "hybridxer0",
+        "discriminator": "0000",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/227913590139518976/dd156c2c6a12601887126e81cf80c005.png"
+      },
+      "attachments": [
+        {
+          "id": "1355264923441299701",
+          "url": "https://cdn.discordapp.com/attachments/1213586755249508423/1355264923441299701/Fire_and_Dice_A_MATM_Podcast_-_C01E01.wav?ex=695ac1d1&is=69597051&hm=44a76f6ca3332a56999c407b570d31f0627d5924570338b9df4abc5dfde5cad4&",
+          "fileName": "Fire_and_Dice_A_MATM_Podcast_-_C01E01.wav",
+          "fileSizeBytes": 154054476
+        }
+      ],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "1355264923894026271",
+      "type": "Default",
+      "timestamp": "2025-03-28T19:38:57.461+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "GG @hybridxer0, you just advanced to level 13!",
+      "author": {
+        "id": "1257106973162344519",
+        "name": "Game Master",
+        "discriminator": "6066",
+        "isBot": true,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/1257106973162344519/522a56eea92d3a9c5277c7b89044a5ab.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": [
+        {
+          "id": "227913590139518976",
+          "name": "hybridxer0",
+          "discriminator": 0,
+          "nickname": "Richard / Semaj / Korrin",
+          "isBot": false
+        }
+      ]
+    },
+    {
+      "id": "1361209013014106183",
+      "type": "Default",
+      "timestamp": "2025-04-14T05:18:38.743+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Session 4 Recap:\n\nLast time, you began by taking a short rest at the goblin ambush site near the dead horses. You tended wounds, caught your breath, and checked the goblin corpses for gear. After some discussion, you decided to hide the cart off the road while Semaji calmed the oxen with some leftover bacon.  You all decide to scout ahead together, wary of being ambushed again or risking your mission. \n\nYou followed a narrow, root-choked goblin trail deeper into the woods. At a small stream, Beldan skillfully leapt across the rocks, while Ekran slipped and fell into the water with a splash. Kaelia expressed her discomfort at crossing water—prompting Beldan to carry her across on his back. Eventually, everyone made it across, though not without soaked boots and some teasing. Once accross, Kaelia used Prestidigitation to dry Ekran off in a whimsical flourish.\n\nFarther up the trail, Beldan climbed a fallen tree to scout ahead and spotted a cave entrance in the distance—partially hidden by terrain, with a small stream flowing from it. On your way there, Kaelia triggered a snare trap and was hoisted ten feet into the air by her ankle. With quick thinking, Semajj tied off a rope, cut the trap line, and lowered her gently to the ground. Then Beldan narrowly avoided a crude pit trap before carrying Kaelia over a second stream crossing.\n\nAfter regrouping, you were ambushed once again—this time by goblins hidden in the brush. An arrow struck Beldan hard, and you entered initiative. Kaelia, attempting to retaliate, accidentally Firebolted Semaj in the back before healing Beldan with Healing Word. Ekran and Semajj took cover behind trees, readying ranged spells and attacks.\n\nBeldan climbed a tree to get a better view, but goblin arrows continued to rain down, and he took several hits despite the cover. Ekran's well-placed shots wounded the goblins, while Semaj's Sacred Flame incinerated one who had revealed himself. Kaelia activated her Mantle of Flame, surrounding herself in radiant fire and launching more firebolts into the fray—though one missed and ignited a nearby tree.\n\nEventually, Beldan made a daring leap from his perch into the stream, waded through goblin-infested brush, and was dropped to 0 HP by a final arrow. Kaelia rushed to his aid, casting Healing Word and reviving him just in time. Simaj joined in with another healing spell, and Ekran held his position to protect the group.\n\nJust then, a goblin boss revealed himself. Ekran and Semaj's readied attacks triggered instantly—Ekran's arrow pierced the goblin's throat while Semaj's Frostbite weakened it further. Still, the boss lashed out at Beldan with his scimitar. After taking a hit, Beldan used Second Wind to recover, standing his ground.\n\nAs the goblin boss tried to flee into the cave, Ekran fired one final shot, killing the creature mid-run and sending his body tumbling into the stream. With the threat finally neutralized, the group watched as the corpses of the last goblins floated gently downstream.\n\nAnd with that... you leveled up to level 2.",
+      "author": {
+        "id": "238485647034155011",
+        "name": "tr3m0r45",
+        "discriminator": "0000",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/238485647034155011/11c180ca4334c4bcdc1a2e9b090a3410.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "1370925247649288254",
+      "type": "Default",
+      "timestamp": "2025-05-11T00:47:29.599+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Session 5 Recap:\nWe picked up right outside the goblin cave, fresh off the heels of the second goblin ambush victory.  The previous session started off by taking a short rest, looting the goblins, and Semaj calmed the oxen with leftover bacon while you stashed the cart. You followed the goblin trail to a stream, where Ekran slipped into the water (again), Kaelia got carried across like royalty, and Beldan did a pretty graceful tree-scouting maneuver.\n\nThings got tense when Kaelia triggered a snare trap, but Semaj lowered her down safely. Beldan dodged a crude pit trap, and then bam — another goblin ambush. Beldan tanked a few arrows, Kaelia accidentally firebolted Semaj (who still healed her later), and Ekran rained pain from the trees. Semaj dropped Sacred Flames, Kaelia ignited a tree, and Beldan ended up unconscious in the stream before a quick healing word pulled him back.\n\nThen came the goblin boss. Ekran and Semaj lit him up with coordinated attacks — arrow to the throat, frostbite to the face — while Beldan stood tall and took some big hits. The boss tried to flee into the cave, but Ekran finished the job with a clean arrow to the back.\n\nThat fight earned you level 2. \n\nNow that you have the recap from the previous previous session. Session 5 starts off Inside the cave, you found three chained wolves, and while they started aggressive, Semaj pulled off an incredible animal handling roll and tamed the smallest one. You named him, fed him goblin meat (gross), and turned him into the party's very good boy. Beldan tried to bond with the others — they weren't as receptive. Still, nobody got eaten. Victory.\n\nThen came the flood trap — twice, in fact. Goblins triggered the dam system and sent water surging down the tunnels. Kaelia got swept both times (sorceress vs. water, not a great matchup). You lost a lantern but kept your footing otherwise. Prestidigitation got a workout.\n\nThe deeper you pushed, the more goblin chatter you heard. You reached a wooden bridge, scouted tunnels, and then encountered... KLARG, the bugbear boss.\n\nSemaj, you starlight-stepped up the stairs solo and launched a Chromatic Orb — and missed. You got surrounded fast. Klarg brought a massive morningstar, goblins flanked you, and you hit the ground hard. Thankfully, Kylia healed you (and insulted your appearance, if I recall).\n\nBeldan smashed his way up the stairs and Gallagher'd a goblin into goo. Ekran, finally with line of sight, started doing rogue things with daggers and sneak attacks. Meanwhile, the wolf ran straight for Klarg and, with a natural 20, ripped his throat out. Incredible. That wolf has done more damage than half of you.\n\nThe last remaining goblins panicked. One tried to flee — Kaelia firebolted it in the back of the head as it screamed \"I'm out!\" Another tried to climb a natural chimney but ran face-first into Beldan.\n\nSemaj woke up just in time to see your wolf buddy bathing in bugbear blood. Poetic.\n\nYou ended the session standing over Klarg's mangled body, wounded but victorious, and very much in need of a long rest.",
+      "author": {
+        "id": "238485647034155011",
+        "name": "tr3m0r45",
+        "discriminator": "0000",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/238485647034155011/11c180ca4334c4bcdc1a2e9b090a3410.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "1385737818868944896",
+      "type": "Default",
+      "timestamp": "2025-06-20T21:47:21.782+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Session 6 Recap:\nAfter breaching deeper into the goblin den, you came upon the tail end of a brutal skirmish. The goblin defenders were faltering. One by one, they fell beneath your blades—Ekran's rapier claiming a fleeing goblin's head with chilling precision, Larry tearing into a goblin boss with feral vengeance, and Beldan's crossbow bolt silencing another in mid-scream.\n\nIt was a near-flawless sweep—until the final goblin boss, Yeemic, made his move. Grabbing a weakened and shackled human prisoner—none other than Sildar Hallwinter, the man who gave you lodging in Neverwinter—he placed a blade to the man's throat and issued a threat laced with malice.\n\nYou closed in. Some of you prepared to strike; others paused, uncertain. But it was Beldan who stepped forward, speaking Yeemic's tongue, and offered a challenge that stunned the room: a duel. One-on-one. Honor-bound. No fire. No magic. Steel and fists only.\n\nYeemic accepted—with one twisted condition: if he won, you would support his bid to overthrow Klarg, the bugbear chieftain ruling this hideout. If Beldan won, Yeemic would release the prisoners and walk away alive.\n\nTension crackled in the air. Swords were sheathed. Bows lowered. And so began the duel.\n\nWhat followed was a brutal, cinematic slugfest. Yeemic punched first, Beldan struck next—twice—bringing the goblin boss low with crushing hammer blows. He even called upon the might of the Hill Giants, his hammer cracking ribs and sending Yeemic sprawling to the ground. But Yeemic fought with the desperation of a cornered beast, retaliating with vicious slashes from his scimitar.\n\nAnd then—just when it seemed Beldan had the upper hand—a slip. A critical miss. Beldan's momentum betrayed him, sending him crashing to the stone. Yeemic struck. Beldan rallied, knocked Yeemic prone again, and the chamber rang with the sounds of heavy breathing and blood-dripping steel.\n\nAround them, your party stood tense. Ekran, after missing a surprise shot that nearly unraveled everything, watched in stunned silence. Kaileastood ready to heal. Semaj held himself back, resisting the urge to intervene.\n\nBut the dice were cruel. Despite a second wind and a heroic effort, Beldan's hammer slipped from his grasp. He retrieved it—only to miss again. Yeemic pressed the advantage. Blow by blow, he chipped away at the dwarf's resolve.\n\nAnd finally\"¦ Beldan fell.\n\nThe chamber fell silent once more.\n\nSildar still breathes—barely. Another prisoner, a chained half-elf, remains captive. Yeemic is grievously wounded, standing only by sheer spite and cracked pride.\n\nThe duel is over—but the story is far from it.",
+      "author": {
+        "id": "238485647034155011",
+        "name": "tr3m0r45",
+        "discriminator": "0000",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/238485647034155011/11c180ca4334c4bcdc1a2e9b090a3410.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "1398460001248608336",
+      "type": "Default",
+      "timestamp": "2025-07-26T00:20:46.428+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Session 7: \n\nLast session, we picked up right at the climax of an honor duel between Beldan and the goblin boss Yeemic. The terms were set—if Beldan won, the prisoners would be freed; if Yeemic prevailed, he would lead a coup against the bugbear Klarg with our party's support.\n\nThe duel was brutal—hammers clashed, blood spilled, and even the gods seemed to hold their breath. Beldan fought valiantly but was ultimately struck down, slipping just as victory was in reach. Yeemic stood victorious\"¦ but just barely, held together by sheer spite and bruised pride.\n\nWhat came next? Chaos. Semaj opened fire, violating the terms of the duel. Ekran and Kailea followed suit, and Yeemic was brought down in a flurry of arrows and divine flame. As he fell, face-to-face with Beldan, he spat a final insult: \"Cowards!\"\n\nFrom there, the party freed Sildar Hallwinter—battered, but grateful. Another prisoner, Valrex, was introduced, a noble-looking elf with a mysterious air and scars both visible and otherwise. After sharing healing potions and harsh words about goblins, the party learned more from Sildar: Gundren Rockseeker had been taken to someone—or something—known only as the Black Spider, who now holds a map to the legendary Wave Echo Cave, said to contain the powerful Forge of Spells.\n\nSemaj, haunted by whispers in the night, recalled the ancient and terrifying name Ruxithid—a psychic tyrant from beyond the world. Whatever its connection is to the Black Spider remains unknown\"¦ but disturbing.\n\nThe party took a long rest in the cave, burned the goblin bodies (in style, with Kailea's fiery theatrics), and set out the next morning. But the cave wasn't quite done with them.\n\nJust as they were exiting, Semaj stumbled into a giant poisonous snake. A surprise combat broke out, with Beldan nearly succumbing to the venom. But our MVP—Larry the wolf—ripped the snake's head clean off like a furry vengeance machine. Good boy, Larry. Good boy.\n\nAfter harvesting the snake's skin, the party rejoined their cart and oxen, heading back down the Triboar Trail toward Phandalin, each lost in their own thoughts. Semaj remained eerily quiet. Beldan brooded over the lost duel. Kailea contemplated the strange name whispered in the wind. And Ekran\"¦ probably thought about stabbing something.",
+      "author": {
+        "id": "238485647034155011",
+        "name": "tr3m0r45",
+        "discriminator": "0000",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/238485647034155011/11c180ca4334c4bcdc1a2e9b090a3410.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "1401003732526956647",
+      "type": "Default",
+      "timestamp": "2025-08-02T00:48:39.225+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Session 8:\n\nLast session picked up as you emerged from the Cragmaw Cave, battered, bloodied, and maybe just a little more traumatized than when you went in. But you weren't alone anymore—Sildar Hallwinter was rescued, bruised but breathing. And along with him, you gained a new companion: Valrex, a scarred and sardonic elf who seemed surprisingly unfazed by goblins, flaming spells, or impulsive wolves.\n\nWith the goblin hideout behind you (and maybe a few goblin bodies on fire thanks to Kaelia's flair for the dramatic), you headed back to the Triboar Trail. The road to Phandalin was heavy with questions: What is the Black Spider? Where is Gundren Rockseeker? And what in the Nine Hells is Ruxithid, the name Semaj heard whispered in the night?\n\nTensions ran high. Beldan brooded over his recent duel with Yeemik—a duel he lost, just barely. But there was some bonding too: Kaelia quietly observed her teammates, flames flickering between her fingers. Valrex took it all in with a chuckle and zero concern. Semaj, for once, said very little. Something about that name—Ruxithid—had rattled him.\n\nArriving in Phandalin, you discovered a town under quiet siege. People smiled too politely. Doors were shut too quickly. And no one seemed to say the name Redbrand above a whisper. You delivered Gundren's cart to Barthen's Provisions, where you learned his brothers, Tharden and Nundro, were also missing—last seen somewhere in the Sword Mountains. The only real clue? Someone—or something—called the Black Spider wanted them silenced.\n\nMeanwhile, the Redbrands had taken control of Phandalin. Brutes in red cloaks swaggering through town, shaking down merchants, making people disappear. Sounded like a problem.\n\nSo, naturally, you made it your problem.\n\nAfter a warm meal and cold ale at the Stonehill Inn, and a heartfelt farewell from Ekren, who left to pursue his own mission, the rest of you went looking for trouble.\n\nYou found it on the front porch of the Sleeping Giant Tap House—four Redbrand thugs who didn't take kindly to your presence. They drew steel. Beldan, freshly drunk, leapt into action and immediately smashed one man's skull in with a warhammer from the top step. Kaelia lit another on fire. Semaj launched arcane missiles. Valrex smote one with divine radiance. Larry—Larry did what Larry does best: bite first, ask never.\n\nThe thugs started to fall—but not before one ran inside, yelling for backup.\n\nAnd that's where we left off.",
+      "author": {
+        "id": "238485647034155011",
+        "name": "tr3m0r45",
+        "discriminator": "0000",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/238485647034155011/11c180ca4334c4bcdc1a2e9b090a3410.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "1431816072180269178",
+      "type": "Default",
+      "timestamp": "2025-10-26T01:25:53.464+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Session 9: \n\nThe flickering torchlight dances across the porch of the Sleeping Giant Tap House. A breeze carries with it the acrid scent of fire, blood, and sweat — a grim reminder of what you endured just hours ago.\n\nLast time, you charged headlong into the Redbrands' den, ready to deliver justice, vengeance, or chaos — depending on who you ask. What began as a simple plan to lure out a few thugs turned into an all-out street war.\n\nBeldan, in true Drunken Master form, was everywhere at once — weaving, ducking, smashing skulls like kegs at a dwarven wedding. His warhammer sang through the air, striking with both fury and precision. But even the strongest have their limits. In the final moments, as the last Redbrand staggered, bleeding and broken, he struck a savage blow across Beldan's throat, then drove his blade into his gut — a final act of vengeance before death claimed him.\n\nSemaj, ever the astral tactician, ducked and weaved through the chaos. With spells flying and death closing in, he blinked from danger and unleashed radiant destruction. His magic missiles chased down a fleeing Redbrand with cold precision, dropping him mid-scream in the dirt.\n\nKaelia tapped deeper into the Phoenix within, unleashing burning hands that charred flesh from bone and forced another Redbrand to flee — aflame and howling into the night. Though her spell slots were nearly spent, her presence on the battlefield was unmistakable — radiant, terrifying, unforgettable.\n\nAnd Valrex, battered, bloodied, brought low — again and again he rose. From the brink of death, he stood, cast Toll the Dead, and caused a Redbrand's skull to rupture with necrotic force. Then, fueled by divine rage, he brought his warhammer down on the final foe, crushing the last Redbrand's smirking face into the stone wall with one brutal swing.\n\nWith the dust settled and blood soaking into the cobblestones, the party regrouped. Beldan was stabilized, unconscious but alive — just barely. You dragged the bodies into a pile, looted them for supplies, and caught your breath after what was arguably your most intense combat yet.\n\nAnd with the battle behind you... you leveled up.\n\nLevel 3 has been achieved.",
+      "author": {
+        "id": "238485647034155011",
+        "name": "tr3m0r45",
+        "discriminator": "0000",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/238485647034155011/11c180ca4334c4bcdc1a2e9b090a3410.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "1444545732240605236",
+      "type": "Default",
+      "timestamp": "2025-11-30T04:29:00.928+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Session 10:\n\nWhen we last left our heroes, you stood in the settling haze of battle outside the Sleeping Giant Taphouse, surrounded by the cooling corpses of ten dead Redbrands. Blood was still dripping into the dirt. The townsfolk watched you from shuttered windows, too afraid to speak, too stunned to look away.\n\nBeldan had been cut down in the fight — throat nearly slit, gut stabbed, and only barely stabilized and the rest of you were exhausted, bruised, and soaked in the sweat and smoke of the encounter.\n\nAnd then, out of the eastern dust of the road, came a truly unexpected figure.  Aster — an eight-foot-tall, starbound Giff druid wrapped in robes, muskets, vines, and the faint smell of ozone. Semaj immediately recognized the astral heritage, greeted him in Celestial, and the two shared a rare, plane-touched moment of mutual understanding. The rest of you simply tried to process the fact that a giant hippo-man had just walked into your campaign.\n\nYou all made your introductions, and inside the taphouse, Grista welcomed you with the rough affection only a dwarven barkeep can manage. She offered drinks on the house, the first of many, and Kaelia quietly cleaned the entire porch of blood with a flick of Prestidigitation, which earned her an immediate second drink for the trouble.\n\nOver tankards and candlelight, Grista finally told you the truth. The Redbrands had been terrorizing Phandalin for months. They killed the woodcarver, Thel Dendrar, in the street. Took his wife and children, and the townmaster, Harbin Wester, had been cowering in his manor ever since.\n\nShe told you of their leader, a wizard calling himself Glasstaff, and of their hideout beneath the ruined shell of Trezendar Manor.\n\nAnd while Kaelia stepped outside to burn every single Redbrand corpse into ash, one body at a time, over four straight hours, ValRex sat vigil on the porch, meditating in the flickering glow, fury simmering in silence.\n\nThat night you rested. And in the morning came perhaps the greatest crime of the campaign so far. You gaslit Beldan into believing Aster wasn't real.\n\nEvery one of you rolled absurdly high on your deception. Aster played along. Larry even joined in. And you broke Beldan's mind for a solid minute until Kaelia finally cracked and the entire table exploded into laughter.\n\nAfter breakfast, or what was left of it, after Aster ate half the table, you decided to rally the townsfolk. Aster's attempt to knock on doors terrified the villagers further, so Semaj took to the town square, delivering a speech from atop an apple crate.\n\nAnd for a moment\"¦ silence. Until an older elf stepped forward, silver hair, Tymora's symbol glinting on his clasp: Darren Edermath, retired adventurer. He pledged his sword to your cause.\n\nThen a halfling boy, trembling but brave, revealed a secret. He had seen Redbrands slipping into a hidden tunnel behind the manor. A concealed entrance in the hillside.\n\nWith Daeron at your side, you crossed the town, found the crevice, and slipped into the tight, winding tunnel beneath Trezendar Manor.\n\nInside, the cavern opened. A crevasse. Two bridges. The scent of rot thick in the air. And then something brushed Semaj's mind. Not a thought, not a voice, but claws. Psychic claws, scraping at the edges of memory, trying to peel back secrets.\n\nSemaj resisted. He recognized the signature. A Nothic, a twisted aberration cursed with mind-ripping insight. It spoke to him directly, its whispers curling into his thoughts, tasting his magic, his pain, his past. Semaj warned it once. The creature laughed.\n\nThen from the shadows, its single green eye flared open, and with a hiss of necrotic power it unleashed its Rotting Gaze. Semaj held firm. And all of you rolled initiative.\n\nYou stand now in the crypt-dark heart of the Redbrand hideout, the Nothic crouched on the far side of the chasm, its gaze fixed on you with hungry anticipation.\n\nAnd that, my friends\"¦ is where we begin today.",
+      "author": {
+        "id": "238485647034155011",
+        "name": "tr3m0r45",
+        "discriminator": "0000",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/238485647034155011/11c180ca4334c4bcdc1a2e9b090a3410.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "1447376577867288800",
+      "type": "Default",
+      "timestamp": "2025-12-07T23:57:47.12+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Session 11: \n\nWe started off with the group deep in the Redbrand Hideout, standing at the edge of that eerie crevasse with a nothic lurking in the shadows. It opened the battle by trying to rot Semaj from the inside out with its sickening gaze—but Semaj shrugged it off, completely negating the creature's necrotic magic. Beldan moves up toward the wall, readying an attack with his warhammer. ValRex then pushes forward decisively, summoning his Spiritual Weapon to manifest beside the Nothic and slash in it back. Semaj immediately responded with the tolling of a spectral bell, the sound echoing through the chamber so loudly that it alerted the Bugbears down the eastern corridor, effectively waking up half the dungeon. That moment lit the fuse.\n\nAs the Bugbears began charging toward you, Semaj hurled a perfectly placed Chromatic Orb of acid that not only obliterated the first Bugbear outright, but rebounded into a second, melting into its armor and flesh in a burst of sizzling energy. That set the tone for the rest of the encounter.\n\nAster, in full dumb-himbo-hippo magnificence, heard the footsteps of approaching enemies and immediately sprinted toward the sound. Three Redbrands were barreling toward him, swords drawn—only to be met with a high-pressure \"water bullet\" that shattered ribs and nearly blasted one back down the hallway. Darren rushed up beside him, loosing crossbow bolts into the staggering Redbrands while the rest of the party formed a defensive wall behind ValRex, who remained locked in combat with a Bugbear. Between his armor and Shield of Faith, almost every strike against him simply bounced off.\n\nBeldan, empowered by Kaelia's Dragon's Breath spell, became a mobile flamethrower. With every exhale he incinerated anything standing in front of him. The back corridors filled with scorched stone, drifting ash, and the smell of burning fur. Meanwhile, Kaelia's Sorcerous Bursts provided relentless cover fire, each projectile slamming into Redbrand after Redbrand, often igniting them where they stood.\n\nSemaj's Scorching Rays stitched through the battlefield, threading between ValRex and Beldan and picking off enemies at range. One Redbrand managed to push through the chaos long enough to drop Darren to the floor, but Semaj immediately revived him with Healing Word, hauling him back from the brink before the enemies could finish him off.\n\nThe battlefield was chaos—Aster smashing Redbrands with his Shillelagh, Kaelia burning through targets one after another, Beldan reducing entire enemies to ash with a single gout of flame, ValRex dueling a Bugbear in what became a kind of tragic comedy. The Bugbear kept swinging and missing. ValRex dropped his Warhammer, pulled out his mace, chased down his weapon, taunted the Bugbear, and still somehow remained untouchable the entire time. At one point he yelled, \"You didn't hit crap, fool!\" which was an accurate assessment of the Bugbear's performance.\n\nRedbrands fell one by one. Some were crushed, some were burned, some were melted, and at least one had his face rearranged by Aster's staff. When Kaelia vaporized the final Redbrand near Aster, he shouted back that she had stolen his kill, which only added to the absurd energy of the scene.\n\nEventually only the final Bugbear remained. And Beldan handled that the same way he handled everything else that session—with fire. He opened his mouth, exhaled another swirling cone of flame, and when his vision cleared, nothing remained of the creature at all. It was simply gone.",
+      "author": {
+        "id": "238485647034155011",
+        "name": "tr3m0r45",
+        "discriminator": "0000",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/238485647034155011/11c180ca4334c4bcdc1a2e9b090a3410.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "1457190319257944281",
+      "type": "Default",
+      "timestamp": "2026-01-04T01:54:05.398+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Last session in Mage Against the Machine, you pushed deeper beneath the ruins of Tresendar Manor, leaving the echoes of earlier fights behind as you entered a vast cavern split by a freezing crevasse. Bones littered the depths below, crude bridges stretched across the gap, and something cold and necrotic lingered in the air. You identified traps, spotted mangled goblin remains, and Valrex braved the descent to recover a hidden chest—claiming Talon, the lost blade of Sir Aldith Tresendar, along with gold and potions.\n\nA hidden passage led you into the Redbrands' cellar and cistern, stocked with food, ale, and emergency supplies. Beldan uncovered a waterproof escape satchel—clear proof that someone important planned to flee in a hurry. You considered resting\"¦ just as voices approached.\n\nYou prepared fast.\n\nWhen the door opened, the fight exploded. Beldan grappled a Redbrand with wet traveler's clothes and dragged him into the cistern. Musket fire thundered, acid and fire ricocheted through the room, and enemies fell in rapid succession. One Redbrand was choked out and thrown back into the water by Valrex; another died with his throat snapped open by a makeshift \"whip\" of blood-soaked clothing.\n\nThe room fell silent.\n\nKnowing the hideout wasn't empty, you cleaned the scene, hid the bodies, and rested under watch. Even then, Redbrands came and went nearby—until they knocked. Your deception failed. The door was kicked in—and you were ready again. Spells detonated, bodies were used as weapons, fleeing enemies were cut down before they could raise an alarm, and the threat ended just as quickly as it began.\n\nAfter a full rest, you pressed north and triggered another trap—a collapsing floor over a deep pit. Some crossed with agility, some with magic, some with the now-legendary Traveler's Clothes. Valrex fell hard, cracked ribs and all, but was hauled back up.\n\nBeyond copper doors engraved with a mournful angel, you entered the Tresendar crypts: ancient sarcophagi, skeletal guardians, and oak-carved columns marking a noble lineage centuries old. Samaj recognized the truth—this place long predates the Redbrands.\n\nTwo doors lay ahead.\n\nAnd the dead rose to meet you.\n\nStone sarcophagi lined the chamber, bones littered the floor, and the undead stood guard over what little remained of their legacy. Samaj opened by calling down divine fire, casting Sacred Flame—but the skeleton twisted away. He steadied himself and pressed on.\n\nAster answered with thunder. His musket cracked through the crypt as he invoked his Starry Form, constellations blazing as glowing shots tore through the darkness. The heavens were watching.\n\nKylia ignited in flame. Her Mantle of Flame erupted as she unleashed a Sorcerous Burst, detonating a skeleton from the inside out—ribs and bone scattering across the stone.\n\nBeldan charged next—running up the wall, kicking off stone, and bringing his warhammer down with brutal force. His first strike missed\"¦ then Action Surge followed. One skeleton was obliterated, its shattered armor blasting into another.\n\nThe dead tried to answer back—but Valrex's faith would not allow it. Even as his body locked in place, his spiritual weapon swept in, cleaving one skeleton apart in radiant light. With a final surge of power, Valrex seized the last undead by the skull and smashed it into the stone.\n\nSilence followed.\n\nThree battles won. The crypt secured. And whatever waits deeper below now knows your names.\n\nAnd that's where we begin tonight.",
+      "author": {
+        "id": "238485647034155011",
+        "name": "tr3m0r45",
+        "discriminator": "0000",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/238485647034155011/11c180ca4334c4bcdc1a2e9b090a3410.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    }
+  ],
+  "messageCount": 39
+}

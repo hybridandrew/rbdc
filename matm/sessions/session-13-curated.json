@@ -1,0 +1,226 @@
+{
+  "session_number": 13,
+  "title": "Glasstaff Falls",
+  "date": "January 31, 2026",
+  "summary": "The party rescued Myrna Dendrar and her children from the prison cells, then discovered Glasstaff's wizard workshop. A letter sealed with a black spider revealed Glasstaff's true identity: Iarno Albrek, the Lord's Alliance agent who was supposed to protect Phandalin. A 20-round chase ensued as Glasstaff fled through the hideout, teleporting and casting shields. Kaelia ended it with a Twin-spelled Scorching Ray that punched a hole through his back, igniting him instantly. 'He doesn't even scream. The fire just robs him of his breath before it robs him of his life.' Double dead.",
+  "level_up": false,
+  "duration": "~3.5 hours",
+  "player_attendance": [
+    "Richard (Semaj)",
+    "Jen (Kaelia)",
+    "Sean (Belden)",
+    "Darren (Valrex)",
+    "Alan (Aster)"
+  ],
+  "highlights": {
+    "best_moments": [
+      {
+        "title": "Kaelia Incinerates Glasstaff",
+        "type": "legendary",
+        "description": "After a 20-round chase, Glasstaff was running for his life, teleporting and casting shields. Kaelia's Twin-spelled Scorching Ray caught him\u2014a streak of searing flame punched a hole through his back, igniting him instantly.",
+        "quotes": [
+          {
+            "speaker": "Alex/GM",
+            "text": "A streak of searing flame just tears across the opening, brighter and hotter than the sun. It slams into his back, point blank, punching a hole through his robes, igniting him instantly."
+          },
+          {
+            "speaker": "Alex/GM",
+            "text": "He doesn't even scream. The fire just robs him of his breath before it robs him of his life."
+          },
+          {
+            "speaker": "Alex/GM",
+            "text": "You did a little bit of overkill on him. He's double dead."
+          }
+        ]
+      },
+      {
+        "title": "Glasstaff's True Identity",
+        "type": "plot",
+        "description": "A letter sealed with a black spider symbol revealed that Glasstaff was actually Iarno Albrek\u2014the Lord's Alliance agent Sildar had been searching for. He was supposed to protect Phandalin, not terrorize it.",
+        "quotes": [
+          {
+            "speaker": "Alex/GM",
+            "text": "You hear the name Iarno. And you've heard this before. When you rescued Sildar, he spoke of a fellow agent sent to Phandalin. He was meant to help establish order, but he vanished."
+          },
+          {
+            "speaker": "Alex/GM",
+            "text": "The realization settles in. Iarno was supposed to come here to help protect Phandalin. You now see evidence that he is doing the opposite."
+          }
+        ]
+      },
+      {
+        "title": "Dendrar Family Rescued",
+        "type": "heroic",
+        "description": "The party found Myrna Dendrar and her children in prison cells\u2014the family of the woodcarver the Redbrands murdered. Darren Edermath escorted them back to town.",
+        "quotes": [
+          {
+            "speaker": "Alex/GM",
+            "text": "There's a pair of human women held in a cell to the South. And there's a human boy confined in the cell to the North."
+          },
+          {
+            "speaker": "Alex/GM (Myrna)",
+            "text": "My name is Myrna. Myrna Dendrar. This is my daughter Nilsa. My son\u2014he's in the other cell."
+          }
+        ]
+      },
+      {
+        "title": "The 20-Round Chase",
+        "type": "epic",
+        "description": "Glasstaff ran through the hideout, teleporting, casting shields, and blocking spells. The party pursued for 20 rounds\u201410 searching, 10 chasing.",
+        "quotes": [
+          {
+            "speaker": "Alex/GM",
+            "text": "That was a well-earned kill, because we went through 20 rounds. 10 of them trying to find somebody, and 10 of them running."
+          },
+          {
+            "speaker": "Darren/Valrex",
+            "text": "Dude, when you started using teleport, I said NO."
+          },
+          {
+            "speaker": "Alex/GM",
+            "text": "I thought I was gonna be able to bounce off all those spells and teleport out of there."
+          }
+        ]
+      },
+      {
+        "title": "Staff of Defense Claimed",
+        "type": "loot",
+        "description": "From Glasstaff's ashes, Kaelia claimed the Staff of Defense\u2014a glass staff as strong as oak with 10 charges for Mage Armor and Shield.",
+        "quotes": [
+          {
+            "speaker": "Alex/GM",
+            "text": "Untouched by flame is this glass staff. Delicate stylized feathers etched along the length, arcane sigils worked finely into it."
+          },
+          {
+            "speaker": "Alex/GM",
+            "text": "As you grip it, you can feel the magic settle in. Defensive wards coiled and ready, waiting to be used."
+          },
+          {
+            "speaker": "Richard/Semaj",
+            "text": "Glass Staff."
+          }
+        ]
+      },
+      {
+        "title": "Phoenix Sorcerer Showcase",
+        "type": "appreciation",
+        "description": "The session showcased how powerful Kaelia's Phoenix Sorcerer build had become\u2014Twin-spelled Scorching Ray with Mantle of Flame adding Charisma to each hit.",
+        "quotes": [
+          {
+            "speaker": "Alex/GM",
+            "text": "Twin-spelling a Scorching Ray, hitting six of those things on top of Mantle of Flame. This Phoenix Sorcerer is absolutely badass."
+          },
+          {
+            "speaker": "Jen/Kaelia",
+            "text": "When I hit, I seem to hit pretty hard. When I'm out of spells, I'm a paper cannon."
+          }
+        ]
+      }
+    ],
+    "quotes_of_the_session": [
+      {
+        "speaker": "Alex/GM",
+        "quote": "He doesn't even scream. The fire just robs him of his breath before it robs him of his life.",
+        "context": "Kaelia's killing blow on Glasstaff"
+      },
+      {
+        "speaker": "Alex/GM",
+        "quote": "He's double dead.",
+        "context": "Confirming overkill on Glasstaff"
+      },
+      {
+        "speaker": "Darren/Valrex",
+        "quote": "When you started using teleport, I said NO.",
+        "context": "During the chase"
+      },
+      {
+        "speaker": "Alex/GM",
+        "quote": "This Phoenix Sorcerer is absolutely badass.",
+        "context": "Praising Kaelia's build"
+      },
+      {
+        "speaker": "Richard/Semaj",
+        "quote": "He was supposed to protect Phandalin. Instead he terrorized it.",
+        "context": "Realizing Iarno's betrayal"
+      },
+      {
+        "speaker": "Alex/GM",
+        "quote": "That was a well-earned kill. We went through 20 rounds.",
+        "context": "Post-session appreciation"
+      }
+    ]
+  },
+  "combat_encounters": [
+    {
+      "name": "The Chase for Glasstaff",
+      "enemies": "Glasstaff (Iarno Albrek)",
+      "outcome": "Victory - Glasstaff incinerated",
+      "mvp": "Kaelia",
+      "mvp_reason": "Twin-spelled Scorching Ray crit, punched a hole through him"
+    }
+  ],
+  "loot": [
+    {
+      "item": "Staff of Defense (Glasstaff)",
+      "description": "Glass staff, +1 AC, 10 charges for Mage Armor (1) and Shield (2). Regains 1d6+4 charges at dawn.",
+      "found_by": "Kaelia"
+    },
+    {
+      "item": "Black Spider Letter",
+      "description": "Revealed Glasstaff's true identity and connection to the Black Spider"
+    }
+  ],
+  "character_spotlights": [
+    {
+      "character": "Kaelia",
+      "moment": "Incinerated Glasstaff with Twin-spelled Scorching Ray. Claimed the Staff of Defense. Phoenix Sorcerer showcase.",
+      "one_liner": "The fire robs him of his breath before it robs him of his life."
+    },
+    {
+      "character": "Semaj",
+      "moment": "Found the prisoners, recognized the Tresendar crypts' history, contributed to the chase",
+      "one_liner": "Be well, brother. Get them to safety."
+    },
+    {
+      "character": "Valrex",
+      "moment": "Read the Black Spider letter, made the Iarno connection",
+      "one_liner": "When you started using teleport, I said NO."
+    },
+    {
+      "character": "Aster",
+      "moment": "Still thinking about apples and bacon, galloping hippo during the chase",
+      "one_liner": "Just really liking food."
+    }
+  ],
+  "plot_developments": [
+    "Rescued Myrna Dendrar and her children",
+    "Discovered Glasstaff's true identity: Iarno Albrek",
+    "Confirmed Iarno was supposed to be a Lord's Alliance protector",
+    "Found letter connecting Glasstaff to the Black Spider",
+    "Glasstaff killed by Kaelia",
+    "Staff of Defense claimed",
+    "Redbrand hideout cleared",
+    "Rested in Tresendar Manor ruins"
+  ],
+  "npcs_encountered": [
+    {
+      "name": "Myrna Dendrar",
+      "role": "Rescued prisoner, widow of murdered woodcarver",
+      "notes": "Escorted to safety by Darren Edermath"
+    },
+    {
+      "name": "Nilsa Dendrar",
+      "role": "Myrna's daughter"
+    },
+    {
+      "name": "Glasstaff / Iarno Albrek",
+      "role": "BBEG of Redbrand hideout, traitor Lord's Alliance agent",
+      "notes": "DECEASED - incinerated by Kaelia"
+    }
+  ],
+  "end_state": {
+    "location": "Tresendar Manor ruins (surface)",
+    "party_status": "Victorious, resting after clearing hideout",
+    "next_objective": "Return to Phandalin, report to Sildar about Iarno"
+  }
+}

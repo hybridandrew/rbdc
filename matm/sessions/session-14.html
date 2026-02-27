@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Session 14: Return to Phandalin | Mage Against The Machine</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../nav.css">
+  <link rel="stylesheet" href="../base.css">
+  <style>
+    :root {
+      --bg-dark: #0a0a0f;
+      --bg-card: rgba(20, 16, 28, 0.9);
+      --bg-card-hover: rgba(30, 24, 42, 0.95);
+      --gold: #d4a857;
+      --gold-dim: #a68642;
+      --gold-bright: #ffd700;
+      --purple: #8b5cf6;
+      --purple-dim: #6d4aad;
+      --red: #dc2626;
+      --green: #22c55e;
+      --blue: #3b82f6;
+      --text-primary: #f5f5f4;
+      --text-secondary: rgba(245, 245, 244, 0.7);
+      --text-dim: rgba(245, 245, 244, 0.5);
+      --border-subtle: rgba(212, 168, 87, 0.2);
+      --border-glow: rgba(212, 168, 87, 0.4);
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Crimson Pro', Georgia, serif;
+      background: var(--bg-dark);
+      color: var(--text-primary);
+      min-height: 100vh;
+      line-height: 1.6;
+    }
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: 
+        radial-gradient(ellipse at 20% 20%, rgba(139, 92, 246, 0.1) 0%, transparent 50%),
+        radial-gradient(ellipse at 80% 80%, rgba(212, 168, 87, 0.08) 0%, transparent 50%);
+      pointer-events: none;
+      z-index: -1;
+    }
+    .container { max-width: 1000px; margin: 0 auto; padding: 2rem; padding-top: 100px; }
+    .session-hero { text-align: center; padding: 3rem 0; margin-bottom: 3rem; }
+    .session-number {
+      font-family: 'Cinzel', serif;
+      font-size: 0.9rem;
+      color: var(--gold);
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+    .session-title {
+      font-family: 'Cinzel', serif;
+      font-size: 3rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 1rem;
+      text-shadow: 0 0 40px rgba(212, 168, 87, 0.3);
+    }
+    .session-meta {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+      margin-bottom: 1.5rem;
+    }
+    .meta-item { display: flex; align-items: center; gap: 0.5rem; color: var(--text-secondary); font-size: 0.95rem; }
+    .meta-icon { color: var(--gold-dim); }
+    .level-up-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: linear-gradient(135deg, rgba(34, 197, 94, 0.2), rgba(34, 197, 94, 0.1));
+      border: 1px solid rgba(34, 197, 94, 0.4);
+      color: var(--green);
+      padding: 0.5rem 1rem;
+      border-radius: 2rem;
+      font-family: 'Cinzel', serif;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+    .session-summary {
+      max-width: 700px;
+      margin: 0 auto;
+      color: var(--text-secondary);
+      font-size: 1.1rem;
+      font-style: italic;
+    }
+    .section { margin-bottom: 3rem; }
+    .section-header {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+    .section-icon {
+      width: 32px; height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, var(--gold-dim), var(--gold));
+      border-radius: 8px;
+      color: var(--bg-dark);
+    }
+    .section-title { font-family: 'Cinzel', serif; font-size: 1.5rem; font-weight: 600; color: var(--gold); }
+    .highlights-grid { display: grid; gap: 1.5rem; }
+    .highlight-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 12px;
+      padding: 1.5rem;
+      transition: all 0.3s ease;
+    }
+    .highlight-card:hover { background: var(--bg-card-hover); border-color: var(--border-glow); transform: translateY(-2px); }
+    .highlight-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem; }
+    .highlight-title { font-family: 'Cinzel', serif; font-size: 1.2rem; font-weight: 600; color: var(--text-primary); }
+    .highlight-type {
+      font-size: 0.75rem;
+      padding: 0.25rem 0.75rem;
+      border-radius: 1rem;
+      font-family: 'Cinzel', serif;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .type-funny { background: rgba(251, 191, 36, 0.2); color: #fbbf24; }
+    .type-epic { background: rgba(139, 92, 246, 0.2); color: #a78bfa; }
+    .type-combat { background: rgba(220, 38, 38, 0.2); color: #f87171; }
+    .type-roleplay { background: rgba(59, 130, 246, 0.2); color: #60a5fa; }
+    .type-clever { background: rgba(34, 197, 94, 0.2); color: #4ade80; }
+    .type-cool { background: rgba(6, 182, 212, 0.2); color: #22d3ee; }
+    .type-burn { background: rgba(249, 115, 22, 0.2); color: #fb923c; }
+    .type-dramatic { background: rgba(236, 72, 153, 0.2); color: #f472b6; }
+    .type-meta { background: rgba(100, 100, 100, 0.2); color: #a0a0a0; }
+    .highlight-description { color: var(--text-secondary); margin-bottom: 1rem; font-size: 1rem; }
+    .quote-block {
+      background: rgba(0, 0, 0, 0.3);
+      border-left: 3px solid var(--gold-dim);
+      padding: 1rem 1.25rem;
+      margin: 0.5rem 0;
+      border-radius: 0 8px 8px 0;
+    }
+    .quote-text { color: var(--text-primary); font-style: italic; margin-bottom: 0.5rem; }
+    .quote-speaker { color: var(--gold); font-family: 'Cinzel', serif; font-size: 0.85rem; }
+    .quotes-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.25rem; }
+    .quote-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 12px;
+      padding: 1.25rem;
+      position: relative;
+      transition: all 0.3s ease;
+    }
+    .quote-card:hover { border-color: var(--gold-dim); transform: translateY(-2px); }
+    .quote-card::before {
+      content: '"';
+      position: absolute;
+      top: 0.5rem; left: 1rem;
+      font-size: 3rem;
+      color: var(--gold-dim);
+      opacity: 0.3;
+      font-family: Georgia, serif;
+      line-height: 1;
+    }
+    .quote-card .quote-text { padding-left: 1.5rem; font-size: 1.05rem; }
+    .quote-context { color: var(--text-dim); font-size: 0.85rem; margin-top: 0.75rem; padding-left: 1.5rem; }
+    .spotlight-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.25rem; }
+    .spotlight-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 12px;
+      padding: 1.25rem;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+    .spotlight-card:hover { border-color: var(--purple-dim); background: var(--bg-card-hover); }
+    .spotlight-name { font-family: 'Cinzel', serif; font-size: 1.2rem; font-weight: 600; color: var(--gold); margin-bottom: 0.75rem; }
+    .spotlight-moments { list-style: none; text-align: left; margin-bottom: 1rem; }
+    .spotlight-moments li {
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+      padding: 0.35rem 0;
+      padding-left: 1rem;
+      position: relative;
+    }
+    .spotlight-moments li::before { content: '◆'; position: absolute; left: 0; color: var(--gold-dim); font-size: 0.6rem; }
+    .spotlight-moment {
+      color: var(--text-secondary);
+      margin-bottom: 0.75rem;
+      font-size: 0.95rem;
+    }
+    .spotlight-quote {
+      background: rgba(0, 0, 0, 0.3);
+      padding: 0.75rem;
+      border-radius: 8px;
+      font-style: italic;
+      color: var(--text-primary);
+      font-size: 0.95rem;
+    }
+    .combat-card {
+      background: linear-gradient(135deg, rgba(220, 38, 38, 0.1), rgba(20, 16, 28, 0.9));
+      border: 1px solid rgba(220, 38, 38, 0.3);
+      border-radius: 12px;
+      padding: 1.5rem;
+    }
+    .combat-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; }
+    .combat-name { font-family: 'Cinzel', serif; font-size: 1.3rem; font-weight: 600; color: var(--text-primary); }
+    .combat-outcome {
+      background: rgba(34, 197, 94, 0.2);
+      color: var(--green);
+      padding: 0.25rem 0.75rem;
+      border-radius: 1rem;
+      font-family: 'Cinzel', serif;
+      font-size: 0.8rem;
+      font-weight: 600;
+    }
+    .combat-details { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-bottom: 1rem; }
+    .combat-detail { background: rgba(0, 0, 0, 0.3); padding: 0.75rem; border-radius: 8px; }
+    .combat-detail-label { color: var(--text-dim); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.25rem; }
+    .combat-detail-value { color: var(--text-primary); font-size: 0.95rem; }
+    .combat-events { list-style: none; }
+    .combat-events li {
+      color: var(--text-secondary);
+      padding: 0.5rem 0;
+      padding-left: 1.5rem;
+      position: relative;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+    .combat-events li:last-child { border-bottom: none; }
+    .combat-events li::before { content: '⚔'; position: absolute; left: 0; color: var(--red); }
+    .plot-list { list-style: none; }
+    .plot-list li {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 8px;
+      padding: 1rem 1.25rem;
+      margin-bottom: 0.75rem;
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      transition: all 0.3s ease;
+    }
+    .plot-list li:hover { border-color: var(--purple-dim); }
+    .plot-icon { color: var(--purple); font-size: 1.2rem; margin-top: 0.1rem; }
+    .plot-text { color: var(--text-secondary); flex: 1; }
+    .end-state {
+      background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(20, 16, 28, 0.9));
+      border: 1px solid rgba(139, 92, 246, 0.3);
+      border-radius: 12px;
+      padding: 1.5rem;
+      text-align: center;
+    }
+    .end-state-title {
+      font-family: 'Cinzel', serif;
+      font-size: 1rem;
+      color: var(--purple);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 1rem;
+    }
+    .end-state-content { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1.5rem; }
+    .end-item-label { color: var(--text-dim); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.25rem; }
+    .end-item-value { color: var(--text-primary); font-size: 1.05rem; }
+    .session-nav {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 3rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--border-subtle);
+    }
+    .session-nav a {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-family: 'Cinzel', serif;
+      font-size: 0.9rem;
+      padding: 0.75rem 1.25rem;
+      border: 1px solid var(--border-subtle);
+      border-radius: 8px;
+      transition: all 0.3s ease;
+    }
+    .session-nav a:hover { color: var(--gold); border-color: var(--gold-dim); background: rgba(212, 168, 87, 0.1); }
+    .session-nav a.disabled { opacity: 0.3; pointer-events: none; }
+    @media (max-width: 768px) {
+      .container { padding: 1rem; }
+      .session-title { font-size: 2rem; }
+      .session-meta { gap: 1rem; }
+      .nav-links { display: none; }
+      .quotes-grid, .spotlight-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="session-hero">
+      <div class="session-number">Session XIV</div>
+      <h1 class="session-title">Return to Phandalin</h1>
+      <div class="session-meta">
+        <span class="meta-item">
+          <span class="meta-icon">📅</span>
+          January 31, 2026
+        </span>
+        <span class="meta-item">
+          <span class="meta-icon">⏱</span>
+          ~3 hours
+        </span>
+        <span class="meta-item">
+          <span class="meta-icon">👥</span>
+          4 players
+        </span>
+      </div>
+      
+      <p class="session-summary">After a long rest in the Tresendar Manor ruins, the party returned to Phandalin as heroes. The townsfolk whispered: 'Those are the ones that killed the Redbrands.' They met with Sildar Hallwinter, who confirmed the Black Spider's involvement and pointed them toward Cragmaw Castle to rescue Gundren. A return sweep of the hideout revealed Droop—a pathetic goblin prisoner who provided directions to Cragmaw Castle in exchange for his freedom. The party learned of Reidoth the druid in Thundertree and Qelline Alderleaf's farm. A slower session of information gathering and preparation before the next leg of the adventure.</p>
+    </header>
+    
+    <section class="section">
+      <div class="section-header">
+        <div class="section-icon">💬</div>
+        <h2 class="section-title">Quotes of the Session</h2>
+      </div>
+      <div class="quotes-grid">
+        <div class="quote-card">
+          <p class="quote-text">Those are the ones that killed the Redbrands.</p>
+          <p class="quote-speaker">— Alex/GM</p>
+          <p class="quote-context">Townsfolk recognizing the party</p>
+        </div>
+        <div class="quote-card">
+          <p class="quote-text">Bugbears hurt Droop. Droop was just stuck.</p>
+          <p class="quote-speaker">— Alex/GM (Droop)</p>
+          <p class="quote-context">Droop's pathetic backstory</p>
+        </div>
+        <div class="quote-card">
+          <p class="quote-text">We killed him by the skin of his teeth.</p>
+          <p class="quote-speaker">— Darren/Valrex</p>
+          <p class="quote-context">Remembering Glasstaff's near-escape</p>
+        </div>
+        <div class="quote-card">
+          <p class="quote-text">That removes the knife at Phandalin's throat.</p>
+          <p class="quote-speaker">— Alex/GM (Sildar)</p>
+          <p class="quote-context">Hearing about Glasstaff's death</p>
+        </div>
+        <div class="quote-card">
+          <p class="quote-text">I rolled a natural one. I've never seen that before in my life.</p>
+          <p class="quote-speaker">— Richard/Semaj</p>
+          <p class="quote-context">Failing to recognize the Lion Shield symbol</p>
+        </div></div>
+    </section>
+    
+    <section class="section">
+      <div class="section-header">
+        <div class="section-icon">⭐</div>
+        <h2 class="section-title">Best Moments</h2>
+      </div>
+      <div class="highlights-grid">
+        <div class="highlight-card">
+          <div class="highlight-header">
+            <h3 class="highlight-title">Heroes of Phandalin</h3>
+            <span class="highlight-type type-milestone">Milestone</span>
+          </div>
+          <p class="highlight-description">The party returned to Phandalin and felt the tension ease. Townsfolk stepped out cautiously, whispering recognition: 'Those are the ones that killed the Redbrands.'</p>
+          
+          <div class="quote-block">
+            <p class="quote-text">"The town feels different. It's like the place was holding its breath, waiting to see if you're bringing more trouble or finally bringing good news."</p>
+            <p class="quote-speaker">— Alex/GM</p>
+          </div>
+          <div class="quote-block">
+            <p class="quote-text">"You catch whispers as they recognize you. 'Those are the ones that killed the Redbrands.'"</p>
+            <p class="quote-speaker">— Alex/GM</p>
+          </div>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-header">
+            <h3 class="highlight-title">Sildar's Briefing</h3>
+            <span class="highlight-type type-plot">Plot</span>
+          </div>
+          <p class="highlight-description">Sildar confirmed Glasstaff's death removed 'the knife at Phandalin's throat.' He revealed that Gundren is being held at Cragmaw Castle, but no one knows where it is.</p>
+          
+          <div class="quote-block">
+            <p class="quote-text">"Glasstaff is down? Well, good. That removes the knife at Phandalin's throat."</p>
+            <p class="quote-speaker">— Alex/GM (Sildar)</p>
+          </div>
+          <div class="quote-block">
+            <p class="quote-text">"Cragmaw Castle—folks in town don't know where it is, because anyone who goes looking doesn't come back with directions."</p>
+            <p class="quote-speaker">— Alex/GM</p>
+          </div>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-header">
+            <h3 class="highlight-title">Droop the Goblin</h3>
+            <span class="highlight-type type-funny">Funny</span>
+          </div>
+          <p class="highlight-description">The party found Droop cowering in a barracks—a pathetic goblin who was kept by the bugbears for entertainment. Charmed by Semaj, he provided directions to Cragmaw Castle.</p>
+          
+          <div class="quote-block">
+            <p class="quote-text">"Don't, don't, please don't kill me!"</p>
+            <p class="quote-speaker">— Alex/GM (Droop)</p>
+          </div>
+          <div class="quote-block">
+            <p class="quote-text">"Bugbears hurt Droop. Droop not Cragmaw. Droop was just stuck."</p>
+            <p class="quote-speaker">— Alex/GM (Droop)</p>
+          </div>
+          <div class="quote-block">
+            <p class="quote-text">"If Droop not funny, they hurt Droop. But Droop listen. Droop hears talk. Droop can help."</p>
+            <p class="quote-speaker">— Alex/GM (Droop)</p>
+          </div>
+          <div class="quote-block">
+            <p class="quote-text">"Castle in the big woods. Neverwinter Woods. Old stone place, big broken towers, Cragmaw banners."</p>
+            <p class="quote-speaker">— Alex/GM (Droop)</p>
+          </div>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-header">
+            <h3 class="highlight-title">The Reidoth Lead</h3>
+            <span class="highlight-type type-plot">Plot</span>
+          </div>
+          <p class="highlight-description">Sildar pointed them to Qelline Alderleaf's farm and mentioned Reidoth, a druid in Thundertree who knows the entire land.</p>
+          
+          <div class="quote-block">
+            <p class="quote-text">"Go talk to Qelline Alderleaf. She knows a druid in Thundertree who knows the entire land. The druid's name is Reidoth."</p>
+            <p class="quote-speaker">— Alex/GM (Sildar)</p>
+          </div>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-header">
+            <h3 class="highlight-title">Lion Shield Coster Connection</h3>
+            <span class="highlight-type type-plot">Plot</span>
+          </div>
+          <p class="highlight-description">Kaelia recognized the blue lion symbol on the Lion Shield Coster building—the same symbol from the boxes in Cragmaw Cave.</p>
+          
+          <div class="quote-block">
+            <p class="quote-text">"Kylia, when you were in the Cragmaw cave, you found boxes with a blue lion sigil. As you walked by the Lion Shield Coster, you recognized it was the same symbol."</p>
+            <p class="quote-speaker">— Alex/GM</p>
+          </div>
+          <div class="quote-block">
+            <p class="quote-text">"I rolled a natural one. I've never seen that before in my life."</p>
+            <p class="quote-speaker">— Richard/Semaj</p>
+          </div>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-header">
+            <h3 class="highlight-title">Valrex's Perfect Recap</h3>
+            <span class="highlight-type type-funny">Funny</span>
+          </div>
+          <p class="highlight-description">Valrex gave such an accurate recap of the previous session that Alex awarded him inspiration.</p>
+          
+          <div class="quote-block">
+            <p class="quote-text">"We spent 4,000 turns to try to catch him, and at the very end we murdered him on the edges of his escape."</p>
+            <p class="quote-speaker">— Darren/Valrex</p>
+          </div>
+          <div class="quote-block">
+            <p class="quote-text">"And that is the best I've ever remembered any session ever."</p>
+            <p class="quote-speaker">— Darren/Valrex</p>
+          </div>
+        </div></div>
+    </section>
+    
+    <section class="section">
+      <div class="section-header">
+        <div class="section-icon">⚔</div>
+        <h2 class="section-title">Combat Encounters</h2>
+      </div>
+      
+    </section>
+    
+    <section class="section">
+      <div class="section-header">
+        <div class="section-icon">👤</div>
+        <h2 class="section-title">Character Spotlight</h2>
+      </div>
+      <div class="spotlight-grid">
+        <div class="spotlight-card">
+          <h3 class="spotlight-name">Semaj</h3>
+          <p class="spotlight-moment">Charmed Droop to get Cragmaw Castle directions, organized the town sweep</p>
+          <p class="spotlight-quote">"We should return to town."</p>
+        </div>
+        <div class="spotlight-card">
+          <h3 class="spotlight-name">Kaelia</h3>
+          <p class="spotlight-moment">Recognized the Lion Shield Coster symbol from Cragmaw Cave</p>
+          <p class="spotlight-quote">"The symbols are the same."</p>
+        </div>
+        <div class="spotlight-card">
+          <h3 class="spotlight-name">Valrex</h3>
+          <p class="spotlight-moment">Perfect session recap earned inspiration</p>
+          <p class="spotlight-quote">"The best I've ever remembered any session."</p>
+        </div>
+        <div class="spotlight-card">
+          <h3 class="spotlight-name">Aster</h3>
+          <p class="spotlight-moment">Present but quieter session</p>
+          <p class="spotlight-quote">"Still thinking about apples."</p>
+        </div></div>
+    </section>
+    
+    <section class="section">
+      <div class="section-header">
+        <div class="section-icon">📜</div>
+        <h2 class="section-title">Plot Developments</h2>
+      </div>
+      <ul class="plot-list">
+        <li>
+          <span class="plot-icon">🔍</span>
+          <span class="plot-text">Returned to Phandalin as heroes</span>
+        </li>
+        <li>
+          <span class="plot-icon">🗺</span>
+          <span class="plot-text">Met with Sildar at the Stonehill Inn</span>
+        </li>
+        <li>
+          <span class="plot-icon">⚔</span>
+          <span class="plot-text">Learned Gundren is at Cragmaw Castle</span>
+        </li>
+        <li>
+          <span class="plot-icon">👥</span>
+          <span class="plot-text">Found and interrogated Droop the goblin</span>
+        </li>
+        <li>
+          <span class="plot-icon">📜</span>
+          <span class="plot-text">Got directions to Cragmaw Castle (Neverwinter Woods)</span>
+        </li>
+        <li>
+          <span class="plot-icon">🏠</span>
+          <span class="plot-text">Learned about Reidoth the druid in Thundertree</span>
+        </li>
+        <li>
+          <span class="plot-icon">💰</span>
+          <span class="plot-text">Recognized Lion Shield Coster connection</span>
+        </li>
+        <li>
+          <span class="plot-icon">🎭</span>
+          <span class="plot-text">Preparing provisions and transportation</span>
+        </li></ul>
+    </section>
+    
+    <section class="section">
+      <div class="end-state">
+        <h3 class="end-state-title">To Be Continued...</h3>
+        <div class="end-state-content">
+          <div>
+            <div class="end-item-label">Location</div>
+            <div class="end-item-value">Phandalin - Lion Shield Coster</div>
+          </div>
+          <div>
+            <div class="end-item-label">Party Status</div>
+            <div class="end-item-value">Unknown</div>
+          </div>
+          <div>
+            <div class="end-item-label">Next Objective</div>
+            <div class="end-item-value">Visit Lion Shield Coster, then travel to Cragmaw Castle to rescue Gundren</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <nav class="session-nav">
+      <a href="session-13.html">
+        <span>←</span>
+        <span>Session 13</span>
+      </a>
+      <a href="session-15.html">
+        <span>Session 15</span>
+        <span>→</span>
+      </a>
+    </nav>
+  </div>
+  
+  <script src="../nav.js"></script>
+  <script>initNav('sessions');</script>
+</body>
+</html>

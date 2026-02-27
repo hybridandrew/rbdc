@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Locations | Mage Against The Machine</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="nav.css">
+  <link rel="stylesheet" href="base.css">
+  <style>
+    .location-card {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    .location-description {
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+    }
+    .location-sessions {
+      font-size: 0.85rem;
+      color: var(--text-dim);
+      margin-top: 0.5rem;
+    }
+    .region-title {
+      font-family: 'Cinzel', serif;
+      font-size: 1.1rem;
+      color: var(--purple);
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid rgba(139, 92, 246, 0.2);
+    }
+    .region-section {
+      margin-bottom: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="page-header">
+      <div class="page-icon">🗺️</div>
+      <h1 class="page-title">Locations</h1>
+      <p class="page-subtitle">From the streets of Neverwinter to the depths of darkness</p>
+    </header>
+
+    <section class="section">
+      <h2 class="section-title">Visited Locations</h2>
+      
+      <div class="region-section">
+        <h3 class="region-title">🏰 Neverwinter</h3>
+        <div class="grid grid-3" id="neverwinter"></div>
+      </div>
+
+      <div class="region-section">
+        <h3 class="region-title">🛤️ The Road</h3>
+        <div class="grid grid-3" id="road"></div>
+      </div>
+
+      <div class="region-section">
+        <h3 class="region-title">🏘️ Phandalin</h3>
+        <div class="grid grid-3" id="phandalin"></div>
+      </div>
+
+      <div class="region-section">
+        <h3 class="region-title">⚔️ Dungeons</h3>
+        <div class="grid grid-3" id="dungeons"></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Mentioned But Not Visited</h2>
+      <div class="grid grid-3" id="mentioned"></div>
+    </section>
+  </div>
+
+  <script>
+    const locations = {
+      neverwinter: [
+        { name: 'Driftwood Tavern', icon: '🍺', description: 'Where the party first met. Sildar paid for their rooms here.', sessions: '1-2' },
+        { name: 'Brandy\'s Brewery', icon: '🍻', description: 'Run by Brandy and her half-orc sister Grogala. Source of the party\'s ale kegs.', sessions: '1' },
+        { name: 'Patty\'s General Store', icon: '🏪', description: 'A nervous halfling\'s shop with a rat-infested storehouse.', sessions: '1' },
+        { name: 'The Bloody Butcher', icon: '🥩', description: 'Periwinkle\'s shop. Site of the boar escape incident.', sessions: '2' },
+        { name: 'Millhouse\'s Bakery', icon: '🥐', description: 'An eccentric gnome baker who uses magic in his pastries.', sessions: '2' }
+      ],
+      road: [
+        { name: 'High Road', icon: '🛤️', description: 'The main road from Neverwinter toward Phandalin.', sessions: '3' },
+        { name: 'Triboar Trail', icon: '🛤️', description: 'The trail where the party was ambushed by goblins near dead horses.', sessions: '3-4' },
+        { name: 'Riverside Camp', icon: '🏕️', description: 'Where Kaelia created the fire wolf and Semaj stared down the alpha wolf.', sessions: '3' }
+      ],
+      phandalin: [
+        { name: 'Stonehill Inn', icon: '🏨', description: 'The main inn in Phandalin where the party stayed.', sessions: '8+' },
+        { name: 'Sleeping Giant Tap House', icon: '🍺', description: 'Grista\'s tavern. Site of the massive Redbrand battle.', sessions: '8-9' },
+        { name: 'Barthen\'s Provisions', icon: '📦', description: 'Where Gundren\'s supplies were to be delivered.', sessions: '8' },
+        { name: 'Tresendar Manor', icon: '🏚️', description: 'Ruined manor above the Redbrand hideout.', sessions: '10+' }
+      ],
+      dungeons: [
+        { name: 'Cragmaw Cave', icon: '🦇', description: 'Goblin hideout where Klarg ruled. Sildar was rescued here.', sessions: '4-7' },
+        { name: 'Redbrand Hideout', icon: '⚔️', description: 'Beneath Tresendar Manor. Cleared of Redbrands by the party.', sessions: '10-12' },
+        { name: 'Tresendar Crypts', icon: '💀', description: 'Ancient burial chambers with skeletal guardians.', sessions: '12' }
+      ],
+      mentioned: [
+        { name: 'Wave Echo Cave', icon: '🌊', description: 'Lost location of the legendary Forge of Spells. The party\'s ultimate destination.', sessions: '—' },
+        { name: 'Forge of Spells', icon: '🔥', description: 'Legendary forge that could craft magical items. Lost for 500 years.', sessions: '—' },
+        { name: 'Eldren\'s Enchantments', icon: '✨', description: 'A magic shop in Neverwinter. Mentioned but not visited.', sessions: '—' },
+        { name: 'Edermath\'s Orchard', icon: '🍎', description: 'Darren Edermath\'s orchard in Phandalin.', sessions: '—' }
+      ]
+    };
+
+    function renderLocationCard(loc) {
+      return `
+        <div class="location-card">
+          <h3 class="location-name">
+            <span class="location-icon">${loc.icon}</span>
+            ${loc.name}
+          </h3>
+          <p class="location-description">${loc.description}</p>
+          ${loc.sessions !== '—' ? `<p class="location-sessions">Sessions: ${loc.sessions}</p>` : ''}
+        </div>
+      `;
+    }
+
+    document.getElementById('neverwinter').innerHTML = 
+      locations.neverwinter.map(renderLocationCard).join('');
+
+    document.getElementById('road').innerHTML = 
+      locations.road.map(renderLocationCard).join('');
+
+    document.getElementById('phandalin').innerHTML = 
+      locations.phandalin.map(renderLocationCard).join('');
+
+    document.getElementById('dungeons').innerHTML = 
+      locations.dungeons.map(renderLocationCard).join('');
+
+    document.getElementById('mentioned').innerHTML = 
+      locations.mentioned.map(renderLocationCard).join('');
+  </script>
+  <script src="nav.js"></script>
+  <script>initNav('world');</script>
+</body>
+</html>

@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Session 4: Trail of the Taken | Mage Against The Machine</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../nav.css">
+  <link rel="stylesheet" href="../base.css">
+  <style>
+    :root {
+      --bg-dark: #0a0a0f;
+      --bg-card: rgba(20, 16, 28, 0.9);
+      --bg-card-hover: rgba(30, 24, 42, 0.95);
+      --gold: #d4a857;
+      --gold-dim: #a68642;
+      --gold-bright: #ffd700;
+      --purple: #8b5cf6;
+      --purple-dim: #6d4aad;
+      --red: #dc2626;
+      --green: #22c55e;
+      --blue: #3b82f6;
+      --text-primary: #f5f5f4;
+      --text-secondary: rgba(245, 245, 244, 0.7);
+      --text-dim: rgba(245, 245, 244, 0.5);
+      --border-subtle: rgba(212, 168, 87, 0.2);
+      --border-glow: rgba(212, 168, 87, 0.4);
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Crimson Pro', Georgia, serif;
+      background: var(--bg-dark);
+      color: var(--text-primary);
+      min-height: 100vh;
+      line-height: 1.6;
+    }
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: 
+        radial-gradient(ellipse at 20% 20%, rgba(139, 92, 246, 0.1) 0%, transparent 50%),
+        radial-gradient(ellipse at 80% 80%, rgba(212, 168, 87, 0.08) 0%, transparent 50%);
+      pointer-events: none;
+      z-index: -1;
+    }
+    .container { max-width: 1000px; margin: 0 auto; padding: 2rem; padding-top: 100px; }
+    .session-hero { text-align: center; padding: 3rem 0; margin-bottom: 3rem; }
+    .session-number {
+      font-family: 'Cinzel', serif;
+      font-size: 0.9rem;
+      color: var(--gold);
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+    .session-title {
+      font-family: 'Cinzel', serif;
+      font-size: 3rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 1rem;
+      text-shadow: 0 0 40px rgba(212, 168, 87, 0.3);
+    }
+    .session-meta {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+      margin-bottom: 1.5rem;
+    }
+    .meta-item { display: flex; align-items: center; gap: 0.5rem; color: var(--text-secondary); font-size: 0.95rem; }
+    .meta-icon { color: var(--gold-dim); }
+    .level-up-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: linear-gradient(135deg, rgba(34, 197, 94, 0.2), rgba(34, 197, 94, 0.1));
+      border: 1px solid rgba(34, 197, 94, 0.4);
+      color: var(--green);
+      padding: 0.5rem 1rem;
+      border-radius: 2rem;
+      font-family: 'Cinzel', serif;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+    .session-summary {
+      max-width: 700px;
+      margin: 0 auto;
+      color: var(--text-secondary);
+      font-size: 1.1rem;
+      font-style: italic;
+    }
+    .section { margin-bottom: 3rem; }
+    .section-header {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+    .section-icon {
+      width: 32px; height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, var(--gold-dim), var(--gold));
+      border-radius: 8px;
+      color: var(--bg-dark);
+    }
+    .section-title { font-family: 'Cinzel', serif; font-size: 1.5rem; font-weight: 600; color: var(--gold); }
+    .highlights-grid { display: grid; gap: 1.5rem; }
+    .highlight-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 12px;
+      padding: 1.5rem;
+      transition: all 0.3s ease;
+    }
+    .highlight-card:hover { background: var(--bg-card-hover); border-color: var(--border-glow); transform: translateY(-2px); }
+    .highlight-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem; }
+    .highlight-title { font-family: 'Cinzel', serif; font-size: 1.2rem; font-weight: 600; color: var(--text-primary); }
+    .highlight-type {
+      font-size: 0.75rem;
+      padding: 0.25rem 0.75rem;
+      border-radius: 1rem;
+      font-family: 'Cinzel', serif;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .type-funny { background: rgba(251, 191, 36, 0.2); color: #fbbf24; }
+    .type-epic { background: rgba(139, 92, 246, 0.2); color: #a78bfa; }
+    .type-combat { background: rgba(220, 38, 38, 0.2); color: #f87171; }
+    .type-roleplay { background: rgba(59, 130, 246, 0.2); color: #60a5fa; }
+    .type-clever { background: rgba(34, 197, 94, 0.2); color: #4ade80; }
+    .type-cool { background: rgba(6, 182, 212, 0.2); color: #22d3ee; }
+    .type-burn { background: rgba(249, 115, 22, 0.2); color: #fb923c; }
+    .type-dramatic { background: rgba(236, 72, 153, 0.2); color: #f472b6; }
+    .type-meta { background: rgba(100, 100, 100, 0.2); color: #a0a0a0; }
+    .highlight-description { color: var(--text-secondary); margin-bottom: 1rem; font-size: 1rem; }
+    .quote-block {
+      background: rgba(0, 0, 0, 0.3);
+      border-left: 3px solid var(--gold-dim);
+      padding: 1rem 1.25rem;
+      margin: 0.5rem 0;
+      border-radius: 0 8px 8px 0;
+    }
+    .quote-text { color: var(--text-primary); font-style: italic; margin-bottom: 0.5rem; }
+    .quote-speaker { color: var(--gold); font-family: 'Cinzel', serif; font-size: 0.85rem; }
+    .quotes-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.25rem; }
+    .quote-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 12px;
+      padding: 1.25rem;
+      position: relative;
+      transition: all 0.3s ease;
+    }
+    .quote-card:hover { border-color: var(--gold-dim); transform: translateY(-2px); }
+    .quote-card::before {
+      content: '"';
+      position: absolute;
+      top: 0.5rem; left: 1rem;
+      font-size: 3rem;
+      color: var(--gold-dim);
+      opacity: 0.3;
+      font-family: Georgia, serif;
+      line-height: 1;
+    }
+    .quote-card .quote-text { padding-left: 1.5rem; font-size: 1.05rem; }
+    .quote-context { color: var(--text-dim); font-size: 0.85rem; margin-top: 0.75rem; padding-left: 1.5rem; }
+    .spotlight-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.25rem; }
+    .spotlight-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 12px;
+      padding: 1.25rem;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+    .spotlight-card:hover { border-color: var(--purple-dim); background: var(--bg-card-hover); }
+    .spotlight-name { font-family: 'Cinzel', serif; font-size: 1.2rem; font-weight: 600; color: var(--gold); margin-bottom: 0.75rem; }
+    .spotlight-moments { list-style: none; text-align: left; margin-bottom: 1rem; }
+    .spotlight-moments li {
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+      padding: 0.35rem 0;
+      padding-left: 1rem;
+      position: relative;
+    }
+    .spotlight-moments li::before { content: '◆'; position: absolute; left: 0; color: var(--gold-dim); font-size: 0.6rem; }
+    .spotlight-moment {
+      color: var(--text-secondary);
+      margin-bottom: 0.75rem;
+      font-size: 0.95rem;
+    }
+    .spotlight-quote {
+      background: rgba(0, 0, 0, 0.3);
+      padding: 0.75rem;
+      border-radius: 8px;
+      font-style: italic;
+      color: var(--text-primary);
+      font-size: 0.95rem;
+    }
+    .combat-card {
+      background: linear-gradient(135deg, rgba(220, 38, 38, 0.1), rgba(20, 16, 28, 0.9));
+      border: 1px solid rgba(220, 38, 38, 0.3);
+      border-radius: 12px;
+      padding: 1.5rem;
+    }
+    .combat-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; }
+    .combat-name { font-family: 'Cinzel', serif; font-size: 1.3rem; font-weight: 600; color: var(--text-primary); }
+    .combat-outcome {
+      background: rgba(34, 197, 94, 0.2);
+      color: var(--green);
+      padding: 0.25rem 0.75rem;
+      border-radius: 1rem;
+      font-family: 'Cinzel', serif;
+      font-size: 0.8rem;
+      font-weight: 600;
+    }
+    .combat-details { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-bottom: 1rem; }
+    .combat-detail { background: rgba(0, 0, 0, 0.3); padding: 0.75rem; border-radius: 8px; }
+    .combat-detail-label { color: var(--text-dim); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.25rem; }
+    .combat-detail-value { color: var(--text-primary); font-size: 0.95rem; }
+    .combat-events { list-style: none; }
+    .combat-events li {
+      color: var(--text-secondary);
+      padding: 0.5rem 0;
+      padding-left: 1.5rem;
+      position: relative;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+    .combat-events li:last-child { border-bottom: none; }
+    .combat-events li::before { content: '⚔'; position: absolute; left: 0; color: var(--red); }
+    .plot-list { list-style: none; }
+    .plot-list li {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 8px;
+      padding: 1rem 1.25rem;
+      margin-bottom: 0.75rem;
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      transition: all 0.3s ease;
+    }
+    .plot-list li:hover { border-color: var(--purple-dim); }
+    .plot-icon { color: var(--purple); font-size: 1.2rem; margin-top: 0.1rem; }
+    .plot-text { color: var(--text-secondary); flex: 1; }
+    .end-state {
+      background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(20, 16, 28, 0.9));
+      border: 1px solid rgba(139, 92, 246, 0.3);
+      border-radius: 12px;
+      padding: 1.5rem;
+      text-align: center;
+    }
+    .end-state-title {
+      font-family: 'Cinzel', serif;
+      font-size: 1rem;
+      color: var(--purple);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 1rem;
+    }
+    .end-state-content { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1.5rem; }
+    .end-item-label { color: var(--text-dim); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.25rem; }
+    .end-item-value { color: var(--text-primary); font-size: 1.05rem; }
+    .session-nav {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 3rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--border-subtle);
+    }
+    .session-nav a {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-family: 'Cinzel', serif;
+      font-size: 0.9rem;
+      padding: 0.75rem 1.25rem;
+      border: 1px solid var(--border-subtle);
+      border-radius: 8px;
+      transition: all 0.3s ease;
+    }
+    .session-nav a:hover { color: var(--gold); border-color: var(--gold-dim); background: rgba(212, 168, 87, 0.1); }
+    .session-nav a.disabled { opacity: 0.3; pointer-events: none; }
+    @media (max-width: 768px) {
+      .container { padding: 1rem; }
+      .session-title { font-size: 2rem; }
+      .session-meta { gap: 1rem; }
+      .nav-links { display: none; }
+      .quotes-grid, .spotlight-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="session-hero">
+      <div class="session-number">Session IV</div>
+      <h1 class="session-title">Trail of the Taken</h1>
+      <div class="session-meta">
+        <span class="meta-item">
+          <span class="meta-icon">📅</span>
+          March 29, 2025
+        </span>
+        <span class="meta-item">
+          <span class="meta-icon">⏱</span>
+          ~3.5 hours
+        </span>
+        <span class="meta-item">
+          <span class="meta-icon">👥</span>
+          4 players
+        </span>
+      </div>
+      <div class="level-up-badge">
+        <span>⬆</span>
+        Level Up! → Level 2
+      </div>
+      <p class="session-summary">The party discovered evidence of Gundren and Sildar's abduction and followed the goblin trail into dangerous territory. After navigating treacherous streams, dodging snare traps, and surviving multiple goblin ambushes, they reached the mouth of Cragmaw Cave—and leveled up to Level 2.</p>
+    </header>
+    
+    <section class="section">
+      <div class="section-header">
+        <div class="section-icon">💬</div>
+        <h2 class="section-title">Quotes of the Session</h2>
+      </div>
+      <div class="quotes-grid">
+        <div class="quote-card">
+          <p class="quote-text">Quite refreshing, the water's fine.</p>
+          <p class="quote-speaker">— Ekran</p>
+          <p class="quote-context">After falling face-first into the stream</p>
+        </div>
+        <div class="quote-card">
+          <p class="quote-text">Sounds like he met his end.</p>
+          <p class="quote-speaker">— Semaj</p>
+          <p class="quote-context">After Ekran shot a goblin in the rear</p>
+        </div>
+        <div class="quote-card">
+          <p class="quote-text">My arrow certainly did.</p>
+          <p class="quote-speaker">— Ekran</p>
+          <p class="quote-context">Response to Semaj's pun</p>
+        </div>
+        <div class="quote-card">
+          <p class="quote-text">But it's fire and water.</p>
+          <p class="quote-speaker">— Kaelia</p>
+          <p class="quote-context">Refusing to cross the stream</p>
+        </div>
+        <div class="quote-card">
+          <p class="quote-text">Anything to make everyone forget about the foot thing.</p>
+          <p class="quote-speaker">— Belden</p>
+          <p class="quote-context">After carrying Kaelia across</p>
+        </div>
+        <div class="quote-card">
+          <p class="quote-text">We should do Bulls on Parade with old school medieval instruments.</p>
+          <p class="quote-speaker">— Belden</p>
+          <p class="quote-context">Suggesting the campaign's theme song</p>
+        </div></div>
+    </section>
+    
+    <section class="section">
+      <div class="section-header">
+        <div class="section-icon">⭐</div>
+        <h2 class="section-title">Best Moments</h2>
+      </div>
+      <div class="highlights-grid">
+        <div class="highlight-card">
+          <div class="highlight-header">
+            <h3 class="highlight-title">Bardcore Rage Against the Machine</h3>
+            <span class="highlight-type type-funny">Funny</span>
+          </div>
+          <p class="highlight-description">The session opened with the group joking about making a medieval cover of Bulls on Parade as the campaign's theme song.</p>
+          
+          <div class="quote-block">
+            <p class="quote-text">"We should do Bulls on Parade with old school medieval instruments."</p>
+            <p class="quote-speaker">— Sean/Belden</p>
+          </div>
+          <div class="quote-block">
+            <p class="quote-text">"Oh, dude. That would be awesome. Like Bardcore Rage."</p>
+            <p class="quote-speaker">— Alex/GM</p>
+          </div>
+          <div class="quote-block">
+            <p class="quote-text">"Rich, get on it. That's your new job."</p>
+            <p class="quote-speaker">— Jen/Kaelia</p>
+          </div>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-header">
+            <h3 class="highlight-title">Fire and Water Don't Mix</h3>
+            <span class="highlight-type type-roleplay">Roleplay</span>
+          </div>
+          <p class="highlight-description">Kaelia, the Phoenix Sorcerer, refused to cross the stream on her own—leading to Belden carrying her piggyback style.</p>
+          
+          <div class="quote-block">
+            <p class="quote-text">"You should give me a piggyback ride. I don't want to get wet."</p>
+            <p class="quote-speaker">— Jen/Kaelia</p>
+          </div>
+          <div class="quote-block">
+            <p class="quote-text">"Would that damage you?"</p>
+            <p class="quote-speaker">— Sean/Belden</p>
+          </div>
+          <div class="quote-block">
+            <p class="quote-text">"No, only when I've cast the mantle of flame that I burn people."</p>
+            <p class="quote-speaker">— Jen/Kaelia</p>
+          </div>
+          <div class="quote-block">
+            <p class="quote-text">"Just jump across. There was a person screaming and you're worried about getting wet, woman. Get across the water."</p>
+            <p class="quote-speaker">— Richard/Semaj</p>
+          </div>
+          <div class="quote-block">
+            <p class="quote-text">"But it's fire and water."</p>
+            <p class="quote-speaker">— Jen/Kaelia</p>
+          </div>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-header">
+            <h3 class="highlight-title">Ekran's Graceful Entry</h3>
+            <span class="highlight-type type-funny">Funny</span>
+          </div>
+          <p class="highlight-description">After Belden crossed the stream with ease, Ekran attempted to follow... and immediately fell in.</p>
+          
+          <div class="quote-block">
+            <p class="quote-text">"You think this is easy enough, right? And you take the first leap onto one of the rocks and immediately you misjudge the slickness of the first rock as your foot is going to skid sideways and you just pinwheel right into the stream with a large splash."</p>
+            <p class="quote-speaker">— Alex/GM</p>
+          </div>
+          <div class="quote-block">
+            <p class="quote-text">"I turn to the others and I just say, quite refreshing, the water's fine."</p>
+            <p class="quote-speaker">— James/Ekran</p>
+          </div>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-header">
+            <h3 class="highlight-title">Semaj's Power Move</h3>
+            <span class="highlight-type type-cool">Cool</span>
+          </div>
+          <p class="highlight-description">While everyone struggled with the stream crossing, Semaj simply teleported across.</p>
+          
+          <div class="quote-block">
+            <p class="quote-text">"I've just been standing and watching everyone get across and whatnot, and so I just use my starlight step and just go right across."</p>
+            <p class="quote-speaker">— Richard/Semaj</p>
+          </div>
+          <div class="quote-block">
+            <p class="quote-text">"Anything to make everyone forget about the foot thing."</p>
+            <p class="quote-speaker">— Sean/Belden</p>
+          </div>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-header">
+            <h3 class="highlight-title">Belden's Redemption Arc</h3>
+            <span class="highlight-type type-epic">Epic</span>
+          </div>
+          <p class="highlight-description">Belden, embarrassed by getting his foot stuck in the floorboards last session, rolled a natural 20 on his acrobatics check to leap from a tree.</p>
+          
+          <div class="quote-block">
+            <p class="quote-text">"You got a double front flip out of the tree and just splashed right— I'm going to say you get an extra five feet of movement from that."</p>
+            <p class="quote-speaker">— Alex/GM</p>
+          </div>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-header">
+            <h3 class="highlight-title">The Buttshot Kill</h3>
+            <span class="highlight-type type-funny">Funny</span>
+          </div>
+          <p class="highlight-description">Ekran landed a devastating arrow on a fleeing goblin in a rather... unfortunate location.</p>
+          
+          <div class="quote-block">
+            <p class="quote-text">"So, I imagine he tried jumping in the brush and hit just his butt sticking out. So, as I let loose my arrow, I feel like it'd probably make him jump and then fully fall into the brush."</p>
+            <p class="quote-speaker">— James/Ekran</p>
+          </div>
+          <div class="quote-block">
+            <p class="quote-text">"Yeah, as the arrow severs his spine. The goblin just falls limp all the way into the brush."</p>
+            <p class="quote-speaker">— Alex/GM</p>
+          </div>
+          <div class="quote-block">
+            <p class="quote-text">"Did you shoot an arrow in its butthole?"</p>
+            <p class="quote-speaker">— Jen/Kaelia</p>
+          </div>
+          <div class="quote-block">
+            <p class="quote-text">"I tell Ekran, sounds like he met his end."</p>
+            <p class="quote-speaker">— Richard/Semaj</p>
+          </div>
+          <div class="quote-block">
+            <p class="quote-text">"My arrow certainly did."</p>
+            <p class="quote-speaker">— James/Ekran</p>
+          </div>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-header">
+            <h3 class="highlight-title">Kaelia's Mage Hand Distraction</h3>
+            <span class="highlight-type type-clever">Clever</span>
+          </div>
+          <p class="highlight-description">With Belden down and goblins hidden, Kaelia got creative—using Mage Hand to shake a tree and create a distraction.</p>
+          
+          <div class="quote-block">
+            <p class="quote-text">"I am going to cast Mage Hand. And I'm gonna put it on a branch of this tree right here. And I'm gonna have the Mage Hand shake the tree really violently so it seems like somebody's in the tree."</p>
+            <p class="quote-speaker">— Jen/Kaelia</p>
+          </div>
+          <div class="quote-block">
+            <p class="quote-text">"You're trying to shake it, making it seem like there's something in there."</p>
+            <p class="quote-speaker">— Alex/GM</p>
+          </div>
+          <div class="quote-block">
+            <p class="quote-text">"Yeah, to hopefully distract the goblin when it pops out. It's all I got. Sorry, Belden."</p>
+            <p class="quote-speaker">— Jen/Kaelia</p>
+          </div>
+          <div class="quote-block">
+            <p class="quote-text">"That's really smart."</p>
+            <p class="quote-speaker">— Alex/GM</p>
+          </div>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-header">
+            <h3 class="highlight-title">Sacred Flame Vengeance</h3>
+            <span class="highlight-type type-combat">Combat</span>
+          </div>
+          <p class="highlight-description">Semaj held his Sacred Flame action, waiting for a goblin to appear—and incinerated it the moment it popped out.</p>
+          
+          <div class="quote-block">
+            <p class="quote-text">"This goblin will have to make a DC 14 Dexterity saving throw. And it is going to fail. Samaj, let the fire reign."</p>
+            <p class="quote-speaker">— Alex/GM</p>
+          </div>
+          <div class="quote-block">
+            <p class="quote-text">"8 damage."</p>
+            <p class="quote-speaker">— Richard/Semaj</p>
+          </div>
+          <div class="quote-block">
+            <p class="quote-text">"As the flame-like radiance descends upon this goblin..."</p>
+            <p class="quote-speaker">— Alex/GM</p>
+          </div>
+          <div class="quote-block">
+            <p class="quote-text">"Basically, I saw him pop up with his shortbow, and I just immediately release the Sacred Flame, but I realized that I did it a second too late, and so I just kind of like scream when I did it."</p>
+            <p class="quote-speaker">— Richard/Semaj</p>
+          </div>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-header">
+            <h3 class="highlight-title">The Goblin Boss Falls</h3>
+            <span class="highlight-type type-epic">Epic</span>
+          </div>
+          <p class="highlight-description">The goblin boss tried to flee, but coordinated attacks from Semaj's Frostbite and Ekran's arrow ended its escape permanently.</p>
+          
+          <div class="quote-block">
+            <p class="quote-text">"As you see this goblin boss running away. A little frost trails him."</p>
+            <p class="quote-speaker">— Alex/GM</p>
+          </div>
+          <div class="quote-block">
+            <p class="quote-text">"And a 22 is going to hit."</p>
+            <p class="quote-speaker">— James/Ekran</p>
+          </div>
+          <div class="quote-block">
+            <p class="quote-text">"Ekren, you may not be as graceful jumping across some rocks, but you are landing every shot tonight."</p>
+            <p class="quote-speaker">— Alex/GM</p>
+          </div>
+          <div class="quote-block">
+            <p class="quote-text">"So I sprint out of cover to try to catch him while he's on the run. And as I loose my arrow, it sticks into his chest and I want to say he also falls and rolls into the river."</p>
+            <p class="quote-speaker">— James/Ekran</p>
+          </div>
+          <div class="quote-block">
+            <p class="quote-text">"As the arrow flies, you're going to see it hit directly into this goblin. He tumbles over and both of these goblins are going to start flowing down the stream. Merrily, merrily, merrily."</p>
+            <p class="quote-speaker">— Alex/GM</p>
+          </div>
+        </div></div>
+    </section>
+    
+    <section class="section">
+      <div class="section-header">
+        <div class="section-icon">⚔</div>
+        <h2 class="section-title">Combat Encounters</h2>
+      </div>
+      
+      <div class="combat-card">
+        <div class="combat-header">
+          <h3 class="combat-name">Second Goblin Ambush</h3>
+          <span class="combat-outcome">Victory</span>
+        </div>
+        <div class="combat-details">
+          <div class="combat-detail">
+            <div class="combat-detail-label">Enemies</div>
+            <div class="combat-detail-value">4 Goblins, 1 Goblin Boss</div>
+          </div>
+          
+          <div class="combat-detail">
+            <div class="combat-detail-label">MVP</div>
+            <div class="combat-detail-value">Ekran</div>
+          </div>
+        </div>
+        <ul class="combat-events"><li>Belden took multiple arrows and dropped to 0 HP</li><li>Kaelia healed Belden with Healing Word</li><li>Semaj's held Sacred Flame incinerated a goblin on reaction</li><li>Ekran landed the killing blow on the fleeing goblin boss</li></ul>
+      </div>
+    </section>
+    
+    <section class="section">
+      <div class="section-header">
+        <div class="section-icon">👤</div>
+        <h2 class="section-title">Character Spotlight</h2>
+      </div>
+      <div class="spotlight-grid">
+        <div class="spotlight-card">
+          <h3 class="spotlight-name">Semaj</h3>
+          <ul class="spotlight-moments"><li>Used Starlight Step to teleport across the stream</li><li>Held Sacred Flame to obliterate a goblin on reaction</li><li>Cast Frostbite on the fleeing goblin boss</li></ul>
+          <p class="spotlight-quote">"Sounds like he met his end."</p>
+        </div>
+        <div class="spotlight-card">
+          <h3 class="spotlight-name">Kaelia</h3>
+          <ul class="spotlight-moments"><li>Got a piggyback ride from Belden across the stream</li><li>Creative use of Mage Hand as a distraction</li><li>Healed Belden from unconsciousness</li></ul>
+          <p class="spotlight-quote">"But it's fire and water."</p>
+        </div>
+        <div class="spotlight-card">
+          <h3 class="spotlight-name">Belden</h3>
+          <ul class="spotlight-moments"><li>Carried Kaelia across the stream twice</li><li>Double front flip out of a tree (nat 20)</li><li>Dropped to 0 HP but survived</li></ul>
+          <p class="spotlight-quote">"Anything to make everyone forget about the foot thing."</p>
+        </div>
+        <div class="spotlight-card">
+          <h3 class="spotlight-name">Ekran</h3>
+          <ul class="spotlight-moments"><li>Fell in the stream (played it cool)</li><li>Landed every combat shot</li><li>Killed the goblin boss with a clutch arrow</li></ul>
+          <p class="spotlight-quote">"Quite refreshing, the water's fine."</p>
+        </div></div>
+    </section>
+    
+    <section class="section">
+      <div class="section-header">
+        <div class="section-icon">📜</div>
+        <h2 class="section-title">Plot Developments</h2>
+      </div>
+      <ul class="plot-list"></ul>
+    </section>
+    
+    <section class="section">
+      <div class="end-state">
+        <h3 class="end-state-title">To Be Continued...</h3>
+        <div class="end-state-content">
+          <div>
+            <div class="end-item-label">Location</div>
+            <div class="end-item-value">Unknown</div>
+          </div>
+          <div>
+            <div class="end-item-label">Party Status</div>
+            <div class="end-item-value">Unknown</div>
+          </div>
+          <div>
+            <div class="end-item-label">Next Objective</div>
+            <div class="end-item-value">Unknown</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <nav class="session-nav">
+      <a href="session-03.html">
+        <span>←</span>
+        <span>Session 3</span>
+      </a>
+      <a href="session-05.html">
+        <span>Session 5</span>
+        <span>→</span>
+      </a>
+    </nav>
+  </div>
+  
+  <script src="../nav.js"></script>
+  <script>initNav('sessions');</script>
+</body>
+</html>

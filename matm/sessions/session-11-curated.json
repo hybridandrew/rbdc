@@ -1,0 +1,174 @@
+{
+  "session_number": 11,
+  "title": "The Hideout Assault",
+  "date": "December 7, 2025",
+  "summary": "An entire session of combat as the party pushed deep into the Redbrand Hideout. The Nothic fell under relentless assault, bugbears poured out of hallways only to be melted by Semaj's bouncing Chromatic Orb acid, and Kaelia turned Belden into a fire-breathing war machine with Dragon's Breath. By the end, Belden was exhaling cones of flame that vaporized enemies completely—'and by the time the flames finish, there is nothing. Absolutely nothing.'",
+  "level_up": false,
+  "duration": "~3 hours",
+  "player_attendance": ["Richard (Semaj)", "Jen (Kaelia)", "Sean (Belden)", "Darren (Valrex)", "Alan (Aster)"],
+  
+  "highlights": {
+    "best_moments": [
+      {
+        "title": "Dragon's Breath Belden",
+        "type": "epic",
+        "description": "Kaelia cast Dragon's Breath on Belden, turning him into a fire-breathing flamethrower. He vaporized multiple enemies with 18-damage cones of flame.",
+        "quotes": [
+          {"speaker": "Alex/GM", "text": "Belden, you can feel this breath just starting to well up inside you. It's ready to exhale."},
+          {"speaker": "Alex/GM", "text": "As you exhale, doing a total of 18 damage. And by the time the flames finish, and you can see again in front of you, there is nothing. Absolutely nothing."},
+          {"speaker": "Jen/Kaelia", "text": "I give him the Dragon's Breath, and I'm just very unusually happy with the amount of fire going on in the general vicinity."}
+        ]
+      },
+      {
+        "title": "Chromatic Orb Chain Reaction",
+        "type": "epic",
+        "description": "Semaj's Chromatic Orb of acid hit one bugbear and bounced to a second, melting both with corrosive energy.",
+        "quotes": [
+          {"speaker": "Alex/GM", "text": "This chromatic orb just flies out and rockets towards this bugbear with this wet, violent splash. The corrosive acid starts eating through the fur and armor."},
+          {"speaker": "Alex/GM", "text": "The chromatic orb just bounces. It begins to pulse, and then it splashes and detonates towards the other bugbear behind it."},
+          {"speaker": "Alex/GM", "text": "Both of these bugbears are now nearly disintegrated."}
+        ]
+      },
+      {
+        "title": "Aster's Water Bullet",
+        "type": "funny",
+        "description": "Aster opened his big hippo mouth and launched a Water Bullet at the Nothic, almost extinguishing Kaelia's fire damage.",
+        "quotes": [
+          {"speaker": "Alan/Aster", "text": "Today, you meet water. And just just launches a spit wand at this Nothic."},
+          {"speaker": "Alex/GM", "text": "You almost extinguish some of it with this water bullet, but it smashes into this Nothic on the wall, almost knocking it off."}
+        ]
+      },
+      {
+        "title": "Nothic Defeated",
+        "type": "combat",
+        "description": "The party surrounded and demolished the Nothic—Valrex's Spiritual Weapon, Belden's warhammer to the spine, and constant spell bombardment.",
+        "quotes": [
+          {"speaker": "Alex/GM", "text": "You run up behind it and smash it directly in the spine. As you are now bombarding this thing with weapon attacks and spell attacks."},
+          {"speaker": "Alex/GM", "text": "You knock it clean off the wall. You see its claws just let go as it falls to the ground."}
+        ]
+      },
+      {
+        "title": "Valrex Blocks Rotting Gaze",
+        "type": "epic",
+        "description": "When the Nothic tried its Rotting Gaze on Valrex, he simply raised his shield and blocked the entire blast.",
+        "quotes": [
+          {"speaker": "Alex/GM", "text": "Oh my gosh, Valrex, you were prepared for this. As the eye opens, you just hold your shield up and block the entirety of the blast."}
+        ]
+      },
+      {
+        "title": "Kaelia's Stolen Kills",
+        "type": "funny",
+        "description": "Kaelia kept finishing off enemies that Aster was targeting, prompting the hippo to complain about stolen kills.",
+        "quotes": [
+          {"speaker": "Alan/Aster", "text": "You cannot steal this from Shiva!"},
+          {"speaker": "Alex/GM", "text": "Kylia, how would you like to describe this kill?"}
+        ]
+      },
+      {
+        "title": "Belden's GIF Recap",
+        "type": "funny",
+        "description": "Sean tried to recap the previous session using only GIFs the party had posted, creating an absurd story about a lich.",
+        "quotes": [
+          {"speaker": "Sean/Belden", "text": "We picked back up with the lich coming through the interdimensional door. One of us eldritch blasted him, and like Sonic, he dropped a whole bunch of money."}
+        ]
+      }
+    ],
+    "quotes_of_the_session": [
+      {
+        "speaker": "Alex/GM",
+        "quote": "And by the time the flames finish, and you can see again in front of you, there is nothing. Absolutely nothing.",
+        "context": "Belden's Dragon's Breath vaporizing an enemy"
+      },
+      {
+        "speaker": "Alan/Aster",
+        "quote": "Today, you meet water.",
+        "context": "Aster launching a water bullet"
+      },
+      {
+        "speaker": "Jen/Kaelia",
+        "quote": "I'm just very unusually happy with the amount of fire going on in the general vicinity.",
+        "context": "After giving Belden Dragon's Breath"
+      },
+      {
+        "speaker": "Alan/Aster",
+        "quote": "You cannot steal this from Shiva!",
+        "context": "Complaining about Kaelia taking his kills"
+      },
+      {
+        "speaker": "Alex/GM",
+        "quote": "Both of these bugbears are now nearly disintegrated.",
+        "context": "Semaj's bouncing Chromatic Orb"
+      },
+      {
+        "speaker": "Alex/GM",
+        "quote": "This was an entire session of combat. We didn't leave a room.",
+        "context": "End of session"
+      }
+    ]
+  },
+  
+  "combat_encounters": [
+    {
+      "name": "Nothic Battle",
+      "enemies": "Nothic",
+      "outcome": "Victory",
+      "mvp": "Belden",
+      "mvp_reason": "Knocked it off the wall with warhammer combos"
+    },
+    {
+      "name": "Bugbear Ambush",
+      "enemies": "3 Bugbears",
+      "outcome": "Victory",
+      "mvp": "Semaj",
+      "mvp_reason": "Bouncing Chromatic Orb melted two bugbears"
+    },
+    {
+      "name": "Redbrand Reinforcements",
+      "enemies": "Multiple Redbrands",
+      "outcome": "Victory",
+      "mvp": "Belden",
+      "mvp_reason": "Dragon's Breath vaporized entire groups"
+    }
+  ],
+  
+  "character_spotlights": [
+    {
+      "character": "Belden",
+      "moment": "Became a fire-breathing machine with Dragon's Breath, vaporizing enemies with 18-damage cones",
+      "one_liner": "There is nothing. Absolutely nothing."
+    },
+    {
+      "character": "Semaj",
+      "moment": "Bouncing Chromatic Orb of acid melted two bugbears in one cast",
+      "one_liner": "Nearly disintegrated."
+    },
+    {
+      "character": "Kaelia",
+      "moment": "Cast Dragon's Breath on Belden, kept stealing Aster's kills, unusually happy about all the fire",
+      "one_liner": "Very unusually happy with the amount of fire."
+    },
+    {
+      "character": "Aster",
+      "moment": "Water Bullet attacks, complained about stolen kills",
+      "one_liner": "Today, you meet water."
+    },
+    {
+      "character": "Valrex",
+      "moment": "Blocked Rotting Gaze with shield, Spiritual Weapon slicing",
+      "one_liner": "Shield up. Blast blocked."
+    }
+  ],
+  
+  "plot_developments": [
+    "Defeated the Nothic in the crevasse",
+    "Cleared bugbear reinforcements",
+    "Pushed deeper into Redbrand hideout",
+    "Discovered Dragon's Breath + Belden = destruction"
+  ],
+  
+  "end_state": {
+    "location": "Deep in the Redbrand Hideout",
+    "party_status": "Victorious, still clearing rooms",
+    "next_objective": "Continue exploring the hideout, find Glasstaff"
+  }
+}

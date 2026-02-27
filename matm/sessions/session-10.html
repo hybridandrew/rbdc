@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Session 10: The Nothic's Lair | Mage Against The Machine</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../nav.css">
+  <link rel="stylesheet" href="../base.css">
+  <style>
+    :root {
+      --bg-dark: #0a0a0f;
+      --bg-card: rgba(20, 16, 28, 0.9);
+      --bg-card-hover: rgba(30, 24, 42, 0.95);
+      --gold: #d4a857;
+      --gold-dim: #a68642;
+      --gold-bright: #ffd700;
+      --purple: #8b5cf6;
+      --purple-dim: #6d4aad;
+      --red: #dc2626;
+      --green: #22c55e;
+      --blue: #3b82f6;
+      --text-primary: #f5f5f4;
+      --text-secondary: rgba(245, 245, 244, 0.7);
+      --text-dim: rgba(245, 245, 244, 0.5);
+      --border-subtle: rgba(212, 168, 87, 0.2);
+      --border-glow: rgba(212, 168, 87, 0.4);
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Crimson Pro', Georgia, serif;
+      background: var(--bg-dark);
+      color: var(--text-primary);
+      min-height: 100vh;
+      line-height: 1.6;
+    }
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: 
+        radial-gradient(ellipse at 20% 20%, rgba(139, 92, 246, 0.1) 0%, transparent 50%),
+        radial-gradient(ellipse at 80% 80%, rgba(212, 168, 87, 0.08) 0%, transparent 50%);
+      pointer-events: none;
+      z-index: -1;
+    }
+    .container { max-width: 1000px; margin: 0 auto; padding: 2rem; padding-top: 100px; }
+    .session-hero { text-align: center; padding: 3rem 0; margin-bottom: 3rem; }
+    .session-number {
+      font-family: 'Cinzel', serif;
+      font-size: 0.9rem;
+      color: var(--gold);
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+    .session-title {
+      font-family: 'Cinzel', serif;
+      font-size: 3rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 1rem;
+      text-shadow: 0 0 40px rgba(212, 168, 87, 0.3);
+    }
+    .session-meta {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+      margin-bottom: 1.5rem;
+    }
+    .meta-item { display: flex; align-items: center; gap: 0.5rem; color: var(--text-secondary); font-size: 0.95rem; }
+    .meta-icon { color: var(--gold-dim); }
+    .level-up-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: linear-gradient(135deg, rgba(34, 197, 94, 0.2), rgba(34, 197, 94, 0.1));
+      border: 1px solid rgba(34, 197, 94, 0.4);
+      color: var(--green);
+      padding: 0.5rem 1rem;
+      border-radius: 2rem;
+      font-family: 'Cinzel', serif;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+    .session-summary {
+      max-width: 700px;
+      margin: 0 auto;
+      color: var(--text-secondary);
+      font-size: 1.1rem;
+      font-style: italic;
+    }
+    .section { margin-bottom: 3rem; }
+    .section-header {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+    .section-icon {
+      width: 32px; height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, var(--gold-dim), var(--gold));
+      border-radius: 8px;
+      color: var(--bg-dark);
+    }
+    .section-title { font-family: 'Cinzel', serif; font-size: 1.5rem; font-weight: 600; color: var(--gold); }
+    .highlights-grid { display: grid; gap: 1.5rem; }
+    .highlight-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 12px;
+      padding: 1.5rem;
+      transition: all 0.3s ease;
+    }
+    .highlight-card:hover { background: var(--bg-card-hover); border-color: var(--border-glow); transform: translateY(-2px); }
+    .highlight-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem; }
+    .highlight-title { font-family: 'Cinzel', serif; font-size: 1.2rem; font-weight: 600; color: var(--text-primary); }
+    .highlight-type {
+      font-size: 0.75rem;
+      padding: 0.25rem 0.75rem;
+      border-radius: 1rem;
+      font-family: 'Cinzel', serif;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .type-funny { background: rgba(251, 191, 36, 0.2); color: #fbbf24; }
+    .type-epic { background: rgba(139, 92, 246, 0.2); color: #a78bfa; }
+    .type-combat { background: rgba(220, 38, 38, 0.2); color: #f87171; }
+    .type-roleplay { background: rgba(59, 130, 246, 0.2); color: #60a5fa; }
+    .type-clever { background: rgba(34, 197, 94, 0.2); color: #4ade80; }
+    .type-cool { background: rgba(6, 182, 212, 0.2); color: #22d3ee; }
+    .type-burn { background: rgba(249, 115, 22, 0.2); color: #fb923c; }
+    .type-dramatic { background: rgba(236, 72, 153, 0.2); color: #f472b6; }
+    .type-meta { background: rgba(100, 100, 100, 0.2); color: #a0a0a0; }
+    .highlight-description { color: var(--text-secondary); margin-bottom: 1rem; font-size: 1rem; }
+    .quote-block {
+      background: rgba(0, 0, 0, 0.3);
+      border-left: 3px solid var(--gold-dim);
+      padding: 1rem 1.25rem;
+      margin: 0.5rem 0;
+      border-radius: 0 8px 8px 0;
+    }
+    .quote-text { color: var(--text-primary); font-style: italic; margin-bottom: 0.5rem; }
+    .quote-speaker { color: var(--gold); font-family: 'Cinzel', serif; font-size: 0.85rem; }
+    .quotes-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.25rem; }
+    .quote-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 12px;
+      padding: 1.25rem;
+      position: relative;
+      transition: all 0.3s ease;
+    }
+    .quote-card:hover { border-color: var(--gold-dim); transform: translateY(-2px); }
+    .quote-card::before {
+      content: '"';
+      position: absolute;
+      top: 0.5rem; left: 1rem;
+      font-size: 3rem;
+      color: var(--gold-dim);
+      opacity: 0.3;
+      font-family: Georgia, serif;
+      line-height: 1;
+    }
+    .quote-card .quote-text { padding-left: 1.5rem; font-size: 1.05rem; }
+    .quote-context { color: var(--text-dim); font-size: 0.85rem; margin-top: 0.75rem; padding-left: 1.5rem; }
+    .spotlight-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.25rem; }
+    .spotlight-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 12px;
+      padding: 1.25rem;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+    .spotlight-card:hover { border-color: var(--purple-dim); background: var(--bg-card-hover); }
+    .spotlight-name { font-family: 'Cinzel', serif; font-size: 1.2rem; font-weight: 600; color: var(--gold); margin-bottom: 0.75rem; }
+    .spotlight-moments { list-style: none; text-align: left; margin-bottom: 1rem; }
+    .spotlight-moments li {
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+      padding: 0.35rem 0;
+      padding-left: 1rem;
+      position: relative;
+    }
+    .spotlight-moments li::before { content: '◆'; position: absolute; left: 0; color: var(--gold-dim); font-size: 0.6rem; }
+    .spotlight-moment {
+      color: var(--text-secondary);
+      margin-bottom: 0.75rem;
+      font-size: 0.95rem;
+    }
+    .spotlight-quote {
+      background: rgba(0, 0, 0, 0.3);
+      padding: 0.75rem;
+      border-radius: 8px;
+      font-style: italic;
+      color: var(--text-primary);
+      font-size: 0.95rem;
+    }
+    .combat-card {
+      background: linear-gradient(135deg, rgba(220, 38, 38, 0.1), rgba(20, 16, 28, 0.9));
+      border: 1px solid rgba(220, 38, 38, 0.3);
+      border-radius: 12px;
+      padding: 1.5rem;
+    }
+    .combat-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; }
+    .combat-name { font-family: 'Cinzel', serif; font-size: 1.3rem; font-weight: 600; color: var(--text-primary); }
+    .combat-outcome {
+      background: rgba(34, 197, 94, 0.2);
+      color: var(--green);
+      padding: 0.25rem 0.75rem;
+      border-radius: 1rem;
+      font-family: 'Cinzel', serif;
+      font-size: 0.8rem;
+      font-weight: 600;
+    }
+    .combat-details { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-bottom: 1rem; }
+    .combat-detail { background: rgba(0, 0, 0, 0.3); padding: 0.75rem; border-radius: 8px; }
+    .combat-detail-label { color: var(--text-dim); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.25rem; }
+    .combat-detail-value { color: var(--text-primary); font-size: 0.95rem; }
+    .combat-events { list-style: none; }
+    .combat-events li {
+      color: var(--text-secondary);
+      padding: 0.5rem 0;
+      padding-left: 1.5rem;
+      position: relative;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+    .combat-events li:last-child { border-bottom: none; }
+    .combat-events li::before { content: '⚔'; position: absolute; left: 0; color: var(--red); }
+    .plot-list { list-style: none; }
+    .plot-list li {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 8px;
+      padding: 1rem 1.25rem;
+      margin-bottom: 0.75rem;
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      transition: all 0.3s ease;
+    }
+    .plot-list li:hover { border-color: var(--purple-dim); }
+    .plot-icon { color: var(--purple); font-size: 1.2rem; margin-top: 0.1rem; }
+    .plot-text { color: var(--text-secondary); flex: 1; }
+    .end-state {
+      background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(20, 16, 28, 0.9));
+      border: 1px solid rgba(139, 92, 246, 0.3);
+      border-radius: 12px;
+      padding: 1.5rem;
+      text-align: center;
+    }
+    .end-state-title {
+      font-family: 'Cinzel', serif;
+      font-size: 1rem;
+      color: var(--purple);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 1rem;
+    }
+    .end-state-content { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1.5rem; }
+    .end-item-label { color: var(--text-dim); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.25rem; }
+    .end-item-value { color: var(--text-primary); font-size: 1.05rem; }
+    .session-nav {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 3rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--border-subtle);
+    }
+    .session-nav a {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-family: 'Cinzel', serif;
+      font-size: 0.9rem;
+      padding: 0.75rem 1.25rem;
+      border: 1px solid var(--border-subtle);
+      border-radius: 8px;
+      transition: all 0.3s ease;
+    }
+    .session-nav a:hover { color: var(--gold); border-color: var(--gold-dim); background: rgba(212, 168, 87, 0.1); }
+    .session-nav a.disabled { opacity: 0.3; pointer-events: none; }
+    @media (max-width: 768px) {
+      .container { padding: 1rem; }
+      .session-title { font-size: 2rem; }
+      .session-meta { gap: 1rem; }
+      .nav-links { display: none; }
+      .quotes-grid, .spotlight-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="session-hero">
+      <div class="session-number">Session X</div>
+      <h1 class="session-title">The Nothic's Lair</h1>
+      <div class="session-meta">
+        <span class="meta-item">
+          <span class="meta-icon">📅</span>
+          November 30, 2025
+        </span>
+        <span class="meta-item">
+          <span class="meta-icon">⏱</span>
+          ~2.5 hours
+        </span>
+        <span class="meta-item">
+          <span class="meta-icon">👥</span>
+          4 players
+        </span>
+      </div>
+      
+      <p class="session-summary">A new ally arrived—Aster, an 8-foot-tall Giff druid who smells of ozone and crushed herbs. The party immediately gaslit the recovering Belden into thinking Aster wasn't real, coordinating an elaborate prank that even included Larry. After learning about the Redbrand hideout under Tresendar Manor, they rallied the townsfolk, recruited Darren Edermath, and entered via a secret tunnel. Deep inside, a Nothic's psychic claws scraped at Semaj's mind. The session ended with the aberration casting Rotting Gaze as initiative was rolled.</p>
+    </header>
+    
+    <section class="section">
+      <div class="section-header">
+        <div class="section-icon">💬</div>
+        <h2 class="section-title">Quotes of the Session</h2>
+      </div>
+      <div class="quotes-grid">
+        <div class="quote-card">
+          <p class="quote-text">I don't see a hippo.</p>
+          <p class="quote-speaker">— Jen/Kaelia</p>
+          <p class="quote-context">Gaslighting Belden</p>
+        </div>
+        <div class="quote-card">
+          <p class="quote-text">Either I'm dead or I'm still drunk. What is going on?</p>
+          <p class="quote-speaker">— Sean/Belden</p>
+          <p class="quote-context">Confused by the Aster prank</p>
+        </div>
+        <div class="quote-card">
+          <p class="quote-text">You taste different. Magic in your blood. Pain in your past.</p>
+          <p class="quote-speaker">— Alex/GM (Nothic)</p>
+          <p class="quote-context">The Nothic probing Semaj's mind</p>
+        </div>
+        <div class="quote-card">
+          <p class="quote-text">Grista mutters: I'm going to need to kill another pig.</p>
+          <p class="quote-speaker">— Alex/GM</p>
+          <p class="quote-context">After Aster devoured breakfast</p>
+        </div>
+        <div class="quote-card">
+          <p class="quote-text">Let's remind these Redbrands what happens when good people stop standing alone.</p>
+          <p class="quote-speaker">— Richard/Semaj</p>
+          <p class="quote-context">Rallying the town</p>
+        </div>
+        <div class="quote-card">
+          <p class="quote-text">It's the ghost of hippo past!</p>
+          <p class="quote-speaker">— Alex/GM</p>
+          <p class="quote-context">Belden trying to understand Aster</p>
+        </div></div>
+    </section>
+    
+    <section class="section">
+      <div class="section-header">
+        <div class="section-icon">⭐</div>
+        <h2 class="section-title">Best Moments</h2>
+      </div>
+      <div class="highlights-grid">
+        <div class="highlight-card">
+          <div class="highlight-header">
+            <h3 class="highlight-title">Aster Joins the Party</h3>
+            <span class="highlight-type type-roleplay">Roleplay</span>
+          </div>
+          <p class="highlight-description">A massive Giff—8 feet tall, 580 pounds, hippo-person druid—walked up to the party. Semaj immediately recognized him as a fellow astral being and they spoke in Celestial.</p>
+          
+          <div class="quote-block">
+            <p class="quote-text">"He's a Giff. He's a lawful good, about 8 feet tall, 580 pounds, hippo person, basically."</p>
+            <p class="quote-speaker">— Alan/Aster</p>
+          </div>
+          <div class="quote-block">
+            <p class="quote-text">"He walks like someone who has marched through wars. And possibly started a few."</p>
+            <p class="quote-speaker">— Alex/GM</p>
+          </div>
+          <div class="quote-block">
+            <p class="quote-text">"His tusks are carved with symbols in celestial and druidic. And he smells of ozone and crushed herbs."</p>
+            <p class="quote-speaker">— Alan/Aster</p>
+          </div>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-header">
+            <h3 class="highlight-title">Gaslighting Belden</h3>
+            <span class="highlight-type type-funny">Funny</span>
+          </div>
+          <p class="highlight-description">The entire party coordinated to convince the recovering Belden that Aster wasn't real. Even Larry joined in, looking right through Aster when asked.</p>
+          
+          <div class="quote-block">
+            <p class="quote-text">"Who the hell are you? You weren't here last night. Or did I just dream this hippo is here?"</p>
+            <p class="quote-speaker">— Sean/Belden</p>
+          </div>
+          <div class="quote-block">
+            <p class="quote-text">"Aster is going to play along and gaslight him into thinking he is not there."</p>
+            <p class="quote-speaker">— Alan/Aster</p>
+          </div>
+          <div class="quote-block">
+            <p class="quote-text">"I don't see a hippo."</p>
+            <p class="quote-speaker">— Jen/Kaelia</p>
+          </div>
+          <div class="quote-block">
+            <p class="quote-text">"Either I'm dead or I'm still drunk. What is going on?"</p>
+            <p class="quote-speaker">— Sean/Belden</p>
+          </div>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-header">
+            <h3 class="highlight-title">Larry Joins the Prank</h3>
+            <span class="highlight-type type-funny">Funny</span>
+          </div>
+          <p class="highlight-description">Aster cast Speak with Animals and told Larry to pretend he wasn't there. Larry walked to Belden, whined, and looked right through Aster.</p>
+          
+          <div class="quote-block">
+            <p class="quote-text">"Larry rises to all four and without as much as a glance at you, Aster, he's going to walk to Belden's side and he's going to whine."</p>
+            <p class="quote-speaker">— Alex/GM</p>
+          </div>
+          <div class="quote-block">
+            <p class="quote-text">"And Larry poignantly looks through Aster. The rest of the party is probably struggling to contain your laughter at this point."</p>
+            <p class="quote-speaker">— Alex/GM</p>
+          </div>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-header">
+            <h3 class="highlight-title">Rallying the Townsfolk</h3>
+            <span class="highlight-type type-roleplay">Roleplay</span>
+          </div>
+          <p class="highlight-description">Semaj gave a speech in the town square, calling for people to stop standing alone. Darren Edermath, a retired adventurer, stepped forward to join them.</p>
+          
+          <div class="quote-block">
+            <p class="quote-text">"Let's remind these Redbrands what happens when good people stop standing alone."</p>
+            <p class="quote-speaker">— Richard/Semaj</p>
+          </div>
+          <div class="quote-block">
+            <p class="quote-text">"And then from the crowd, this older man with silver hair, an elf, he steps forward. His clasp bearing the symbol of Tymora."</p>
+            <p class="quote-speaker">— Alex/GM</p>
+          </div>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-header">
+            <h3 class="highlight-title">The Halfling Boy's Secret</h3>
+            <span class="highlight-type type-plot">Plot</span>
+          </div>
+          <p class="highlight-description">A young halfling boy named Carp revealed he had followed Redbrands to a secret tunnel entrance behind the manor.</p>
+          
+          <div class="quote-block">
+            <p class="quote-text">"There's a cave, a tunnel behind the trees at the edge of the manor. I followed some Redbrands when they thought no one was watching. It's a secret entrance in the hillside."</p>
+            <p class="quote-speaker">— Alex/GM</p>
+          </div>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-header">
+            <h3 class="highlight-title">The Nothic Attacks</h3>
+            <span class="highlight-type type-dramatic">Dramatic</span>
+          </div>
+          <p class="highlight-description">Deep in the hideout, a Nothic's psychic claws scraped at Semaj's mind. When Semaj resisted, the aberration cast Rotting Gaze. Session ended on a cliffhanger.</p>
+          
+          <div class="quote-block">
+            <p class="quote-text">"You begin to feel something scraping at the edge of your consciousness. Almost like spectral claws are trying to peel away the folds of your thoughts."</p>
+            <p class="quote-speaker">— Alex/GM</p>
+          </div>
+          <div class="quote-block">
+            <p class="quote-text">"You taste different. Magic in your blood. Pain in your past. I wonder what I would see if I peeled it back."</p>
+            <p class="quote-speaker">— Alex/GM (Nothic)</p>
+          </div>
+          <div class="quote-block">
+            <p class="quote-text">"Let us dance. And he is going to cast Rotting Gaze on you."</p>
+            <p class="quote-speaker">— Alex/GM</p>
+          </div>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-header">
+            <h3 class="highlight-title">Aster Eats Everything</h3>
+            <span class="highlight-type type-funny">Funny</span>
+          </div>
+          <p class="highlight-description">Being a giant hippo, Aster consumed massive amounts of food at breakfast, eating an entire loaf of bread in one sitting.</p>
+          
+          <div class="quote-block">
+            <p class="quote-text">"You just eat the entire loaf of bread in like one sitting. It's gone in seconds."</p>
+            <p class="quote-speaker">— Alex/GM</p>
+          </div>
+          <div class="quote-block">
+            <p class="quote-text">"Grista mutters to herself: I'm going to need to kill another pig."</p>
+            <p class="quote-speaker">— Alex/GM</p>
+          </div>
+        </div></div>
+    </section>
+    
+    <section class="section">
+      <div class="section-header">
+        <div class="section-icon">⚔</div>
+        <h2 class="section-title">Combat Encounters</h2>
+      </div>
+      
+      <div class="combat-card">
+        <div class="combat-header">
+          <h3 class="combat-name">Nothic Confrontation (Started)</h3>
+          <span class="combat-outcome">In progress - cliffhanger</span>
+        </div>
+        <div class="combat-details">
+          <div class="combat-detail">
+            <div class="combat-detail-label">Enemies</div>
+            <div class="combat-detail-value">Nothic</div>
+          </div>
+          
+          <div class="combat-detail">
+            <div class="combat-detail-label">MVP</div>
+            <div class="combat-detail-value">TBD — Combat just began</div>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+    
+    <section class="section">
+      <div class="section-header">
+        <div class="section-icon">👤</div>
+        <h2 class="section-title">Character Spotlight</h2>
+      </div>
+      <div class="spotlight-grid">
+        <div class="spotlight-card">
+          <h3 class="spotlight-name">Aster</h3>
+          <p class="spotlight-moment">Joined the party! An 8-foot Giff druid. Immediately participated in gaslighting Belden.</p>
+          <p class="spotlight-quote">"Acknowledges it with hippo noises."</p>
+        </div>
+        <div class="spotlight-card">
+          <h3 class="spotlight-name">Semaj</h3>
+          <p class="spotlight-moment">Resisted the Nothic's psychic probe, recognized it as an aberration, warned the party</p>
+          <p class="spotlight-quote">"This is not gonna go the way you think it is."</p>
+        </div>
+        <div class="spotlight-card">
+          <h3 class="spotlight-name">Larry</h3>
+          <p class="spotlight-moment">Participated in the prank, looking right through Aster when told to pretend he wasn't there</p>
+          <p class="spotlight-quote">"Good boy level: Method actor"</p>
+        </div>
+        <div class="spotlight-card">
+          <h3 class="spotlight-name">Belden</h3>
+          <p class="spotlight-moment">Woke up from near-death, got gaslit by the entire party about a hippo</p>
+          <p class="spotlight-quote">"Either I'm dead or I'm still drunk."</p>
+        </div></div>
+    </section>
+    
+    <section class="section">
+      <div class="section-header">
+        <div class="section-icon">📜</div>
+        <h2 class="section-title">Plot Developments</h2>
+      </div>
+      <ul class="plot-list">
+        <li>
+          <span class="plot-icon">🔍</span>
+          <span class="plot-text">Aster (Giff Druid) joins the party</span>
+        </li>
+        <li>
+          <span class="plot-icon">🗺</span>
+          <span class="plot-text">Learned about Tresendar Manor hideout from Grista</span>
+        </li>
+        <li>
+          <span class="plot-icon">⚔</span>
+          <span class="plot-text">Rallied townsfolk against Redbrands</span>
+        </li>
+        <li>
+          <span class="plot-icon">👥</span>
+          <span class="plot-text">Darren Edermath joined as ally</span>
+        </li>
+        <li>
+          <span class="plot-icon">📜</span>
+          <span class="plot-text">Carp the halfling boy revealed secret tunnel entrance</span>
+        </li>
+        <li>
+          <span class="plot-icon">🏠</span>
+          <span class="plot-text">Entered Redbrand hideout via secret tunnel</span>
+        </li>
+        <li>
+          <span class="plot-icon">💰</span>
+          <span class="plot-text">Encountered a Nothic - psychic aberration</span>
+        </li>
+        <li>
+          <span class="plot-icon">🎭</span>
+          <span class="plot-text">Combat initiated with Nothic</span>
+        </li></ul>
+    </section>
+    
+    <section class="section">
+      <div class="end-state">
+        <h3 class="end-state-title">To Be Continued...</h3>
+        <div class="end-state-content">
+          <div>
+            <div class="end-item-label">Location</div>
+            <div class="end-item-value">Redbrand Hideout - Nothic's Crevasse</div>
+          </div>
+          <div>
+            <div class="end-item-label">Party Status</div>
+            <div class="end-item-value">Unknown</div>
+          </div>
+          <div>
+            <div class="end-item-label">Next Objective</div>
+            <div class="end-item-value">Defeat the Nothic, explore the hideout</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <nav class="session-nav">
+      <a href="session-09.html">
+        <span>←</span>
+        <span>Session 9</span>
+      </a>
+      <a href="session-11.html">
+        <span>Session 11</span>
+        <span>→</span>
+      </a>
+    </nav>
+  </div>
+  
+  <script src="../nav.js"></script>
+  <script>initNav('sessions');</script>
+</body>
+</html>

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campaign Overview | Mage Against The Machine</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="nav.css">
+  <link rel="stylesheet" href="base.css">
+  <style>
+    .overview-hero {
+      text-align: center;
+      padding: 2rem 0 4rem;
+    }
+    
+    .overview-title {
+      font-family: 'Cinzel', serif;
+      font-size: clamp(2.5rem, 6vw, 4rem);
+      font-weight: 700;
+      background: linear-gradient(90deg, #fef3c7, #d4a857, #fef3c7);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 1rem;
+    }
+    
+    .overview-tagline {
+      color: var(--text-secondary);
+      font-size: 1.2rem;
+      font-style: italic;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    
+    .stats-bar {
+      display: flex;
+      justify-content: center;
+      gap: 3rem;
+      flex-wrap: wrap;
+      margin: 3rem 0;
+      padding: 1.5rem;
+      background: var(--bg-card);
+      border-radius: 12px;
+      border: 1px solid var(--border-subtle);
+    }
+    
+    .stat-item {
+      text-align: center;
+    }
+    
+    .stat-number {
+      font-family: 'Cinzel', serif;
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: var(--gold);
+    }
+    
+    .stat-label {
+      color: var(--text-dim);
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+    
+    .quick-links {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin: 3rem 0;
+    }
+    
+    .quick-link {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 12px;
+      padding: 2rem;
+      text-decoration: none;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+    
+    .quick-link:hover {
+      border-color: var(--gold-dim);
+      transform: translateY(-4px);
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    }
+    
+    .quick-link-icon {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    
+    .quick-link-title {
+      font-family: 'Cinzel', serif;
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: var(--gold);
+      margin-bottom: 0.5rem;
+    }
+    
+    .quick-link-desc {
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+    }
+    
+    .story-section {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 12px;
+      padding: 2rem;
+      margin: 3rem 0;
+    }
+    
+    .story-title {
+      font-family: 'Cinzel', serif;
+      font-size: 1.5rem;
+      color: var(--gold);
+      margin-bottom: 1rem;
+    }
+    
+    .story-text {
+      color: var(--text-secondary);
+      font-size: 1.1rem;
+      line-height: 1.8;
+    }
+    
+    .story-text p {
+      margin-bottom: 1rem;
+    }
+    
+    .story-text p:last-child {
+      margin-bottom: 0;
+    }
+    
+    .latest-session {
+      background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), var(--bg-card));
+      border: 1px solid rgba(139, 92, 246, 0.3);
+      border-radius: 12px;
+      padding: 2rem;
+      margin: 3rem 0;
+    }
+    
+    .latest-label {
+      font-family: 'Cinzel', serif;
+      font-size: 0.85rem;
+      color: var(--purple);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 0.5rem;
+    }
+    
+    .latest-title {
+      font-family: 'Cinzel', serif;
+      font-size: 1.5rem;
+      color: var(--text-primary);
+      margin-bottom: 1rem;
+    }
+    
+    .latest-summary {
+      color: var(--text-secondary);
+      font-size: 1rem;
+      margin-bottom: 1.5rem;
+    }
+    
+    .latest-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--gold);
+      text-decoration: none;
+      font-family: 'Cinzel', serif;
+      transition: all 0.3s ease;
+    }
+    
+    .latest-link:hover {
+      color: var(--gold-bright);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="overview-hero">
+      <h1 class="overview-title">Mage Against The Machine</h1>
+      <p class="overview-tagline">
+        For 500 years, the Forge of Spells has slept. Now, tyrants seek its power. 
+        Fire answers to those who refuse to kneel.
+      </p>
+    </header>
+
+    <div class="stats-bar">
+      <div class="stat-item">
+        <div class="stat-number">14</div>
+        <div class="stat-label">Sessions</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">6</div>
+        <div class="stat-label">Heroes</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">3</div>
+        <div class="stat-label">Level</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">5</div>
+        <div class="stat-label">Mysteries</div>
+      </div>
+    </div>
+
+    <div class="quick-links">
+      <a href="party.html" class="quick-link">
+        <div class="quick-link-icon">⚔️</div>
+        <h3 class="quick-link-title">The Party</h3>
+        <p class="quick-link-desc">Meet the unlikely heroes fighting for the Forge</p>
+      </a>
+      <a href="sessions.html" class="quick-link">
+        <div class="quick-link-icon">📜</div>
+        <h3 class="quick-link-title">The Chronicle</h3>
+        <p class="quick-link-desc">Every battle, betrayal, and triumph documented</p>
+      </a>
+      <a href="mysteries.html" class="quick-link">
+        <div class="quick-link-icon">❓</div>
+        <h3 class="quick-link-title">Mysteries</h3>
+        <p class="quick-link-desc">The questions that haunt the party</p>
+      </a>
+      <a href="quotebook.html" class="quick-link">
+        <div class="quick-link-icon">💬</div>
+        <h3 class="quick-link-title">Quotebook</h3>
+        <p class="quick-link-desc">Memorable moments and questionable decisions</p>
+      </a>
+    </div>
+
+    <div class="story-section">
+      <h2 class="story-title">The Story So Far</h2>
+      <div class="story-text">
+        <p>
+          In the year 1491, a group of strangers gathered at the Driftwood Tavern in Neverwinter, 
+          drawn together by fate—or perhaps by the scheming of forces beyond their understanding. 
+          The dwarf Gundren Rockseeker hired them for a simple task: escort supplies to the frontier 
+          town of Phandalin.
+        </p>
+        <p>
+          But nothing is simple when ancient magic stirs. Gundren claimed to have found the lost 
+          Wave Echo Cave, home to the legendary Forge of Spells. Before they could learn more, 
+          he was captured by goblins working for a mysterious figure known only as the Black Spider.
+        </p>
+        <p>
+          The party fought through goblin caves, stared down wolves by firelight, and waged war 
+          against the Redbrands who had terrorized Phandalin. They've made allies, lost friends, 
+          and stumbled upon darker mysteries—including the whispered name of Ruxithid, a psychic 
+          tyrant from beyond the world.
+        </p>
+        <p>
+          Now, at level 3, they stand on the precipice of something greater. The Forge of Spells 
+          awaits. The Black Spider hunts. And fire answers to those who refuse to kneel.
+        </p>
+      </div>
+    </div>
+
+    <div class="latest-session">
+      <p class="latest-label">Latest Session</p>
+      <h3 class="latest-title">Session 14: Return to Phandalin</h3>
+      <p class="latest-summary">
+        Heroes at last! The party returned to Phandalin to whispers of recognition. 
+        They met with Sildar, found the pathetic goblin Droop who revealed Cragmaw Castle's location, 
+        and prepared for the next leg of their journey to rescue Gundren.
+      </p>
+      <a href="sessions.html" class="latest-link">
+        View all sessions →
+      </a>
+    </div>
+  </div>
+
+  <script src="nav.js"></script>
+  <script>initNav('chronicle');</script>
+</body>
+</html>

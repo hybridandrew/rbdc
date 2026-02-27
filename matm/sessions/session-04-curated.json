@@ -1,0 +1,190 @@
+{
+  "session_number": 4,
+  "title": "Trail of the Taken",
+  "date": "March 29, 2025",
+  "summary": "The party discovered evidence of Gundren and Sildar's abduction and followed the goblin trail into dangerous territory. After navigating treacherous streams, dodging snare traps, and surviving multiple goblin ambushes, they reached the mouth of Cragmaw Cave—and leveled up to Level 2.",
+  "level_up": true,
+  "new_level": 2,
+  "duration": "~3.5 hours",
+  "player_attendance": ["Richard (Semaj)", "Jen (Kaelia)", "Sean (Belden)", "James (Ekran)"],
+  
+  "highlights": {
+    "best_moments": [
+      {
+        "title": "Bardcore Rage Against the Machine",
+        "type": "funny",
+        "description": "The session opened with the group joking about making a medieval cover of Bulls on Parade as the campaign's theme song.",
+        "quotes": [
+          {"speaker": "Sean/Belden", "text": "We should do Bulls on Parade with old school medieval instruments."},
+          {"speaker": "Alex/GM", "text": "Oh, dude. That would be awesome. Like Bardcore Rage."},
+          {"speaker": "Jen/Kaelia", "text": "Rich, get on it. That's your new job."}
+        ]
+      },
+      {
+        "title": "Fire and Water Don't Mix",
+        "type": "roleplay",
+        "description": "Kaelia, the Phoenix Sorcerer, refused to cross the stream on her own—leading to Belden carrying her piggyback style.",
+        "quotes": [
+          {"speaker": "Jen/Kaelia", "text": "You should give me a piggyback ride. I don't want to get wet."},
+          {"speaker": "Sean/Belden", "text": "Would that damage you?"},
+          {"speaker": "Jen/Kaelia", "text": "No, only when I've cast the mantle of flame that I burn people."},
+          {"speaker": "Richard/Semaj", "text": "Just jump across. There was a person screaming and you're worried about getting wet, woman. Get across the water."},
+          {"speaker": "Jen/Kaelia", "text": "But it's fire and water."}
+        ]
+      },
+      {
+        "title": "Ekran's Graceful Entry",
+        "type": "funny",
+        "description": "After Belden crossed the stream with ease, Ekran attempted to follow... and immediately fell in.",
+        "quotes": [
+          {"speaker": "Alex/GM", "text": "You think this is easy enough, right? And you take the first leap onto one of the rocks and immediately you misjudge the slickness of the first rock as your foot is going to skid sideways and you just pinwheel right into the stream with a large splash."},
+          {"speaker": "James/Ekran", "text": "I turn to the others and I just say, quite refreshing, the water's fine."}
+        ]
+      },
+      {
+        "title": "Semaj's Power Move",
+        "type": "cool",
+        "description": "While everyone struggled with the stream crossing, Semaj simply teleported across.",
+        "quotes": [
+          {"speaker": "Richard/Semaj", "text": "I've just been standing and watching everyone get across and whatnot, and so I just use my starlight step and just go right across."},
+          {"speaker": "Sean/Belden", "text": "Anything to make everyone forget about the foot thing."}
+        ]
+      },
+      {
+        "title": "Belden's Redemption Arc",
+        "type": "epic",
+        "description": "Belden, embarrassed by getting his foot stuck in the floorboards last session, rolled a natural 20 on his acrobatics check to leap from a tree.",
+        "quotes": [
+          {"speaker": "Alex/GM", "text": "You got a double front flip out of the tree and just splashed right— I'm going to say you get an extra five feet of movement from that."}
+        ]
+      },
+      {
+        "title": "The Buttshot Kill",
+        "type": "funny",
+        "description": "Ekran landed a devastating arrow on a fleeing goblin in a rather... unfortunate location.",
+        "quotes": [
+          {"speaker": "James/Ekran", "text": "So, I imagine he tried jumping in the brush and hit just his butt sticking out. So, as I let loose my arrow, I feel like it'd probably make him jump and then fully fall into the brush."},
+          {"speaker": "Alex/GM", "text": "Yeah, as the arrow severs his spine. The goblin just falls limp all the way into the brush."},
+          {"speaker": "Jen/Kaelia", "text": "Did you shoot an arrow in its butthole?"},
+          {"speaker": "Richard/Semaj", "text": "I tell Ekran, sounds like he met his end."},
+          {"speaker": "James/Ekran", "text": "My arrow certainly did."}
+        ]
+      },
+      {
+        "title": "Kaelia's Mage Hand Distraction",
+        "type": "clever",
+        "description": "With Belden down and goblins hidden, Kaelia got creative—using Mage Hand to shake a tree and create a distraction.",
+        "quotes": [
+          {"speaker": "Jen/Kaelia", "text": "I am going to cast Mage Hand. And I'm gonna put it on a branch of this tree right here. And I'm gonna have the Mage Hand shake the tree really violently so it seems like somebody's in the tree."},
+          {"speaker": "Alex/GM", "text": "You're trying to shake it, making it seem like there's something in there."},
+          {"speaker": "Jen/Kaelia", "text": "Yeah, to hopefully distract the goblin when it pops out. It's all I got. Sorry, Belden."},
+          {"speaker": "Alex/GM", "text": "That's really smart."}
+        ]
+      },
+      {
+        "title": "Sacred Flame Vengeance",
+        "type": "combat",
+        "description": "Semaj held his Sacred Flame action, waiting for a goblin to appear—and incinerated it the moment it popped out.",
+        "quotes": [
+          {"speaker": "Alex/GM", "text": "This goblin will have to make a DC 14 Dexterity saving throw. And it is going to fail. Samaj, let the fire reign."},
+          {"speaker": "Richard/Semaj", "text": "8 damage."},
+          {"speaker": "Alex/GM", "text": "As the flame-like radiance descends upon this goblin..."},
+          {"speaker": "Richard/Semaj", "text": "Basically, I saw him pop up with his shortbow, and I just immediately release the Sacred Flame, but I realized that I did it a second too late, and so I just kind of like scream when I did it."}
+        ]
+      },
+      {
+        "title": "The Goblin Boss Falls",
+        "type": "epic",
+        "description": "The goblin boss tried to flee, but coordinated attacks from Semaj's Frostbite and Ekran's arrow ended its escape permanently.",
+        "quotes": [
+          {"speaker": "Alex/GM", "text": "As you see this goblin boss running away. A little frost trails him."},
+          {"speaker": "James/Ekran", "text": "And a 22 is going to hit."},
+          {"speaker": "Alex/GM", "text": "Ekren, you may not be as graceful jumping across some rocks, but you are landing every shot tonight."},
+          {"speaker": "James/Ekran", "text": "So I sprint out of cover to try to catch him while he's on the run. And as I loose my arrow, it sticks into his chest and I want to say he also falls and rolls into the river."},
+          {"speaker": "Alex/GM", "text": "As the arrow flies, you're going to see it hit directly into this goblin. He tumbles over and both of these goblins are going to start flowing down the stream. Merrily, merrily, merrily."}
+        ]
+      }
+    ],
+    
+    "combat_encounters": [
+      {
+        "name": "Second Goblin Ambush",
+        "enemies": ["4 Goblins", "1 Goblin Boss"],
+        "location": "Goblin Trail near Cragmaw Cave",
+        "outcome": "Victory",
+        "mvp": "Ekran",
+        "notable_events": [
+          "Belden took multiple arrows and dropped to 0 HP",
+          "Kaelia healed Belden with Healing Word",
+          "Semaj's held Sacred Flame incinerated a goblin on reaction",
+          "Ekran landed the killing blow on the fleeing goblin boss"
+        ]
+      }
+    ],
+    
+    "character_spotlight": {
+      "Semaj": {
+        "moments": ["Used Starlight Step to teleport across the stream", "Held Sacred Flame to obliterate a goblin on reaction", "Cast Frostbite on the fleeing goblin boss"],
+        "one_liner": "Sounds like he met his end."
+      },
+      "Kaelia": {
+        "moments": ["Got a piggyback ride from Belden across the stream", "Creative use of Mage Hand as a distraction", "Healed Belden from unconsciousness"],
+        "one_liner": "But it's fire and water."
+      },
+      "Belden": {
+        "moments": ["Carried Kaelia across the stream twice", "Double front flip out of a tree (nat 20)", "Dropped to 0 HP but survived"],
+        "one_liner": "Anything to make everyone forget about the foot thing."
+      },
+      "Ekran": {
+        "moments": ["Fell in the stream (played it cool)", "Landed every combat shot", "Killed the goblin boss with a clutch arrow"],
+        "one_liner": "Quite refreshing, the water's fine."
+      }
+    },
+    
+    "plot_developments": [
+      "Discovered tracks showing Gundren and Sildar were dragged away unconscious",
+      "Found Gundren's decorative map case with the Rockseeker Clan sigil",
+      "Followed the goblin trail 5 miles north to Cragmaw Cave",
+      "Avoided/triggered traps: snare trap (Kaelia caught), pit trap (Belden dodged)"
+    ],
+    
+    "quotes_of_the_session": [
+      {
+        "quote": "Quite refreshing, the water's fine.",
+        "speaker": "Ekran",
+        "context": "After falling face-first into the stream"
+      },
+      {
+        "quote": "Sounds like he met his end.",
+        "speaker": "Semaj",
+        "context": "After Ekran shot a goblin in the rear"
+      },
+      {
+        "quote": "My arrow certainly did.",
+        "speaker": "Ekran",
+        "context": "Response to Semaj's pun"
+      },
+      {
+        "quote": "But it's fire and water.",
+        "speaker": "Kaelia",
+        "context": "Refusing to cross the stream"
+      },
+      {
+        "quote": "Anything to make everyone forget about the foot thing.",
+        "speaker": "Belden",
+        "context": "After carrying Kaelia across"
+      },
+      {
+        "quote": "We should do Bulls on Parade with old school medieval instruments.",
+        "speaker": "Belden",
+        "context": "Suggesting the campaign's theme song"
+      }
+    ],
+    
+    "end_state": {
+      "location": "Mouth of Cragmaw Cave",
+      "party_condition": "Wounded but alive",
+      "next_objective": "Enter Cragmaw Cave to rescue Gundren and Sildar"
+    }
+  }
+}

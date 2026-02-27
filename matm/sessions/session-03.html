@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Session 3: The Road to Phandalin | Mage Against The Machine</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../nav.css">
+  <link rel="stylesheet" href="../base.css">
+  <style>
+    :root {
+      --bg-dark: #0a0a0f;
+      --bg-card: rgba(20, 16, 28, 0.9);
+      --bg-card-hover: rgba(30, 24, 42, 0.95);
+      --gold: #d4a857;
+      --gold-dim: #a68642;
+      --gold-bright: #ffd700;
+      --purple: #8b5cf6;
+      --purple-dim: #6d4aad;
+      --red: #dc2626;
+      --green: #22c55e;
+      --blue: #3b82f6;
+      --text-primary: #f5f5f4;
+      --text-secondary: rgba(245, 245, 244, 0.7);
+      --text-dim: rgba(245, 245, 244, 0.5);
+      --border-subtle: rgba(212, 168, 87, 0.2);
+      --border-glow: rgba(212, 168, 87, 0.4);
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Crimson Pro', Georgia, serif;
+      background: var(--bg-dark);
+      color: var(--text-primary);
+      min-height: 100vh;
+      line-height: 1.6;
+    }
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: 
+        radial-gradient(ellipse at 20% 20%, rgba(139, 92, 246, 0.1) 0%, transparent 50%),
+        radial-gradient(ellipse at 80% 80%, rgba(212, 168, 87, 0.08) 0%, transparent 50%);
+      pointer-events: none;
+      z-index: -1;
+    }
+    .container { max-width: 1000px; margin: 0 auto; padding: 2rem; padding-top: 100px; }
+    .session-hero { text-align: center; padding: 3rem 0; margin-bottom: 3rem; }
+    .session-number {
+      font-family: 'Cinzel', serif;
+      font-size: 0.9rem;
+      color: var(--gold);
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+    .session-title {
+      font-family: 'Cinzel', serif;
+      font-size: 3rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 1rem;
+      text-shadow: 0 0 40px rgba(212, 168, 87, 0.3);
+    }
+    .session-meta {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+      margin-bottom: 1.5rem;
+    }
+    .meta-item { display: flex; align-items: center; gap: 0.5rem; color: var(--text-secondary); font-size: 0.95rem; }
+    .meta-icon { color: var(--gold-dim); }
+    .level-up-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: linear-gradient(135deg, rgba(34, 197, 94, 0.2), rgba(34, 197, 94, 0.1));
+      border: 1px solid rgba(34, 197, 94, 0.4);
+      color: var(--green);
+      padding: 0.5rem 1rem;
+      border-radius: 2rem;
+      font-family: 'Cinzel', serif;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+    .session-summary {
+      max-width: 700px;
+      margin: 0 auto;
+      color: var(--text-secondary);
+      font-size: 1.1rem;
+      font-style: italic;
+    }
+    .section { margin-bottom: 3rem; }
+    .section-header {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+    .section-icon {
+      width: 32px; height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, var(--gold-dim), var(--gold));
+      border-radius: 8px;
+      color: var(--bg-dark);
+    }
+    .section-title { font-family: 'Cinzel', serif; font-size: 1.5rem; font-weight: 600; color: var(--gold); }
+    .highlights-grid { display: grid; gap: 1.5rem; }
+    .highlight-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 12px;
+      padding: 1.5rem;
+      transition: all 0.3s ease;
+    }
+    .highlight-card:hover { background: var(--bg-card-hover); border-color: var(--border-glow); transform: translateY(-2px); }
+    .highlight-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem; }
+    .highlight-title { font-family: 'Cinzel', serif; font-size: 1.2rem; font-weight: 600; color: var(--text-primary); }
+    .highlight-type {
+      font-size: 0.75rem;
+      padding: 0.25rem 0.75rem;
+      border-radius: 1rem;
+      font-family: 'Cinzel', serif;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .type-funny { background: rgba(251, 191, 36, 0.2); color: #fbbf24; }
+    .type-epic { background: rgba(139, 92, 246, 0.2); color: #a78bfa; }
+    .type-combat { background: rgba(220, 38, 38, 0.2); color: #f87171; }
+    .type-roleplay { background: rgba(59, 130, 246, 0.2); color: #60a5fa; }
+    .type-clever { background: rgba(34, 197, 94, 0.2); color: #4ade80; }
+    .type-cool { background: rgba(6, 182, 212, 0.2); color: #22d3ee; }
+    .type-burn { background: rgba(249, 115, 22, 0.2); color: #fb923c; }
+    .type-dramatic { background: rgba(236, 72, 153, 0.2); color: #f472b6; }
+    .type-meta { background: rgba(100, 100, 100, 0.2); color: #a0a0a0; }
+    .highlight-description { color: var(--text-secondary); margin-bottom: 1rem; font-size: 1rem; }
+    .quote-block {
+      background: rgba(0, 0, 0, 0.3);
+      border-left: 3px solid var(--gold-dim);
+      padding: 1rem 1.25rem;
+      margin: 0.5rem 0;
+      border-radius: 0 8px 8px 0;
+    }
+    .quote-text { color: var(--text-primary); font-style: italic; margin-bottom: 0.5rem; }
+    .quote-speaker { color: var(--gold); font-family: 'Cinzel', serif; font-size: 0.85rem; }
+    .quotes-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.25rem; }
+    .quote-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 12px;
+      padding: 1.25rem;
+      position: relative;
+      transition: all 0.3s ease;
+    }
+    .quote-card:hover { border-color: var(--gold-dim); transform: translateY(-2px); }
+    .quote-card::before {
+      content: '"';
+      position: absolute;
+      top: 0.5rem; left: 1rem;
+      font-size: 3rem;
+      color: var(--gold-dim);
+      opacity: 0.3;
+      font-family: Georgia, serif;
+      line-height: 1;
+    }
+    .quote-card .quote-text { padding-left: 1.5rem; font-size: 1.05rem; }
+    .quote-context { color: var(--text-dim); font-size: 0.85rem; margin-top: 0.75rem; padding-left: 1.5rem; }
+    .spotlight-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.25rem; }
+    .spotlight-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 12px;
+      padding: 1.25rem;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+    .spotlight-card:hover { border-color: var(--purple-dim); background: var(--bg-card-hover); }
+    .spotlight-name { font-family: 'Cinzel', serif; font-size: 1.2rem; font-weight: 600; color: var(--gold); margin-bottom: 0.75rem; }
+    .spotlight-moments { list-style: none; text-align: left; margin-bottom: 1rem; }
+    .spotlight-moments li {
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+      padding: 0.35rem 0;
+      padding-left: 1rem;
+      position: relative;
+    }
+    .spotlight-moments li::before { content: '◆'; position: absolute; left: 0; color: var(--gold-dim); font-size: 0.6rem; }
+    .spotlight-moment {
+      color: var(--text-secondary);
+      margin-bottom: 0.75rem;
+      font-size: 0.95rem;
+    }
+    .spotlight-quote {
+      background: rgba(0, 0, 0, 0.3);
+      padding: 0.75rem;
+      border-radius: 8px;
+      font-style: italic;
+      color: var(--text-primary);
+      font-size: 0.95rem;
+    }
+    .combat-card {
+      background: linear-gradient(135deg, rgba(220, 38, 38, 0.1), rgba(20, 16, 28, 0.9));
+      border: 1px solid rgba(220, 38, 38, 0.3);
+      border-radius: 12px;
+      padding: 1.5rem;
+    }
+    .combat-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; }
+    .combat-name { font-family: 'Cinzel', serif; font-size: 1.3rem; font-weight: 600; color: var(--text-primary); }
+    .combat-outcome {
+      background: rgba(34, 197, 94, 0.2);
+      color: var(--green);
+      padding: 0.25rem 0.75rem;
+      border-radius: 1rem;
+      font-family: 'Cinzel', serif;
+      font-size: 0.8rem;
+      font-weight: 600;
+    }
+    .combat-details { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-bottom: 1rem; }
+    .combat-detail { background: rgba(0, 0, 0, 0.3); padding: 0.75rem; border-radius: 8px; }
+    .combat-detail-label { color: var(--text-dim); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.25rem; }
+    .combat-detail-value { color: var(--text-primary); font-size: 0.95rem; }
+    .combat-events { list-style: none; }
+    .combat-events li {
+      color: var(--text-secondary);
+      padding: 0.5rem 0;
+      padding-left: 1.5rem;
+      position: relative;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+    .combat-events li:last-child { border-bottom: none; }
+    .combat-events li::before { content: '⚔'; position: absolute; left: 0; color: var(--red); }
+    .plot-list { list-style: none; }
+    .plot-list li {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 8px;
+      padding: 1rem 1.25rem;
+      margin-bottom: 0.75rem;
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      transition: all 0.3s ease;
+    }
+    .plot-list li:hover { border-color: var(--purple-dim); }
+    .plot-icon { color: var(--purple); font-size: 1.2rem; margin-top: 0.1rem; }
+    .plot-text { color: var(--text-secondary); flex: 1; }
+    .end-state {
+      background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(20, 16, 28, 0.9));
+      border: 1px solid rgba(139, 92, 246, 0.3);
+      border-radius: 12px;
+      padding: 1.5rem;
+      text-align: center;
+    }
+    .end-state-title {
+      font-family: 'Cinzel', serif;
+      font-size: 1rem;
+      color: var(--purple);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 1rem;
+    }
+    .end-state-content { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1.5rem; }
+    .end-item-label { color: var(--text-dim); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.25rem; }
+    .end-item-value { color: var(--text-primary); font-size: 1.05rem; }
+    .session-nav {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 3rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--border-subtle);
+    }
+    .session-nav a {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-family: 'Cinzel', serif;
+      font-size: 0.9rem;
+      padding: 0.75rem 1.25rem;
+      border: 1px solid var(--border-subtle);
+      border-radius: 8px;
+      transition: all 0.3s ease;
+    }
+    .session-nav a:hover { color: var(--gold); border-color: var(--gold-dim); background: rgba(212, 168, 87, 0.1); }
+    .session-nav a.disabled { opacity: 0.3; pointer-events: none; }
+    @media (max-width: 768px) {
+      .container { padding: 1rem; }
+      .session-title { font-size: 2rem; }
+      .session-meta { gap: 1rem; }
+      .nav-links { display: none; }
+      .quotes-grid, .spotlight-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="session-hero">
+      <div class="session-number">Session III</div>
+      <h1 class="session-title">The Road to Phandalin</h1>
+      <div class="session-meta">
+        <span class="meta-item">
+          <span class="meta-icon">📅</span>
+          February 6, 2025
+        </span>
+        <span class="meta-item">
+          <span class="meta-icon">⏱</span>
+          ~3 hours
+        </span>
+        <span class="meta-item">
+          <span class="meta-icon">👥</span>
+          4 players
+        </span>
+      </div>
+      
+      <p class="session-summary">After a long rest at the Driftwood Tavern, the party finally departed for Phandalin. Night brought wolves to their camp, but Kaelia's fire wolf and Semaj's intimidating stare convinced the pack to back down. The session ended with goblins ambushing the party near two dead horses.</p>
+    </header>
+    
+    <section class="section">
+      <div class="section-header">
+        <div class="section-icon">💬</div>
+        <h2 class="section-title">Quotes of the Session</h2>
+      </div>
+      <div class="quotes-grid">
+        <div class="quote-card">
+          <p class="quote-text">I'm gonna be squishy but I can do cool looking things.</p>
+          <p class="quote-speaker">— Kaelia</p>
+          <p class="quote-context">After creating the fire wolf</p>
+        </div>
+        <div class="quote-card">
+          <p class="quote-text">Badass. Sleep Now with the Fire Wolf.</p>
+          <p class="quote-speaker">— Belden</p>
+          <p class="quote-context">Naming the Rage Against the Machine song for Kaelia's fire wolf</p>
+        </div>
+        <div class="quote-card">
+          <p class="quote-text">I stare him down.</p>
+          <p class="quote-speaker">— Semaj</p>
+          <p class="quote-context">Facing the alpha wolf</p>
+        </div>
+        <div class="quote-card">
+          <p class="quote-text">It's not always about killing stuff.</p>
+          <p class="quote-speaker">— Kaelia</p>
+          <p class="quote-context">After the wolves retreated peacefully</p>
+        </div>
+        <div class="quote-card">
+          <p class="quote-text">How long have you been playing that? I guess just a few minutes.</p>
+          <p class="quote-speaker">— Ekran</p>
+          <p class="quote-context">After his nat 20 pan flute performance</p>
+        </div>
+        <div class="quote-card">
+          <p class="quote-text">This soundtrack sounds like straight up Star Trek.</p>
+          <p class="quote-speaker">— Semaj</p>
+          <p class="quote-context">Breaking the fourth wall</p>
+        </div></div>
+    </section>
+    
+    <section class="section">
+      <div class="section-header">
+        <div class="section-icon">⭐</div>
+        <h2 class="section-title">Best Moments</h2>
+      </div>
+      <div class="highlights-grid">
+        <div class="highlight-card">
+          <div class="highlight-header">
+            <h3 class="highlight-title">Ekran's Pan Flute Mastery</h3>
+            <span class="highlight-type type-epic">Epic</span>
+          </div>
+          <p class="highlight-description">Ekran found a pan flute and rolled a nat 20 on his first performance check, instantly becoming proficient.</p>
+          
+          <div class="quote-block">
+            <p class="quote-text">"Wow. As you take out this pan flute that you found in this dusty warehouse, you began to play it with ease. You start practicing some scales and you pick it up quite fast."</p>
+            <p class="quote-speaker">— GM</p>
+          </div>
+          <div class="quote-block">
+            <p class="quote-text">"Well then, let's have a party."</p>
+            <p class="quote-speaker">— Belden</p>
+          </div>
+          <div class="quote-block">
+            <p class="quote-text">"How long have you been playing that? I guess just a few minutes."</p>
+            <p class="quote-speaker">— Ekran</p>
+          </div>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-header">
+            <h3 class="highlight-title">The Wand of Smiles</h3>
+            <span class="highlight-type type-funny">Funny</span>
+          </div>
+          <p class="highlight-description">Semaj tested his new wand on the party. It didn't work on anyone.</p>
+          
+          <div class="quote-block">
+            <p class="quote-text">"Does anyone else want to look at this thing for me? I think it's broken."</p>
+            <p class="quote-speaker">— Semaj</p>
+          </div>
+          <div class="quote-block">
+            <p class="quote-text">"Semaj, when you get this wand back you realize that it has all of its charges back on it. You can feel that the wand is still usable but for some reason it hasn't been working."</p>
+            <p class="quote-speaker">— GM</p>
+          </div>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-header">
+            <h3 class="highlight-title">Kaelia's Fire Wolf</h3>
+            <span class="highlight-type type-epic">Epic</span>
+          </div>
+          <p class="highlight-description">Using Control Flames, Kaelia shaped the campfire into a prowling wolf guardian.</p>
+          
+          <div class="quote-block">
+            <p class="quote-text">"I can make simple images so I'd like to actually make this fire into a wolf. And I'd like the wolf to be like prowling around our campsite."</p>
+            <p class="quote-speaker">— Kaelia</p>
+          </div>
+          <div class="quote-block">
+            <p class="quote-text">"That's so cool, do you have a fire wolf?"</p>
+            <p class="quote-speaker">— Semaj</p>
+          </div>
+          <div class="quote-block">
+            <p class="quote-text">"I'm gonna be squishy but I can do cool looking things."</p>
+            <p class="quote-speaker">— Kaelia</p>
+          </div>
+          <div class="quote-block">
+            <p class="quote-text">"Badass. Now I know what rage against the machine we should have had—Sleep Now with the Fire Wolf."</p>
+            <p class="quote-speaker">— Belden</p>
+          </div>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-header">
+            <h3 class="highlight-title">Semaj Stares Down the Alpha</h3>
+            <span class="highlight-type type-epic">Epic</span>
+          </div>
+          <p class="highlight-description">When wolves approached the camp, Semaj held the alpha's gaze with commanding authority.</p>
+          
+          <div class="quote-block">
+            <p class="quote-text">"The alpha wolf his gaze is going to shift to you Semaj. Do you hold the gaze of this wolf?"</p>
+            <p class="quote-speaker">— GM</p>
+          </div>
+          <div class="quote-block">
+            <p class="quote-text">"Absolutely. I stare him down."</p>
+            <p class="quote-speaker">— Semaj</p>
+          </div>
+          <div class="quote-block">
+            <p class="quote-text">"Semaj you hold this alpha wolf's gaze with a steady unwavering look... your expression is calm almost like regal at this point."</p>
+            <p class="quote-speaker">— GM</p>
+          </div>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-header">
+            <h3 class="highlight-title">Wolves Back Down</h3>
+            <span class="highlight-type type-roleplay">Roleplay</span>
+          </div>
+          <p class="highlight-description">The combination of the fire wolf and Semaj's presence convinced the wolf pack to retreat.</p>
+          
+          <div class="quote-block">
+            <p class="quote-text">"The alpha wolf is giving this low kind of rumbling bark that doesn't feel like a threat and the wolves are now starting to kind of give you a wide berth as they disappear into the cave."</p>
+            <p class="quote-speaker">— GM</p>
+          </div>
+          <div class="quote-block">
+            <p class="quote-text">"I'm gonna start breathing a sigh of relief that I didn't realize I had been holding my breath the entire time."</p>
+            <p class="quote-speaker">— Semaj</p>
+          </div>
+          <div class="quote-block">
+            <p class="quote-text">"Well, it's not always about killing stuff."</p>
+            <p class="quote-speaker">— Kaelia</p>
+          </div>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-header">
+            <h3 class="highlight-title">Star Trek Soundtrack</h3>
+            <span class="highlight-type type-meta">Meta</span>
+          </div>
+          <p class="highlight-description">Richard noticed the background music sounded very familiar.</p>
+          
+          <div class="quote-block">
+            <p class="quote-text">"I'm not gonna lie, this soundtrack sounds like straight up Star Trek. Space, the final frontier."</p>
+            <p class="quote-speaker">— Semaj</p>
+          </div>
+        </div></div>
+    </section>
+    
+    <section class="section">
+      <div class="section-header">
+        <div class="section-icon">⚔</div>
+        <h2 class="section-title">Combat Encounters</h2>
+      </div>
+      
+      <div class="combat-card">
+        <div class="combat-header">
+          <h3 class="combat-name">First Goblin Ambush</h3>
+          <span class="combat-outcome">Partial Victory (one goblin escaped)</span>
+        </div>
+        <div class="combat-details">
+          <div class="combat-detail">
+            <div class="combat-detail-label">Enemies</div>
+            <div class="combat-detail-value">Multiple Goblins</div>
+          </div>
+          
+        </div>
+        <ul class="combat-events"><li>Found two dead horses blocking the road</li><li>Arrows flew from hidden positions</li><li>Ekran returned fire from a tree</li><li>One goblin escaped into the woods</li></ul>
+      </div>
+    </section>
+    
+    <section class="section">
+      <div class="section-header">
+        <div class="section-icon">👤</div>
+        <h2 class="section-title">Character Spotlight</h2>
+      </div>
+      <div class="spotlight-grid">
+        <div class="spotlight-card">
+          <h3 class="spotlight-name">Semaj</h3>
+          <ul class="spotlight-moments"><li>Stared down the alpha wolf</li><li>Tested the Wand of Smiles (it failed)</li><li>Cast Frostbite on goblins</li></ul>
+          <p class="spotlight-quote">"I stare him down."</p>
+        </div>
+        <div class="spotlight-card">
+          <h3 class="spotlight-name">Kaelia</h3>
+          <ul class="spotlight-moments"><li>Created an animated fire wolf</li><li>Kept watch with Semaj</li><li>Fire magic ready for goblins</li></ul>
+          <p class="spotlight-quote">"I can do cool looking things."</p>
+        </div>
+        <div class="spotlight-card">
+          <h3 class="spotlight-name">Belden</h3>
+          <ul class="spotlight-moments"><li>Still thinking about his foot</li><li>Named the fire wolf's theme song</li><li>Dozed off during watch</li></ul>
+          <p class="spotlight-quote">"Sleep Now with the Fire Wolf."</p>
+        </div>
+        <div class="spotlight-card">
+          <h3 class="spotlight-name">Ekran</h3>
+          <ul class="spotlight-moments"><li>Nat 20 pan flute performance</li><li>Climbed tree for better vantage</li><li>Returned fire on goblins</li></ul>
+          <p class="spotlight-quote">"I guess just a few minutes."</p>
+        </div></div>
+    </section>
+    
+    <section class="section">
+      <div class="section-header">
+        <div class="section-icon">📜</div>
+        <h2 class="section-title">Plot Developments</h2>
+      </div>
+      <ul class="plot-list"></ul>
+    </section>
+    
+    <section class="section">
+      <div class="end-state">
+        <h3 class="end-state-title">To Be Continued...</h3>
+        <div class="end-state-content">
+          <div>
+            <div class="end-item-label">Location</div>
+            <div class="end-item-value">Unknown</div>
+          </div>
+          <div>
+            <div class="end-item-label">Party Status</div>
+            <div class="end-item-value">Unknown</div>
+          </div>
+          <div>
+            <div class="end-item-label">Next Objective</div>
+            <div class="end-item-value">Unknown</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <nav class="session-nav">
+      <a href="session-02.html">
+        <span>←</span>
+        <span>Session 2</span>
+      </a>
+      <a href="session-04.html">
+        <span>Session 4</span>
+        <span>→</span>
+      </a>
+    </nav>
+  </div>
+  
+  <script src="../nav.js"></script>
+  <script>initNav('sessions');</script>
+</body>
+</html>

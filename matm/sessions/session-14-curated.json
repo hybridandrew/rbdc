@@ -1,0 +1,172 @@
+{
+  "session_number": 14,
+  "title": "Return to Phandalin",
+  "date": "January 31, 2026",
+  "summary": "After a long rest in the Tresendar Manor ruins, the party returned to Phandalin as heroes. The townsfolk whispered: 'Those are the ones that killed the Redbrands.' They met with Sildar Hallwinter, who confirmed the Black Spider's involvement and pointed them toward Cragmaw Castle to rescue Gundren. A return sweep of the hideout revealed Droop—a pathetic goblin prisoner who provided directions to Cragmaw Castle in exchange for his freedom. The party learned of Reidoth the druid in Thundertree and Qelline Alderleaf's farm. A slower session of information gathering and preparation before the next leg of the adventure.",
+  "level_up": false,
+  "duration": "~3 hours",
+  "player_attendance": ["Richard (Semaj)", "Jen (Kaelia)", "Darren (Valrex)", "Alan (Aster)"],
+  "absent": ["Sean (Belden)"],
+  
+  "highlights": {
+    "best_moments": [
+      {
+        "title": "Heroes of Phandalin",
+        "type": "milestone",
+        "description": "The party returned to Phandalin and felt the tension ease. Townsfolk stepped out cautiously, whispering recognition: 'Those are the ones that killed the Redbrands.'",
+        "quotes": [
+          {"speaker": "Alex/GM", "text": "The town feels different. It's like the place was holding its breath, waiting to see if you're bringing more trouble or finally bringing good news."},
+          {"speaker": "Alex/GM", "text": "You catch whispers as they recognize you. 'Those are the ones that killed the Redbrands.'"}
+        ]
+      },
+      {
+        "title": "Sildar's Briefing",
+        "type": "plot",
+        "description": "Sildar confirmed Glasstaff's death removed 'the knife at Phandalin's throat.' He revealed that Gundren is being held at Cragmaw Castle, but no one knows where it is.",
+        "quotes": [
+          {"speaker": "Alex/GM (Sildar)", "text": "Glasstaff is down? Well, good. That removes the knife at Phandalin's throat."},
+          {"speaker": "Alex/GM", "text": "Cragmaw Castle—folks in town don't know where it is, because anyone who goes looking doesn't come back with directions."}
+        ]
+      },
+      {
+        "title": "Droop the Goblin",
+        "type": "funny",
+        "description": "The party found Droop cowering in a barracks—a pathetic goblin who was kept by the bugbears for entertainment. Charmed by Semaj, he provided directions to Cragmaw Castle.",
+        "quotes": [
+          {"speaker": "Alex/GM (Droop)", "text": "Don't, don't, please don't kill me!"},
+          {"speaker": "Alex/GM (Droop)", "text": "Bugbears hurt Droop. Droop not Cragmaw. Droop was just stuck."},
+          {"speaker": "Alex/GM (Droop)", "text": "If Droop not funny, they hurt Droop. But Droop listen. Droop hears talk. Droop can help."},
+          {"speaker": "Alex/GM (Droop)", "text": "Castle in the big woods. Neverwinter Woods. Old stone place, big broken towers, Cragmaw banners."}
+        ]
+      },
+      {
+        "title": "The Reidoth Lead",
+        "type": "plot",
+        "description": "Sildar pointed them to Qelline Alderleaf's farm and mentioned Reidoth, a druid in Thundertree who knows the entire land.",
+        "quotes": [
+          {"speaker": "Alex/GM (Sildar)", "text": "Go talk to Qelline Alderleaf. She knows a druid in Thundertree who knows the entire land. The druid's name is Reidoth."}
+        ]
+      },
+      {
+        "title": "Lion Shield Coster Connection",
+        "type": "plot",
+        "description": "Kaelia recognized the blue lion symbol on the Lion Shield Coster building—the same symbol from the boxes in Cragmaw Cave.",
+        "quotes": [
+          {"speaker": "Alex/GM", "text": "Kylia, when you were in the Cragmaw cave, you found boxes with a blue lion sigil. As you walked by the Lion Shield Coster, you recognized it was the same symbol."},
+          {"speaker": "Richard/Semaj", "text": "I rolled a natural one. I've never seen that before in my life."}
+        ]
+      },
+      {
+        "title": "Valrex's Perfect Recap",
+        "type": "funny",
+        "description": "Valrex gave such an accurate recap of the previous session that Alex awarded him inspiration.",
+        "quotes": [
+          {"speaker": "Darren/Valrex", "text": "We spent 4,000 turns to try to catch him, and at the very end we murdered him on the edges of his escape."},
+          {"speaker": "Darren/Valrex", "text": "And that is the best I've ever remembered any session ever."}
+        ]
+      }
+    ],
+    "quotes_of_the_session": [
+      {
+        "speaker": "Alex/GM",
+        "quote": "Those are the ones that killed the Redbrands.",
+        "context": "Townsfolk recognizing the party"
+      },
+      {
+        "speaker": "Alex/GM (Droop)",
+        "quote": "Bugbears hurt Droop. Droop was just stuck.",
+        "context": "Droop's pathetic backstory"
+      },
+      {
+        "speaker": "Darren/Valrex",
+        "quote": "We killed him by the skin of his teeth.",
+        "context": "Remembering Glasstaff's near-escape"
+      },
+      {
+        "speaker": "Alex/GM (Sildar)",
+        "quote": "That removes the knife at Phandalin's throat.",
+        "context": "Hearing about Glasstaff's death"
+      },
+      {
+        "speaker": "Richard/Semaj",
+        "quote": "I rolled a natural one. I've never seen that before in my life.",
+        "context": "Failing to recognize the Lion Shield symbol"
+      }
+    ]
+  },
+  
+  "combat_encounters": [],
+  
+  "npcs_encountered": [
+    {
+      "name": "Sildar Hallwinter",
+      "role": "Lord's Alliance agent, ally",
+      "notes": "Provided intel on Black Spider, Cragmaw Castle"
+    },
+    {
+      "name": "Droop",
+      "role": "Pathetic goblin prisoner",
+      "notes": "Charmed by Semaj, provided Cragmaw Castle directions, released"
+    },
+    {
+      "name": "Darren Edermath",
+      "role": "Retired adventurer, ally",
+      "notes": "Providing provisions, acting as liaison"
+    },
+    {
+      "name": "Qelline Alderleaf",
+      "role": "Farmer, mentioned",
+      "notes": "Knows the druid Reidoth"
+    },
+    {
+      "name": "Reidoth",
+      "role": "Druid in Thundertree, mentioned",
+      "notes": "Knows the entire land, potential guide to Cragmaw Castle"
+    },
+    {
+      "name": "Linene Graywind",
+      "role": "Lion Shield Coster merchant",
+      "notes": "Session ended before conversation"
+    }
+  ],
+  
+  "character_spotlights": [
+    {
+      "character": "Semaj",
+      "moment": "Charmed Droop to get Cragmaw Castle directions, organized the town sweep",
+      "one_liner": "We should return to town."
+    },
+    {
+      "character": "Kaelia",
+      "moment": "Recognized the Lion Shield Coster symbol from Cragmaw Cave",
+      "one_liner": "The symbols are the same."
+    },
+    {
+      "character": "Valrex",
+      "moment": "Perfect session recap earned inspiration",
+      "one_liner": "The best I've ever remembered any session."
+    },
+    {
+      "character": "Aster",
+      "moment": "Present but quieter session",
+      "one_liner": "Still thinking about apples."
+    }
+  ],
+  
+  "plot_developments": [
+    "Returned to Phandalin as heroes",
+    "Met with Sildar at the Stonehill Inn",
+    "Learned Gundren is at Cragmaw Castle",
+    "Found and interrogated Droop the goblin",
+    "Got directions to Cragmaw Castle (Neverwinter Woods)",
+    "Learned about Reidoth the druid in Thundertree",
+    "Recognized Lion Shield Coster connection",
+    "Preparing provisions and transportation"
+  ],
+  
+  "end_state": {
+    "location": "Phandalin - Lion Shield Coster",
+    "party_status": "Preparing for journey to Cragmaw Castle",
+    "next_objective": "Visit Lion Shield Coster, then travel to Cragmaw Castle to rescue Gundren"
+  }
+}

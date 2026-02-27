@@ -1,0 +1,1950 @@
+{
+  "session_number": 3,
+  "title": "Session 3",
+  "date": "Unknown",
+  "summary": "",
+  "quotes": [
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "Oh, yeah, we did kill pigs. And I remembered like Ekran kept falling down.",
+      "context": "",
+      "line_number": 14,
+      "category": "dramatic"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "Yeah, I fell down a lot.",
+      "context": "Richard/Semaj: Oh, yeah, we did kill pigs. And I remembered like Ekran kept falling down....",
+      "line_number": 17,
+      "category": "dramatic"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "Yeah, I kept people from dying.",
+      "context": "James/Ekran: Yeah, I fell down a lot....",
+      "line_number": 20,
+      "category": "funny"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "Yeah, I did. Questionable pastries. Yeah, special pastries.",
+      "context": "Jen/Kailea: Yeah, I kept people from dying....",
+      "line_number": 23,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "It was an archmage. You know, he put a little bit of magic in each one.",
+      "context": "James/Ekran: Yeah, I did. Questionable pastries. Yeah, special pastries....",
+      "line_number": 26,
+      "category": "meta"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "I remember Ekran also was a little insistent upon getting some additional funds for our our trials and tribulations. But that may be due to his mood at the time.",
+      "context": "Alex/GM/NPCs: It was an archmage. You know, he put a little bit of magic in each one....",
+      "line_number": 29,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "I mean, we should be fairly compensated. I would agree with that.",
+      "context": "",
+      "line_number": 32,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "So as you're sitting on the couch, you're looking into the fire, you're shuffling the cards. Let's go in here from Kaelia next, Jen. What's what is going through Kaelia's name? Kaelia's head.",
+      "context": "",
+      "line_number": 57,
+      "category": "meta"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "OK, so after seeing some of your wounds and seeing the damage that a swarm of rats inflicted, you realize that you might need a little bit of extra help later on down the road. All right. Let's hear from Belden next. Sean, what is what is going through Belden's mind?",
+      "context": "",
+      "line_number": 65,
+      "category": "dramatic"
+    },
+    {
+      "speaker": "Sean/Belden",
+      "character": "Sean/Belden",
+      "text": "So as Belden is sitting there cleaning off his hammer, he's thinking, I can't believe my foot got stuck in the floor. I need to make sure that that doesn't happen again. Also, those boards, that board stuff was weird.",
+      "context": "",
+      "line_number": 70,
+      "category": "funny"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "OK. So let's go ahead and. Pick it up right where we left off, you are now sitting at this fire. You had a long day. Ekran, I see that you. OK, I mean, yeah, I was going to say, did you want to take that out and practice?",
+      "context": "",
+      "line_number": 87,
+      "category": "meta"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "Yeah. Well, I'm sitting here, I like. Shift slightly and remind kind of sit on it weird and remember, I have it, I pick it out and maybe play a few notes, get a feel for it.",
+      "context": "",
+      "line_number": 92,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "OK. Let's see. So just a normal.",
+      "context": "",
+      "line_number": 100,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "How long have you been playing that? I guess just a few minutes.",
+      "context": "Richard/Semaj: Hmm....",
+      "line_number": 117,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "But I think it's going to kind of look at him with like suspicion and the flames in the room are going to kind of flare a little bit. Not not a whole lot. Just a little bit.",
+      "context": "Sean/Belden: Well, then, let's have a party....",
+      "line_number": 123,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "I just kind of look at the flute and give a shrug and keep practicing.",
+      "context": "",
+      "line_number": 126,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "I think I'm also going to examine the wand that I got. OK, so, but I don't see it in my thing. Gotcha. OK. Are you? I was trying to figure out how the how that works, like if I can like. Yeah. How does that work? I don't guess I can do anything with it then, huh?",
+      "context": "",
+      "line_number": 136,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "So then I'm going to test it out. I'm going to point it at at Belden and I'm going to I'm going to use it on Belden.",
+      "context": "",
+      "line_number": 150,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "OK. So what do I need to roll? So let's go ahead and put this in the chat. So the Wand of Smiles, we're going to use an ability of it.",
+      "context": "Richard/Semaj: So then I'm going to test it out. I'm going to point it at at Belden and I'm going to I'm going to u...",
+      "line_number": 153,
+      "category": "meta"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "And I'm going to like not say anything about it. I'm just going to like take it out and just be like, hmm. And whatever it takes to activate it.",
+      "context": "Alex/GM/NPCs: OK. So what do I need to roll? So let's go ahead and put this in the chat. So the Wand of Smiles, we...",
+      "line_number": 158,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "Hmm. All right. And I get three uses. All right. Next, I'm going to try it on Kailea.",
+      "context": "",
+      "line_number": 170,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "All right, Kailea. He's flicks it at Belden, realize it's not working and he flicks it at you. I need you to make me a charisma saving throw, please.",
+      "context": "Richard/Semaj: Hmm. All right. And I get three uses. All right. Next, I'm going to try it on Kailea....",
+      "line_number": 175,
+      "category": "meta"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "I forget how to do this.",
+      "context": "Alex/GM/NPCs: All right, Kailea. He's flicks it at Belden, realize it's not working and he flicks it at you. I nee...",
+      "line_number": 178,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "Yeah, OK, there we go.",
+      "context": "Richard/Semaj: Geez....",
+      "line_number": 187,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "using this wand or is he like doing it he at this point at this point I'm like",
+      "context": "",
+      "line_number": 204,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "flicking it like I'm just I'm using it I'm trying to figure it out because it didn't work on belt and so I try it on you next and then I'm like just looking at it and was like shrug and then I'm gonna be like does my else want to look",
+      "context": "Jen/Kailea: using this wand or is he like doing it he at this point at this point I'm like...",
+      "line_number": 207,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "at this thing for me I think it's broken I guess sitting next to you I glance over at you and I reach my hand out so I'm gonna hand it to him like obviously",
+      "context": "",
+      "line_number": 210,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "what does it change when it changes hands does it I think no I think yeah I",
+      "context": "",
+      "line_number": 213,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "wand of scales if you roll on that if you roll a 1 on the d2 I don't want on",
+      "context": "Alex/GM/NPCs: would just be one more use left right yeah but and then it would turn into a...",
+      "line_number": 219,
+      "category": "meta"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "at the bottom of it as well I see that and I smile to myself and I like turn it in my hands and I look over at at Semaj and I kind of pointed at him kind of",
+      "context": "",
+      "line_number": 225,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "weird there was no she click on the word charisma yeah I did that's weird it",
+      "context": "",
+      "line_number": 231,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "doesn't even say charisma saving throw I know yeah so here I'll do so when I click on it it should say charisma saving throw yeah so leaving that one all right so Semaj you you as well it kind of you feel something but it doesn't make you smile and you're realizing that maybe this wand is not as",
+      "context": "Jen/Kailea: weird there was no she click on the word charisma yeah I did that's weird it...",
+      "line_number": 234,
+      "category": "meta"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "cracked up as it is it should have been if we use all of our good roles doing",
+      "context": "",
+      "line_number": 237,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "well I I'm gonna I'm gonna like turn it over again I'd be like okay guess it's",
+      "context": "",
+      "line_number": 243,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "busted and I'll toss it back to some yeah all right Semaj when you get this wand back you realize that it has all of its charges back on it you can feel that the wand is is still usable but for some reason it hasn't been working I think I",
+      "context": "James/Ekran: well I I'm gonna I'm gonna like turn it over again I'd be like okay guess it's...",
+      "line_number": 246,
+      "category": "meta"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "need to work on this a little bit more figure out how it works I'm gonna put it",
+      "context": "",
+      "line_number": 249,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "attuned to the same weapon I think it has to be in their possession right it",
+      "context": "Alex/GM/NPCs: away okay after a time uh no no no it shouldn't so can multiple people be...",
+      "line_number": 255,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "that's the case I don't know I think it's it's if you unattune from the item you have to attune to it again and it takes like an hour or so to do so",
+      "context": "",
+      "line_number": 270,
+      "category": "meta"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "gotcha okay I'm gonna say like guys I'm beat I'm gonna go up to bed and get",
+      "context": "Alex/GM/NPCs: that's the case I don't know I think it's it's if you unattune from the item you have to attune to i...",
+      "line_number": 273,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "I'm gonna ask I'm gonna ask does anybody want the master suite we can just",
+      "context": "",
+      "line_number": 279,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Sean/Belden",
+      "character": "Sean/Belden",
+      "text": "the two little dice yeah oh I can't hang on I have dark reader on why I can't see that oh no I can't just can't see it anyway D 100 okay Kaelia you pull out the",
+      "context": "",
+      "line_number": 288,
+      "category": "funny"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "card out of Ekran's deck that is almost the top card and as you as you get the winning card you now have won the night in the master bedroom suite",
+      "context": "",
+      "line_number": 291,
+      "category": "meta"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "um is there any sort of first aid that can be done that isn't magic cuz like I am short one hit point so if you don't like regenerate hit points overnight then I should probably do something to myself you regenerate overnight you get",
+      "context": "Alex/GM/NPCs: card out of Ekran's deck that is almost the top card and as you as you get the winning card you now ...",
+      "line_number": 294,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Sean/Belden",
+      "character": "Sean/Belden",
+      "text": "Belden's are just gonna get up and make his way into the bunk the bunk room as",
+      "context": "Alex/GM/NPCs: all your spots all your hit points back after a long rest okay well yeah...",
+      "line_number": 300,
+      "category": "meta"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "well okay Ekran's gonna stand up he's gonna do like a special shuffle with his cards putting them away just kind of mumbles you're welcome and then I head",
+      "context": "Sean/Belden: Belden's are just gonna get up and make his way into the bunk the bunk room as...",
+      "line_number": 303,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "that coffee will surely make this a better one well I tell you what today's",
+      "context": "",
+      "line_number": 315,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "a normal portion of maybe eggs and bacon taking sips of my coffee okay kind of walk out the corner of my eye watching the the chaos that Belden is ensuing on",
+      "context": "",
+      "line_number": 333,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "this breakfast all right so as as you are you know kind of looking at Belden here in between bites do you talk about any what your plans are for the day I",
+      "context": "",
+      "line_number": 336,
+      "category": "meta"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "guess I kind of bring that question up I ask everybody what the the plan is because I guess we have a little bit of shopping to do but we've gotten the main supplies so pretty soon we'll be hitting the road yeah and I mentioned that I'd",
+      "context": "",
+      "line_number": 339,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "really like to make a couple of stops before we leave and ask everybody what time we're planning on departing so that I can go do what I need to do okay",
+      "context": "",
+      "line_number": 342,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "two days time so I'm gonna go back into my room and gather my supplies okay everything because I left them in there when I went to go have dinner or",
+      "context": "",
+      "line_number": 354,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "breakfast never this is all right so he never leaves it leaves his stuff behind",
+      "context": "Jen/Kailea: two days time so I'm gonna go back into my room and gather my supplies okay everything because I lef...",
+      "line_number": 357,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "another road managed how do you roll animal handling so if you double click",
+      "context": "",
+      "line_number": 363,
+      "category": "meta"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "an extra monitor would be really nice right now I mean I will always agree with",
+      "context": "",
+      "line_number": 369,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "health potions or band-aids or something that I can heal myself when",
+      "context": "",
+      "line_number": 375,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "a free version of that okay um maybe some sort of I'm I'm gonna decide against that because I already have spare the dying but yeah I'll buy one",
+      "context": "",
+      "line_number": 381,
+      "category": "funny"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "for me okay you are gonna buy a healers kit for Semaj yep all right Semaj that is gonna be five gold so let's go ahead and add that to your inventory and you will now have ten gold and gold ten gold after this okay um was there any other shopping you guys were looking to do well the",
+      "context": "Jen/Kailea: a free version of that okay um maybe some sort of I'm I'm gonna decide against that because I alread...",
+      "line_number": 384,
+      "category": "meta"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "only other thing I was thinking of was like after seeing the prices of the potions and stuff was if there was any sort of extra like armor anything that I could do just to kind of help at all with my hit points okay so looking at",
+      "context": "",
+      "line_number": 387,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "break got my fat boys pizza now can you pause the recording just let it record I mean it's",
+      "context": "Alex/GM/NPCs: just take a five-minute break it's 722 we'll say 728 we'll take a five-minute...",
+      "line_number": 399,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "fine right yep no just asking more it does say that I can pause it yeah yeah once we're",
+      "context": "Richard/Semaj: break got my fat boys pizza now can you pause the recording just let it record I mean it's...",
+      "line_number": 402,
+      "category": "meta"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "for some people there okay like a street busker but not busking but like a street yeah you run",
+      "context": "",
+      "line_number": 408,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "the game mm-hmm gotcha okay um so here is a dice game that was used on critical roll this one is you roll 2d6 you win if you get a 7 or 12 if you don't you can double your bet roll 1d6 and add it to your previous total to try and hit a 7 or 12 again mm-hmm okay so how much are you gonna wager",
+      "context": "Richard/Semaj: for some people there okay like a street busker but not busking but like a street yeah you run...",
+      "line_number": 411,
+      "category": "dramatic"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "the whatever or whatever NPC does it and if the NPC succeeds then he loses money if the NPC fails",
+      "context": "",
+      "line_number": 420,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "bit and and proffer the chance of a double or nothing okay so double or nothing we're gonna",
+      "context": "",
+      "line_number": 426,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "their charisma check okay oh this yeah this person is gonna see that you just kind of swindled the",
+      "context": "",
+      "line_number": 435,
+      "category": "meta"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "other one and says absolutely not all right I guess I after that I take a look around the room and and I think to myself I better not try my try my luck too hard and and I take the gold I won",
+      "context": "Alex/GM/NPCs: their charisma check okay oh this yeah this person is gonna see that you just kind of swindled the...",
+      "line_number": 438,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "and leave okay all right Ekran uh you you now have 13 gold 3 silver and 4 copper now as your total perfect we're just waiting on Sean as soon as he gets back we'll go ahead and start I might go",
+      "context": "",
+      "line_number": 441,
+      "category": "meta"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "noise on the game dummy I saw tipsy in the background are you being dumb dumb stuff dumb",
+      "context": "",
+      "line_number": 447,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "awesome yeah yeah yeah you're gonna get that right",
+      "context": "",
+      "line_number": 456,
+      "category": "funny"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "just scarfing down some food real quick oh well then I'm gonna go back to making but let me know",
+      "context": "Richard/Semaj: awesome yeah yeah yeah you're gonna get that right...",
+      "line_number": 459,
+      "category": "dramatic"
+    },
+    {
+      "speaker": "Sean/Belden",
+      "character": "Sean/Belden",
+      "text": "got the seven oh wait oh no I'm so good the two was me okay so I'm and I want another two",
+      "context": "",
+      "line_number": 468,
+      "category": "meta"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "while we're traveling to try to get get some more information about my companions so like ask them about their past and just getting their life stories I know we kind of briefly went over you know who they were and introduced ourselves in the tavern but I would just try to get to know",
+      "context": "",
+      "line_number": 474,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "so uh Belden not much left with animals huh",
+      "context": "Sean/Belden: Melvin right because that's not up front okay yeah that's right...",
+      "line_number": 483,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "I saw that uh that that foot go through the floor definitely uh not something you want to",
+      "context": "Sean/Belden: I've been a bit unlucky recently...",
+      "line_number": 489,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Sean/Belden",
+      "character": "Sean/Belden",
+      "text": "have happen during the battle I'm sure I look at Semaj with a straight face and say I don't know",
+      "context": "Richard/Semaj: I saw that uh that that foot go through the floor definitely uh not something you want to...",
+      "line_number": 492,
+      "category": "meta"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "what you're talking about must have been my imagination I'm I'm gonna glance over at it",
+      "context": "Sean/Belden: have happen during the battle I'm sure I look at Semaj with a straight face and say I don't know...",
+      "line_number": 495,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "um I'm just gonna ask him like hey man so like where do you come from what's your story like and if we haven't like fully fleshed that those details out I mean we don't have to like kind of go back into that but like basically that's just what I would be asking him about his",
+      "context": "",
+      "line_number": 501,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "by the story and and just thank him for like like sharing that with me uh in a non like in a masculine way however whatever the right way thanks bro",
+      "context": "",
+      "line_number": 507,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Sean/Belden",
+      "character": "Sean/Belden",
+      "text": "so Belden feeling yeah feeling of more of like a camaraderie now he asks the same to Simaj",
+      "context": "Richard/Semaj: by the story and and just thank him for like like sharing that with me uh in a non like in a masculi...",
+      "line_number": 510,
+      "category": "meta"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "uh yes let's see so if you right click on your character has it already gotten dark at this",
+      "context": "",
+      "line_number": 522,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "if he clicks a little thing on his character yeah i'm trying to see if there's torch oh how did you do that the torch if you click on your character you click on if he clicks",
+      "context": "",
+      "line_number": 528,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "um take that uh let me let me see something be an inventory item that he can use maybe that's what i'm thinking i don't see the lantern though in my torch um i just well i used it i it's",
+      "context": "",
+      "line_number": 534,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "of light in this area for you i i probably wasn't expecting this so as this happens i like glance at it i'm like oh my eyes water and i kind of blink i'm like nobody looked directly at it",
+      "context": "",
+      "line_number": 546,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "framed by some gnarled roots i think we need to like pull the cart off the road and kind of get the animals like set up and and ready for the evening like getting ready for camp okay um is there like a before we get to the bridge is there like a way to do that or yeah um",
+      "context": "",
+      "line_number": 552,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "do you want to just kind of pull them off to the road right now like you find like a nice little",
+      "context": "",
+      "line_number": 555,
+      "category": "meta"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "kind of soft spot right over here i'd yeah i'd like to be more like maybe on the maybe down here okay like kind of back it in like sort of hidden like yeah",
+      "context": "Alex/GM/NPCs: do you want to just kind of pull them off to the road right now like you find like a nice little...",
+      "line_number": 558,
+      "category": "dramatic"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "i got a thingy earlier what was that it was like a marker um let's see uh you can tap",
+      "context": "James/Ekran: click and hold um we could check it out maybe if we went out there for the night yeah i mean...",
+      "line_number": 567,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "wandering over to it i figure we could probably scout it out and see if it would be a good place",
+      "context": "",
+      "line_number": 573,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "i'm gonna basically be at on a six i'm gonna go in on a six okay Semaj one you you follow in behind",
+      "context": "",
+      "line_number": 579,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "do i know if it's all animals or if there's any people in there",
+      "context": "",
+      "line_number": 585,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "i don't think i don't think the three of us are prepared for a fight",
+      "context": "",
+      "line_number": 594,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "so at this point i slowly back away from the cave and start maybe heading back to the cart um yeah maybe i come up to the the start of this bridge just to peer over see if there's anything",
+      "context": "Richard/Semaj: i don't think i don't think the three of us are prepared for a fight...",
+      "line_number": 597,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "everything that i would have expected we needed for you know keeping warm making food have the",
+      "context": "",
+      "line_number": 603,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "the same thing uh i look over at Semaj i'm like you you folk you can see in the dark right",
+      "context": "",
+      "line_number": 615,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "yeah i can see in the dark as can i",
+      "context": "James/Ekran: the same thing uh i look over at Semaj i'm like you you folk you can see in the dark right...",
+      "line_number": 618,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "and i hesitantly say um as can i but i seem really uneasy because i don't like the idea of a fire going out because i love fire so i don't want it to go up but i don't say any of that i just like seem uneasy like i'm really uncomfortable with the idea of not having a fire",
+      "context": "Richard/Semaj: yeah i can see in the dark as can i...",
+      "line_number": 621,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "that's what all the cautions about okay so i kind of like where we have the setup because there's",
+      "context": "",
+      "line_number": 627,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "direction so do we want to watch in pairs or do we want to have one person on watch i mean if we",
+      "context": "Sean/Belden: like trees and so we can keep our back to the the river and at least not get ambushed from that...",
+      "line_number": 633,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "how long would it be dark and how what constitutes a watch so it's like six hours eight hours um",
+      "context": "Jen/Kailea: direction so do we want to watch in pairs or do we want to have one person on watch i mean if we...",
+      "line_number": 636,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "what with each of us getting a watch that we still get a full rest though right yeah with each of you taking because it uh yeah yeah okay then yeah i think we should split it up in in watches",
+      "context": "",
+      "line_number": 642,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "in higher vantage points uh i i don't quite uh think of that but i do a similar thing that that does and i kind of wrap myself in my coat and i'm kind of close leaned up against a tree okay",
+      "context": "",
+      "line_number": 648,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "do uh do astral sleep or do they just do their trance thing they do a just a trance yeah so um",
+      "context": "",
+      "line_number": 654,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "and uh i'm gonna mouth to him and i'm gonna say i'm gonna mouth wolves to him or how i don't know",
+      "context": "",
+      "line_number": 666,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "and i'm gonna be like i'm gonna go over to um well actually can i see Kaelia oh yeah i should be able to see see her from this vantage point right yeah yeah you can see her yeah so i'm gonna be like make eye contact with her like she can hear it right",
+      "context": "",
+      "line_number": 672,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "you can hear it you can hear it yeah and i'm just gonna shake my head like yeah i hear it",
+      "context": "",
+      "line_number": 675,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "so i'm gonna make my way over to uh um whoops it's a building um and i'm gonna like do the same thing just try to lightly tap them melvin to come uh you're a little bit heavier sleeper",
+      "context": "Jen/Kailea: you can hear it you can hear it yeah and i'm just gonna shake my head like yeah i hear it...",
+      "line_number": 678,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "well ekron loves a gamble so he'll uh he'll leave it be as as he kind of needs it to see yes yes the",
+      "context": "",
+      "line_number": 699,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "that's so cool do you have a fire wolf",
+      "context": "",
+      "line_number": 708,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "let's let's do this i'm gonna be squishy but i can do cool looking things",
+      "context": "",
+      "line_number": 714,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "um at this point i would like to uh since we're we're kind of preparing for the possibility of an encounter i'd like to try to climb the tree and pull out my uh short bow in preparation okay up to here and i'm gonna stay up in the back of the with my elevation change at all",
+      "context": "",
+      "line_number": 723,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "it so and like make it do whatever i want so i kind of want it just prowling our campsite",
+      "context": "",
+      "line_number": 729,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "and it is real fire so gonna be really sad if he touches it he's gonna have a bad time he's gonna have a bad time",
+      "context": "",
+      "line_number": 735,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "i'm gonna go and stand next to the or at least a somewhat safe distance maybe like right here from the uh fire wolf um so that i can see the wolves that are there in addition to letting them know that this wolf is with me okay where are our oxen at this point",
+      "context": "",
+      "line_number": 741,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "oh that's charisma sorry uh intimidation oh wow",
+      "context": "",
+      "line_number": 747,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "i'm gonna i'm gonna start breathing a sigh of relief that like i didn't realize i had been holding my breath the entire time",
+      "context": "",
+      "line_number": 753,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "um all right so how long into the evening was this about an hour yeah at about an hour or two into the watch uh and you you can hear the wolves kind of go into the cave um and yeah awesome all",
+      "context": "Richard/Semaj: i'm gonna i'm gonna start breathing a sigh of relief that like i didn't realize i had been holding m...",
+      "line_number": 756,
+      "category": "funny"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "right well um it's not always about killing stuff",
+      "context": "",
+      "line_number": 759,
+      "category": "dramatic"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "i i go up to to uh ekron and and balden and i just tell them like well at least know what those",
+      "context": "Jen/Kailea: right well um it's not always about killing stuff...",
+      "line_number": 762,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "tracks were for yeah how many were there all i could see from where i am is one",
+      "context": "Richard/Semaj: i i go up to to uh ekron and and balden and i just tell them like well at least know what those...",
+      "line_number": 765,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "there was four right i think i counted four yeah there was a whole pack i guess we can count",
+      "context": "James/Ekran: tracks were for yeah how many were there all i could see from where i am is one...",
+      "line_number": 768,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "ourselves lucky they uh decided not to engage us further i think we can thank uh",
+      "context": "Richard/Semaj: there was four right i think i counted four yeah there was a whole pack i guess we can count...",
+      "line_number": 771,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "kaylea for her fire wolf because i don't know that my my menacing gaze was uh was enough to uh",
+      "context": "James/Ekran: ourselves lucky they uh decided not to engage us further i think we can thank uh...",
+      "line_number": 774,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "so this fire wolf will only last an hour and then it will i'm assuming turn back into a normal campfire",
+      "context": "Richard/Semaj: kaylea for her fire wolf because i don't know that my my menacing gaze was uh was enough to uh...",
+      "line_number": 777,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "okay he's the bestest boy so he's gonna come sit and lay down on the on the rocks i mean it's a",
+      "context": "Jen/Kailea: so this fire wolf will only last an hour and then it will i'm assuming turn back into a normal campf...",
+      "line_number": 780,
+      "category": "dramatic"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "cantrip so i can keep casting it all night if we need right well make him make him go lay down on",
+      "context": "Richard/Semaj: okay he's the bestest boy so he's gonna come sit and lay down on the on the rocks i mean it's a...",
+      "line_number": 783,
+      "category": "dramatic"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "uh do we get points for that",
+      "context": "Sean/Belden: nice that's yeah that was the correct way to ask that question...",
+      "line_number": 798,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "i mean i'm squishy i like avoiding having to fight if i don't have to but i like fighting when i do have to fight as long as i don't get hit",
+      "context": "Sean/Belden: all right hang on i'm going in the cave...",
+      "line_number": 804,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "has dark vision um so i would say either kaylea or or um or belden well i can do the second watch",
+      "context": "",
+      "line_number": 810,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "because i have to stay up to keep the fire wolf being a wolf anyway and then after second watch i can take like a little less than an hour nap and somebody can wake me up to like redo the cantrip and go back to sleep okay so i'll take second watch and then on third watch",
+      "context": "Richard/Semaj: has dark vision um so i would say either kaylea or or um or belden well i can do the second watch...",
+      "line_number": 813,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "i'll just need somebody actually actually you should take third watch okay um because that means you can leave something you can leave it going when you go to sleep for the fourth watch which you know ekron doesn't have uh sight so if you just leave it leave it going okay",
+      "context": "",
+      "line_number": 816,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "and he says that to nobody because everyone else is sleeping",
+      "context": "",
+      "line_number": 822,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Sean/Belden",
+      "character": "Sean/Belden",
+      "text": "so i uh head on over to Ekran and uh type him a couple times and uh we were we were doing two hour watches three hour watches three hour watches okay",
+      "context": "Richard/Semaj: and he says that to nobody because everyone else is sleeping...",
+      "line_number": 825,
+      "category": "meta"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "yeah it's three in the morning so it's good it's about to get like it's about to be dawn",
+      "context": "Sean/Belden: so i uh head on over to Ekran and uh type him a couple times and uh we were we were doing two hour w...",
+      "line_number": 828,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "he rolls over tries to get some kind of footing in the tree that he's been laying in he didn't bother to get down and he kind of looks um then at this point i i'll uh take my lantern back out um still giving me the little yeah i gotta i'll figure that after",
+      "context": "",
+      "line_number": 834,
+      "category": "dramatic"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "the horse or get on the wagon okay i'll go ahead and kick if it didn't go out already i'll kick some dirt on the the campfire put it out okay throwing them on the cart all right",
+      "context": "",
+      "line_number": 849,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "so i'm gonna ask Semaj because he knew where he had asked where there were thieves along the road and i'm pretty sure it was in this general vicinity so i'm gonna basically just ask and be like didn't didn't you ask about um can i draw on that uh yes so can you i'm just basically gonna ask",
+      "context": "",
+      "line_number": 855,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "where the the bushel of trees you can kind of see my little guy yeah yeah can you ping but you click and ping oh yeah i can click it was right around here that they drew it they drew an x right around",
+      "context": "",
+      "line_number": 861,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "here how'd you do that how'd you do that shawn shift was it shift click",
+      "context": "",
+      "line_number": 864,
+      "category": "meta"
+    },
+    {
+      "speaker": "Sean/Belden",
+      "character": "Sean/Belden",
+      "text": "or alt how'd you do that no alt is the like",
+      "context": "Alex/GM/NPCs: here how'd you do that how'd you do that shawn shift was it shift click...",
+      "line_number": 867,
+      "category": "meta"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "triangle yeah shift and long click is the arrow okay how do you do that like it's not",
+      "context": "Sean/Belden: or alt how'd you do that no alt is the like...",
+      "line_number": 870,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Sean/Belden",
+      "character": "Sean/Belden",
+      "text": "i think you have to hold hold shift for like a second and then click for like a second",
+      "context": "James/Ekran: triangle yeah shift and long click is the arrow okay how do you do that like it's not...",
+      "line_number": 873,
+      "category": "meta"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "my screen moves when i do that too yeah you're centering even double click to ping",
+      "context": "Sean/Belden: i think you have to hold hold shift for like a second and then click for like a second...",
+      "line_number": 876,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "oh do you have you gotta have token controls like okay there we go",
+      "context": "James/Ekran: my screen moves when i do that too yeah you're centering even double click to ping...",
+      "line_number": 879,
+      "category": "meta"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "oh i'm not gonna lie this this soundtrack sounds like straight up star trek space the final frontier",
+      "context": "Alex/GM/NPCs: oh do you have you gotta have token controls like okay there we go...",
+      "line_number": 882,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "that part right there i must have turned it down or something because i don't hear",
+      "context": "Alex/GM/NPCs: all right it does it does kind of add a little bit of that...",
+      "line_number": 888,
+      "category": "dramatic"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "and while you're doing that did you see the uh mid journey uh picture thing oh no where is it",
+      "context": "Alex/GM/NPCs: video what are we doing okay uh sorry i'm just getting something set up right now...",
+      "line_number": 900,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "it's like i could see why those wolves were like yeah yeah we're gonna let we're gonna",
+      "context": "Alex/GM/NPCs: where's that in the character art the character art yeah oh what dude that is that is so cool...",
+      "line_number": 906,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "right here it's tizzy on the road with us yeah it's right here you guys",
+      "context": "",
+      "line_number": 912,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "uh spread out along the road can can i look and see if there's anything that's",
+      "context": "",
+      "line_number": 918,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "um investigation okay and you saw my good rolls i'm like nothing important",
+      "context": "Alex/GM/NPCs: useful okay go ahead and roll me an investigation check please okay...",
+      "line_number": 924,
+      "category": "meta"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "mama she was waving at you but you didn't see i didn't say no no no no oh really yeah that's my",
+      "context": "",
+      "line_number": 945,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "little bit yeah she she just got home like just now so um okay yeah so i'm gonna like",
+      "context": "Alex/GM/NPCs: nephew i didn't know that yeah his sister's kid i'm not related i could see the resemblance a...",
+      "line_number": 951,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "yeah we need to seriously work out some like uh some hand signals like if it's goblins or if it's kobolds or you know whatever um so yeah i'm gonna make the uh goblins i'm gonna look to them and i'm gonna stick i'm gonna go goblins just like that just like that yeah i'm just gonna go",
+      "context": "James/Ekran: little bit yeah she she just got home like just now so um okay yeah so i'm gonna like...",
+      "line_number": 954,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "demons well i think it's just goats don't worry",
+      "context": "Sean/Belden: goblins mouth it i'm not gonna say it i'm gonna mouth it okay um i'm gonna get i'm gonna get...",
+      "line_number": 960,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "Semaj is is investigating a little bit i'll go ahead and take out uh i guess my short bow again",
+      "context": "",
+      "line_number": 966,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "it there uh i think we should probably pull it off the road okay so i agree with that as",
+      "context": "",
+      "line_number": 972,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "um i'm staying on the cart you're gonna stay on the car sorry yeah i'm gonna stay on the cart",
+      "context": "",
+      "line_number": 978,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "all right ekron um as you are getting off of this wagon uh you start looking around you're immediately distracted by a bird",
+      "context": "James/Ekran: could i go ahead and make a perception to see if i can hear or see anything approaching okay go ahea...",
+      "line_number": 987,
+      "category": "meta"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "lovely bird up there nice nice pretty bird",
+      "context": "Alex/GM/NPCs: all right ekron um as you are getting off of this wagon uh you start looking around you're immediate...",
+      "line_number": 990,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "i'm gonna uh start following one of the tracks that i saw okay into this thicket and i'm gonna",
+      "context": "James/Ekran: lovely bird up there nice nice pretty bird...",
+      "line_number": 993,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "going to hold a let's see i guess we're getting this plan all through yeah hand signals and",
+      "context": "",
+      "line_number": 1005,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "uh belden and i'm gonna point to the horses and give him a thumbs up questioningly and get a response to see if he if he understands",
+      "context": "",
+      "line_number": 1011,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "i guess move to this spot right here and hold okay i'll i'll kind of move up",
+      "context": "Sean/Belden: i'll hold on to my hammer and nod and start walking that way all right um and then i'm gonna...",
+      "line_number": 1017,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "following belden and try to get a position in a tree again since i've got my bow out",
+      "context": "Richard/Semaj: i guess move to this spot right here and hold okay i'll i'll kind of move up...",
+      "line_number": 1020,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "okay and i like the idea of kylea being backed by the by the thing but it's up to her where if she wants to join the rest of the group because she'll know what the distance is yeah okay 50 feet i'm 50 feet i think you're supposed to like what like 120 feet something like that",
+      "context": "James/Ekran: following belden and try to get a position in a tree again since i've got my bow out...",
+      "line_number": 1023,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Sean/Belden",
+      "character": "Sean/Belden",
+      "text": "yeah yeah we're good got them them skyrim from downtown back in the shot yeah",
+      "context": "",
+      "line_number": 1026,
+      "category": "dramatic"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "how tall would you say this tree is",
+      "context": "Sean/Belden: yeah yeah we're good got them them skyrim from downtown back in the shot yeah...",
+      "line_number": 1029,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "able to relay the goblins that they're on both sides of the tree or at least somewhat in the",
+      "context": "",
+      "line_number": 1035,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "yeah right now i'm not gonna do anything other than just kind of keep alert and watching or if something happens okay all right beldon um",
+      "context": "Richard/Semaj: able to relay the goblins that they're on both sides of the tree or at least somewhat in the...",
+      "line_number": 1038,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "ready to shoot beldon all right where is he i don't see him he's right next to me um i i would like to use my reaction and see if i can poke it with my with an arrow okay",
+      "context": "",
+      "line_number": 1044,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "standpoint i just want to make sure my uh i'm trying to remember what sneak attack does if",
+      "context": "",
+      "line_number": 1050,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "ahead and use it then um so do i click off through here do i click sneak attack and then my short bow",
+      "context": "",
+      "line_number": 1056,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "as well i don't think it it's not giving me an option for critical on that when you hit damage",
+      "context": "",
+      "line_number": 1062,
+      "category": "dramatic"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "this kill here okay so as soon as i see him jump out i'm already at the ready i i'm a little surprised he's right there at my feet but i i lose the arrow um and uh i guess with the 20 it just goes straight through his skull okay not even like brains everywhere yeah in completely out um",
+      "context": "",
+      "line_number": 1068,
+      "category": "dramatic"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "hold i'm gonna hold my action for when i see something that i can within range within range",
+      "context": "",
+      "line_number": 1074,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "you still can't see anything as of right now no so i'm gonna go ahead and then i'm gonna move out along here let's see what's this movement uh if you see up to the green uh when it gets",
+      "context": "",
+      "line_number": 1080,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "we'll go here and um i guess i still can't do anything and i can't see any other anything else um yeah so i'm gonna go here and i'm when i moved is it possible to still hold my cantrip",
+      "context": "Alex/GM/NPCs: the yellow that's that's when uh okay it's past your uh your normal movement speed all right so...",
+      "line_number": 1086,
+      "category": "funny"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "uh you can you can do another ready in action at this point but that makes no sense at this",
+      "context": "",
+      "line_number": 1089,
+      "category": "meta"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "point to ready in action when i can just actually perform the action first go around because it doesn't take an extra anything to perform my spell i'm just gonna go here and i'm gonna wait",
+      "context": "Alex/GM/NPCs: uh you can you can do another ready in action at this point but that makes no sense at this...",
+      "line_number": 1092,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "okay so you readied it does that mean that the next time there's that he can see one he can",
+      "context": "",
+      "line_number": 1095,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "which would give me a half second advantage if something were to try to attack me first",
+      "context": "",
+      "line_number": 1101,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "yeah so as soon as you see it you're attacking it's getting its attack off you know vice versa",
+      "context": "Richard/Semaj: which would give me a half second advantage if something were to try to attack me first...",
+      "line_number": 1104,
+      "category": "meta"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "basically would my attack get off before his attack uh they happen at the same time they",
+      "context": "Alex/GM/NPCs: yeah so as soon as you see it you're attacking it's getting its attack off you know vice versa...",
+      "line_number": 1107,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "go ahead and put that into the chat for me please and that's this one right it's down here right uh where is it why can't i select it huh if you double click your character uh no i can click me i'm trying to click him oh the the goblin itself there it goes okay no i was i had the wrong thing",
+      "context": "",
+      "line_number": 1119,
+      "category": "dramatic"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "it is now your turn well since you failed this stealth um i pretty much i guess that's direct eyesight for me um what do you have any kind of half cover or anything from that rock i'm",
+      "context": "",
+      "line_number": 1125,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "gonna say he's gonna have half cover from the rock but you also have a height advantage so i",
+      "context": "",
+      "line_number": 1128,
+      "category": "meta"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "think that's gonna cancel it out okay uh and i i know we didn't do it for that last goblin but would i i'd like to ask if i have any kind of half cover from being in the branches",
+      "context": "Alex/GM/NPCs: gonna say he's gonna have half cover from the rock but you also have a height advantage so i...",
+      "line_number": 1131,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "it now i kind of feel bad all right that is my turn i guess i don't think i have anything else",
+      "context": "",
+      "line_number": 1137,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "tend to go down all right it's a bunch of warios running around wow okay uh",
+      "context": "",
+      "line_number": 1143,
+      "category": "dramatic"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "it's your turn oh i was looking at to try to see if i have the um does this goblin here have cover",
+      "context": "",
+      "line_number": 1149,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "okay so how come i can't select them if i'm trying to attack them",
+      "context": "",
+      "line_number": 1155,
+      "category": "funny"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "like his blood to start from his feet and freeze all the way up so it goes up through his veins and then eventually just comes out",
+      "context": "",
+      "line_number": 1161,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "um your bonus actions uh you do have uh healing word uh and i want to do your starlight steps so you can uh teleport if you need to let's see don't we have somebody dying hush your words okay okay uh as you are able to heal beldon for five what word do you heal him with rise and walk my son",
+      "context": "Richard/Semaj: okay and i guess that's my action i have a bonus action or anything...",
+      "line_number": 1170,
+      "category": "funny"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "no that wasn't i kid i kid i kid no i'm just gonna say um hey man you look like you need some help",
+      "context": "",
+      "line_number": 1173,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "beldon uh when you hear the word help all like drunk",
+      "context": "Richard/Semaj: no that wasn't i kid i kid i kid no i'm just gonna say um hey man you look like you need some help...",
+      "line_number": 1176,
+      "category": "meta"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "no no wait wait wait wait wait wait what was it you look like crap",
+      "context": "Alex/GM/NPCs: beldon uh when you hear the word help all like drunk...",
+      "line_number": 1179,
+      "category": "funny"
+    },
+    {
+      "speaker": "Sean/Belden",
+      "character": "Sean/Belden",
+      "text": "beldon uh it is now your turn all right well i guess i will just um run how to how did you do like multiple waypoints",
+      "context": "",
+      "line_number": 1185,
+      "category": "meta"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "where you see the yellow on it and then oh trying to get a fair out a decent angle okay",
+      "context": "",
+      "line_number": 1197,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "kylea you immediately jump off the cart here now that you see that some of the goblins have been taken care of and you just start running down this road uh the flames are starting to you know uh you see little bits of flame start to to go from behind you as uh you're",
+      "context": "Jen/Kailea: where you see the yellow on it and then oh trying to get a fair out a decent angle okay...",
+      "line_number": 1200,
+      "category": "dramatic"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "flying down this road is that your full turn yeah because i was uh wait yeah i think that's all i can do because i don't think anything is in range all right uh is this still nighttime",
+      "context": "",
+      "line_number": 1203,
+      "category": "dramatic"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "does a 16 hit no wait i think my armor class is 16 isn't it uh",
+      "context": "",
+      "line_number": 1209,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "we now go to ekron it is your turn okay um so i don't have a line of sight for this guy here",
+      "context": "",
+      "line_number": 1215,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "just ready up and wait for this guy to to pop out again by the rocks okay so i'll i'll um um prepare an arrow okay waiting for him to to pop back out and i'll immediately",
+      "context": "",
+      "line_number": 1221,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "okay i'll actually go ahead and try that then okay um i guess i'll shoot like i don't know how to ping double clicking doesn't seem to be working for me but uh just click and hold click and hold okay yeah i'll shoot like right there okay um so attack just like darn oh",
+      "context": "",
+      "line_number": 1227,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "all right um would it be an action to get down from the tree then well you still have all your",
+      "context": "",
+      "line_number": 1233,
+      "category": "dramatic"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "movement so seeing this you pulled it back it snaps you you could jump out of the tree and take one d6 falling damage or you could climb the 15 feet down which is going to use all 30",
+      "context": "James/Ekran: all right um would it be an action to get down from the tree then well you still have all your...",
+      "line_number": 1236,
+      "category": "dramatic"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "of your movement okay um yeah i'll just i'll just climb down then okay um and that'll be my turn",
+      "context": "",
+      "line_number": 1239,
+      "category": "dramatic"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "yeah i'm just going to do do do do um actually how do i undo what i did control z nice",
+      "context": "",
+      "line_number": 1245,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "wait what do you do for work again i don't know",
+      "context": "Richard/Semaj: yeah i'm just going to do do do do um actually how do i undo what i did control z nice...",
+      "line_number": 1248,
+      "category": "funny"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "all right oh wait okay how do i throw it into a bush should i just put the spell",
+      "context": "",
+      "line_number": 1254,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "then i'm just gonna fire it take out my crossbow and i'll fire it at him okay uh so this is going",
+      "context": "",
+      "line_number": 1260,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "to be an attack with disadvantage oh Semaj you see the arrow fly into the bush it ricochets off of rock but you do hear a goblin kind of curse a little bit as it was you hear a goblin go oh",
+      "context": "Richard/Semaj: then i'm just gonna fire it take out my crossbow and i'll fire it at him okay uh so this is going...",
+      "line_number": 1263,
+      "category": "meta"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "as it sees the arrow fly right over its head okay um so the um in my inventory can i that's it healer's kit would a healer's kit do anything for me",
+      "context": "",
+      "line_number": 1266,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "uh a healer's kit is going to stabilize stabilize but it doesn't heal anything yeah so it is is basically like a use of spare the dying at this point that's what i thought uh",
+      "context": "Richard/Semaj: as it sees the arrow fly right over its head okay um so the um in my inventory can i that's it heale...",
+      "line_number": 1269,
+      "category": "funny"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "so then i will actually just move over here okay uh can i attempt to hide you would have to have",
+      "context": "",
+      "line_number": 1272,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "that as a you'd have to have that as a bonus action okay i'm just gonna hold over here and and i'll just chill okay all right beldon this goblin has now kind of ran away from you you could i mean you could catch up to it no i can't oh yeah because you could only move 25 feet",
+      "context": "Richard/Semaj: so then i will actually just move over here okay uh can i attempt to hide you would have to have...",
+      "line_number": 1275,
+      "category": "funny"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "kylea it is now your turn i am gonna shoot a crossbow into the bush",
+      "context": "",
+      "line_number": 1290,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "anywhere close to anybody to do anything like that you uh so healing word is 60 feet uh Semaj is 65 feet away and uh bell ekron is uh 35 feet away uh Semaj is the most hurt you could move up your 30 feet and still healing word as a bonus action okay i am going to",
+      "context": "Jen/Kailea: okay um i don't have the only bonus action i have is healing word and i don't think i'm...",
+      "line_number": 1299,
+      "category": "meta"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "cast target move and then healing word all right Semaj you are going to heal",
+      "context": "",
+      "line_number": 1302,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "swipe that and uh i'll sit here and end my turn okay we are now going to go to the goblin and it",
+      "context": "",
+      "line_number": 1314,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Sean/Belden",
+      "character": "Sean/Belden",
+      "text": "what was that not one i moved you thank you thank you light crossbow all right",
+      "context": "Alex/GM/NPCs: here i'll just i'll move you right here...",
+      "line_number": 1326,
+      "category": "meta"
+    },
+    {
+      "speaker": "Sean/Belden",
+      "character": "Sean/Belden",
+      "text": "it's set to combat turn it is oh that's why i can't it's not my turn oh oh okay sorry go ahead",
+      "context": "",
+      "line_number": 1332,
+      "category": "funny"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "i'm gonna move back here no wait hang on i'll have the wrong tool selected now",
+      "context": "Sean/Belden: it's set to combat turn it is oh that's why i can't it's not my turn oh oh okay sorry go ahead...",
+      "line_number": 1335,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Sean/Belden",
+      "character": "Sean/Belden",
+      "text": "the next round he's so far away i can't do crap to him let him run screw that screw the",
+      "context": "",
+      "line_number": 1344,
+      "category": "funny"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "goblin he never existed in the first place okay uh Semaj it is uh it is your turn you're kind of bleeding out in this now you saw this goblin kind of running around the corner uh at this",
+      "context": "Sean/Belden: the next round he's so far away i can't do crap to him let him run screw that screw the...",
+      "line_number": 1347,
+      "category": "meta"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "point you don't know where it is yeah yeah so um yeah so i'm just gonna probably um i don't see anything whereabouts is the last place i would have seen him uh you probably would",
+      "context": "",
+      "line_number": 1350,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "have saw him uh like belden and him were like fighting over in this direction so i wouldn't so yeah you would not have known he went like this way and he's completely obstructing and",
+      "context": "",
+      "line_number": 1353,
+      "category": "meta"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "there's no there's nobody else out here that i would see around so um i would actually just probably um just heal myself actually so okay that's what i'll do all right oh Semaj you go",
+      "context": "",
+      "line_number": 1356,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "don't know if you'd be able to get a line of sight i'm just looking at the distances because how much",
+      "context": "",
+      "line_number": 1362,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "way to go is because 60 feet would also get me right back there yeah",
+      "context": "",
+      "line_number": 1368,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "i'm just gonna kind of stand up from where i was searching the sources um and i'm gonna call out to build them like did you get them",
+      "context": "",
+      "line_number": 1374,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "beldon do you say anything in response sean you're muted if you're talking",
+      "context": "James/Ekran: i'm just gonna kind of stand up from where i was searching the sources um and i'm gonna call out to ...",
+      "line_number": 1377,
+      "category": "meta"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "no turned this image i'm like i hope he's okay all right we're here and with that",
+      "context": "Alex/GM/NPCs: beldon do you say anything in response sean you're muted if you're talking...",
+      "line_number": 1380,
+      "category": "roleplay"
+    }
+  ],
+  "combat_highlights": [
+    {
+      "description": "do you start walking further up to the horses i sure do i'm right there that is you okay um beldon as you start to get a little bit closer the smell is starting to get stronger and stronger um you're ",
+      "characters_involved": [],
+      "outcome": "critical_hit",
+      "line_start": 1041,
+      "line_end": 1043,
+      "highlight_type": "critical_hit"
+    },
+    {
+      "description": "or how does that work uh go and click your short bow first okay and then uh go ahead and roll the attack and remember click advantage oh wow okay first crit of uh of the session uh ekron ekron ekron u",
+      "characters_involved": [
+        "Ekran"
+      ],
+      "outcome": "critical_hit",
+      "line_start": 1041,
+      "line_end": 1061,
+      "highlight_type": "critical_hit"
+    },
+    {
+      "description": "as well i don't think it it's not giving me an option for critical on that when you hit damage",
+      "characters_involved": [
+        "Ekran"
+      ],
+      "outcome": "critical_hit",
+      "line_start": 1041,
+      "line_end": 1064,
+      "highlight_type": "critical_hit"
+    },
+    {
+      "description": "uh you would just hit this cover you would hit t on it um or do you do you have that works yeah okay uh immediately Semaj you throw this uh you create this like numbing frost of form around this gobli",
+      "characters_involved": [
+        "Semaj"
+      ],
+      "outcome": "kill",
+      "line_start": 1041,
+      "line_end": 1160,
+      "highlight_type": "kill"
+    }
+  ],
+  "character_moments": {
+    "Semaj": [
+      "Oh, yeah, we did kill pigs. And I remembered like Ekran kept falling down.",
+      "I remember Ekran also was a little insistent upon getting some additional funds for our our trials and tribulations. But that may be due to his mood at the time.",
+      "I think I'm also going to examine the wand that I got. OK, so, but I don't see it in my thing. Gotcha. OK. Are you? I was trying to figure out how the how that works, like if I can like. Yeah. How doe",
+      "what does it change when it changes hands does it I think no I think yeah I",
+      "attuned to the same weapon I think it has to be in their possession right it",
+      "multiple people can be attuned to the same but then what I think I think you lose the attunement yeah you would have to reattune to it yeah exactly yeah once you give it it's not like you know you att",
+      "all right and then uh um basically i i just kind of kind of reiterate what i said in the past where the dressier name um uh because i come from like the astral plane i think at this point um just over",
+      "framed by some gnarled roots i think we need to like pull the cart off the road and kind of get the animals like set up and and ready for the evening like getting ready for camp okay um is there like ",
+      "what with each of us getting a watch that we still get a full rest though right yeah with each of you taking because it uh yeah yeah okay then yeah i think we should split it up in in watches",
+      "there was four right i think i counted four yeah there was a whole pack i guess we can count",
+      "can smell it on the wind so i got an idea right it's possible more than likely the horses are here as some sort of a trap because they're in the middle of the road and so we're gonna go and get closer",
+      "okay and i like the idea of kylea being backed by the by the thing but it's up to her where if she wants to join the rest of the group because she'll know what the distance is yeah okay 50 feet i'm 50",
+      "does a 16 hit no wait i think my armor class is 16 isn't it uh"
+    ],
+    "Ekran": [
+      "So at this point, he's just kind of thinking to himself, all right, we've gotten all the supplies. And I think he's just anticipating the journey and hoping to to see something cool at the destination",
+      "at this thing for me I think it's broken I guess sitting next to you I glance over at you and I reach my hand out so I'm gonna hand it to him like obviously",
+      "other one and says absolutely not all right I guess I after that I take a look around the room and and I think to myself I better not try my try my luck too hard and and I take the gold I won",
+      "face what are the coca-cola Oreos tastes like like coke and Oreos it's weird I wouldn't go as far as to say that it's bad just really weird like um even when you open the package it just smells like c",
+      "ourselves lucky they uh decided not to engage us further i think we can thank uh"
+    ],
+    "Kaelia": [
+      "But I think it's going to kind of look at him with like suspicion and the flames in the room are going to kind of flare a little bit. Not not a whole lot. Just a little bit.",
+      "grab a snack I was very excited for these Oreos and kind of giving me an upset stomach we've been eating really healthy so I think it's just like sugar overload have you tried the coca-cola Oreos no b",
+      "it there uh i think we should probably pull it off the road okay so i agree with that as",
+      "flying down this road is that your full turn yeah because i was uh wait yeah i think that's all i can do because i don't think anything is in range all right uh is this still nighttime"
+    ]
+  },
+  "npcs_encountered": [],
+  "locations": [],
+  "level_up": false,
+  "player_attendance": [
+    "James",
+    "Jen",
+    "Richard"
+  ]
+}

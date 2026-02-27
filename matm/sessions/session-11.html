@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Session 11: The Hideout Assault | Mage Against The Machine</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../nav.css">
+  <link rel="stylesheet" href="../base.css">
+  <style>
+    :root {
+      --bg-dark: #0a0a0f;
+      --bg-card: rgba(20, 16, 28, 0.9);
+      --bg-card-hover: rgba(30, 24, 42, 0.95);
+      --gold: #d4a857;
+      --gold-dim: #a68642;
+      --gold-bright: #ffd700;
+      --purple: #8b5cf6;
+      --purple-dim: #6d4aad;
+      --red: #dc2626;
+      --green: #22c55e;
+      --blue: #3b82f6;
+      --text-primary: #f5f5f4;
+      --text-secondary: rgba(245, 245, 244, 0.7);
+      --text-dim: rgba(245, 245, 244, 0.5);
+      --border-subtle: rgba(212, 168, 87, 0.2);
+      --border-glow: rgba(212, 168, 87, 0.4);
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Crimson Pro', Georgia, serif;
+      background: var(--bg-dark);
+      color: var(--text-primary);
+      min-height: 100vh;
+      line-height: 1.6;
+    }
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: 
+        radial-gradient(ellipse at 20% 20%, rgba(139, 92, 246, 0.1) 0%, transparent 50%),
+        radial-gradient(ellipse at 80% 80%, rgba(212, 168, 87, 0.08) 0%, transparent 50%);
+      pointer-events: none;
+      z-index: -1;
+    }
+    .container { max-width: 1000px; margin: 0 auto; padding: 2rem; padding-top: 100px; }
+    .session-hero { text-align: center; padding: 3rem 0; margin-bottom: 3rem; }
+    .session-number {
+      font-family: 'Cinzel', serif;
+      font-size: 0.9rem;
+      color: var(--gold);
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+    .session-title {
+      font-family: 'Cinzel', serif;
+      font-size: 3rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 1rem;
+      text-shadow: 0 0 40px rgba(212, 168, 87, 0.3);
+    }
+    .session-meta {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+      margin-bottom: 1.5rem;
+    }
+    .meta-item { display: flex; align-items: center; gap: 0.5rem; color: var(--text-secondary); font-size: 0.95rem; }
+    .meta-icon { color: var(--gold-dim); }
+    .level-up-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: linear-gradient(135deg, rgba(34, 197, 94, 0.2), rgba(34, 197, 94, 0.1));
+      border: 1px solid rgba(34, 197, 94, 0.4);
+      color: var(--green);
+      padding: 0.5rem 1rem;
+      border-radius: 2rem;
+      font-family: 'Cinzel', serif;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+    .session-summary {
+      max-width: 700px;
+      margin: 0 auto;
+      color: var(--text-secondary);
+      font-size: 1.1rem;
+      font-style: italic;
+    }
+    .section { margin-bottom: 3rem; }
+    .section-header {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+    .section-icon {
+      width: 32px; height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, var(--gold-dim), var(--gold));
+      border-radius: 8px;
+      color: var(--bg-dark);
+    }
+    .section-title { font-family: 'Cinzel', serif; font-size: 1.5rem; font-weight: 600; color: var(--gold); }
+    .highlights-grid { display: grid; gap: 1.5rem; }
+    .highlight-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 12px;
+      padding: 1.5rem;
+      transition: all 0.3s ease;
+    }
+    .highlight-card:hover { background: var(--bg-card-hover); border-color: var(--border-glow); transform: translateY(-2px); }
+    .highlight-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem; }
+    .highlight-title { font-family: 'Cinzel', serif; font-size: 1.2rem; font-weight: 600; color: var(--text-primary); }
+    .highlight-type {
+      font-size: 0.75rem;
+      padding: 0.25rem 0.75rem;
+      border-radius: 1rem;
+      font-family: 'Cinzel', serif;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .type-funny { background: rgba(251, 191, 36, 0.2); color: #fbbf24; }
+    .type-epic { background: rgba(139, 92, 246, 0.2); color: #a78bfa; }
+    .type-combat { background: rgba(220, 38, 38, 0.2); color: #f87171; }
+    .type-roleplay { background: rgba(59, 130, 246, 0.2); color: #60a5fa; }
+    .type-clever { background: rgba(34, 197, 94, 0.2); color: #4ade80; }
+    .type-cool { background: rgba(6, 182, 212, 0.2); color: #22d3ee; }
+    .type-burn { background: rgba(249, 115, 22, 0.2); color: #fb923c; }
+    .type-dramatic { background: rgba(236, 72, 153, 0.2); color: #f472b6; }
+    .type-meta { background: rgba(100, 100, 100, 0.2); color: #a0a0a0; }
+    .highlight-description { color: var(--text-secondary); margin-bottom: 1rem; font-size: 1rem; }
+    .quote-block {
+      background: rgba(0, 0, 0, 0.3);
+      border-left: 3px solid var(--gold-dim);
+      padding: 1rem 1.25rem;
+      margin: 0.5rem 0;
+      border-radius: 0 8px 8px 0;
+    }
+    .quote-text { color: var(--text-primary); font-style: italic; margin-bottom: 0.5rem; }
+    .quote-speaker { color: var(--gold); font-family: 'Cinzel', serif; font-size: 0.85rem; }
+    .quotes-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.25rem; }
+    .quote-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 12px;
+      padding: 1.25rem;
+      position: relative;
+      transition: all 0.3s ease;
+    }
+    .quote-card:hover { border-color: var(--gold-dim); transform: translateY(-2px); }
+    .quote-card::before {
+      content: '"';
+      position: absolute;
+      top: 0.5rem; left: 1rem;
+      font-size: 3rem;
+      color: var(--gold-dim);
+      opacity: 0.3;
+      font-family: Georgia, serif;
+      line-height: 1;
+    }
+    .quote-card .quote-text { padding-left: 1.5rem; font-size: 1.05rem; }
+    .quote-context { color: var(--text-dim); font-size: 0.85rem; margin-top: 0.75rem; padding-left: 1.5rem; }
+    .spotlight-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.25rem; }
+    .spotlight-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 12px;
+      padding: 1.25rem;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+    .spotlight-card:hover { border-color: var(--purple-dim); background: var(--bg-card-hover); }
+    .spotlight-name { font-family: 'Cinzel', serif; font-size: 1.2rem; font-weight: 600; color: var(--gold); margin-bottom: 0.75rem; }
+    .spotlight-moments { list-style: none; text-align: left; margin-bottom: 1rem; }
+    .spotlight-moments li {
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+      padding: 0.35rem 0;
+      padding-left: 1rem;
+      position: relative;
+    }
+    .spotlight-moments li::before { content: '◆'; position: absolute; left: 0; color: var(--gold-dim); font-size: 0.6rem; }
+    .spotlight-moment {
+      color: var(--text-secondary);
+      margin-bottom: 0.75rem;
+      font-size: 0.95rem;
+    }
+    .spotlight-quote {
+      background: rgba(0, 0, 0, 0.3);
+      padding: 0.75rem;
+      border-radius: 8px;
+      font-style: italic;
+      color: var(--text-primary);
+      font-size: 0.95rem;
+    }
+    .combat-card {
+      background: linear-gradient(135deg, rgba(220, 38, 38, 0.1), rgba(20, 16, 28, 0.9));
+      border: 1px solid rgba(220, 38, 38, 0.3);
+      border-radius: 12px;
+      padding: 1.5rem;
+    }
+    .combat-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; }
+    .combat-name { font-family: 'Cinzel', serif; font-size: 1.3rem; font-weight: 600; color: var(--text-primary); }
+    .combat-outcome {
+      background: rgba(34, 197, 94, 0.2);
+      color: var(--green);
+      padding: 0.25rem 0.75rem;
+      border-radius: 1rem;
+      font-family: 'Cinzel', serif;
+      font-size: 0.8rem;
+      font-weight: 600;
+    }
+    .combat-details { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-bottom: 1rem; }
+    .combat-detail { background: rgba(0, 0, 0, 0.3); padding: 0.75rem; border-radius: 8px; }
+    .combat-detail-label { color: var(--text-dim); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.25rem; }
+    .combat-detail-value { color: var(--text-primary); font-size: 0.95rem; }
+    .combat-events { list-style: none; }
+    .combat-events li {
+      color: var(--text-secondary);
+      padding: 0.5rem 0;
+      padding-left: 1.5rem;
+      position: relative;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+    .combat-events li:last-child { border-bottom: none; }
+    .combat-events li::before { content: '⚔'; position: absolute; left: 0; color: var(--red); }
+    .plot-list { list-style: none; }
+    .plot-list li {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 8px;
+      padding: 1rem 1.25rem;
+      margin-bottom: 0.75rem;
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      transition: all 0.3s ease;
+    }
+    .plot-list li:hover { border-color: var(--purple-dim); }
+    .plot-icon { color: var(--purple); font-size: 1.2rem; margin-top: 0.1rem; }
+    .plot-text { color: var(--text-secondary); flex: 1; }
+    .end-state {
+      background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(20, 16, 28, 0.9));
+      border: 1px solid rgba(139, 92, 246, 0.3);
+      border-radius: 12px;
+      padding: 1.5rem;
+      text-align: center;
+    }
+    .end-state-title {
+      font-family: 'Cinzel', serif;
+      font-size: 1rem;
+      color: var(--purple);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 1rem;
+    }
+    .end-state-content { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1.5rem; }
+    .end-item-label { color: var(--text-dim); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.25rem; }
+    .end-item-value { color: var(--text-primary); font-size: 1.05rem; }
+    .session-nav {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 3rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--border-subtle);
+    }
+    .session-nav a {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-family: 'Cinzel', serif;
+      font-size: 0.9rem;
+      padding: 0.75rem 1.25rem;
+      border: 1px solid var(--border-subtle);
+      border-radius: 8px;
+      transition: all 0.3s ease;
+    }
+    .session-nav a:hover { color: var(--gold); border-color: var(--gold-dim); background: rgba(212, 168, 87, 0.1); }
+    .session-nav a.disabled { opacity: 0.3; pointer-events: none; }
+    @media (max-width: 768px) {
+      .container { padding: 1rem; }
+      .session-title { font-size: 2rem; }
+      .session-meta { gap: 1rem; }
+      .nav-links { display: none; }
+      .quotes-grid, .spotlight-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="session-hero">
+      <div class="session-number">Session XI</div>
+      <h1 class="session-title">The Hideout Assault</h1>
+      <div class="session-meta">
+        <span class="meta-item">
+          <span class="meta-icon">📅</span>
+          December 7, 2025
+        </span>
+        <span class="meta-item">
+          <span class="meta-icon">⏱</span>
+          ~3 hours
+        </span>
+        <span class="meta-item">
+          <span class="meta-icon">👥</span>
+          5 players
+        </span>
+      </div>
+      
+      <p class="session-summary">An entire session of combat as the party pushed deep into the Redbrand Hideout. The Nothic fell under relentless assault, bugbears poured out of hallways only to be melted by Semaj's bouncing Chromatic Orb acid, and Kaelia turned Belden into a fire-breathing war machine with Dragon's Breath. By the end, Belden was exhaling cones of flame that vaporized enemies completely—'and by the time the flames finish, there is nothing. Absolutely nothing.'</p>
+    </header>
+    
+    <section class="section">
+      <div class="section-header">
+        <div class="section-icon">💬</div>
+        <h2 class="section-title">Quotes of the Session</h2>
+      </div>
+      <div class="quotes-grid">
+        <div class="quote-card">
+          <p class="quote-text">And by the time the flames finish, and you can see again in front of you, there is nothing. Absolutely nothing.</p>
+          <p class="quote-speaker">— Alex/GM</p>
+          <p class="quote-context">Belden's Dragon's Breath vaporizing an enemy</p>
+        </div>
+        <div class="quote-card">
+          <p class="quote-text">Today, you meet water.</p>
+          <p class="quote-speaker">— Alan/Aster</p>
+          <p class="quote-context">Aster launching a water bullet</p>
+        </div>
+        <div class="quote-card">
+          <p class="quote-text">I'm just very unusually happy with the amount of fire going on in the general vicinity.</p>
+          <p class="quote-speaker">— Jen/Kaelia</p>
+          <p class="quote-context">After giving Belden Dragon's Breath</p>
+        </div>
+        <div class="quote-card">
+          <p class="quote-text">You cannot steal this from Shiva!</p>
+          <p class="quote-speaker">— Alan/Aster</p>
+          <p class="quote-context">Complaining about Kaelia taking his kills</p>
+        </div>
+        <div class="quote-card">
+          <p class="quote-text">Both of these bugbears are now nearly disintegrated.</p>
+          <p class="quote-speaker">— Alex/GM</p>
+          <p class="quote-context">Semaj's bouncing Chromatic Orb</p>
+        </div>
+        <div class="quote-card">
+          <p class="quote-text">This was an entire session of combat. We didn't leave a room.</p>
+          <p class="quote-speaker">— Alex/GM</p>
+          <p class="quote-context">End of session</p>
+        </div></div>
+    </section>
+    
+    <section class="section">
+      <div class="section-header">
+        <div class="section-icon">⭐</div>
+        <h2 class="section-title">Best Moments</h2>
+      </div>
+      <div class="highlights-grid">
+        <div class="highlight-card">
+          <div class="highlight-header">
+            <h3 class="highlight-title">Dragon's Breath Belden</h3>
+            <span class="highlight-type type-epic">Epic</span>
+          </div>
+          <p class="highlight-description">Kaelia cast Dragon's Breath on Belden, turning him into a fire-breathing flamethrower. He vaporized multiple enemies with 18-damage cones of flame.</p>
+          
+          <div class="quote-block">
+            <p class="quote-text">"Belden, you can feel this breath just starting to well up inside you. It's ready to exhale."</p>
+            <p class="quote-speaker">— Alex/GM</p>
+          </div>
+          <div class="quote-block">
+            <p class="quote-text">"As you exhale, doing a total of 18 damage. And by the time the flames finish, and you can see again in front of you, there is nothing. Absolutely nothing."</p>
+            <p class="quote-speaker">— Alex/GM</p>
+          </div>
+          <div class="quote-block">
+            <p class="quote-text">"I give him the Dragon's Breath, and I'm just very unusually happy with the amount of fire going on in the general vicinity."</p>
+            <p class="quote-speaker">— Jen/Kaelia</p>
+          </div>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-header">
+            <h3 class="highlight-title">Chromatic Orb Chain Reaction</h3>
+            <span class="highlight-type type-epic">Epic</span>
+          </div>
+          <p class="highlight-description">Semaj's Chromatic Orb of acid hit one bugbear and bounced to a second, melting both with corrosive energy.</p>
+          
+          <div class="quote-block">
+            <p class="quote-text">"This chromatic orb just flies out and rockets towards this bugbear with this wet, violent splash. The corrosive acid starts eating through the fur and armor."</p>
+            <p class="quote-speaker">— Alex/GM</p>
+          </div>
+          <div class="quote-block">
+            <p class="quote-text">"The chromatic orb just bounces. It begins to pulse, and then it splashes and detonates towards the other bugbear behind it."</p>
+            <p class="quote-speaker">— Alex/GM</p>
+          </div>
+          <div class="quote-block">
+            <p class="quote-text">"Both of these bugbears are now nearly disintegrated."</p>
+            <p class="quote-speaker">— Alex/GM</p>
+          </div>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-header">
+            <h3 class="highlight-title">Aster's Water Bullet</h3>
+            <span class="highlight-type type-funny">Funny</span>
+          </div>
+          <p class="highlight-description">Aster opened his big hippo mouth and launched a Water Bullet at the Nothic, almost extinguishing Kaelia's fire damage.</p>
+          
+          <div class="quote-block">
+            <p class="quote-text">"Today, you meet water. And just just launches a spit wand at this Nothic."</p>
+            <p class="quote-speaker">— Alan/Aster</p>
+          </div>
+          <div class="quote-block">
+            <p class="quote-text">"You almost extinguish some of it with this water bullet, but it smashes into this Nothic on the wall, almost knocking it off."</p>
+            <p class="quote-speaker">— Alex/GM</p>
+          </div>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-header">
+            <h3 class="highlight-title">Nothic Defeated</h3>
+            <span class="highlight-type type-combat">Combat</span>
+          </div>
+          <p class="highlight-description">The party surrounded and demolished the Nothic—Valrex's Spiritual Weapon, Belden's warhammer to the spine, and constant spell bombardment.</p>
+          
+          <div class="quote-block">
+            <p class="quote-text">"You run up behind it and smash it directly in the spine. As you are now bombarding this thing with weapon attacks and spell attacks."</p>
+            <p class="quote-speaker">— Alex/GM</p>
+          </div>
+          <div class="quote-block">
+            <p class="quote-text">"You knock it clean off the wall. You see its claws just let go as it falls to the ground."</p>
+            <p class="quote-speaker">— Alex/GM</p>
+          </div>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-header">
+            <h3 class="highlight-title">Valrex Blocks Rotting Gaze</h3>
+            <span class="highlight-type type-epic">Epic</span>
+          </div>
+          <p class="highlight-description">When the Nothic tried its Rotting Gaze on Valrex, he simply raised his shield and blocked the entire blast.</p>
+          
+          <div class="quote-block">
+            <p class="quote-text">"Oh my gosh, Valrex, you were prepared for this. As the eye opens, you just hold your shield up and block the entirety of the blast."</p>
+            <p class="quote-speaker">— Alex/GM</p>
+          </div>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-header">
+            <h3 class="highlight-title">Kaelia's Stolen Kills</h3>
+            <span class="highlight-type type-funny">Funny</span>
+          </div>
+          <p class="highlight-description">Kaelia kept finishing off enemies that Aster was targeting, prompting the hippo to complain about stolen kills.</p>
+          
+          <div class="quote-block">
+            <p class="quote-text">"You cannot steal this from Shiva!"</p>
+            <p class="quote-speaker">— Alan/Aster</p>
+          </div>
+          <div class="quote-block">
+            <p class="quote-text">"Kylia, how would you like to describe this kill?"</p>
+            <p class="quote-speaker">— Alex/GM</p>
+          </div>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-header">
+            <h3 class="highlight-title">Belden's GIF Recap</h3>
+            <span class="highlight-type type-funny">Funny</span>
+          </div>
+          <p class="highlight-description">Sean tried to recap the previous session using only GIFs the party had posted, creating an absurd story about a lich.</p>
+          
+          <div class="quote-block">
+            <p class="quote-text">"We picked back up with the lich coming through the interdimensional door. One of us eldritch blasted him, and like Sonic, he dropped a whole bunch of money."</p>
+            <p class="quote-speaker">— Sean/Belden</p>
+          </div>
+        </div></div>
+    </section>
+    
+    <section class="section">
+      <div class="section-header">
+        <div class="section-icon">⚔</div>
+        <h2 class="section-title">Combat Encounters</h2>
+      </div>
+      
+      <div class="combat-card">
+        <div class="combat-header">
+          <h3 class="combat-name">Nothic Battle</h3>
+          <span class="combat-outcome">Victory</span>
+        </div>
+        <div class="combat-details">
+          <div class="combat-detail">
+            <div class="combat-detail-label">Enemies</div>
+            <div class="combat-detail-value">Nothic</div>
+          </div>
+          
+          <div class="combat-detail">
+            <div class="combat-detail-label">MVP</div>
+            <div class="combat-detail-value">Belden — Knocked it off the wall with warhammer combos</div>
+          </div>
+        </div>
+        
+      </div>
+      <div class="combat-card">
+        <div class="combat-header">
+          <h3 class="combat-name">Bugbear Ambush</h3>
+          <span class="combat-outcome">Victory</span>
+        </div>
+        <div class="combat-details">
+          <div class="combat-detail">
+            <div class="combat-detail-label">Enemies</div>
+            <div class="combat-detail-value">3 Bugbears</div>
+          </div>
+          
+          <div class="combat-detail">
+            <div class="combat-detail-label">MVP</div>
+            <div class="combat-detail-value">Semaj — Bouncing Chromatic Orb melted two bugbears</div>
+          </div>
+        </div>
+        
+      </div>
+      <div class="combat-card">
+        <div class="combat-header">
+          <h3 class="combat-name">Redbrand Reinforcements</h3>
+          <span class="combat-outcome">Victory</span>
+        </div>
+        <div class="combat-details">
+          <div class="combat-detail">
+            <div class="combat-detail-label">Enemies</div>
+            <div class="combat-detail-value">Multiple Redbrands</div>
+          </div>
+          
+          <div class="combat-detail">
+            <div class="combat-detail-label">MVP</div>
+            <div class="combat-detail-value">Belden — Dragon's Breath vaporized entire groups</div>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+    
+    <section class="section">
+      <div class="section-header">
+        <div class="section-icon">👤</div>
+        <h2 class="section-title">Character Spotlight</h2>
+      </div>
+      <div class="spotlight-grid">
+        <div class="spotlight-card">
+          <h3 class="spotlight-name">Belden</h3>
+          <p class="spotlight-moment">Became a fire-breathing machine with Dragon's Breath, vaporizing enemies with 18-damage cones</p>
+          <p class="spotlight-quote">"There is nothing. Absolutely nothing."</p>
+        </div>
+        <div class="spotlight-card">
+          <h3 class="spotlight-name">Semaj</h3>
+          <p class="spotlight-moment">Bouncing Chromatic Orb of acid melted two bugbears in one cast</p>
+          <p class="spotlight-quote">"Nearly disintegrated."</p>
+        </div>
+        <div class="spotlight-card">
+          <h3 class="spotlight-name">Kaelia</h3>
+          <p class="spotlight-moment">Cast Dragon's Breath on Belden, kept stealing Aster's kills, unusually happy about all the fire</p>
+          <p class="spotlight-quote">"Very unusually happy with the amount of fire."</p>
+        </div>
+        <div class="spotlight-card">
+          <h3 class="spotlight-name">Aster</h3>
+          <p class="spotlight-moment">Water Bullet attacks, complained about stolen kills</p>
+          <p class="spotlight-quote">"Today, you meet water."</p>
+        </div>
+        <div class="spotlight-card">
+          <h3 class="spotlight-name">Valrex</h3>
+          <p class="spotlight-moment">Blocked Rotting Gaze with shield, Spiritual Weapon slicing</p>
+          <p class="spotlight-quote">"Shield up. Blast blocked."</p>
+        </div></div>
+    </section>
+    
+    <section class="section">
+      <div class="section-header">
+        <div class="section-icon">📜</div>
+        <h2 class="section-title">Plot Developments</h2>
+      </div>
+      <ul class="plot-list">
+        <li>
+          <span class="plot-icon">🔍</span>
+          <span class="plot-text">Defeated the Nothic in the crevasse</span>
+        </li>
+        <li>
+          <span class="plot-icon">🗺</span>
+          <span class="plot-text">Cleared bugbear reinforcements</span>
+        </li>
+        <li>
+          <span class="plot-icon">⚔</span>
+          <span class="plot-text">Pushed deeper into Redbrand hideout</span>
+        </li>
+        <li>
+          <span class="plot-icon">👥</span>
+          <span class="plot-text">Discovered Dragon's Breath + Belden = destruction</span>
+        </li></ul>
+    </section>
+    
+    <section class="section">
+      <div class="end-state">
+        <h3 class="end-state-title">To Be Continued...</h3>
+        <div class="end-state-content">
+          <div>
+            <div class="end-item-label">Location</div>
+            <div class="end-item-value">Deep in the Redbrand Hideout</div>
+          </div>
+          <div>
+            <div class="end-item-label">Party Status</div>
+            <div class="end-item-value">Unknown</div>
+          </div>
+          <div>
+            <div class="end-item-label">Next Objective</div>
+            <div class="end-item-value">Continue exploring the hideout, find Glasstaff</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <nav class="session-nav">
+      <a href="session-10.html">
+        <span>←</span>
+        <span>Session 10</span>
+      </a>
+      <a href="session-12.html">
+        <span>Session 12</span>
+        <span>→</span>
+      </a>
+    </nav>
+  </div>
+  
+  <script src="../nav.js"></script>
+  <script>initNav('sessions');</script>
+</body>
+</html>

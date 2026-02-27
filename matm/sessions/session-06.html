@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Session 6: Yeemic's Challenge | Mage Against The Machine</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../nav.css">
+  <link rel="stylesheet" href="../base.css">
+  <style>
+    :root {
+      --bg-dark: #0a0a0f;
+      --bg-card: rgba(20, 16, 28, 0.9);
+      --bg-card-hover: rgba(30, 24, 42, 0.95);
+      --gold: #d4a857;
+      --gold-dim: #a68642;
+      --gold-bright: #ffd700;
+      --purple: #8b5cf6;
+      --purple-dim: #6d4aad;
+      --red: #dc2626;
+      --green: #22c55e;
+      --blue: #3b82f6;
+      --text-primary: #f5f5f4;
+      --text-secondary: rgba(245, 245, 244, 0.7);
+      --text-dim: rgba(245, 245, 244, 0.5);
+      --border-subtle: rgba(212, 168, 87, 0.2);
+      --border-glow: rgba(212, 168, 87, 0.4);
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Crimson Pro', Georgia, serif;
+      background: var(--bg-dark);
+      color: var(--text-primary);
+      min-height: 100vh;
+      line-height: 1.6;
+    }
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: 
+        radial-gradient(ellipse at 20% 20%, rgba(139, 92, 246, 0.1) 0%, transparent 50%),
+        radial-gradient(ellipse at 80% 80%, rgba(212, 168, 87, 0.08) 0%, transparent 50%);
+      pointer-events: none;
+      z-index: -1;
+    }
+    .container { max-width: 1000px; margin: 0 auto; padding: 2rem; padding-top: 100px; }
+    .session-hero { text-align: center; padding: 3rem 0; margin-bottom: 3rem; }
+    .session-number {
+      font-family: 'Cinzel', serif;
+      font-size: 0.9rem;
+      color: var(--gold);
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+    .session-title {
+      font-family: 'Cinzel', serif;
+      font-size: 3rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 1rem;
+      text-shadow: 0 0 40px rgba(212, 168, 87, 0.3);
+    }
+    .session-meta {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+      margin-bottom: 1.5rem;
+    }
+    .meta-item { display: flex; align-items: center; gap: 0.5rem; color: var(--text-secondary); font-size: 0.95rem; }
+    .meta-icon { color: var(--gold-dim); }
+    .level-up-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: linear-gradient(135deg, rgba(34, 197, 94, 0.2), rgba(34, 197, 94, 0.1));
+      border: 1px solid rgba(34, 197, 94, 0.4);
+      color: var(--green);
+      padding: 0.5rem 1rem;
+      border-radius: 2rem;
+      font-family: 'Cinzel', serif;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+    .session-summary {
+      max-width: 700px;
+      margin: 0 auto;
+      color: var(--text-secondary);
+      font-size: 1.1rem;
+      font-style: italic;
+    }
+    .section { margin-bottom: 3rem; }
+    .section-header {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+    .section-icon {
+      width: 32px; height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, var(--gold-dim), var(--gold));
+      border-radius: 8px;
+      color: var(--bg-dark);
+    }
+    .section-title { font-family: 'Cinzel', serif; font-size: 1.5rem; font-weight: 600; color: var(--gold); }
+    .highlights-grid { display: grid; gap: 1.5rem; }
+    .highlight-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 12px;
+      padding: 1.5rem;
+      transition: all 0.3s ease;
+    }
+    .highlight-card:hover { background: var(--bg-card-hover); border-color: var(--border-glow); transform: translateY(-2px); }
+    .highlight-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem; }
+    .highlight-title { font-family: 'Cinzel', serif; font-size: 1.2rem; font-weight: 600; color: var(--text-primary); }
+    .highlight-type {
+      font-size: 0.75rem;
+      padding: 0.25rem 0.75rem;
+      border-radius: 1rem;
+      font-family: 'Cinzel', serif;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .type-funny { background: rgba(251, 191, 36, 0.2); color: #fbbf24; }
+    .type-epic { background: rgba(139, 92, 246, 0.2); color: #a78bfa; }
+    .type-combat { background: rgba(220, 38, 38, 0.2); color: #f87171; }
+    .type-roleplay { background: rgba(59, 130, 246, 0.2); color: #60a5fa; }
+    .type-clever { background: rgba(34, 197, 94, 0.2); color: #4ade80; }
+    .type-cool { background: rgba(6, 182, 212, 0.2); color: #22d3ee; }
+    .type-burn { background: rgba(249, 115, 22, 0.2); color: #fb923c; }
+    .type-dramatic { background: rgba(236, 72, 153, 0.2); color: #f472b6; }
+    .type-meta { background: rgba(100, 100, 100, 0.2); color: #a0a0a0; }
+    .highlight-description { color: var(--text-secondary); margin-bottom: 1rem; font-size: 1rem; }
+    .quote-block {
+      background: rgba(0, 0, 0, 0.3);
+      border-left: 3px solid var(--gold-dim);
+      padding: 1rem 1.25rem;
+      margin: 0.5rem 0;
+      border-radius: 0 8px 8px 0;
+    }
+    .quote-text { color: var(--text-primary); font-style: italic; margin-bottom: 0.5rem; }
+    .quote-speaker { color: var(--gold); font-family: 'Cinzel', serif; font-size: 0.85rem; }
+    .quotes-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.25rem; }
+    .quote-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 12px;
+      padding: 1.25rem;
+      position: relative;
+      transition: all 0.3s ease;
+    }
+    .quote-card:hover { border-color: var(--gold-dim); transform: translateY(-2px); }
+    .quote-card::before {
+      content: '"';
+      position: absolute;
+      top: 0.5rem; left: 1rem;
+      font-size: 3rem;
+      color: var(--gold-dim);
+      opacity: 0.3;
+      font-family: Georgia, serif;
+      line-height: 1;
+    }
+    .quote-card .quote-text { padding-left: 1.5rem; font-size: 1.05rem; }
+    .quote-context { color: var(--text-dim); font-size: 0.85rem; margin-top: 0.75rem; padding-left: 1.5rem; }
+    .spotlight-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.25rem; }
+    .spotlight-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 12px;
+      padding: 1.25rem;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+    .spotlight-card:hover { border-color: var(--purple-dim); background: var(--bg-card-hover); }
+    .spotlight-name { font-family: 'Cinzel', serif; font-size: 1.2rem; font-weight: 600; color: var(--gold); margin-bottom: 0.75rem; }
+    .spotlight-moments { list-style: none; text-align: left; margin-bottom: 1rem; }
+    .spotlight-moments li {
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+      padding: 0.35rem 0;
+      padding-left: 1rem;
+      position: relative;
+    }
+    .spotlight-moments li::before { content: '◆'; position: absolute; left: 0; color: var(--gold-dim); font-size: 0.6rem; }
+    .spotlight-moment {
+      color: var(--text-secondary);
+      margin-bottom: 0.75rem;
+      font-size: 0.95rem;
+    }
+    .spotlight-quote {
+      background: rgba(0, 0, 0, 0.3);
+      padding: 0.75rem;
+      border-radius: 8px;
+      font-style: italic;
+      color: var(--text-primary);
+      font-size: 0.95rem;
+    }
+    .combat-card {
+      background: linear-gradient(135deg, rgba(220, 38, 38, 0.1), rgba(20, 16, 28, 0.9));
+      border: 1px solid rgba(220, 38, 38, 0.3);
+      border-radius: 12px;
+      padding: 1.5rem;
+    }
+    .combat-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; }
+    .combat-name { font-family: 'Cinzel', serif; font-size: 1.3rem; font-weight: 600; color: var(--text-primary); }
+    .combat-outcome {
+      background: rgba(34, 197, 94, 0.2);
+      color: var(--green);
+      padding: 0.25rem 0.75rem;
+      border-radius: 1rem;
+      font-family: 'Cinzel', serif;
+      font-size: 0.8rem;
+      font-weight: 600;
+    }
+    .combat-details { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-bottom: 1rem; }
+    .combat-detail { background: rgba(0, 0, 0, 0.3); padding: 0.75rem; border-radius: 8px; }
+    .combat-detail-label { color: var(--text-dim); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.25rem; }
+    .combat-detail-value { color: var(--text-primary); font-size: 0.95rem; }
+    .combat-events { list-style: none; }
+    .combat-events li {
+      color: var(--text-secondary);
+      padding: 0.5rem 0;
+      padding-left: 1.5rem;
+      position: relative;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+    .combat-events li:last-child { border-bottom: none; }
+    .combat-events li::before { content: '⚔'; position: absolute; left: 0; color: var(--red); }
+    .plot-list { list-style: none; }
+    .plot-list li {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 8px;
+      padding: 1rem 1.25rem;
+      margin-bottom: 0.75rem;
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      transition: all 0.3s ease;
+    }
+    .plot-list li:hover { border-color: var(--purple-dim); }
+    .plot-icon { color: var(--purple); font-size: 1.2rem; margin-top: 0.1rem; }
+    .plot-text { color: var(--text-secondary); flex: 1; }
+    .end-state {
+      background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(20, 16, 28, 0.9));
+      border: 1px solid rgba(139, 92, 246, 0.3);
+      border-radius: 12px;
+      padding: 1.5rem;
+      text-align: center;
+    }
+    .end-state-title {
+      font-family: 'Cinzel', serif;
+      font-size: 1rem;
+      color: var(--purple);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 1rem;
+    }
+    .end-state-content { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1.5rem; }
+    .end-item-label { color: var(--text-dim); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.25rem; }
+    .end-item-value { color: var(--text-primary); font-size: 1.05rem; }
+    .session-nav {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 3rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--border-subtle);
+    }
+    .session-nav a {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-family: 'Cinzel', serif;
+      font-size: 0.9rem;
+      padding: 0.75rem 1.25rem;
+      border: 1px solid var(--border-subtle);
+      border-radius: 8px;
+      transition: all 0.3s ease;
+    }
+    .session-nav a:hover { color: var(--gold); border-color: var(--gold-dim); background: rgba(212, 168, 87, 0.1); }
+    .session-nav a.disabled { opacity: 0.3; pointer-events: none; }
+    @media (max-width: 768px) {
+      .container { padding: 1rem; }
+      .session-title { font-size: 2rem; }
+      .session-meta { gap: 1rem; }
+      .nav-links { display: none; }
+      .quotes-grid, .spotlight-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="session-hero">
+      <div class="session-number">Session VI</div>
+      <h1 class="session-title">Yeemic's Challenge</h1>
+      <div class="session-meta">
+        <span class="meta-item">
+          <span class="meta-icon">📅</span>
+          June 20, 2025
+        </span>
+        <span class="meta-item">
+          <span class="meta-icon">⏱</span>
+          ~3 hours
+        </span>
+        <span class="meta-item">
+          <span class="meta-icon">👥</span>
+          4 players
+        </span>
+      </div>
+      
+      <p class="session-summary">After a long rest in Klarg's chamber, the party pushed deeper into the goblin den. They encountered more goblins and two goblin bosses—one of whom grabbed Sildar Hallwinter as a hostage. Belden, recognizing the man who gave them lodging in Neverwinter, challenged the goblin boss Yeemic to an honor duel. What followed was an epic, back-and-forth battle that ended in heartbreak: Belden fell, defeated. The session ended on a cliffhanger with Yeemic wounded but victorious.</p>
+    </header>
+    
+    <section class="section">
+      <div class="section-header">
+        <div class="section-icon">💬</div>
+        <h2 class="section-title">Quotes of the Session</h2>
+      </div>
+      <div class="quotes-grid">
+        <div class="quote-card">
+          <p class="quote-text">That was a brutal duel. It was an upset victory—without the victory. It was just upset.</p>
+          <p class="quote-speaker">— Alex/GM</p>
+          <p class="quote-context">After Belden lost the duel</p>
+        </div>
+        <div class="quote-card">
+          <p class="quote-text">That was so dramatic, clownish, and anti-climactic all at the same time.</p>
+          <p class="quote-speaker">— Jen/Kaelia</p>
+          <p class="quote-context">Describing the duel</p>
+        </div>
+        <div class="quote-card">
+          <p class="quote-text">STOP! Fight me one-on-one!</p>
+          <p class="quote-speaker">— Sean/Belden</p>
+          <p class="quote-context">Challenging Yeemic to a duel</p>
+        </div>
+        <div class="quote-card">
+          <p class="quote-text">As a rogue, I'm not gonna honor any—now you lost a duel, like, I'mma shoot him in the face.</p>
+          <p class="quote-speaker">— James/Ekran</p>
+          <p class="quote-context">Planning revenge after Belden fell</p>
+        </div>
+        <div class="quote-card">
+          <p class="quote-text">One of these other wolves I'll name him Gary. Gary and Ace.</p>
+          <p class="quote-speaker">— Sean/Belden</p>
+          <p class="quote-context">Trying to name the other wolves</p>
+        </div>
+        <div class="quote-card">
+          <p class="quote-text">Belden, you got like Wil Wheaton level luck with those ones, man.</p>
+          <p class="quote-speaker">— Richard/Semaj</p>
+          <p class="quote-context">After Belden's string of misses</p>
+        </div></div>
+    </section>
+    
+    <section class="section">
+      <div class="section-header">
+        <div class="section-icon">⭐</div>
+        <h2 class="section-title">Best Moments</h2>
+      </div>
+      <div class="highlights-grid">
+        <div class="highlight-card">
+          <div class="highlight-header">
+            <h3 class="highlight-title">Larry Gets His Name</h3>
+            <span class="highlight-type type-funny">Funny</span>
+          </div>
+          <p class="highlight-description">The party officially named the wolf 'Larry' after debating names like Retribution and Revan. Belden immediately tried to name the other wolves Gary and Ace.</p>
+          
+          <div class="quote-block">
+            <p class="quote-text">"We need to give him a name like Larry. I think Larry is his new name."</p>
+            <p class="quote-speaker">— Richard/Semaj</p>
+          </div>
+          <div class="quote-block">
+            <p class="quote-text">"One of these other wolves I'll name him Gary. Gary and Ace."</p>
+            <p class="quote-speaker">— Sean/Belden</p>
+          </div>
+          <div class="quote-block">
+            <p class="quote-text">"All right, it's happening now. That put me in a good mood."</p>
+            <p class="quote-speaker">— Alex/GM</p>
+          </div>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-header">
+            <h3 class="highlight-title">Sildar Taken Hostage</h3>
+            <span class="highlight-type type-dramatic">Dramatic</span>
+          </div>
+          <p class="highlight-description">A goblin boss grabbed Sildar Hallwinter—the same man who gave them their room in Neverwinter—and held a blade to his throat. Another prisoner, a half-elf, remained chained nearby.</p>
+          
+          <div class="quote-block">
+            <p class="quote-text">"You're going to immediately recognize the prisoner as Sildar. This is the same man who gave you the key to your room the first night in Neverwinter. You now see this goblin boss with a scimitar at his throat, ready to cut it."</p>
+            <p class="quote-speaker">— Alex/GM</p>
+          </div>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-header">
+            <h3 class="highlight-title">Belden's Challenge</h3>
+            <span class="highlight-type type-epic">Epic</span>
+          </div>
+          <p class="highlight-description">Belden stepped forward and challenged the goblin boss Yeemic to single combat, speaking in Goblin. The terms: if Belden wins, the prisoners go free. If Yeemic wins, the party helps him kill Klarg.</p>
+          
+          <div class="quote-block">
+            <p class="quote-text">"I am going to yell out to the goblin in Goblin: STOP! Fight me one-on-one!"</p>
+            <p class="quote-speaker">— Sean/Belden</p>
+          </div>
+          <div class="quote-block">
+            <p class="quote-text">"You want single combat? Here's the deal. You fight me one-on-one. If you lose, I want to lead. Your crew backs me and we kill Klarg."</p>
+            <p class="quote-speaker">— Alex/GM (Yeemic)</p>
+          </div>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-header">
+            <h3 class="highlight-title">Ekran Almost Ruined Everything</h3>
+            <span class="highlight-type type-funny">Funny</span>
+          </div>
+          <p class="highlight-description">Ekran, hidden in shadows with his bow trained on Yeemic, couldn't resist taking a shot during the negotiations. He missed, nearly breaking the duel before it started.</p>
+          
+          <div class="quote-block">
+            <p class="quote-text">"He is going to hiss at you, Belden, and say: So that's how it is, huh? You want honor but you're—"</p>
+            <p class="quote-speaker">— Alex/GM</p>
+          </div>
+          <div class="quote-block">
+            <p class="quote-text">"When I see the arrow fly by and miss, I turn and say: STOP! Wait! No! This is a duel!"</p>
+            <p class="quote-speaker">— Sean/Belden</p>
+          </div>
+          <div class="quote-block">
+            <p class="quote-text">"Ekran was like a busted criminal after he missed. Just hands up like..."</p>
+            <p class="quote-speaker">— James/Ekran</p>
+          </div>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-header">
+            <h3 class="highlight-title">The Duel</h3>
+            <span class="highlight-type type-epic">Epic</span>
+          </div>
+          <p class="highlight-description">An absolutely brutal, back-and-forth duel between Belden and Yeemic. Belden landed crushing hammer blows, knocked Yeemic prone with Strike of the Giants, but kept missing at crucial moments.</p>
+          
+          <div class="quote-block">
+            <p class="quote-text">"This is a rib-shattering crunch as you fall from this attack, immediately get up, and with the momentum swing right into his ribs. You hear a crunch and he lets out air."</p>
+            <p class="quote-speaker">— Alex/GM</p>
+          </div>
+          <div class="quote-block">
+            <p class="quote-text">"Belden, you got like Wil Wheaton level luck with those ones, man."</p>
+            <p class="quote-speaker">— Richard/Semaj</p>
+          </div>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-header">
+            <h3 class="highlight-title">Belden Falls</h3>
+            <span class="highlight-type type-dramatic">Dramatic</span>
+          </div>
+          <p class="highlight-description">Despite landing devastating blows and using Second Wind, Belden's dice betrayed him. He dropped his hammer, missed six attacks in a row, and finally fell to Yeemic's scimitar.</p>
+          
+          <div class="quote-block">
+            <p class="quote-text">"I can't believe I flubbed that many attacks in a row!"</p>
+            <p class="quote-speaker">— Sean/Belden</p>
+          </div>
+          <div class="quote-block">
+            <p class="quote-text">"That was a brutal duel. It was an upset victory—without the victory. It was just upset."</p>
+            <p class="quote-speaker">— Alex/GM</p>
+          </div>
+          <div class="quote-block">
+            <p class="quote-text">"That was so dramatic, clownish, and anti-climactic all at the same time."</p>
+            <p class="quote-speaker">— Jen/Kaelia</p>
+          </div>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-header">
+            <h3 class="highlight-title">Kaelia's Fire Wolf</h3>
+            <span class="highlight-type type-cool">Cool</span>
+          </div>
+          <p class="highlight-description">During her watch, Kaelia used Control Flames to create a massive wolf made of pure fire to stand sentry. Larry was NOT happy about this new alpha.</p>
+          
+          <div class="quote-block">
+            <p class="quote-text">"The flames surge outward, coalescing into the shape of a wolf of pure flame. Its ears perk up, its tail is flickering. Larry's hair rises as he sees this giant alpha fire wolf."</p>
+            <p class="quote-speaker">— Alex/GM</p>
+          </div>
+          <div class="quote-block">
+            <p class="quote-text">"No Larry, no! Larry, friend! Larry, friend! It's Gary! It's Gary!"</p>
+            <p class="quote-speaker">— Jen/Kaelia</p>
+          </div>
+        </div></div>
+    </section>
+    
+    <section class="section">
+      <div class="section-header">
+        <div class="section-icon">⚔</div>
+        <h2 class="section-title">Combat Encounters</h2>
+      </div>
+      
+      <div class="combat-card">
+        <div class="combat-header">
+          <h3 class="combat-name">Goblin Ambush at the Bridge</h3>
+          <span class="combat-outcome">Partial victory - led to duel</span>
+        </div>
+        <div class="combat-details">
+          <div class="combat-detail">
+            <div class="combat-detail-label">Enemies</div>
+            <div class="combat-detail-value">Multiple Goblins, 2 Goblin Bosses</div>
+          </div>
+          
+          <div class="combat-detail">
+            <div class="combat-detail-label">MVP</div>
+            <div class="combat-detail-value">Belden — Crossbow shot to a goblin's throat, then challenged Yeemic</div>
+          </div>
+        </div>
+        
+      </div>
+      <div class="combat-card">
+        <div class="combat-header">
+          <h3 class="combat-name">The Honor Duel: Belden vs Yeemic</h3>
+          <span class="combat-outcome">Defeat - Belden fell</span>
+        </div>
+        <div class="combat-details">
+          <div class="combat-detail">
+            <div class="combat-detail-label">Enemies</div>
+            <div class="combat-detail-value">Yeemic (Goblin Boss)</div>
+          </div>
+          
+          <div class="combat-detail">
+            <div class="combat-detail-label">MVP</div>
+            <div class="combat-detail-value">Yeemic — Won the duel despite being badly wounded</div>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+    
+    <section class="section">
+      <div class="section-header">
+        <div class="section-icon">👤</div>
+        <h2 class="section-title">Character Spotlight</h2>
+      </div>
+      <div class="spotlight-grid">
+        <div class="spotlight-card">
+          <h3 class="spotlight-name">Belden</h3>
+          <p class="spotlight-moment">Challenged Yeemic to an honor duel to save Sildar. Landed devastating blows but lost due to terrible dice luck.</p>
+          <p class="spotlight-quote">"I can't believe I flubbed that many attacks in a row!"</p>
+        </div>
+        <div class="spotlight-card">
+          <h3 class="spotlight-name">Kaelia</h3>
+          <p class="spotlight-moment">Created a fire wolf sentry during her watch. Larry was jealous.</p>
+          <p class="spotlight-quote">"No Larry, no! Larry, friend!"</p>
+        </div>
+        <div class="spotlight-card">
+          <h3 class="spotlight-name">Ekran</h3>
+          <p class="spotlight-moment">Almost ruined the duel by taking a shot during negotiations. Missed. Stood there with hands up like a caught criminal.</p>
+          <p class="spotlight-quote">"Ekran was like a busted criminal after he missed."</p>
+        </div>
+        <div class="spotlight-card">
+          <h3 class="spotlight-name">Semaj</h3>
+          <p class="spotlight-moment">Officially named the wolf Larry. Fought the urge to attack during the duel out of respect for honor.</p>
+          <p class="spotlight-quote">"I think Larry is his new name."</p>
+        </div></div>
+    </section>
+    
+    <section class="section">
+      <div class="section-header">
+        <div class="section-icon">📜</div>
+        <h2 class="section-title">Plot Developments</h2>
+      </div>
+      <ul class="plot-list">
+        <li>
+          <span class="plot-icon">🔍</span>
+          <span class="plot-text">Larry officially named</span>
+        </li>
+        <li>
+          <span class="plot-icon">🗺</span>
+          <span class="plot-text">Found Sildar Hallwinter held prisoner</span>
+        </li>
+        <li>
+          <span class="plot-icon">⚔</span>
+          <span class="plot-text">Discovered another prisoner - a half-elf (later revealed as Valrex)</span>
+        </li>
+        <li>
+          <span class="plot-icon">👥</span>
+          <span class="plot-text">Belden challenged Yeemic to an honor duel</span>
+        </li>
+        <li>
+          <span class="plot-icon">📜</span>
+          <span class="plot-text">Belden lost the duel - session ended on cliffhanger</span>
+        </li>
+        <li>
+          <span class="plot-icon">🏠</span>
+          <span class="plot-text">Yeemic badly wounded but victorious</span>
+        </li></ul>
+    </section>
+    
+    <section class="section">
+      <div class="end-state">
+        <h3 class="end-state-title">To Be Continued...</h3>
+        <div class="end-state-content">
+          <div>
+            <div class="end-item-label">Location</div>
+            <div class="end-item-value">Deep in Cragmaw Cave</div>
+          </div>
+          <div>
+            <div class="end-item-label">Party Status</div>
+            <div class="end-item-value">Unknown</div>
+          </div>
+          <div>
+            <div class="end-item-label">Next Objective</div>
+            <div class="end-item-value">Deal with the aftermath of the lost duel</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <nav class="session-nav">
+      <a href="session-05.html">
+        <span>←</span>
+        <span>Session 5</span>
+      </a>
+      <a href="session-07.html">
+        <span>Session 7</span>
+        <span>→</span>
+      </a>
+    </nav>
+  </div>
+  
+  <script src="../nav.js"></script>
+  <script>initNav('sessions');</script>
+</body>
+</html>

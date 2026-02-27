@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NPCs | Mage Against The Machine</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="nav.css">
+  <link rel="stylesheet" href="base.css">
+</head>
+<body>
+  <div class="container">
+    <header class="page-header">
+      <div class="page-icon">🎭</div>
+      <h1 class="page-title">Notable NPCs</h1>
+      <p class="page-subtitle">Friends, foes, and those in between</p>
+    </header>
+
+    <section class="section">
+      <h2 class="section-title">Allies</h2>
+      <div class="grid grid-2" id="allies"></div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Enemies</h2>
+      <div class="grid grid-2" id="enemies"></div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Neutral / Unknown</h2>
+      <div class="grid grid-2" id="neutral"></div>
+    </section>
+  </div>
+
+  <script>
+    const npcs = {
+      allies: [
+        {
+          name: 'Gundren Rockseeker',
+          title: 'Dwarf Entrepreneur',
+          description: 'The determined dwarf who hired the party. Believes he\'s found the lost Wave Echo Cave and the legendary Forge of Spells.',
+          status: 'captured',
+          statusText: '⚠ Captured'
+        },
+        {
+          name: 'Sildar Hallwinter',
+          title: 'Retired Sellsword',
+          description: 'A seasoned warrior who paid for the party\'s rooms at the Driftwood Tavern. Was captured by goblins but rescued by the party.',
+          status: 'ally',
+          statusText: '✓ Ally'
+        },
+        {
+          name: 'Darren Edermath',
+          title: 'Retired Adventurer',
+          description: 'An older elf bearing Tymora\'s symbol who pledged his sword to the party\'s cause against the Redbrands.',
+          status: 'ally',
+          statusText: '✓ Ally'
+        },
+        {
+          name: 'Grista',
+          title: 'Dwarven Barkeep',
+          description: 'The rough but welcoming owner of the Sleeping Giant Tap House. Grateful to the party for dealing with the Redbrands.',
+          status: 'ally',
+          statusText: '✓ Ally'
+        }
+      ],
+      enemies: [
+        {
+          name: 'The Black Spider',
+          title: 'Mysterious Villain',
+          description: 'A shadowy figure seeking the Forge of Spells. Has captured Gundren and commands both goblins and the Redbrands.',
+          status: 'enemy',
+          statusText: '✗ Enemy'
+        },
+        {
+          name: 'Glasstaff',
+          title: 'Redbrand Leader',
+          description: 'A wizard who leads the Redbrands from beneath Tresendar Manor. His escape satchel suggests he planned to flee.',
+          status: 'enemy',
+          statusText: '✗ Enemy'
+        },
+        {
+          name: 'Klarg',
+          title: 'Bugbear Chieftain',
+          description: 'A brutal bugbear who commanded the Cragmaw goblins. Larry the wolf ripped out his throat with a natural 20.',
+          status: 'enemy',
+          statusText: '✗ Deceased'
+        },
+        {
+          name: 'Yeemic',
+          title: 'Goblin Boss',
+          description: 'A cunning goblin who challenged Belden to an honor duel. After winning, he was killed when the party broke the duel\'s terms. His last word: "Cowards!"',
+          status: 'enemy',
+          statusText: '✗ Deceased'
+        }
+      ],
+      neutral: [
+        {
+          name: 'Ruxithid',
+          title: 'Unknown Entity',
+          description: 'A name whispered to Semaj in the night. Described as a "psychic tyrant from beyond the world." Its connection to current events is unknown but disturbing.',
+          status: 'unknown',
+          statusText: '? Unknown'
+        },
+        {
+          name: 'Millhouse',
+          title: 'Gnome Baker',
+          description: 'An eccentric gnome who infuses magic into his pastries. Provided supplies and magical cookies for the journey.',
+          status: 'neutral',
+          statusText: '~ Neutral'
+        },
+        {
+          name: 'Periwinkle',
+          title: 'Tiefling Butcher',
+          description: 'Runs the Bloody Butcher shop in Neverwinter. His escaped boars caused chaos, but he rewarded the party for their help.',
+          status: 'neutral',
+          statusText: '~ Neutral'
+        },
+        {
+          name: 'Harbin Wester',
+          title: 'Townmaster of Phandalin',
+          description: 'A cowardly official who has been cowering in his manor while the Redbrands terrorize the town.',
+          status: 'neutral',
+          statusText: '~ Neutral'
+        }
+      ]
+    };
+
+    function renderNpcCard(npc) {
+      return `
+        <div class="npc-card">
+          <h3 class="npc-name">${npc.name}</h3>
+          <p class="npc-title">${npc.title}</p>
+          <p class="npc-description">${npc.description}</p>
+          <span class="npc-status ${npc.status}">${npc.statusText}</span>
+        </div>
+      `;
+    }
+
+    document.getElementById('allies').innerHTML = 
+      npcs.allies.map(renderNpcCard).join('');
+
+    document.getElementById('enemies').innerHTML = 
+      npcs.enemies.map(renderNpcCard).join('');
+
+    document.getElementById('neutral').innerHTML = 
+      npcs.neutral.map(renderNpcCard).join('');
+  </script>
+  <script src="nav.js"></script>
+  <script>initNav('world');</script>
+</body>
+</html>

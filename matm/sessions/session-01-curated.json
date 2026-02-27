@@ -1,0 +1,145 @@
+{
+  "session_number": 1,
+  "title": "The Driftwood Tavern",
+  "date": "August 4, 2024",
+  "summary": "The party formed at the Driftwood Tavern in Neverwinter, met Gundren Rockseeker and Sildar Hallwinter, and began gathering supplies for their journey to Phandalin. Their first real test came in the form of a rat-infested storehouse.",
+  "level_up": false,
+  "duration": "~3.5 hours",
+  "player_attendance": ["Richard (Semaj)", "Jen (Kaelia)", "Sean (Belden)", "James (Ekran)"],
+  
+  "highlights": {
+    "best_moments": [
+      {
+        "title": "I Thought Elves Were Supposed to Be Smart",
+        "type": "burn",
+        "description": "The iconic exchange that would define Belden and Semaj's relationship.",
+        "quotes": [
+          {"speaker": "Belden", "text": "I thought you elves were supposed to be smart."},
+          {"speaker": "Semaj", "text": "I thought you dwarfs were supposed to be short."}
+        ]
+      },
+      {
+        "title": "Medieval Uber",
+        "type": "funny",
+        "description": "Semaj's solution for transporting supplies showed his... creative thinking.",
+        "quotes": [
+          {"speaker": "Semaj", "text": "I don't know if they have like medieval Uber or something like if you order it and they deliver it."},
+          {"speaker": "Belden", "text": "I thought you elves were supposed to be smart."}
+        ]
+      },
+      {
+        "title": "The Graceful Backflip",
+        "type": "epic",
+        "description": "When Belden jerked the wagon, Semaj nat 20'd his athletics check.",
+        "quotes": [
+          {"speaker": "GM", "text": "Both of you are able to kind of do—you say you do a backflip off of the wagon here?"},
+          {"speaker": "Semaj", "text": "I do a backflip and land on my feet."},
+          {"speaker": "Ekran", "text": "What a show."},
+          {"speaker": "Semaj", "text": "And when I realized that they saw that happen, I immediately fall down and act like, oh, I almost landed that one."}
+        ]
+      },
+      {
+        "title": "Toss a Coin to Your Barmaid",
+        "type": "roleplay",
+        "description": "Semaj tipped the barmaid who showed them to the stables.",
+        "quotes": [
+          {"speaker": "GM", "text": "She catches it with ease as you flip her this coin. This is not the first time someone has just tossed a coin to your barmaid. She catches it, looks at it, puts it kind of in her bust and says, Why thank you."}
+        ]
+      },
+      {
+        "title": "Kaelia's Protective Nature",
+        "type": "roleplay",
+        "description": "The flames flickered when Belden insulted Semaj one too many times.",
+        "quotes": [
+          {"speaker": "Kaelia", "text": "As Belden says that the second time, Kaelia's eyes sort of light up and flicker a little bit, which is a tell that she's annoyed."}
+        ]
+      },
+      {
+        "title": "Belden's Foot Gets Stuck",
+        "type": "funny",
+        "description": "The moment that would haunt Belden for sessions to come.",
+        "quotes": [
+          {"speaker": "GM", "text": "Belden, you demonstrated your strength on the front lines with your warhammer, though you struggled when you got your foot stuck in a crack."}
+        ]
+      }
+    ],
+    
+    "combat_encounters": [
+      {
+        "name": "Rat Infestation at Patty's Storehouse",
+        "enemies": ["Multiple Rat Swarms"],
+        "location": "Patty's General Store - Storehouse",
+        "outcome": "Victory",
+        "notable_events": [
+          "Kaelia lit up the storehouse with fire magic",
+          "Belden's foot got stuck in the floorboards",
+          "Semaj used Magic Missile with precision",
+          "Ekran provided crucial sneak attacks",
+          "Kaelia extinguished the flames at the end"
+        ]
+      }
+    ],
+    
+    "character_spotlight": {
+      "Semaj": {
+        "moments": ["Backflipped off a lurching wagon (nat 20)", "Tipped the barmaid", "Magic Missile precision strikes"],
+        "one_liner": "I don't know if they have like medieval Uber."
+      },
+      "Kaelia": {
+        "moments": ["Eyes flickered with fire when annoyed", "Lit up the storehouse", "Nearly died to rats"],
+        "one_liner": "I almost died."
+      },
+      "Belden": {
+        "moments": ["Jerked the wagon too hard", "Foot got stuck in floorboards", "Front-line tank"],
+        "one_liner": "I thought you elves were supposed to be smart."
+      },
+      "Ekran": {
+        "moments": ["Shoved bacon in his mouth before leaving", "Sneak attacks on rats", "Watched in awe at Semaj's backflip"],
+        "one_liner": "What a show."
+      }
+    },
+    
+    "plot_developments": [
+      "Met Gundren Rockseeker and Sildar Hallwinter at the Driftwood Tavern",
+      "Tasked with gathering supplies and transporting them to Phandalin",
+      "Picked up ale kegs from Brandy's Brewery (met Grogala the half-orc)",
+      "Ekran purchased 'Brandy' - Brandy's special brew",
+      "Cleared rat infestation at Patty's General Store",
+      "Received supplies for the journey to Phandalin"
+    ],
+    
+    "quotes_of_the_session": [
+      {
+        "quote": "I thought you elves were supposed to be smart.",
+        "speaker": "Belden",
+        "context": "The first of many burns"
+      },
+      {
+        "quote": "I thought you dwarfs were supposed to be short.",
+        "speaker": "Semaj",
+        "context": "The perfect clap-back"
+      },
+      {
+        "quote": "I do a backflip and land on my feet.",
+        "speaker": "Semaj",
+        "context": "Nat 20 athletics after being thrown from the wagon"
+      },
+      {
+        "quote": "What a show.",
+        "speaker": "Ekran",
+        "context": "Watching Semaj's acrobatics"
+      },
+      {
+        "quote": "I won't do what you tell me!",
+        "speaker": "GM (Alex)",
+        "context": "Setting the Rage Against the Machine tone from the start"
+      }
+    ],
+    
+    "end_state": {
+      "location": "Patty's Storehouse, Neverwinter",
+      "party_condition": "Victorious but wounded",
+      "next_objective": "Continue gathering supplies, then depart for Phandalin"
+    }
+  }
+}

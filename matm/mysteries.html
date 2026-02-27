@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mysteries | Mage Against The Machine</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="nav.css">
+  <link rel="stylesheet" href="base.css">
+  <style>
+    .mystery-icon {
+      color: var(--ember);
+    }
+    .theory-section {
+      margin-top: 1rem;
+      padding-top: 1rem;
+      border-top: 1px solid rgba(139, 92, 246, 0.2);
+    }
+    .theory-title {
+      font-family: 'Cinzel', serif;
+      font-size: 0.95rem;
+      color: var(--gold);
+      margin-bottom: 0.5rem;
+    }
+    .theory-text {
+      color: var(--text-dim);
+      font-style: italic;
+      font-size: 0.95rem;
+    }
+    .status-badge {
+      display: inline-block;
+      padding: 0.25rem 0.75rem;
+      border-radius: 1rem;
+      font-size: 0.8rem;
+      font-weight: 600;
+      margin-top: 1rem;
+    }
+    .status-active {
+      background: rgba(255, 107, 53, 0.2);
+      color: var(--ember);
+    }
+    .status-partial {
+      background: rgba(212, 168, 87, 0.2);
+      color: var(--gold);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="page-header">
+      <div class="page-icon">❓</div>
+      <h1 class="page-title">Unresolved Mysteries</h1>
+      <p class="page-subtitle">The questions that haunt the party</p>
+    </header>
+
+    <section class="section" id="mysteries-container"></section>
+  </div>
+
+  <script>
+    const mysteries = [
+      {
+        title: 'Who is the Black Spider?',
+        description: 'A shadowy figure who commands both goblins and the Redbrands. They\'ve captured Gundren Rockseeker and seek the map to Wave Echo Cave.',
+        clues: [
+          'Controls the Cragmaw goblins',
+          'Gave orders to Glasstaff and the Redbrands',
+          'Wants the Forge of Spells for unknown purposes',
+          'Gundren was specifically taken to them'
+        ],
+        theories: 'Could be a drow, given the spider motif. Possibly connected to the Underdark?',
+        status: 'active'
+      },
+      {
+        title: 'What is Ruxithid?',
+        description: 'A name whispered to Semaj in the darkness. Described as a "psychic tyrant from beyond the world." The Nothic in the Redbrand hideout seemed to recognize something in Semaj.',
+        clues: [
+          'Name came to Semaj during rest in the goblin cave',
+          'Described as a psychic entity',
+          'May be from another plane of existence',
+          'The Nothic sensed something in Semaj\'s mind'
+        ],
+        theories: 'Possibly an aberration like a Mind Flayer elder brain? Or something even worse?',
+        status: 'active'
+      },
+      {
+        title: 'Where is Wave Echo Cave?',
+        description: 'The lost location of the legendary Forge of Spells. Gundren believed he\'d found it, which is why he was captured.',
+        clues: [
+          'Somewhere in the Sword Mountains region',
+          'Gundren had a map (now taken by the Black Spider)',
+          'Lost for 500 years since the orc attack',
+          'The Phandelver Pact was made here'
+        ],
+        theories: 'Gundren\'s brothers Tharden and Nundro may know more. They were last seen heading toward the Sword Mountains.',
+        status: 'active'
+      },
+      {
+        title: 'What happened to the Dendrar family?',
+        description: 'The woodcarver Thel Dendrar was murdered by the Redbrands in the street. His wife and children were taken.',
+        clues: [
+          'Thel was killed publicly as a warning',
+          'Family was taken to the Redbrand hideout',
+          'The party has been clearing the hideout...'
+        ],
+        theories: 'They may still be alive somewhere in the dungeon. The party should search thoroughly.',
+        status: 'partial'
+      },
+      {
+        title: 'Where did Glasstaff go?',
+        description: 'The wizard leader of the Redbrands had an escape satchel prepared. He may have fled when the party attacked.',
+        clues: [
+          'Waterproof escape satchel found in the cistern',
+          'Suggests he planned for a quick exit',
+          'May have escaped through a secret passage',
+          'Could warn the Black Spider'
+        ],
+        theories: 'He\'s likely fleeing to the Black Spider to report the party\'s interference.',
+        status: 'active'
+      }
+    ];
+
+    function renderMystery(mystery) {
+      const statusClass = mystery.status === 'active' ? 'status-active' : 'status-partial';
+      const statusText = mystery.status === 'active' ? '🔥 Active Mystery' : '⚡ Partially Resolved';
+      
+      return `
+        <div class="mystery-card">
+          <h3 class="mystery-title">
+            <span class="mystery-icon">🔥</span>
+            ${mystery.title}
+          </h3>
+          <p class="mystery-description">${mystery.description}</p>
+          
+          <div class="mystery-section">
+            <h4 class="mystery-section-title">Known Clues</h4>
+            <ul class="clue-list">
+              ${mystery.clues.map(clue => `<li class="clue-item">${clue}</li>`).join('')}
+            </ul>
+          </div>
+          
+          ${mystery.theories ? `
+            <div class="theory-section">
+              <h4 class="theory-title">Theories</h4>
+              <p class="theory-text">${mystery.theories}</p>
+            </div>
+          ` : ''}
+          
+          <span class="status-badge ${statusClass}">${statusText}</span>
+        </div>
+      `;
+    }
+
+    document.getElementById('mysteries-container').innerHTML = 
+      mysteries.map(renderMystery).join('');
+  </script>
+  <script src="nav.js"></script>
+  <script>initNav('world');</script>
+</body>
+</html>

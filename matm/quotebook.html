@@ -1,0 +1,1109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quotebook | Mage Against The Machine</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="nav.css">
+  <link rel="stylesheet" href="base.css">
+  <style>
+    :root {
+      --bg-dark: #0a0a0f;
+      --bg-card: rgba(20, 16, 28, 0.9);
+      --gold: #d4a857;
+      --gold-dim: #a68642;
+      --purple: #8b5cf6;
+      --text-primary: #f5f5f4;
+      --text-secondary: rgba(245, 245, 244, 0.7);
+      --text-dim: rgba(245, 245, 244, 0.5);
+      --border-subtle: rgba(212, 168, 87, 0.2);
+      --semaj-color: #60a5fa;
+      --kaelia-color: #f97316;
+      --belden-color: #a78bfa;
+      --ekran-color: #22c55e;
+      --valrex-color: #fbbf24;
+      --aster-color: #06b6d4;
+      --gm-color: #f472b6;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    .container { max-width: 1100px; margin: 0 auto; padding: 2rem; padding-top: 100px; }
+    
+    .page-hero { text-align: center; padding: 1rem 0 2rem; }
+    .page-title {
+      font-family: 'Cinzel', serif;
+      font-size: 2.5rem;
+      font-weight: 700;
+      background: linear-gradient(90deg, #fef3c7, #fbbf24, #fef3c7);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 0.5rem;
+    }
+    .page-subtitle { color: var(--text-secondary); font-style: italic; }
+    
+    .stats-bar {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+      padding: 1rem;
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 12px;
+      margin-bottom: 1.5rem;
+    }
+    .stat { text-align: center; }
+    .stat-value { font-family: 'Cinzel', serif; font-size: 1.5rem; color: var(--gold); }
+    .stat-label { font-size: 0.8rem; color: var(--text-dim); }
+    
+    .filters {
+      display: flex;
+      justify-content: center;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      margin-bottom: 2rem;
+    }
+    .filter-btn {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-secondary);
+      padding: 0.4rem 0.9rem;
+      border-radius: 2rem;
+      font-family: 'Cinzel', serif;
+      font-size: 0.8rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    .filter-btn:hover { border-color: var(--gold-dim); color: var(--gold); }
+    .filter-btn.active { background: var(--gold); color: var(--bg-dark); border-color: var(--gold); }
+    
+    .quotes-grid {
+      column-count: 2;
+      column-gap: 1.25rem;
+    }
+    @media (max-width: 768px) { .quotes-grid { column-count: 1; } }
+    
+    .quote-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 10px;
+      padding: 1.25rem;
+      margin-bottom: 1.25rem;
+      break-inside: avoid;
+      transition: all 0.3s ease;
+      position: relative;
+    }
+    .quote-card:hover { border-color: var(--gold-dim); transform: translateY(-2px); }
+    .quote-card::before {
+      content: '"';
+      position: absolute;
+      top: 0; left: 0.75rem;
+      font-size: 3.5rem;
+      color: var(--gold-dim);
+      opacity: 0.15;
+      font-family: Georgia, serif;
+      line-height: 1;
+    }
+    .quote-text {
+      font-size: 1.1rem;
+      font-style: italic;
+      color: var(--text-primary);
+      margin-bottom: 0.75rem;
+      padding-left: 0.25rem;
+    }
+    .quote-footer { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
+    .quote-speaker { font-family: 'Cinzel', serif; font-size: 0.85rem; font-weight: 600; }
+    .speaker-semaj { color: var(--semaj-color); }
+    .speaker-kaelia { color: var(--kaelia-color); }
+    .speaker-belden { color: var(--belden-color); }
+    .speaker-ekran { color: var(--ekran-color); }
+    .speaker-valrex { color: var(--valrex-color); }
+    .speaker-aster { color: var(--aster-color); }
+    .speaker-gm, .speaker-gmalex, .speaker-alexgm { color: var(--gm-color); }
+    
+    .quote-meta { display: flex; align-items: center; gap: 0.5rem; }
+    .quote-session { color: var(--text-dim); font-size: 0.75rem; text-decoration: none; }
+    .quote-session:hover { color: var(--gold); }
+    .quote-category {
+      font-size: 0.65rem;
+      padding: 0.15rem 0.4rem;
+      border-radius: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      font-family: 'Cinzel', serif;
+    }
+    .cat-funny { background: rgba(251, 191, 36, 0.2); color: #fbbf24; }
+    .cat-epic { background: rgba(139, 92, 246, 0.2); color: #a78bfa; }
+    .cat-burn { background: rgba(220, 38, 38, 0.2); color: #f87171; }
+    .cat-pun { background: rgba(34, 197, 94, 0.2); color: #4ade80; }
+    .cat-wisdom { background: rgba(59, 130, 246, 0.2); color: #60a5fa; }
+    .cat-chaos { background: rgba(236, 72, 153, 0.2); color: #f472b6; }
+    .cat-meta { background: rgba(100, 100, 100, 0.2); color: #a0a0a0; }
+    
+    .quote-context {
+      color: var(--text-dim);
+      font-size: 0.8rem;
+      margin-top: 0.5rem;
+      padding-top: 0.5rem;
+      border-top: 1px solid rgba(255,255,255,0.05);
+    }
+    .quote-card.hidden { display: none; }
+    
+    @media (max-width: 768px) {
+      .container { padding: 1rem; padding-top: 80px; }
+      .page-title { font-size: 1.8rem; }
+      .stats-bar { gap: 1rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="page-hero">
+      <h1 class="page-title">📜 The Quotebook</h1>
+      <p class="page-subtitle">Memorable moments, questionable decisions, and absolute chaos</p>
+    </header>
+    
+    <div class="stats-bar">
+      <div class="stat"><div class="stat-value">81</div><div class="stat-label">Quotes</div></div>
+      <div class="stat"><div class="stat-value">14</div><div class="stat-label">Sessions</div></div>
+      <div class="stat"><div class="stat-value">GM</div><div class="stat-label">Most Quoted</div></div>
+      <div class="stat"><div class="stat-value">2</div><div class="stat-label">Puns</div></div>
+    </div>
+    
+    <div class="filters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="semaj">Semaj</button>
+      <button class="filter-btn" data-filter="kaelia">Kaelia</button>
+      <button class="filter-btn" data-filter="belden">Belden</button>
+      <button class="filter-btn" data-filter="ekran">Ekran</button>
+      <button class="filter-btn" data-filter="valrex">Valrex</button>
+      <button class="filter-btn" data-filter="aster">Aster</button>
+      <button class="filter-btn" data-filter="gm">GM/NPCs</button>
+    </div>
+    
+    <div class="quotes-grid" id="quotes-container">
+      <div class="quote-card" data-speaker="belden">
+        <p class="quote-text">I thought you elves were supposed to be smart.</p>
+        <div class="quote-footer">
+          <span class="quote-speaker speaker-belden">— Belden</span>
+          <div class="quote-meta">
+            <span class="quote-category cat-epic">epic</span>
+            <a href="sessions/session-01.html" class="quote-session">Session 1</a>
+          </div>
+        </div>
+        <p class="quote-context">The first of many burns</p>
+      </div>
+      <div class="quote-card" data-speaker="semaj">
+        <p class="quote-text">I thought you dwarfs were supposed to be short.</p>
+        <div class="quote-footer">
+          <span class="quote-speaker speaker-semaj">— Semaj</span>
+          <div class="quote-meta">
+            <span class="quote-category cat-epic">epic</span>
+            <a href="sessions/session-01.html" class="quote-session">Session 1</a>
+          </div>
+        </div>
+        <p class="quote-context">The perfect clap-back</p>
+      </div>
+      <div class="quote-card" data-speaker="semaj">
+        <p class="quote-text">I do a backflip and land on my feet.</p>
+        <div class="quote-footer">
+          <span class="quote-speaker speaker-semaj">— Semaj</span>
+          <div class="quote-meta">
+            <span class="quote-category cat-epic">epic</span>
+            <a href="sessions/session-01.html" class="quote-session">Session 1</a>
+          </div>
+        </div>
+        <p class="quote-context">Nat 20 athletics after being thrown from the wagon</p>
+      </div>
+      <div class="quote-card" data-speaker="ekran">
+        <p class="quote-text">What a show.</p>
+        <div class="quote-footer">
+          <span class="quote-speaker speaker-ekran">— Ekran</span>
+          <div class="quote-meta">
+            <span class="quote-category cat-epic">epic</span>
+            <a href="sessions/session-01.html" class="quote-session">Session 1</a>
+          </div>
+        </div>
+        <p class="quote-context">Watching Semaj's acrobatics</p>
+      </div>
+      <div class="quote-card" data-speaker="gm (alex)">
+        <p class="quote-text">I won't do what you tell me!</p>
+        <div class="quote-footer">
+          <span class="quote-speaker speaker-gmalex">— GM (Alex)</span>
+          <div class="quote-meta">
+            <span class="quote-category cat-funny">funny</span>
+            <a href="sessions/session-01.html" class="quote-session">Session 1</a>
+          </div>
+        </div>
+        <p class="quote-context">Setting the Rage Against the Machine tone from the start</p>
+      </div>
+      <div class="quote-card" data-speaker="belden">
+        <p class="quote-text">Stupid floor.</p>
+        <div class="quote-footer">
+          <span class="quote-speaker speaker-belden">— Belden</span>
+          <div class="quote-meta">
+            <span class="quote-category cat-epic">epic</span>
+            <a href="sessions/session-02.html" class="quote-session">Session 2</a>
+          </div>
+        </div>
+        <p class="quote-context">His only thought after the rat battle</p>
+      </div>
+      <div class="quote-card" data-speaker="kaelia">
+        <p class="quote-text">Am I the only one hanging on by a thread here?</p>
+        <div class="quote-footer">
+          <span class="quote-speaker speaker-kaelia">— Kaelia</span>
+          <div class="quote-meta">
+            <span class="quote-category cat-epic">epic</span>
+            <a href="sessions/session-02.html" class="quote-session">Session 2</a>
+          </div>
+        </div>
+        <p class="quote-context">Realizing she almost died to rats</p>
+      </div>
+      <div class="quote-card" data-speaker="semaj">
+        <p class="quote-text">Bored him to death.</p>
+        <div class="quote-footer">
+          <span class="quote-speaker speaker-semaj">— Semaj</span>
+          <div class="quote-meta">
+            <span class="quote-category cat-pun">pun</span>
+            <a href="sessions/session-02.html" class="quote-session">Session 2</a>
+          </div>
+        </div>
+        <p class="quote-context">After Ekran was knocked out by Borby</p>
+      </div>
+      <div class="quote-card" data-speaker="belden">
+        <p class="quote-text">This is no time to be cooking.</p>
+        <div class="quote-footer">
+          <span class="quote-speaker speaker-belden">— Belden</span>
+          <div class="quote-meta">
+            <span class="quote-category cat-epic">epic</span>
+            <a href="sessions/session-02.html" class="quote-session">Session 2</a>
+          </div>
+        </div>
+        <p class="quote-context">Watching Periwinkle attack the dead boar</p>
+      </div>
+      <div class="quote-card" data-speaker="ekran">
+        <p class="quote-text">Think these things carry rabies?</p>
+        <div class="quote-footer">
+          <span class="quote-speaker speaker-ekran">— Ekran</span>
+          <div class="quote-meta">
+            <span class="quote-category cat-epic">epic</span>
+            <a href="sessions/session-02.html" class="quote-session">Session 2</a>
+          </div>
+        </div>
+        <p class="quote-context">Examining his wounds</p>
+      </div>
+      <div class="quote-card" data-speaker="kaelia">
+        <p class="quote-text">I'm gonna be squishy but I can do cool looking things.</p>
+        <div class="quote-footer">
+          <span class="quote-speaker speaker-kaelia">— Kaelia</span>
+          <div class="quote-meta">
+            <span class="quote-category cat-epic">epic</span>
+            <a href="sessions/session-03.html" class="quote-session">Session 3</a>
+          </div>
+        </div>
+        <p class="quote-context">After creating the fire wolf</p>
+      </div>
+      <div class="quote-card" data-speaker="belden">
+        <p class="quote-text">Badass. Sleep Now with the Fire Wolf.</p>
+        <div class="quote-footer">
+          <span class="quote-speaker speaker-belden">— Belden</span>
+          <div class="quote-meta">
+            <span class="quote-category cat-pun">pun</span>
+            <a href="sessions/session-03.html" class="quote-session">Session 3</a>
+          </div>
+        </div>
+        <p class="quote-context">Naming the Rage Against the Machine song for Kaelia's fire wolf</p>
+      </div>
+      <div class="quote-card" data-speaker="semaj">
+        <p class="quote-text">I stare him down.</p>
+        <div class="quote-footer">
+          <span class="quote-speaker speaker-semaj">— Semaj</span>
+          <div class="quote-meta">
+            <span class="quote-category cat-epic">epic</span>
+            <a href="sessions/session-03.html" class="quote-session">Session 3</a>
+          </div>
+        </div>
+        <p class="quote-context">Facing the alpha wolf</p>
+      </div>
+      <div class="quote-card" data-speaker="kaelia">
+        <p class="quote-text">It's not always about killing stuff.</p>
+        <div class="quote-footer">
+          <span class="quote-speaker speaker-kaelia">— Kaelia</span>
+          <div class="quote-meta">
+            <span class="quote-category cat-epic">epic</span>
+            <a href="sessions/session-03.html" class="quote-session">Session 3</a>
+          </div>
+        </div>
+        <p class="quote-context">After the wolves retreated peacefully</p>
+      </div>
+      <div class="quote-card" data-speaker="ekran">
+        <p class="quote-text">How long have you been playing that? I guess just a few minutes.</p>
+        <div class="quote-footer">
+          <span class="quote-speaker speaker-ekran">— Ekran</span>
+          <div class="quote-meta">
+            <span class="quote-category cat-epic">epic</span>
+            <a href="sessions/session-03.html" class="quote-session">Session 3</a>
+          </div>
+        </div>
+        <p class="quote-context">After his nat 20 pan flute performance</p>
+      </div>
+      <div class="quote-card" data-speaker="semaj">
+        <p class="quote-text">This soundtrack sounds like straight up Star Trek.</p>
+        <div class="quote-footer">
+          <span class="quote-speaker speaker-semaj">— Semaj</span>
+          <div class="quote-meta">
+            <span class="quote-category cat-epic">epic</span>
+            <a href="sessions/session-03.html" class="quote-session">Session 3</a>
+          </div>
+        </div>
+        <p class="quote-context">Breaking the fourth wall</p>
+      </div>
+      <div class="quote-card" data-speaker="ekran">
+        <p class="quote-text">Quite refreshing, the water's fine.</p>
+        <div class="quote-footer">
+          <span class="quote-speaker speaker-ekran">— Ekran</span>
+          <div class="quote-meta">
+            <span class="quote-category cat-epic">epic</span>
+            <a href="sessions/session-04.html" class="quote-session">Session 4</a>
+          </div>
+        </div>
+        <p class="quote-context">After falling face-first into the stream</p>
+      </div>
+      <div class="quote-card" data-speaker="semaj">
+        <p class="quote-text">Sounds like he met his end.</p>
+        <div class="quote-footer">
+          <span class="quote-speaker speaker-semaj">— Semaj</span>
+          <div class="quote-meta">
+            <span class="quote-category cat-epic">epic</span>
+            <a href="sessions/session-04.html" class="quote-session">Session 4</a>
+          </div>
+        </div>
+        <p class="quote-context">After Ekran shot a goblin in the rear</p>
+      </div>
+      <div class="quote-card" data-speaker="ekran">
+        <p class="quote-text">My arrow certainly did.</p>
+        <div class="quote-footer">
+          <span class="quote-speaker speaker-ekran">— Ekran</span>
+          <div class="quote-meta">
+            <span class="quote-category cat-epic">epic</span>
+            <a href="sessions/session-04.html" class="quote-session">Session 4</a>
+          </div>
+        </div>
+        <p class="quote-context">Response to Semaj's pun</p>
+      </div>
+      <div class="quote-card" data-speaker="kaelia">
+        <p class="quote-text">But it's fire and water.</p>
+        <div class="quote-footer">
+          <span class="quote-speaker speaker-kaelia">— Kaelia</span>
+          <div class="quote-meta">
+            <span class="quote-category cat-burn">burn</span>
+            <a href="sessions/session-04.html" class="quote-session">Session 4</a>
+          </div>
+        </div>
+        <p class="quote-context">Refusing to cross the stream</p>
+      </div>
+      <div class="quote-card" data-speaker="belden">
+        <p class="quote-text">Anything to make everyone forget about the foot thing.</p>
+        <div class="quote-footer">
+          <span class="quote-speaker speaker-belden">— Belden</span>
+          <div class="quote-meta">
+            <span class="quote-category cat-epic">epic</span>
+            <a href="sessions/session-04.html" class="quote-session">Session 4</a>
+          </div>
+        </div>
+        <p class="quote-context">After carrying Kaelia across</p>
+      </div>
+      <div class="quote-card" data-speaker="belden">
+        <p class="quote-text">We should do Bulls on Parade with old school medieval instruments.</p>
+        <div class="quote-footer">
+          <span class="quote-speaker speaker-belden">— Belden</span>
+          <div class="quote-meta">
+            <span class="quote-category cat-epic">epic</span>
+            <a href="sessions/session-04.html" class="quote-session">Session 4</a>
+          </div>
+        </div>
+        <p class="quote-context">Suggesting the campaign's theme song</p>
+      </div>
+      <div class="quote-card" data-speaker="gm">
+        <p class="quote-text">This wolf had it out for Klarg. Klarg must have tortured this wolf pretty hard.</p>
+        <div class="quote-footer">
+          <span class="quote-speaker speaker-gm">— GM</span>
+          <div class="quote-meta">
+            <span class="quote-category cat-epic">epic</span>
+            <a href="sessions/session-05.html" class="quote-session">Session 5</a>
+          </div>
+        </div>
+        <p class="quote-context">As the wolf delivers the killing blow</p>
+      </div>
+      <div class="quote-card" data-speaker="semaj">
+        <p class="quote-text">Retribution is the boy's name. That boy's name is Retribution.</p>
+        <div class="quote-footer">
+          <span class="quote-speaker speaker-semaj">— Semaj</span>
+          <div class="quote-meta">
+            <span class="quote-category cat-epic">epic</span>
+            <a href="sessions/session-05.html" class="quote-session">Session 5</a>
+          </div>
+        </div>
+        <p class="quote-context">First naming the wolf (later became Larry)</p>
+      </div>
+      <div class="quote-card" data-speaker="gm">
+        <p class="quote-text">That was a straight Han Solo and Chewie running right into the wall of Stormtroopers.</p>
+        <div class="quote-footer">
+          <span class="quote-speaker speaker-gm">— GM</span>
+          <div class="quote-meta">
+            <span class="quote-category cat-burn">burn</span>
+            <a href="sessions/session-05.html" class="quote-session">Session 5</a>
+          </div>
+        </div>
+        <p class="quote-context">Describing Semaj's failed solo charge</p>
+      </div>
+      <div class="quote-card" data-speaker="gm">
+        <p class="quote-text">Well, Semaj is able to live again. But, man, MVP ain't dog, ain't my buddy.</p>
+        <div class="quote-footer">
+          <span class="quote-speaker speaker-gm">— GM</span>
+          <div class="quote-meta">
+            <span class="quote-category cat-epic">epic</span>
+            <a href="sessions/session-05.html" class="quote-session">Session 5</a>
+          </div>
+        </div>
+        <p class="quote-context">End of session - the wolf was the real hero</p>
+      </div>
+      <div class="quote-card" data-speaker="kaelia">
+        <p class="quote-text">I can keep you barely alive.</p>
+        <div class="quote-footer">
+          <span class="quote-speaker speaker-kaelia">— Kaelia</span>
+          <div class="quote-meta">
+            <span class="quote-category cat-epic">epic</span>
+            <a href="sessions/session-05.html" class="quote-session">Session 5</a>
+          </div>
+        </div>
+        <p class="quote-context">On the party's healing capabilities</p>
+      </div>
+      <div class="quote-card" data-speaker="gm">
+        <p class="quote-text">You made wolf paste.</p>
+        <div class="quote-footer">
+          <span class="quote-speaker speaker-gm">— GM</span>
+          <div class="quote-meta">
+            <span class="quote-category cat-epic">epic</span>
+            <a href="sessions/session-05.html" class="quote-session">Session 5</a>
+          </div>
+        </div>
+        <p class="quote-context">After Belden's hammer crit</p>
+      </div>
+      <div class="quote-card" data-speaker="gm">
+        <p class="quote-text">That was a brutal duel. It was an upset victory—without the victory. It was just upset.</p>
+        <div class="quote-footer">
+          <span class="quote-speaker speaker-gm">— GM</span>
+          <div class="quote-meta">
+            <span class="quote-category cat-funny">funny</span>
+            <a href="sessions/session-06.html" class="quote-session">Session 6</a>
+          </div>
+        </div>
+        <p class="quote-context">After Belden lost the duel</p>
+      </div>
+      <div class="quote-card" data-speaker="kaelia">
+        <p class="quote-text">That was so dramatic, clownish, and anti-climactic all at the same time.</p>
+        <div class="quote-footer">
+          <span class="quote-speaker speaker-kaelia">— Kaelia</span>
+          <div class="quote-meta">
+            <span class="quote-category cat-epic">epic</span>
+            <a href="sessions/session-06.html" class="quote-session">Session 6</a>
+          </div>
+        </div>
+        <p class="quote-context">Describing the duel</p>
+      </div>
+      <div class="quote-card" data-speaker="belden">
+        <p class="quote-text">STOP! Fight me one-on-one!</p>
+        <div class="quote-footer">
+          <span class="quote-speaker speaker-belden">— Belden</span>
+          <div class="quote-meta">
+            <span class="quote-category cat-epic">epic</span>
+            <a href="sessions/session-06.html" class="quote-session">Session 6</a>
+          </div>
+        </div>
+        <p class="quote-context">Challenging Yeemic to a duel</p>
+      </div>
+      <div class="quote-card" data-speaker="ekran">
+        <p class="quote-text">As a rogue, I'm not gonna honor any—now you lost a duel, like, I'mma shoot him in the face.</p>
+        <div class="quote-footer">
+          <span class="quote-speaker speaker-ekran">— Ekran</span>
+          <div class="quote-meta">
+            <span class="quote-category cat-epic">epic</span>
+            <a href="sessions/session-06.html" class="quote-session">Session 6</a>
+          </div>
+        </div>
+        <p class="quote-context">Planning revenge after Belden fell</p>
+      </div>
+      <div class="quote-card" data-speaker="belden">
+        <p class="quote-text">One of these other wolves I'll name him Gary. Gary and Ace.</p>
+        <div class="quote-footer">
+          <span class="quote-speaker speaker-belden">— Belden</span>
+          <div class="quote-meta">
+            <span class="quote-category cat-epic">epic</span>
+            <a href="sessions/session-06.html" class="quote-session">Session 6</a>
+          </div>
+        </div>
+        <p class="quote-context">Trying to name the other wolves</p>
+      </div>
+      <div class="quote-card" data-speaker="semaj">
+        <p class="quote-text">Belden, you got like Wil Wheaton level luck with those ones, man.</p>
+        <div class="quote-footer">
+          <span class="quote-speaker speaker-semaj">— Semaj</span>
+          <div class="quote-meta">
+            <span class="quote-category cat-epic">epic</span>
+            <a href="sessions/session-06.html" class="quote-session">Session 6</a>
+          </div>
+        </div>
+        <p class="quote-context">After Belden's string of misses</p>
+      </div>
+      <div class="quote-card" data-speaker="gm">
+        <p class="quote-text">COWARDS!</p>
+        <div class="quote-footer">
+          <span class="quote-speaker speaker-gm">— GM</span>
+          <div class="quote-meta">
+            <span class="quote-category cat-burn">burn</span>
+            <a href="sessions/session-07.html" class="quote-session">Session 7</a>
+          </div>
+        </div>
+        <p class="quote-context">Yeemic's dying word to Belden</p>
+      </div>
+      <div class="quote-card" data-speaker="gm">
+        <p class="quote-text">If the Black Spider unlocks this cave before we do, gods help us all.</p>
+        <div class="quote-footer">
+          <span class="quote-speaker speaker-gm">— GM</span>
+          <div class="quote-meta">
+            <span class="quote-category cat-epic">epic</span>
+            <a href="sessions/session-07.html" class="quote-session">Session 7</a>
+          </div>
+        </div>
+        <p class="quote-context">Revealing the stakes</p>
+      </div>
+      <div class="quote-card" data-speaker="gm">
+        <p class="quote-text">Ruxithid is not a goblin. It's something older. Something patient. Something that waits.</p>
+        <div class="quote-footer">
+          <span class="quote-speaker speaker-gm">— GM</span>
+          <div class="quote-meta">
+            <span class="quote-category cat-epic">epic</span>
+            <a href="sessions/session-07.html" class="quote-session">Session 7</a>
+          </div>
+        </div>
+        <p class="quote-context">The mysterious whisper</p>
+      </div>
+      <div class="quote-card" data-speaker="semaj">
+        <p class="quote-text">Larry looks to Samaj with viscera and gore around his mouth like: Did I do a good job?</p>
+        <div class="quote-footer">
+          <span class="quote-speaker speaker-semaj">— Semaj</span>
+          <div class="quote-meta">
+            <span class="quote-category cat-epic">epic</span>
+            <a href="sessions/session-07.html" class="quote-session">Session 7</a>
+          </div>
+        </div>
+        <p class="quote-context">After Larry decapitates the snake</p>
+      </div>
+      <div class="quote-card" data-speaker="gm">
+        <p class="quote-text">Frickin' Larry the GOAT.</p>
+        <div class="quote-footer">
+          <span class="quote-speaker speaker-gm">— GM</span>
+          <div class="quote-meta">
+            <span class="quote-category cat-epic">epic</span>
+            <a href="sessions/session-07.html" class="quote-session">Session 7</a>
+          </div>
+        </div>
+        <p class="quote-context">After Larry's snake kill</p>
+      </div>
+      <div class="quote-card" data-speaker="belden">
+        <p class="quote-text">I should have, as the life was fading from his eyes, been like: Coward! COWARD!</p>
+        <div class="quote-footer">
+          <span class="quote-speaker speaker-belden">— Belden</span>
+          <div class="quote-meta">
+            <span class="quote-category cat-burn">burn</span>
+            <a href="sessions/session-07.html" class="quote-session">Session 7</a>
+          </div>
+        </div>
+        <p class="quote-context">Belden's regret</p>
+      </div>
+      <div class="quote-card" data-speaker="gm">
+        <p class="quote-text">Your hammer hits harder than you think. And your heart's even stronger. Don't forget that.</p>
+        <div class="quote-footer">
+          <span class="quote-speaker speaker-gm">— GM</span>
+          <div class="quote-meta">
+            <span class="quote-category cat-epic">epic</span>
+            <a href="sessions/session-08.html" class="quote-session">Session 8</a>
+          </div>
+        </div>
+        <p class="quote-context">Ekran's farewell to Belden</p>
+      </div>
+      <div class="quote-card" data-speaker="gm">
+        <p class="quote-text">Firelight doesn't just burn—it guides.</p>
+        <div class="quote-footer">
+          <span class="quote-speaker speaker-gm">— GM</span>
+          <div class="quote-meta">
+            <span class="quote-category cat-burn">burn</span>
+            <a href="sessions/session-08.html" class="quote-session">Session 8</a>
+          </div>
+        </div>
+        <p class="quote-context">Ekran's farewell to Kaelia</p>
+      </div>
+      <div class="quote-card" data-speaker="semaj">
+        <p class="quote-text">To Ekran!</p>
+        <div class="quote-footer">
+          <span class="quote-speaker speaker-semaj">— Semaj</span>
+          <div class="quote-meta">
+            <span class="quote-category cat-epic">epic</span>
+            <a href="sessions/session-08.html" class="quote-session">Session 8</a>
+          </div>
+        </div>
+        <p class="quote-context">Toast as Ekran departs</p>
+      </div>
+      <div class="quote-card" data-speaker="gm">
+        <p class="quote-text">Joseph, you idiot.</p>
+        <div class="quote-footer">
+          <span class="quote-speaker speaker-gm">— GM</span>
+          <div class="quote-meta">
+            <span class="quote-category cat-funny">funny</span>
+            <a href="sessions/session-08.html" class="quote-session">Session 8</a>
+          </div>
+        </div>
+        <p class="quote-context">Redbrands watching their friend trip down stairs</p>
+      </div>
+      <div class="quote-card" data-speaker="belden">
+        <p class="quote-text">The last time this happened, I heard someone was eating dwarves and I failed my rage save. This time, I'm just drunk.</p>
+        <div class="quote-footer">
+          <span class="quote-speaker speaker-belden">— Belden</span>
+          <div class="quote-meta">
+            <span class="quote-category cat-burn">burn</span>
+            <a href="sessions/session-08.html" class="quote-session">Session 8</a>
+          </div>
+        </div>
+        <p class="quote-context">Explaining why he charged in</p>
+      </div>
+      <div class="quote-card" data-speaker="gm">
+        <p class="quote-text">Let's gut these heroes and use their skulls for mugs!</p>
+        <div class="quote-footer">
+          <span class="quote-speaker speaker-gm">— GM</span>
+          <div class="quote-meta">
+            <span class="quote-category cat-epic">epic</span>
+            <a href="sessions/session-08.html" class="quote-session">Session 8</a>
+          </div>
+        </div>
+        <p class="quote-context">Redbrand battle cry before tripping</p>
+      </div>
+      <div class="quote-card" data-speaker="gm">
+        <p class="quote-text">The drunken master for the win—he was dodging every dude and killing everybody.</p>
+        <div class="quote-footer">
+          <span class="quote-speaker speaker-gm">— GM</span>
+          <div class="quote-meta">
+            <span class="quote-category cat-epic">epic</span>
+            <a href="sessions/session-09.html" class="quote-session">Session 9</a>
+          </div>
+        </div>
+        <p class="quote-context">Praising Belden's combat performance</p>
+      </div>
+      <div class="quote-card" data-speaker="belden">
+        <p class="quote-text">I went into a big battle, killed a couple guys, and then went down in a blaze of glory. Woke up to dead bodies.</p>
+        <div class="quote-footer">
+          <span class="quote-speaker speaker-belden">— Belden</span>
+          <div class="quote-meta">
+            <span class="quote-category cat-epic">epic</span>
+            <a href="sessions/session-09.html" class="quote-session">Session 9</a>
+          </div>
+        </div>
+        <p class="quote-context">Summarizing his session</p>
+      </div>
+      <div class="quote-card" data-speaker="gm">
+        <p class="quote-text">His brain just fizzles out and explodes and falls down.</p>
+        <div class="quote-footer">
+          <span class="quote-speaker speaker-gm">— GM</span>
+          <div class="quote-meta">
+            <span class="quote-category cat-epic">epic</span>
+            <a href="sessions/session-09.html" class="quote-session">Session 9</a>
+          </div>
+        </div>
+        <p class="quote-context">Valrex's Toll the Dead</p>
+      </div>
+      <div class="quote-card" data-speaker="gm">
+        <p class="quote-text">He lunges into the air, catches the Redbrand by the throat. And he just starts ripping.</p>
+        <div class="quote-footer">
+          <span class="quote-speaker speaker-gm">— GM</span>
+          <div class="quote-meta">
+            <span class="quote-category cat-epic">epic</span>
+            <a href="sessions/session-09.html" class="quote-session">Session 9</a>
+          </div>
+        </div>
+        <p class="quote-context">Larry's kill</p>
+      </div>
+      <div class="quote-card" data-speaker="belden">
+        <p class="quote-text">I was dealing with the personal turmoil of losing a duel with a goblin.</p>
+        <div class="quote-footer">
+          <span class="quote-speaker speaker-belden">— Belden</span>
+          <div class="quote-meta">
+            <span class="quote-category cat-epic">epic</span>
+            <a href="sessions/session-09.html" class="quote-session">Session 9</a>
+          </div>
+        </div>
+        <p class="quote-context">Explaining why he was drunk</p>
+      </div>
+      <div class="quote-card" data-speaker="gm">
+        <p class="quote-text">Hammer smash face! It's a Cannibal Corpse song.</p>
+        <div class="quote-footer">
+          <span class="quote-speaker speaker-gm">— GM</span>
+          <div class="quote-meta">
+            <span class="quote-category cat-epic">epic</span>
+            <a href="sessions/session-09.html" class="quote-session">Session 9</a>
+          </div>
+        </div>
+        <p class="quote-context">Describing Belden's attacks</p>
+      </div>
+      <div class="quote-card" data-speaker="kaelia">
+        <p class="quote-text">I don't see a hippo.</p>
+        <div class="quote-footer">
+          <span class="quote-speaker speaker-kaelia">— Kaelia</span>
+          <div class="quote-meta">
+            <span class="quote-category cat-epic">epic</span>
+            <a href="sessions/session-10.html" class="quote-session">Session 10</a>
+          </div>
+        </div>
+        <p class="quote-context">Gaslighting Belden</p>
+      </div>
+      <div class="quote-card" data-speaker="belden">
+        <p class="quote-text">Either I'm dead or I'm still drunk. What is going on?</p>
+        <div class="quote-footer">
+          <span class="quote-speaker speaker-belden">— Belden</span>
+          <div class="quote-meta">
+            <span class="quote-category cat-epic">epic</span>
+            <a href="sessions/session-10.html" class="quote-session">Session 10</a>
+          </div>
+        </div>
+        <p class="quote-context">Confused by the Aster prank</p>
+      </div>
+      <div class="quote-card" data-speaker="gm">
+        <p class="quote-text">You taste different. Magic in your blood. Pain in your past.</p>
+        <div class="quote-footer">
+          <span class="quote-speaker speaker-gm">— GM</span>
+          <div class="quote-meta">
+            <span class="quote-category cat-epic">epic</span>
+            <a href="sessions/session-10.html" class="quote-session">Session 10</a>
+          </div>
+        </div>
+        <p class="quote-context">The Nothic probing Semaj's mind</p>
+      </div>
+      <div class="quote-card" data-speaker="gm">
+        <p class="quote-text">Grista mutters: I'm going to need to kill another pig.</p>
+        <div class="quote-footer">
+          <span class="quote-speaker speaker-gm">— GM</span>
+          <div class="quote-meta">
+            <span class="quote-category cat-epic">epic</span>
+            <a href="sessions/session-10.html" class="quote-session">Session 10</a>
+          </div>
+        </div>
+        <p class="quote-context">After Aster devoured breakfast</p>
+      </div>
+      <div class="quote-card" data-speaker="semaj">
+        <p class="quote-text">Let's remind these Redbrands what happens when good people stop standing alone.</p>
+        <div class="quote-footer">
+          <span class="quote-speaker speaker-semaj">— Semaj</span>
+          <div class="quote-meta">
+            <span class="quote-category cat-epic">epic</span>
+            <a href="sessions/session-10.html" class="quote-session">Session 10</a>
+          </div>
+        </div>
+        <p class="quote-context">Rallying the town</p>
+      </div>
+      <div class="quote-card" data-speaker="gm">
+        <p class="quote-text">It's the ghost of hippo past!</p>
+        <div class="quote-footer">
+          <span class="quote-speaker speaker-gm">— GM</span>
+          <div class="quote-meta">
+            <span class="quote-category cat-epic">epic</span>
+            <a href="sessions/session-10.html" class="quote-session">Session 10</a>
+          </div>
+        </div>
+        <p class="quote-context">Belden trying to understand Aster</p>
+      </div>
+      <div class="quote-card" data-speaker="gm">
+        <p class="quote-text">And by the time the flames finish, and you can see again in front of you, there is nothing. Absolutely nothing.</p>
+        <div class="quote-footer">
+          <span class="quote-speaker speaker-gm">— GM</span>
+          <div class="quote-meta">
+            <span class="quote-category cat-burn">burn</span>
+            <a href="sessions/session-11.html" class="quote-session">Session 11</a>
+          </div>
+        </div>
+        <p class="quote-context">Belden's Dragon's Breath vaporizing an enemy</p>
+      </div>
+      <div class="quote-card" data-speaker="aster">
+        <p class="quote-text">Today, you meet water.</p>
+        <div class="quote-footer">
+          <span class="quote-speaker speaker-aster">— Aster</span>
+          <div class="quote-meta">
+            <span class="quote-category cat-epic">epic</span>
+            <a href="sessions/session-11.html" class="quote-session">Session 11</a>
+          </div>
+        </div>
+        <p class="quote-context">Aster launching a water bullet</p>
+      </div>
+      <div class="quote-card" data-speaker="kaelia">
+        <p class="quote-text">I'm just very unusually happy with the amount of fire going on in the general vicinity.</p>
+        <div class="quote-footer">
+          <span class="quote-speaker speaker-kaelia">— Kaelia</span>
+          <div class="quote-meta">
+            <span class="quote-category cat-burn">burn</span>
+            <a href="sessions/session-11.html" class="quote-session">Session 11</a>
+          </div>
+        </div>
+        <p class="quote-context">After giving Belden Dragon's Breath</p>
+      </div>
+      <div class="quote-card" data-speaker="aster">
+        <p class="quote-text">You cannot steal this from Shiva!</p>
+        <div class="quote-footer">
+          <span class="quote-speaker speaker-aster">— Aster</span>
+          <div class="quote-meta">
+            <span class="quote-category cat-epic">epic</span>
+            <a href="sessions/session-11.html" class="quote-session">Session 11</a>
+          </div>
+        </div>
+        <p class="quote-context">Complaining about Kaelia taking his kills</p>
+      </div>
+      <div class="quote-card" data-speaker="gm">
+        <p class="quote-text">Both of these bugbears are now nearly disintegrated.</p>
+        <div class="quote-footer">
+          <span class="quote-speaker speaker-gm">— GM</span>
+          <div class="quote-meta">
+            <span class="quote-category cat-epic">epic</span>
+            <a href="sessions/session-11.html" class="quote-session">Session 11</a>
+          </div>
+        </div>
+        <p class="quote-context">Semaj's bouncing Chromatic Orb</p>
+      </div>
+      <div class="quote-card" data-speaker="gm">
+        <p class="quote-text">This was an entire session of combat. We didn't leave a room.</p>
+        <div class="quote-footer">
+          <span class="quote-speaker speaker-gm">— GM</span>
+          <div class="quote-meta">
+            <span class="quote-category cat-epic">epic</span>
+            <a href="sessions/session-11.html" class="quote-session">Session 11</a>
+          </div>
+        </div>
+        <p class="quote-context">End of session</p>
+      </div>
+      <div class="quote-card" data-speaker="belden">
+        <p class="quote-text">I didn't use my hammer once at all. I fought the whole thing with traveler's clothes.</p>
+        <div class="quote-footer">
+          <span class="quote-speaker speaker-belden">— Belden</span>
+          <div class="quote-meta">
+            <span class="quote-category cat-epic">epic</span>
+            <a href="sessions/session-12.html" class="quote-session">Session 12</a>
+          </div>
+        </div>
+        <p class="quote-context">After the cistern battle</p>
+      </div>
+      <div class="quote-card" data-speaker="gm">
+        <p class="quote-text">The wet traveler's clothes is the last thing he sees.</p>
+        <div class="quote-footer">
+          <span class="quote-speaker speaker-gm">— GM</span>
+          <div class="quote-meta">
+            <span class="quote-category cat-epic">epic</span>
+            <a href="sessions/session-12.html" class="quote-session">Session 12</a>
+          </div>
+        </div>
+        <p class="quote-context">Redbrand's death by rat-tail</p>
+      </div>
+      <div class="quote-card" data-speaker="gm">
+        <p class="quote-text">The traveler's clothes whip—chef's kiss.</p>
+        <div class="quote-footer">
+          <span class="quote-speaker speaker-gm">— GM</span>
+          <div class="quote-meta">
+            <span class="quote-category cat-epic">epic</span>
+            <a href="sessions/session-12.html" class="quote-session">Session 12</a>
+          </div>
+        </div>
+        <p class="quote-context">End of session appreciation</p>
+      </div>
+      <div class="quote-card" data-speaker="belden">
+        <p class="quote-text">This is the session I've decided that if there's a trap, I must test to see how well the trap is made.</p>
+        <div class="quote-footer">
+          <span class="quote-speaker speaker-belden">— Belden</span>
+          <div class="quote-meta">
+            <span class="quote-category cat-epic">epic</span>
+            <a href="sessions/session-12.html" class="quote-session">Session 12</a>
+          </div>
+        </div>
+        <p class="quote-context">Belden's new philosophy</p>
+      </div>
+      <div class="quote-card" data-speaker="valrex">
+        <p class="quote-text">I grab him by the throat, strangle him in one hand, and toss his dead body back in the cistern.</p>
+        <div class="quote-footer">
+          <span class="quote-speaker speaker-valrex">— Valrex</span>
+          <div class="quote-meta">
+            <span class="quote-category cat-epic">epic</span>
+            <a href="sessions/session-12.html" class="quote-session">Session 12</a>
+          </div>
+        </div>
+        <p class="quote-context">Undertaker-style kill</p>
+      </div>
+      <div class="quote-card" data-speaker="gm">
+        <p class="quote-text">Shrapnel damage!</p>
+        <div class="quote-footer">
+          <span class="quote-speaker speaker-gm">— GM</span>
+          <div class="quote-meta">
+            <span class="quote-category cat-epic">epic</span>
+            <a href="sessions/session-12.html" class="quote-session">Session 12</a>
+          </div>
+        </div>
+        <p class="quote-context">Skeleton breastplate hitting another skeleton</p>
+      </div>
+      <div class="quote-card" data-speaker="gm">
+        <p class="quote-text">He doesn't even scream. The fire just robs him of his breath before it robs him of his life.</p>
+        <div class="quote-footer">
+          <span class="quote-speaker speaker-gm">— GM</span>
+          <div class="quote-meta">
+            <span class="quote-category cat-burn">burn</span>
+            <a href="sessions/session-13.html" class="quote-session">Session 13</a>
+          </div>
+        </div>
+        <p class="quote-context">Kaelia's killing blow on Glasstaff</p>
+      </div>
+      <div class="quote-card" data-speaker="gm">
+        <p class="quote-text">He's double dead.</p>
+        <div class="quote-footer">
+          <span class="quote-speaker speaker-gm">— GM</span>
+          <div class="quote-meta">
+            <span class="quote-category cat-epic">epic</span>
+            <a href="sessions/session-13.html" class="quote-session">Session 13</a>
+          </div>
+        </div>
+        <p class="quote-context">Confirming overkill on Glasstaff</p>
+      </div>
+      <div class="quote-card" data-speaker="valrex">
+        <p class="quote-text">When you started using teleport, I said NO.</p>
+        <div class="quote-footer">
+          <span class="quote-speaker speaker-valrex">— Valrex</span>
+          <div class="quote-meta">
+            <span class="quote-category cat-epic">epic</span>
+            <a href="sessions/session-13.html" class="quote-session">Session 13</a>
+          </div>
+        </div>
+        <p class="quote-context">During the chase</p>
+      </div>
+      <div class="quote-card" data-speaker="gm">
+        <p class="quote-text">This Phoenix Sorcerer is absolutely badass.</p>
+        <div class="quote-footer">
+          <span class="quote-speaker speaker-gm">— GM</span>
+          <div class="quote-meta">
+            <span class="quote-category cat-funny">funny</span>
+            <a href="sessions/session-13.html" class="quote-session">Session 13</a>
+          </div>
+        </div>
+        <p class="quote-context">Praising Kaelia's build</p>
+      </div>
+      <div class="quote-card" data-speaker="semaj">
+        <p class="quote-text">He was supposed to protect Phandalin. Instead he terrorized it.</p>
+        <div class="quote-footer">
+          <span class="quote-speaker speaker-semaj">— Semaj</span>
+          <div class="quote-meta">
+            <span class="quote-category cat-funny">funny</span>
+            <a href="sessions/session-13.html" class="quote-session">Session 13</a>
+          </div>
+        </div>
+        <p class="quote-context">Realizing Iarno's betrayal</p>
+      </div>
+      <div class="quote-card" data-speaker="gm">
+        <p class="quote-text">That was a well-earned kill. We went through 20 rounds.</p>
+        <div class="quote-footer">
+          <span class="quote-speaker speaker-gm">— GM</span>
+          <div class="quote-meta">
+            <span class="quote-category cat-epic">epic</span>
+            <a href="sessions/session-13.html" class="quote-session">Session 13</a>
+          </div>
+        </div>
+        <p class="quote-context">Post-session appreciation</p>
+      </div>
+      <div class="quote-card" data-speaker="gm">
+        <p class="quote-text">Those are the ones that killed the Redbrands.</p>
+        <div class="quote-footer">
+          <span class="quote-speaker speaker-gm">— GM</span>
+          <div class="quote-meta">
+            <span class="quote-category cat-epic">epic</span>
+            <a href="sessions/session-14.html" class="quote-session">Session 14</a>
+          </div>
+        </div>
+        <p class="quote-context">Townsfolk recognizing the party</p>
+      </div>
+      <div class="quote-card" data-speaker="gm">
+        <p class="quote-text">Bugbears hurt Droop. Droop was just stuck.</p>
+        <div class="quote-footer">
+          <span class="quote-speaker speaker-gm">— GM</span>
+          <div class="quote-meta">
+            <span class="quote-category cat-epic">epic</span>
+            <a href="sessions/session-14.html" class="quote-session">Session 14</a>
+          </div>
+        </div>
+        <p class="quote-context">Droop's pathetic backstory</p>
+      </div>
+      <div class="quote-card" data-speaker="valrex">
+        <p class="quote-text">We killed him by the skin of his teeth.</p>
+        <div class="quote-footer">
+          <span class="quote-speaker speaker-valrex">— Valrex</span>
+          <div class="quote-meta">
+            <span class="quote-category cat-epic">epic</span>
+            <a href="sessions/session-14.html" class="quote-session">Session 14</a>
+          </div>
+        </div>
+        <p class="quote-context">Remembering Glasstaff's near-escape</p>
+      </div>
+      <div class="quote-card" data-speaker="gm">
+        <p class="quote-text">That removes the knife at Phandalin's throat.</p>
+        <div class="quote-footer">
+          <span class="quote-speaker speaker-gm">— GM</span>
+          <div class="quote-meta">
+            <span class="quote-category cat-epic">epic</span>
+            <a href="sessions/session-14.html" class="quote-session">Session 14</a>
+          </div>
+        </div>
+        <p class="quote-context">Hearing about Glasstaff's death</p>
+      </div>
+      <div class="quote-card" data-speaker="semaj">
+        <p class="quote-text">I rolled a natural one. I've never seen that before in my life.</p>
+        <div class="quote-footer">
+          <span class="quote-speaker speaker-semaj">— Semaj</span>
+          <div class="quote-meta">
+            <span class="quote-category cat-epic">epic</span>
+            <a href="sessions/session-14.html" class="quote-session">Session 14</a>
+          </div>
+        </div>
+        <p class="quote-context">Failing to recognize the Lion Shield symbol</p>
+      </div>
+    </div>
+  </div>
+  
+  <script>
+    // Filter functionality
+    const buttons = document.querySelectorAll('.filter-btn');
+    const cards = document.querySelectorAll('.quote-card');
+    
+    buttons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        buttons.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        
+        const filter = btn.dataset.filter;
+        cards.forEach(card => {
+          if (filter === 'all') {
+            card.classList.remove('hidden');
+          } else if (filter === 'gm') {
+            const speaker = card.dataset.speaker;
+            const isGmOrNpc = speaker.includes('gm') || speaker.includes('alex') || speaker.includes('goblin') || speaker.includes('yeemic') || speaker.includes('droop');
+            card.classList.toggle('hidden', !isGmOrNpc);
+          } else {
+            card.classList.toggle('hidden', !card.dataset.speaker.includes(filter));
+          }
+        });
+      });
+    });
+  </script>
+  <script src="nav.js"></script>
+  <script>initNav('chronicle');</script>
+</body>
+</html>

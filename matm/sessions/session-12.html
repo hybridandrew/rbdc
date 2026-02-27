@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Session 12: The Wet Traveler's Clothes | Mage Against The Machine</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../nav.css">
+  <link rel="stylesheet" href="../base.css">
+  <style>
+    :root {
+      --bg-dark: #0a0a0f;
+      --bg-card: rgba(20, 16, 28, 0.9);
+      --bg-card-hover: rgba(30, 24, 42, 0.95);
+      --gold: #d4a857;
+      --gold-dim: #a68642;
+      --gold-bright: #ffd700;
+      --purple: #8b5cf6;
+      --purple-dim: #6d4aad;
+      --red: #dc2626;
+      --green: #22c55e;
+      --blue: #3b82f6;
+      --text-primary: #f5f5f4;
+      --text-secondary: rgba(245, 245, 244, 0.7);
+      --text-dim: rgba(245, 245, 244, 0.5);
+      --border-subtle: rgba(212, 168, 87, 0.2);
+      --border-glow: rgba(212, 168, 87, 0.4);
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Crimson Pro', Georgia, serif;
+      background: var(--bg-dark);
+      color: var(--text-primary);
+      min-height: 100vh;
+      line-height: 1.6;
+    }
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: 
+        radial-gradient(ellipse at 20% 20%, rgba(139, 92, 246, 0.1) 0%, transparent 50%),
+        radial-gradient(ellipse at 80% 80%, rgba(212, 168, 87, 0.08) 0%, transparent 50%);
+      pointer-events: none;
+      z-index: -1;
+    }
+    .container { max-width: 1000px; margin: 0 auto; padding: 2rem; padding-top: 100px; }
+    .session-hero { text-align: center; padding: 3rem 0; margin-bottom: 3rem; }
+    .session-number {
+      font-family: 'Cinzel', serif;
+      font-size: 0.9rem;
+      color: var(--gold);
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+    .session-title {
+      font-family: 'Cinzel', serif;
+      font-size: 3rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 1rem;
+      text-shadow: 0 0 40px rgba(212, 168, 87, 0.3);
+    }
+    .session-meta {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+      margin-bottom: 1.5rem;
+    }
+    .meta-item { display: flex; align-items: center; gap: 0.5rem; color: var(--text-secondary); font-size: 0.95rem; }
+    .meta-icon { color: var(--gold-dim); }
+    .level-up-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: linear-gradient(135deg, rgba(34, 197, 94, 0.2), rgba(34, 197, 94, 0.1));
+      border: 1px solid rgba(34, 197, 94, 0.4);
+      color: var(--green);
+      padding: 0.5rem 1rem;
+      border-radius: 2rem;
+      font-family: 'Cinzel', serif;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+    .session-summary {
+      max-width: 700px;
+      margin: 0 auto;
+      color: var(--text-secondary);
+      font-size: 1.1rem;
+      font-style: italic;
+    }
+    .section { margin-bottom: 3rem; }
+    .section-header {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+    .section-icon {
+      width: 32px; height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, var(--gold-dim), var(--gold));
+      border-radius: 8px;
+      color: var(--bg-dark);
+    }
+    .section-title { font-family: 'Cinzel', serif; font-size: 1.5rem; font-weight: 600; color: var(--gold); }
+    .highlights-grid { display: grid; gap: 1.5rem; }
+    .highlight-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 12px;
+      padding: 1.5rem;
+      transition: all 0.3s ease;
+    }
+    .highlight-card:hover { background: var(--bg-card-hover); border-color: var(--border-glow); transform: translateY(-2px); }
+    .highlight-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem; }
+    .highlight-title { font-family: 'Cinzel', serif; font-size: 1.2rem; font-weight: 600; color: var(--text-primary); }
+    .highlight-type {
+      font-size: 0.75rem;
+      padding: 0.25rem 0.75rem;
+      border-radius: 1rem;
+      font-family: 'Cinzel', serif;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .type-funny { background: rgba(251, 191, 36, 0.2); color: #fbbf24; }
+    .type-epic { background: rgba(139, 92, 246, 0.2); color: #a78bfa; }
+    .type-combat { background: rgba(220, 38, 38, 0.2); color: #f87171; }
+    .type-roleplay { background: rgba(59, 130, 246, 0.2); color: #60a5fa; }
+    .type-clever { background: rgba(34, 197, 94, 0.2); color: #4ade80; }
+    .type-cool { background: rgba(6, 182, 212, 0.2); color: #22d3ee; }
+    .type-burn { background: rgba(249, 115, 22, 0.2); color: #fb923c; }
+    .type-dramatic { background: rgba(236, 72, 153, 0.2); color: #f472b6; }
+    .type-meta { background: rgba(100, 100, 100, 0.2); color: #a0a0a0; }
+    .highlight-description { color: var(--text-secondary); margin-bottom: 1rem; font-size: 1rem; }
+    .quote-block {
+      background: rgba(0, 0, 0, 0.3);
+      border-left: 3px solid var(--gold-dim);
+      padding: 1rem 1.25rem;
+      margin: 0.5rem 0;
+      border-radius: 0 8px 8px 0;
+    }
+    .quote-text { color: var(--text-primary); font-style: italic; margin-bottom: 0.5rem; }
+    .quote-speaker { color: var(--gold); font-family: 'Cinzel', serif; font-size: 0.85rem; }
+    .quotes-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.25rem; }
+    .quote-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 12px;
+      padding: 1.25rem;
+      position: relative;
+      transition: all 0.3s ease;
+    }
+    .quote-card:hover { border-color: var(--gold-dim); transform: translateY(-2px); }
+    .quote-card::before {
+      content: '"';
+      position: absolute;
+      top: 0.5rem; left: 1rem;
+      font-size: 3rem;
+      color: var(--gold-dim);
+      opacity: 0.3;
+      font-family: Georgia, serif;
+      line-height: 1;
+    }
+    .quote-card .quote-text { padding-left: 1.5rem; font-size: 1.05rem; }
+    .quote-context { color: var(--text-dim); font-size: 0.85rem; margin-top: 0.75rem; padding-left: 1.5rem; }
+    .spotlight-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.25rem; }
+    .spotlight-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 12px;
+      padding: 1.25rem;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+    .spotlight-card:hover { border-color: var(--purple-dim); background: var(--bg-card-hover); }
+    .spotlight-name { font-family: 'Cinzel', serif; font-size: 1.2rem; font-weight: 600; color: var(--gold); margin-bottom: 0.75rem; }
+    .spotlight-moments { list-style: none; text-align: left; margin-bottom: 1rem; }
+    .spotlight-moments li {
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+      padding: 0.35rem 0;
+      padding-left: 1rem;
+      position: relative;
+    }
+    .spotlight-moments li::before { content: '◆'; position: absolute; left: 0; color: var(--gold-dim); font-size: 0.6rem; }
+    .spotlight-moment {
+      color: var(--text-secondary);
+      margin-bottom: 0.75rem;
+      font-size: 0.95rem;
+    }
+    .spotlight-quote {
+      background: rgba(0, 0, 0, 0.3);
+      padding: 0.75rem;
+      border-radius: 8px;
+      font-style: italic;
+      color: var(--text-primary);
+      font-size: 0.95rem;
+    }
+    .combat-card {
+      background: linear-gradient(135deg, rgba(220, 38, 38, 0.1), rgba(20, 16, 28, 0.9));
+      border: 1px solid rgba(220, 38, 38, 0.3);
+      border-radius: 12px;
+      padding: 1.5rem;
+    }
+    .combat-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; }
+    .combat-name { font-family: 'Cinzel', serif; font-size: 1.3rem; font-weight: 600; color: var(--text-primary); }
+    .combat-outcome {
+      background: rgba(34, 197, 94, 0.2);
+      color: var(--green);
+      padding: 0.25rem 0.75rem;
+      border-radius: 1rem;
+      font-family: 'Cinzel', serif;
+      font-size: 0.8rem;
+      font-weight: 600;
+    }
+    .combat-details { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-bottom: 1rem; }
+    .combat-detail { background: rgba(0, 0, 0, 0.3); padding: 0.75rem; border-radius: 8px; }
+    .combat-detail-label { color: var(--text-dim); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.25rem; }
+    .combat-detail-value { color: var(--text-primary); font-size: 0.95rem; }
+    .combat-events { list-style: none; }
+    .combat-events li {
+      color: var(--text-secondary);
+      padding: 0.5rem 0;
+      padding-left: 1.5rem;
+      position: relative;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+    .combat-events li:last-child { border-bottom: none; }
+    .combat-events li::before { content: '⚔'; position: absolute; left: 0; color: var(--red); }
+    .plot-list { list-style: none; }
+    .plot-list li {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 8px;
+      padding: 1rem 1.25rem;
+      margin-bottom: 0.75rem;
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      transition: all 0.3s ease;
+    }
+    .plot-list li:hover { border-color: var(--purple-dim); }
+    .plot-icon { color: var(--purple); font-size: 1.2rem; margin-top: 0.1rem; }
+    .plot-text { color: var(--text-secondary); flex: 1; }
+    .end-state {
+      background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(20, 16, 28, 0.9));
+      border: 1px solid rgba(139, 92, 246, 0.3);
+      border-radius: 12px;
+      padding: 1.5rem;
+      text-align: center;
+    }
+    .end-state-title {
+      font-family: 'Cinzel', serif;
+      font-size: 1rem;
+      color: var(--purple);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 1rem;
+    }
+    .end-state-content { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1.5rem; }
+    .end-item-label { color: var(--text-dim); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.25rem; }
+    .end-item-value { color: var(--text-primary); font-size: 1.05rem; }
+    .session-nav {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 3rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--border-subtle);
+    }
+    .session-nav a {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-family: 'Cinzel', serif;
+      font-size: 0.9rem;
+      padding: 0.75rem 1.25rem;
+      border: 1px solid var(--border-subtle);
+      border-radius: 8px;
+      transition: all 0.3s ease;
+    }
+    .session-nav a:hover { color: var(--gold); border-color: var(--gold-dim); background: rgba(212, 168, 87, 0.1); }
+    .session-nav a.disabled { opacity: 0.3; pointer-events: none; }
+    @media (max-width: 768px) {
+      .container { padding: 1rem; }
+      .session-title { font-size: 2rem; }
+      .session-meta { gap: 1rem; }
+      .nav-links { display: none; }
+      .quotes-grid, .spotlight-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="session-hero">
+      <div class="session-number">Session XII</div>
+      <h1 class="session-title">The Wet Traveler's Clothes</h1>
+      <div class="session-meta">
+        <span class="meta-item">
+          <span class="meta-icon">📅</span>
+          January 4, 2026
+        </span>
+        <span class="meta-item">
+          <span class="meta-icon">⏱</span>
+          ~3 hours
+        </span>
+        <span class="meta-item">
+          <span class="meta-icon">👥</span>
+          5 players
+        </span>
+      </div>
+      
+      <p class="session-summary">The party pushed deeper into the Redbrand hideout, discovering Talon—the lost sword of Ser Aldith Trezendar. But the true legend was born when Belden, fighting Redbrands in a cistern, grabbed wet traveler's clothes and used them as an improvised weapon. He strangled one Redbrand, then 'rat-tailed' another—whipping the wet clothes at his throat and slicing it clean open. The session ended in the Tresendar crypts, battling skeleton guardians among ancient sarcophagi.</p>
+    </header>
+    
+    <section class="section">
+      <div class="section-header">
+        <div class="section-icon">💬</div>
+        <h2 class="section-title">Quotes of the Session</h2>
+      </div>
+      <div class="quotes-grid">
+        <div class="quote-card">
+          <p class="quote-text">I didn't use my hammer once at all. I fought the whole thing with traveler's clothes.</p>
+          <p class="quote-speaker">— Sean/Belden</p>
+          <p class="quote-context">After the cistern battle</p>
+        </div>
+        <div class="quote-card">
+          <p class="quote-text">The wet traveler's clothes is the last thing he sees.</p>
+          <p class="quote-speaker">— Alex/GM</p>
+          <p class="quote-context">Redbrand's death by rat-tail</p>
+        </div>
+        <div class="quote-card">
+          <p class="quote-text">The traveler's clothes whip—chef's kiss.</p>
+          <p class="quote-speaker">— Alex/GM</p>
+          <p class="quote-context">End of session appreciation</p>
+        </div>
+        <div class="quote-card">
+          <p class="quote-text">This is the session I've decided that if there's a trap, I must test to see how well the trap is made.</p>
+          <p class="quote-speaker">— Sean/Belden</p>
+          <p class="quote-context">Belden's new philosophy</p>
+        </div>
+        <div class="quote-card">
+          <p class="quote-text">I grab him by the throat, strangle him in one hand, and toss his dead body back in the cistern.</p>
+          <p class="quote-speaker">— Darren/Valrex</p>
+          <p class="quote-context">Undertaker-style kill</p>
+        </div>
+        <div class="quote-card">
+          <p class="quote-text">Shrapnel damage!</p>
+          <p class="quote-speaker">— Alex/GM</p>
+          <p class="quote-context">Skeleton breastplate hitting another skeleton</p>
+        </div></div>
+    </section>
+    
+    <section class="section">
+      <div class="section-header">
+        <div class="section-icon">⭐</div>
+        <h2 class="section-title">Best Moments</h2>
+      </div>
+      <div class="highlights-grid">
+        <div class="highlight-card">
+          <div class="highlight-header">
+            <h3 class="highlight-title">The Wet Traveler's Clothes Whip</h3>
+            <span class="highlight-type type-legendary">Legendary</span>
+          </div>
+          <p class="highlight-description">Belden grabbed wet traveler's clothes from the cistern and used them as an improvised weapon. He rat-tailed a Redbrand, whipping the wet clothes at his throat and slicing it clean open. This became an instant campaign legend.</p>
+          
+          <div class="quote-block">
+            <p class="quote-text">"Do you know what a rat tail is? Where you spin the clothes or the towel to get it nice and tight, and then I'm going to whip it at him. Specifically at the throat."</p>
+            <p class="quote-speaker">— Sean/Belden</p>
+          </div>
+          <div class="quote-block">
+            <p class="quote-text">"WAPOW! 18 is going to hit. Belden, how would you like to describe this kill?"</p>
+            <p class="quote-speaker">— Alex/GM</p>
+          </div>
+          <div class="quote-block">
+            <p class="quote-text">"I get the rat tail ready and just flick it at his throat. It slices clean open, he just bleeds out from the neck."</p>
+            <p class="quote-speaker">— Sean/Belden</p>
+          </div>
+          <div class="quote-block">
+            <p class="quote-text">"The wet traveler's clothes is the last thing he sees."</p>
+            <p class="quote-speaker">— Alex/GM</p>
+          </div>
+          <div class="quote-block">
+            <p class="quote-text">"I didn't use my hammer once at all. I fought the whole thing with traveler's clothes."</p>
+            <p class="quote-speaker">— Sean/Belden</p>
+          </div>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-header">
+            <h3 class="highlight-title">Valrex's Undertaker Chokeslam</h3>
+            <span class="highlight-type type-epic">Epic</span>
+          </div>
+          <p class="highlight-description">Valrex grabbed a Redbrand by the throat, strangled him one-handed, and threw his dead body back into the cistern like the Undertaker.</p>
+          
+          <div class="quote-block">
+            <p class="quote-text">"I grab him by the throat, I pick him up and strangle him in one hand, and I toss his dead body back in the cistern."</p>
+            <p class="quote-speaker">— Darren/Valrex</p>
+          </div>
+          <div class="quote-block">
+            <p class="quote-text">"This is like the Undertaker style—grabbing someone and picking them up off the ground and chokeslamming them back into the cistern."</p>
+            <p class="quote-speaker">— Alex/GM</p>
+          </div>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-header">
+            <h3 class="highlight-title">Talon Recovered</h3>
+            <span class="highlight-type type-plot">Plot</span>
+          </div>
+          <p class="highlight-description">Valrex discovered the legendary sword Talon in a chest at the bottom of the crevasse—the lost blade of Ser Aldith Trezendar, the Black Hawk.</p>
+          
+          <div class="quote-block">
+            <p class="quote-text">"It's inscribed with the name Talon, and the hilt is worked in the shape of a bird of prey with outstretched wings."</p>
+            <p class="quote-speaker">— Alex/GM</p>
+          </div>
+          <div class="quote-block">
+            <p class="quote-text">"This once belonged to a great knight named Aldith Trezendar, known as the Black Hawk. He died fighting off the bandits that attacked through these hidden caverns below his manor."</p>
+            <p class="quote-speaker">— Alex/GM</p>
+          </div>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-header">
+            <h3 class="highlight-title">Belden Tests the Trap</h3>
+            <span class="highlight-type type-funny">Funny</span>
+          </div>
+          <p class="highlight-description">Belden spotted a trapped bridge, announced he would test how well the trap was made, walked across it, and front-flipped to safety as it collapsed.</p>
+          
+          <div class="quote-block">
+            <p class="quote-text">"This is the session that I've decided that if there's a trap as Belden, I must test to see how well the trap is made."</p>
+            <p class="quote-speaker">— Sean/Belden</p>
+          </div>
+          <div class="quote-block">
+            <p class="quote-text">"You feel all the pieces of wood start falling beneath you, and you cut a front flip off to the other side of the bridge. Easy."</p>
+            <p class="quote-speaker">— Alex/GM</p>
+          </div>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-header">
+            <h3 class="highlight-title">Tresendar Crypts</h3>
+            <span class="highlight-type type-combat">Combat</span>
+          </div>
+          <p class="highlight-description">The party entered the ancient crypts, fighting skeleton guardians among stone sarcophagi of the Tresendar nobles.</p>
+          
+          <div class="quote-block">
+            <p class="quote-text">"Three massive stone sarcophagi stand along the edges of the wall, each etched with the likeness of Tresendar nobles."</p>
+            <p class="quote-speaker">— Alex/GM</p>
+          </div>
+          <div class="quote-block">
+            <p class="quote-text">"You see six skeletons in rusty mail, propped up against the wall as if they're guarding the place."</p>
+            <p class="quote-speaker">— Alex/GM</p>
+          </div>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-header">
+            <h3 class="highlight-title">Skeleton Shrapnel</h3>
+            <span class="highlight-type type-funny">Funny</span>
+          </div>
+          <p class="highlight-description">Belden smashed a skeleton so hard that its breastplate flew off and damaged another skeleton behind it.</p>
+          
+          <div class="quote-block">
+            <p class="quote-text">"You see the breastplate fly off of this skeleton and smash into the one behind it doing 4 shrapnel damage."</p>
+            <p class="quote-speaker">— Alex/GM</p>
+          </div>
+          <div class="quote-block">
+            <p class="quote-text">"Shrapnel damage? That's crazy!"</p>
+            <p class="quote-speaker">— Sean/Belden</p>
+          </div>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-header">
+            <h3 class="highlight-title">Valrex's Head Collection</h3>
+            <span class="highlight-type type-epic">Epic</span>
+          </div>
+          <p class="highlight-description">Valrex finished a skeleton by commanding his Spiritual Weapon to slice one, then turning around, grabbing another skeleton's head, kicking its body away, and discarding the skull.</p>
+          
+          <div class="quote-block">
+            <p class="quote-text">"He just turns around, grabs the head of the skeleton, kicks the body off, leaving just the head in my hands. And I just discard the head on the ground."</p>
+            <p class="quote-speaker">— Darren/Valrex</p>
+          </div>
+        </div></div>
+    </section>
+    
+    <section class="section">
+      <div class="section-header">
+        <div class="section-icon">⚔</div>
+        <h2 class="section-title">Combat Encounters</h2>
+      </div>
+      
+      <div class="combat-card">
+        <div class="combat-header">
+          <h3 class="combat-name">Cistern Ambush</h3>
+          <span class="combat-outcome">Victory</span>
+        </div>
+        <div class="combat-details">
+          <div class="combat-detail">
+            <div class="combat-detail-label">Enemies</div>
+            <div class="combat-detail-value">3 Redbrands</div>
+          </div>
+          
+          <div class="combat-detail">
+            <div class="combat-detail-label">MVP</div>
+            <div class="combat-detail-value">Belden — Fought entirely with wet traveler's clothes, rat-tailed a guy to death</div>
+          </div>
+        </div>
+        
+      </div>
+      <div class="combat-card">
+        <div class="combat-header">
+          <h3 class="combat-name">Tresendar Crypts</h3>
+          <span class="combat-outcome">Victory</span>
+        </div>
+        <div class="combat-details">
+          <div class="combat-detail">
+            <div class="combat-detail-label">Enemies</div>
+            <div class="combat-detail-value">6 Skeletons</div>
+          </div>
+          
+          <div class="combat-detail">
+            <div class="combat-detail-label">MVP</div>
+            <div class="combat-detail-value">Valrex — Spiritual Weapon kills, grabbed skeleton heads</div>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+    
+    <section class="section">
+      <div class="section-header">
+        <div class="section-icon">👤</div>
+        <h2 class="section-title">Character Spotlight</h2>
+      </div>
+      <div class="spotlight-grid">
+        <div class="spotlight-card">
+          <h3 class="spotlight-name">Belden</h3>
+          <p class="spotlight-moment">Created campaign legend with wet traveler's clothes. Rat-tailed a Redbrand's throat open. Didn't use his hammer once.</p>
+          <p class="spotlight-quote">"I fought the whole thing with traveler's clothes."</p>
+        </div>
+        <div class="spotlight-card">
+          <h3 class="spotlight-name">Valrex</h3>
+          <p class="spotlight-moment">Undertaker-style chokeslam into cistern, recovered Talon sword, grabbed skeleton heads</p>
+          <p class="spotlight-quote">"I strangle him in one hand and toss his dead body back in the cistern."</p>
+        </div>
+        <div class="spotlight-card">
+          <h3 class="spotlight-name">Semaj</h3>
+          <p class="spotlight-moment">Gave Belden the traveler's clothes that became a legend</p>
+          <p class="spotlight-quote">"Wait, can I get those?"</p>
+        </div>
+        <div class="spotlight-card">
+          <h3 class="spotlight-name">Darren Edermath</h3>
+          <p class="spotlight-moment">Almost fell in pit trap, saved by Belden's wet traveler's clothes rope</p>
+          <p class="spotlight-quote">"Barely made it."</p>
+        </div></div>
+    </section>
+    
+    <section class="section">
+      <div class="section-header">
+        <div class="section-icon">📜</div>
+        <h2 class="section-title">Plot Developments</h2>
+      </div>
+      <ul class="plot-list">
+        <li>
+          <span class="plot-icon">🔍</span>
+          <span class="plot-text">Discovered Talon, the lost sword of the Black Hawk</span>
+        </li>
+        <li>
+          <span class="plot-icon">🗺</span>
+          <span class="plot-text">Learned about Ser Aldith Tresendar's last stand</span>
+        </li>
+        <li>
+          <span class="plot-icon">⚔</span>
+          <span class="plot-text">Cleared the cistern barracks</span>
+        </li>
+        <li>
+          <span class="plot-icon">👥</span>
+          <span class="plot-text">Entered the Tresendar family crypts</span>
+        </li>
+        <li>
+          <span class="plot-icon">📜</span>
+          <span class="plot-text">Wet Traveler's Clothes became canon weapon</span>
+        </li></ul>
+    </section>
+    
+    <section class="section">
+      <div class="end-state">
+        <h3 class="end-state-title">To Be Continued...</h3>
+        <div class="end-state-content">
+          <div>
+            <div class="end-item-label">Location</div>
+            <div class="end-item-value">Tresendar Crypts</div>
+          </div>
+          <div>
+            <div class="end-item-label">Party Status</div>
+            <div class="end-item-value">Unknown</div>
+          </div>
+          <div>
+            <div class="end-item-label">Next Objective</div>
+            <div class="end-item-value">Continue exploring hideout, find Glasstaff</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <nav class="session-nav">
+      <a href="session-11.html">
+        <span>←</span>
+        <span>Session 11</span>
+      </a>
+      <a href="session-13.html">
+        <span>Session 13</span>
+        <span>→</span>
+      </a>
+    </nav>
+  </div>
+  
+  <script src="../nav.js"></script>
+  <script>initNav('sessions');</script>
+</body>
+</html>

@@ -1,0 +1,182 @@
+{
+  "session_number": 12,
+  "title": "The Wet Traveler's Clothes",
+  "date": "January 4, 2026",
+  "summary": "The party pushed deeper into the Redbrand hideout, discovering Talon—the lost sword of Ser Aldith Trezendar. But the true legend was born when Belden, fighting Redbrands in a cistern, grabbed wet traveler's clothes and used them as an improvised weapon. He strangled one Redbrand, then 'rat-tailed' another—whipping the wet clothes at his throat and slicing it clean open. The session ended in the Tresendar crypts, battling skeleton guardians among ancient sarcophagi.",
+  "level_up": false,
+  "duration": "~3 hours",
+  "player_attendance": ["Richard (Semaj)", "Jen (Kaelia)", "Sean (Belden)", "Darren (Valrex)", "Alan (Aster)"],
+  
+  "highlights": {
+    "best_moments": [
+      {
+        "title": "The Wet Traveler's Clothes Whip",
+        "type": "legendary",
+        "description": "Belden grabbed wet traveler's clothes from the cistern and used them as an improvised weapon. He rat-tailed a Redbrand, whipping the wet clothes at his throat and slicing it clean open. This became an instant campaign legend.",
+        "quotes": [
+          {"speaker": "Sean/Belden", "text": "Do you know what a rat tail is? Where you spin the clothes or the towel to get it nice and tight, and then I'm going to whip it at him. Specifically at the throat."},
+          {"speaker": "Alex/GM", "text": "WAPOW! 18 is going to hit. Belden, how would you like to describe this kill?"},
+          {"speaker": "Sean/Belden", "text": "I get the rat tail ready and just flick it at his throat. It slices clean open, he just bleeds out from the neck."},
+          {"speaker": "Alex/GM", "text": "The wet traveler's clothes is the last thing he sees."},
+          {"speaker": "Sean/Belden", "text": "I didn't use my hammer once at all. I fought the whole thing with traveler's clothes."}
+        ]
+      },
+      {
+        "title": "Valrex's Undertaker Chokeslam",
+        "type": "epic",
+        "description": "Valrex grabbed a Redbrand by the throat, strangled him one-handed, and threw his dead body back into the cistern like the Undertaker.",
+        "quotes": [
+          {"speaker": "Darren/Valrex", "text": "I grab him by the throat, I pick him up and strangle him in one hand, and I toss his dead body back in the cistern."},
+          {"speaker": "Alex/GM", "text": "This is like the Undertaker style—grabbing someone and picking them up off the ground and chokeslamming them back into the cistern."}
+        ]
+      },
+      {
+        "title": "Talon Recovered",
+        "type": "plot",
+        "description": "Valrex discovered the legendary sword Talon in a chest at the bottom of the crevasse—the lost blade of Ser Aldith Trezendar, the Black Hawk.",
+        "quotes": [
+          {"speaker": "Alex/GM", "text": "It's inscribed with the name Talon, and the hilt is worked in the shape of a bird of prey with outstretched wings."},
+          {"speaker": "Alex/GM", "text": "This once belonged to a great knight named Aldith Trezendar, known as the Black Hawk. He died fighting off the bandits that attacked through these hidden caverns below his manor."}
+        ]
+      },
+      {
+        "title": "Belden Tests the Trap",
+        "type": "funny",
+        "description": "Belden spotted a trapped bridge, announced he would test how well the trap was made, walked across it, and front-flipped to safety as it collapsed.",
+        "quotes": [
+          {"speaker": "Sean/Belden", "text": "This is the session that I've decided that if there's a trap as Belden, I must test to see how well the trap is made."},
+          {"speaker": "Alex/GM", "text": "You feel all the pieces of wood start falling beneath you, and you cut a front flip off to the other side of the bridge. Easy."}
+        ]
+      },
+      {
+        "title": "Tresendar Crypts",
+        "type": "combat",
+        "description": "The party entered the ancient crypts, fighting skeleton guardians among stone sarcophagi of the Tresendar nobles.",
+        "quotes": [
+          {"speaker": "Alex/GM", "text": "Three massive stone sarcophagi stand along the edges of the wall, each etched with the likeness of Tresendar nobles."},
+          {"speaker": "Alex/GM", "text": "You see six skeletons in rusty mail, propped up against the wall as if they're guarding the place."}
+        ]
+      },
+      {
+        "title": "Skeleton Shrapnel",
+        "type": "funny",
+        "description": "Belden smashed a skeleton so hard that its breastplate flew off and damaged another skeleton behind it.",
+        "quotes": [
+          {"speaker": "Alex/GM", "text": "You see the breastplate fly off of this skeleton and smash into the one behind it doing 4 shrapnel damage."},
+          {"speaker": "Sean/Belden", "text": "Shrapnel damage? That's crazy!"}
+        ]
+      },
+      {
+        "title": "Valrex's Head Collection",
+        "type": "epic",
+        "description": "Valrex finished a skeleton by commanding his Spiritual Weapon to slice one, then turning around, grabbing another skeleton's head, kicking its body away, and discarding the skull.",
+        "quotes": [
+          {"speaker": "Darren/Valrex", "text": "He just turns around, grabs the head of the skeleton, kicks the body off, leaving just the head in my hands. And I just discard the head on the ground."}
+        ]
+      }
+    ],
+    "quotes_of_the_session": [
+      {
+        "speaker": "Sean/Belden",
+        "quote": "I didn't use my hammer once at all. I fought the whole thing with traveler's clothes.",
+        "context": "After the cistern battle"
+      },
+      {
+        "speaker": "Alex/GM",
+        "quote": "The wet traveler's clothes is the last thing he sees.",
+        "context": "Redbrand's death by rat-tail"
+      },
+      {
+        "speaker": "Alex/GM",
+        "quote": "The traveler's clothes whip—chef's kiss.",
+        "context": "End of session appreciation"
+      },
+      {
+        "speaker": "Sean/Belden",
+        "quote": "This is the session I've decided that if there's a trap, I must test to see how well the trap is made.",
+        "context": "Belden's new philosophy"
+      },
+      {
+        "speaker": "Darren/Valrex",
+        "quote": "I grab him by the throat, strangle him in one hand, and toss his dead body back in the cistern.",
+        "context": "Undertaker-style kill"
+      },
+      {
+        "speaker": "Alex/GM",
+        "quote": "Shrapnel damage!",
+        "context": "Skeleton breastplate hitting another skeleton"
+      }
+    ]
+  },
+  
+  "combat_encounters": [
+    {
+      "name": "Cistern Ambush",
+      "enemies": "3 Redbrands",
+      "outcome": "Victory",
+      "mvp": "Belden",
+      "mvp_reason": "Fought entirely with wet traveler's clothes, rat-tailed a guy to death"
+    },
+    {
+      "name": "Tresendar Crypts",
+      "enemies": "6 Skeletons",
+      "outcome": "Victory",
+      "mvp": "Valrex",
+      "mvp_reason": "Spiritual Weapon kills, grabbed skeleton heads"
+    }
+  ],
+  
+  "loot": [
+    {
+      "item": "Talon",
+      "description": "Legendary longsword of Ser Aldith Tresendar, the Black Hawk. Silver-chased scabbard, hilt shaped like a bird of prey.",
+      "found_by": "Valrex"
+    },
+    {
+      "item": "150 gold, 150 silver",
+      "description": "Found in the crevasse chest"
+    },
+    {
+      "item": "Wet Traveler's Clothes (Whip)",
+      "description": "Belden's improvised weapon. Added to inventory as a whip.",
+      "found_by": "Belden"
+    }
+  ],
+  
+  "character_spotlights": [
+    {
+      "character": "Belden",
+      "moment": "Created campaign legend with wet traveler's clothes. Rat-tailed a Redbrand's throat open. Didn't use his hammer once.",
+      "one_liner": "I fought the whole thing with traveler's clothes."
+    },
+    {
+      "character": "Valrex",
+      "moment": "Undertaker-style chokeslam into cistern, recovered Talon sword, grabbed skeleton heads",
+      "one_liner": "I strangle him in one hand and toss his dead body back in the cistern."
+    },
+    {
+      "character": "Semaj",
+      "moment": "Gave Belden the traveler's clothes that became a legend",
+      "one_liner": "Wait, can I get those?"
+    },
+    {
+      "character": "Darren Edermath",
+      "moment": "Almost fell in pit trap, saved by Belden's wet traveler's clothes rope",
+      "one_liner": "Barely made it."
+    }
+  ],
+  
+  "plot_developments": [
+    "Discovered Talon, the lost sword of the Black Hawk",
+    "Learned about Ser Aldith Tresendar's last stand",
+    "Cleared the cistern barracks",
+    "Entered the Tresendar family crypts",
+    "Wet Traveler's Clothes became canon weapon"
+  ],
+  
+  "end_state": {
+    "location": "Tresendar Crypts",
+    "party_status": "Victorious, crypts cleared",
+    "next_objective": "Continue exploring hideout, find Glasstaff"
+  }
+}
