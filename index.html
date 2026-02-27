@@ -660,13 +660,16 @@
       .section-number { display: none; }
       .orbit-title { font-size: clamp(2rem, 10vw, 3rem); }
 
-      /* Now: single column, images slightly shorter */
+      /* Now: single column, natural image aspect ratio */
       .now-grid { grid-template-columns: 1fr; gap: 1rem; }
-      .now-card-thumb,
+      .now-card-thumb {
+        height: auto;
+        aspect-ratio: 16/9;
+      }
       .now-card-thumb-book {
-        height: 160px;
-        width: 100%;
-        object-fit: cover;
+        height: auto;
+        aspect-ratio: 2/3;
+        max-height: 300px;
       }
 
       /* Connect */
