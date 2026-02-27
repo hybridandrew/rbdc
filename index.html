@@ -358,7 +358,7 @@
 
     .now-grid {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(3, 1fr);
       gap: 1.5rem;
       margin-top: 3rem;
     }
@@ -413,6 +413,116 @@
       height: 1px;
       background: linear-gradient(90deg, transparent, var(--border), var(--accent2), var(--border), transparent);
       margin: 2rem 0;
+    }
+
+    /* ────────────────────────────
+       CREATIVE
+    ──────────────────────────── */
+    #creative { padding: 6rem 0; }
+
+    .creative-header { margin-bottom: 3rem; }
+
+    .creative-grid {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr;
+      gap: 1.5rem;
+      align-items: start;
+    }
+
+    .creative-right {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .creative-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--accent);
+      border-radius: 2px;
+      padding: 2rem;
+      position: relative;
+      overflow: hidden;
+      transition: background 0.3s, border-left-color 0.3s;
+    }
+    .creative-card:hover {
+      background: var(--surface2);
+      border-left-color: var(--accent2);
+    }
+
+    .creative-card-label {
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 0.6rem;
+    }
+    .creative-card-title {
+      font-family: var(--font-head);
+      font-size: 1.6rem;
+      letter-spacing: 0.03em;
+      color: var(--text);
+      margin-bottom: 0.75rem;
+    }
+    .creative-card-body {
+      font-size: 0.875rem;
+      color: var(--muted);
+      line-height: 1.75;
+      margin-bottom: 1.25rem;
+    }
+    .creative-card-tag {
+      display: inline-block;
+      font-family: var(--font-mono);
+      font-size: 0.62rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--accent2);
+      border: 1px solid var(--accent2);
+      padding: 0.25rem 0.6rem;
+      border-radius: 1px;
+      opacity: 0.7;
+    }
+
+    .creative-embed {
+      margin: 1.25rem 0;
+      border-radius: 2px;
+      overflow: hidden;
+      opacity: 0.9;
+    }
+    .creative-embed iframe { display: block; }
+
+    .creative-links {
+      display: flex;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+    }
+    .creative-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      text-decoration: none;
+      font-family: var(--font-mono);
+      font-size: 0.68rem;
+      letter-spacing: 0.1em;
+      color: var(--accent2);
+      border: 1px solid rgba(179,136,232,0.25);
+      padding: 0.35rem 0.75rem;
+      border-radius: 1px;
+      transition: all 0.2s;
+    }
+    .creative-link:hover {
+      color: var(--text);
+      border-color: var(--accent2);
+      background: rgba(179,136,232,0.06);
+    }
+    .creative-link-arrow { transition: transform 0.2s; }
+    .creative-link:hover .creative-link-arrow { transform: translateX(3px); }
+
+    /* Novel card — slightly different feel */
+    .creative-card--novel {
+      border-left-color: var(--accent2);
+      background: linear-gradient(135deg, var(--surface) 0%, rgba(124,77,170,0.08) 100%);
     }
 
     /* ────────────────────────────
@@ -624,7 +734,7 @@
       .orbit-grid { grid-template-columns: 1fr; }
       .orbit-card { padding: 2rem 1.5rem; }
 
-      /* Now grid: 2 columns */
+      /* Now grid: 2 columns on tablet */
       .now-grid { grid-template-columns: repeat(2, 1fr); }
 
       /* Connect: stack */
@@ -672,8 +782,9 @@
         max-height: 300px;
       }
 
-      /* Connect */
-      #connect { padding: 4rem 0 6rem; }
+      /* Creative */
+      .creative-grid { grid-template-columns: 1fr; }
+      #creative { padding: 4rem 0; }
       .connect-inner { gap: 2.5rem; }
 
       /* Footer */
@@ -841,12 +952,69 @@
         <div class="now-card-meta">Media infrastructure · CTO</div>
         <a href="https://thewhyfiles.net" class="now-card-link" target="_blank">→ thewhyfiles.net</a>
       </div>
-      <div class="now-card reveal">
-        <div class="now-card-platform">// making music</div>
-        <div class="now-card-title">Writing things that earn their breakdowns</div>
-        <div class="now-card-meta">Modern metal · post-hardcore</div>
-        <div class="now-card-link" style="color: var(--muted); cursor: default;">→ always in progress</div>
+    </div>
+  </section>
+
+  <div class="divider-line"></div>
+
+  <!-- ── CREATIVE ── -->
+  <section id="creative">
+
+    <div class="creative-header reveal">
+      <div class="section-label">Creative</div>
+      <h2 class="orbit-title">Making<br>Things</h2>
+    </div>
+
+    <div class="creative-grid">
+
+      <!-- SoundCloud embed -->
+      <div class="creative-card creative-card--wide reveal">
+        <div class="creative-card-label">// music</div>
+        <div class="creative-card-title">Original Work</div>
+        <div class="creative-card-body">Modern metal, post-hardcore, and things that shouldn't go together but do. Breakdowns, choir sections, and the kind of honesty that's easier to scream than say.</div>
+        <div class="creative-embed">
+          <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay"
+            src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/richard-bramlett&color=%237c4daa&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false">
+          </iframe>
+        </div>
+        <div class="creative-links">
+          <a href="https://soundcloud.com/richard-bramlett" class="creative-link" target="_blank">
+            <span class="creative-link-platform">SoundCloud</span>
+            <span class="creative-link-arrow">→</span>
+          </a>
+          <a href="https://open.spotify.com/artist/5AHNSpBMGBLUCaKNjtEoZY" class="creative-link" target="_blank">
+            <span class="creative-link-platform">Spotify</span>
+            <span class="creative-link-arrow">→</span>
+          </a>
+        </div>
       </div>
+
+      <!-- Right column -->
+      <div class="creative-right">
+
+        <!-- YouTube -->
+        <div class="creative-card reveal">
+          <div class="creative-card-label">// video</div>
+          <div class="creative-card-title">YouTube</div>
+          <div class="creative-card-body">A channel covering tech, media, gaming, and whatever else demands an opinion. Growing slowly and deliberately.</div>
+          <div class="creative-links">
+            <a href="https://www.youtube.com/@RichardBramlett" class="creative-link" target="_blank">
+              <span class="creative-link-platform">@RichardBramlett</span>
+              <span class="creative-link-arrow">→</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Novel -->
+        <div class="creative-card creative-card--novel reveal">
+          <div class="creative-card-label">// writing</div>
+          <div class="creative-card-title">Fantasy Novel</div>
+          <div class="creative-card-body">In progress. A fantasy novel — the kind of project that starts as a side thing and quietly becomes something you can't stop thinking about. More when there's more to share.</div>
+          <span class="creative-card-tag">In Progress</span>
+        </div>
+
+      </div>
+
     </div>
   </section>
 
