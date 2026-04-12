@@ -442,6 +442,70 @@ body::before {
   }
 }
 
+/* ===== SCROLL REVEAL ===== */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+/* ===== NPC PORTRAIT PLACEHOLDERS ===== */
+.npc-portrait {
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Cinzel', serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  flex-shrink: 0;
+  letter-spacing: 0.03em;
+}
+
+.npc-portrait.ally {
+  border: 2px solid var(--gold);
+  color: var(--gold);
+  background: rgba(212, 168, 87, 0.1);
+}
+
+.npc-portrait.enemy {
+  border: 2px solid var(--red);
+  color: var(--red);
+  background: rgba(220, 38, 38, 0.1);
+}
+
+.npc-portrait.neutral {
+  border: 2px solid var(--purple);
+  color: var(--purple);
+  background: rgba(139, 92, 246, 0.1);
+}
+
+.npc-card-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.npc-card-header-text {
+  flex: 1;
+}
+
+.npc-card-header .npc-name {
+  margin-bottom: 0.15rem;
+}
+
+.npc-card-header .npc-title {
+  margin-bottom: 0;
+}
+
 /* ===== MEMORABLE MOMENTS ===== */
 .memorable-moments-card {
   border-color: rgba(212, 168, 87, 0.3);

@@ -173,3 +173,62 @@ if (document.readyState === 'loading') {
   // DOM already loaded, but wait for script to determine current page
   // Page should call initNav('pagename') manually
 }
+
+// ===== SCROLL REVEAL =====
+// Adds .reveal to content cards on inner pages, then uses IntersectionObserver
+// to add .visible as they enter the viewport. Not applied on index.html.
+(function () {
+  if (window.location.pathname.endsWith('index.html') ||
+      window.location.pathname === '/' ||
+      window.location.pathname.endsWith('/')) {
+    return;
+  }
+
+  const CARD_SELECTORS = [
+    '.info-card',
+    '.mystery-card',
+    '.npc-card',
+    '.session-card',
+    '.quote-card',
+    '.character-card',
+    '.timeline-entry',
+    '.stat-card',
+    '.kill-card',
+    '.trophy-card',
+    '.nat20-card',
+    '.location-card',
+    '.content-card',
+    '.highlight-card',
+    '.combat-card',
+    '.spotlight-card',
+    '.entry-card',
+  ].join(',');
+
+  function initReveal() {
+    const cards = document.querySelectorAll(CARD_SELECTORS);
+    if (!cards.length) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.08, rootMargin: '0px 0px -30px 0px' }
+    );
+
+    cards.forEach((card) => {
+      card.classList.add('reveal');
+      observer.observe(card);
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initReveal);
+  } else {
+    initReveal();
+  }
+})();
