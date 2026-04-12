@@ -41,7 +41,7 @@
       position: fixed;
       top: 0; left: 0;
       width: 100%; height: 100%;
-      background: 
+      background:
         radial-gradient(ellipse at 20% 20%, rgba(139, 92, 246, 0.1) 0%, transparent 50%),
         radial-gradient(ellipse at 80% 80%, rgba(212, 168, 87, 0.08) 0%, transparent 50%);
       pointer-events: none;
@@ -78,127 +78,80 @@
       display: inline-flex;
       align-items: center;
       gap: 0.5rem;
-      background: linear-gradient(135deg, rgba(34, 197, 94, 0.2), rgba(34, 197, 94, 0.1));
+      background: linear-gradient(90deg, rgba(34, 197, 94, 0.2), rgba(34, 197, 94, 0.1));
       border: 1px solid rgba(34, 197, 94, 0.4);
       color: var(--green);
       padding: 0.5rem 1rem;
       border-radius: 2rem;
       font-family: 'Cinzel', serif;
-      font-size: 0.85rem;
+      font-size: 0.9rem;
       font-weight: 600;
-      margin-bottom: 1rem;
-    }
-    .session-summary {
-      max-width: 700px;
-      margin: 0 auto;
-      color: var(--text-secondary);
-      font-size: 1.1rem;
-      font-style: italic;
-    }
-    .section { margin-bottom: 3rem; }
-    .section-header {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
       margin-bottom: 1.5rem;
-      padding-bottom: 0.75rem;
-      border-bottom: 1px solid var(--border-subtle);
     }
-    .section-icon {
-      width: 32px; height: 32px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: linear-gradient(135deg, var(--gold-dim), var(--gold));
-      border-radius: 8px;
-      color: var(--bg-dark);
-    }
+    .session-summary { color: var(--text-secondary); font-size: 1.1rem; max-width: 800px; margin: 0 auto; }
+    .section { margin-bottom: 3rem; }
+    .section-header { display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem; }
+    .section-icon { font-size: 1.5rem; }
     .section-title { font-family: 'Cinzel', serif; font-size: 1.5rem; font-weight: 600; color: var(--gold); }
-    .highlights-grid { display: grid; gap: 1.5rem; }
+    .quotes-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; }
+    .quote-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 10px;
+      padding: 1.25rem;
+      transition: all 0.3s ease;
+    }
+    .quote-card:hover { border-color: var(--gold-dim); transform: translateY(-2px); }
+    .quote-text { font-size: 1rem; font-style: italic; color: var(--text-primary); margin-bottom: 0.75rem; }
+    .quote-speaker { font-family: 'Cinzel', serif; font-size: 0.85rem; color: var(--gold); margin-bottom: 0.25rem; }
+    .quote-context { font-size: 0.8rem; color: var(--text-dim); }
+    .highlights-grid { display: grid; gap: 1.25rem; }
     .highlight-card {
       background: var(--bg-card);
       border: 1px solid var(--border-subtle);
       border-radius: 12px;
       padding: 1.5rem;
-      transition: all 0.3s ease;
     }
-    .highlight-card:hover { background: var(--bg-card-hover); border-color: var(--border-glow); transform: translateY(-2px); }
-    .highlight-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem; }
+    .highlight-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; }
     .highlight-title { font-family: 'Cinzel', serif; font-size: 1.2rem; font-weight: 600; color: var(--text-primary); }
     .highlight-type {
-      font-size: 0.75rem;
+      font-size: 0.7rem;
       padding: 0.25rem 0.75rem;
       border-radius: 1rem;
-      font-family: 'Cinzel', serif;
       text-transform: uppercase;
       letter-spacing: 0.05em;
+      font-family: 'Cinzel', serif;
     }
-    .type-funny { background: rgba(251, 191, 36, 0.2); color: #fbbf24; }
-    .type-epic { background: rgba(139, 92, 246, 0.2); color: #a78bfa; }
+    .type-comedy { background: rgba(251, 191, 36, 0.2); color: #fbbf24; }
     .type-combat { background: rgba(220, 38, 38, 0.2); color: #f87171; }
-    .type-roleplay { background: rgba(59, 130, 246, 0.2); color: #60a5fa; }
-    .type-clever { background: rgba(34, 197, 94, 0.2); color: #4ade80; }
-    .type-cool { background: rgba(6, 182, 212, 0.2); color: #22d3ee; }
-    .type-burn { background: rgba(249, 115, 22, 0.2); color: #fb923c; }
-    .type-dramatic { background: rgba(236, 72, 153, 0.2); color: #f472b6; }
-    .type-meta { background: rgba(100, 100, 100, 0.2); color: #a0a0a0; }
-    .highlight-description { color: var(--text-secondary); margin-bottom: 1rem; font-size: 1rem; }
+    .type-roleplay { background: rgba(139, 92, 246, 0.2); color: #a78bfa; }
+    .type-tension { background: rgba(59, 130, 246, 0.2); color: #60a5fa; }
+    .type-plot { background: rgba(212, 168, 87, 0.2); color: #d4a857; }
+    .type-epic { background: rgba(251, 191, 36, 0.2); color: #fbbf24; }
+    .type-funny { background: rgba(251, 191, 36, 0.2); color: #fbbf24; }
+    .highlight-description { color: var(--text-secondary); margin-bottom: 1rem; }
     .quote-block {
       background: rgba(0, 0, 0, 0.3);
-      border-left: 3px solid var(--gold-dim);
-      padding: 1rem 1.25rem;
-      margin: 0.5rem 0;
-      border-radius: 0 8px 8px 0;
+      padding: 0.75rem;
+      border-radius: 8px;
+      margin-top: 0.75rem;
     }
-    .quote-text { color: var(--text-primary); font-style: italic; margin-bottom: 0.5rem; }
-    .quote-speaker { color: var(--gold); font-family: 'Cinzel', serif; font-size: 0.85rem; }
-    .quotes-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.25rem; }
-    .quote-card {
-      background: var(--bg-card);
-      border: 1px solid var(--border-subtle);
-      border-radius: 12px;
-      padding: 1.25rem;
-      position: relative;
-      transition: all 0.3s ease;
-    }
-    .quote-card:hover { border-color: var(--gold-dim); transform: translateY(-2px); }
-    .quote-card::before {
-      content: '"';
-      position: absolute;
-      top: 0.5rem; left: 1rem;
-      font-size: 3rem;
-      color: var(--gold-dim);
-      opacity: 0.3;
-      font-family: Georgia, serif;
-      line-height: 1;
-    }
-    .quote-card .quote-text { padding-left: 1.5rem; font-size: 1.05rem; }
-    .quote-context { color: var(--text-dim); font-size: 0.85rem; margin-top: 0.75rem; padding-left: 1.5rem; }
-    .spotlight-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.25rem; }
+    .spotlight-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.25rem; }
     .spotlight-card {
       background: var(--bg-card);
       border: 1px solid var(--border-subtle);
       border-radius: 12px;
-      padding: 1.25rem;
-      text-align: center;
-      transition: all 0.3s ease;
+      padding: 1.5rem;
     }
-    .spotlight-card:hover { border-color: var(--purple-dim); background: var(--bg-card-hover); }
-    .spotlight-name { font-family: 'Cinzel', serif; font-size: 1.2rem; font-weight: 600; color: var(--gold); margin-bottom: 0.75rem; }
-    .spotlight-moments { list-style: none; text-align: left; margin-bottom: 1rem; }
+    .spotlight-name { font-family: 'Cinzel', serif; font-size: 1.2rem; font-weight: 600; color: var(--gold); margin-bottom: 1rem; }
+    .spotlight-moments { list-style: none; margin-bottom: 1rem; }
     .spotlight-moments li {
       color: var(--text-secondary);
-      font-size: 0.9rem;
       padding: 0.35rem 0;
       padding-left: 1rem;
       position: relative;
     }
     .spotlight-moments li::before { content: '◆'; position: absolute; left: 0; color: var(--gold-dim); font-size: 0.6rem; }
-    .spotlight-moment {
-      color: var(--text-secondary);
-      margin-bottom: 0.75rem;
-      font-size: 0.95rem;
-    }
     .spotlight-quote {
       background: rgba(0, 0, 0, 0.3);
       padding: 0.75rem;
@@ -294,10 +247,9 @@
     .session-nav a:hover { color: var(--gold); border-color: var(--gold-dim); background: rgba(212, 168, 87, 0.1); }
     .session-nav a.disabled { opacity: 0.3; pointer-events: none; }
     @media (max-width: 768px) {
-      .container { padding: 1rem; }
+      .container { padding: 1rem; padding-top: 80px; }
       .session-title { font-size: 2rem; }
       .session-meta { gap: 1rem; }
-      .nav-links { display: none; }
       .quotes-grid, .spotlight-grid { grid-template-columns: 1fr; }
     }
   </style>
@@ -324,7 +276,7 @@
       
       <p class="session-summary">After a long rest in Klarg's chamber, the party pushed deeper into the goblin den. They encountered more goblins and two goblin bosses—one of whom grabbed Sildar Hallwinter as a hostage. Belden, recognizing the man who gave them lodging in Neverwinter, challenged the goblin boss Yeemic to an honor duel. What followed was an epic, back-and-forth battle that ended in heartbreak: Belden fell, defeated. The session ended on a cliffhanger with Yeemic wounded but victorious.</p>
     </header>
-    
+
     <section class="section">
       <div class="section-header">
         <div class="section-icon">💬</div>
@@ -362,7 +314,7 @@
           <p class="quote-context">After Belden's string of misses</p>
         </div></div>
     </section>
-    
+
     <section class="section">
       <div class="section-header">
         <div class="section-icon">⭐</div>
@@ -490,79 +442,23 @@
           </div>
         </div></div>
     </section>
-    
+
     <section class="section">
       <div class="section-header">
         <div class="section-icon">⚔</div>
         <h2 class="section-title">Combat Encounters</h2>
       </div>
       
-      <div class="combat-card">
-        <div class="combat-header">
-          <h3 class="combat-name">Goblin Ambush at the Bridge</h3>
-          <span class="combat-outcome">Partial victory - led to duel</span>
-        </div>
-        <div class="combat-details">
-          <div class="combat-detail">
-            <div class="combat-detail-label">Enemies</div>
-            <div class="combat-detail-value">Multiple Goblins, 2 Goblin Bosses</div>
-          </div>
-          
-          <div class="combat-detail">
-            <div class="combat-detail-label">MVP</div>
-            <div class="combat-detail-value">Belden — Crossbow shot to a goblin's throat, then challenged Yeemic</div>
-          </div>
-        </div>
-        
-      </div>
-      <div class="combat-card">
-        <div class="combat-header">
-          <h3 class="combat-name">The Honor Duel: Belden vs Yeemic</h3>
-          <span class="combat-outcome">Defeat - Belden fell</span>
-        </div>
-        <div class="combat-details">
-          <div class="combat-detail">
-            <div class="combat-detail-label">Enemies</div>
-            <div class="combat-detail-value">Yeemic (Goblin Boss)</div>
-          </div>
-          
-          <div class="combat-detail">
-            <div class="combat-detail-label">MVP</div>
-            <div class="combat-detail-value">Yeemic — Won the duel despite being badly wounded</div>
-          </div>
-        </div>
-        
-      </div>
     </section>
-    
+
     <section class="section">
       <div class="section-header">
         <div class="section-icon">👤</div>
         <h2 class="section-title">Character Spotlight</h2>
       </div>
-      <div class="spotlight-grid">
-        <div class="spotlight-card">
-          <h3 class="spotlight-name">Belden</h3>
-          <p class="spotlight-moment">Challenged Yeemic to an honor duel to save Sildar. Landed devastating blows but lost due to terrible dice luck.</p>
-          <p class="spotlight-quote">"I can't believe I flubbed that many attacks in a row!"</p>
-        </div>
-        <div class="spotlight-card">
-          <h3 class="spotlight-name">Kaelia</h3>
-          <p class="spotlight-moment">Created a fire wolf sentry during her watch. Larry was jealous.</p>
-          <p class="spotlight-quote">"No Larry, no! Larry, friend!"</p>
-        </div>
-        <div class="spotlight-card">
-          <h3 class="spotlight-name">Ekran</h3>
-          <p class="spotlight-moment">Almost ruined the duel by taking a shot during negotiations. Missed. Stood there with hands up like a caught criminal.</p>
-          <p class="spotlight-quote">"Ekran was like a busted criminal after he missed."</p>
-        </div>
-        <div class="spotlight-card">
-          <h3 class="spotlight-name">Semaj</h3>
-          <p class="spotlight-moment">Officially named the wolf Larry. Fought the urge to attack during the duel out of respect for honor.</p>
-          <p class="spotlight-quote">"I think Larry is his new name."</p>
-        </div></div>
+      <div class="spotlight-grid"></div>
     </section>
-    
+
     <section class="section">
       <div class="section-header">
         <div class="section-icon">📜</div>
@@ -594,7 +490,7 @@
           <span class="plot-text">Yeemic badly wounded but victorious</span>
         </li></ul>
     </section>
-    
+
     <section class="section">
       <div class="end-state">
         <h3 class="end-state-title">To Be Continued...</h3>
@@ -614,7 +510,7 @@
         </div>
       </div>
     </section>
-    
+
     <nav class="session-nav">
       <a href="session-05.html">
         <span>←</span>
@@ -626,7 +522,6 @@
       </a>
     </nav>
   </div>
-  
   <script src="../nav.js"></script>
   <script>initNav('sessions');</script>
 </body>

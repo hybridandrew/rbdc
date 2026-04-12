@@ -290,6 +290,21 @@ body::before {
   color: #f87171;
 }
 
+.npc-status.freed {
+  background: rgba(34, 197, 94, 0.15);
+  color: #86efac;
+}
+
+.npc-status.departed {
+  background: rgba(212, 168, 87, 0.15);
+  color: var(--gold-dim);
+}
+
+.npc-status.historical {
+  background: rgba(139, 92, 246, 0.15);
+  color: #a78bfa;
+}
+
 /* ===== LOCATION CARDS ===== */
 .location-card {
   background: var(--bg-card);

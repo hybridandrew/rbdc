@@ -1,9 +1,9 @@
 {
   "stats": {
-    "totalQuotes": 81,
-    "sessionsCovered": 14,
+    "totalQuotes": 132,
+    "sessionsCovered": 15,
     "topQuoter": "GM",
-    "punCount": 2
+    "punCount": 5
   },
   "quotes": [
     {
@@ -337,7 +337,7 @@
     },
     {
       "text": "I went into a big battle, killed a couple guys, and then went down in a blaze of glory. Woke up to dead bodies.",
-      "speaker": "Belden",
+      "speaker": "Valrex",
       "session": 9,
       "context": "Summarizing his session",
       "category": "epic"
@@ -572,6 +572,363 @@
       "session": 14,
       "context": "Failing to recognize the Lion Shield symbol",
       "category": "epic"
+    },
+    {
+      "text": "Travelers don't usually wander into Thundertree by accident. State your business.",
+      "speaker": "GM (Reidoth)",
+      "session": 15,
+      "context": "Reidoth answers the door",
+      "category": "epic"
+    },
+    {
+      "text": "I'm rich. I'm rich!",
+      "speaker": "Belden",
+      "session": 15,
+      "context": "Pulling 90 gold out of a buried merchant's chest",
+      "category": "funny"
+    },
+    {
+      "text": "Anyone who thinks they know more about this land because of their age is a fool.",
+      "speaker": "GM (Reidoth)",
+      "session": 15,
+      "context": "Responding to Semaj claiming to be over 100 years old",
+      "category": "burn"
+    },
+    {
+      "text": "Whatever Ruxithid is, it's patient. It doesn't try to seize you. It's watching. It's waiting.",
+      "speaker": "GM",
+      "session": 15,
+      "context": "Semaj's Ruxithid meditation during the night watch",
+      "category": "epic"
+    },
+    {
+      "text": "Let us go before she changes her mind.",
+      "speaker": "Semaj",
+      "session": 15,
+      "context": "After Linene offered the discount deal at the Lion Shield Coster",
+      "category": "funny"
+    },
+    {
+      "text": "It's a tree. It's just a bunch of twig blights all stacked on top of each other.",
+      "speaker": "Valrex",
+      "session": 15,
+      "context": "Realizing the 'tree' was actually more enemies",
+      "category": "funny"
+    },
+    {
+      "text": "There are larger things than you out in the larger universe.",
+      "speaker": "Semaj",
+      "session": 15,
+      "context": "To Reidoth, after the druid dismissed his claim of being over 100 years old",
+      "category": "wisdom"
+    },
+    {
+      "text": "I really like things that are wood.",
+      "speaker": "Kaelia",
+      "session": 15,
+      "context": "Activating Mantle of Flame against the twig blights",
+      "category": "funny"
+    },
+    {
+      "text": "I figured adventurers enjoy killing rats.",
+      "speaker": "GM (Patty)",
+      "session": 1,
+      "context": "Patty explaining why he didn't warn the party about his rat-infested storehouse.",
+      "category": "funny"
+    },
+    {
+      "text": "I've got to say, pretty impressive jump. But you might need to work on the landing.",
+      "speaker": "Ekran",
+      "session": 1,
+      "context": "After Belden jumped off crates, got his foot stuck in the floorboards, and dropped his warhammer — all in one turn.",
+      "category": "burn"
+    },
+    {
+      "text": "It's hammer time.",
+      "speaker": "Belden",
+      "session": 2,
+      "context": "Running full speed at the last boar before delivering the killing blow.",
+      "category": "epic"
+    },
+    {
+      "text": "Rats, boars — with this luck we're gonna have to be dealing with reanimated bread in the bakery. Would that be the unbread?",
+      "speaker": "Ekran",
+      "session": 2,
+      "context": "Reflecting on the party's string of mundane-enemy encounters after waking from being knocked out by a boar.",
+      "category": "pun"
+    },
+    {
+      "text": "I think that joke needs a little more time in the oven.",
+      "speaker": "Semaj",
+      "session": 2,
+      "context": "Responding to Ekran's unbread pun.",
+      "category": "pun"
+    },
+    {
+      "text": "Farewell, bread wizard.",
+      "speaker": "Ekran",
+      "session": 2,
+      "context": "Saying goodbye to Millhouse as the party left the bakery.",
+      "category": "funny"
+    },
+    {
+      "text": "You look like crap.",
+      "speaker": "Semaj",
+      "session": 2,
+      "context": "His chosen words when casting Healing Word on Kaelia after the rat battle.",
+      "category": "funny"
+    },
+    {
+      "text": "I said I was proficient in perception. Not in staying awake.",
+      "speaker": "Belden",
+      "session": 3,
+      "context": "After repeatedly dozing off during his watch shift and jolting back awake — said quietly since everyone else was asleep.",
+      "category": "funny"
+    },
+    {
+      "text": "You're either noble or stupid. But fine. No killing and no fire — just fists and steel.",
+      "speaker": "GM (Yeemik)",
+      "session": 6,
+      "context": "Yeemik accepting Belden's challenge to a one-on-one duel in Cragmaw Cave.",
+      "category": "epic"
+    },
+    {
+      "text": "Let's dance, dwarf.",
+      "speaker": "GM (Yeemik)",
+      "session": 6,
+      "context": "Yeemik stepping to the center of the chamber to begin the duel.",
+      "category": "epic"
+    },
+    {
+      "text": "Maybe he's eating someone. You remember that dwarf last week.",
+      "speaker": "GM (goblin)",
+      "session": 6,
+      "context": "Goblins nervously speculating why Klarg hasn't checked in. The line enraged Belden and triggered his charge.",
+      "category": "funny"
+    },
+    {
+      "text": "I ain't getting morning-starred.",
+      "speaker": "GM (goblin)",
+      "session": 6,
+      "context": "Second goblin refusing to go tell Klarg about the escaped wolf.",
+      "category": "funny"
+    },
+    {
+      "text": "By the gods — you came.",
+      "speaker": "GM (Sildar)",
+      "session": 7,
+      "context": "Sildar's first words after the party unchained him in the goblin cave.",
+      "category": "epic"
+    },
+    {
+      "text": "If this is how I die, smothered in wolf slobber.",
+      "speaker": "GM (Sildar)",
+      "session": 7,
+      "context": "Larry enthusiastically licking Sildar's face after his rescue.",
+      "category": "funny"
+    },
+    {
+      "text": "I feel better than I look now.",
+      "speaker": "GM (Sildar)",
+      "session": 7,
+      "context": "After Kaelia cast Prestidigitation to clean the blood and grime off him.",
+      "category": "funny"
+    },
+    {
+      "text": "A spider by any name is scary, but that's just me.",
+      "speaker": "Semaj",
+      "session": 7,
+      "context": "Responding to Kaelia's correction that the Black Spider probably isn't a literal spider.",
+      "category": "funny"
+    },
+    {
+      "text": "No face, no race, no motive — just this web. And I got the feeling we've only seen the outer threads of it.",
+      "speaker": "GM (Sildar)",
+      "session": 7,
+      "context": "Sildar describing everything he knows about the Black Spider.",
+      "category": "epic"
+    },
+    {
+      "text": "You look like you come straight out of a goblin stew pot!",
+      "speaker": "GM (Elmina)",
+      "session": 8,
+      "context": "Elmina's first sight of the battered party arriving at Barthen's Provisions.",
+      "category": "funny"
+    },
+    {
+      "text": "Well, you ask real polite for a fellow traveling with a wolf.",
+      "speaker": "GM (Tolben)",
+      "session": 8,
+      "context": "Semaj asking Tolben if Larry could have some raw meat.",
+      "category": "funny"
+    },
+    {
+      "text": "Dad, did you say that was a wolf? He's so cool. It's like a person.",
+      "speaker": "GM (Pip)",
+      "session": 8,
+      "context": "Tolben's young son spotting Larry at the bar.",
+      "category": "funny"
+    },
+    {
+      "text": "He's dangerous. That's not a dog. That's a warrior's companion. He does have fluffy ears, though.",
+      "speaker": "GM (Tolben)",
+      "session": 8,
+      "context": "Explaining Larry to his son Pip before letting him approach.",
+      "category": "funny"
+    },
+    {
+      "text": "To new friends and dead goblins.",
+      "speaker": "Belden",
+      "session": 8,
+      "context": "First toast at the Stonehill Inn upon arriving in Phandalin.",
+      "category": "epic"
+    },
+    {
+      "text": "I came with you all to make sure Sildar was safe. But somewhere along the way it became more than that.",
+      "speaker": "GM (Ekren)",
+      "session": 8,
+      "context": "Ekren's farewell speech to the party before departing.",
+      "category": "epic"
+    },
+    {
+      "text": "I think you see more than the rest of us combined. Watch their backs.",
+      "speaker": "GM (Ekren)",
+      "session": 8,
+      "context": "Ekren's parting words to Semaj.",
+      "category": "epic"
+    },
+    {
+      "text": "Well now, aren't you all dressed a bit brave for Phandalin?",
+      "speaker": "GM (Redbrand)",
+      "session": 8,
+      "context": "First words from the Redbrand thugs outside the Sleeping Giant.",
+      "category": "burn"
+    },
+    {
+      "text": "You die!",
+      "speaker": "GM (Redbrand)",
+      "session": 9,
+      "context": "A Redbrand repeatedly stabbing the prone Valrex while he kept getting healed back to consciousness.",
+      "category": "funny"
+    },
+    {
+      "text": "I flexed so hard that some of the wounds closed up.",
+      "speaker": "Belden",
+      "session": 9,
+      "context": "After using Second Wind mid-battle.",
+      "category": "funny"
+    },
+    {
+      "text": "Direction is a social construct. Just like time.",
+      "speaker": "Aster",
+      "session": 10,
+      "context": "After the party tried to explain which direction Tresendar Manor is.",
+      "category": "wisdom"
+    },
+    {
+      "text": "You hit your head pretty hard. This is a figment of your imagination.",
+      "speaker": "Aster",
+      "session": 10,
+      "context": "Gaslighting Belden about his own existence.",
+      "category": "funny"
+    },
+    {
+      "text": "I was wondering when someone would stop asking for help and start calling for action.",
+      "speaker": "GM (Darren Edermath)",
+      "session": 10,
+      "context": "Darren steps forward in the town square in response to Semaj's speech.",
+      "category": "epic"
+    },
+    {
+      "text": "I'm ready to remember everything that's going to happen this time.",
+      "speaker": "Belden",
+      "session": 10,
+      "context": "Rallying before entering the Redbrand hideout, after having been unconscious all last session.",
+      "category": "epic"
+    },
+    {
+      "text": "Don't know why I'm surprised.",
+      "speaker": "Valrex",
+      "session": 10,
+      "context": "After none of the other townsfolk would join the party's cause beyond Darren.",
+      "category": "burn"
+    },
+    {
+      "text": "You've done a brave thing, young lad.",
+      "speaker": "GM (Darren Edermath)",
+      "session": 10,
+      "context": "To the halfling boy who revealed the secret tunnel entrance.",
+      "category": "epic"
+    },
+    {
+      "text": "Feel better, friend.",
+      "speaker": "Valrex",
+      "session": 11,
+      "context": "Healing Semaj after he was impaled by a bugbear's javelin.",
+      "category": "epic"
+    },
+    {
+      "text": "I yanked it out.",
+      "speaker": "Semaj",
+      "session": 11,
+      "context": "Pulling the bugbear's javelin from his own chest just before Valrex healed the wound.",
+      "category": "epic"
+    },
+    {
+      "text": "ALRIGHT HUMANS, WE'RE UNDER ATTACK!",
+      "speaker": "GM (Bugbear)",
+      "session": 11,
+      "context": "The last bugbear yelling down the corridor after seeing his allies nearly disintegrated.",
+      "category": "epic"
+    },
+    {
+      "text": "You didn't hit anything, not once.",
+      "speaker": "Valrex",
+      "session": 11,
+      "context": "Taunting the bugbear who dropped his Morningstar mid-swing.",
+      "category": "burn"
+    },
+    {
+      "text": "Aster is not the gif that keeps on giving.",
+      "speaker": "Semaj",
+      "session": 12,
+      "context": "After Aster's musket missed multiple shots against the skeletons.",
+      "category": "pun"
+    },
+    {
+      "text": "If you stop running, we can talk.",
+      "speaker": "Kaelia",
+      "session": 13,
+      "context": "Kaelia tried a persuasion check to call out to Glasstaff mid-chase through the manor ruins. He did not acknowledge it.",
+      "category": "funny"
+    },
+    {
+      "text": "I didn't think anyone would come, Darren.",
+      "speaker": "GM (Myrna Dendrar)",
+      "session": 13,
+      "context": "Myrna's first words to Darren Edermath upon being found in the holding cells.",
+      "category": "epic"
+    },
+    {
+      "text": "Droop goes to trees, hides, lives. You not like bugbears. You are nice to Droop.",
+      "speaker": "GM (Droop)",
+      "session": 14,
+      "context": "Droop's farewell to the party before disappearing into the woods.",
+      "category": "epic"
+    },
+    {
+      "text": "If your priority is speed, follow the directions the goblin gave you. If your priority is certainty, find Reidoth in Thundertree.",
+      "speaker": "GM (Qelline Alderleaf)",
+      "session": 14,
+      "context": "Qelline clearly laying out the tactical choice facing the party before they depart Phandalin.",
+      "category": "wisdom"
+    },
+    {
+      "text": "Least I can do. You cleared out ten Redbrand thugs in one night. That's more than this townmaster's done all year.",
+      "speaker": "GM (Grista)",
+      "session": 14,
+      "context": "Grista explaining why she's giving the party free rooms.",
+      "category": "burn"
     }
   ]
 }

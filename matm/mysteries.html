@@ -45,6 +45,10 @@
       background: rgba(212, 168, 87, 0.2);
       color: var(--gold);
     }
+    .status-resolved {
+      background: rgba(100, 130, 100, 0.2);
+      color: #8aab8a;
+    }
   </style>
 </head>
 <body>
@@ -67,21 +71,29 @@
           'Controls the Cragmaw goblins',
           'Gave orders to Glasstaff and the Redbrands',
           'Wants the Forge of Spells for unknown purposes',
-          'Gundren was specifically taken to them'
+          'Gundren was specifically taken to them',
+          'Klarg called the Black Spider \'our new patron\' — information came via goblin courier',
+          'Even Yeemik refused to speak the name more than twice',
+          'The Redbrands\' intensified activity in Phandalin may be connected to the Black Spider\'s plans',
+          'The Black Spider wanted Gundren specifically for the Wave Echo Cave map, not his companions',
+          'Sildar confirms: organized enough to coordinate both the Cragmaw goblins and the Redbrands simultaneously',
+          'May be a single individual or a group — the goblins spoke of \'the Black Spider\' like a name, not a title, but this remains unconfirmed'
         ],
         theories: 'Could be a drow, given the spider motif. Possibly connected to the Underdark?',
         status: 'active'
       },
       {
         title: 'What is Ruxithid?',
-        description: 'A name whispered to Semaj in the darkness. Described as a "psychic tyrant from beyond the world." The Nothic in the Redbrand hideout seemed to recognize something in Semaj.',
+        description: 'A name whispered to Semaj in the darkness. Described as a "psychic tyrant from beyond the world." The Nothic in the Redbrand hideout seemed to recognize something in Semaj. During the journey to Thundertree, both Semaj and Kaelia — both Astral Drifters — confirmed they have each sensed it independently.',
         clues: [
           'Name came to Semaj during rest in the goblin cave',
-          'Described as a psychic entity',
-          'May be from another plane of existence',
-          'The Nothic sensed something in Semaj\'s mind'
+          'Described as a psychic entity — patient, vast, alien',
+          'Kaelia confirmed its psychic fingerprint matches aberrant powers that play very long games',
+          'Both Semaj and Kaelia have sensed it; neither knew the other had',
+          'Bears the same sideways wrongness as the creature in Glasstaff\'s workshop',
+          'May be connected to Wave Echo Cave and those who meddle in deep magic'
         ],
-        theories: 'Possibly an aberration like a Mind Flayer elder brain? Or something even worse?',
+        theories: 'Something ancient, aberrant, and patient. Not a local spirit — possibly an entity from outside the normal cosmology, like a Mind Flayer elder brain or something worse.',
         status: 'active'
       },
       {
@@ -91,39 +103,89 @@
           'Somewhere in the Sword Mountains region',
           'Gundren had a map (now taken by the Black Spider)',
           'Lost for 500 years since the orc attack',
-          'The Phandelver Pact was made here'
+          'The Phandelver Pact was made here',
+          'Gundren\'s brothers Tharden and Nundro were nine days overdue when the party reached Phandalin — last seen heading into the Sword Mountains foothills south of town'
         ],
         theories: 'Gundren\'s brothers Tharden and Nundro may know more. They were last seen heading toward the Sword Mountains.',
         status: 'active'
       },
       {
         title: 'What happened to the Dendrar family?',
-        description: 'The woodcarver Thel Dendrar was murdered by the Redbrands in the street. His wife and children were taken.',
+        description: 'The woodcarver Thel Dendrar was murdered by the Redbrands in the street. His wife and children were taken. The Redbrand hideout has since been fully cleared.',
         clues: [
           'Thel was killed publicly as a warning',
           'Family was taken to the Redbrand hideout',
-          'The party has been clearing the hideout...'
+          'The hideout was fully swept — no more Redbrands, goblins, bugbears, or skeletons',
+          'Myrna, Nilsa, and son Nars found alive in the Redbrand holding cells after over a week of captivity. Freed in Session 13 and escorted to safety by Darren Edermath.'
         ],
-        theories: 'They may still be alive somewhere in the dungeon. The party should search thoroughly.',
+        theories: null,
+        status: 'resolved'
+      },
+      {
+        title: 'Can Venomfang be dealt with?',
+        description: 'A young green dragon named Venomfang has claimed the old stone tower in Thundertree. Reidoth has been watching it for some time. The party chose to come here first — partly for safety, partly because slaying a dragon was hard to resist.',
+        clues: [
+          'Young, but Reidoth warns not to underestimate it',
+          'Has claimed the tower and doesn\'t care what lives or dies around it',
+          'Reidoth has been learning its habits and movement patterns',
+          'Thundertree also contains zombies and cultists'
+        ],
+        theories: 'Reidoth promised full intelligence on the dragon\'s habits and weaknesses. The party will need a plan before engaging.',
+        status: 'active'
+      },
+      {
+        title: 'Who Was Really Running the Redbrands?',
+        description: 'The Redbrand hideout was not just a criminal operation — it was run by Iarno Albrek, a Lords Alliance agent who was supposed to establish order in Phandalin but instead went rogue and built the Redbrand network as a tool of the Black Spider. He operated under the alias "Glasstaff."',
+        clues: [
+          'A letter in the wizard\'s workshop was sealed with the Black Spider\'s wax sigil and addressed to Iarno Albrek',
+          'Kaelia recalled that Sildar had mentioned a missing Lords Alliance agent sent to Phandalin — name: Iarno Albrek',
+          'Glasstaff\'s workshop contained research into the Forge of Spells and the holy mace Lightbringer — suggesting he had his own agenda beyond simple crime',
+          'He fled rather than fought, confirming guilty knowledge and a plan to escape',
+          'He was killed by Kaelia before he could speak'
+        ],
+        theories: 'Iarno may have joined the Black Spider for personal ambition or may have been coerced. His independent research into Lightbringer suggests he wasn\'t just a pawn.',
         status: 'partial'
       },
       {
-        title: 'Where did Glasstaff go?',
-        description: 'The wizard leader of the Redbrands had an escape satchel prepared. He may have fled when the party attacked.',
+        title: 'The Creature in Glasstaff\'s Workshop',
+        description: 'An invisible, shadowy entity was hiding in Glasstaff\'s workshop when the party arrived. It was detectable only via Detect Magic and reacted to Kaelia\'s Prestidigitation. When Semaj commanded it to reveal itself in multiple languages, it responded in Abyssal — speaking directly into his mind. It vaporized when hit by a scorching ray rather than dying like a living being.',
         clues: [
-          'Waterproof escape satchel found in the cistern',
-          'Suggests he planned for a quick exit',
-          'May have escaped through a secret passage',
-          'Could warn the Black Spider'
+          'Spoke in Abyssal telepathically into Semaj\'s mind',
+          'Aster\'s Speak with Animals found no connection — \'like talking to a reflection\'',
+          'Destroyed by fire, it vaporized rather than dying normally',
+          'Kaelia noted it had the same \'sideways wrongness\' as aberrant presences tied to Ruxithid'
         ],
-        theories: 'He\'s likely fleeing to the Black Spider to report the party\'s interference.',
+        theories: 'Likely a conjured or bound creature used by Glasstaff as a distraction. The Abyssal connection and aberrant quality may link it to the broader Ruxithid mystery.',
         status: 'active'
+      },
+      {
+        title: 'Lightbringer — The Unrecovered Holy Weapon',
+        description: 'Among Glasstaff\'s research notes, Semaj discovered records referencing a holy weapon created at the Forge of Spells: a magic mace called Lightbringer, made for a priest of Lathander as a beacon against darkness. It was never recovered when the mine was lost 500 years ago and may still lie somewhere in Wave Echo Cave.',
+        clues: [
+          'Found in scattered parchments in Glasstaff\'s workshop',
+          'Described as a weapon meant to be a beacon against darkness, crafted for a priest of Lathander',
+          'Glasstaff was researching specific artifacts in Wave Echo Cave — not just the Forge itself'
+        ],
+        theories: 'If Lightbringer still exists in Wave Echo Cave, it may be one of the Black Spider\'s targets — or a powerful tool the party can claim first.',
+        status: 'active'
+      },
+      {
+        title: 'What Lies Beyond the Tresendar Crypts?',
+        description: 'The ancient burial chambers of the Tresendar family lie at the heart of the Redbrand hideout. The party recovered the legendary sword Talon from the crevasse and fought through skeletal guardians, but two unexplored doors remained at session\'s end — one to the northwest, one to the northeast.',
+        clues: [
+          'Talon was hidden in the Nothic\'s crevasse — lost since Ser Aldith Tresendar\'s death fighting in these caverns',
+          'Ser Aldith\'s history check revealed the Tresendar lineage \'came to a violent end\'',
+          'Two doors at the north end of the crypt were not opened at the end of Session 12',
+          'Footsteps were heard to the north during the barracks rest'
+        ],
+        theories: 'The northern passages may lead to Glasstaff\'s personal quarters, captive storage, or deeper Redbrand operations. (Now partially resolved — Glasstaff\'s workshop was found in Session 13.)',
+        status: 'partial'
       }
     ];
 
     function renderMystery(mystery) {
-      const statusClass = mystery.status === 'active' ? 'status-active' : 'status-partial';
-      const statusText = mystery.status === 'active' ? '🔥 Active Mystery' : '⚡ Partially Resolved';
+      const statusClass = mystery.status === 'active' ? 'status-active' : mystery.status === 'resolved' ? 'status-resolved' : 'status-partial';
+      const statusText = mystery.status === 'active' ? '🔥 Active Mystery' : mystery.status === 'resolved' ? '✓ Resolved' : '⚡ Partially Resolved';
       
       return `
         <div class="mystery-card">
