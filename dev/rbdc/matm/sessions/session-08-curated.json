@@ -1,0 +1,181 @@
+{
+  "session_number": 8,
+  "title": "Arrival in Phandalin",
+  "date": "August 2, 2025",
+  "summary": "The party arrived in Phandalin, delivered supplies to Barthen's Provisions, and learned about the Redbrand threat terrorizing the town. At the Stonehill Inn, Ekran said heartfelt goodbyes and departed to pursue his own mission. After drinking heavily, a drunk Belden spotted Redbrands at the Sleeping Giant taphouse and charged in, triggering a street fight that ended on a cliffhanger as reinforcements were called.",
+  "level_up": false,
+  "duration": "~3 hours",
+  "player_attendance": ["Richard (Semaj)", "Jen (Kaelia)", "Sean (Belden)", "Darren (Valrex)", "James (Ekran - final session)"],
+  
+  "highlights": {
+    "best_moments": [
+      {
+        "title": "Ekran's Farewell",
+        "type": "emotional",
+        "description": "Ekran said goodbye to the party with heartfelt words for each member before departing to pursue his personal mission.",
+        "quotes": [
+          {"speaker": "Alex/GM (Ekran)", "text": "Your hammer hits harder than you think. And your heart's even stronger. Don't forget that."},
+          {"speaker": "Alex/GM (Ekran)", "text": "You kept us together more than once, whether you realize it or not. Firelight doesn't just burn—it guides."},
+          {"speaker": "Alex/GM (Ekran)", "text": "I think you see more than the rest of us combined. Watch their backs."},
+          {"speaker": "Alex/GM (Ekran)", "text": "I hope we cross paths again."},
+          {"speaker": "Richard/Semaj", "text": "Before he walks out the door, Samaj raises a toast: To Ekran!"}
+        ]
+      },
+      {
+        "title": "The Redbrand Threat",
+        "type": "plot",
+        "description": "Elsa at Barthen's Provisions warned the party about the Redbrands—thugs terrorizing Phandalin, shaking down merchants, and making people disappear.",
+        "quotes": [
+          {"speaker": "Alex/GM (Elsa)", "text": "These Redbrands, they're just thugs. Cowards with blades. Half the town is too scared to speak against them. The other half gets paid to look the other way."},
+          {"speaker": "Alex/GM (Elsa)", "text": "They are killers. And some of them, too quiet to be street thugs."}
+        ]
+      },
+      {
+        "title": "Drunk Belden Charges In",
+        "type": "funny",
+        "description": "After drinking heavily at the Stonehill Inn, Belden spotted Redbrands at the Sleeping Giant and immediately charged toward them without a word.",
+        "quotes": [
+          {"speaker": "Jen/Kaelia", "text": "I'm gonna scowl at Larry too, and start walking ahead of the group to go find the Redbrands."},
+          {"speaker": "Alex/GM", "text": "As you kind of drunkenly start to wander towards them, you pull out your warhammer... it's immediately going to have them draw their swords."}
+        ]
+      },
+      {
+        "title": "Belden's Skull-Crushing Opener",
+        "type": "epic",
+        "description": "Belden leapt up onto the porch, smashed a Redbrand's skull in with his warhammer, and got sprayed with blood and brain matter.",
+        "quotes": [
+          {"speaker": "Alex/GM", "text": "You're going to see this Redbrand's skull just start to cave in as this hammer just goes straight through the top of it. There is a sickening crunch as skull fragments and blood just spray everywhere."},
+          {"speaker": "Sean/Belden", "text": "I'm going to pick my hammer back up and use the sleeve of my right arm to wipe some of the blood off my face."}
+        ]
+      },
+      {
+        "title": "Redbrand Trips Down Stairs",
+        "type": "funny",
+        "description": "The first Redbrand to charge Belden immediately tripped on his shoelaces and fell prone down the stairs.",
+        "quotes": [
+          {"speaker": "Alex/GM", "text": "As this Redbrand rushes at you with full confidence, he is going to trip down the stairs. His shoelace got stuck, and he just tumbles down in front of you, prone."},
+          {"speaker": "Alex/GM", "text": "You're gonna see the other Redbrands just facepalm: Joseph, you idiot."}
+        ]
+      },
+      {
+        "title": "Larry Gets Slashed",
+        "type": "combat",
+        "description": "A Redbrand attacked Larry, cutting him across the back. The party quickly rallied to protect their good boy.",
+        "quotes": [
+          {"speaker": "Alex/GM", "text": "Let's get rid of this mutt! He cuts Larry right across the back. You're gonna hear a little yelp from Larry."},
+          {"speaker": "Richard/Semaj", "text": "I'm going to do a healing word on Larry."}
+        ]
+      },
+      {
+        "title": "Reinforcements Called",
+        "type": "cliffhanger",
+        "description": "The last standing Redbrand ran inside the Sleeping Giant, kicked open the door, and shouted for help.",
+        "quotes": [
+          {"speaker": "Alex/GM", "text": "He's gonna kick the doors open and look at the Redbrands inside: WE GOT A FIRE ON OUR HANDS! And tonight, that is where we're gonna end it."}
+        ]
+      }
+    ],
+    "quotes_of_the_session": [
+      {
+        "speaker": "Alex/GM (Ekran)",
+        "quote": "Your hammer hits harder than you think. And your heart's even stronger. Don't forget that.",
+        "context": "Ekran's farewell to Belden"
+      },
+      {
+        "speaker": "Alex/GM (Ekran)",
+        "quote": "Firelight doesn't just burn—it guides.",
+        "context": "Ekran's farewell to Kaelia"
+      },
+      {
+        "speaker": "Richard/Semaj",
+        "quote": "To Ekran!",
+        "context": "Toast as Ekran departs"
+      },
+      {
+        "speaker": "Alex/GM",
+        "quote": "Joseph, you idiot.",
+        "context": "Redbrands watching their friend trip down stairs"
+      },
+      {
+        "speaker": "Sean/Belden",
+        "quote": "The last time this happened, I heard someone was eating dwarves and I failed my rage save. This time, I'm just drunk.",
+        "context": "Explaining why he charged in"
+      },
+      {
+        "speaker": "Alex/GM (Redbrand)",
+        "quote": "Let's gut these heroes and use their skulls for mugs!",
+        "context": "Redbrand battle cry before tripping"
+      }
+    ]
+  },
+  
+  "combat_encounters": [
+    {
+      "name": "Sleeping Giant Brawl (In Progress)",
+      "enemies": "4 Redbrands (+ reinforcements incoming)",
+      "outcome": "Ongoing - cliffhanger",
+      "mvp": "Belden",
+      "mvp_reason": "Skull-crushing opening attack"
+    }
+  ],
+  
+  "character_spotlights": [
+    {
+      "character": "Belden",
+      "moment": "Got drunk at the Stonehill Inn, charged the Redbrands, smashed a skull on round one",
+      "one_liner": "This time, I'm just drunk."
+    },
+    {
+      "character": "Ekran",
+      "moment": "Said heartfelt goodbyes to each party member before departing Phandalin forever",
+      "one_liner": "I hope we cross paths again."
+    },
+    {
+      "character": "Semaj",
+      "moment": "Raised a toast to Ekran, then peppered a Redbrand with Magic Missile",
+      "one_liner": "To Ekran!"
+    },
+    {
+      "character": "Larry",
+      "moment": "Got slashed by a Redbrand, healed by Semaj, then bit back with vengeance",
+      "one_liner": "Larry's just going to nuzzle him and lick him."
+    }
+  ],
+  
+  "plot_developments": [
+    "Arrived in Phandalin",
+    "Delivered supplies to Barthen's Provisions",
+    "Met Elsa and learned about the Redbrand threat",
+    "Ekran departed the party (player leaving campaign)",
+    "Sildar went to secure funds from the townmaster",
+    "Learned Redbrands have been terrorizing Phandalin",
+    "Started fight with Redbrands at the Sleeping Giant"
+  ],
+  
+  "locations_visited": [
+    "Phandalin (first arrival)",
+    "Barthen's Provisions",
+    "Stonehill Inn",
+    "Sleeping Giant Taphouse"
+  ],
+  
+  "npcs_encountered": [
+    {
+      "name": "Elsa",
+      "role": "Clerk at Barthen's Provisions",
+      "notes": "Warned party about Redbrands"
+    },
+    {
+      "name": "Tolben",
+      "role": "Innkeeper at Stonehill Inn",
+      "notes": "Provided warm beds, cold ale, no nonsense"
+    }
+  ],
+  
+  "end_state": {
+    "location": "Outside the Sleeping Giant Taphouse",
+    "party_status": "Mid-combat, reinforcements incoming",
+    "cliffhanger": "A Redbrand just kicked open the tavern door shouting for backup",
+    "next_objective": "Survive the Redbrand fight"
+  }
+}

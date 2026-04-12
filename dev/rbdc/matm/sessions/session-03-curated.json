@@ -1,0 +1,155 @@
+{
+  "session_number": 3,
+  "title": "The Road to Phandalin",
+  "date": "February 6, 2025",
+  "summary": "After a long rest at the Driftwood Tavern, the party finally departed for Phandalin. Night brought wolves to their camp, but Kaelia's fire wolf and Semaj's intimidating stare convinced the pack to back down. The session ended with goblins ambushing the party near two dead horses.",
+  "level_up": false,
+  "duration": "~3 hours",
+  "player_attendance": ["Richard (Semaj)", "Jen (Kaelia)", "Sean (Belden)", "James (Ekran)"],
+  
+  "highlights": {
+    "best_moments": [
+      {
+        "title": "Ekran's Pan Flute Mastery",
+        "type": "epic",
+        "description": "Ekran found a pan flute and rolled a nat 20 on his first performance check, instantly becoming proficient.",
+        "quotes": [
+          {"speaker": "GM", "text": "Wow. As you take out this pan flute that you found in this dusty warehouse, you began to play it with ease. You start practicing some scales and you pick it up quite fast."},
+          {"speaker": "Belden", "text": "Well then, let's have a party."},
+          {"speaker": "Ekran", "text": "How long have you been playing that? I guess just a few minutes."}
+        ]
+      },
+      {
+        "title": "The Wand of Smiles",
+        "type": "funny",
+        "description": "Semaj tested his new wand on the party. It didn't work on anyone.",
+        "quotes": [
+          {"speaker": "Semaj", "text": "Does anyone else want to look at this thing for me? I think it's broken."},
+          {"speaker": "GM", "text": "Semaj, when you get this wand back you realize that it has all of its charges back on it. You can feel that the wand is still usable but for some reason it hasn't been working."}
+        ]
+      },
+      {
+        "title": "Kaelia's Fire Wolf",
+        "type": "epic",
+        "description": "Using Control Flames, Kaelia shaped the campfire into a prowling wolf guardian.",
+        "quotes": [
+          {"speaker": "Kaelia", "text": "I can make simple images so I'd like to actually make this fire into a wolf. And I'd like the wolf to be like prowling around our campsite."},
+          {"speaker": "Semaj", "text": "That's so cool, do you have a fire wolf?"},
+          {"speaker": "Kaelia", "text": "I'm gonna be squishy but I can do cool looking things."},
+          {"speaker": "Belden", "text": "Badass. Now I know what rage against the machine we should have had—Sleep Now with the Fire Wolf."}
+        ]
+      },
+      {
+        "title": "Semaj Stares Down the Alpha",
+        "type": "epic",
+        "description": "When wolves approached the camp, Semaj held the alpha's gaze with commanding authority.",
+        "quotes": [
+          {"speaker": "GM", "text": "The alpha wolf his gaze is going to shift to you Semaj. Do you hold the gaze of this wolf?"},
+          {"speaker": "Semaj", "text": "Absolutely. I stare him down."},
+          {"speaker": "GM", "text": "Semaj you hold this alpha wolf's gaze with a steady unwavering look... your expression is calm almost like regal at this point."}
+        ]
+      },
+      {
+        "title": "Wolves Back Down",
+        "type": "roleplay",
+        "description": "The combination of the fire wolf and Semaj's presence convinced the wolf pack to retreat.",
+        "quotes": [
+          {"speaker": "GM", "text": "The alpha wolf is giving this low kind of rumbling bark that doesn't feel like a threat and the wolves are now starting to kind of give you a wide berth as they disappear into the cave."},
+          {"speaker": "Semaj", "text": "I'm gonna start breathing a sigh of relief that I didn't realize I had been holding my breath the entire time."},
+          {"speaker": "Kaelia", "text": "Well, it's not always about killing stuff."}
+        ]
+      },
+      {
+        "title": "Star Trek Soundtrack",
+        "type": "meta",
+        "description": "Richard noticed the background music sounded very familiar.",
+        "quotes": [
+          {"speaker": "Semaj", "text": "I'm not gonna lie, this soundtrack sounds like straight up Star Trek. Space, the final frontier."}
+        ]
+      }
+    ],
+    
+    "combat_encounters": [
+      {
+        "name": "First Goblin Ambush",
+        "enemies": ["Multiple Goblins"],
+        "location": "Triboar Trail, near dead horses",
+        "outcome": "Partial Victory (one goblin escaped)",
+        "notable_events": [
+          "Found two dead horses blocking the road",
+          "Arrows flew from hidden positions",
+          "Ekran returned fire from a tree",
+          "One goblin escaped into the woods"
+        ]
+      }
+    ],
+    
+    "character_spotlight": {
+      "Semaj": {
+        "moments": ["Stared down the alpha wolf", "Tested the Wand of Smiles (it failed)", "Cast Frostbite on goblins"],
+        "one_liner": "I stare him down."
+      },
+      "Kaelia": {
+        "moments": ["Created an animated fire wolf", "Kept watch with Semaj", "Fire magic ready for goblins"],
+        "one_liner": "I can do cool looking things."
+      },
+      "Belden": {
+        "moments": ["Still thinking about his foot", "Named the fire wolf's theme song", "Dozed off during watch"],
+        "one_liner": "Sleep Now with the Fire Wolf."
+      },
+      "Ekran": {
+        "moments": ["Nat 20 pan flute performance", "Climbed tree for better vantage", "Returned fire on goblins"],
+        "one_liner": "I guess just a few minutes."
+      }
+    },
+    
+    "plot_developments": [
+      "Departed Neverwinter on the High Road",
+      "Bonded over stories - Semaj shared his noble family's fall, Belden talked about being raised by giants",
+      "Camped by a river near a suspicious cave",
+      "Wolf pack approached but was deterred by the fire wolf",
+      "Reached the Triboar Trail junction",
+      "Found two dead horses - signs of an ambush",
+      "Goblins attacked; one escaped north"
+    ],
+    
+    "quotes_of_the_session": [
+      {
+        "quote": "I'm gonna be squishy but I can do cool looking things.",
+        "speaker": "Kaelia",
+        "context": "After creating the fire wolf"
+      },
+      {
+        "quote": "Badass. Sleep Now with the Fire Wolf.",
+        "speaker": "Belden",
+        "context": "Naming the Rage Against the Machine song for Kaelia's fire wolf"
+      },
+      {
+        "quote": "I stare him down.",
+        "speaker": "Semaj",
+        "context": "Facing the alpha wolf"
+      },
+      {
+        "quote": "It's not always about killing stuff.",
+        "speaker": "Kaelia",
+        "context": "After the wolves retreated peacefully"
+      },
+      {
+        "quote": "How long have you been playing that? I guess just a few minutes.",
+        "speaker": "Ekran",
+        "context": "After his nat 20 pan flute performance"
+      },
+      {
+        "quote": "This soundtrack sounds like straight up Star Trek.",
+        "speaker": "Semaj",
+        "context": "Breaking the fourth wall"
+      }
+    ],
+    
+    "end_state": {
+      "location": "Triboar Trail, near dead horses",
+      "party_condition": "Alert, in combat",
+      "next_objective": "Deal with the goblin ambush, investigate the dead horses"
+    }
+  }
+}

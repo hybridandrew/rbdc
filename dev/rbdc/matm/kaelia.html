@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kaelia | Mage Against The Machine</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="nav.css">
+  <link rel="stylesheet" href="base.css">
+  <style>
+    .character-layout {
+      display: grid;
+      grid-template-columns: 320px 1fr;
+      gap: 2rem;
+      margin-bottom: 2rem;
+    }
+    @media (max-width: 900px) {
+      .character-layout { grid-template-columns: 1fr; }
+      .character-sidebar { display: flex; flex-direction: column; align-items: center; }
+    }
+    .character-sidebar { display: flex; flex-direction: column; gap: 1.5rem; }
+    .character-portrait {
+      width: 300px; height: 400px;
+      border-radius: 12px; border: 2px solid var(--border-glow);
+      background: var(--bg-card); overflow: hidden;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+    }
+    .character-portrait img { width: 100%; height: 100%; object-fit: cover; }
+    .quick-stats {
+      background: var(--bg-card); border: 1px solid var(--border-subtle);
+      border-radius: 12px; padding: 1.5rem;
+    }
+    .quick-stats-title {
+      font-family: 'Cinzel', serif; font-size: 1rem; color: var(--gold);
+      margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 0.1em;
+    }
+    .stat-row {
+      display: flex; justify-content: space-between;
+      padding: 0.5rem 0; border-bottom: 1px solid var(--border-subtle);
+    }
+    .stat-row:last-child { border-bottom: none; }
+    .stat-name { color: var(--text-secondary); }
+    .stat-val { font-family: 'Cinzel', serif; font-weight: 600; color: var(--text-primary); }
+    .character-main { display: flex; flex-direction: column; gap: 1.5rem; }
+    .character-header-info {
+      background: var(--bg-card); border: 1px solid var(--border-subtle);
+      border-radius: 12px; padding: 2rem;
+    }
+    .character-name {
+      font-family: 'Cinzel', serif; font-size: 2.5rem; font-weight: 700;
+      color: var(--gold); margin-bottom: 0.25rem;
+    }
+    .character-title { font-size: 1.2rem; color: var(--text-secondary); margin-bottom: 1rem; }
+    .character-tagline {
+      font-style: italic; color: var(--text-dim); font-size: 1.1rem;
+      padding-left: 1rem; border-left: 3px solid var(--gold-dim);
+    }
+    .info-card {
+      background: var(--bg-card); border: 1px solid var(--border-subtle);
+      border-radius: 12px; padding: 1.5rem;
+    }
+    .info-card-title {
+      font-family: 'Cinzel', serif; font-size: 1.25rem; color: var(--gold);
+      margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;
+    }
+    .info-card-content { color: var(--text-secondary); line-height: 1.8; }
+    .info-card-content p { margin-bottom: 1rem; }
+    .info-card-content p:last-child { margin-bottom: 0; }
+    .abilities-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 0.75rem; }
+    @media (max-width: 600px) { .abilities-grid { grid-template-columns: repeat(3, 1fr); } }
+    .ability-box {
+      background: rgba(139, 92, 246, 0.1); border: 1px solid rgba(139, 92, 246, 0.3);
+      border-radius: 8px; padding: 0.75rem; text-align: center;
+    }
+    .ability-name { font-size: 0.75rem; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.25rem; }
+    .ability-score { font-family: 'Cinzel', serif; font-size: 1.5rem; font-weight: 700; color: var(--text-primary); }
+    .ability-mod { font-size: 0.85rem; color: var(--purple); }
+    .traits-list { display: flex; flex-direction: column; gap: 1rem; }
+    .trait-item {
+      padding: 1rem; background: rgba(212, 168, 87, 0.05);
+      border-left: 3px solid var(--gold-dim); border-radius: 0 8px 8px 0;
+    }
+    .trait-name { font-family: 'Cinzel', serif; font-weight: 600; color: var(--gold); margin-bottom: 0.25rem; }
+    .trait-desc { color: var(--text-secondary); font-size: 0.95rem; }
+    .equipment-list { list-style: none; }
+    .equipment-item {
+      padding: 0.5rem 0; padding-left: 1.5rem; position: relative;
+      color: var(--text-secondary); border-bottom: 1px solid var(--border-subtle);
+    }
+    .equipment-item:last-child { border-bottom: none; }
+    .equipment-item::before {
+      content: '◆'; position: absolute; left: 0; color: var(--gold-dim);
+      font-size: 0.6rem; top: 0.7rem;
+    }
+    .back-link {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      color: var(--text-dim); text-decoration: none;
+      font-family: 'Cinzel', serif; font-size: 0.9rem;
+      margin-bottom: 2rem; transition: color 0.3s ease;
+    }
+    .back-link:hover { color: var(--gold); }
+    
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="party.html" class="back-link">← Back to Party</a>
+    
+    <div class="character-layout">
+      <div class="character-sidebar">
+        <div class="character-portrait">
+          <img src="images/kaelia-portrait.png" alt="Kaelia">
+        </div>
+        
+        <div class="quick-stats">
+          <h3 class="quick-stats-title">Quick Stats</h3>
+          <div class="stat-row">
+            <span class="stat-name">Level</span>
+            <span class="stat-val">3</span>
+          </div>
+          <div class="stat-row">
+            <span class="stat-name">Hit Points</span>
+            <span class="stat-val">20</span>
+          </div>
+          <div class="stat-row">
+            <span class="stat-name">Armor Class</span>
+            <span class="stat-val">12</span>
+          </div>
+          <div class="stat-row">
+            <span class="stat-name">Speed</span>
+            <span class="stat-val">30 ft</span>
+          </div>
+          <div class="stat-row">
+            <span class="stat-name">Proficiency</span>
+            <span class="stat-val">+2</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="character-main">
+        <div class="character-header-info">
+          <h1 class="character-name">Kaelia</h1>
+          <p class="character-title">Half-Elf Phoenix Sorcerer</p>
+          <p class="character-tagline">"Fire doesn't ask permission to burn."</p>
+        </div>
+        
+        <div class="info-card">
+          <h3 class="info-card-title">📖 Backstory</h3>
+          <div class="info-card-content">
+            <p>Kaelia's hair glows with living flame, a constant reminder of the phoenix fire that burns within her soul. Born to a human blacksmith father and an elven mother, she never quite fit in either world—too fiery for the elves, too magical for the humans.</p>
+<p>The phoenix sorcery manifested violently in her youth, and she has spent years learning to control the flames that threaten to consume everything she touches. When she's angry, nearby fires flare. When she's frightened, sparks dance at her fingertips.</p>
+<p>Despite her volatile nature, Kaelia has a protective streak a mile wide. She may burn hot, but that fire is aimed squarely at those who threaten the innocent.</p>
+          </div>
+        </div>
+        
+        <div class="info-card">
+          <h3 class="info-card-title">📊 Ability Scores</h3>
+          <div class="abilities-grid">
+            <div class="ability-box">
+              <div class="ability-name">STR</div>
+              <div class="ability-score">10</div>
+              <div class="ability-mod">(+0)</div>
+            </div>
+            <div class="ability-box">
+              <div class="ability-name">DEX</div>
+              <div class="ability-score">14</div>
+              <div class="ability-mod">(+2)</div>
+            </div>
+            <div class="ability-box">
+              <div class="ability-name">CON</div>
+              <div class="ability-score">14</div>
+              <div class="ability-mod">(+2)</div>
+            </div>
+            <div class="ability-box">
+              <div class="ability-name">INT</div>
+              <div class="ability-score">10</div>
+              <div class="ability-mod">(+0)</div>
+            </div>
+            <div class="ability-box">
+              <div class="ability-name">WIS</div>
+              <div class="ability-score">12</div>
+              <div class="ability-mod">(+1)</div>
+            </div>
+            <div class="ability-box">
+              <div class="ability-name">CHA</div>
+              <div class="ability-score">16</div>
+              <div class="ability-mod">(+3)</div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="info-card">
+          <h3 class="info-card-title">✨ Features & Traits</h3>
+          <div class="traits-list">
+            <div class="trait-item">
+              <div class="trait-name">Mantle of Flame</div>
+              <div class="trait-desc">Wreathe yourself in fire. Creatures that hit you in melee take fire damage.</div>
+            </div>
+            <div class="trait-item">
+              <div class="trait-name">Phoenix Spark</div>
+              <div class="trait-desc">When reduced to 0 HP, explode in flames and return with half HP (1/long rest).</div>
+            </div>
+            <div class="trait-item">
+              <div class="trait-name">Control Flames</div>
+              <div class="trait-desc">Manipulate nonmagical fire within 60 feet.</div>
+            </div>
+            <div class="trait-item">
+              <div class="trait-name">Fey Ancestry</div>
+              <div class="trait-desc">Advantage on saves against being charmed; magic can't put you to sleep.</div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="info-card">
+          <h3 class="info-card-title">🎒 Equipment</h3>
+          <ul class="equipment-list">
+            <li class="equipment-item">Arcane Focus (crystal)</li>
+            <li class="equipment-item">Dungeoneer's Pack</li>
+            <li class="equipment-item">Two Daggers</li>
+            <li class="equipment-item">Smith's Tools</li>
+            <li class="equipment-item">Common Clothes</li>
+            <li class="equipment-item">Traveler's Clothes</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="nav.js"></script>
+  <script>initNav('characters');</script>
+</body>
+</html>

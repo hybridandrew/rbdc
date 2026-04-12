@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Locations | Mage Against The Machine</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="nav.css">
+  <link rel="stylesheet" href="base.css">
+  <style>
+    .location-card {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    .location-description {
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+    }
+    .location-sessions {
+      font-size: 0.85rem;
+      color: var(--text-dim);
+      margin-top: 0.5rem;
+    }
+    .region-title {
+      font-family: 'Cinzel', serif;
+      font-size: 1.1rem;
+      color: var(--purple);
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid rgba(139, 92, 246, 0.2);
+    }
+    .region-section {
+      margin-bottom: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="page-header">
+      <div class="page-icon">🗺️</div>
+      <h1 class="page-title">Locations</h1>
+      <p class="page-subtitle">From the streets of Neverwinter to the depths of darkness</p>
+    </header>
+
+    <section class="section">
+      <h2 class="section-title">Visited Locations</h2>
+      
+      <div class="region-section">
+        <h3 class="region-title">🏰 Neverwinter</h3>
+        <div class="grid grid-3" id="neverwinter"></div>
+      </div>
+
+      <div class="region-section">
+        <h3 class="region-title">🛤️ The Road</h3>
+        <div class="grid grid-3" id="road"></div>
+      </div>
+
+      <div class="region-section">
+        <h3 class="region-title">🏘️ Phandalin</h3>
+        <div class="grid grid-3" id="phandalin"></div>
+      </div>
+
+      <div class="region-section">
+        <h3 class="region-title">⚔️ Dungeons</h3>
+        <div class="grid grid-3" id="dungeons"></div>
+      </div>
+
+      <div class="region-section">
+        <h3 class="region-title">🌲 The Wilds</h3>
+        <div class="grid grid-3" id="wilds"></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Mentioned But Not Visited</h2>
+      <div class="grid grid-3" id="mentioned"></div>
+    </section>
+  </div>
+
+  <script>
+    const locations = {
+      neverwinter: [
+        { name: 'Driftwood Tavern', icon: '🍺', description: 'Where the party first met. Sildar paid for their rooms here.', sessions: '1-3' },
+        { name: 'Brandy\'s Brewery', icon: '🍻', description: 'Run by Brandy and her half-orc sister Grogala. Source of the party\'s ale kegs.', sessions: '1' },
+        { name: 'Patty\'s General Store', icon: '🏪', description: 'A nervous halfling\'s shop with a rat-infested storehouse.', sessions: '1-2' },
+        { name: 'The Bloody Butcher', icon: '🥩', description: 'Periwinkle\'s shop. Site of the boar escape incident.', sessions: '2' },
+        { name: 'Millhouse\'s Bakery', icon: '🥐', description: 'An eccentric gnome baker who uses magic in his pastries.', sessions: '2' }
+      ],
+      road: [
+        { name: 'High Road', icon: '🛤️', description: 'The main road from Neverwinter toward Phandalin.', sessions: '3' },
+        { name: 'Triboar Trail', icon: '🛤️', description: 'The trail where the party was ambushed by goblins near dead horses.', sessions: '3-8' },
+        { name: 'Riverside Camp', icon: '🏕️', description: 'Where Kaelia created the fire wolf and Semaj stared down the alpha wolf.', sessions: '3' },
+        { name: 'Goblin Cave', icon: '🐺', description: 'A small cave mouth framed by gnarled roots near the stone bridge on the High Road, roughly halfway between Neverwinter and Phandalin. Inside: animal carcasses, maggots, pungent odor. Ekran\'s nat-20 investigation revealed wolf tracks and goblin footprints crisscrossing the floor. The party declined to camp inside. Foreshadows the Cragmaw goblin presence.', sessions: '3' },
+        { name: 'Goblin Trail', icon: '🌿', description: 'Narrow root-choked path winding north from the Triboar Trail to Cragmaw Cave. About five miles long. Guarded by two stream crossings, a snare trap, a pit trap, and at least two goblin ambush points. Where Kaelia was hoisted into the air by her ankle and Belden carried her across both streams.', sessions: '4-5' }
+      ],
+      phandalin: [
+        { name: 'Stonehill Inn', icon: '🏨', description: 'Run by Tolben — warm, clean, and no-nonsense. The party\'s base in Phandalin. Site of Ekren\'s farewell to the group, and the place where Larry nearly took a finger from Tolben\'s young son Pip.', sessions: '8+' },
+        { name: 'Sleeping Giant Tap House', icon: '🍺', description: 'A run-down dive bar in eastern Phandalin with cracked walls and a sagging roof. Taken over by the Redbrands as their de facto stronghold in town. Site of a brutal 10-man Redbrand brawl across Sessions 8–9 where the party fought, took casualties, and cleared it out. Now run by Grista, who has been quietly holding Phandalin together through the occupation.', sessions: '8-9' },
+        { name: 'Barthen\'s Provisions', icon: '📦', description: 'General store run by Elmina. The party delivered Gundren\'s supply cart here. Elmina revealed that Gundren\'s brothers Tharden and Nundro were nine days overdue from a scouting trip to the Sword Mountains, warned the party about the Redbrands, and gave the party a partial map of the Sword Coast North.', sessions: '8' },
+        { name: 'Tresendar Manor', icon: '🏚️', description: 'The ruined remains of a once-noble estate on the hill overlooking Phandalin — the Tresendar family seat for centuries before falling to a raid. Roof collapsed, doors rotten, stone walls scarred with axe marks and fire scorch. The Redbrands used it as cover for their tunnels beneath. The hidden entrance is cut into the hillside at its base. The party chased Glasstaff across the rubble-strewn courtyard here at dawn.', sessions: '10+' },
+        { name: 'Lion Shield Coster', icon: '🛡️', description: 'A trading post in Phandalin specializing in arms and armor, marked by a blue lion sigil. Run by Linene Graywind. The party recognized the same sigil on stolen crates from Cragmaw Cave and came to investigate in Session 14.', sessions: '14' },
+        { name: 'Alderleaf Farm', icon: '🌾', description: 'A small farm on the southeast edge of Phandalin, home of Qelline Alderleaf and her young son. Friend of Darren Edermath and close acquaintance of the druid Reidoth. The party visited here in Session 14 to gather intel before departing for Thundertree.', sessions: '14' }
+      ],
+      dungeons: [
+        { name: 'Cragmaw Cave', icon: '🦇', description: 'Goblin hideout carved into a hillside where Klarg the bugbear ruled. Distinct sub-areas include: a wolf kennel (where Larry was tamed), a flood-dam chamber (triggered twice against the party), a rope bridge over a stream, Klarg\'s upper chamber (where Klarg died), and a prisoner chamber where Yeemik held Sildar and a half-elf captive. Also contained stolen Lion Shield Coster trade goods and a hidden chest with a jade frog statuette. During the party\'s long rest here, Semaj heard the name Ruxithid whispered on the wind for the first time.', sessions: '4-7' },
+        { name: 'Redbrand Hideout', icon: '⚔️', description: 'A natural cavern complex beneath Tresendar Manor, used by the Redbrands as headquarters. Features include: a crevasse with the Nothic\'s lair and two bridges (one trapped), bugbear barracks, a storage room with a cistern, a secret door leading to a pit-trap hallway, Glasstaff\'s workshop, prisoner holding cells, and the Tresendar Crypts beyond. Fully cleared by the party over Sessions 10–13.', sessions: '10-13' },
+        { name: 'Tresendar Crypts', icon: '💀', description: 'The ancient burial chamber of the Tresendar noble family, deep within the hideout. Three stone sarcophagi bear carved likenesses of two men and one woman in regal pose. The walls are carved with spreading oak trees — the family symbol. Six skeletal guardians protect the chamber. The party fought through them at the end of Session 12 to find doors leading north to unexplored areas.', sessions: '12' },
+        { name: 'The Crevasse', icon: '🕳️', description: 'The central natural fissure beneath Tresendar Manor, 20 feet deep with walls of frozen-wave stone. Two makeshift wooden bridges span it — the southern one is a trap. At the bottom: piles of humanoid bones, two goblin corpses with elongated skulls, and a battered hidden chest holding Talon (Ser Aldith\'s legendary sword), potions, gems, and gold. The Nothic\'s lair.', sessions: '11-12' },
+        { name: 'Glasstaff\'s Workshop', icon: '🧪', description: 'Alchemical laboratory and private chamber hidden within the Redbrand hideout. Contains retorts, distillation coils, and active brews including an in-progress potion of invisibility. Bookshelves with scrolls referencing the Forge of Spells and a holy mace called Lightbringer. A letter sealed with a black spider wax seal addressed to Iarno Albrek revealed Glasstaff\'s true identity. A conjured shadowy creature lurked here invisibly as a delaying tactic while Glasstaff fled.', sessions: '13' },
+        { name: 'Redbrand Holding Cells', icon: '⛓️', description: 'Iron-barred cells within the Redbrand hideout where prisoners were kept under lock and chain. Myrna Dendrar, her daughter Nilsa, and son Nars were held here for over a week following Thel Dendrar\'s murder. The party found a key ring above a pile of straw and freed the family — malnourished but unbroken.', sessions: '13' }
+      ],
+      mentioned: [
+        { name: 'Wave Echo Cave', icon: '🌊', description: 'Lost location of the legendary Forge of Spells. The party\'s ultimate destination.', sessions: '—' },
+        { name: 'Forge of Spells', icon: '🔥', description: 'Legendary forge that could craft magical items. Lost for 500 years.', sessions: '—' },
+        { name: 'Cragmaw Castle', icon: '🏰', description: 'Stone ruin in the Neverwinter Wood where Gundren Rockseeker is being held by the Black Spider. Deceptively quiet from the outside — goblins watch from the towers and broken walls. There is a hidden servant\'s door in the back wall used for sneaking. The boss inside is a powerful hobgoblin king; bugbears and wolves guard the interior. Roughly 20 miles northeast of the Cragmaw hideout through the Neverwinter Wood. Goblin trail signs mark the path: three-claw scratches on trees, stacked stones pointing direction, and strips of red cloth at trail forks. Directions provided by the goblin Droop.', sessions: '—' },
+        { name: 'Eldren\'s Enchantments', icon: '✨', description: 'A magic shop in Neverwinter. Mentioned but not visited.', sessions: '—' },
+        { name: 'Edermath\'s Orchard', icon: '🍎', description: 'Darren Edermath\'s orchard in Phandalin.', sessions: '—' },
+        { name: 'Connyberry', icon: '🏘️', description: 'A small settlement along the Triboar Trail, marked on the Sword Coast map provided by Elmina. Not yet visited.', sessions: '—' },
+        { name: 'Old Owl Well', icon: '🦉', description: 'A location marked on the Sword Coast map provided by Elmina. Nature unknown. Not yet visited.', sessions: '—' },
+        { name: 'Leilon', icon: '🏘️', description: 'A town along the High Road, marked on the Sword Coast map provided by Elmina. Not yet visited.', sessions: '—' },
+        { name: 'Mount Hotenow', icon: '🌋', description: 'A volcanic peak near Neverwinter, marked on the Sword Coast map provided by Elmina. Associated with the volcanic eruption that destroyed Thundertree.', sessions: '—' }
+      ],
+      wilds: [
+        { name: 'Thundertree', icon: '🏚️', description: 'Ruined farming settlement at the edge of Neverwinter Wood. Abandoned after a volcanic eruption and/or plague. Now home to twig blights, zombies, cultists, and a young green dragon named Venomfang in the old tower. Reidoth the druid has made his home here.', sessions: '15' }
+      ]
+    };
+
+    function renderLocationCard(loc) {
+      return `
+        <div class="location-card">
+          <h3 class="location-name">
+            <span class="location-icon">${loc.icon}</span>
+            ${loc.name}
+          </h3>
+          <p class="location-description">${loc.description}</p>
+          ${loc.sessions !== '—' ? `<p class="location-sessions">Sessions: ${loc.sessions}</p>` : ''}
+        </div>
+      `;
+    }
+
+    document.getElementById('neverwinter').innerHTML = 
+      locations.neverwinter.map(renderLocationCard).join('');
+
+    document.getElementById('road').innerHTML = 
+      locations.road.map(renderLocationCard).join('');
+
+    document.getElementById('phandalin').innerHTML = 
+      locations.phandalin.map(renderLocationCard).join('');
+
+    document.getElementById('dungeons').innerHTML = 
+      locations.dungeons.map(renderLocationCard).join('');
+
+    document.getElementById('mentioned').innerHTML =
+      locations.mentioned.map(renderLocationCard).join('');
+
+    document.getElementById('wilds').innerHTML =
+      locations.wilds.map(renderLocationCard).join('');
+  </script>
+  <script src="nav.js"></script>
+  <script>initNav('world');</script>
+</body>
+</html>

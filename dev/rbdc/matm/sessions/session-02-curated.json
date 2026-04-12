@@ -1,0 +1,160 @@
+{
+  "session_number": 2,
+  "title": "Boars and Bakers",
+  "date": "September 19, 2024",
+  "summary": "Picking up right after the rat battle, the party barely had time to catch their breath before escaped boars rampaged through town. Ekran was knocked unconscious, but the party prevailed. They then met the eccentric gnome baker Millhouse and his magical pastries.",
+  "level_up": false,
+  "duration": "~3 hours",
+  "player_attendance": ["Richard (Semaj)", "Jen (Kaelia)", "Sean (Belden)", "James (Ekran)"],
+  
+  "highlights": {
+    "best_moments": [
+      {
+        "title": "Stupid Floor",
+        "type": "funny",
+        "description": "Belden's reflection on the rat battle summed up his experience perfectly.",
+        "quotes": [
+          {"speaker": "GM", "text": "Belden, after this rat battle, what is going through his mind?"},
+          {"speaker": "Belden", "text": "Stupid floor."}
+        ]
+      },
+      {
+        "title": "Borby's Rampage",
+        "type": "combat",
+        "description": "The escaped boars were given names, and Borby was out for blood.",
+        "quotes": [
+          {"speaker": "GM", "text": "This is Borby."},
+          {"speaker": "Kaelia", "text": "Borby."},
+          {"speaker": "Ekran", "text": "Come on, Borby. Let's go."}
+        ]
+      },
+      {
+        "title": "Ekran Goes Down",
+        "type": "dramatic",
+        "description": "Borby charged Ekran and knocked him unconscious with a brutal tusk attack.",
+        "quotes": [
+          {"speaker": "GM", "text": "As you're standing there, the boar charges into you, bores into you, and knocks you unconscious to the ground."},
+          {"speaker": "Semaj", "text": "Bored him to death."}
+        ]
+      },
+      {
+        "title": "Sacred Flame Kill",
+        "type": "epic",
+        "description": "Semaj finished off Borby with divine fire.",
+        "quotes": [
+          {"speaker": "GM", "text": "Samaj, how would you like to describe this kill?"},
+          {"speaker": "Semaj", "text": "After seeing what it did to Ekren and seeing Belden hit it, but it still being wounded, I didn't want it to go any further, so I just went, take care of it. A little bit of flair."}
+        ]
+      },
+      {
+        "title": "Periwinkle's Panic",
+        "type": "funny",
+        "description": "The tiefling butcher went after the already-dead boar with his cleavers.",
+        "quotes": [
+          {"speaker": "GM", "text": "You're going to see Periwinkle run up to this boar right here and he's going to take out his cleavers and just start chopping at it thinking it's not all the way dead."},
+          {"speaker": "Belden", "text": "This is no time to be cooking."}
+        ]
+      },
+      {
+        "title": "Am I the Only One Hanging On?",
+        "type": "roleplay",
+        "description": "Kaelia's near-death experience with the rats made her acutely aware of her fragility.",
+        "quotes": [
+          {"speaker": "Kaelia", "text": "Am I the only one hanging on by a thread here?"}
+        ]
+      }
+    ],
+    
+    "combat_encounters": [
+      {
+        "name": "The Boar Escape",
+        "enemies": ["4 Escaped Boars (Bore C, Bordy, Borby, Bore B)"],
+        "location": "Streets of Neverwinter, near the Bloody Butcher",
+        "outcome": "Victory",
+        "mvp": "Semaj",
+        "notable_events": [
+          "Boars escaped from Periwinkle's pen",
+          "Ekran was knocked unconscious by Borby's charge",
+          "Belden cracked ribs with his warhammer",
+          "Semaj killed Borby with Sacred Flame",
+          "Kaelia used Spare the Dying to stabilize Ekran"
+        ]
+      }
+    ],
+    
+    "character_spotlight": {
+      "Semaj": {
+        "moments": ["Killed Borby with Sacred Flame", "Rushed to Ekran's aid", "Out of spell slots from rat battle"],
+        "one_liner": "Take care of it."
+      },
+      "Kaelia": {
+        "moments": ["Pew pewed the pigs", "Stabilized Ekran", "Questioned her squishiness"],
+        "one_liner": "Am I the only one hanging on by a thread here?"
+      },
+      "Belden": {
+        "moments": ["Cracked boar ribs with warhammer", "Still thinking about the stupid floor", "Charged out of the butcher shop"],
+        "one_liner": "Stupid floor."
+      },
+      "Ekran": {
+        "moments": ["Got charged and knocked unconscious", "Death saves", "Recovered thanks to Kaelia"],
+        "one_liner": "Come on, Borby. Let's go."
+      }
+    },
+    
+    "npcs_met": [
+      {
+        "name": "Periwinkle",
+        "description": "Tiefling butcher at the Bloody Butcher shop",
+        "notable": "Rewarded the party with extra meat and a healing potion"
+      },
+      {
+        "name": "Millhouse",
+        "description": "Eccentric gnome baker who infuses magic into his pastries",
+        "notable": "Provided supplies and magical cookies"
+      }
+    ],
+    
+    "plot_developments": [
+      "Defeated escaped boars rampaging through Neverwinter",
+      "Collected supplies from the Bloody Butcher (Periwinkle)",
+      "Met Millhouse the magical gnome baker",
+      "Learned about Stonehill Inn and Edermath's Orchard in Phandalin",
+      "Heard about Eldren's Enchantments magic shop",
+      "Returned to Driftwood Tavern to rest before departure"
+    ],
+    
+    "quotes_of_the_session": [
+      {
+        "quote": "Stupid floor.",
+        "speaker": "Belden",
+        "context": "His only thought after the rat battle"
+      },
+      {
+        "quote": "Am I the only one hanging on by a thread here?",
+        "speaker": "Kaelia",
+        "context": "Realizing she almost died to rats"
+      },
+      {
+        "quote": "Bored him to death.",
+        "speaker": "Semaj",
+        "context": "After Ekran was knocked out by Borby"
+      },
+      {
+        "quote": "This is no time to be cooking.",
+        "speaker": "Belden",
+        "context": "Watching Periwinkle attack the dead boar"
+      },
+      {
+        "quote": "Think these things carry rabies?",
+        "speaker": "Ekran",
+        "context": "Examining his wounds"
+      }
+    ],
+    
+    "end_state": {
+      "location": "Driftwood Tavern Suite",
+      "party_condition": "Healed and rested",
+      "next_objective": "Depart for Phandalin in the morning"
+    }
+  }
+}

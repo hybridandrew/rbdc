@@ -1,0 +1,182 @@
+{
+  "session_number": 5,
+  "title": "The Cragmaw Cave",
+  "date": "May 11, 2025",
+  "summary": "Deep within the Cragmaw Cave, the party discovered three chained wolves. While two remained hostile, Semaj's incredible animal handling (nat 20!) tamed the smallest wolf, who would become their most loyal companion. After surviving two flood traps and navigating treacherous passages, they confronted Klarg the bugbear boss. The battle nearly killed Semaj, but the wolf—recognizing Klarg as his tormentor—delivered the killing blow by ripping out the bugbear's throat.",
+  "level_up": false,
+  "duration": "~4 hours",
+  "player_attendance": ["Richard (Semaj)", "Jen (Kaelia)", "Sean (Belden)", "James (Ekran)", "Darren (filling in)"],
+  
+  "highlights": {
+    "best_moments": [
+      {
+        "title": "Taming the Wolf (Nat 20!)",
+        "type": "epic",
+        "description": "Semaj fed the smallest, most abused wolf goblin meat, then rolled a natural 20 on animal handling. The wolf pressed its nose into his fingers, accepting him as a friend.",
+        "quotes": [
+          {"speaker": "Alex/GM", "text": "With the 20 animal handling check, the wolf is going to sniff your hand and then press its nose into your fingers, allowing you to scratch behind its ear."},
+          {"speaker": "Alex/GM", "text": "The smaller wolf is now recognizing you as non-threatening—even potentially friendly."}
+        ]
+      },
+      {
+        "title": "Larry's Vengeance",
+        "type": "epic",
+        "description": "The wolf, recognizing Klarg as his former tormentor, delivered the killing blow by ripping out the bugbear's throat while Semaj lay unconscious nearby.",
+        "quotes": [
+          {"speaker": "Alex/GM", "text": "This wolf had it out for Klarg. Klarg must have tortured this wolf pretty hard."},
+          {"speaker": "Alex/GM", "text": "As Klarg looks over, this wolf just attaches onto his throat. And thrashes around."},
+          {"speaker": "Alex/GM", "text": "Semaj, as you regain consciousness, you open your eyes to see the wolf just ripping at Klarg's throat right now."}
+        ]
+      },
+      {
+        "title": "Semaj's Solo Charge",
+        "type": "funny",
+        "description": "Semaj starlight-stepped up the stairs to confront Klarg alone, missed his Chromatic Orb, got surrounded by goblins, and was knocked unconscious.",
+        "quotes": [
+          {"speaker": "Alex/GM", "text": "That was a straight Han Solo and Chewie running right into the wall of Stormtroopers."},
+          {"speaker": "Richard/Semaj", "text": "I already have a sub for when my main dies, so... I was like, well, I guess Xerath's gonna avenge his cousin."}
+        ]
+      },
+      {
+        "title": "Double Flood Trap",
+        "type": "funny",
+        "description": "Goblins released the dam trap twice. Kaelia got swept away both times, tumbling out of the cave mouth.",
+        "quotes": [
+          {"speaker": "Alex/GM", "text": "Kaelia, you are going to stumble. The water is going to slam into your legs and it's sweeping you off your feet. With a shriek, you're starting to tumble backwards."},
+          {"speaker": "Alex/GM", "text": "With a violent jolt, you are now spit out at the cave's mouth."}
+        ]
+      },
+      {
+        "title": "Wolf's First Kill",
+        "type": "epic",
+        "description": "The wolf's first combat kill was brutal—it latched onto a goblin's neck and started ripping. The headcanon: this was the goblin who abused him most.",
+        "quotes": [
+          {"speaker": "Richard/Semaj", "text": "I'd like to see him just come run and just like launch onto him and just rip him to shreds as he tackles into the ground."},
+          {"speaker": "Alex/GM", "text": "This wolf latches onto his neck and starts ripping. My head cannon is that was the goblin that really abused him."}
+        ]
+      },
+      {
+        "title": "Ribcage Snowboard",
+        "type": "funny",
+        "description": "With a nat 20 athletics check, Belden found some ribcage bones and rode them like a snowboard down the natural chimney.",
+        "quotes": [
+          {"speaker": "Sean/Belden", "text": "I'm going to slide down..."},
+          {"speaker": "Alex/GM", "text": "You find some kind of ribcage bones at the top, and you ride it like a snowboard down this pile of rubble all the way down."},
+          {"speaker": "Jen/Kaelia", "text": "Should've grabbed a dead goblin meat at the top before you went down."}
+        ]
+      },
+      {
+        "title": "Kaelia's Firebolt Execution",
+        "type": "badass",
+        "description": "The last goblin tried to flee, screaming. Kaelia hit him in the back of the head with a firebolt. His head caught fire as he tumbled down the stairs.",
+        "quotes": [
+          {"speaker": "Jen/Kaelia", "text": "The goblin comes running around the side and he's like, Ha ha ha ha! And I just kinda take two steps sideways and turn around and go... Hit him in the back of the head. Head starts on fire."},
+          {"speaker": "Alex/GM", "text": "You see him running down the stairs, trying to get to the water as his head's on fire, and he falls next to Klarg."}
+        ]
+      },
+      {
+        "title": "Wolf Paste",
+        "type": "funny",
+        "description": "Belden one-shot killed an enemy wolf with a devastating hammer blow, caving in its skull.",
+        "quotes": [
+          {"speaker": "Alex/GM", "text": "You made wolf paste."},
+          {"speaker": "Alex/GM", "text": "You're going to see this wolf's head just cave in, and smash into the cave wall as it just limply falls directly in front of you."}
+        ]
+      }
+    ],
+    "quotes_of_the_session": [
+      {
+        "speaker": "Alex/GM",
+        "quote": "This wolf had it out for Klarg. Klarg must have tortured this wolf pretty hard.",
+        "context": "As the wolf delivers the killing blow"
+      },
+      {
+        "speaker": "Richard/Semaj",
+        "quote": "Retribution is the boy's name. That boy's name is Retribution.",
+        "context": "First naming the wolf (later became Larry)"
+      },
+      {
+        "speaker": "Alex/GM",
+        "quote": "That was a straight Han Solo and Chewie running right into the wall of Stormtroopers.",
+        "context": "Describing Semaj's failed solo charge"
+      },
+      {
+        "speaker": "Alex/GM",
+        "quote": "Well, Semaj is able to live again. But, man, MVP ain't dog, ain't my buddy.",
+        "context": "End of session - the wolf was the real hero"
+      },
+      {
+        "speaker": "Jen/Kaelia",
+        "quote": "I can keep you barely alive.",
+        "context": "On the party's healing capabilities"
+      },
+      {
+        "speaker": "Alex/GM",
+        "quote": "You made wolf paste.",
+        "context": "After Belden's hammer crit"
+      }
+    ]
+  },
+  
+  "combat_encounters": [
+    {
+      "name": "Wolf Den",
+      "enemies": "3 Chained Wolves",
+      "outcome": "One wolf tamed (Larry!), two remain hostile",
+      "mvp": "Semaj",
+      "mvp_reason": "Natural 20 animal handling to tame the wolf"
+    },
+    {
+      "name": "Goblin Ambush (Post-Flood)",
+      "enemies": "4 Goblins, 2 Enemy Wolves",
+      "outcome": "Victory",
+      "mvp": "Larry the Wolf",
+      "mvp_reason": "First kill - ripped out a goblin's throat"
+    },
+    {
+      "name": "Klarg's Chamber",
+      "enemies": "Klarg (Bugbear), 2 Goblins, Ripper (Wolf)",
+      "outcome": "Victory - Klarg slain",
+      "mvp": "Larry the Wolf",
+      "mvp_reason": "Killed Klarg by ripping out his throat"
+    }
+  ],
+  
+  "character_spotlights": [
+    {
+      "character": "Semaj",
+      "moment": "Tamed the wolf with a nat 20, charged Klarg solo and nearly died, woke up to see his wolf standing victorious",
+      "one_liner": "I already have a sub for when my main dies"
+    },
+    {
+      "character": "Kaelia",
+      "moment": "Got swept away by both flood traps, executed the final fleeing goblin with a firebolt to the back of the head",
+      "one_liner": "Ha ha ha ha! *firebolt* Head starts on fire."
+    },
+    {
+      "character": "Belden",
+      "moment": "Snowboarded down a chimney on a ribcage, turned an enemy wolf into paste with his hammer",
+      "one_liner": "I'm going to slide down..."
+    },
+    {
+      "character": "Larry the Wolf",
+      "moment": "Born this session. Killed Klarg in vengeance for his abuse. The real MVP.",
+      "one_liner": "MVP ain't dog, ain't my buddy"
+    }
+  ],
+  
+  "plot_developments": [
+    "Discovered three chained wolves in Cragmaw Cave",
+    "Tamed the smallest wolf (later named Larry)",
+    "Survived two flood trap releases",
+    "Defeated Klarg the bugbear boss",
+    "Larry joined the party as a companion",
+    "Cleared the main threat in Cragmaw Cave"
+  ],
+  
+  "end_state": {
+    "location": "Klarg's Chamber, Cragmaw Cave",
+    "party_status": "Wounded but victorious - Semaj at 4 HP",
+    "next_objective": "Search the cave and take a long rest"
+  }
+}

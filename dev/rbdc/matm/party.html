@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Party | Mage Against The Machine</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="nav.css">
+  <link rel="stylesheet" href="base.css">
+</head>
+<body>
+  <div class="container">
+    <header class="page-header">
+      <div class="page-icon">⚔️</div>
+      <h1 class="page-title">The Party</h1>
+      <p class="page-subtitle">Six unlikely heroes united against the darkness</p>
+    </header>
+
+    <section class="section">
+      <h2 class="section-title">Active Members</h2>
+      <div class="grid grid-3" id="active-party"></div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Former Members</h2>
+      <div class="grid grid-3" id="former-party"></div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Companions</h2>
+      <div class="grid grid-3" id="companions"></div>
+    </section>
+  </div>
+
+  <script>
+    const partyData = {
+      active: [
+        { name: 'Semaj', class: 'Sorcerer 3', level: 3, hp: 17, ac: 14, page: 'semaj.html', player: 'Richard' },
+        { name: 'Kaelia', class: 'Sorcerer 3', level: 3, hp: 20, ac: 12, page: 'kaelia.html', player: 'Jen' },
+        { name: 'Beldan', class: 'Fighter 3', level: 3, hp: 28, ac: 16, page: 'beldan.html', player: 'Sean' },
+        { name: 'Valrex', class: 'Cleric 3', level: 3, hp: 24, ac: 18, page: 'valrex.html', player: 'Player' },
+        { name: 'Aster', class: 'Druid 3', level: 3, hp: 21, ac: 14, page: 'aster.html', player: 'Player' }
+      ],
+      former: [
+        { name: 'Ekran', class: 'Rogue 2', level: 2, hp: '—', ac: '—', page: 'ekran.html', player: 'James', note: 'Left Session 8' }
+      ],
+      companions: [
+        { name: 'Larry', class: 'Wolf Companion', level: '—', hp: 11, ac: 13, page: 'larry.html', note: 'Best boy' }
+      ]
+    };
+
+    function renderCharacterCard(char, isDeparted = false) {
+      return `
+        <a href="${char.page}" class="character-card ${isDeparted ? 'departed' : ''}">
+          <h3 class="character-name">
+            ${char.name}
+            ${isDeparted ? '<span class="departed-badge">⚠</span>' : ''}
+          </h3>
+          <p class="character-class">${char.class}${char.note ? ` (${char.note})` : ''}</p>
+          <div class="character-stats">
+            <div class="stat">
+              <div class="stat-label">Level</div>
+              <div class="stat-value">${char.level}</div>
+            </div>
+            <div class="stat">
+              <div class="stat-label">HP</div>
+              <div class="stat-value">${char.hp}</div>
+            </div>
+            <div class="stat">
+              <div class="stat-label">AC</div>
+              <div class="stat-value">${char.ac}</div>
+            </div>
+          </div>
+        </a>
+      `;
+    }
+
+    // Render active party
+    document.getElementById('active-party').innerHTML = 
+      partyData.active.map(char => renderCharacterCard(char)).join('');
+
+    // Render former members
+    document.getElementById('former-party').innerHTML = 
+      partyData.former.map(char => renderCharacterCard(char, true)).join('');
+
+    // Render companions
+    document.getElementById('companions').innerHTML = 
+      partyData.companions.map(char => renderCharacterCard(char)).join('');
+  </script>
+  <script src="nav.js"></script>
+  <script>initNav('characters');</script>
+</body>
+</html>

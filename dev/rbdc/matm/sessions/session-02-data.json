@@ -1,0 +1,4473 @@
+{
+  "session_number": 2,
+  "title": "Session 2",
+  "date": "Unknown",
+  "summary": "",
+  "quotes": [
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "So, last session was our first ever session. And this is a question that I usually ask all my players. Who remembers what happened last time on D&D? We'll save Richard for last, because we know he wrote a novel, but...",
+      "context": "Jen/Kailea: I love it....",
+      "line_number": 13,
+      "category": "meta"
+    },
+    {
+      "speaker": "Sean/Belden",
+      "character": "Sean/Belden",
+      "text": "Yeah, I was just going to start reading his post.",
+      "context": "",
+      "line_number": 18,
+      "category": "meta"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "All right, without reading, let me hear from you all and what you remember. What was the highlights? What are some of the things that stood out for you?",
+      "context": "Sean/Belden: Yeah, I was just going to start reading his post....",
+      "line_number": 21,
+      "category": "meta"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "We were collecting supplies for a little trip, and we got ambushed by many, many, many rats.",
+      "context": "Alex/GM/NPCs: You got eaten up there....",
+      "line_number": 30,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "Many rats. Many, many rats. What is a group of rats called again?",
+      "context": "James/Ekran: We were collecting supplies for a little trip, and we got ambushed by many, many, many rats....",
+      "line_number": 33,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "A swarm? It's about a rat king? They're all tied up by the tails.",
+      "context": "Jen/Kailea: Many rats. Many, many rats. What is a group of rats called again?...",
+      "line_number": 36,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "What were they called again?",
+      "context": "Richard/Semaj: A swarm? It's about a rat king? They're all tied up by the tails....",
+      "line_number": 39,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "I set lots of things on fire.",
+      "context": "James/Ekran: What were they called again?...",
+      "line_number": 42,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "Belden does not know how to roll. Poor guy.",
+      "context": "Alex/GM/NPCs: Yeah, I know what you're talking about....",
+      "line_number": 48,
+      "category": "meta"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "I have a quick question.",
+      "context": "",
+      "line_number": 78,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "Does the time between sessions count as a long rest, or are we immediately starting, like, do our spells and everything reset, or are we starting from, like, the battle's over, there's no rest?",
+      "context": "Jen/Kailea: Sure....",
+      "line_number": 84,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "So, are you embarrassed right now? What is going through your mind?",
+      "context": "Sean/Belden: Exactly. Stupid floor....",
+      "line_number": 108,
+      "category": "meta"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "Sorry, Ekran. I keep saying Ekron. Sorry, Ekran. After that battle, I'm just kind of, like, wipe the sweat off my forehead and check myself. Maybe I have, like, a scratch or bite on my leg. I'm like, ah, I'm gonna maybe need to get some kind of rabies elixir after this, just in case.",
+      "context": "Alex/GM/NPCs: Ekron....",
+      "line_number": 131,
+      "category": "meta"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "Okay. I'm like, I don't want whatever they had. All right.",
+      "context": "Alex/GM/NPCs: Okay. So, you're worried that these might be diseased rats in here....",
+      "line_number": 137,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "Let's go ahead and hear from Kylia. What is going through your mind?",
+      "context": "James/Ekran: Okay. I'm like, I don't want whatever they had. All right....",
+      "line_number": 140,
+      "category": "meta"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "So, she is just absolutely exhausted. Like, you know, she took back all the flames and put them out. Pretty sure she has, like, two hit points left. Like, she's happy they're dead, but she's kind of mad that she's not in the best condition and exhausted and just, like, turned off. She's, like, done.",
+      "context": "Alex/GM/NPCs: Let's go ahead and hear from Kylia. What is going through your mind?...",
+      "line_number": 143,
+      "category": "funny"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "At least not without dinner first.",
+      "context": "Alex/GM/NPCs: Okay. So, definitely wasn't expecting to get your leg ravished by a swarm of rats and a little bit f...",
+      "line_number": 151,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "All right. I can relate.",
+      "context": "Jen/Kailea: Right? So rude....",
+      "line_number": 160,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "Okay. So, you're kind of worried that maybe the reason you missed was because of the shoddy workmanship of this crossbow that you had.",
+      "context": "",
+      "line_number": 172,
+      "category": "meta"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "Okay. All right. So, I'm going to pass it now off to you. Do you say anything after the battle?",
+      "context": "Richard/Semaj: Correct....",
+      "line_number": 178,
+      "category": "meta"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "I'm going to be like, the little runt that let us in here is definitely going to be paying for our services. I mean, we did a big favor for him here, didn't we?",
+      "context": "Sean/Belden: Well, that was easy....",
+      "line_number": 186,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "That's what I would say, Ekren. We should be well compensated for our efforts here. I agree.",
+      "context": "",
+      "line_number": 189,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "Sorry, quick question. I'm only seeing boxes. I'm not seeing like the background. Is that anybody else, or is that just me?",
+      "context": "",
+      "line_number": 197,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "I was zoomed in pretty close to my character, but. Okay, gotcha. I also had to disconnect my VPN.",
+      "context": "",
+      "line_number": 208,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "Ah, gotcha, gotcha. So, Samaj, you start investigating the room. Is that it?",
+      "context": "Jen/Kailea: I was zoomed in pretty close to my character, but. Okay, gotcha. I also had to disconnect my VPN....",
+      "line_number": 211,
+      "category": "meta"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "Yeah, yeah. That's what I was going to do. I was going to say, well, since we're in here, and since most of the stuff that we see has obviously been attacked by the mice, we should probably look around just in the name of making sure there are no more rat swarms.",
+      "context": "Alex/GM/NPCs: Ah, gotcha, gotcha. So, Samaj, you start investigating the room. Is that it?...",
+      "line_number": 214,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "Looking through all this stuff, I'm also like, which stuff was ours? Like, do we have to worry about our stuff being chewed through?",
+      "context": "",
+      "line_number": 217,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "All right. Investigation. How do I do it? How do I do an investigation check? So, double click on your character. Yep, there.",
+      "context": "Alex/GM/NPCs: So, first, Samaj, let's go ahead and get an investigation check real quick from you....",
+      "line_number": 223,
+      "category": "meta"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "And then on the details tab. Yeah, so if you see the tabs on the side, the little clock one, there's going to be investigation in the middle where you see skills. You can click the investigation and then hit just roll.",
+      "context": "Richard/Semaj: All right. Investigation. How do I do it? How do I do an investigation check? So, double click on yo...",
+      "line_number": 228,
+      "category": "dramatic"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "There it is. Perfect. Thanks. Okay. 11.",
+      "context": "",
+      "line_number": 231,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "All right. Can I check the door for traps?",
+      "context": "",
+      "line_number": 245,
+      "category": "meta"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "Sure. Absolutely. So you're investigating this door up here at the top, I'm guessing, right?",
+      "context": "Richard/Semaj: All right. Can I check the door for traps?...",
+      "line_number": 248,
+      "category": "meta"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "Correct. Yeah, the one I'm next to.",
+      "context": "Alex/GM/NPCs: Sure. Absolutely. So you're investigating this door up here at the top, I'm guessing, right?...",
+      "line_number": 251,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "All right. Go ahead and roll me a perception check. Now, Ekren, what was it that you were looking to do?",
+      "context": "Richard/Semaj: Correct. Yeah, the one I'm next to....",
+      "line_number": 254,
+      "category": "meta"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "I was just trying to see what I'll, like, kind of inspecting what's here and trying to see what wasn't chewed through.",
+      "context": "Alex/GM/NPCs: All right. Go ahead and roll me a perception check. Now, Ekren, what was it that you were looking to...",
+      "line_number": 257,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "Okay, I'm just going to make my way around here unless there's a door in the back. I'd also like to search for things.",
+      "context": "",
+      "line_number": 271,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "And you want me to roll another check on this this door back here?",
+      "context": "Alex/GM/NPCs: Okay, all right. Go ahead and roll me an investigation check, please....",
+      "line_number": 277,
+      "category": "meta"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "That's perception, right?",
+      "context": "Alex/GM/NPCs: Yes. Yes, please....",
+      "line_number": 283,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "I will. I don't remember how you said to do it, though.",
+      "context": "",
+      "line_number": 297,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "Okay, go ahead and double click on your character. And if you see on the details tab, so on the top right, there's gonna be a little cog wheel. And then where you see skills.",
+      "context": "Jen/Kailea: I will. I don't remember how you said to do it, though....",
+      "line_number": 300,
+      "category": "dramatic"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "So I have my character sheet open. Is that what you mean?",
+      "context": "Jen/Kailea: Good....",
+      "line_number": 306,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "Also, I cast healing word on Kylia.",
+      "context": "Alex/GM/NPCs: So go ahead and click investigation. Okay. So 11 seems to be the investigation for everyone....",
+      "line_number": 322,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "Okay. What word do you use to heal Kylia with?",
+      "context": "Richard/Semaj: Also, I cast healing word on Kylia....",
+      "line_number": 325,
+      "category": "meta"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "And Samaj, what is you should get a plus to your healing word. Um, let's see. Because it for some reason doesn't doesn't want to do that.",
+      "context": "Richard/Semaj: You look like crap....",
+      "line_number": 331,
+      "category": "meta"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "Plus two. So that's going to be a five healing altogether, right? Okay.",
+      "context": "Richard/Semaj: Plus two....",
+      "line_number": 337,
+      "category": "meta"
+    },
+    {
+      "speaker": "Sean/Belden",
+      "character": "Sean/Belden",
+      "text": "It's like you have to run the whole sentence together to make it one word. Yeah. What's your healing word?",
+      "context": "Alex/GM/NPCs: Plus two. So that's going to be a five healing altogether, right? Okay....",
+      "line_number": 340,
+      "category": "meta"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "So Kylia, as he says these words, you feel the wounds start to close up on your leg and walking seems to be a little bit easier now.",
+      "context": "Sean/Belden: It's like you have to run the whole sentence together to make it one word. Yeah. What's your healing...",
+      "line_number": 343,
+      "category": "meta"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "You look less like crap. Yeah, I was about to say that. I was going to say you look less like crap.",
+      "context": "Alex/GM/NPCs: So Kylia, as he says these words, you feel the wounds start to close up on your leg and walking seem...",
+      "line_number": 346,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "And then I walk away. I was trying to look at whatever. Hmm. I thought I had something active that like hurts people if they do anything to me. Touch me. It's just a touch.",
+      "context": "Richard/Semaj: You look less like crap. Yeah, I was about to say that. I was going to say you look less like crap....",
+      "line_number": 349,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "Okay, just I was like trying to scroll back up and find it because I remember thinking at the end of the last session, don't touch me.",
+      "context": "",
+      "line_number": 362,
+      "category": "meta"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "I go up to Samaj. I'm like, do you happen to have one of those spells for infections? Um, um, let me see.",
+      "context": "Jen/Kailea: Okay, just I was like trying to scroll back up and find it because I remember thinking at the end of...",
+      "line_number": 365,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "All right, so we've had an investigation from Samaj. We've had an investigation from Belden. Ekren, would you like to investigate the room as well?",
+      "context": "Jen/Kailea: That is your word....",
+      "line_number": 374,
+      "category": "meta"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "Yeah, I'll give it a shot. See if I get an 11.",
+      "context": "Alex/GM/NPCs: All right, so we've had an investigation from Samaj. We've had an investigation from Belden. Ekren, ...",
+      "line_number": 377,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "Does healing word heal infections?",
+      "context": "James/Ekran: Yeah, I'll give it a shot. See if I get an 11....",
+      "line_number": 380,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "Uh, it wouldn't necessarily heal an infection.",
+      "context": "Richard/Semaj: Does healing word heal infections?...",
+      "line_number": 383,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "They're just like, you guys got it.",
+      "context": "",
+      "line_number": 393,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "I, I'm going to grab him like by what is wearing like a tunic or something like a little tunic. Yes, I'm going to grab him by a tunic and then just kind of like put him, bring him back in here and set up on these boxes. Like sitting, sitting on those boxes.",
+      "context": "",
+      "line_number": 408,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "Oh, uh, uh, okay. Um, thank you. Uh, uh, as he, you sit him down on this box and I just tell him to stay here for a moment.",
+      "context": "",
+      "line_number": 411,
+      "category": "dramatic"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "Oh, okay. Well, um, okay.",
+      "context": "Alex/GM/NPCs: Oh, uh, uh, okay. Um, thank you. Uh, uh, as he, you sit him down on this box and I just tell him to ...",
+      "line_number": 414,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "He seems like fumbling with his words. Yeah, I'm gonna grab Belden and just tell him like, you know, to keep an eye on them real quick while we continue to look around.",
+      "context": "Jen/Kailea: Oh, okay. Well, um, okay....",
+      "line_number": 417,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "Just a little, just a little guy. Nope. No problem.",
+      "context": "Sean/Belden: Okay. You got it....",
+      "line_number": 423,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "So you set him down. He's kind of looking at you very nervously. Like, um, so, uh, um, thank you. Truly. You've taken care of me. Me rat problem. He's kind of like forcing a, like a shaky grand knees. He's trying to appear a little bit more confident than he feels.",
+      "context": "Richard/Semaj: Just a little, just a little guy. Nope. No problem....",
+      "line_number": 426,
+      "category": "dramatic"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "I want to walk up to him and be like, you know, we performed a pretty valuable service for you. It seems here. Normally people would be greatly compensated for this kind of work.",
+      "context": "",
+      "line_number": 433,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "I turned to Simaj and say, revive the rats. You got it. I'll be right back.",
+      "context": "",
+      "line_number": 443,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "No, no. I'll pay more. Uh, you see him take out five more gold and he's going to put it back in, into, uh, Belden's hand this time. Uh, 10 gold.",
+      "context": "Richard/Semaj: I turned to Simaj and say, revive the rats. You got it. I'll be right back....",
+      "line_number": 446,
+      "category": "meta"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "See, I was like, remember how much, how scared you were of those rats? I assure you were much scarier than those rats.",
+      "context": "",
+      "line_number": 461,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "Oh, uh, okay. Um, I'm going to step in and, and be like, um, you know, gold isn't gold. Isn't the only form of payment. Um, ask him if there's like anything else that he thinks we should know as we continue on our journey.",
+      "context": "James/Ekran: See, I was like, remember how much, how scared you were of those rats? I assure you were much scarie...",
+      "line_number": 464,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "Uh, what kind of stuff are you looking to know? I'm adding five gold to each of your inventory right now, by the way.",
+      "context": "",
+      "line_number": 469,
+      "category": "meta"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "Thank you. Thank you.",
+      "context": "Alex/GM/NPCs: Uh, what kind of stuff are you looking to know? I'm adding five gold to each of your inventory right...",
+      "line_number": 472,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "I don't know, guys. What do we want to know?",
+      "context": "Richard/Semaj: Thank you. Thank you....",
+      "line_number": 475,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "Um, we're, so we're, we're, um, we were going south and I remember, um, there were bandits along the way or something along the lines of that.",
+      "context": "Jen/Kailea: I don't know, guys. What do we want to know?...",
+      "line_number": 478,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "So, um, I want to know why he's still so nervous.",
+      "context": "Richard/Semaj: Um, we're, so we're, we're, um, we were going south and I remember, um, there were bandits along the...",
+      "line_number": 481,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "Maybe it's just because he's a gnome.",
+      "context": "Richard/Semaj: Yeah....",
+      "line_number": 487,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "Can I do like an insight check into like why he's so nervous? Is that possible?",
+      "context": "Jen/Kailea: Maybe it's just because he's a gnome....",
+      "line_number": 490,
+      "category": "meta"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "Can you glean that kind of information from it?",
+      "context": "Jen/Kailea: Uh, yeah, sure....",
+      "line_number": 496,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "Or like persuasion. I could, I could do a persuasion as, as I'm saying that to him. I don't know. I don't know what I'm doing.",
+      "context": "Alex/GM/NPCs: Yeah. Go ahead and roll me an insight check....",
+      "line_number": 502,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "But, uh, you get the idea that, uh, I mean, you could, you get the idea that he's just probably embarrassed at this point.",
+      "context": "Richard/Semaj: Fair enough....",
+      "line_number": 521,
+      "category": "meta"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "So we were here to get supplies, were we not? Yes. So where are our supplies? That's what I'm asking him.",
+      "context": "Alex/GM/NPCs: But, uh, you get the idea that, uh, I mean, you could, you get the idea that he's just probably emba...",
+      "line_number": 524,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "Uh, okay. So, um, he, uh, he's going to look up and, uh, so you just ask him where Gunder and supplies are.",
+      "context": "Richard/Semaj: So we were here to get supplies, were we not? Yes. So where are our supplies? That's what I'm asking...",
+      "line_number": 529,
+      "category": "meta"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "Yeah. Yeah. Yeah. I'm going to turn them into say, well, we took care of the rats. Now let's, now let's, uh, get what we came here for. Where are guys from supplies?",
+      "context": "Alex/GM/NPCs: Uh, okay. So, um, he, uh, he's going to look up and, uh, so you just ask him where Gunder and suppli...",
+      "line_number": 532,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "I'd say maybe discretion would be an additional fee.",
+      "context": "Sean/Belden: And, uh, I don't see any rats in here....",
+      "line_number": 555,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "I moved to the door to help keep an eye on.",
+      "context": "Richard/Semaj: A perception check. Okay....",
+      "line_number": 576,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "Um, I'll be right back. Okay.",
+      "context": "",
+      "line_number": 597,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "I, I have the, I have the flute in my hands. I'm like looking at it. I'm like ironic. Uh, I'm like, I, I just take it. I'm like, this might be worth something or have some sort of value. It's a, it was a pleasure doing business with you.",
+      "context": "Richard/Semaj: Are you Pied Piper?...",
+      "line_number": 609,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "Then we'll be on our way.",
+      "context": "",
+      "line_number": 621,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "I'm going to, um, basically have these, uh, the ox like turned around. Okay. So to make it easier to load, so it's, I guess, I think we're in a corner, right? Aren't we in the corner of the town?",
+      "context": "",
+      "line_number": 627,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "Yeah. And, uh, I think I, plus I think I still have a, uh, advantage on animal handling. Oh, oh yeah.",
+      "context": "Alex/GM/NPCs: Uh, no, no 30 per 30 point turn on this one....",
+      "line_number": 643,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "I'm still not seeing the background this whole time. I tried loading in edge and in Chrome. I don't know what's wrong with my screen, but Do you have Firefox?",
+      "context": "",
+      "line_number": 660,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "Cause mine's working on Firefox. Mine's working in Brave, which is Chrome.",
+      "context": "",
+      "line_number": 663,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "Hey, but you can see your character though, right?",
+      "context": "Richard/Semaj: Cause mine's working on Firefox. Mine's working in Brave, which is Chrome....",
+      "line_number": 666,
+      "category": "meta"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "Look at the side chat. We can see what she sees.",
+      "context": "Alex/GM/NPCs: Hey, but you can see your character though, right?...",
+      "line_number": 669,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "Yeah. I posted a screenshot. Like I can see all the characters and stuff. I just can't see the background image. I just see gray blocks. That's, I don't know if it's going to be relevant, but That's so weird.",
+      "context": "Richard/Semaj: Look at the side chat. We can see what she sees....",
+      "line_number": 672,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "I also don't know where everybody else's character tokens are anymore now.",
+      "context": "Alex/GM/NPCs: Hmm....",
+      "line_number": 680,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "Oh, I think, I think it's because, uh, they're underneath this, uh, under the ox cart. Yeah.",
+      "context": "Jen/Kailea: I also don't know where everybody else's character tokens are anymore now....",
+      "line_number": 683,
+      "category": "meta"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "Have you tried logging out and logging back in?",
+      "context": "Alex/GM/NPCs: Oh, I think, I think it's because, uh, they're underneath this, uh, under the ox cart. Yeah....",
+      "line_number": 686,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "I could switch to my other computer, but What, um, I guess it, are you on a laptop or is this on a desktop?",
+      "context": "Jen/Kailea: Multiple times and loading in different browsers....",
+      "line_number": 692,
+      "category": "meta"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "Yeah. I'm on my work laptop right now. It's a think pad.",
+      "context": "Alex/GM/NPCs: I could switch to my other computer, but What, um, I guess it, are you on a laptop or is this on a d...",
+      "line_number": 695,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "Oh, maybe they might have certain things blocked to where you can't see.",
+      "context": "Jen/Kailea: Yeah. I'm on my work laptop right now. It's a think pad....",
+      "line_number": 698,
+      "category": "meta"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "Um, no, I played on my work computer last time. Um, and didn't have this problem, but I'll, I'll fire up my desktop. Sorry. I don't mean to like, no, no, you're good.",
+      "context": "Alex/GM/NPCs: Oh, maybe they might have certain things blocked to where you can't see....",
+      "line_number": 701,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "Uh, yeah. I mean, you're a pain in the butt way to go. Half the, uh, fun killer, half the stuff. I mean, I've set up all this so we can actually see the map and playing, you know? Um, that's weird. Uh, yeah. Let me know when you get the computer fired up and if it's doing the same thing on there.",
+      "context": "",
+      "line_number": 706,
+      "category": "dramatic"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "Huh? That is weird. And it's just like one image that it's not, that it's not everything else is loading.",
+      "context": "Jen/Kailea: Okay....",
+      "line_number": 716,
+      "category": "meta"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "It's just not loading the background image.",
+      "context": "Alex/GM/NPCs: Huh? That is weird. And it's just like one image that it's not, that it's not everything else is loa...",
+      "line_number": 719,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "That's, that's odd. Huh? Um, yeah, that is, that is kind of odd there. Um, okay. So, uh, Ekren, uh, did you, did you see the, the flute that you have in your inventory? Have you read that yet?",
+      "context": "Jen/Kailea: It's just not loading the background image....",
+      "line_number": 722,
+      "category": "meta"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "Um, I haven't read it yet. Let's see.",
+      "context": "",
+      "line_number": 727,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "So, uh, do you have any kind of proficiency in musical instruments?",
+      "context": "James/Ekran: Nice....",
+      "line_number": 739,
+      "category": "meta"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "Not that I can remember. Let me see. Would that just be under details?",
+      "context": "Alex/GM/NPCs: So, uh, do you have any kind of proficiency in musical instruments?...",
+      "line_number": 742,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "Okay. I think just, I'm not really practicing with it or anything, but sitting in the back of the card, I'm looking at it, like looking at the art and like testing out like one or two notes. Okay. Yeah.",
+      "context": "",
+      "line_number": 750,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "I guess we, um, do we, so we have all the supplies we need for the journey as well as what we're taking down there. Correct.",
+      "context": "",
+      "line_number": 760,
+      "category": "dramatic"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "All right. Um, is there like a magic shop in town or something? Um, something like where you could like get like wands or, or like spells, scrolls, that kind of thing.",
+      "context": "",
+      "line_number": 766,
+      "category": "meta"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "Yeah. I mean, you would imagine there is a magic shop. Um, you haven't seen one yet.",
+      "context": "",
+      "line_number": 769,
+      "category": "meta"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "Okay. Um, are we near like a, like a, a, a, a city watch or anybody around that, that I can see?",
+      "context": "Alex/GM/NPCs: Yeah. I mean, you would imagine there is a magic shop. Um, you haven't seen one yet....",
+      "line_number": 772,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "Uh, you don't see anyone immediately on the street. No.",
+      "context": "Richard/Semaj: Okay. Um, are we near like a, like a, a, a, a city watch or anybody around that, that I can see?...",
+      "line_number": 775,
+      "category": "meta"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "Um, if that, if that's okay with everyone else, I'd like to head towards the shop. Um, so we can kind of get some, um, maybe tools or armor or something before we head out, before you hit it on the road.",
+      "context": "",
+      "line_number": 784,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "Sure. Do, do we still have to pick up the stuff from the bakery and the butcher or do we get everything?",
+      "context": "",
+      "line_number": 787,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "Like a couple of other things we need to pick up, right?",
+      "context": "James/Ekran: Sure. Do, do we still have to pick up the stuff from the bakery and the butcher or do we get everyth...",
+      "line_number": 790,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "So you still have a few, few items left on Gundren's list as well.",
+      "context": "James/Ekran: Yeah....",
+      "line_number": 796,
+      "category": "meta"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "Um, well, I guess we can go do that first since we might need to, I guess, pool money together or something. Um, cause otherwise I guess they split up, but okay. We can do one of those first. Let's go to the baker first.",
+      "context": "Jen/Kailea: All right....",
+      "line_number": 805,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "Okay. All right. Where do you all head?",
+      "context": "",
+      "line_number": 810,
+      "category": "meta"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "Uh, you said, uh, town squares to the North.",
+      "context": "Alex/GM/NPCs: Okay. All right. Where do you all head?...",
+      "line_number": 813,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "Let's go ahead that way.",
+      "context": "Alex/GM/NPCs: Yep....",
+      "line_number": 819,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "I was going to say, I could stream mine too, if you need me to.",
+      "context": "",
+      "line_number": 831,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "Um, so I can stream this one right now. So that way you can see kind of where, uh, where everyone is at the moment.",
+      "context": "Richard/Semaj: I was going to say, I could stream mine too, if you need me to....",
+      "line_number": 834,
+      "category": "meta"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "So you start, you start taking the good mode, uh, trying to repair desk errors. So I'm going to switch back to my work computer.",
+      "context": "Alex/GM/NPCs: Okay....",
+      "line_number": 843,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "Ouch. Okay. Um, sorry. No, no, it's good. Um, that is, that is, uh, a shame. Maybe that's a fun, maybe. So we tried edge and you tried Chrome, right?",
+      "context": "Jen/Kailea: So you start, you start taking the good mode, uh, trying to repair desk errors. So I'm going to swit...",
+      "line_number": 846,
+      "category": "meta"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "Yeah. Those are the things that I have on my work computer and I can't install new programs without an admin.",
+      "context": "Alex/GM/NPCs: Ouch. Okay. Um, sorry. No, no, it's good. Um, that is, that is, uh, a shame. Maybe that's a fun, may...",
+      "line_number": 853,
+      "category": "funny"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "So gotcha. Gotcha. Okay. Sorry. I wonder why it's not letting you do that or it's not showing that, but it was showing before, right?",
+      "context": "Jen/Kailea: Yeah. Those are the things that I have on my work computer and I can't install new programs without ...",
+      "line_number": 856,
+      "category": "meta"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "It was, it showed during the last session. So I don't, I disconnected from our VPN thinking maybe it was that, but that didn't fix it either.",
+      "context": "Alex/GM/NPCs: So gotcha. Gotcha. Okay. Sorry. I wonder why it's not letting you do that or it's not showing that, ...",
+      "line_number": 861,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "And also you can try incognito mode.",
+      "context": "",
+      "line_number": 870,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "What if you close the screen?",
+      "context": "",
+      "line_number": 883,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "Like I did. Yeah. I just didn't.",
+      "context": "Richard/Semaj: What if you close the screen?...",
+      "line_number": 886,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "This is windows 11, I think. Yeah. Um, check to see like it says it's 1920 by 10 80.",
+      "context": "",
+      "line_number": 895,
+      "category": "meta"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "Sorry. I just switched back to my headset. What did you say?",
+      "context": "",
+      "line_number": 903,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "And James, look in the just chat. Um, I still, I still have those things.",
+      "context": "",
+      "line_number": 913,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "I remember that shirt too. Yeah. I remember when you were shorter than me.",
+      "context": "Richard/Semaj: And James, look in the just chat. Um, I still, I still have those things....",
+      "line_number": 916,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "You want to share your screen?",
+      "context": "Jen/Kailea: It's loading....",
+      "line_number": 922,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "You did. Okay. Let's take a look. All right. Um, so it's not working for you.",
+      "context": "Jen/Kailea: I did....",
+      "line_number": 928,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "Okay. Um, all right. I see you back in. Is it finished loading?",
+      "context": "",
+      "line_number": 941,
+      "category": "meta"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "Yeah, I'm sharing my screen. It, it's not showing that.",
+      "context": "Alex/GM/NPCs: Okay. Um, all right. I see you back in. Is it finished loading?...",
+      "line_number": 946,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "Miss on the side chat. Uh, put that in there.",
+      "context": "Jen/Kailea: Yeah, I'm sharing my screen. It, it's not showing that....",
+      "line_number": 949,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "Do you have any kind of security?",
+      "context": "Jen/Kailea: Hey, one second....",
+      "line_number": 955,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "That is likely from our work.",
+      "context": "James/Ekran: Do you have any kind of security?...",
+      "line_number": 958,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "That'd be so weird because transfer.",
+      "context": "Richard/Semaj: That is likely from our work....",
+      "line_number": 961,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "Did you try what I said?",
+      "context": "James/Ekran: That'd be so weird because transfer....",
+      "line_number": 964,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "It worked last time.",
+      "context": "Richard/Semaj: Did you try what I said?...",
+      "line_number": 967,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "Am I supposed to search that?",
+      "context": "Richard/Semaj: So I checked....",
+      "line_number": 973,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "Yeah. So no, no, no, no. If you like in the, in Chrome, in the address bar, you put Chrome colon forward slash forward slash flags.",
+      "context": "Jen/Kailea: Am I supposed to search that?...",
+      "line_number": 976,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "And then once that comes up there, then there's a search inside that you can search for override software rendering list. You're going to want to name, and then you're going to want to enable that.",
+      "context": "Jen/Kailea: Yeah....",
+      "line_number": 982,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "Yeah. On my work computer. Cause it's the only way I can.",
+      "context": "Alex/GM/NPCs: You have a, you do discord in a browser?...",
+      "line_number": 1006,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "Gotcha. Yeah. I forgot about that. Freaking work computers. Oh no.",
+      "context": "Jen/Kailea: Yeah. On my work computer. Cause it's the only way I can....",
+      "line_number": 1009,
+      "category": "meta"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "Well, we got Mario lockers last year, so everything is locked down. I'm surprised I can even get to these websites. If I'm honest.",
+      "context": "Jen/Kailea: darn....",
+      "line_number": 1020,
+      "category": "dramatic"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "And somewhere. On our whole three days. Dang.",
+      "context": "Alex/GM/NPCs: We'll have to, I'll have to find out about that one later....",
+      "line_number": 1032,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "Did that work? Nope.",
+      "context": "Jen/Kailea: And somewhere. On our whole three days. Dang....",
+      "line_number": 1035,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "Oh, sorry. I forgot. I'm not sharing my screen anymore. Let's see.",
+      "context": "Richard/Semaj: Did that work? Nope....",
+      "line_number": 1038,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "Your web cheap. Oh, 2.0 might not be enabled. Please see the performance issue guide.",
+      "context": "Jen/Kailea: Oh, sorry. I forgot. I'm not sharing my screen anymore. Let's see....",
+      "line_number": 1043,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "I mean, is it really going to affect the, like, are there things on the back? That background that I'm going to need to see to be able to play?",
+      "context": "Alex/GM/NPCs: Maybe, maybe I can disable some modules....",
+      "line_number": 1049,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "Because if I really, I mean, yeah, I mean, it's just, it, it's going to be you, as long as you can see the tokens, I think that's fine.",
+      "context": "Jen/Kailea: I mean, is it really going to affect the, like, are there things on the back? That background that I...",
+      "line_number": 1052,
+      "category": "meta"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "I'd say let's just go. I don't want to hold everything up. And if you don't mind, like continuing to stream, then I'm fine with that. I can just like reference the stream and then I'll hopefully my windows will repair, install, and I can play on my personal computer next time.",
+      "context": "Alex/GM/NPCs: Yeah....",
+      "line_number": 1061,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "Um, sorry, I didn't, I didn't mean to like bring this thing to a halt.",
+      "context": "Alex/GM/NPCs: Um, let's, let me do, let me do this. Um, I'm gonna, I'm gonna turn off a few things....",
+      "line_number": 1072,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "Um, I'm going to keep going straight past the fountain.",
+      "context": "Alex/GM/NPCs: Oh, you're good. You're good....",
+      "line_number": 1078,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "All right. Let's see if I reload. Oh, I was gonna say, uh, keep, keep your stream going real quick. I just want to check one thing.",
+      "context": "Richard/Semaj: Um, I'm going to keep going straight past the fountain....",
+      "line_number": 1081,
+      "category": "meta"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "The IT brain has kicked in. Yeah. Do you got some IT guys now? Like, all right, well, hold on.",
+      "context": "Speaker 6: Okay. One second. Let me turn it back on....",
+      "line_number": 1089,
+      "category": "meta"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "This is what happens when you play D&D with an IT brain. Yep.",
+      "context": "Richard/Semaj: Oh, no....",
+      "line_number": 1100,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Sean/Belden",
+      "character": "Sean/Belden",
+      "text": "Richard, you got something coming out of your head.",
+      "context": "Jen/Kailea: This is what happens when you play D&D with an IT brain. Yep....",
+      "line_number": 1103,
+      "category": "meta"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "It's green instead of orange.",
+      "context": "Sean/Belden: Richard, you got something coming out of your head....",
+      "line_number": 1106,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Sean/Belden",
+      "character": "Sean/Belden",
+      "text": "Did you, did you swallow a watermelon seed? They always told me about this.",
+      "context": "Richard/Semaj: Yeah....",
+      "line_number": 1112,
+      "category": "meta"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "Yeah, yeah. Unfortunately, I did.",
+      "context": "Sean/Belden: Did you, did you swallow a watermelon seed? They always told me about this....",
+      "line_number": 1115,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "Nope. I don't think it's going to let you. That's okay.",
+      "context": "Richard/Semaj: Yeah, yeah. Unfortunately, I did....",
+      "line_number": 1118,
+      "category": "meta"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "Sweetie, sweetie. It's so weird. Yeah, like, give me like 10 minutes to load back up.",
+      "context": "Alex/GM/NPCs: Nope. I don't think it's going to let you. That's okay....",
+      "line_number": 1121,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "It's going to take you, that should take you that long. It looks like Richard's in. Um, yeah, mine's not even loading up right now.",
+      "context": "Richard/Semaj: Sweetie, sweetie. It's so weird. Yeah, like, give me like 10 minutes to load back up....",
+      "line_number": 1124,
+      "category": "meta"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "Well, when I actually set up a server, I will probably get a Linux server then. All right, there it goes. Loads for me now.",
+      "context": "Sean/Belden: Uh-huh. Starts with an L. And well, and....",
+      "line_number": 1139,
+      "category": "meta"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "What, get a Linux server? I thought all, like, most of it's written in Linux.",
+      "context": "Jen/Kailea: Why? Why?...",
+      "line_number": 1148,
+      "category": "meta"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "No, I mean, like, why not just get like an Unraid server or something that you can just basically have Docker containers manage everything.",
+      "context": "Alex/GM/NPCs: What, get a Linux server? I thought all, like, most of it's written in Linux....",
+      "line_number": 1151,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "It must be because you're in Japan. Yeah. All right.",
+      "context": "Jen/Kailea: How dare you?...",
+      "line_number": 1175,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Sean/Belden",
+      "character": "Sean/Belden",
+      "text": "Yeah, so we're all 90s kids. I mean, I was born in the 80s. You were born in the 80s.",
+      "context": "Alex/GM/NPCs: So, uh......",
+      "line_number": 1190,
+      "category": "meta"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "I was born in the 80s. Yeah.",
+      "context": "Sean/Belden: Yeah, so we're all 90s kids. I mean, I was born in the 80s. You were born in the 80s....",
+      "line_number": 1193,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Sean/Belden",
+      "character": "Sean/Belden",
+      "text": "But you, you grow up, we, at least you and I, we grew up in the 90s. It still makes us a 90s kid. Yeah, I guess.",
+      "context": "Jen/Kailea: I was born in the 80s. Yeah....",
+      "line_number": 1196,
+      "category": "meta"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "So I'll just pull up, um, kind of like, I guess, um, right about, uh, here. Yeah, which one's me right about here. Maybe pull the thing apart.",
+      "context": "",
+      "line_number": 1212,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "Oh, you went way down.",
+      "context": "Richard/Semaj: Yeah....",
+      "line_number": 1221,
+      "category": "dramatic"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "Sorry. Wow. What the heck? I didn't do that. Come back. I don't care about the walls.",
+      "context": "Alex/GM/NPCs: Oh, you went way down....",
+      "line_number": 1224,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "Here I'll, I know that will bug Sean. So I'm going to, I'm going to just do this.",
+      "context": "Sean/Belden: The wheels are inside the, oh yeah....",
+      "line_number": 1232,
+      "category": "meta"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "It would drive me crazy.",
+      "context": "Sean/Belden: Don't drive me crazy....",
+      "line_number": 1238,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "Make sure you put it in park.",
+      "context": "Richard/Semaj: It would drive me crazy....",
+      "line_number": 1241,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "I'm not the one that had trouble. Remember?",
+      "context": "Jen/Kailea: Make sure you put it in park....",
+      "line_number": 1244,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Sean/Belden",
+      "character": "Sean/Belden",
+      "text": "I can't say anything. I can't say anything. You don't press the button. You just hear one of the hot dogs in the bird sitting on top of it.",
+      "context": "Richard/Semaj: I'm not the one that had trouble. Remember?...",
+      "line_number": 1247,
+      "category": "funny"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "Okay. So you park, uh, you park the wagon, um, and you see this, this shop called the bloody butcher shop. It's, um, it's a little quaint establishment here. It's nestled between, uh, the bustling market stalls right here. Uh, do you open the doors and enter?",
+      "context": "Sean/Belden: I can't say anything. I can't say anything. You don't press the button. You just hear one of the hot...",
+      "line_number": 1252,
+      "category": "meta"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "I'm going to stay on the cart.",
+      "context": "",
+      "line_number": 1257,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "That's a beautiful name.",
+      "context": "",
+      "line_number": 1267,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "I guess I take out the list and I point to the shop and I'm like, we're picking up for Gundren.",
+      "context": "",
+      "line_number": 1283,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "Uh, can I make, I guess maybe like an insight check to see why he might be asking?",
+      "context": "",
+      "line_number": 1295,
+      "category": "meta"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "Okay. I think just flippantly, I'll say like, I think he said something about starting a new diet.",
+      "context": "",
+      "line_number": 1309,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "So, um, how do I roll initiative again?",
+      "context": "",
+      "line_number": 1327,
+      "category": "meta"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "Night. Sorry. My daughter's going back to college.",
+      "context": "Alex/GM/NPCs: All right. So....",
+      "line_number": 1341,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "Oh, I don't know what that means.",
+      "context": "Alex/GM/NPCs: Okay....",
+      "line_number": 1347,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "Um, so. Hmm. Does persuasion only work on humanoids?",
+      "context": "",
+      "line_number": 1365,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "Okay. Um, I don't have very high animal handling. Um, so I am going to ask the butcher how he would like me to help first before I make any action.",
+      "context": "",
+      "line_number": 1371,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "Okay. And then, um, I'm just going to simply look at him and say, do you need them alive?",
+      "context": "",
+      "line_number": 1381,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "Yeah. If you see the, um, if you see what it looks like on the stream right here.",
+      "context": "",
+      "line_number": 1394,
+      "category": "meta"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "Okay. So, and then firebolt has 120 foot range. So I'm not even going to move. I'm going to stay on the cart.",
+      "context": "Alex/GM/NPCs: Yeah....",
+      "line_number": 1403,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "Um, and I'm going to cast a fireball.",
+      "context": "Jen/Kailea: Okay....",
+      "line_number": 1411,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "Um, I don't think I have, let's see. Okay. So I can cast healing word as a bonus action.",
+      "context": "",
+      "line_number": 1439,
+      "category": "meta"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "I think you may be out of spell slots though.",
+      "context": "Jen/Kailea: Um, I don't think I have, let's see. Okay. So I can cast healing word as a bonus action....",
+      "line_number": 1442,
+      "category": "meta"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "Yeah. Yeah. I think, uh, yeah, right now.",
+      "context": "Jen/Kailea: Oh, that's right....",
+      "line_number": 1448,
+      "category": "meta"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "Yeah. I think it's just, I don't have anything.",
+      "context": "Alex/GM/NPCs: Yeah. Yeah. I think, uh, yeah, right now....",
+      "line_number": 1451,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "Okay. First, I'm going to move out here so I can see what's going on. All right. Uh, I'm going to go ahead and take out my short bow. Um, do I need to equip it in here or is it?",
+      "context": "Alex/GM/NPCs: Okay. We are now going to go to Ekren. Ekren, it is your turn....",
+      "line_number": 1469,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "Oh, it's already equipped.",
+      "context": "Alex/GM/NPCs: Uh, let's see. It should be, let's see. Inventory short bow....",
+      "line_number": 1477,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "Okay. So I'm going to go ahead and take a shot at this boar. A all right.",
+      "context": "Alex/GM/NPCs: Yeah. It's already equipped. Yeah....",
+      "line_number": 1483,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "There you go. There we go.",
+      "context": "",
+      "line_number": 1489,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "Okay. Uh, I don't know if I have a bonus action, but, uh, I would like to move. Um, do, do I see anywhere where I have my remaining movement or does it automatically?",
+      "context": "",
+      "line_number": 1503,
+      "category": "meta"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "All right. So I'll move over here so I can see more.",
+      "context": "",
+      "line_number": 1513,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "And then I'll end my turn gone.",
+      "context": "Alex/GM/NPCs: Okay....",
+      "line_number": 1519,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "Uh, it's the 15. Yes, it hits. 15 is going to hit.",
+      "context": "",
+      "line_number": 1537,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Sean/Belden",
+      "character": "Sean/Belden",
+      "text": "God, doing this on trackpad sucks so much. Why would you have a trackpad? Uh, because I'm on laptop, and laptops have trackpads. That doesn't make sense. Okay, I'm going to run straight for this bore.",
+      "context": "Jen/Kailea: Okay, let's see....",
+      "line_number": 1550,
+      "category": "meta"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "Okay, you charge out of the bloody butcher shop here.",
+      "context": "",
+      "line_number": 1555,
+      "category": "meta"
+    },
+    {
+      "speaker": "Sean/Belden",
+      "character": "Sean/Belden",
+      "text": "God, come on. There we go. T. What? T. Why is it opening a new tab? You're holding control down. I'm not holding control down.",
+      "context": "Alex/GM/NPCs: Okay, you charge out of the bloody butcher shop here....",
+      "line_number": 1558,
+      "category": "dramatic"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "Oh, is the bore bigger than one cubic foot?",
+      "context": "Sean/Belden: Okay....",
+      "line_number": 1571,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "Come on, Borby. Let's go.",
+      "context": "Jen/Kailea: Borby....",
+      "line_number": 1595,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "All right. So, Belden, you take out your Warhammer, the one that just knocked Ekren down.",
+      "context": "Jen/Kailea: 40 Warhammers....",
+      "line_number": 1601,
+      "category": "dramatic"
+    },
+    {
+      "speaker": "Sean/Belden",
+      "character": "Sean/Belden",
+      "text": "Oh, did that show up in there now? It did. Okay, cool. Attack.",
+      "context": "Alex/GM/NPCs: All right. So, Belden, you take out your Warhammer, the one that just knocked Ekren down....",
+      "line_number": 1604,
+      "category": "meta"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "I'm going to cast Sacred Flame against Borby.",
+      "context": "Alex/GM/NPCs: All right. Samaj, it is your turn....",
+      "line_number": 1626,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "Okay. All right. Borby is going to make a dexterity saving throw. It is going to fail as this flame-like radiance just descends upon this bore. Doing four damage. Samaj, how would you like to describe this kill?",
+      "context": "Richard/Semaj: I'm going to cast Sacred Flame against Borby....",
+      "line_number": 1629,
+      "category": "dramatic"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "Well, after seeing what it did to Ekren and seeing Belden hit it, but it still being wounded and, I guess, going on to the next one, I didn't want it to go any further, so I just went, take care of it. All right. A little bit of flair.",
+      "context": "",
+      "line_number": 1634,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "Love it. Okay. That was your action. You still have some movement and a bonus action.",
+      "context": "",
+      "line_number": 1637,
+      "category": "meta"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "Um, so I would like to go over to Ekren and, um...",
+      "context": "Alex/GM/NPCs: Love it. Okay. That was your action. You still have some movement and a bonus action....",
+      "line_number": 1642,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "Wait, am I allowed to, like, talk to him while he's, during his turn?",
+      "context": "Richard/Semaj: Um, so I would like to go over to Ekren and, um......",
+      "line_number": 1645,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "Uh, so usually it's during your turn you get the free action to say something. Um, because it, this technically all kind of happens at one time.",
+      "context": "Jen/Kailea: Wait, am I allowed to, like, talk to him while he's, during his turn?...",
+      "line_number": 1648,
+      "category": "meta"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "And so, um, so I have healing word. Is that, that's an action, right? Or no, it's a bonus action, right?",
+      "context": "Sean/Belden: Like, it's six seconds that are going on....",
+      "line_number": 1654,
+      "category": "meta"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "You're right. Keep forgetting about the last battle.",
+      "context": "",
+      "line_number": 1660,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "So pretty much what you could do is, is on your next turn, you could use a medicine check to try and stabilize him, uh, since, since he is unconscious, technically in death saving throws right now.",
+      "context": "Richard/Semaj: I know....",
+      "line_number": 1669,
+      "category": "dramatic"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "Okay. All right. So you immediately go up to Ekren's aid as this boar just, um, bored him down. Sorry.",
+      "context": "James/Ekran: Right....",
+      "line_number": 1675,
+      "category": "dramatic"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "Did. All right. Uh, you're going to see Periwinkle run up to this boar right here and he's going to take out his cleavers and just start chopping at it thinking it's not all the way dead. Uh, as we now go to the top of the round, Kylia, it is your turn.",
+      "context": "Richard/Semaj: Bored him to death....",
+      "line_number": 1683,
+      "category": "funny"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "So was Samaj able to do anything for Ekren?",
+      "context": "Sean/Belden: This is no time to be cooking....",
+      "line_number": 1691,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "You just see him kind of kneel down next to him. So he cast this sacred, uh, sacred flame on it and then runs over to him. So that's basically what you saw. You haven't seen him perform anything on, on Ekren yet.",
+      "context": "Jen/Kailea: So was Samaj able to do anything for Ekren?...",
+      "line_number": 1694,
+      "category": "dramatic"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "Okay. And Ekren's at zero hit points?",
+      "context": "",
+      "line_number": 1699,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "He is at zero hit points. Um, so either like a spare the dying or a medicine check would stabilize him.",
+      "context": "Jen/Kailea: Okay. And Ekren's at zero hit points?...",
+      "line_number": 1702,
+      "category": "funny"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "Um, where are these other boars? Or is this boar away? That's a hundred feet. Um, so can I, I'm up on the cart.",
+      "context": "Alex/GM/NPCs: He is at zero hit points. Um, so either like a spare the dying or a medicine check would stabilize h...",
+      "line_number": 1705,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "Can I see board D? Yeah, absolutely. He's a hundred. So I'm going to cast, um, on board D. Whoa. What in the heck? I don't know what I just did. Okay. Hold on. Click target. So I am going to cast fireball on board D. All right.",
+      "context": "Alex/GM/NPCs: Yeah. If you can see it....",
+      "line_number": 1713,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "Uh, from downtown cause we're, we're in town. Uh, a, a 21 is going to hit. As.",
+      "context": "",
+      "line_number": 1722,
+      "category": "dramatic"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "Nice. All right. How many, how many mantle flames do you have? Is it just one during a long rest or is it two?",
+      "context": "Jen/Kailea: Ooh, nice....",
+      "line_number": 1728,
+      "category": "meta"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "Um, I don't remember where to see that.",
+      "context": "Alex/GM/NPCs: Nice. All right. How many, how many mantle flames do you have? Is it just one during a long rest or ...",
+      "line_number": 1733,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "I think it's one until she reached the fifth level.",
+      "context": "Jen/Kailea: Um, I don't remember where to see that....",
+      "line_number": 1736,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "Yeah. Mantle of flame. You can use this feature twice. Ah, you regain all uses after a long rest.",
+      "context": "Richard/Semaj: I think it's one until she reached the fifth level....",
+      "line_number": 1739,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "Um, I'll save it just cause these boards aren't super strong.",
+      "context": "",
+      "line_number": 1747,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "So far, I think we're okay. I'm hoping that's not a bad decision. Okay.",
+      "context": "Jen/Kailea: Okay. All right....",
+      "line_number": 1753,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "I'm going to stay here. I don't have very many hit points, so I don't want these boards to hit me.",
+      "context": "",
+      "line_number": 1763,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "I don't think boars are good at jumping or climbing, so.",
+      "context": "Sean/Belden: Ekren!...",
+      "line_number": 1775,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "But the rest, would it be private or blind?",
+      "context": "",
+      "line_number": 1791,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "Except you're streaming, so we're gonna know anyway.",
+      "context": "Alex/GM/NPCs: Uh, I'm sorry, a blind GM roll. Yep, you're, you're correct. Yep, blind GM roll. And then, uh, all r...",
+      "line_number": 1799,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "Well, I have, I have a, uh, I have two, two foundries, right? I have one as a spectator over here, and then one as a GM. So that way, you don't see all the GM stuff behind the screens.",
+      "context": "Jen/Kailea: Except you're streaming, so we're gonna know anyway....",
+      "line_number": 1802,
+      "category": "meta"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "Dodges out of the way of this boar as it continues to charge. We now go to Belden. It is your turn.",
+      "context": "Richard/Semaj: Um, backflip....",
+      "line_number": 1832,
+      "category": "meta"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "So if you see, if you go all the way to where it's the, yes, if you see where it goes red, that's where you can dash to.",
+      "context": "Sean/Belden: Okay, I'm going to dash. So one, two, three, four, five, six....",
+      "line_number": 1838,
+      "category": "meta"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "All right. You've run out into the square. You see this boar that just, uh, this old man kind of dodged out of the way of. You see a few people knocked down, bleeding out.",
+      "context": "Jen/Kailea: Yeah....",
+      "line_number": 1844,
+      "category": "dramatic"
+    },
+    {
+      "speaker": "Sean/Belden",
+      "character": "Sean/Belden",
+      "text": "Yeah, that's, that's it. That's all I can do.",
+      "context": "",
+      "line_number": 1849,
+      "category": "meta"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "Okay. Uh, you don't have any kind of throwing weapons. You have a crossbow.",
+      "context": "Sean/Belden: Yeah, that's, that's it. That's all I can do....",
+      "line_number": 1852,
+      "category": "meta"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "What? But you would have to use some of your movement, uh, to swap it out. So if you go back 10 feet, you can, uh, you can take out your crossbow.",
+      "context": "Sean/Belden: Oh, I do have a crossbow....",
+      "line_number": 1858,
+      "category": "meta"
+    },
+    {
+      "speaker": "Sean/Belden",
+      "character": "Sean/Belden",
+      "text": "No, that's okay. I use a hammer. Okay. I hammer things.",
+      "context": "Alex/GM/NPCs: What? But you would have to use some of your movement, uh, to swap it out. So if you go back 10 feet...",
+      "line_number": 1861,
+      "category": "meta"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "I thought, uh, Ekren was before me.",
+      "context": "Alex/GM/NPCs: Samaj, it is your turn....",
+      "line_number": 1869,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "Oh. It's either three successes or three failures to anything. Yeah. I just didn't know. Like, I didn't know. Like you don't know the, the, the pass or fail.",
+      "context": "Alex/GM/NPCs: Well, you're not supposed to know, but yes, he did....",
+      "line_number": 1881,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Sean/Belden",
+      "character": "Sean/Belden",
+      "text": "Well, you can heal him and stabilize him. Oh, yeah.",
+      "context": "",
+      "line_number": 1886,
+      "category": "dramatic"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "Yeah, I'm out of anything. I'm out of anything.",
+      "context": "Alex/GM/NPCs: But you're right now you're out of, uh, spell slots....",
+      "line_number": 1892,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "Um, is that an action or is that?",
+      "context": "Alex/GM/NPCs: You can do a medicine check....",
+      "line_number": 1898,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "Yeah. Actually, what I'm going to do is, you know what? I'm gonna do a starlight step. And to about as far as I can get to board D.",
+      "context": "Alex/GM/NPCs: It is. It would be an action to do that. Yeah....",
+      "line_number": 1904,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "Yeah. So you could, uh, how many starlight steps do you have? Cause you did use it on, um, you have two of them.",
+      "context": "Richard/Semaj: 60 feet....",
+      "line_number": 1915,
+      "category": "meta"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "All right. So yeah, so all the way up to where, um, like when it turns red is where you can't go. So you can do up to yellow.",
+      "context": "Richard/Semaj: Yep....",
+      "line_number": 1927,
+      "category": "meta"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "Uh, so, um, actually. No, nevermind. Come on. I should still be able to fit. Sorry. So I'm going to go. And then from here, I can still do cantrips, right?",
+      "context": "Alex/GM/NPCs: All right....",
+      "line_number": 1936,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "Uh, yes, you can still do cantrips. Absolutely.",
+      "context": "",
+      "line_number": 1943,
+      "category": "meta"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "Yep. Um, then I'm going to do frostbite. Yes, you cantrip. Yes, you cantrip. Wait, does frostbite require touch?",
+      "context": "Alex/GM/NPCs: Uh, yes, you can still do cantrips. Absolutely....",
+      "line_number": 1946,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "Take an inspiration for that, uh, Belden. Take an inspiration for that. Yes.",
+      "context": "Richard/Semaj: Yep. Um, then I'm going to do frostbite. Yes, you cantrip. Yes, you cantrip. Wait, does frostbite re...",
+      "line_number": 1951,
+      "category": "meta"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "So he needs to do a DC 14 saving throw.",
+      "context": "Alex/GM/NPCs: Take an inspiration for that, uh, Belden. Take an inspiration for that. Yes....",
+      "line_number": 1954,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "As it shakes off the ice, you see the ice just kind of shatter fall to the ground.",
+      "context": "Richard/Semaj: Jeez....",
+      "line_number": 1965,
+      "category": "meta"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "Um, uh, what else? What else do I have? Do I... I don't have like... No, nevermind. I don't guess I have anything else I can do. Then I will hold.",
+      "context": "Alex/GM/NPCs: As it shakes off the ice, you see the ice just kind of shatter fall to the ground....",
+      "line_number": 1968,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "He's like, all right, time to butcher.",
+      "context": "Alex/GM/NPCs: All right. Uh, you're going to see Periwinkle start to drag one of these bores back into the, uh......",
+      "line_number": 1978,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "So that bore is still within range. It looks like.",
+      "context": "Alex/GM/NPCs: All right, Kylia, it is your turn....",
+      "line_number": 1984,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "And my firebolt is 120.",
+      "context": "Alex/GM/NPCs: Uh, I believe so. Yeah, it's......",
+      "line_number": 1990,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "Sniper Kylia over here, uh, with the firebolts from downtown.",
+      "context": "Jen/Kailea: And my firebolt is 120....",
+      "line_number": 1993,
+      "category": "dramatic"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "Like a song of fire and ice.",
+      "context": "",
+      "line_number": 2004,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "Uh, all right, Kylia, are you staying and sniping from this, this, uh, wagon?",
+      "context": "Richard/Semaj: Like a song of fire and ice....",
+      "line_number": 2007,
+      "category": "meta"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "Um, so I am actually going to move down to Ekren and use my bonus action for Spare the Dying, I think it's called.",
+      "context": "Alex/GM/NPCs: Uh, all right, Kylia, are you staying and sniping from this, this, uh, wagon?...",
+      "line_number": 2010,
+      "category": "funny"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "So unfortunately, Spare the Dying is an action. So because...",
+      "context": "Jen/Kailea: Um, so I am actually going to move down to Ekren and use my bonus action for Spare the Dying, I thin...",
+      "line_number": 2013,
+      "category": "funny"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "Oh, it's an action. Dang it!",
+      "context": "Alex/GM/NPCs: So unfortunately, Spare the Dying is an action. So because......",
+      "line_number": 2016,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "Okay, and I'm staying.",
+      "context": "Alex/GM/NPCs: So......",
+      "line_number": 2022,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "I'm gonna, I'm gonna stay here. All right. Uh... Not moving unless I can help somebody, but I killed the boar, so that helps somebody.",
+      "context": "Alex/GM/NPCs: You're gonna stay up there? Okay....",
+      "line_number": 2028,
+      "category": "dramatic"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "What an angry little man.",
+      "context": "",
+      "line_number": 2054,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "And boar C is who's left, right?",
+      "context": "Alex/GM/NPCs: Simaj, it is now your turn....",
+      "line_number": 2060,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "Um, and... I gotta call it after we take this boar out.",
+      "context": "Alex/GM/NPCs: That's correct. Yeah....",
+      "line_number": 2066,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "You gotta call it after we take the boar out?",
+      "context": "Richard/Semaj: Um, and... I gotta call it after we take this boar out....",
+      "line_number": 2069,
+      "category": "meta"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "Yeah. Oh. What are you gonna call it?",
+      "context": "Alex/GM/NPCs: You gotta call it after we take the boar out?...",
+      "line_number": 2072,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "Borsi. Uh, green is the only thing I can go to, right?",
+      "context": "Alex/GM/NPCs: Ghostbusters. Oh. Nope....",
+      "line_number": 2078,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "As far as movement, yeah. Yep. Unless you dash.",
+      "context": "Richard/Semaj: Borsi. Uh, green is the only thing I can go to, right?...",
+      "line_number": 2081,
+      "category": "meta"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "So I'm gonna go here, which isn't my full movement. It's not my full movement because I'm gonna pull out my crossbow. Okay. And I'm going to shoot. Yeah, boy.",
+      "context": "Alex/GM/NPCs: As far as movement, yeah. Yep. Unless you dash....",
+      "line_number": 2084,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "I wanted to like do a run and kind of like a slide as I hit it.",
+      "context": "",
+      "line_number": 2094,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "I think the boar is too far away for me to hit though. Yep. He's 135 away. So, okay. I'm gonna go do, I'm going to move here because I need to be able to touch him, right?",
+      "context": "",
+      "line_number": 2104,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "I am going to spare the dying.",
+      "context": "Alex/GM/NPCs: Yes. Yes. This is a touch spell....",
+      "line_number": 2112,
+      "category": "funny"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "Okay, that is going to give all of the successes to Ekren here as he's still unconscious but he's no longer in death saving throws. Let's see. So, Kylia, can you please describe the spare the dying that you do onto Ekren here?",
+      "context": "Jen/Kailea: I am going to spare the dying....",
+      "line_number": 2115,
+      "category": "funny"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "I, I don't know how this spell works. Um, I, I, I basically just, you know, the little, you know, the little like Nemo fin pat on the sides of the face.",
+      "context": "",
+      "line_number": 2118,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "That's actually exactly what I was thinking. It's a little turtle, like.",
+      "context": "",
+      "line_number": 2129,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "All right. So, I was close.",
+      "context": "Jen/Kailea: That's actually exactly what I was thinking. It's a little turtle, like....",
+      "line_number": 2132,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "You still don't wake up just yet. All right. We are going to, uh, Borsi. Borsi is going to be making an attack on another, uh, commoner here.",
+      "context": "James/Ekran: All right. So, I was close....",
+      "line_number": 2135,
+      "category": "meta"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "This AR dictation is going to be hilarious.",
+      "context": "Alex/GM/NPCs: You still don't wake up just yet. All right. We are going to, uh, Borsi. Borsi is going to be making...",
+      "line_number": 2140,
+      "category": "funny"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "Wait a second. I have a question. Yep. I, I think I still have movement left, right? Maybe?",
+      "context": "Richard/Semaj: This AR dictation is going to be hilarious....",
+      "line_number": 2143,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "Uh, I think you only have five feet of movement. Yeah. So you use your action to spare the dying. Uh, you have to use your action to dash if you want to do any more. Um, nope.",
+      "context": "Jen/Kailea: Wait a second. I have a question. Yep. I, I think I still have movement left, right? Maybe?...",
+      "line_number": 2148,
+      "category": "funny"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "This bore is not going to be able to get off an entire charge. So it's just going to be doing a regular attack. Um, and it is going to hit doing five damage. Uh, that is going to knock this person down and make them unconscious. Uh, all right. We now go to Belden. It is your turn.",
+      "context": "Jen/Kailea: I'm good....",
+      "line_number": 2156,
+      "category": "dramatic"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "If you say that, please tell me you say that.",
+      "context": "Sean/Belden: Uh, okay. All right. We'll run up to this guy. Finally. Target him. It's hammer time....",
+      "line_number": 2168,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Sean/Belden",
+      "character": "Sean/Belden",
+      "text": "I run up to him. I grabbed my, my hammer off my back and it's hammer time. As a 13 is going to hit. Let's go.",
+      "context": "Jen/Kailea: If you say that, please tell me you say that....",
+      "line_number": 2171,
+      "category": "meta"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "Ah, oh. That was exactly what you needed to kill this bore. How would you like to describe this kill?",
+      "context": "Sean/Belden: I run up to him. I grabbed my, my hammer off my back and it's hammer time. As a 13 is going to hit. ...",
+      "line_number": 2176,
+      "category": "dramatic"
+    },
+    {
+      "speaker": "Sean/Belden",
+      "character": "Sean/Belden",
+      "text": "So I, as I run towards him, I take the, the hammer off my back, swing around once. And as I'm like coming down on it, I just yell it's hammer time and smash it on its head.",
+      "context": "Alex/GM/NPCs: Ah, oh. That was exactly what you needed to kill this bore. How would you like to describe this kill...",
+      "line_number": 2179,
+      "category": "dramatic"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "Uh, what? I'm sorry, sir. Do you have the time? The relative time? Yes.",
+      "context": "",
+      "line_number": 2185,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "It's hammer time, obviously.",
+      "context": "Sean/Belden: What time is it?...",
+      "line_number": 2193,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "I just sigh and walk away.",
+      "context": "Jen/Kailea: It's hammer time....",
+      "line_number": 2202,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "Uh, as the rest of, uh, the townsfolk, they start to, uh, kind of gather around some of the, uh, the fallen people here. Uh, you see people that are shouting for medics to come in. Uh, Kylia, do you come to any of their aids? Yes.",
+      "context": "Richard/Semaj: I just sigh and walk away....",
+      "line_number": 2205,
+      "category": "meta"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "Which, uh, which one's closest? But let's see.",
+      "context": "",
+      "line_number": 2210,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "Uh, it looks like this person right here is probably the closest to you right now. Uh, okay.",
+      "context": "Jen/Kailea: Which, uh, which one's closest? But let's see....",
+      "line_number": 2213,
+      "category": "meta"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "So I'm going to go to that person. Cause we're not limited by movement now that we're not in combat, right?",
+      "context": "Alex/GM/NPCs: Uh, it looks like this person right here is probably the closest to you right now. Uh, okay....",
+      "line_number": 2216,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Sean/Belden",
+      "character": "Sean/Belden",
+      "text": "So yeah, no, it sounds good. Sorry, you guys. All right. Thanks.",
+      "context": "",
+      "line_number": 2230,
+      "category": "meta"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "I'm gonna go help this person.",
+      "context": "Alex/GM/NPCs: All right. So, uh, Kylia....",
+      "line_number": 2244,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "No, I don't. I think I have total the dead, but I don't have spare the dying. Okay.",
+      "context": "",
+      "line_number": 2252,
+      "category": "funny"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "Do you want to perform a medicine check to try and stabilize?",
+      "context": "Richard/Semaj: No, I don't. I think I have total the dead, but I don't have spare the dying. Okay....",
+      "line_number": 2255,
+      "category": "dramatic"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "As I just, I just, I just put it back. I'm like, uh, medic, medic.",
+      "context": "",
+      "line_number": 2272,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "Uh, you're going to see someone else, uh, kind of run up. But, uh, Kylia, do you, do you go help this person?",
+      "context": "Richard/Semaj: As I just, I just, I just put it back. I'm like, uh, medic, medic....",
+      "line_number": 2275,
+      "category": "meta"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "I had already started walking towards this person, but when he says that I'll go over and help this person.",
+      "context": "Alex/GM/NPCs: Uh, you're going to see someone else, uh, kind of run up. But, uh, Kylia, do you, do you go help thi...",
+      "line_number": 2278,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "Wasn't there someone else? Or is that the last guy?",
+      "context": "",
+      "line_number": 2286,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "Uh, that's the third person.",
+      "context": "Richard/Semaj: Wasn't there someone else? Or is that the last guy?...",
+      "line_number": 2289,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "Yeah. There was only three people, technically four. If you're, if you're talking about Ekren here, um, no, he's already okay.",
+      "context": "Jen/Kailea: Uh, that's the third person....",
+      "line_number": 2292,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "Yeah. Yeah. He's already stabilized.",
+      "context": "Richard/Semaj: Yeah. There was only three people, technically four. If you're, if you're talking about Ekren here, ...",
+      "line_number": 2295,
+      "category": "dramatic"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "I'm going to grab Boar C and start dragging it back to his place. Okay.",
+      "context": "",
+      "line_number": 2306,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "All right. So yeah, you start dragging Boar C, uh, back over there as, uh, does anyone else grab Boar D over here? Well, I like how you guys grab.",
+      "context": "Jen/Kailea: I'm going to grab Boar C and start dragging it back to his place. Okay....",
+      "line_number": 2309,
+      "category": "meta"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "The only other one conscious.",
+      "context": "Alex/GM/NPCs: All right. So yeah, you start dragging Boar C, uh, back over there as, uh, does anyone else grab Boa...",
+      "line_number": 2312,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "I'm going to say, I'm going to say, uh, Belden takes, uh, takes the other one. Uh, let's, let's take a 10 minute break guys, uh, real quick. So I got to use the bathroom. So we'll, we'll go ahead and do a break. And so it's 9 45. Let's see. We'll come back at 9 50.",
+      "context": "Jen/Kailea: The only other one conscious....",
+      "line_number": 2315,
+      "category": "meta"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "I was just getting a keto red velvet. Oh my gosh. That looks amazing. All right.",
+      "context": "Jen/Kailea: Okay....",
+      "line_number": 2325,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "Cool. I'm gonna get my Diet Coke too. All right.",
+      "context": "Alex/GM/NPCs: All right. Uh, yeah, let's take a, let's take a five minute break real quick. I'll be right back....",
+      "line_number": 2333,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "Ineventful fight. Glad I got to do something useful before dying.",
+      "context": "Richard/Semaj: Cool. I'm gonna get my Diet Coke too. All right....",
+      "line_number": 2336,
+      "category": "funny"
+    },
+    {
+      "speaker": "Speaker 6",
+      "character": "Speaker 6",
+      "text": "Hello. Hello. Oh, Richard has headphones in. So I can't hear you. I can just make up what y'all are saying. And I'd rather do that than actually hear you. No, James is cursing me out right now. It was more fun. My way.",
+      "context": "James/Ekran: Ineventful fight. Glad I got to do something useful before dying....",
+      "line_number": 2339,
+      "category": "funny"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "Oh, except now I can hear myself. That's so fun.",
+      "context": "Speaker 6: Yeah....",
+      "line_number": 2361,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "Excuse me. I got a haircut.",
+      "context": "Jen/Kailea: Oh, except now I can hear myself. That's so fun....",
+      "line_number": 2364,
+      "category": "funny"
+    },
+    {
+      "speaker": "Speaker 6",
+      "character": "Speaker 6",
+      "text": "Excuse me. Is this mic on?",
+      "context": "Jen/Kailea: Excuse me....",
+      "line_number": 2370,
+      "category": "funny"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "Tipsy's like, I'll save the day. I'll kill those boars.",
+      "context": "Speaker 6: Excuse me. Is this mic on?...",
+      "line_number": 2373,
+      "category": "dramatic"
+    },
+    {
+      "speaker": "Speaker 6",
+      "character": "Speaker 6",
+      "text": "Did y'all feed any more animals this round?",
+      "context": "Jen/Kailea: Tipsy's like, I'll save the day. I'll kill those boars....",
+      "line_number": 2376,
+      "category": "meta"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "I didn't. Oh. But I'm actually going to take some of the boar meat. I'm actually going to take some of the boar meat and feed it to him whenever we come back.",
+      "context": "Speaker 6: Did y'all feed any more animals this round?...",
+      "line_number": 2379,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "Feed the boar meat to who?",
+      "context": "",
+      "line_number": 2384,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "Oh, because you want them to still love you.",
+      "context": "Richard/Semaj: The cows. The oxen....",
+      "line_number": 2390,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "Yeah. Bacon and chicken on the stick. They love it.",
+      "context": "Jen/Kailea: Oh, because you want them to still love you....",
+      "line_number": 2393,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "Yeah, he stole the chicken on the stick from me, by the way. Oh, yeah. He told me the story.",
+      "context": "Richard/Semaj: Yeah. Bacon and chicken on the stick. They love it....",
+      "line_number": 2396,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "Yeah. And I thought it was amazing.",
+      "context": "Richard/Semaj: Oh, yeah....",
+      "line_number": 2402,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "Yeah. He stole it out of my hands.",
+      "context": "Richard/Semaj: Yeah....",
+      "line_number": 2408,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "He stole the bacon out of my pocket.",
+      "context": "Richard/Semaj: Yeah....",
+      "line_number": 2414,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "Yeah, I love that. He just keeps walking around stealing food. Where's Sean?",
+      "context": "James/Ekran: He stole the bacon out of my pocket....",
+      "line_number": 2417,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "Uh, he had to leave.",
+      "context": "Jen/Kailea: Yeah, I love that. He just keeps walking around stealing food. Where's Sean?...",
+      "line_number": 2420,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "He said, I really have to go.",
+      "context": "Jen/Kailea: Oh....",
+      "line_number": 2432,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "Yeah. Like, um, apparently, like, they had to go and bathe. Korea or something. Again.",
+      "context": "Speaker 6: Uh-oh....",
+      "line_number": 2438,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "Isn't there, like, a lot of overlap in that region in general?",
+      "context": "",
+      "line_number": 2454,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "Because of all the wars and the invasions. James, did you get the White Sand Omnibus edition?",
+      "context": "Speaker 6: Uh, yeah....",
+      "line_number": 2460,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "Yes, I did. I don't know where it is right now. Yeah, I got it.",
+      "context": "Jen/Kailea: Because of all the wars and the invasions. James, did you get the White Sand Omnibus edition?...",
+      "line_number": 2463,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "Mm-hmm. I pre-ordered it.",
+      "context": "Richard/Semaj: You got it?...",
+      "line_number": 2469,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "I need to, I never finished, like, the third, I mean, the third half. The third, the last third.",
+      "context": "James/Ekran: Mm-hmm. I pre-ordered it....",
+      "line_number": 2472,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "Well, those earrings are pretty, Anna.",
+      "context": "James/Ekran: Uh-huh....",
+      "line_number": 2478,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Speaker 6",
+      "character": "Speaker 6",
+      "text": "Oh, thank you. My mama got them for me in Korea, like, years ago. But I like them. They're dangly.",
+      "context": "Jen/Kailea: Well, those earrings are pretty, Anna....",
+      "line_number": 2481,
+      "category": "meta"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "Yeah. Dangle, dangle. I need, you know, it's funny. I have my ears pierced three times, and I never wear earrings at all, ever.",
+      "context": "Speaker 6: Oh, thank you. My mama got them for me in Korea, like, years ago. But I like them. They're dangly....",
+      "line_number": 2486,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Speaker 6",
+      "character": "Speaker 6",
+      "text": "This one, one piercing? This one is three, four, five, six. Oh, wow. Nice.",
+      "context": "Jen/Kailea: Yeah. Dangle, dangle. I need, you know, it's funny. I have my ears pierced three times, and I never ...",
+      "line_number": 2491,
+      "category": "meta"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "You want to see something cool, James?",
+      "context": "Speaker 6: This one, one piercing? This one is three, four, five, six. Oh, wow. Nice....",
+      "line_number": 2496,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "Here, I'll close my eyes, because you just wanted to ask him.",
+      "context": "Richard/Semaj: This right here?...",
+      "line_number": 2505,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "No. You can open your eyes, Bishop.",
+      "context": "Jen/Kailea: Here, I'll close my eyes, because you just wanted to ask him....",
+      "line_number": 2508,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "Uncorrected proofs for limited distribution.",
+      "context": "Richard/Semaj: No. You can open your eyes, Bishop....",
+      "line_number": 2511,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "Ooh, that's cool. It's like a beta read?",
+      "context": "Jen/Kailea: Uncorrected proofs for limited distribution....",
+      "line_number": 2514,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "Yeah, it must have been. It's got this on the back and stuff. Like, I was getting them from thrift books. Oh.",
+      "context": "James/Ekran: Ooh, that's cool. It's like a beta read?...",
+      "line_number": 2517,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "That's very fuzzy. We can't see it. It's a hand thing.",
+      "context": "Richard/Semaj: Yeah, it must have been. It's got this on the back and stuff. Like, I was getting them from thrift b...",
+      "line_number": 2522,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "What kind of book is it?",
+      "context": "Jen/Kailea: That's very fuzzy. We can't see it. It's a hand thing....",
+      "line_number": 2525,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "Yeah. And so it's, it's not the, he's not, it's definitely not, like, good writing.",
+      "context": "Speaker 6: He's Captain America in space....",
+      "line_number": 2546,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "But it, it's like a little bit better than Nickelback.",
+      "context": "Jen/Kailea: Uh-huh....",
+      "line_number": 2552,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "It's like, you know, yeah, Nickelback, you can still sing every song, but you don't like it. This... Speak for yourself.",
+      "context": "Sean/Belden: Okay....",
+      "line_number": 2558,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "I was gonna say, for all the hate that they get, like...",
+      "context": "Richard/Semaj: It's like, you know, yeah, Nickelback, you can still sing every song, but you don't like it. This......",
+      "line_number": 2561,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "They're catchy songs.",
+      "context": "Jen/Kailea: I was gonna say, for all the hate that they get, like......",
+      "line_number": 2564,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "I had all of the Nickelback CDs, just saying.",
+      "context": "Richard/Semaj: They're catchy songs....",
+      "line_number": 2567,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Speaker 6",
+      "character": "Speaker 6",
+      "text": "What'd you drink in this, Jeff?",
+      "context": "Jen/Kailea: I had all of the Nickelback CDs, just saying....",
+      "line_number": 2570,
+      "category": "meta"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "Uh, so this is Blue Moon Light.",
+      "context": "Speaker 6: What'd you drink in this, Jeff?...",
+      "line_number": 2573,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "And Diet Coke. Well, it's mixed.",
+      "context": "Speaker 6: And Diet Coke....",
+      "line_number": 2585,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "Yeah, lately I've been reading, uh, The Witcher books.",
+      "context": "Jen/Kailea: And Diet Coke. Well, it's mixed....",
+      "line_number": 2588,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "I think I messaged you about it. They're really good.",
+      "context": "Speaker 6: Yeah....",
+      "line_number": 2594,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Speaker 6",
+      "character": "Speaker 6",
+      "text": "Oh, that reminds me. I need to find my bread recipe to send to Madison.",
+      "context": "James/Ekran: I think I messaged you about it. They're really good....",
+      "line_number": 2597,
+      "category": "meta"
+    },
+    {
+      "speaker": "Speaker 6",
+      "character": "Speaker 6",
+      "text": "Yeah, she, she'd been baking. What kind of bread? Milk bread. Japanese-style milk bread. It's super soft and fluffy. My mother-in-law, who is James's Mimi, loves it, so I call it Mimi bread.",
+      "context": "James/Ekran: Oh, yeah?...",
+      "line_number": 2603,
+      "category": "meta"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "Yeah, I recently sent her...",
+      "context": "Speaker 6: And here comes Alex....",
+      "line_number": 2614,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "I want to make Amish friendship bread.",
+      "context": "James/Ekran: Yeah, I recently sent her......",
+      "line_number": 2617,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "You sent her what? I, I recently sent Madison, uh, a recipe I did the other day for honey, honey garlic chicken. I don't know, I'll probably turn the brightness down.",
+      "context": "Speaker 6: It is a Tipsy's. Oh, that's so cute....",
+      "line_number": 2626,
+      "category": "dramatic"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "Yum. That looks good.",
+      "context": "",
+      "line_number": 2629,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "It's an instant pot recipe I found. It was awesome.",
+      "context": "Jen/Kailea: Yum. That looks good....",
+      "line_number": 2632,
+      "category": "funny"
+    },
+    {
+      "speaker": "Speaker 6",
+      "character": "Speaker 6",
+      "text": "I thought you were pulling down your pants. Oh, you are pulling down your pants. And I think a bit of it showed on the camera. Yeah. Yeah, it did. The wool's out. Alex is back, babe.",
+      "context": "James/Ekran: It's an instant pot recipe I found. It was awesome....",
+      "line_number": 2635,
+      "category": "dramatic"
+    },
+    {
+      "speaker": "Speaker 6",
+      "character": "Speaker 6",
+      "text": "So y'all... You ready? Okay. Well, that was Richard's butt. I think everybody but Mischief has seen it before. Now Mischief is part of the family, officially.",
+      "context": "Jen/Kailea: Okay....",
+      "line_number": 2645,
+      "category": "meta"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "Yeah, just trying to, just trying to make sure everyone's safe.",
+      "context": "",
+      "line_number": 2650,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Speaker 6",
+      "character": "Speaker 6",
+      "text": "You're not part of the family until you see Richard's butt.",
+      "context": "Jen/Kailea: Officially....",
+      "line_number": 2656,
+      "category": "meta"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "I'll just be one second.",
+      "context": "Speaker 6: You're not part of the family until you see Richard's butt....",
+      "line_number": 2659,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "I have to kill a roach. Okay.",
+      "context": "Jen/Kailea: I'll just be one second....",
+      "line_number": 2662,
+      "category": "dramatic"
+    },
+    {
+      "speaker": "Speaker 6",
+      "character": "Speaker 6",
+      "text": "Okay. That sounds fun. Yep, yep. With a sword? Yep. Yep. With a sword, Val? Tell me what the sword, Val.",
+      "context": "James/Ekran: I have to kill a roach. Okay....",
+      "line_number": 2665,
+      "category": "meta"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "Did y'all ever finish Firefly?",
+      "context": "Richard/Semaj: How weird is that?...",
+      "line_number": 2675,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "No, we're on episode three.",
+      "context": "Richard/Semaj: No....",
+      "line_number": 2681,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "Well, we finished three. We're on four now.",
+      "context": "Jen/Kailea: No, we're on episode three....",
+      "line_number": 2684,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "Four or five, actually.",
+      "context": "Speaker 6: What? Why cuz of Mischief?...",
+      "line_number": 2690,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "Yeah. No, AC fell asleep during three, so we were on four.",
+      "context": "Jen/Kailea: Yeah. No, no, no....",
+      "line_number": 2699,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Speaker 6",
+      "character": "Speaker 6",
+      "text": "No, no, no. I kiss you. He's like, but I wanna kiss you back. No, no. I kiss you.",
+      "context": "Richard/Semaj: Yeah. No, AC fell asleep during three, so we were on four....",
+      "line_number": 2702,
+      "category": "meta"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "That dog is so cute.",
+      "context": "Speaker 6: No, no, no. I kiss you. He's like, but I wanna kiss you back. No, no. I kiss you....",
+      "line_number": 2707,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Speaker 6",
+      "character": "Speaker 6",
+      "text": "Yeah, earlier Richard was just like, why he's so cute? All day, he's like, why so cute?",
+      "context": "Jen/Kailea: That dog is so cute....",
+      "line_number": 2710,
+      "category": "meta"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "Uh, let's see. Let me turn on the light. I can get them all to come with just one word.",
+      "context": "Speaker 6: Alex, where are the beagles?...",
+      "line_number": 2719,
+      "category": "meta"
+    },
+    {
+      "speaker": "Speaker 6",
+      "character": "Speaker 6",
+      "text": "Watch. I think everyone's gonna bring their beagles now. No, my beagles are sleeping. Oh, she brought the cats. I'm asleep. I got my kitties.",
+      "context": "Alex/GM/NPCs: Uh, let's see. Let me turn on the light. I can get them all to come with just one word....",
+      "line_number": 2722,
+      "category": "meta"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "All right, are you ready for this?",
+      "context": "Speaker 6: Watch. I think everyone's gonna bring their beagles now. No, my beagles are sleeping. Oh, she brough...",
+      "line_number": 2727,
+      "category": "meta"
+    },
+    {
+      "speaker": "Speaker 6",
+      "character": "Speaker 6",
+      "text": "I'm ready. You're ready? Puppies! Oh, you think they're nuts?",
+      "context": "Alex/GM/NPCs: All right, are you ready for this?...",
+      "line_number": 2730,
+      "category": "meta"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "Yeah, mine come to that, too.",
+      "context": "Speaker 6: I'm ready. You're ready? Puppies! Oh, you think they're nuts?...",
+      "line_number": 2735,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "Oh, no, they're not coming. Puppies! Are they outside? Oh, here they come. Yes? Yes, daddy? Yes, daddy?",
+      "context": "Jen/Kailea: Yeah, mine come to that, too....",
+      "line_number": 2738,
+      "category": "meta"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "Aww. Budan and Luna.",
+      "context": "Alex/GM/NPCs: So, this is a brother and sister. This is Budan and Luna....",
+      "line_number": 2751,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Speaker 6",
+      "character": "Speaker 6",
+      "text": "Look at those dogs, babe. They're so cute. Ah, another one!",
+      "context": "Jen/Kailea: I know. Meow....",
+      "line_number": 2772,
+      "category": "meta"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "Babies. Oh, I love bagels.",
+      "context": "Speaker 6: Look at those dogs, babe. They're so cute. Ah, another one!...",
+      "line_number": 2775,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "It was a fearsome battle, but I emerged victorious.",
+      "context": "Richard/Semaj: Okay....",
+      "line_number": 2786,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "Woo! Yeah, look at that!",
+      "context": "James/Ekran: It was a fearsome battle, but I emerged victorious....",
+      "line_number": 2789,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "Cat. Look at me. You're just evil. You're just a lord. They're evil. Ooh, the double brush. That cat's like, yes. Oh, I need to take care of my cats for tomorrow. It's got so many little mats on it. Jamie has a cat, too.",
+      "context": "Speaker 6: Look at that, wow!...",
+      "line_number": 2795,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Speaker 6",
+      "character": "Speaker 6",
+      "text": "Come here. Oh, it's a big show and tell. I love it.",
+      "context": "James/Ekran: Yeah, Minda....",
+      "line_number": 2807,
+      "category": "meta"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "Go see. Go see everyone. Yeah, come here.",
+      "context": "Speaker 6: Come here. Oh, it's a big show and tell. I love it....",
+      "line_number": 2810,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "He'll just let you brush him. Look at Jamie's cat, babe. Aww.",
+      "context": "Alex/GM/NPCs: Yeah, that's like his favorite spot to get brushed, too. He'll just... He'll just, like, latch on an...",
+      "line_number": 2816,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "Yeah. Aww, look at the kitty. It looks like a tuxedo.",
+      "context": "Jen/Kailea: He'll just let you brush him. Look at Jamie's cat, babe. Aww....",
+      "line_number": 2819,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "Cute little pink button nose.",
+      "context": "Richard/Semaj: Yeah. Aww, look at the kitty. It looks like a tuxedo....",
+      "line_number": 2822,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "Cute little pink button nose. Little pink toe beans, too.",
+      "context": "Jen/Kailea: Cute little pink button nose....",
+      "line_number": 2825,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "Aww. So sweet. It has... The cat I was just holding... Well, you were killing the roach, but... I have two Maine Coons. And... The one I was holding is polydactyl, so she has an extra toe. Oh.",
+      "context": "James/Ekran: Cute little pink button nose. Little pink toe beans, too....",
+      "line_number": 2828,
+      "category": "dramatic"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "And it's... It's usable. So she can grab onto things, like a human, and throw them.",
+      "context": "James/Ekran: Really?...",
+      "line_number": 2838,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "It's pretty awesome. Yeah. She's cra... She's... She's a little nuts. But I was holding her, so now she's crabby. So she was, like, running around like a psycho.",
+      "context": "James/Ekran: Yeah. That's crazy....",
+      "line_number": 2844,
+      "category": "funny"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "It's good, though, huh?",
+      "context": "Speaker 6: It's a keto red velvet....",
+      "line_number": 2860,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "Real good. She does a good job.",
+      "context": "Speaker 6: Yeah, it was good....",
+      "line_number": 2866,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "You wanna say that to the people? You hear some meows? Meow.",
+      "context": "Richard/Semaj: Real good. She does a good job....",
+      "line_number": 2869,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Speaker 6",
+      "character": "Speaker 6",
+      "text": "No, James is just trying to make his penis float talk. He just lowered the mic down to his lap. You see that?",
+      "context": "James/Ekran: You wanna say that to the people? You hear some meows? Meow....",
+      "line_number": 2872,
+      "category": "dramatic"
+    },
+    {
+      "speaker": "Speaker 6",
+      "character": "Speaker 6",
+      "text": "You know when guys make their penis talk?",
+      "context": "Richard/Semaj: So what's that?...",
+      "line_number": 2887,
+      "category": "meta"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "Is that a thing? Is that a thing that everybody does?",
+      "context": "Richard/Semaj: No....",
+      "line_number": 2893,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "Like... How? Like... Logistically, how?",
+      "context": "Speaker 6: They talk about it with each other....",
+      "line_number": 2905,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "I mean, are they just, like, squeezing it?",
+      "context": "Richard/Semaj: Yeah....",
+      "line_number": 2916,
+      "category": "meta"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "No, I'm gonna have to delete that.",
+      "context": "Alex/GM/NPCs: Alright, that's... This is gonna be a very weird recap for the AI....",
+      "line_number": 2925,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "Don't delete it. It makes it funnier. Yeah. And this is why Yana's not in the game.",
+      "context": "Alex/GM/NPCs: During the break time, they talked about......",
+      "line_number": 2934,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Speaker 6",
+      "character": "Speaker 6",
+      "text": "Bye, you guys. Have fun. I'm gonna go do face stuff and then lay down just because my body's getting achy. Not sleep, so when you finish, if you wanna watch something, we can watch something.",
+      "context": "Jen/Kailea: Don't delete it. It makes it funnier. Yeah. And this is why Yana's not in the game....",
+      "line_number": 2939,
+      "category": "dramatic"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "Everybody. Do we need to kind of wind down right now and just kind of finish this part and then we can pick it up next session?",
+      "context": "Speaker 6: Yeah, everybody. Everybody....",
+      "line_number": 2956,
+      "category": "dramatic"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "Nah. Let's go ahead and get the rest of this stuff.",
+      "context": "Alex/GM/NPCs: Everybody. Do we need to kind of wind down right now and just kind of finish this part and then we c...",
+      "line_number": 2959,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "Okay. At what point...",
+      "context": "Richard/Semaj: Nah. Let's go ahead and get the rest of this stuff....",
+      "line_number": 2962,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "I wanna have, like, next session us being somewhat of a position to be on the road.",
+      "context": "Jen/Kailea: Okay. At what point......",
+      "line_number": 2965,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "If you don't mind. Okay.",
+      "context": "Jen/Kailea: Yeah....",
+      "line_number": 2971,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "Unless it's too late. It's only 10 o'clock. Well... It's 11 in Georgia, right? Yeah.",
+      "context": "Richard/Semaj: If you don't mind. Okay....",
+      "line_number": 2974,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "Yeah. But James doesn't understand time, so it's okay.",
+      "context": "Jen/Kailea: Mm-hmm....",
+      "line_number": 2982,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "All right. He's a social construct.",
+      "context": "James/Ekran: Doesn't exist....",
+      "line_number": 2988,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "Yeah. Yeah. I'll do that.",
+      "context": "",
+      "line_number": 3000,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "Okay! A 15 medicine check. So, you kneel down to Ekren after he was impaled by the boar's tusks.",
+      "context": "Richard/Semaj: Ooh!...",
+      "line_number": 3009,
+      "category": "dramatic"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "You're gonna boop? You're gonna boop him on the nose?",
+      "context": "Alex/GM/NPCs: Okay! A 15 medicine check. So, you kneel down to Ekren after he was impaled by the boar's tusks....",
+      "line_number": 3012,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "Ekren, you now awaken to Kylia's finger on your nose just kind of booping you over and over again. And you become conscious now, seeing this.",
+      "context": "Jen/Kailea: You're gonna boop? You're gonna boop him on the nose?...",
+      "line_number": 3015,
+      "category": "meta"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "Did we win? It's time to stand up.",
+      "context": "Alex/GM/NPCs: Ekren, you now awaken to Kylia's finger on your nose just kind of booping you over and over again. A...",
+      "line_number": 3018,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "Yeah, so when I see you awaken and you say, did we win? I'll say, yep! And I'm gonna grab your hand and help you stand up.",
+      "context": "James/Ekran: Did we win? It's time to stand up....",
+      "line_number": 3021,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "Thank you. There you go. Rats, boars, with this luck we're gonna have to be dealing with reanimated bread in the bakery. Would that be the unbread? The unbread.",
+      "context": "Jen/Kailea: Yeah, so when I see you awaken and you say, did we win? I'll say, yep! And I'm gonna grab your hand ...",
+      "line_number": 3024,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "Somebody's played a cooking game. Yeah, which one was that? Overcooked? Yes.",
+      "context": "",
+      "line_number": 3029,
+      "category": "meta"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "I don't know, I think that joke needs a little more time in the oven.",
+      "context": "Alex/GM/NPCs: Somebody's played a cooking game. Yeah, which one was that? Overcooked? Yes....",
+      "line_number": 3034,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "It was a little dry. Yeah, it was. Get it, get it, get it.",
+      "context": "Jen/Kailea: I know, it was......",
+      "line_number": 3040,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "Yeah, because it was unbread.",
+      "context": "Richard/Semaj: It was a little dry. Yeah, it was. Get it, get it, get it....",
+      "line_number": 3043,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "I was gonna say, what, you drank your brandy to forget about the pain?",
+      "context": "",
+      "line_number": 3051,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "I mean, I might need to. I had a cripple.",
+      "context": "Jen/Kailea: I was gonna say, what, you drank your brandy to forget about the pain?...",
+      "line_number": 3054,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "Hopefully it doesn't come out the wound. It just comes spilling out of your stomach.",
+      "context": "James/Ekran: I mean, I might need to. I had a cripple....",
+      "line_number": 3057,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "Alright, Ekren, do you do anything for the pain, or are you just gonna... What is going on with Ekren right now?",
+      "context": "Jen/Kailea: Oh no....",
+      "line_number": 3063,
+      "category": "meta"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "Yeah, no, I actually do think I'll just stand up and take out one of these brandies and drink it.",
+      "context": "Alex/GM/NPCs: Alright, Ekren, do you do anything for the pain, or are you just gonna... What is going on with Ekre...",
+      "line_number": 3066,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "I just start to hobble over to the cart. And, like, clamber in.",
+      "context": "",
+      "line_number": 3086,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "Alright. Yeah, you clamber in. You kind of flopped out into the cart. You see Periwinkle inside, kind of, like, arranging the boars. Trying to get them into the position where they can be butchered very soon. Does anyone go in to talk to Periwinkle?",
+      "context": "James/Ekran: I just start to hobble over to the cart. And, like, clamber in....",
+      "line_number": 3089,
+      "category": "meta"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "I'm sitting on the cart with Ekren.",
+      "context": "",
+      "line_number": 3094,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "You're sitting on the cart with Ekren? I'm gonna say Belden kind of goes to the cart. So Simaj, I think it is up to you to get the rest of the supplies here.",
+      "context": "Jen/Kailea: I'm sitting on the cart with Ekren....",
+      "line_number": 3097,
+      "category": "meta"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "Great. Go get the supplies.",
+      "context": "",
+      "line_number": 3100,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "Are you there? Oh, okay. Alright.",
+      "context": "Jen/Kailea: Great. Go get the supplies....",
+      "line_number": 3103,
+      "category": "meta"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "There it goes. No, it was, like, loading. It was a gray screen.",
+      "context": "Alex/GM/NPCs: Are you there? Oh, okay. Alright....",
+      "line_number": 3106,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "Yep, yep. I can see everything now. Alright. So you just need me to go over here and grab it? Yep. How do I do that?",
+      "context": "Alex/GM/NPCs: Oh, okay. You refreshed and it was good?...",
+      "line_number": 3112,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "Go in and talk to him. Go talk to him. We didn't get the supplies.",
+      "context": "Richard/Semaj: Yep, yep. I can see everything now. Alright. So you just need me to go over here and grab it? Yep. H...",
+      "line_number": 3117,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "We're still getting our order ready when the boars escape.",
+      "context": "Alex/GM/NPCs: Alright....",
+      "line_number": 3123,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "Well, first of all, we'll take what we came for. But we're gonna also need compensation for Ekren, as well as payment for any of his wounds to be healed as well.",
+      "context": "",
+      "line_number": 3141,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "Um, what else do you have? Show me your wares.",
+      "context": "",
+      "line_number": 3153,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "Well, um, um, let's see, what wares do you have?",
+      "context": "Richard/Semaj: Um, what else do you have? Show me your wares....",
+      "line_number": 3156,
+      "category": "meta"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "Salted pork, you said?",
+      "context": "Jen/Kailea: Um, so, uh......",
+      "line_number": 3162,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "Yeah, he says... That's what we're already getting for Gundren.",
+      "context": "Richard/Semaj: Salted pork, you said?...",
+      "line_number": 3165,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "I'm actually looking for something that's more, uh, drawed. Uh, something that would keep for, like, say, like, the journey. That I could keep in a sack. Uh, that wouldn't go bad.",
+      "context": "",
+      "line_number": 3173,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "Um, okay. You ask for, like, some more...",
+      "context": "",
+      "line_number": 3178,
+      "category": "meta"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "Salt that are cured. Dried, or... Yeah. Yep.",
+      "context": "Alex/GM/NPCs: Um, okay. You ask for, like, some more......",
+      "line_number": 3181,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "Okay. Um... So... You see as his face kind of brightens a little bit, and...",
+      "context": "Richard/Semaj: Salt that are cured. Dried, or... Yeah. Yep....",
+      "line_number": 3186,
+      "category": "meta"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "Yeah. How do you, uh, rotate again?",
+      "context": "",
+      "line_number": 3221,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "Uh, hold shift, and then...",
+      "context": "Richard/Semaj: Yeah. How do you, uh, rotate again?...",
+      "line_number": 3224,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "Shift, that's what it was. That was the wrong one. Got it.",
+      "context": "Jen/Kailea: Uh, hold shift, and then......",
+      "line_number": 3227,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "Okay. Like, uh, without rolling or anything?",
+      "context": "",
+      "line_number": 3247,
+      "category": "meta"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "Gotcha. Okay. So, I'll go ahead and do that, and that's full health for me.",
+      "context": "",
+      "line_number": 3253,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "Oh, that's, that's the good stuff right there. Yeah, like, like, stretch. And sit back down. Alright. So all that's left is the, uh, the bakery, huh?",
+      "context": "",
+      "line_number": 3265,
+      "category": "dramatic"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "Mm-hmm. Right up here to the right.",
+      "context": "James/Ekran: Oh, that's, that's the good stuff right there. Yeah, like, like, stretch. And sit back down. Alright...",
+      "line_number": 3270,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "So, can we move the, uh, cart up just a little bit?",
+      "context": "James/Ekran: Alright....",
+      "line_number": 3276,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "Just, just remember to mage. Mage against the machine.",
+      "context": "",
+      "line_number": 3288,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "I'm gonna need you guys to move my character as we move, cause... Sure. Uh, my son needs to get up from work.",
+      "context": "Richard/Semaj: Just, just remember to mage. Mage against the machine....",
+      "line_number": 3291,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "Okay. Yeah, you're in the, uh, cart, you're good.",
+      "context": "Jen/Kailea: I'm gonna need you guys to move my character as we move, cause... Sure. Uh, my son needs to get up f...",
+      "line_number": 3294,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "I'm gonna say stay connected, I just have to go get him from work.",
+      "context": "Richard/Semaj: Alright....",
+      "line_number": 3303,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "Okay. Yeah, we gotcha.",
+      "context": "Jen/Kailea: I'm gonna say stay connected, I just have to go get him from work....",
+      "line_number": 3306,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "Can I do an investigation check on the bread?",
+      "context": "",
+      "line_number": 3322,
+      "category": "meta"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "Uh, are you inside right now?",
+      "context": "Richard/Semaj: Can I do an investigation check on the bread?...",
+      "line_number": 3325,
+      "category": "meta"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "Yeah, because you had also said, like, he said it used to be, um, dabbling in magic, so I wanted to, uh, to investigate it.",
+      "context": "",
+      "line_number": 3334,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "Um, so, uh, yeah, go ahead and roll me an investigation check as you look at some of the bread.",
+      "context": "Jen/Kailea: Okay....",
+      "line_number": 3340,
+      "category": "meta"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "You said he pulled out a plate of cookies?",
+      "context": "Alex/GM/NPCs: Um, so, uh, yeah, go ahead and roll me an investigation check as you look at some of the bread....",
+      "line_number": 3343,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "Would I be able to do, I guess, an insight check on him? To see if he's being truthful?",
+      "context": "",
+      "line_number": 3365,
+      "category": "meta"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "As he does this, I think I'll, like, just take a cookie, I'll be like, Are these enchanted too?",
+      "context": "Alex/GM/NPCs: Yeah, go ahead and roll me an insight check....",
+      "line_number": 3371,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "Oh, why yes! I make all of my goods with magic. Uh.",
+      "context": "James/Ekran: As he does this, I think I'll, like, just take a cookie, I'll be like, Are these enchanted too?...",
+      "line_number": 3374,
+      "category": "meta"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "Right. Because he seems to be kind of, somewhat deceitful, but. Okay.",
+      "context": "Alex/GM/NPCs: Okay, uh. Fourteen. So, you're just trying to see if he's truthful....",
+      "line_number": 3383,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "Alright. Uh, ability or saving throw?",
+      "context": "",
+      "line_number": 3413,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "As I'm eating the cookie I got from him, I'm just like. You never, uh. Animate this bread, do you? Oh. Um. No.",
+      "context": "",
+      "line_number": 3455,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "Please, please don't.",
+      "context": "Jen/Kailea: But I could....",
+      "line_number": 3463,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "Okay. I'm guessing you've had some trouble with this in the past?",
+      "context": "Jen/Kailea: Oh....",
+      "line_number": 3469,
+      "category": "meta"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "It's just been an eventful day.",
+      "context": "Alex/GM/NPCs: Okay. I'm guessing you've had some trouble with this in the past?...",
+      "line_number": 3472,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "Well. Hasn't it been. Uh, you see as, uh, he says. Well, so. What brings you into my establishment today?",
+      "context": "James/Ekran: It's just been an eventful day....",
+      "line_number": 3475,
+      "category": "meta"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "Uh. I show him the list. And I say, pick up for Gundren. We've got some supplies that we needed to pick up here. Well!",
+      "context": "Alex/GM/NPCs: Well. Hasn't it been. Uh, you see as, uh, he says. Well, so. What brings you into my establishment t...",
+      "line_number": 3480,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "Yeah, yeah. I'm just going to like just. Bibbidi-bobbidi-boop it to the cart.",
+      "context": "",
+      "line_number": 3508,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "Okay. So with a bibbidi-bobbidi-boop. You direct all of the, uh. The sacks of flour to the cart.",
+      "context": "Richard/Semaj: Yeah, yeah. I'm just going to like just. Bibbidi-bobbidi-boop it to the cart....",
+      "line_number": 3511,
+      "category": "meta"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "Bibbidi-bobbidi-boop.",
+      "context": "Alex/GM/NPCs: Okay. So with a bibbidi-bobbidi-boop. You direct all of the, uh. The sacks of flour to the cart....",
+      "line_number": 3516,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "Alright. Now I'll push him along.",
+      "context": "Richard/Semaj: Bibbidi-bobbidi-boop....",
+      "line_number": 3519,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "Okay, so you start floating the sacks of flour out. And, uh. Milhouse is going to, uh. Tell you all goodbye. And, um.",
+      "context": "James/Ekran: Alright. Now I'll push him along....",
+      "line_number": 3522,
+      "category": "meta"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "Farewell bread wizard.",
+      "context": "Alex/GM/NPCs: Okay, so you start floating the sacks of flour out. And, uh. Milhouse is going to, uh. Tell you all ...",
+      "line_number": 3527,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "Um. Before I leave. I just ask him. If there's anything. Um. He could tell me about where we're going. If he's ever been. In his travels. If he's ever been to the area where we. Like where we're going. If there's anything he can tell us about.",
+      "context": "James/Ekran: Farewell bread wizard....",
+      "line_number": 3530,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "Well. It depends. Where are you going?",
+      "context": "Jen/Kailea: Ah....",
+      "line_number": 3542,
+      "category": "meta"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "Man, I forgot where we were. We are going to. I need to have that up.",
+      "context": "Alex/GM/NPCs: Well. It depends. Where are you going?...",
+      "line_number": 3545,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "Can I zoom in? On the pictures and. Uh.",
+      "context": "Richard/Semaj: Man, I forgot where we were. We are going to. I need to have that up....",
+      "line_number": 3548,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "In the. The journal. Uh. Let's see. Um. List. If you click on it.",
+      "context": "James/Ekran: Can I zoom in? On the pictures and. Uh....",
+      "line_number": 3551,
+      "category": "meta"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "I have the map. So. I'll pull out the map. And I show him. On the map. Let's see. Where is it? Do-do-do-do-do-do.",
+      "context": "Alex/GM/NPCs: I don't think you can....",
+      "line_number": 3564,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "Are you holding the map upside down?",
+      "context": "Richard/Semaj: Wait. Wait....",
+      "line_number": 3577,
+      "category": "dramatic"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "Phandalin? Yes. No. I'm holding it right there.",
+      "context": "Jen/Kailea: Are you holding the map upside down?...",
+      "line_number": 3580,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "Okay. And the name of the uh. Inn with stones what?",
+      "context": "Alex/GM/NPCs: Yes. He says Edermath....",
+      "line_number": 3608,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "Stonehill. Stonehill Inn. Okay.",
+      "context": "Alex/GM/NPCs: The Stonehill. Stonehill. The Stonehill Inn....",
+      "line_number": 3614,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "One more thing. One more thing. Um. Magic shop. There's a magic shop nearby. Oh. In this town.",
+      "context": "Alex/GM/NPCs: Well. Take care out there on the road. And may your journey be filled with triumphs. And cookies....",
+      "line_number": 3622,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "It's hard to miss. Or it's not hard to miss.",
+      "context": "",
+      "line_number": 3646,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "It's not hard to miss. Okay. Well.",
+      "context": "Alex/GM/NPCs: It's. It's not hard to miss. Sorry. Yeah....",
+      "line_number": 3654,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "Yeah. Like it's obvious.",
+      "context": "Alex/GM/NPCs: Wait a minute. It's. Was that an intentional. It's. It's hard to miss. Like it would be hard to miss...",
+      "line_number": 3667,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "Cause it's got a glowing sign.",
+      "context": "Richard/Semaj: Yeah. Yeah....",
+      "line_number": 3673,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "Right. Right. Right. I know. Okay. Yeah. Awesome. Alright. I'm going to head that way. If that's okay with everyone else.",
+      "context": "Jen/Kailea: Cause it's got a glowing sign....",
+      "line_number": 3676,
+      "category": "funny"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "So Belden is going to. Uh. He's going to start heading towards the cart over here. Uh. And. Alright. Samaj you head out. You close the door and head out.",
+      "context": "Richard/Semaj: Yeah....",
+      "line_number": 3691,
+      "category": "meta"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "Okay. Alright. Um. Do we want to end it right here? And then you can do some of the shopping at the beginning of the next session. And then you'll can go on the road. Or do you want to like.",
+      "context": "Richard/Semaj: Yep. I do....",
+      "line_number": 3701,
+      "category": "meta"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "Yeah. I mean, if we. We can probably just like put the cart outside. Unless there's like an encounter that has to happen between now and.",
+      "context": "",
+      "line_number": 3708,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "Yeah. No. No more encounters. I'll. Do you want to say that you can just go back to the inn? Uh. You park the cart and then you can. And then each of you can kind of go out into town and do some shopping. If you need to.",
+      "context": "Richard/Semaj: Yeah. I mean, if we. We can probably just like put the cart outside. Unless there's like an encounte...",
+      "line_number": 3713,
+      "category": "meta"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "Yeah. So. Maybe. Each of us gets a long rest. To regain our stuff.",
+      "context": "",
+      "line_number": 3720,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "Gotcha. Okay. Yeah. Yeah. Cause I definitely want to hit up the magic shop and take a look and see with. With the gold that we have. What I can get.",
+      "context": "",
+      "line_number": 3734,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Alex/GM/NPCs",
+      "character": "Alex/GM/NPCs",
+      "text": "Alright. Um. Okay. So. After. Uh. After you. Finished getting all the supplies. You have the wagon fully loaded. Now. You start to make your way down. Uh. The never winner streets again. And. Uh. We're going to go ahead and turn the cart around.",
+      "context": "Richard/Semaj: Gotcha. Okay. Yeah. Yeah. Cause I definitely want to hit up the magic shop and take a look and see w...",
+      "line_number": 3741,
+      "category": "dramatic"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "I wonder why it's so choppy It's not choppy for me at all.",
+      "context": "",
+      "line_number": 3784,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "No, it's super smooth That's all on your side",
+      "context": "Alex/GM/NPCs: Oh, it's not okay....",
+      "line_number": 3790,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "James",
+      "character": "Ekran",
+      "text": "It's a little choppy for me, but not very much",
+      "context": "Jen/Kailea: Huh...",
+      "line_number": 3796,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Richard",
+      "character": "Semaj",
+      "text": "Yeah, i've got a gigabit maybe that's why all right, so, uh",
+      "context": "James/Ekran: It's a little choppy for me, but not very much...",
+      "line_number": 3799,
+      "category": "roleplay"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "Awesome awesome Okay",
+      "context": "",
+      "line_number": 3805,
+      "category": "funny"
+    },
+    {
+      "speaker": "Jen",
+      "character": "Kaelia",
+      "text": "Yeah, I didn't want to do like all the interruptions.",
+      "context": "Alex/GM/NPCs: Well everyone gg's Uh, gg's...",
+      "line_number": 3811,
+      "category": "roleplay"
+    }
+  ],
+  "combat_highlights": [
+    {
+      "description": "You got a nat 20.",
+      "characters_involved": [
+        "Kaelia"
+      ],
+      "outcome": "critical_hit",
+      "line_start": 1327,
+      "line_end": 1352,
+      "highlight_type": "critical_hit"
+    },
+    {
+      "description": "Okay. So with this bore B is going to do three damage to you. Uh, that's going to knock you pretty much almost all the way down, but because of the charge attack, uh, if he moves 20 feet in a straight",
+      "characters_involved": [
+        "Ekran"
+      ],
+      "outcome": "clutch_save",
+      "line_start": 1327,
+      "line_end": 1546,
+      "highlight_type": "clutch_save"
+    },
+    {
+      "description": "Okay. All right. Borby is going to make a dexterity saving throw. It is going to fail as this flame-like radiance just descends upon this bore. Doing four damage. Samaj, how would you like to describe",
+      "characters_involved": [
+        "Semaj"
+      ],
+      "outcome": "kill",
+      "line_start": 1327,
+      "line_end": 1633,
+      "highlight_type": "kill"
+    },
+    {
+      "description": "So pretty much what you could do is, is on your next turn, you could use a medicine check to try and stabilize him, uh, since, since he is unconscious, technically in death saving throws right now.",
+      "characters_involved": [
+        "Semaj"
+      ],
+      "outcome": "clutch_save",
+      "line_start": 1327,
+      "line_end": 1671,
+      "highlight_type": "clutch_save"
+    },
+    {
+      "description": "It is going to knock this, uh, this person unconscious. Give me one second. Why is this doing that? Let's do commoner. There we go. Um, as this just charges this one person, then you're going to see t",
+      "characters_involved": [
+        "Semaj"
+      ],
+      "outcome": "clutch_save",
+      "line_start": 1327,
+      "line_end": 1828,
+      "highlight_type": "clutch_save"
+    },
+    {
+      "description": "All right. So, uh, Ekren, it is your turn. You are now unconscious in the street. Your friends are battling these boars as you're bleeding out right now. I need you to make a death-saving throw and ma",
+      "characters_involved": [
+        "Kaelia"
+      ],
+      "outcome": "clutch_save",
+      "line_start": 1327,
+      "line_end": 2045,
+      "highlight_type": "clutch_save"
+    },
+    {
+      "description": "Okay, that is going to give all of the successes to Ekren here as he's still unconscious but he's no longer in death saving throws. Let's see. So, Kylia, can you please describe the spare the dying th",
+      "characters_involved": [
+        "Kaelia"
+      ],
+      "outcome": "clutch_save",
+      "line_start": 1327,
+      "line_end": 2117,
+      "highlight_type": "clutch_save"
+    },
+    {
+      "description": "So, uh, as you walk up to Ekren, uh, you kind of walk up to him, you start patting him on the side. Uh, you can see the blood start to stop as you're performing this little, this spare the dying spell",
+      "characters_involved": [
+        "Kaelia"
+      ],
+      "outcome": "critical_hit",
+      "line_start": 1327,
+      "line_end": 2128,
+      "highlight_type": "critical_hit"
+    },
+    {
+      "description": "This bore is not going to be able to get off an entire charge. So it's just going to be doing a regular attack. Um, and it is going to hit doing five damage. Uh, that is going to knock this person dow",
+      "characters_involved": [
+        "Semaj",
+        "Kaelia"
+      ],
+      "outcome": "clutch_save",
+      "line_start": 1327,
+      "line_end": 2162,
+      "highlight_type": "clutch_save"
+    },
+    {
+      "description": "Ah, oh. That was exactly what you needed to kill this bore. How would you like to describe this kill?",
+      "characters_involved": [
+        "Kaelia"
+      ],
+      "outcome": "kill",
+      "line_start": 1327,
+      "line_end": 2178,
+      "highlight_type": "kill"
+    },
+    {
+      "description": "Yeah, Kylia, you come up and, uh, you see this person on the ground, he's bleeding out. Uh, and you go and perform spare the dying again. You start to the little slappy slaps, uh, immediately, uh, is ",
+      "characters_involved": [
+        "Kaelia"
+      ],
+      "outcome": "clutch_save",
+      "line_start": 1327,
+      "line_end": 2251,
+      "highlight_type": "clutch_save"
+    },
+    {
+      "description": "Sorry, my headset died there for a second. But, um... Okay, so we'll continue on. So... As the last boar was brought in to the bloody butcher shop, you see Ekren still kind of unconscious on the groun",
+      "characters_involved": [
+        "Semaj",
+        "Kaelia",
+        "Ekran"
+      ],
+      "outcome": "clutch_save",
+      "line_start": 1327,
+      "line_end": 2999,
+      "highlight_type": "clutch_save"
+    },
+    {
+      "description": "Alright, we'll, uh, we'll just go ahead and kinda do this last part right here, and then we'll call it a night. So, uh, so, Ekren, you're feeling a lot better now. As, uh, you get off the cart, and yo",
+      "characters_involved": [
+        "Semaj",
+        "Kaelia"
+      ],
+      "outcome": "clutch_save",
+      "line_start": 1327,
+      "line_end": 3321,
+      "highlight_type": "clutch_save"
+    }
+  ],
+  "character_moments": {
+    "Kaelia": [
+      "Okay, just I was like trying to scroll back up and find it because I remember thinking at the end of the last session, don't touch me.",
+      "This is windows 11, I think. Yeah. Um, check to see like it says it's 1920 by 10 80.",
+      "So far, I think we're okay. I'm hoping that's not a bad decision. Okay.",
+      "Um, so I am actually going to move down to Ekren and use my bonus action for Spare the Dying, I think it's called.",
+      "I think the boar is too far away for me to hit though. Yep. He's 135 away. So, okay. I'm gonna go do, I'm going to move here because I need to be able to touch him, right?",
+      "Wait a second. I have a question. Yep. I, I think I still have movement left, right? Maybe?"
+    ],
+    "Semaj": [
+      "Um, we're, so we're, we're, um, we were going south and I remember, um, there were bandits along the way or something along the lines of that.",
+      "I'm going to, um, basically have these, uh, the ox like turned around. Okay. So to make it easier to load, so it's, I guess, I think we're in a corner, right? Aren't we in the corner of the town?",
+      "Yeah. And, uh, I think I, plus I think I still have a, uh, advantage on animal handling. Oh, oh yeah.",
+      "I think it's one until she reached the fifth level.",
+      "No, I don't. I think I have total the dead, but I don't have spare the dying. Okay.",
+      "I don't know, I think that joke needs a little more time in the oven."
+    ],
+    "Ekran": [
+      "Okay. I think just, I'm not really practicing with it or anything, but sitting in the back of the card, I'm looking at it, like looking at the art and like testing out like one or two notes. Okay. Yea",
+      "I remember that shirt too. Yeah. I remember when you were shorter than me.",
+      "Okay. I think just flippantly, I'll say like, I think he said something about starting a new diet.",
+      "I think I messaged you about it. They're really good.",
+      "As he does this, I think I'll, like, just take a cookie, I'll be like, Are these enchanted too?"
+    ]
+  },
+  "npcs_encountered": [],
+  "locations": [],
+  "level_up": false,
+  "player_attendance": [
+    "James",
+    "Jen",
+    "Richard"
+  ]
+}

@@ -1,0 +1,182 @@
+{
+  "session_number": 10,
+  "title": "The Nothic's Lair",
+  "date": "November 30, 2025",
+  "summary": "A new ally arrived—Aster, an 8-foot-tall Giff druid who smells of ozone and crushed herbs. The party immediately gaslit the recovering Belden into thinking Aster wasn't real, coordinating an elaborate prank that even included Larry. After learning about the Redbrand hideout under Tresendar Manor, they rallied the townsfolk, recruited Darren Edermath, and entered via a secret tunnel. Deep inside, a Nothic's psychic claws scraped at Semaj's mind. The session ended with the aberration casting Rotting Gaze as initiative was rolled.",
+  "level_up": false,
+  "duration": "~2.5 hours",
+  "player_attendance": ["Richard (Semaj)", "Jen (Kaelia)", "Darren (Valrex)", "Alan (Aster - NEW!)"],
+  "absent": ["Sean (Belden)"],
+  
+  "highlights": {
+    "best_moments": [
+      {
+        "title": "Aster Joins the Party",
+        "type": "roleplay",
+        "description": "A massive Giff—8 feet tall, 580 pounds, hippo-person druid—walked up to the party. Semaj immediately recognized him as a fellow astral being and they spoke in Celestial.",
+        "quotes": [
+          {"speaker": "Alan/Aster", "text": "He's a Giff. He's a lawful good, about 8 feet tall, 580 pounds, hippo person, basically."},
+          {"speaker": "Alex/GM", "text": "He walks like someone who has marched through wars. And possibly started a few."},
+          {"speaker": "Alan/Aster", "text": "His tusks are carved with symbols in celestial and druidic. And he smells of ozone and crushed herbs."}
+        ]
+      },
+      {
+        "title": "Gaslighting Belden",
+        "type": "funny",
+        "description": "The entire party coordinated to convince the recovering Belden that Aster wasn't real. Even Larry joined in, looking right through Aster when asked.",
+        "quotes": [
+          {"speaker": "Sean/Belden", "text": "Who the hell are you? You weren't here last night. Or did I just dream this hippo is here?"},
+          {"speaker": "Alan/Aster", "text": "Aster is going to play along and gaslight him into thinking he is not there."},
+          {"speaker": "Jen/Kaelia", "text": "I don't see a hippo."},
+          {"speaker": "Sean/Belden", "text": "Either I'm dead or I'm still drunk. What is going on?"}
+        ]
+      },
+      {
+        "title": "Larry Joins the Prank",
+        "type": "funny",
+        "description": "Aster cast Speak with Animals and told Larry to pretend he wasn't there. Larry walked to Belden, whined, and looked right through Aster.",
+        "quotes": [
+          {"speaker": "Alex/GM", "text": "Larry rises to all four and without as much as a glance at you, Aster, he's going to walk to Belden's side and he's going to whine."},
+          {"speaker": "Alex/GM", "text": "And Larry poignantly looks through Aster. The rest of the party is probably struggling to contain your laughter at this point."}
+        ]
+      },
+      {
+        "title": "Rallying the Townsfolk",
+        "type": "roleplay",
+        "description": "Semaj gave a speech in the town square, calling for people to stop standing alone. Darren Edermath, a retired adventurer, stepped forward to join them.",
+        "quotes": [
+          {"speaker": "Richard/Semaj", "text": "Let's remind these Redbrands what happens when good people stop standing alone."},
+          {"speaker": "Alex/GM", "text": "And then from the crowd, this older man with silver hair, an elf, he steps forward. His clasp bearing the symbol of Tymora."}
+        ]
+      },
+      {
+        "title": "The Halfling Boy's Secret",
+        "type": "plot",
+        "description": "A young halfling boy named Carp revealed he had followed Redbrands to a secret tunnel entrance behind the manor.",
+        "quotes": [
+          {"speaker": "Alex/GM", "text": "There's a cave, a tunnel behind the trees at the edge of the manor. I followed some Redbrands when they thought no one was watching. It's a secret entrance in the hillside."}
+        ]
+      },
+      {
+        "title": "The Nothic Attacks",
+        "type": "dramatic",
+        "description": "Deep in the hideout, a Nothic's psychic claws scraped at Semaj's mind. When Semaj resisted, the aberration cast Rotting Gaze. Session ended on a cliffhanger.",
+        "quotes": [
+          {"speaker": "Alex/GM", "text": "You begin to feel something scraping at the edge of your consciousness. Almost like spectral claws are trying to peel away the folds of your thoughts."},
+          {"speaker": "Alex/GM (Nothic)", "text": "You taste different. Magic in your blood. Pain in your past. I wonder what I would see if I peeled it back."},
+          {"speaker": "Alex/GM", "text": "Let us dance. And he is going to cast Rotting Gaze on you."}
+        ]
+      },
+      {
+        "title": "Aster Eats Everything",
+        "type": "funny",
+        "description": "Being a giant hippo, Aster consumed massive amounts of food at breakfast, eating an entire loaf of bread in one sitting.",
+        "quotes": [
+          {"speaker": "Alex/GM", "text": "You just eat the entire loaf of bread in like one sitting. It's gone in seconds."},
+          {"speaker": "Alex/GM", "text": "Grista mutters to herself: I'm going to need to kill another pig."}
+        ]
+      }
+    ],
+    "quotes_of_the_session": [
+      {
+        "speaker": "Jen/Kaelia",
+        "quote": "I don't see a hippo.",
+        "context": "Gaslighting Belden"
+      },
+      {
+        "speaker": "Sean/Belden",
+        "quote": "Either I'm dead or I'm still drunk. What is going on?",
+        "context": "Confused by the Aster prank"
+      },
+      {
+        "speaker": "Alex/GM (Nothic)",
+        "quote": "You taste different. Magic in your blood. Pain in your past.",
+        "context": "The Nothic probing Semaj's mind"
+      },
+      {
+        "speaker": "Alex/GM",
+        "quote": "Grista mutters: I'm going to need to kill another pig.",
+        "context": "After Aster devoured breakfast"
+      },
+      {
+        "speaker": "Richard/Semaj",
+        "quote": "Let's remind these Redbrands what happens when good people stop standing alone.",
+        "context": "Rallying the town"
+      },
+      {
+        "speaker": "Alex/GM",
+        "quote": "It's the ghost of hippo past!",
+        "context": "Belden trying to understand Aster"
+      }
+    ]
+  },
+  
+  "combat_encounters": [
+    {
+      "name": "Nothic Confrontation (Started)",
+      "enemies": "Nothic",
+      "outcome": "In progress - cliffhanger",
+      "mvp": "TBD",
+      "mvp_reason": "Combat just began"
+    }
+  ],
+  
+  "character_spotlights": [
+    {
+      "character": "Aster",
+      "moment": "Joined the party! An 8-foot Giff druid. Immediately participated in gaslighting Belden.",
+      "one_liner": "Acknowledges it with hippo noises."
+    },
+    {
+      "character": "Semaj",
+      "moment": "Resisted the Nothic's psychic probe, recognized it as an aberration, warned the party",
+      "one_liner": "This is not gonna go the way you think it is."
+    },
+    {
+      "character": "Larry",
+      "moment": "Participated in the prank, looking right through Aster when told to pretend he wasn't there",
+      "one_liner": "Good boy level: Method actor"
+    },
+    {
+      "character": "Belden",
+      "moment": "Woke up from near-death, got gaslit by the entire party about a hippo",
+      "one_liner": "Either I'm dead or I'm still drunk."
+    }
+  ],
+  
+  "plot_developments": [
+    "Aster (Giff Druid) joins the party",
+    "Learned about Tresendar Manor hideout from Grista",
+    "Rallied townsfolk against Redbrands",
+    "Darren Edermath joined as ally",
+    "Carp the halfling boy revealed secret tunnel entrance",
+    "Entered Redbrand hideout via secret tunnel",
+    "Encountered a Nothic - psychic aberration",
+    "Combat initiated with Nothic"
+  ],
+  
+  "npcs_encountered": [
+    {
+      "name": "Darren Edermath",
+      "role": "Retired adventurer, follower of Tymora",
+      "notes": "Pledged sword to help the party"
+    },
+    {
+      "name": "Carp",
+      "role": "Halfling boy",
+      "notes": "Revealed the secret tunnel entrance"
+    },
+    {
+      "name": "Grista",
+      "role": "Owner of the Sleeping Giant",
+      "notes": "Provided lodging and information about Redbrands"
+    }
+  ],
+  
+  "end_state": {
+    "location": "Redbrand Hideout - Nothic's Crevasse",
+    "party_status": "Combat initiated with Nothic",
+    "cliffhanger": "Nothic just cast Rotting Gaze on Semaj",
+    "next_objective": "Defeat the Nothic, explore the hideout"
+  }
+}

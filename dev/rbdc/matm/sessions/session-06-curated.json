@@ -1,0 +1,185 @@
+{
+  "session_number": 6,
+  "title": "Yeemic's Challenge",
+  "date": "June 20, 2025",
+  "summary": "After a long rest in Klarg's chamber, the party pushed deeper into the goblin den. They encountered more goblins and two goblin bosses—one of whom grabbed Sildar Hallwinter as a hostage. Belden, recognizing the man who gave them lodging in Neverwinter, challenged the goblin boss Yeemic to an honor duel. What followed was an epic, back-and-forth battle that ended in heartbreak: Belden fell, defeated. The session ended on a cliffhanger with Yeemic wounded but victorious.",
+  "level_up": false,
+  "duration": "~3 hours",
+  "player_attendance": ["Richard (Semaj)", "Jen (Kaelia)", "Sean (Belden)", "Darren (filling in for Ekran)"],
+  
+  "highlights": {
+    "best_moments": [
+      {
+        "title": "Larry Gets His Name",
+        "type": "funny",
+        "description": "The party officially named the wolf 'Larry' after debating names like Retribution and Revan. Belden immediately tried to name the other wolves Gary and Ace.",
+        "quotes": [
+          {"speaker": "Richard/Semaj", "text": "We need to give him a name like Larry. I think Larry is his new name."},
+          {"speaker": "Sean/Belden", "text": "One of these other wolves I'll name him Gary. Gary and Ace."},
+          {"speaker": "Alex/GM", "text": "All right, it's happening now. That put me in a good mood."}
+        ]
+      },
+      {
+        "title": "Sildar Taken Hostage",
+        "type": "dramatic",
+        "description": "A goblin boss grabbed Sildar Hallwinter—the same man who gave them their room in Neverwinter—and held a blade to his throat. Another prisoner, a half-elf, remained chained nearby.",
+        "quotes": [
+          {"speaker": "Alex/GM", "text": "You're going to immediately recognize the prisoner as Sildar. This is the same man who gave you the key to your room the first night in Neverwinter. You now see this goblin boss with a scimitar at his throat, ready to cut it."}
+        ]
+      },
+      {
+        "title": "Belden's Challenge",
+        "type": "epic",
+        "description": "Belden stepped forward and challenged the goblin boss Yeemic to single combat, speaking in Goblin. The terms: if Belden wins, the prisoners go free. If Yeemic wins, the party helps him kill Klarg.",
+        "quotes": [
+          {"speaker": "Sean/Belden", "text": "I am going to yell out to the goblin in Goblin: STOP! Fight me one-on-one!"},
+          {"speaker": "Alex/GM (Yeemic)", "text": "You want single combat? Here's the deal. You fight me one-on-one. If you lose, I want to lead. Your crew backs me and we kill Klarg."}
+        ]
+      },
+      {
+        "title": "Ekran Almost Ruined Everything",
+        "type": "funny",
+        "description": "Ekran, hidden in shadows with his bow trained on Yeemic, couldn't resist taking a shot during the negotiations. He missed, nearly breaking the duel before it started.",
+        "quotes": [
+          {"speaker": "Alex/GM", "text": "He is going to hiss at you, Belden, and say: So that's how it is, huh? You want honor but you're—"},
+          {"speaker": "Sean/Belden", "text": "When I see the arrow fly by and miss, I turn and say: STOP! Wait! No! This is a duel!"},
+          {"speaker": "James/Ekran", "text": "Ekran was like a busted criminal after he missed. Just hands up like..."}
+        ]
+      },
+      {
+        "title": "The Duel",
+        "type": "epic",
+        "description": "An absolutely brutal, back-and-forth duel between Belden and Yeemic. Belden landed crushing hammer blows, knocked Yeemic prone with Strike of the Giants, but kept missing at crucial moments.",
+        "quotes": [
+          {"speaker": "Alex/GM", "text": "This is a rib-shattering crunch as you fall from this attack, immediately get up, and with the momentum swing right into his ribs. You hear a crunch and he lets out air."},
+          {"speaker": "Richard/Semaj", "text": "Belden, you got like Wil Wheaton level luck with those ones, man."}
+        ]
+      },
+      {
+        "title": "Belden Falls",
+        "type": "dramatic",
+        "description": "Despite landing devastating blows and using Second Wind, Belden's dice betrayed him. He dropped his hammer, missed six attacks in a row, and finally fell to Yeemic's scimitar.",
+        "quotes": [
+          {"speaker": "Sean/Belden", "text": "I can't believe I flubbed that many attacks in a row!"},
+          {"speaker": "Alex/GM", "text": "That was a brutal duel. It was an upset victory—without the victory. It was just upset."},
+          {"speaker": "Jen/Kaelia", "text": "That was so dramatic, clownish, and anti-climactic all at the same time."}
+        ]
+      },
+      {
+        "title": "Kaelia's Fire Wolf",
+        "type": "cool",
+        "description": "During her watch, Kaelia used Control Flames to create a massive wolf made of pure fire to stand sentry. Larry was NOT happy about this new alpha.",
+        "quotes": [
+          {"speaker": "Alex/GM", "text": "The flames surge outward, coalescing into the shape of a wolf of pure flame. Its ears perk up, its tail is flickering. Larry's hair rises as he sees this giant alpha fire wolf."},
+          {"speaker": "Jen/Kaelia", "text": "No Larry, no! Larry, friend! Larry, friend! It's Gary! It's Gary!"}
+        ]
+      }
+    ],
+    "quotes_of_the_session": [
+      {
+        "speaker": "Alex/GM",
+        "quote": "That was a brutal duel. It was an upset victory—without the victory. It was just upset.",
+        "context": "After Belden lost the duel"
+      },
+      {
+        "speaker": "Jen/Kaelia",
+        "quote": "That was so dramatic, clownish, and anti-climactic all at the same time.",
+        "context": "Describing the duel"
+      },
+      {
+        "speaker": "Sean/Belden",
+        "quote": "STOP! Fight me one-on-one!",
+        "context": "Challenging Yeemic to a duel"
+      },
+      {
+        "speaker": "James/Ekran",
+        "quote": "As a rogue, I'm not gonna honor any—now you lost a duel, like, I'mma shoot him in the face.",
+        "context": "Planning revenge after Belden fell"
+      },
+      {
+        "speaker": "Sean/Belden",
+        "quote": "One of these other wolves I'll name him Gary. Gary and Ace.",
+        "context": "Trying to name the other wolves"
+      },
+      {
+        "speaker": "Richard/Semaj",
+        "quote": "Belden, you got like Wil Wheaton level luck with those ones, man.",
+        "context": "After Belden's string of misses"
+      }
+    ]
+  },
+  
+  "combat_encounters": [
+    {
+      "name": "Goblin Ambush at the Bridge",
+      "enemies": "Multiple Goblins, 2 Goblin Bosses",
+      "outcome": "Partial victory - led to duel",
+      "mvp": "Belden",
+      "mvp_reason": "Crossbow shot to a goblin's throat, then challenged Yeemic"
+    },
+    {
+      "name": "The Honor Duel: Belden vs Yeemic",
+      "enemies": "Yeemic (Goblin Boss)",
+      "outcome": "Defeat - Belden fell",
+      "mvp": "Yeemic",
+      "mvp_reason": "Won the duel despite being badly wounded"
+    }
+  ],
+  
+  "character_spotlights": [
+    {
+      "character": "Belden",
+      "moment": "Challenged Yeemic to an honor duel to save Sildar. Landed devastating blows but lost due to terrible dice luck.",
+      "one_liner": "I can't believe I flubbed that many attacks in a row!"
+    },
+    {
+      "character": "Kaelia",
+      "moment": "Created a fire wolf sentry during her watch. Larry was jealous.",
+      "one_liner": "No Larry, no! Larry, friend!"
+    },
+    {
+      "character": "Ekran",
+      "moment": "Almost ruined the duel by taking a shot during negotiations. Missed. Stood there with hands up like a caught criminal.",
+      "one_liner": "Ekran was like a busted criminal after he missed."
+    },
+    {
+      "character": "Semaj",
+      "moment": "Officially named the wolf Larry. Fought the urge to attack during the duel out of respect for honor.",
+      "one_liner": "I think Larry is his new name."
+    }
+  ],
+  
+  "plot_developments": [
+    "Larry officially named",
+    "Found Sildar Hallwinter held prisoner",
+    "Discovered another prisoner - a half-elf (later revealed as Valrex)",
+    "Belden challenged Yeemic to an honor duel",
+    "Belden lost the duel - session ended on cliffhanger",
+    "Yeemic badly wounded but victorious"
+  ],
+  
+  "npcs_encountered": [
+    {
+      "name": "Sildar Hallwinter",
+      "status": "Prisoner, badly injured",
+      "notes": "The man who gave them lodging in Neverwinter"
+    },
+    {
+      "name": "Yeemic",
+      "status": "Goblin Boss, wounded",
+      "notes": "Won the honor duel against Belden"
+    },
+    {
+      "name": "Unknown Half-Elf",
+      "status": "Prisoner, chained",
+      "notes": "Will be revealed as Valrex"
+    }
+  ],
+  
+  "end_state": {
+    "location": "Deep in Cragmaw Cave",
+    "party_status": "Belden unconscious, party watching in horror",
+    "cliffhanger": "Yeemic stands victorious over Belden's fallen body. Will the party honor the duel's terms?",
+    "next_objective": "Deal with the aftermath of the lost duel"
+  }
+}

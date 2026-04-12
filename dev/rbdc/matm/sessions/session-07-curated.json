@@ -1,0 +1,169 @@
+{
+  "session_number": 7,
+  "title": "The Duel's Aftermath",
+  "date": "July 26, 2025",
+  "summary": "The aftermath of Belden's lost duel. Despite the honor duel, Semaj opened fire on Yeemic, followed by the rest of the party. Yeemic's dying word: 'Cowards!' The party rescued Sildar Hallwinter and a new companion—Valrex, a half-elf cleric. They learned of the Black Spider, Wave Echo Cave, and the Forge of Spells. Semaj heard a mysterious whisper on the wind: 'Ruxithid.' On the way out, a giant poisonous snake nearly killed Belden, but Larry ripped its head off in vengeance.",
+  "level_up": false,
+  "duration": "~3.5 hours",
+  "player_attendance": ["Richard (Semaj)", "Jen (Kaelia)", "Sean (Belden)", "Darren (Valrex - new character!)"],
+  
+  "highlights": {
+    "best_moments": [
+      {
+        "title": "\"COWARDS!\"",
+        "type": "dramatic",
+        "description": "Despite the honor duel, Semaj attacked the wounded Yeemic. Then Ekran shot him. Yeemic's dying breath, face-to-face with the fallen Belden: 'Cowards!'",
+        "quotes": [
+          {"speaker": "Alex/GM", "text": "As the arrow finds its mark in his chest, Yeemic drops down next to you. He's now laying almost face to face with you, and in his dying breath, he's going to look at you and say: Cowards!"},
+          {"speaker": "Sean/Belden", "text": "I should have, as the life was fading from his eyes, been like: Coward! COWARD!"}
+        ]
+      },
+      {
+        "title": "Valrex Joins the Party",
+        "type": "roleplay",
+        "description": "The other prisoner in the cave was Valrex, a half-elf cleric. He introduced himself with sardonic humor despite his chains.",
+        "quotes": [
+          {"speaker": "James/Valrex", "text": "Name's Valrex. Charmed, I'm sure. Would shake your hand, but... *rattles chains*"}
+        ]
+      },
+      {
+        "title": "The Black Spider Revealed",
+        "type": "plot",
+        "description": "Sildar revealed that Gundren was taken by someone called the Black Spider, who now has the map to Wave Echo Cave and the legendary Forge of Spells.",
+        "quotes": [
+          {"speaker": "Alex/GM (Sildar)", "text": "They sent him to someone or something called the Black Spider. If the Black Spider unlocks this cave before we do, gods help us all."},
+          {"speaker": "Alex/GM (Sildar)", "text": "There's power in that cave. Not just riches, but magic. Old magic. The Forge of Spells, they called it."}
+        ]
+      },
+      {
+        "title": "The Whisper: Ruxithid",
+        "type": "mysterious",
+        "description": "During the night watch, Semaj heard a whisper on the wind—a name from dreams long forgotten. Ruxithid. A psychic tyrant inscribed beneath the world.",
+        "quotes": [
+          {"speaker": "Alex/GM", "text": "This name is still echoing in your mind. Ruxithid. It's this whisper on the wind. But from a dream you had long ago. Ruxithid is not a goblin. It's something older. Something patient. Something that waits."}
+        ]
+      },
+      {
+        "title": "Larry vs. Giant Poisonous Snake",
+        "type": "epic",
+        "description": "On the way out of the cave, Semaj stumbled into a giant poisonous snake. It nearly killed Belden with its venom. Larry, in pure vengeful fury, ripped its head clean off.",
+        "quotes": [
+          {"speaker": "Richard/Semaj", "text": "Larry realizes what old giant poisonous snake did to Samaj. He feels that divine retribution within him. He grabs the head, just rips it, and bites the head off and throws it."},
+          {"speaker": "Alex/GM", "text": "You're going to see a severed snake head just plop down into the chamber below."},
+          {"speaker": "Richard/Semaj", "text": "Larry looks to Samaj with viscera and gore around his mouth like: Did I do a good job?"}
+        ]
+      },
+      {
+        "title": "Ekran's Departure Foreshadowed",
+        "type": "meta",
+        "description": "With Zev unable to continue playing, the party discussed Ekran parting ways when they reach Phandalin.",
+        "quotes": [
+          {"speaker": "Alex/GM", "text": "When we get to town, Zev's character came for the mission he was supposed to. He's going to get paid and that is going to be it."}
+        ]
+      },
+      {
+        "title": "Larry Carries Semaj",
+        "type": "funny",
+        "description": "After the snake fight, the wounded Semaj rode on Larry's back out of the cave like a tiny injured knight.",
+        "quotes": [
+          {"speaker": "Alex/GM", "text": "Since he's so small, I'm going to say he can fit on Larry's back. Larry will just carry him the rest of the way."},
+          {"speaker": "Richard/Semaj", "text": "Larry looks at me like: I got you."}
+        ]
+      }
+    ],
+    "quotes_of_the_session": [
+      {
+        "speaker": "Alex/GM (Yeemic)",
+        "quote": "COWARDS!",
+        "context": "Yeemic's dying word to Belden"
+      },
+      {
+        "speaker": "Alex/GM (Sildar)",
+        "quote": "If the Black Spider unlocks this cave before we do, gods help us all.",
+        "context": "Revealing the stakes"
+      },
+      {
+        "speaker": "Alex/GM",
+        "quote": "Ruxithid is not a goblin. It's something older. Something patient. Something that waits.",
+        "context": "The mysterious whisper"
+      },
+      {
+        "speaker": "Richard/Semaj",
+        "quote": "Larry looks to Samaj with viscera and gore around his mouth like: Did I do a good job?",
+        "context": "After Larry decapitates the snake"
+      },
+      {
+        "speaker": "Alex/GM",
+        "quote": "Frickin' Larry the GOAT.",
+        "context": "After Larry's snake kill"
+      },
+      {
+        "speaker": "Sean/Belden",
+        "quote": "I should have, as the life was fading from his eyes, been like: Coward! COWARD!",
+        "context": "Belden's regret"
+      }
+    ]
+  },
+  
+  "combat_encounters": [
+    {
+      "name": "Execution of Yeemic",
+      "enemies": "Yeemic (wounded Goblin Boss)",
+      "outcome": "Victory (dishonorable)",
+      "mvp": "Semaj",
+      "mvp_reason": "Started the attack that killed Yeemic"
+    },
+    {
+      "name": "Giant Poisonous Snake",
+      "enemies": "Giant Poisonous Snake",
+      "outcome": "Victory",
+      "mvp": "Larry",
+      "mvp_reason": "Ripped the snake's head clean off"
+    }
+  ],
+  
+  "character_spotlights": [
+    {
+      "character": "Semaj",
+      "moment": "Broke the duel's honor by attacking Yeemic. Heard the whisper 'Ruxithid' on the wind. Rode Larry out of the cave.",
+      "one_liner": "Larry looks at me like: I got you."
+    },
+    {
+      "character": "Belden",
+      "moment": "Woke up to see his companions attacking Yeemic. Nearly died to snake poison. Had to process losing his honor duel.",
+      "one_liner": "I should have said: Coward! COWARD!"
+    },
+    {
+      "character": "Larry",
+      "moment": "Decapitated a giant poisonous snake that hurt his master. Good boy status: confirmed.",
+      "one_liner": "Frickin' Larry the GOAT"
+    },
+    {
+      "character": "Valrex",
+      "moment": "Introduced as the second prisoner. Joined the party. Helped skin the snake.",
+      "one_liner": "Name's Valrex. Charmed, I'm sure."
+    }
+  ],
+  
+  "plot_developments": [
+    "Yeemic killed - his last word: 'Cowards!'",
+    "Sildar Hallwinter rescued",
+    "Valrex (half-elf cleric) joins the party",
+    "Learned about the Black Spider",
+    "Learned about Wave Echo Cave and the Forge of Spells",
+    "Gundren was taken by the Black Spider",
+    "Semaj heard the name 'Ruxithid' whispered on the wind",
+    "Ekran will depart when they reach Phandalin",
+    "Heading to Phandalin with the supply cart"
+  ],
+  
+  "loot": [
+    "Snakeskin (harvested from giant poisonous snake)"
+  ],
+  
+  "end_state": {
+    "location": "On the road to Phandalin",
+    "party_status": "Wounded but rescued - Sildar and Valrex saved",
+    "next_objective": "Deliver supplies to Phandalin, find leads on the Black Spider"
+  }
+}
