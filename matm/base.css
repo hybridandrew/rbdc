@@ -529,3 +529,101 @@ body::before {
   font-size: 0.7rem;
   top: 0.3rem;
 }
+
+/* ===== SESSION CONNECTIONS BLOCK ===== */
+.session-connections {
+  margin-bottom: 3rem;
+  background: linear-gradient(135deg, rgba(107, 79, 160, 0.08), rgba(20, 16, 28, 0.9));
+  border: 1px solid rgba(107, 79, 160, 0.3);
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+
+.session-connections-title {
+  font-family: 'Cinzel', serif;
+  font-size: 0.85rem;
+  color: var(--purple);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  margin-bottom: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.session-connections-title::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, rgba(107, 79, 160, 0.4), transparent);
+}
+
+.session-connections-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.session-connections-col {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.connections-col-label {
+  font-family: 'Cinzel', serif;
+  font-size: 0.75rem;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.connections-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.connections-list li {
+  padding: 0.25rem 0;
+  padding-left: 0.75rem;
+  position: relative;
+  font-size: 0.9rem;
+}
+
+.connections-list li::before {
+  content: '◆';
+  position: absolute;
+  left: 0;
+  color: var(--gold-dim);
+  font-size: 0.5rem;
+  top: 0.45rem;
+}
+
+.connections-list a {
+  color: var(--gold-dim);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.connections-list a:hover {
+  color: var(--gold);
+  text-decoration: underline;
+}
+
+.connections-empty {
+  color: var(--text-dim);
+  font-style: italic;
+  font-size: 0.85rem;
+  padding-left: 0.75rem;
+}
+
+@media (max-width: 640px) {
+  .session-connections-grid {
+    grid-template-columns: 1fr;
+  }
+}
