@@ -150,7 +150,87 @@
       border-top: 1px solid rgba(255,255,255,0.05);
     }
     .quote-card.hidden { display: none; }
-    
+
+    /* Surprise Me button */
+    .surprise-btn {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: linear-gradient(135deg, rgba(212, 168, 87, 0.15), rgba(139, 92, 246, 0.15));
+      border: 1px solid var(--gold-dim);
+      color: var(--gold);
+      padding: 0.6rem 1.4rem;
+      border-radius: 2rem;
+      font-family: 'Cinzel', serif;
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      letter-spacing: 0.05em;
+    }
+    .surprise-btn:hover {
+      background: linear-gradient(135deg, rgba(212, 168, 87, 0.3), rgba(139, 92, 246, 0.25));
+      border-color: var(--gold);
+      transform: translateY(-1px);
+      box-shadow: 0 4px 20px rgba(212, 168, 87, 0.25);
+    }
+
+    /* Surprise overlay */
+    .surprise-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(5, 3, 12, 0.92);
+      z-index: 9999;
+      justify-content: center;
+      align-items: center;
+      backdrop-filter: blur(4px);
+      cursor: pointer;
+      padding: 2rem;
+    }
+    .surprise-overlay.visible { display: flex; }
+    .surprise-content {
+      max-width: 700px;
+      text-align: center;
+      animation: surpriseIn 0.4s ease;
+    }
+    @keyframes surpriseIn {
+      from { opacity: 0; transform: scale(0.9); }
+      to { opacity: 1; transform: scale(1); }
+    }
+    .surprise-text {
+      font-family: 'Cinzel', serif;
+      font-size: clamp(1.4rem, 4vw, 2.2rem);
+      font-style: italic;
+      color: var(--gold);
+      line-height: 1.5;
+      text-shadow:
+        0 0 20px rgba(212, 168, 87, 0.6),
+        0 0 60px rgba(212, 168, 87, 0.3),
+        0 0 120px rgba(212, 168, 87, 0.15);
+      margin-bottom: 1.5rem;
+    }
+    .surprise-speaker {
+      font-family: 'Cinzel', serif;
+      font-size: 1rem;
+      color: var(--text-secondary);
+      letter-spacing: 0.1em;
+      margin-bottom: 0.5rem;
+    }
+    .surprise-context {
+      font-style: italic;
+      color: var(--text-dim);
+      font-size: 0.9rem;
+    }
+    .surprise-dismiss {
+      margin-top: 2.5rem;
+      font-family: 'Cinzel', serif;
+      font-size: 0.75rem;
+      color: var(--text-dim);
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+    }
+
     @media (max-width: 768px) {
       .container { padding: 1rem; padding-top: 80px; }
       .page-title { font-size: 1.8rem; }
@@ -172,6 +252,10 @@
       <div class="stat"><div class="stat-value">5</div><div class="stat-label">Puns</div></div>
     </div>
     
+    <div style="display:flex; justify-content:center; margin-bottom:1rem;">
+      <button class="surprise-btn" id="surpriseBtn">✦ Surprise Me</button>
+    </div>
+
     <div class="filters">
       <button class="filter-btn active" data-filter="all">All</button>
       <button class="filter-btn" data-filter="semaj">Semaj</button>
@@ -1638,7 +1722,17 @@
       </div>
     </div>
   </div>
-  
+
+  <!-- Surprise Me Overlay -->
+  <div class="surprise-overlay" id="surpriseOverlay">
+    <div class="surprise-content">
+      <p class="surprise-text" id="surpriseText"></p>
+      <p class="surprise-speaker" id="surpriseSpeaker"></p>
+      <p class="surprise-context" id="surpriseContext"></p>
+      <p class="surprise-dismiss">Click anywhere to dismiss</p>
+    </div>
+  </div>
+
   <script>
     // Filter functionality
     const buttons = document.querySelectorAll('.filter-btn');
@@ -1662,6 +1756,37 @@
           }
         });
       });
+    });
+  </script>
+  <script>
+    // Surprise Me functionality
+    const surpriseBtn = document.getElementById('surpriseBtn');
+    const surpriseOverlay = document.getElementById('surpriseOverlay');
+    const surpriseText = document.getElementById('surpriseText');
+    const surpriseSpeaker = document.getElementById('surpriseSpeaker');
+    const surpriseContext = document.getElementById('surpriseContext');
+
+    surpriseBtn.addEventListener('click', () => {
+      // Pull from ALL quote cards regardless of active filter
+      const allCards = document.querySelectorAll('.quote-card');
+      const pick = allCards[Math.floor(Math.random() * allCards.length)];
+
+      const text = pick.querySelector('.quote-text')?.textContent.trim() || '';
+      const speaker = pick.querySelector('.quote-speaker')?.textContent.trim() || '';
+      const context = pick.querySelector('.quote-context')?.textContent.trim() || '';
+
+      surpriseText.textContent = '\u201c' + text + '\u201d';
+      surpriseSpeaker.textContent = speaker;
+      surpriseContext.textContent = context;
+      surpriseOverlay.classList.add('visible');
+    });
+
+    surpriseOverlay.addEventListener('click', () => {
+      surpriseOverlay.classList.remove('visible');
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') surpriseOverlay.classList.remove('visible');
     });
   </script>
   <script src="nav.js"></script>

@@ -77,8 +77,14 @@ function getNavHTML(currentPage) {
             <a href="${base}sessions.html" class="dropdown-link">
               <span class="icon">📚</span> All Sessions
             </a>
+            <a href="${base}chronicle-timeline.html" class="dropdown-link">
+              <span class="icon">📜</span> Legend So Far
+            </a>
             <a href="${base}quotebook.html" class="dropdown-link">
               <span class="icon">💬</span> Quotebook
+            </a>
+            <a href="${base}killboard.html" class="dropdown-link">
+              <span class="icon">💀</span> Kill Board
             </a>
           </div>
         </li>

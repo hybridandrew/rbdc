@@ -9,6 +9,28 @@
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="nav.css">
   <link rel="stylesheet" href="base.css">
+  <style>
+    .npc-connections {
+      margin: 0.75rem 0 0.5rem;
+      font-size: 0.85rem;
+      line-height: 1.6;
+    }
+    .npc-connections-label {
+      font-family: 'Cinzel', serif;
+      font-size: 0.75rem;
+      color: var(--text-dim);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-right: 0.4rem;
+    }
+    .npc-connection-link {
+      color: var(--gold-dim);
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+    .npc-connection-link:hover { color: var(--gold); text-decoration: underline; }
+    .npc-connection-plain { color: var(--text-secondary); }
+  </style>
 </head>
 <body>
   <div class="container">
@@ -42,28 +64,48 @@
           title: 'Dwarf Entrepreneur',
           description: 'The determined dwarf who hired the party. Believes he\'s found the lost Wave Echo Cave and the legendary Forge of Spells.',
           status: 'captured',
-          statusText: '⚠ Captured'
+          statusText: '⚠ Captured',
+          connections: [
+            { name: 'Sildar Hallwinter' },
+            { name: 'The Black Spider', href: 'mysteries.html' },
+            { name: 'Where is Wave Echo Cave?', href: 'mysteries.html' },
+          ]
         },
         {
           name: 'Sildar Hallwinter',
           title: 'Retired Sellsword',
           description: 'A seasoned warrior and member of the Lord\'s Alliance who paid for the party\'s rooms at the Driftwood Tavern. Captured by Cragmaw goblins alongside Gundren and rescued by the party. Revealed that the Black Spider specifically ordered Gundren taken for his map to Wave Echo Cave. Secured lodging for the party at the Stonehill Inn and promised gold and his alliance\'s support in finding Gundren.',
           status: 'ally',
-          statusText: '✓ Ally'
+          statusText: '✓ Ally',
+          connections: [
+            { name: 'Gundren Rockseeker' },
+            { name: 'Glasstaff (Iarno Albrek)' },
+            { name: 'The Black Spider', href: 'mysteries.html' },
+          ]
         },
         {
           name: 'Darren Edermath',
           title: 'Retired Adventurer',
           description: 'An older elf bearing Tymora\'s symbol who pledged his sword to the party\'s cause against the Redbrands. Confirmed the defeat of Glasstaff and reinforced that Gundren\'s rescue is the real mission. Stepped forward in Phandalin\'s town square when no other citizen would, entered the Redbrand hideout with the party, fought alongside them, was dropped in the dungeon and brought back by Semaj\'s Healing Word. After the hideout was cleared, he escorted the Dendrar family to safety.',
           status: 'ally',
-          statusText: '✓ Ally'
+          statusText: '✓ Ally',
+          connections: [
+            { name: 'Myrna Dendrar' },
+            { name: 'Glasstaff (Iarno Albrek)' },
+            { name: 'Qelline Alderleaf' },
+          ]
         },
         {
           name: 'Reidoth',
           title: 'Druid of Thundertree',
           description: 'A wiry old man in a green-brown cloak who has made his home in the ruins of Thundertree. Has been patiently observing Venomfang the dragon and learning its habits. Offered the party full intelligence on the dragon, the zombies, and the cultists in exchange for dealing with Venomfang.',
           status: 'ally',
-          statusText: '✓ Ally'
+          statusText: '✓ Ally',
+          connections: [
+            { name: 'Venomfang' },
+            { name: 'Qelline Alderleaf' },
+            { name: 'Can Venomfang be dealt with?', href: 'mysteries.html' },
+          ]
         },
         {
           name: 'Linene Graywind',
@@ -112,7 +154,11 @@
           title: 'Halfling Farmer',
           description: 'A halfling woman who runs Alderleaf Farm on the southeast edge of Phandalin. Friend of Darren Edermath and close acquaintance of Reidoth the druid. Confirmed the party\'s directions to Cragmaw Castle and advised: if speed is the priority, follow the goblin directions; if survival is the priority, find Reidoth in Thundertree first.',
           status: 'ally',
-          statusText: '✓ Ally'
+          statusText: '✓ Ally',
+          connections: [
+            { name: 'Reidoth' },
+            { name: 'Darren Edermath' },
+          ]
         }
       ],
       enemies: [
@@ -121,14 +167,26 @@
           title: 'Mysterious Villain',
           description: 'A shadowy figure seeking the Forge of Spells. Has captured Gundren and commands both goblins and the Redbrands.',
           status: 'enemy',
-          statusText: '✗ Enemy'
+          statusText: '✗ Enemy',
+          connections: [
+            { name: 'Gundren Rockseeker' },
+            { name: 'Glasstaff (Iarno Albrek)' },
+            { name: 'Who is the Black Spider?', href: 'mysteries.html' },
+            { name: 'Where is Wave Echo Cave?', href: 'mysteries.html' },
+          ]
         },
         {
           name: 'Glasstaff (Iarno Albrek)',
           title: 'Former Redbrand Leader',
           description: 'A wizard who led the Redbrands from beneath Tresendar Manor under the alias Glasstaff — named for his staff of defense. His real name was Iarno Albrek, a Lords Alliance agent who was supposed to establish order in Phandalin but instead went rogue and built the Redbrand network as a tool of the Black Spider. Hunted down by the party after a chase through the manor ruins at dawn. Killed by Kaelia\'s twin scorching ray — he was double dead. His staff of defense is now carried by Kaelia.',
           status: 'enemy',
-          statusText: '✗ Deceased'
+          statusText: '✗ Deceased',
+          connections: [
+            { name: 'The Black Spider' },
+            { name: 'Sildar Hallwinter' },
+            { name: 'Who Was Really Running the Redbrands?', href: 'mysteries.html' },
+            { name: 'Lightbringer — The Unrecovered Holy Weapon', href: 'mysteries.html' },
+          ]
         },
         {
           name: 'Klarg',
@@ -149,7 +207,11 @@
           title: 'Aberrant Guardian of the Crevasse',
           description: 'A twisted one-eyed aberration that lurked in the crevasse beneath Tresendar Manor, feeding on secrets and psychic energy. It probed Semaj\'s mind before combat began, tasting his magic and his pain. It clung to walls, used a rotting gaze, and clawed down multiple party members before Belden\'s warhammer crit ended it. Belden raised his hammer, gazed into its single eye, and said: "I see what you did there."',
           status: 'enemy',
-          statusText: '✗ Deceased'
+          statusText: '✗ Deceased',
+          connections: [
+            { name: 'Ruxithid', href: 'mysteries.html' },
+            { name: 'What Lies Beyond the Tresendar Crypts?', href: 'mysteries.html' },
+          ]
         }
       ],
       neutral: [
@@ -158,14 +220,23 @@
           title: 'Young Green Dragon',
           description: 'A young green dragon who has claimed the old stone tower in the ruins of Thundertree. Not so young that it should be underestimated, according to Reidoth. It doesn\'t care what lives or dies around it. The party\'s next major challenge.',
           status: 'enemy',
-          statusText: '✗ Enemy'
+          statusText: '✗ Enemy',
+          connections: [
+            { name: 'Reidoth' },
+            { name: 'Can Venomfang be dealt with?', href: 'mysteries.html' },
+          ]
         },
         {
           name: 'Ruxithid',
           title: 'Unknown Entity',
           description: 'A name whispered to Semaj in the night. Described as a "psychic tyrant from beyond the world." Its connection to current events is unknown but disturbing.',
           status: 'unknown',
-          statusText: '? Unknown'
+          statusText: '? Unknown',
+          connections: [
+            { name: 'What is Ruxithid?', href: 'mysteries.html' },
+            { name: 'The Creature in Glasstaff\'s Workshop', href: 'mysteries.html' },
+            { name: 'The Nothic' },
+          ]
         },
         {
           name: 'Millhouse',
@@ -255,11 +326,23 @@
     };
 
     function renderNpcCard(npc) {
+      const connectionsHTML = npc.connections && npc.connections.length > 0
+        ? `<div class="npc-connections">
+            <span class="npc-connections-label">Connected to:</span>
+            ${npc.connections.map(c =>
+              c.href
+                ? `<a href="${c.href}" class="npc-connection-link">${c.name}</a>`
+                : `<span class="npc-connection-plain">${c.name}</span>`
+            ).join(', ')}
+           </div>`
+        : '';
+
       return `
         <div class="npc-card">
           <h3 class="npc-name">${npc.name}</h3>
           <p class="npc-title">${npc.title}</p>
           <p class="npc-description">${npc.description}</p>
+          ${connectionsHTML}
           <span class="npc-status ${npc.status}">${npc.statusText}</span>
         </div>
       `;

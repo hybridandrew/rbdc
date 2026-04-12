@@ -441,3 +441,27 @@ body::before {
     justify-content: space-around;
   }
 }
+
+/* ===== MEMORABLE MOMENTS ===== */
+.memorable-moments-card {
+  border-color: rgba(212, 168, 87, 0.3);
+}
+.memorable-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+.memorable-item {
+  color: var(--text-secondary);
+  padding-left: 1.5rem;
+  position: relative;
+  line-height: 1.65;
+}
+.memorable-item::before {
+  content: '⭐';
+  position: absolute;
+  left: 0;
+  font-size: 0.7rem;
+  top: 0.3rem;
+}

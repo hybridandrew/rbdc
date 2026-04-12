@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Legend So Far | Mage Against The Machine</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="nav.css">
+  <link rel="stylesheet" href="base.css">
+  <style>
+    .container { max-width: 900px; margin: 0 auto; padding: 2rem; padding-top: 100px; }
+
+    .timeline {
+      position: relative;
+      padding: 2rem 0;
+    }
+
+    /* Vertical spine */
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background: linear-gradient(
+        to bottom,
+        transparent,
+        rgba(212, 168, 87, 0.5) 5%,
+        rgba(212, 168, 87, 0.5) 95%,
+        transparent
+      );
+      transform: translateX(-50%);
+    }
+
+    .timeline-entry {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 2.5rem;
+      position: relative;
+    }
+
+    /* Alternating left/right */
+    .timeline-entry:nth-child(odd) {
+      flex-direction: row-reverse;
+    }
+
+    .timeline-entry:nth-child(odd) .entry-card {
+      margin-right: 3.5rem;
+      margin-left: 0;
+      text-align: right;
+    }
+
+    .timeline-entry:nth-child(even) .entry-card {
+      margin-left: 3.5rem;
+      margin-right: 0;
+    }
+
+    /* Center node */
+    .timeline-node {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 44px;
+      height: 44px;
+      background: var(--bg-dark);
+      border: 2px solid var(--gold);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Cinzel', serif;
+      font-size: 0.7rem;
+      font-weight: 700;
+      color: var(--gold);
+      z-index: 2;
+      box-shadow: 0 0 12px rgba(212, 168, 87, 0.3);
+      flex-shrink: 0;
+      top: 0.75rem;
+    }
+
+    .entry-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 12px;
+      padding: 1.25rem 1.5rem;
+      width: calc(50% - 3.5rem);
+      text-decoration: none;
+      color: inherit;
+      display: block;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .entry-card:hover {
+      border-color: var(--gold-dim);
+      background: var(--bg-card-hover);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 24px rgba(212, 168, 87, 0.12);
+    }
+
+    .entry-session-num {
+      font-family: 'Cinzel', serif;
+      font-size: 0.75rem;
+      color: var(--gold);
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      margin-bottom: 0.25rem;
+    }
+
+    .entry-title {
+      font-family: 'Cinzel', serif;
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--text-primary);
+      margin-bottom: 0.5rem;
+    }
+
+    .entry-date {
+      font-size: 0.8rem;
+      color: var(--text-dim);
+      margin-bottom: 0.6rem;
+    }
+
+    .entry-milestone {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      font-style: italic;
+      line-height: 1.55;
+    }
+
+    /* Mobile: single column */
+    @media (max-width: 680px) {
+      .timeline::before { left: 22px; }
+
+      .timeline-entry,
+      .timeline-entry:nth-child(odd) {
+        flex-direction: row;
+      }
+
+      .timeline-node {
+        left: 22px;
+        width: 36px;
+        height: 36px;
+        font-size: 0.65rem;
+      }
+
+      .entry-card,
+      .timeline-entry:nth-child(odd) .entry-card {
+        margin-left: 4rem;
+        margin-right: 0;
+        width: auto;
+        text-align: left;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="page-header">
+      <div class="page-icon">📜</div>
+      <h1 class="page-title">Legend So Far</h1>
+      <p class="page-subtitle">The story of Mage Against The Machine, session by session</p>
+    </header>
+
+    <div class="timeline" id="timeline"></div>
+  </div>
+
+  <script>
+    const sessions = [
+      {
+        num: 1,
+        title: "The Driftwood Tavern",
+        date: "August 4, 2024",
+        milestone: "The party formed at the Driftwood Tavern in Neverwinter, met Gundren Rockseeker, and cleared their first dungeon — a rat-infested storehouse."
+      },
+      {
+        num: 2,
+        title: "Boars and Bakers",
+        date: "September 19, 2024",
+        milestone: "Escaped boars rampaged through Neverwinter; Ekran was knocked unconscious and the party met the eccentric gnome baker Millhouse."
+      },
+      {
+        num: 3,
+        title: "The Road to Phandalin",
+        date: "February 6, 2025",
+        milestone: "The party finally departed Neverwinter for Phandalin; a wolf ambush in the night and goblin skirmishes marked the road."
+      },
+      {
+        num: 4,
+        title: "Trail of the Taken",
+        date: "March 29, 2025",
+        milestone: "The party discovered evidence of Gundren and Sildar's abduction and followed the goblin trail into dangerous territory."
+      },
+      {
+        num: 5,
+        title: "The Cragmaw Cave",
+        date: "May 11, 2025",
+        milestone: "Cragmaw Cave stormed, Klarg slain, Sildar freed — and Larry the wolf adopted as the party's own."
+      },
+      {
+        num: 6,
+        title: "Yeemic's Challenge",
+        date: "June 20, 2025",
+        milestone: "Belden challenged Yeemic to an honor duel to free the remaining prisoner; Larry was officially named."
+      },
+      {
+        num: 7,
+        title: "The Duel's Aftermath",
+        date: "July 26, 2025",
+        milestone: "Yeemic killed — last word: 'Cowards!' Semaj heard the whisper 'Ruxithid' on the wind. Valrex joined the party."
+      },
+      {
+        num: 8,
+        title: "Arrival in Phandalin",
+        date: "August 2, 2025",
+        milestone: "The party arrived in Phandalin, Ekran said his farewells and departed, and the Redbrands made their first mistake."
+      },
+      {
+        num: 9,
+        title: "Street War",
+        date: "October 26, 2025",
+        milestone: "The party defeated 10+ Redbrands in a street battle, publicly announcing their presence in Phandalin."
+      },
+      {
+        num: 10,
+        title: "The Nothic's Lair",
+        date: "November 30, 2025",
+        milestone: "Aster the Giff druid joined the party; the Nothic's crevasse was discovered beneath Tresendar Manor."
+      },
+      {
+        num: 11,
+        title: "The Hideout Assault",
+        date: "December 7, 2025",
+        milestone: "The Nothic defeated; deep push through the Redbrand hideout with Dragon's Breath and Chromatic Orb carnage."
+      },
+      {
+        num: 12,
+        title: "The Wet Traveler's Clothes",
+        date: "January 4, 2026",
+        milestone: "Talon — the lost sword of Ser Aldith Tresendar — recovered from the crevasse; Belden defeated the cistern with a damp rag."
+      },
+      {
+        num: 13,
+        title: "Glasstaff Falls",
+        date: "January 31, 2026",
+        milestone: "Glasstaff unmasked as Iarno Albrek, Lords Alliance traitor; Kaelia incinerated him with a twin Scorching Ray. The Dendrar family freed."
+      },
+      {
+        num: 14,
+        title: "Return to Phandalin",
+        date: "January 31, 2026",
+        milestone: "Returned to Phandalin as heroes; Droop charmed into giving directions to Cragmaw Castle; the party prepared for the next move."
+      },
+      {
+        num: 15,
+        title: "Into Thundertree",
+        date: "March 2026",
+        milestone: "The party arrived at ruined Thundertree; met Reidoth the druid; the shadow of Venomfang the green dragon loomed over the session's end."
+      }
+    ];
+
+    function pad(n) { return String(n).padStart(2, '0'); }
+
+    const container = document.getElementById('timeline');
+    container.innerHTML = sessions.map(s => `
+      <div class="timeline-entry">
+        <div class="timeline-node">${pad(s.num)}</div>
+        <a href="sessions/session-${pad(s.num)}.html" class="entry-card">
+          <div class="entry-session-num">Session ${s.num}</div>
+          <div class="entry-title">${s.title}</div>
+          <div class="entry-date">📅 ${s.date}</div>
+          <div class="entry-milestone">${s.milestone}</div>
+        </a>
+      </div>
+    `).join('');
+  </script>
+
+  <script src="nav.js"></script>
+  <script>initNav('sessions');</script>
+</body>
+</html>

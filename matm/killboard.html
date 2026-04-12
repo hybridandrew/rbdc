@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kill Board | Mage Against The Machine</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="nav.css">
+  <link rel="stylesheet" href="base.css">
+  <style>
+    .trophy-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.25rem;
+      margin-bottom: 3rem;
+    }
+
+    .trophy-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 12px;
+      padding: 1.5rem;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+    .trophy-card:hover {
+      border-color: var(--gold-dim);
+      transform: translateY(-2px);
+    }
+    .trophy-icon { font-size: 2.5rem; margin-bottom: 0.75rem; }
+    .trophy-value {
+      font-family: 'Cinzel', serif;
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: var(--gold);
+      margin-bottom: 0.25rem;
+    }
+    .trophy-label {
+      font-family: 'Cinzel', serif;
+      font-size: 0.8rem;
+      color: var(--text-dim);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+
+    /* MVP leaderboard */
+    .mvp-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 1rem;
+    }
+    .mvp-table th {
+      font-family: 'Cinzel', serif;
+      font-size: 0.8rem;
+      color: var(--gold);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 0.75rem 1rem;
+      border-bottom: 1px solid var(--border-subtle);
+      text-align: left;
+    }
+    .mvp-table td {
+      padding: 0.75rem 1rem;
+      color: var(--text-secondary);
+      border-bottom: 1px solid rgba(255,255,255,0.04);
+      font-size: 0.95rem;
+    }
+    .mvp-table tr:last-child td { border-bottom: none; }
+    .mvp-table tr:hover td { background: rgba(212, 168, 87, 0.04); }
+    .mvp-rank {
+      font-family: 'Cinzel', serif;
+      font-weight: 700;
+      color: var(--gold);
+    }
+    .mvp-bar {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .mvp-bar-fill {
+      height: 6px;
+      border-radius: 3px;
+      background: linear-gradient(90deg, var(--gold-dim), var(--gold));
+    }
+    .mvp-count {
+      font-family: 'Cinzel', serif;
+      font-size: 0.85rem;
+      color: var(--gold);
+      min-width: 1.5rem;
+    }
+
+    /* Notable kills */
+    .kill-card {
+      background: linear-gradient(135deg, rgba(220, 38, 38, 0.08), rgba(20, 16, 28, 0.9));
+      border: 1px solid rgba(220, 38, 38, 0.25);
+      border-radius: 12px;
+      padding: 1.25rem 1.5rem;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: flex-start;
+      gap: 1.25rem;
+      transition: all 0.3s ease;
+    }
+    .kill-card:hover { border-color: rgba(220, 38, 38, 0.5); }
+    .kill-skull {
+      font-size: 1.8rem;
+      flex-shrink: 0;
+      margin-top: 0.1rem;
+    }
+    .kill-info { flex: 1; }
+    .kill-name {
+      font-family: 'Cinzel', serif;
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--text-primary);
+      margin-bottom: 0.25rem;
+    }
+    .kill-by {
+      font-family: 'Cinzel', serif;
+      font-size: 0.8rem;
+      color: var(--gold-dim);
+      margin-bottom: 0.4rem;
+    }
+    .kill-desc {
+      color: var(--text-secondary);
+      font-style: italic;
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }
+    .kill-session {
+      font-size: 0.75rem;
+      color: var(--text-dim);
+      font-family: 'Cinzel', serif;
+      flex-shrink: 0;
+      margin-top: 0.25rem;
+    }
+
+    /* Nat 20 moments */
+    .nat20-card {
+      background: linear-gradient(135deg, rgba(251, 191, 36, 0.08), rgba(20, 16, 28, 0.9));
+      border: 1px solid rgba(251, 191, 36, 0.25);
+      border-radius: 12px;
+      padding: 1.25rem 1.5rem;
+      margin-bottom: 1rem;
+      transition: all 0.3s ease;
+    }
+    .nat20-card:hover { border-color: rgba(251, 191, 36, 0.45); }
+    .nat20-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 0.5rem;
+    }
+    .nat20-title {
+      font-family: 'Cinzel', serif;
+      font-size: 1rem;
+      font-weight: 600;
+      color: #fbbf24;
+    }
+    .nat20-badge {
+      background: rgba(251, 191, 36, 0.15);
+      color: #fbbf24;
+      padding: 0.2rem 0.6rem;
+      border-radius: 1rem;
+      font-family: 'Cinzel', serif;
+      font-size: 0.7rem;
+      font-weight: 600;
+    }
+    .nat20-desc { color: var(--text-secondary); font-size: 0.9rem; line-height: 1.55; }
+
+    @media (max-width: 600px) {
+      .trophy-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="page-header">
+      <div class="page-icon">💀</div>
+      <h1 class="page-title">Kill Board</h1>
+      <p class="page-subtitle">Deeds of glory, daring, and dubious decision-making</p>
+    </header>
+
+    <!-- Trophy Stats -->
+    <div class="trophy-grid">
+      <div class="trophy-card">
+        <div class="trophy-icon">⚔️</div>
+        <div class="trophy-value">14</div>
+        <div class="trophy-label">Combats Fought</div>
+      </div>
+      <div class="trophy-card">
+        <div class="trophy-icon">💀</div>
+        <div class="trophy-value">40+</div>
+        <div class="trophy-label">Enemies Defeated</div>
+      </div>
+      <div class="trophy-card">
+        <div class="trophy-icon">🏆</div>
+        <div class="trophy-value">Belden</div>
+        <div class="trophy-label">Most MVP Awards</div>
+      </div>
+      <div class="trophy-card">
+        <div class="trophy-icon">🎲</div>
+        <div class="trophy-value">6</div>
+        <div class="trophy-label">Nat 20 Moments</div>
+      </div>
+    </div>
+
+    <!-- MVP Leaderboard -->
+    <section class="section">
+      <div class="section-header">
+        <div class="section-icon">🏆</div>
+        <h2 class="section-title">Combat MVP Leaderboard</h2>
+      </div>
+      <div class="info-card">
+        <table class="mvp-table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Fighter</th>
+              <th>MVP Appearances</th>
+            </tr>
+          </thead>
+          <tbody id="mvp-tbody"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Notable Kills -->
+    <section class="section">
+      <div class="section-header">
+        <div class="section-icon">💀</div>
+        <h2 class="section-title">Notable Kills</h2>
+      </div>
+      <div id="kills-container"></div>
+    </section>
+
+    <!-- Nat 20 Hall of Fame -->
+    <section class="section">
+      <div class="section-header">
+        <div class="section-icon">🎲</div>
+        <h2 class="section-title">Nat 20 Hall of Fame</h2>
+      </div>
+      <div id="nat20-container"></div>
+    </section>
+  </div>
+
+  <script>
+    // MVP data compiled from all session curated JSONs
+    const mvpData = [
+      { name: 'Belden', count: 6 },
+      { name: 'Larry the Wolf', count: 3 },
+      { name: 'Semaj', count: 3 },
+      { name: 'Kaelia', count: 1 },
+      { name: 'Valrex', count: 1 },
+    ];
+
+    const maxMvp = mvpData[0].count;
+    const tbody = document.getElementById('mvp-tbody');
+    tbody.innerHTML = mvpData.map((m, i) => `
+      <tr>
+        <td><span class="mvp-rank">${i + 1}</span></td>
+        <td>${m.name}</td>
+        <td>
+          <div class="mvp-bar">
+            <div class="mvp-bar-fill" style="width:${(m.count / maxMvp) * 140}px"></div>
+            <span class="mvp-count">${m.count}</span>
+          </div>
+        </td>
+      </tr>
+    `).join('');
+
+    // Notable kills
+    const notableKills = [
+      {
+        name: 'Klarg the Bugbear',
+        by: 'Larry the Wolf',
+        desc: 'In his first real fight, Larry ripped out Klarg\'s throat — vengeance for the chains and beatings Klarg had inflicted on him and the other wolves in Cragmaw Cave.',
+        session: 5
+      },
+      {
+        name: 'Yeemic the Goblin Boss',
+        by: 'Semaj (started the attack)',
+        desc: 'After losing the honor duel, the party broke the terms and ended Yeemic in the aftermath. Last word: "Cowards!" — which Belden still regrets not meeting with "COWARD!" screamed back.',
+        session: 7
+      },
+      {
+        name: 'Giant Poisonous Snake',
+        by: 'Larry the Wolf',
+        desc: 'Larry decapitated the snake that had hurt Belden — then looked at Semaj with viscera around his mouth as if asking \'Did I do a good job?\'',
+        session: 7
+      },
+      {
+        name: 'The Nothic',
+        by: 'Belden',
+        desc: 'Knocked the one-eyed aberration off the crevasse wall with warhammer combos. Belden gazed into its single eye before the killing blow and said: "I see what you did there."',
+        session: 11
+      },
+      {
+        name: 'Two Bugbears (one cast)',
+        by: 'Semaj',
+        desc: 'A bouncing Chromatic Orb of acid — ricochet geometry executed flawlessly — melted two bugbears in a single casting during the hideout assault.',
+        session: 11
+      },
+      {
+        name: 'Glasstaff (Iarno Albrek)',
+        by: 'Kaelia',
+        desc: 'Twin-spelled Scorching Ray at dawn. A double crit. "The fire robs him of his breath before it robs him of his life." He was double dead.',
+        session: 13
+      },
+      {
+        name: 'A Redbrand (with wet clothes)',
+        by: 'Belden',
+        desc: 'Belden never drew his warhammer in the cistern fight. He rat-tailed a Redbrand\'s throat open using nothing but a damp pair of traveler\'s clothes Semaj had given him.',
+        session: 12
+      },
+    ];
+
+    document.getElementById('kills-container').innerHTML = notableKills.map(k => `
+      <div class="kill-card">
+        <div class="kill-skull">💀</div>
+        <div class="kill-info">
+          <div class="kill-name">${k.name}</div>
+          <div class="kill-by">Slain by ${k.by}</div>
+          <div class="kill-desc">${k.desc}</div>
+        </div>
+        <a href="sessions/session-${String(k.session).padStart(2, '0')}.html" class="kill-session">Session ${k.session}</a>
+      </div>
+    `).join('');
+
+    // Nat 20 moments
+    const nat20s = [
+      {
+        title: 'The Graceful Backflip',
+        who: 'Semaj — Athletics',
+        desc: 'After Belden jerked the wagon, Semaj nat 20\'d his athletics check, backflipped off, and landed on his feet. Then immediately pretended to almost fall to downplay it.',
+        session: 1
+      },
+      {
+        title: 'Ekran\'s Pan Flute Mastery',
+        who: 'Ekran — Performance',
+        desc: 'Ekran found a dusty pan flute in a warehouse and immediately rolled a nat 20 — becoming proficient on the spot with an instrument he had never touched.',
+        session: 3
+      },
+      {
+        title: 'Belden\'s Redemption Arc (Double Front Flip)',
+        who: 'Belden — Acrobatics',
+        desc: 'Still embarrassed about his foot getting stuck in the floorboards, Belden leaped from a tree and rolled a nat 20 acrobatics check — landing a double front flip.',
+        session: 4
+      },
+      {
+        title: 'Taming the Wolf',
+        who: 'Semaj — Animal Handling',
+        desc: 'Fed the smallest, most abused wolf goblin meat, then rolled a natural 20 on animal handling. The wolf pressed its nose into his fingers. Larry was born.',
+        session: 5
+      },
+      {
+        title: 'Ribcage Snowboard',
+        who: 'Belden — Athletics',
+        desc: 'Nat 20 athletics: Belden grabbed some ribcage bones and rode them like a snowboard down a natural chimney into Cragmaw Cave. The GM was speechless.',
+        session: 5
+      },
+      {
+        title: 'Belden\'s Hidden Chest',
+        who: 'Belden — Investigation',
+        desc: 'While searching the ruins of Thundertree, Belden\'s nat 20 investigation found a flagstone that didn\'t sit right. Beneath it: an old merchant\'s chest tangled in tree roots.',
+        session: 15
+      },
+    ];
+
+    document.getElementById('nat20-container').innerHTML = nat20s.map(n => `
+      <div class="nat20-card">
+        <div class="nat20-header">
+          <div class="nat20-title">${n.title}</div>
+          <span class="nat20-badge">NAT 20</span>
+        </div>
+        <div style="font-family:'Cinzel',serif; font-size:0.75rem; color:var(--text-dim); margin-bottom:0.5rem;">
+          ${n.who} — <a href="sessions/session-${String(n.session).padStart(2,'0')}.html" style="color:var(--text-dim); text-decoration:none;">Session ${n.session}</a>
+        </div>
+        <div class="nat20-desc">${n.desc}</div>
+      </div>
+    `).join('');
+  </script>
+
+  <script src="nav.js"></script>
+  <script>initNav('sessions');</script>
+</body>
+</html>
