@@ -1,7 +1,7 @@
 {
   "stats": {
-    "totalQuotes": 132,
-    "sessionsCovered": 15,
+    "totalQuotes": 141,
+    "sessionsCovered": 16,
     "topQuoter": "GM",
     "punCount": 5
   },
@@ -929,6 +929,69 @@
       "session": 14,
       "context": "Grista explaining why she's giving the party free rooms.",
       "category": "burn"
+    },
+    {
+      "text": "You fight rough and loud and with more heart than sense. But you fight for something. That's more than I can say for the cultists or for the dragon.",
+      "speaker": "GM (Reidoth)",
+      "session": 16,
+      "context": "Reidoth agreeing to join the party after Semaj's persuasion roll.",
+      "category": "epic"
+    },
+    {
+      "text": "The little gnats bite.",
+      "speaker": "GM (Venomfang)",
+      "session": 16,
+      "context": "Venomfang's reaction after Semaj hit him with a Lightning Chromatic Orb mid-flight.",
+      "category": "epic"
+    },
+    {
+      "text": "The only person that didn't fight the dragon got downed.",
+      "speaker": "Valrex",
+      "session": 16,
+      "context": "After being paralyzed, poisoned, and prone on the floor while the rest of the party slew a dragon.",
+      "category": "funny"
+    },
+    {
+      "text": "At least I died old and not stupid.",
+      "speaker": "GM (Reidoth)",
+      "session": 16,
+      "context": "Reidoth's reaction to Belden playing his horn at the entrance to the spider nest.",
+      "category": "burn"
+    },
+    {
+      "text": "Don't go putting that foolishness on me. But as one more set of eyes and one more voice telling you when you're about to do something stupid. Like blowing that horn.",
+      "speaker": "GM (Reidoth)",
+      "session": 16,
+      "context": "Reidoth laying out the terms of his participation after agreeing to join the party.",
+      "category": "funny"
+    },
+    {
+      "text": "I want to find the maggot and slurp it up.",
+      "speaker": "Aster",
+      "session": 16,
+      "context": "Immediately after Venomfang died from Crail's Maggot eating through his organs.",
+      "category": "chaos"
+    },
+    {
+      "text": "Hot water at least reminds us that we're alive.",
+      "speaker": "GM (Reidoth)",
+      "session": 16,
+      "context": "Reidoth serving the party needle tea in his cottage.",
+      "category": "wisdom"
+    },
+    {
+      "text": "I think it makes sense to try and kill him and not run him off, because if we run him off, he's just somebody else's problem.",
+      "speaker": "Kaelia",
+      "session": 16,
+      "context": "Deciding the party's objective after Reidoth laid out the options for dealing with Venomfang.",
+      "category": "wisdom"
+    },
+    {
+      "text": "I was listening to your narrative, but I was exploring.",
+      "speaker": "Valrex",
+      "session": 16,
+      "context": "Explaining to the GM why he walked alone into the webbed building and triggered the spider fight.",
+      "category": "chaos"
     }
   ]
 }

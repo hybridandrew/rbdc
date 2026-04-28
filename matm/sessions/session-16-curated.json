@@ -1,0 +1,228 @@
+{
+  "session_number": 16,
+  "title": "Venomfang Falls",
+  "date": "April 2026",
+  "summary": "The party stepped through Reidoth's door and into the best session of the campaign. Inside the druid's fortified cottage, Reidoth briefed the party over needle tea on the full threat picture: Venomfang's poison breath and pride, the ash zombies, the giant spiders, and the dragon cultists to the east. Semaj persuaded Reidoth to join the fight. Reidoth stocked the party with five healing potions and a potion of growth, then led them out to clear the spider nest first. Valrex immediately went rogue—wading solo into the webbed building while the rest of the party was still getting their orders. Belden answered the chaos by playing Take Me On (A-ha) on his horn. Two giant spiders poured out. The fight turned brutal: Valrex missed nearly every roll, failed concentration twice, self-inflicted Inflict Wounds, went down to poison, and fought the entire encounter paralyzed on the floor. Meanwhile, Venomfang heard the horn, left his roost, and dove toward the ruins at 50 feet up. Semaj cracked him with a Lightning Chromatic Orb from the bushes—the dragon locked eyes on the party. Kaelia hit him with Scorching Ray for 22 damage. Aster planted Crail's Maggot in the dragon's chest and let it eat from the inside. Aster's Water Bullet sent Venomfang crashing to the ground. The maggot finished the job. Party leveled to 4. Belden started harvesting the dragon horn before anyone suggested it.",
+  "level_up": true,
+  "new_level": 4,
+  "duration": "~4 hours",
+  "player_attendance": ["Richard (Semaj)", "Jen (Kaelia)", "Darren (Valrex)", "Jason (Belden, guest)", "Robert (Aster, guest)"],
+  "absent": ["Sean (Belden)", "Alan (Aster)"],
+
+  "highlights": {
+    "best_moments": [
+      {
+        "title": "Tea with Reidoth",
+        "type": "roleplay",
+        "description": "Reidoth welcomed the party inside, warned them about muddy boots, and served needle tea with mint and chamomile. Larry told Reidoth everything — Aster cast Speak with Animals and learned that Larry had vouched for every member of the party, telling the druid they don't run from fights and that he trusts them. The old druid looked at the group with markedly more respect after that.",
+        "quotes": [
+          {"speaker": "Alex/GM (Reidoth)", "text": "Hot water at least reminds us that we're alive."},
+          {"speaker": "Alex/GM (Reidoth)", "text": "I see. Yes, very good."},
+          {"speaker": "Richard/Semaj", "text": "Good boy, Larry. Good boy."}
+        ]
+      },
+      {
+        "title": "Semaj Persuades the Druid",
+        "type": "roleplay",
+        "description": "Reidoth laid out a compelling case for why he should stay behind. Semaj didn't let him finish. With Valrex casting Guidance and Belden calling it, Semaj rolled a 25 persuasion — delivered in character — reminding Reidoth that a man who dies in his sleep leaves nothing behind. Reidoth went quiet, looked at each party member in turn, and said 'very well.'",
+        "quotes": [
+          {"speaker": "Richard/Semaj", "text": "Everything that you've offered to us up to this point, we humbly thank you for. However, as you mentioned yourself, you are not young and spry anymore. With our group, we're your best chance of ending this threat with any sort of finality."},
+          {"speaker": "Alex/GM (Reidoth)", "text": "You fight rough and loud and with more heart than sense. But you fight for something. That's more than I can say for the cultists or for the dragon. Very well. I will fight with you."},
+          {"speaker": "Alex/GM (Reidoth)", "text": "Don't go putting that foolishness on me. But as one more set of eyes and one more voice telling you when you're about to do something stupid. Like blowing that horn."}
+        ]
+      },
+      {
+        "title": "Valrex Goes Off-Script",
+        "type": "chaos",
+        "description": "While Reidoth was still briefing the party outside the spider nest, Valrex wandered off, climbed through a webbed-out building alone, triggered both giant spiders, and started combat by himself. Belden answered by playing Take Me On on his horn. Reidoth put his hands over his face and said 'at least I died old and not stupid.'",
+        "quotes": [
+          {"speaker": "Alex/GM", "text": "Valrex, you are able to kind of break free from these webbings, but that is immediately going to trigger what happens here."},
+          {"speaker": "Alex/GM (Reidoth)", "text": "At least I died old and not stupid."},
+          {"speaker": "Darren/Valrex", "text": "I was listening to your narrative, but I was exploring."}
+        ]
+      },
+      {
+        "title": "Venomfang Arrives",
+        "type": "epic",
+        "description": "Mid-spider-fight, Reidoth's head snapped up. The horn. Of course it was the horn. Wings cracked the air. Venomfang left his roost and circled in from the north at 50 feet altitude. He dove on Belden — the little trumpet man — exhaling a full cone of poison breath. Belden's dwarven resilience and a successful save cut it to 9 damage. Then Semaj hit Venomfang with a Lightning Chromatic Orb from the bushes. The dragon noticed.",
+        "quotes": [
+          {"speaker": "Alex/GM (Reidoth)", "text": "Well, here's what your horn has done now, you idiot!"},
+          {"speaker": "Alex/GM (Venomfang)", "text": "The little gnats bite."},
+          {"speaker": "Alex/GM (Venomfang)", "text": "Now listen to my horn."}
+        ]
+      },
+      {
+        "title": "Crail's Maggot Kills a Dragon",
+        "type": "epic",
+        "description": "Aster planted Crail's Maggot inside Venomfang while the dragon was airborne. The maggot gnawed through blood vessels and organs, wriggling into the dragon's heart. Venomfang crashed to the ground, lurching, wings failing, blood leaking from his mouth and scales. The killing blow came from inside. After the session ended, Aster ran up to the corpse, reached into the dragon's gut, pulled out the six-inch maggot — swollen from eating a dragon — and ate it.",
+        "quotes": [
+          {"speaker": "Alex/GM", "text": "You see this grotesque lump kind of sliding inside his scales along his flank, bulging outward as this maggot gnaws its way into his heart."},
+          {"speaker": "Darren/Valrex", "text": "Can I use the rest of my turn to find the maggot and slurp it up?"},
+          {"speaker": "Alex/GM", "text": "It bursts on your tongue — somewhere between overripe fruit and a raw oyster, spilling out this hot metallic slurry taste of venom-tinged blood and half-digested tissue."}
+        ]
+      },
+      {
+        "title": "Valrex: The Floor Fighter",
+        "type": "funny",
+        "description": "Valrex spent the entirety of the spider combat missing every roll, inflicting wounds on himself, losing concentration twice, going down to poison damage, and finally ending the encounter paralyzed, prone, and poisoned on the ground — while the rest of the party killed a dragon overhead. He never made it outside. The only party member who didn't fight Venomfang was also the only one who went down.",
+        "quotes": [
+          {"speaker": "Darren/Valrex", "text": "I've rolled more ones tonight than I've rolled since I started playing D&D."},
+          {"speaker": "Alex/GM", "text": "You are now unconscious, prone, incapacitated — and the only person that died. That's all I'm gonna say."},
+          {"speaker": "Darren/Valrex", "text": "The only person that didn't fight the dragon got downed."}
+        ]
+      },
+      {
+        "title": "Level 4",
+        "type": "plot",
+        "description": "After four hours and two simultaneous fights — one against giant spiders, one against a young green dragon — the GM called it. The party had killed Venomfang and cleared the spider nest. Everyone leveled to 4. Belden started harvesting the dragon's horn before anyone suggested it. Alex promised a full dragon harvesting table next session.",
+        "quotes": [
+          {"speaker": "Alex/GM", "text": "You killed a dragon. And more importantly, you killed the two giant spiders. The harder enemy of the two, clearly."},
+          {"speaker": "Jason/Belden", "text": "I start cutting up the dragon. I want that horn."},
+          {"speaker": "Alex/GM", "text": "Sean can have a dragon horn. I will tell him the first thing you did was walk up to the dragon, rip off its horn, and you're about to hollow it out and make your own dragon horn."}
+        ]
+      }
+    ],
+    "character_spotlight": {
+      "Semaj": {
+        "moments": [
+          "Persuasion 25 convinced Reidoth to join the fight",
+          "Hit Venomfang with Lightning Chromatic Orb as the dragon flew in — first blood on the dragon",
+          "Quickened a second Chromatic Orb on Venomfang for 16 damage while hiding in the bushes",
+          "Kept healing Valrex throughout the spider fight while staying in cover"
+        ],
+        "one_liner": "You could fall from illness tomorrow, and everything you're doing is for naught anyway."
+      },
+      "Kaelia": {
+        "moments": [
+          "Mantle of Flame again — Reidoth singed himself trying to cast Barkskin on her",
+          "Scorching Ray nat 20 first hit on Venomfang — 14 + 22 = 36 damage across two rays",
+          "Silvery Barbs forced Venomfang to reroll his saving throw against Agonizing Scorcher",
+          "Used Staff of Defense shield reaction to survive the dragon's bite attack"
+        ],
+        "one_liner": "I think it makes sense to try and kill him and not run him off, because if we run him off, he's just somebody else's problem."
+      },
+      "Valrex": {
+        "moments": [
+          "Solo triggered the spider fight by exploring alone while briefing was happening",
+          "Self-inflicted Inflict Wounds when the spell misfired",
+          "Lost concentration twice, missed every attack roll except one spiritual weapon hit",
+          "Went down to spider poison, came back up from Semaj's Healing Word, went down again, survived on poison resistance",
+          "Ended paralyzed on the floor while the party killed a dragon above him"
+        ],
+        "one_liner": "I've just been in these spiders the whole fight. I never even saw the dragon."
+      },
+      "Aster": {
+        "moments": [
+          "Cast Speak with Animals to eavesdrop on Larry's conversation with Reidoth",
+          "Planted Crail's Maggot inside Venomfang at range — it stayed active for multiple rounds",
+          "Water Bullet hit for 28 damage, sending Venomfang crashing from the air",
+          "Ate the maggot after the dragon died",
+          "Guiding Bolt on a spider gave the party advantage"
+        ],
+        "one_liner": "I want to find the maggot and slurp it up."
+      },
+      "Belden": {
+        "moments": [
+          "Played Take Me On (A-ha) on the horn mid-combat while Valrex was fighting spiders alone",
+          "Stood in the open and took Venomfang's full poison breath — dwarven resilience cut it to 9 damage",
+          "Threw his net at Venomfang in flight and missed",
+          "Spear toss on the dragon also missed",
+          "Started harvesting dragon horn the moment combat ended"
+        ],
+        "one_liner": "I'll call it a dragon-down."
+      }
+    },
+    "combat_encounters": [
+      {
+        "name": "Giant Spider Nest",
+        "enemies": ["Giant Spider A", "Giant Spider B"],
+        "outcome": "Victory",
+        "location": "Webbed building, north of Reidoth's cottage",
+        "mvp": "Kaelia (Sorcerer's Burst finished Spider A; multiple hits throughout)",
+        "notable_events": [
+          "Valrex triggered the fight alone by walking into the webbed building during briefing",
+          "Belden played Take Me On on the horn at the start of his first turn",
+          "One spider nat 1'd its web and webbed itself",
+          "Valrex self-inflicted Inflict Wounds for 10 damage via a fumble",
+          "Valrex went down to spider poison — Semaj healed him with Healing Word",
+          "Valrex ended the fight paralyzed, prone, and poisoned on the floor",
+          "Aster's Guiding Bolt gave the party advantage for one round",
+          "Aster stomped Spider B with a 22-damage Shillelagh hit"
+        ]
+      },
+      {
+        "name": "Venomfang",
+        "enemies": ["Venomfang (Young Green Dragon)"],
+        "outcome": "Victory — Dragon Slain",
+        "location": "Ruins of Thundertree, north approach",
+        "mvp": "Aster (Crail's Maggot dealt the killing blow from inside the dragon)",
+        "notable_events": [
+          "Venomfang heard Belden's horn and left his roost mid-spider-fight",
+          "Semaj hit Venomfang with Lightning Chromatic Orb from the bushes — 10 damage first blood",
+          "Venomfang dove on Belden with poison breath — 38 base damage, Belden saved and halved twice to 9",
+          "Reidoth cast Barkskin on Kaelia, burned his hand on her Mantle of Flame, and immediately broke concentration",
+          "Aster planted Crail's Maggot inside Venomfang — continued eating from within for multiple rounds",
+          "Kaelia — Scorching Ray nat 20 for 14 damage, second ray hit for 22 damage",
+          "Semaj Quickened Chromatic Orb x2: 16 damage and 7 damage",
+          "Aster's Water Bullet hit for 28 damage, dropping the dragon out of the air",
+          "Venomfang landed on the ground, tried to bite Kaelia — shield reaction blocked it",
+          "Crail's Maggot delivered the final kill",
+          "Party leveled to 4 after the fight"
+        ]
+      }
+    ],
+    "quotes_of_the_session": [
+      {
+        "speaker": "Alex/GM (Reidoth)",
+        "quote": "You fight rough and loud and with more heart than sense. But you fight for something. That's more than I can say for the cultists or for the dragon.",
+        "context": "Reidoth agreeing to join the party after Semaj's persuasion"
+      },
+      {
+        "speaker": "Alex/GM (Venomfang)",
+        "quote": "The little gnats bite.",
+        "context": "Venomfang's reaction to Semaj's Lightning Chromatic Orb mid-flight"
+      },
+      {
+        "speaker": "Darren/Valrex",
+        "quote": "The only person that didn't fight the dragon got downed.",
+        "context": "After being paralyzed, poisoned, and prone on the floor while the rest of the party slew a dragon"
+      },
+      {
+        "speaker": "Alex/GM (Reidoth)",
+        "quote": "At least I died old and not stupid.",
+        "context": "Reidoth's reaction to Belden playing his horn at the entrance to the spider nest"
+      },
+      {
+        "speaker": "Alex/GM",
+        "quote": "You killed a dragon. And more importantly, you killed the two giant spiders. The harder enemy of the two, clearly.",
+        "context": "Closing the session after the party leveled to 4"
+      },
+      {
+        "speaker": "Darren/Valrex",
+        "quote": "I want to find the maggot and slurp it up.",
+        "context": "Immediately after Venomfang died"
+      }
+    ]
+  },
+
+  "plot_developments": [
+    "Party entered Reidoth's cottage — briefed on Venomfang's habits, the ash zombies, the giant spiders, and the dragon cultists to the east",
+    "Reidoth confirmed Venomfang breathes poison and uses height advantage — advised drawing him down from the tower with insults, fighting in the lane to the west",
+    "Semaj rolled 25 persuasion to convince Reidoth to join the fight in person",
+    "Reidoth supplied the party with five healing potions and one potion of growth",
+    "Giant spider nest cleared — two giant spiders killed in the webbed building north of Reidoth's cottage",
+    "Venomfang heard Belden's horn mid-combat, left his roost, and entered the battle",
+    "Semaj drew first blood on Venomfang with a Lightning Chromatic Orb",
+    "Venomfang exhaled a full poison breath cone on Belden — survived due to dwarven resilience",
+    "Aster's Crail's Maggot planted inside Venomfang and ate through his organs — delivered the killing blow",
+    "Venomfang, young green dragon and threat of Thundertree, is DEAD",
+    "Party leveled to 4",
+    "Belden immediately began harvesting the dragon's horn for Sean's eventual return"
+  ],
+
+  "end_state": {
+    "location": "Thundertree ruins — Venomfang's tower approach, dragon corpse on the ground",
+    "party_condition": "Venomfang dead. Spiders dead. Valrex poisoned and paralyzed but stable. Party at Level 4. Dragon horn being harvested.",
+    "next_objective": "Dragon harvest next session. Thundertree still has ash zombies and cultists — decide whether to clear them or move on to Cragmaw Castle to rescue Gundren."
+  }
+}
