@@ -19,11 +19,10 @@
   left: 0;
   width: 100%;
   z-index: 1000;
-  background: var(--nav-bg);
+  background: rgba(10, 10, 15, 0.98);
   border-bottom: 1px solid var(--nav-border);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  transition: all 0.3s ease;
+  overflow: visible;
+  transition: box-shadow 0.3s ease;
 }
 
 .main-nav.scrolled {
@@ -139,6 +138,7 @@
 }
 
 .nav-item:hover .nav-dropdown,
+.nav-item:focus-within .nav-dropdown,
 .nav-item.is-open .nav-dropdown {
   opacity: 1;
   visibility: visible;
