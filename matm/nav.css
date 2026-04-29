@@ -234,10 +234,13 @@
     transform: translateX(-100%);
     transition: transform 0.3s ease;
     overflow-y: auto;
+    pointer-events: none;
+    z-index: 999;
   }
-  
+
   .nav-menu.active {
     transform: translateX(0);
+    pointer-events: auto;
   }
   
   .nav-item {

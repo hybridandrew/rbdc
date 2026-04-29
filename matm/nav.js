@@ -126,17 +126,15 @@ function initNav(currentPage = '') {
     menu.classList.toggle('active');
   });
   
-  // Mobile dropdown toggle — check at click time so rotation/resize is handled correctly
+  // Dropdown toggle — preventDefault on # links always; CSS controls visibility per breakpoint
   document.querySelectorAll('.nav-item').forEach(item => {
     const link = item.querySelector('.nav-link');
     const dropdown = item.querySelector('.nav-dropdown');
 
-    if (dropdown) {
+    if (dropdown && link.getAttribute('href') === '#') {
       link.addEventListener('click', (e) => {
-        if (window.innerWidth <= 768 && link.getAttribute('href') === '#') {
-          e.preventDefault();
-          item.classList.toggle('mobile-expanded');
-        }
+        e.preventDefault();
+        item.classList.toggle('mobile-expanded');
       });
     }
   });
