@@ -153,16 +153,16 @@ function initNav(currentPage = '') {
 
       if (!isOpen) {
         item.classList.add('is-open');
-        if (window.innerWidth > 768) {
-          // Desktop/tablet: show as floating dropdown via direct style
+        // Use matchMedia to match CSS breakpoint (innerWidth can differ when zoomed)
+        if (window.matchMedia('(min-width: 769px)').matches) {
           Object.assign(dropdown.style, {
             display: 'block',
             opacity: '1',
             visibility: 'visible',
-            transform: 'translateX(-50%) translateY(0)'
+            transform: 'translateX(-50%) translateY(0)',
+            zIndex: '1001'
           });
         }
-        // Mobile: is-open CSS class handles accordion display
       }
     });
   });
