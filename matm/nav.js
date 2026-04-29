@@ -128,29 +128,49 @@ function initNav(currentPage = '') {
     menu.classList.toggle('active', menuOpen);
   });
 
-  // Dropdown toggle — works at ALL viewport sizes (fixes touch/hover gap on tablets)
+  // Close all open dropdowns helper
+  function closeAllDropdowns() {
+    document.querySelectorAll('.nav-item.is-open').forEach(openItem => {
+      openItem.classList.remove('is-open');
+      const d = openItem.querySelector('.nav-dropdown');
+      if (d) d.removeAttribute('style');
+    });
+  }
+
+  // Dropdown toggle — direct style manipulation bypasses any CSS cascade issues
   document.querySelectorAll('.nav-item').forEach(item => {
     const link = item.querySelector('.nav-link');
     const dropdown = item.querySelector('.nav-dropdown');
 
-    if (dropdown && link.getAttribute('href') === '#') {
-      link.addEventListener('click', (e) => {
-        e.preventDefault();
-        const isOpen = item.classList.toggle('is-open');
-        // Close siblings
-        document.querySelectorAll('.nav-item.is-open').forEach(other => {
-          if (other !== item) other.classList.remove('is-open');
-        });
-      });
-    }
+    if (!dropdown || !link || link.getAttribute('href') !== '#') return;
+
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      e.stopPropagation(); // Prevent document handler from firing on same event
+
+      const isOpen = item.classList.contains('is-open');
+      closeAllDropdowns();
+
+      if (!isOpen) {
+        item.classList.add('is-open');
+        if (window.innerWidth > 768) {
+          // Desktop/tablet: show as floating dropdown via direct style
+          Object.assign(dropdown.style, {
+            display: 'block',
+            opacity: '1',
+            visibility: 'visible',
+            transform: 'translateX(-50%) translateY(0)'
+          });
+        }
+        // Mobile: is-open CSS class handles accordion display
+      }
+    });
   });
 
-  // Close open dropdowns when clicking/tapping outside the nav
+  // Close dropdowns when tapping outside the nav
   document.addEventListener('click', (e) => {
     if (!e.target.closest('.nav-item')) {
-      document.querySelectorAll('.nav-item.is-open').forEach(item => {
-        item.classList.remove('is-open');
-      });
+      closeAllDropdowns();
     }
   });
 
