@@ -120,13 +120,15 @@ function initNav(currentPage = '') {
   const toggle = document.getElementById('navToggle');
   const menu = document.getElementById('navMenu');
   
-  // Mobile toggle
+  // Hamburger toggle
+  let menuOpen = false;
   toggle.addEventListener('click', () => {
-    toggle.classList.toggle('active');
-    menu.classList.toggle('active');
+    menuOpen = !menuOpen;
+    toggle.classList.toggle('active', menuOpen);
+    menu.classList.toggle('active', menuOpen);
   });
-  
-  // Dropdown toggle — preventDefault on # links always; CSS controls visibility per breakpoint
+
+  // Dropdown toggle — works at ALL viewport sizes (fixes touch/hover gap on tablets)
   document.querySelectorAll('.nav-item').forEach(item => {
     const link = item.querySelector('.nav-link');
     const dropdown = item.querySelector('.nav-dropdown');
@@ -134,29 +136,39 @@ function initNav(currentPage = '') {
     if (dropdown && link.getAttribute('href') === '#') {
       link.addEventListener('click', (e) => {
         e.preventDefault();
-        item.classList.toggle('mobile-expanded');
+        const isOpen = item.classList.toggle('is-open');
+        // Close siblings
+        document.querySelectorAll('.nav-item.is-open').forEach(other => {
+          if (other !== item) other.classList.remove('is-open');
+        });
       });
     }
   });
-  
+
+  // Close open dropdowns when clicking/tapping outside the nav
+  document.addEventListener('click', (e) => {
+    if (!e.target.closest('.nav-item')) {
+      document.querySelectorAll('.nav-item.is-open').forEach(item => {
+        item.classList.remove('is-open');
+      });
+    }
+  });
+
   // Scroll effect
-  let lastScroll = 0;
   window.addEventListener('scroll', () => {
     const currentScroll = window.pageYOffset;
-    
     if (currentScroll > 50) {
       nav.classList.add('scrolled');
     } else {
       nav.classList.remove('scrolled');
     }
-    
-    lastScroll = currentScroll;
   });
-  
+
   // Close mobile menu on link click
   document.querySelectorAll('.dropdown-link').forEach(link => {
     link.addEventListener('click', () => {
       if (window.innerWidth <= 768) {
+        menuOpen = false;
         toggle.classList.remove('active');
         menu.classList.remove('active');
       }

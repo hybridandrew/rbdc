@@ -137,7 +137,8 @@
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
 }
 
-.nav-item:hover .nav-dropdown {
+.nav-item:hover .nav-dropdown,
+.nav-item.is-open .nav-dropdown {
   opacity: 1;
   visibility: visible;
   transform: translateX(-50%) translateY(0);
@@ -264,7 +265,8 @@
     display: none;
   }
   
-  .nav-item.mobile-expanded .nav-dropdown {
+  .nav-item.mobile-expanded .nav-dropdown,
+  .nav-item.is-open .nav-dropdown {
     display: block;
   }
   
