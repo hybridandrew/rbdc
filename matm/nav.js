@@ -128,16 +128,7 @@ function initNav(currentPage = '') {
     menu.classList.toggle('active', menuOpen);
   });
 
-  // Close all open dropdowns helper
-  function closeAllDropdowns() {
-    document.querySelectorAll('.nav-item.is-open').forEach(openItem => {
-      openItem.classList.remove('is-open');
-      const d = openItem.querySelector('.nav-dropdown');
-      if (d) d.removeAttribute('style');
-    });
-  }
-
-  // Dropdown toggle — direct style manipulation bypasses any CSS cascade issues
+  // Dropdown toggle — CSS display:none/block controlled by is-open class
   document.querySelectorAll('.nav-item').forEach(item => {
     const link = item.querySelector('.nav-link');
     const dropdown = item.querySelector('.nav-dropdown');
@@ -146,23 +137,15 @@ function initNav(currentPage = '') {
 
     link.addEventListener('click', (e) => {
       e.preventDefault();
-      e.stopPropagation(); // Prevent document handler from firing on same event
+      e.stopPropagation();
 
       const isOpen = item.classList.contains('is-open');
-      closeAllDropdowns();
+
+      // Close all open dropdowns
+      document.querySelectorAll('.nav-item.is-open').forEach(i => i.classList.remove('is-open'));
 
       if (!isOpen) {
         item.classList.add('is-open');
-        // Use matchMedia to match CSS breakpoint (innerWidth can differ when zoomed)
-        if (window.matchMedia('(min-width: 769px)').matches) {
-          Object.assign(dropdown.style, {
-            display: 'block',
-            opacity: '1',
-            visibility: 'visible',
-            transform: 'translateX(-50%) translateY(0)',
-            zIndex: '1001'
-          });
-        }
       }
     });
   });
@@ -170,7 +153,7 @@ function initNav(currentPage = '') {
   // Close dropdowns when tapping outside the nav
   document.addEventListener('click', (e) => {
     if (!e.target.closest('.nav-item')) {
-      closeAllDropdowns();
+      document.querySelectorAll('.nav-item.is-open').forEach(i => i.classList.remove('is-open'));
     }
   });
 

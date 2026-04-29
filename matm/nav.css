@@ -122,27 +122,24 @@
 
 /* ===== DROPDOWN ===== */
 .nav-dropdown {
+  display: none;
   position: absolute;
   top: 100%;
   left: 50%;
-  transform: translateX(-50%) translateY(10px);
+  transform: translateX(-50%);
   min-width: 200px;
   background: var(--nav-bg);
   border: 1px solid var(--nav-border);
   border-radius: 8px;
   padding: 0.5rem;
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.3s ease;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+  z-index: 100;
 }
 
 .nav-item:hover .nav-dropdown,
 .nav-item:focus-within .nav-dropdown,
 .nav-item.is-open .nav-dropdown {
-  opacity: 1;
-  visibility: visible;
-  transform: translateX(-50%) translateY(0);
+  display: block;
 }
 
 .dropdown-link {
@@ -257,13 +254,12 @@
   .nav-dropdown {
     position: static;
     transform: none;
-    opacity: 1;
-    visibility: visible;
     box-shadow: none;
     border: none;
     background: rgba(0, 0, 0, 0.2);
     margin: 0 -0.5rem;
     display: none;
+    z-index: auto;
   }
   
   .nav-item.mobile-expanded .nav-dropdown,
