@@ -126,14 +126,14 @@ function initNav(currentPage = '') {
     menu.classList.toggle('active');
   });
   
-  // Mobile dropdown toggle
+  // Mobile dropdown toggle — check at click time so rotation/resize is handled correctly
   document.querySelectorAll('.nav-item').forEach(item => {
     const link = item.querySelector('.nav-link');
     const dropdown = item.querySelector('.nav-dropdown');
-    
-    if (dropdown && window.innerWidth <= 768) {
+
+    if (dropdown) {
       link.addEventListener('click', (e) => {
-        if (link.getAttribute('href') === '#') {
+        if (window.innerWidth <= 768 && link.getAttribute('href') === '#') {
           e.preventDefault();
           item.classList.toggle('mobile-expanded');
         }
