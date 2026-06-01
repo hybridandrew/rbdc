@@ -483,7 +483,7 @@ def generate_session_html(json_path, output_path):
     print(f"Generated {output_path}")
 
 if __name__ == '__main__':
-    sessions_dir = Path('/mnt/nightblood/dev/MATM/prod/sessions')
+    sessions_dir = Path(__file__).resolve().parent / 'sessions'
 
     for json_file in sessions_dir.glob('session-*-curated.json'):
         session_num = json_file.stem.split('-')[1]
