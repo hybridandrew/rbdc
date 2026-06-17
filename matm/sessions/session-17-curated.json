@@ -70,20 +70,20 @@
       {
         "title": "The Cultists Arrive — Faith Draining in Real Time",
         "type": "epic",
-        "description": "They came in green and black robes with dragon amulets, expecting to serve a living Venomfang. Instead they found the skull detached and staring, the wings cut free and folded on the ground, bones in organized piles, and a dwarf wiping dragon blood off a freshly-hollowed horn. You could see the faith drain out of them in real time. Their leader — Fabric — walked forward with bared teeth: 'What have you done?' Valrex answered by throwing a Guiding Bolt. It fired the wrong color. Green.",
+        "description": "They came in green and black robes with dragon amulets, expecting to serve a living Venomfang. Instead they found the skull detached and staring, the wings cut free and folded on the ground, bones in organized piles, and a dwarf wiping dragon blood off a freshly-hollowed horn. You could see the faith drain out of them in real time. Their leader — Favric — walked forward with bared teeth: 'What have you done?' Valrex answered by throwing a Guiding Bolt. It fired the wrong color. Green.",
         "quotes": [
-          {"speaker": "Alex/GM (as Fabric)", "text": "What have you done?"},
+          {"speaker": "Alex/GM (as Favric)", "text": "What have you done?"},
           {"speaker": "Alex/GM", "text": "It is a sickly green light. As this radiant energy just rips across this square, you see it glittering now in a green, which used to be a different color."},
           {"speaker": "Richard/Semaj", "text": "Well, there goes diplomacy."}
         ]
       },
       {
-        "title": "Inflict Wounds on Fabric — Session Cliffhanger",
+        "title": "Inflict Wounds on Favric — Session Cliffhanger",
         "type": "chaos",
-        "description": "Fabric walked up to Valrex to begin the ritual. They'd agreed to the transfer. He asked, directly: 'Does Venomfang's curse prefer to stay where it is, or are you willing to give it to me?' The word 'give' landed wrong in the cursed mind. The dragon-itch was offended by how much this man wanted what it considered its own. Valrex's hand shot out. He seized Fabric by the throat. Necrotic energy spiderwebbed into the cult leader's skin like dark lightning — still tinted green. Fifteen damage. The cultists pulled swords. Three nat 20s on initiative. Session ends here. Next time: July 25th.",
+        "description": "Favric walked up to Valrex to begin the ritual. They'd agreed to the transfer. He asked, directly: 'Does Venomfang's curse prefer to stay where it is, or are you willing to give it to me?' The word 'give' landed wrong in the cursed mind. The dragon-itch was offended by how much this man wanted what it considered its own. Valrex's hand shot out. He seized Favric by the throat. Necrotic energy spiderwebbed into the cult leader's skin like dark lightning — still tinted green. Fifteen damage. The cultists pulled swords. Three nat 20s on initiative. Session ends here. Next time: July 25th.",
         "quotes": [
-          {"speaker": "Alex/GM", "text": "Your hand just shoots out. And you seize Fabric by the throat. Fingers digging into his flesh. And for a heartbeat, his eyes kind of flare with this surprise and fury. As the dark, crackling energy from your grip starts to spiderweb into his skin like lightning."},
-          {"speaker": "Alex/GM (as Fabric)", "text": "You killed our dragon. Now let me become its echo."},
+          {"speaker": "Alex/GM", "text": "Your hand just shoots out. And you seize Favric by the throat. Fingers digging into his flesh. And for a heartbeat, his eyes kind of flare with this surprise and fury. As the dark, crackling energy from your grip starts to spiderweb into his skin like lightning."},
+          {"speaker": "Alex/GM (as Favric)", "text": "You killed our dragon. Now let me become its echo."},
           {"speaker": "Sean/Belden", "text": "Got 99 problems but a dragon ain't one."}
         ]
       }
@@ -95,8 +95,8 @@
           "Failed DC 25 on the dragon's heart — became the first party member to receive a long-term curse",
           "First symptom: walked north claiming the dragon's horde was 'my' horde without realizing he'd said it",
           "Failed wisdom save vs. Semaj's Charm Person — 'I never noticed how beautiful your eyes were'",
-          "Attacked Fabric with Guiding Bolt (sickly green, not radiant) — missed, but the color change is permanent",
-          "Session ends with his hand around Fabric's throat dealing 15 necrotic damage"
+          "Attacked Favric with Guiding Bolt (sickly green, not radiant) — missed, but the color change is permanent",
+          "Session ends with his hand around Favric's throat dealing 15 necrotic damage"
         ],
         "one_liner": "My dragon horde. Before you even realize you said it."
       },
@@ -106,7 +106,7 @@
           "Immediately recognized the curse symptoms: 'It has begun'",
           "Used Message to reach Valrex mid-trance, snapping him back",
           "Cast Charm Person on his own teammate to prevent diplomatic disaster — partially successful",
-          "Attempted to negotiate with Fabric before combat — 'can we at least talk about this'",
+          "Attempted to negotiate with Favric before combat — 'can we at least talk about this'",
           "Has draconic ancestry — confirmed that the curse would accelerate in him specifically"
         ],
         "one_liner": "Otherwise we'll have to kill him in his sleep."
@@ -142,17 +142,17 @@
     "combat_encounters": [
       {
         "name": "Dragon Cultists — Opening (Cliffhanger)",
-        "enemies": ["Fabric/Feverick (cult leader)", "Dragon Cultists x5-6"],
+        "enemies": ["Favric (cult leader)", "Dragon Cultists x5-6"],
         "outcome": "Combat initiated — session ended on initiative rolls",
         "location": "Thundertree Ruins — western approach to Venomfang's corpse site",
         "mvp": "Pending (combat continues next session)",
         "notable_events": [
           "Cultists arrived expecting to serve a living dragon — found a butchered carcass",
           "Valrex immediately attacked with Guiding Bolt before any speech — Bolt now fires green (curse visible)",
-          "Fabric dodged the bolt — offered to take the curse via ritual transfer",
-          "Semaj negotiated a tentative agreement: Fabric performs the transfer, party keeps weapons",
-          "Fabric walked up to Valrex to begin; asked if he was willing to give the curse",
-          "The word 'give' triggered the curse — Valrex seized Fabric's throat with Inflict Wounds (15 necrotic)",
+          "Favric dodged the bolt — offered to take the curse via ritual transfer",
+          "Semaj negotiated a tentative agreement: Favric performs the transfer, party keeps weapons",
+          "Favric walked up to Valrex to begin; asked if he was willing to give the curse",
+          "The word 'give' triggered the curse — Valrex seized Favric's throat with Inflict Wounds (15 necrotic)",
           "Cultists rolled initiative: three nat 20s",
           "Session ended — combat resumes July 25th"
         ]
@@ -175,7 +175,7 @@
         "context": "The curse's first external symptom — Valrex claiming the horde before he knows he's spoken"
       },
       {
-        "speaker": "Alex/GM (as Fabric)",
+        "speaker": "Alex/GM (as Favric)",
         "quote": "You killed our dragon. Now let me become its echo.",
         "context": "The cult leader's offer to take Valrex's curse via ritual — and the simplest version of what he wants"
       },
@@ -199,9 +199,9 @@
     "Valrex attempted the dragon's heart (DC 25) and failed — received Venomfang's curse (dragon's disease)",
     "Curse: growing obsession with gold and material possession, personality drift toward Venomfang's traits, projected year-long transformation into a young dragon — curable by greater restoration from a high-level priest in Neverwinter or Waterdeep",
     "Valrex's divine magic has changed color — Guiding Bolt now fires sickly green instead of radiant",
-    "Dragon cultists (5-6 followers, leader named Fabric/Feverick) arrived in Thundertree — their faith in Venomfang died on contact with the butchered corpse",
-    "Fabric offered to take the curse via ritual; party tentatively agreed",
-    "Valrex attacked Fabric with Inflict Wounds (15 necrotic) when Fabric walked up to begin the transfer",
+    "Dragon cultists (5-6 followers, leader named Favric) arrived in Thundertree — their faith in Venomfang died on contact with the butchered corpse",
+    "Favric offered to take the curse via ritual; party tentatively agreed",
+    "Valrex attacked Favric with Inflict Wounds (15 necrotic) when Favric walked up to begin the transfer",
     "Combat with dragon cultists begins — cultists rolled three nat 20s on initiative",
     "Next session: July 25th, opening in combat"
   ],

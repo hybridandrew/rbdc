@@ -2,7 +2,7 @@
   "session_number": 5,
   "title": "The Cragmaw Cave",
   "date": "May 11, 2025",
-  "summary": "Deep within the Cragmaw Cave, the party discovered three chained wolves. While two remained hostile, Semaj's incredible animal handling (nat 20!) tamed the smallest wolf, who would become their most loyal companion. After surviving two flood traps and navigating treacherous passages, they confronted Klarg the bugbear boss. The battle nearly killed Semaj, but the wolf—recognizing Klarg as his tormentor—delivered the killing blow by ripping out the bugbear's throat.",
+  "summary": "Deep within the Cragmaw Cave, the party discovered three chained wolves. While two remained hostile, Semaj's incredible animal handling (nat 20!) tamed the smallest wolf, who would become their most loyal companion. After surviving two flood traps and navigating treacherous passages, they confronted Klarg the bugbear boss. The battle nearly killed Semaj, but the wolf—recognizing Klarg as his tormentor—delivered the killing blow by ripping out the bugbear 's throat.",
   "level_up": false,
   "duration": "~4 hours",
   "player_attendance": ["Richard (Semaj)", "Jen (Kaelia)", "Sean (Belden)", "James (Ekran)", "Darren (filling in)"],
@@ -21,11 +21,11 @@
       {
         "title": "Larry's Vengeance",
         "type": "epic",
-        "description": "The wolf, recognizing Klarg as his former tormentor, delivered the killing blow by ripping out the bugbear's throat while Semaj lay unconscious nearby.",
+        "description": "The wolf, recognizing Klarg as his former tormentor, delivered the killing blow by ripping out the bugbear 's throat while Semaj lay unconscious nearby.",
         "quotes": [
           {"speaker": "Alex/GM", "text": "This wolf had it out for Klarg. Klarg must have tortured this wolf pretty hard."},
           {"speaker": "Alex/GM", "text": "As Klarg looks over, this wolf just attaches onto his throat. And thrashes around."},
-          {"speaker": "Alex/GM", "text": "Semaj, as you regain consciousness, you open your eyes to see the wolf just ripping at Klarg's throat right now."}
+          {"speaker": "Alex/GM", "text": "Semaj, as you regain consciousness, you open your eyes to see the wolf just ripping at Klarg 's throat right now."}
         ]
       },
       {
@@ -131,7 +131,7 @@
       "enemies": "4 Goblins, 2 Enemy Wolves",
       "outcome": "Victory",
       "mvp": "Larry the Wolf",
-      "mvp_reason": "First kill - ripped out a goblin's throat"
+      "mvp_reason": "First kill - ripped out a goblin 's throat"
     },
     {
       "name": "Klarg's Chamber",

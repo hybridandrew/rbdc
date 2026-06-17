@@ -22,9 +22,9 @@
       {
         "title": "Sildar's Briefing",
         "type": "plot",
-        "description": "Sildar confirmed Glasstaff's death removed 'the knife at Phandalin's throat.' He revealed that Gundren is being held at Cragmaw Castle, but no one knows where it is.",
+        "description": "Sildar confirmed Glasstaff's death removed 'the knife at Phandalin 's throat.' He revealed that Gundren is being held at Cragmaw Castle, but no one knows where it is.",
         "quotes": [
-          {"speaker": "Alex/GM (Sildar)", "text": "Glasstaff is down? Well, good. That removes the knife at Phandalin's throat."},
+          {"speaker": "Alex/GM (Sildar)", "text": "Glasstaff is down? Well, good. That removes the knife at Phandalin 's throat."},
           {"speaker": "Alex/GM", "text": "Cragmaw Castle—folks in town don't know where it is, because anyone who goes looking doesn't come back with directions."}
         ]
       },
@@ -84,7 +84,7 @@
       },
       {
         "speaker": "Alex/GM (Sildar)",
-        "quote": "That removes the knife at Phandalin's throat.",
+        "quote": "That removes the knife at Phandalin 's throat.",
         "context": "Hearing about Glasstaff's death"
       },
       {
