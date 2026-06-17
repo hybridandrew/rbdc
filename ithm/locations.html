@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Locations | Into The Heckle Mist</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <meta property="og:title" content="Locations | Into The Heckle Mist">
+  <meta property="og:description" content="The cursed domain of Barovia — locations in the Into The Heckle Mist campaign.">
+  <meta property="og:url" content="https://richardbramlett.com/ithm/locations.html">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="nav.css">
+  <link rel="stylesheet" href="base.css">
+  <style>
+    .location-card {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .location-description {
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+
+    .location-status {
+      font-size: 0.8rem;
+      color: var(--text-dim);
+      margin-top: 0.4rem;
+      font-family: 'Cinzel', serif;
+      letter-spacing: 0.04em;
+    }
+
+    .location-status.visited {
+      color: #22c55e;
+    }
+
+    .location-status.not-visited {
+      color: var(--silver-dim);
+    }
+
+    .location-sessions {
+      font-size: 0.85rem;
+      color: var(--text-dim);
+      margin-top: 0.25rem;
+    }
+
+    .region-title {
+      font-family: 'Cinzel', serif;
+      font-size: 1.1rem;
+      color: var(--crimson-bright);
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid rgba(139, 26, 26, 0.2);
+    }
+
+    .region-section { margin-bottom: 2rem; }
+
+    .lore-note {
+      background: rgba(12, 10, 18, 0.92);
+      border: 1px solid rgba(139, 26, 26, 0.2);
+      border-radius: 12px;
+      padding: 1.25rem 1.5rem;
+      margin-bottom: 2.5rem;
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+      font-style: italic;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="page-header">
+      <div class="page-icon">🗺️</div>
+      <h1 class="page-title">Barovia</h1>
+      <p class="page-subtitle">The cursed domain — there is no road that leaves</p>
+    </header>
+
+    <div class="lore-note">
+      All locations listed as Not Yet Visited. The party has not entered Barovia. Descriptions reflect what is known before play begins — not what they will find.
+    </div>
+
+    <section class="section">
+      <h2 class="section-title">The Domain of Barovia</h2>
+
+      <div class="region-section">
+        <h3 class="region-title">The Village of Barovia</h3>
+        <div class="grid grid-3" id="village"></div>
+      </div>
+
+      <div class="region-section">
+        <h3 class="region-title">Castle Ravenloft</h3>
+        <div class="grid grid-3" id="ravenloft"></div>
+      </div>
+
+      <div class="region-section">
+        <h3 class="region-title">The Old Svalich Road &amp; Wilderness</h3>
+        <div class="grid grid-3" id="road"></div>
+      </div>
+
+      <div class="region-section">
+        <h3 class="region-title">Vallaki</h3>
+        <div class="grid grid-3" id="vallaki"></div>
+      </div>
+
+      <div class="region-section">
+        <h3 class="region-title">The Wilds of Barovia</h3>
+        <div class="grid grid-3" id="wilds"></div>
+      </div>
+
+      <div class="region-section">
+        <h3 class="region-title">Krezk &amp; the Outer Domain</h3>
+        <div class="grid grid-3" id="krezk"></div>
+      </div>
+    </section>
+  </div>
+
+  <script>
+    const locations = {
+      village: [
+        {
+          name: 'Village of Barovia',
+          icon: '🏘️',
+          description: 'The starting location — a fog-choked village of about a hundred souls who know exactly what lives in the castle above them and have made their peace with it, or at least stopped fighting it. The houses have their shutters nailed. Nobody goes out after dark. The church bell rings on the hour because Father Donavich cannot sleep and it gives him something to count.',
+          status: 'Starting Location'
+        },
+        {
+          name: 'Blood of the Vine Tavern',
+          icon: '🍷',
+          description: 'The village\'s only tavern, run by three Vistani women who have a complicated arrangement with Strahd\'s court. It is the closest thing to a social gathering point the village has. The wine is not good but it is wine, and the Vistani proprietors know more than they say.',
+          status: 'Not Yet Visited'
+        },
+        {
+          name: 'The Church of Barovia',
+          icon: '⛪',
+          description: 'Father Donavich\'s church. Consecrated ground, technically, though the local definition of consecrated has been under pressure. The undercroft holds something Donavich does not want visitors to find. Cries can be heard from below at night.',
+          status: 'Not Yet Visited'
+        },
+        {
+          name: 'The Burgomaster\'s Mansion',
+          icon: '🏠',
+          description: 'The former home of Barovia\'s burgomaster, who recently died. His son Ismark and daughter Ireena still live here. The mansion is defensible, barely. Strahd has been inside before.',
+          status: 'Not Yet Visited'
+        }
+      ],
+      ravenloft: [
+        {
+          name: 'Castle Ravenloft',
+          icon: '🏰',
+          description: 'Strahd\'s seat. The castle dominates the peak of Mount Baratok above the valley, visible from almost everywhere in the domain. It is vast, labyrinthine, and inhabited by Strahd, his vampire brides, his undead servants, and whatever else he has collected over seven centuries of absolute rule with nothing better to do. The party\'s destination — eventually. Going early is how parties die.',
+          status: 'Not Yet Visited'
+        }
+      ],
+      road: [
+        {
+          name: 'The Old Svalich Road',
+          icon: '🌲',
+          description: 'The main road through Barovia, threading through the Svalich Wood between the village and Vallaki. The trees here are old enough that their canopy blocks what little light Barovia gets. The road has no lighting. Things use it at night that are not travelers.',
+          status: 'Not Yet Visited'
+        },
+        {
+          name: 'Tser Pool',
+          icon: '🔮',
+          description: 'A Vistani encampment at a wide bend in the Tser River, two hours from Barovia Village. Madam Eva holds court here. The Tarokka reading happens here — the divination that sets the specific parameters of this campaign. This is one of the earliest and most important stops the party will make.',
+          status: 'Not Yet Visited'
+        },
+        {
+          name: 'The Raven River Crossroads',
+          icon: '🌫️',
+          description: 'A crossroads in the Svalich Wood where several paths meet. A gallows stands here — permanently occupied. The road signs have not been maintained. This is where the domain begins to show how it feels about travelers.',
+          status: 'Not Yet Visited'
+        }
+      ],
+      vallaki: [
+        {
+          name: 'Vallaki',
+          icon: '🏙️',
+          description: 'The only fortified town in Barovia, ruled by Baron Vargas Vallakovich who has declared that happiness is mandatory and backs this declaration up with weekly festivals and a dungeon. It is safer than the village, nominally. The stockade walls are sound. The political situation inside is not.',
+          status: 'Not Yet Visited'
+        },
+        {
+          name: 'Blue Water Inn',
+          icon: '🍺',
+          description: 'Run by Urwin Martikov and his family. The closest thing to a neutral, functional gathering space in Vallaki. Ravens are everywhere. This is not a coincidence.',
+          status: 'Not Yet Visited'
+        },
+        {
+          name: 'St. Andral\'s Church',
+          icon: '⛪',
+          description: 'Vallaki\'s church, dedicated to the Morninglord. Consecrated ground that has been providing genuine protection — until recently. Something has been stolen from beneath the altar. The protection is failing. Father Lucian has not told his congregation.',
+          status: 'Not Yet Visited'
+        }
+      ],
+      wilds: [
+        {
+          name: 'Old Bonegrinder',
+          icon: '🌾',
+          description: 'A windmill on a hill on the Old Svalich Road, visible for some distance. Three women live here. They sell dream pastries in the village — small pies that give sweet dreams and create dependency. What they put in the pies is the reason the party should visit this place prepared and leave quickly.',
+          status: 'Not Yet Visited'
+        },
+        {
+          name: 'Yester Hill',
+          icon: '⛰️',
+          description: 'A blighted hill to the south of Vallaki where a druid circle has gone wrong. The druids here worship Strahd. The tree at the peak is enormous, wrong, and growing. Something is being cultivated here that the party will eventually need to stop.',
+          status: 'Not Yet Visited'
+        },
+        {
+          name: 'Argynvostholt',
+          icon: '🏚️',
+          description: 'A ruined mansion that was once the stronghold of the Order of the Silver Dragon, knights who tried to stop Strahd five centuries ago and failed. The ghost of their commander, Commander Vlaakith, still walks the ruins. The Order\'s dragon Argynvost is long dead. His spirit is not entirely gone. There is something here that could help, if the party can reach it.',
+          status: 'Not Yet Visited'
+        },
+        {
+          name: 'Wizard of Wines Winery',
+          icon: '🍷',
+          description: 'Barovia\'s only winery, run by the Martikov family — wereravens who are members of the Keepers of the Feather. The winery is currently under siege by druids and blights. The wine is running out across Barovia, which matters because wine is the primary coping mechanism available. The party will need to address this.',
+          status: 'Not Yet Visited'
+        }
+      ],
+      krezk: [
+        {
+          name: 'Krezk',
+          icon: '🏘️',
+          description: 'A walled village further into the mountains, isolated and deeply religious. Entry requires a gift — specifically, a delivery of wine from the Wizard of Wines. The walled community has a pool in the Shrine of the White Sun at its center that is said to have healing properties. The Abbey of Saint Markovia watches from above.',
+          status: 'Not Yet Visited'
+        },
+        {
+          name: 'The Abbey of Saint Markovia',
+          icon: '🔔',
+          description: 'A monastery above Krezk, once a place of healing. Now run by the Abbot — an entity whose nature the party will have to determine for themselves. It is inhabited by the Mongrelfolk, stitched-together creatures from the Abbot\'s experiments. The Abbot himself has been in Barovia a very long time and has developed some unusual ideas about his purpose here.',
+          status: 'Not Yet Visited'
+        },
+        {
+          name: 'The Amber Temple',
+          icon: '🏛️',
+          description: 'An ancient temple deep in the mountains, predating Strahd\'s arrival in Barovia by centuries. Built by a secret order of wizards to contain dark powers — vestiges of dead gods and ancient evils sealed in amber sarcophagi. The temple is where Strahd made the pact that made him what he is. It is also where the campaign\'s most powerful items and its most dangerous temptations are located. You should not go here early.',
+          status: 'Not Yet Visited'
+        }
+      ]
+    };
+
+    function renderLocationCard(loc) {
+      const isVisited = loc.status && loc.status !== 'Not Yet Visited';
+      const statusClass = isVisited ? 'visited' : 'not-visited';
+      const sessionLine = loc.sessions && loc.sessions !== '—'
+        ? `<p class="location-sessions">Sessions: ${loc.sessions}</p>`
+        : '';
+
+      return `
+        <div class="location-card">
+          <h3 class="location-name">
+            <span class="location-icon">${loc.icon}</span>
+            ${loc.name}
+          </h3>
+          <p class="location-description">${loc.description}</p>
+          <p class="location-status ${statusClass}">${loc.status}</p>
+          ${sessionLine}
+        </div>
+      `;
+    }
+
+    document.getElementById('village').innerHTML =
+      locations.village.map(renderLocationCard).join('');
+
+    document.getElementById('ravenloft').innerHTML =
+      locations.ravenloft.map(renderLocationCard).join('');
+
+    document.getElementById('road').innerHTML =
+      locations.road.map(renderLocationCard).join('');
+
+    document.getElementById('vallaki').innerHTML =
+      locations.vallaki.map(renderLocationCard).join('');
+
+    document.getElementById('wilds').innerHTML =
+      locations.wilds.map(renderLocationCard).join('');
+
+    document.getElementById('krezk').innerHTML =
+      locations.krezk.map(renderLocationCard).join('');
+  </script>
+  <script src="nav.js"></script>
+  <script>initNav('world');</script>
+</body>
+</html>

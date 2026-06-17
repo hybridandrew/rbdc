@@ -1,0 +1,524 @@
+/* ===== INTO THE HECKLE MIST - BASE STYLES ===== */
+/* Shared styles for all content pages */
+
+:root {
+  --bg-dark: #050810;
+  --bg-card: rgba(12, 10, 18, 0.92);
+  --bg-card-hover: rgba(20, 16, 30, 0.97);
+  --crimson: #8b1a1a;
+  --crimson-dim: #5c1111;
+  --crimson-bright: #c0392b;
+  --silver: #a8b8c8;
+  --silver-dim: #6a7a8a;
+  --fog: rgba(180, 200, 220, 0.08);
+  --text-primary: #e8e0d8;
+  --text-secondary: rgba(232, 224, 216, 0.65);
+  --text-dim: rgba(232, 224, 216, 0.4);
+  --border-subtle: rgba(139, 26, 26, 0.25);
+  --border-glow: rgba(139, 26, 26, 0.5);
+  --green: #22c55e;
+  --red: #dc2626;
+  --blue: #3b82f6;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Crimson Pro', Georgia, serif;
+  background: var(--bg-dark);
+  color: var(--text-primary);
+  min-height: 100vh;
+  line-height: 1.6;
+}
+
+/* Cold fog ambient gradient — subtle blue-grey radial bleed */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:
+    radial-gradient(ellipse at 15% 10%, rgba(60, 80, 120, 0.07) 0%, transparent 55%),
+    radial-gradient(ellipse at 85% 85%, rgba(92, 17, 17, 0.06) 0%, transparent 50%),
+    radial-gradient(ellipse at 50% 50%, rgba(180, 200, 220, 0.03) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: -1;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  padding-top: 100px; /* Account for fixed nav */
+}
+
+/* ===== PAGE HEADER ===== */
+.page-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.page-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.page-title {
+  font-family: 'Cinzel', serif;
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 700;
+  background: linear-gradient(90deg, #c8b8b0, #c0392b, #c8b8b0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 0.5rem;
+}
+
+.page-subtitle {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  font-style: italic;
+}
+
+/* ===== SECTION STYLES ===== */
+.section {
+  margin-bottom: 3rem;
+}
+
+.section-title {
+  font-family: 'Cinzel', serif;
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: var(--crimson-bright);
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.section-title::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, var(--border-subtle), transparent);
+}
+
+/* ===== GRID LAYOUTS ===== */
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.grid-2 {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.grid-3 {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.grid-4 {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+/* ===== CARD STYLES ===== */
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  border-color: var(--border-glow);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+}
+
+.card-title {
+  font-family: 'Cinzel', serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--crimson-bright);
+  margin-bottom: 0.5rem;
+}
+
+.card-subtitle {
+  font-size: 0.9rem;
+  color: var(--text-dim);
+  margin-bottom: 0.75rem;
+}
+
+.card-description {
+  color: var(--text-secondary);
+  font-size: 1rem;
+}
+
+/* ===== CHARACTER CARDS ===== */
+.character-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: block;
+}
+
+.character-card:hover {
+  border-color: var(--crimson);
+  transform: translateY(-4px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5), 0 0 20px rgba(139, 26, 26, 0.15);
+}
+
+.character-card.departed {
+  opacity: 0.7;
+}
+
+.character-name {
+  font-family: 'Cinzel', serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--crimson-bright);
+  margin-bottom: 0.25rem;
+}
+
+.character-class {
+  color: var(--text-secondary);
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.character-stats {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.stat {
+  text-align: center;
+}
+
+.stat-label {
+  font-size: 0.75rem;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.stat-value {
+  font-family: 'Cinzel', serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.departed-badge {
+  display: inline-block;
+  margin-left: 0.5rem;
+  color: #fbbf24;
+}
+
+/* ===== NPC CARDS ===== */
+.npc-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.npc-card:hover {
+  border-color: var(--crimson-dim);
+  transform: translateY(-2px);
+}
+
+.npc-name {
+  font-family: 'Cinzel', serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 0.25rem;
+}
+
+.npc-title {
+  color: var(--silver);
+  font-size: 0.95rem;
+  margin-bottom: 0.75rem;
+}
+
+.npc-description {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+.npc-status {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 1rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.npc-status.ally {
+  background: rgba(34, 197, 94, 0.2);
+  color: var(--green);
+}
+
+.npc-status.enemy {
+  background: rgba(139, 26, 26, 0.25);
+  color: #e05050;
+}
+
+.npc-status.neutral {
+  background: rgba(168, 184, 200, 0.15);
+  color: var(--silver);
+}
+
+.npc-status.unknown {
+  background: rgba(60, 80, 120, 0.2);
+  color: #8ab0d0;
+}
+
+.npc-status.captured {
+  background: rgba(139, 26, 26, 0.2);
+  color: #f87171;
+}
+
+.npc-status.freed {
+  background: rgba(34, 197, 94, 0.15);
+  color: #86efac;
+}
+
+.npc-status.departed {
+  background: rgba(168, 184, 200, 0.12);
+  color: var(--silver-dim);
+}
+
+.npc-status.historical {
+  background: rgba(60, 80, 120, 0.15);
+  color: #8ab0d0;
+}
+
+/* ===== LOCATION CARDS ===== */
+.location-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.location-card:hover {
+  border-color: var(--crimson);
+  background: var(--bg-card-hover);
+}
+
+.location-name {
+  font-family: 'Cinzel', serif;
+  font-size: 1.1rem;
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.location-icon {
+  color: var(--crimson-bright);
+}
+
+/* ===== BUTTONS ===== */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  font-family: 'Cinzel', serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--crimson), var(--crimson-bright));
+  color: var(--text-primary);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(139, 26, 26, 0.45);
+}
+
+.btn-secondary {
+  background: transparent;
+  border: 1px solid var(--border-subtle);
+  color: var(--text-secondary);
+}
+
+.btn-secondary:hover {
+  border-color: var(--crimson);
+  color: var(--crimson-bright);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+    padding-top: 80px;
+  }
+
+  .grid-2, .grid-3, .grid-4 {
+    grid-template-columns: 1fr;
+  }
+
+  .character-stats {
+    justify-content: space-around;
+  }
+}
+
+/* ===== SCROLL REVEAL ===== */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+/* ===== NPC PORTRAIT PLACEHOLDERS ===== */
+.npc-portrait {
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Cinzel', serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  flex-shrink: 0;
+  letter-spacing: 0.03em;
+}
+
+.npc-portrait.ally {
+  border: 2px solid var(--green);
+  color: var(--green);
+  background: rgba(34, 197, 94, 0.1);
+}
+
+.npc-portrait.enemy {
+  border: 2px solid var(--crimson-bright);
+  color: var(--crimson-bright);
+  background: rgba(139, 26, 26, 0.15);
+}
+
+.npc-portrait.neutral {
+  border: 2px solid var(--silver-dim);
+  color: var(--silver);
+  background: rgba(168, 184, 200, 0.1);
+}
+
+.npc-portrait.unknown {
+  border: 2px solid #4a6080;
+  color: #8ab0d0;
+  background: rgba(60, 80, 120, 0.12);
+}
+
+.npc-card-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.npc-card-header-text {
+  flex: 1;
+}
+
+.npc-card-header .npc-name {
+  margin-bottom: 0.15rem;
+}
+
+.npc-card-header .npc-title {
+  margin-bottom: 0;
+}
+
+/* ===== MEMORABLE MOMENTS ===== */
+.memorable-moments-card {
+  border-color: rgba(139, 26, 26, 0.35);
+}
+
+.memorable-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.memorable-item {
+  color: var(--text-secondary);
+  padding-left: 1.5rem;
+  position: relative;
+  line-height: 1.65;
+}
+
+.memorable-item::before {
+  content: '✦';
+  position: absolute;
+  left: 0;
+  color: var(--crimson-bright);
+  font-size: 0.65rem;
+  top: 0.35rem;
+}
+
+/* ===== FOG DIVIDER ===== */
+.fog-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(180, 200, 220, 0.15), var(--crimson-dim), rgba(180, 200, 220, 0.15), transparent);
+  margin: 2rem 0;
+}
+
+/* ===== NPC CONNECTIONS ===== */
+.npc-connections {
+  margin: 0.75rem 0 0.5rem;
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
+
+.npc-connections-label {
+  font-family: 'Cinzel', serif;
+  font-size: 0.75rem;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-right: 0.4rem;
+}
+
+.npc-connection-link {
+  color: var(--crimson-bright);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.npc-connection-link:hover {
+  color: #e05050;
+  text-decoration: underline;
+}
+
+.npc-connection-plain {
+  color: var(--text-secondary);
+}

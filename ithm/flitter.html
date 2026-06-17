@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flitter D. Jibbit | Into The Heckle Mist</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <meta property="og:title" content="Flitter D. Jibbit | Into The Heckle Mist">
+  <meta property="og:description" content="Flitter D. Jibbit — Faerie Bard/Druid in the ITHM campaign.">
+  <meta property="og:url" content="https://richardbramlett.com/ithm/flitter.html">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="nav.css">
+  <link rel="stylesheet" href="base.css">
+  <style>
+    .character-layout {
+      display: grid;
+      grid-template-columns: 320px 1fr;
+      gap: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    @media (max-width: 900px) {
+      .character-layout { grid-template-columns: 1fr; }
+      .character-sidebar { display: flex; flex-direction: column; align-items: center; }
+    }
+
+    .character-sidebar { display: flex; flex-direction: column; gap: 1.5rem; }
+
+    .character-portrait {
+      width: 300px;
+      height: 400px;
+      border-radius: 12px;
+      border: 2px solid var(--border-glow);
+      background: var(--bg-card);
+      overflow: hidden;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .portrait-placeholder {
+      text-align: center;
+    }
+
+    .portrait-initials {
+      font-family: 'Cinzel', serif;
+      font-size: 5rem;
+      font-weight: 700;
+      color: var(--crimson);
+      opacity: 0.5;
+      line-height: 1;
+      margin-bottom: 0.5rem;
+    }
+
+    .portrait-label {
+      font-family: 'Cinzel', serif;
+      font-size: 0.75rem;
+      color: var(--text-dim);
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+    }
+
+    .quick-stats {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 12px;
+      padding: 1.5rem;
+    }
+
+    .quick-stats-title {
+      font-family: 'Cinzel', serif;
+      font-size: 1rem;
+      color: var(--crimson-bright);
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+
+    .stat-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 0.5rem 0;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .stat-row:last-child { border-bottom: none; }
+    .stat-name { color: var(--text-secondary); }
+    .stat-val { font-family: 'Cinzel', serif; font-weight: 600; color: var(--text-primary); }
+
+    .character-main { display: flex; flex-direction: column; gap: 1.5rem; }
+
+    .character-header-info {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 12px;
+      padding: 2rem;
+    }
+
+    .char-name {
+      font-family: 'Cinzel', serif;
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: var(--crimson-bright);
+      margin-bottom: 0.25rem;
+    }
+
+    .char-title { font-size: 1.2rem; color: var(--text-secondary); margin-bottom: 1rem; }
+
+    .char-tagline {
+      font-style: italic;
+      color: var(--text-dim);
+      font-size: 1.1rem;
+      padding-left: 1rem;
+      border-left: 3px solid var(--crimson-dim);
+    }
+
+    .info-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 12px;
+      padding: 1.5rem;
+    }
+
+    .info-card-title {
+      font-family: 'Cinzel', serif;
+      font-size: 1.25rem;
+      color: var(--crimson-bright);
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .info-card-content { color: var(--text-secondary); line-height: 1.8; }
+    .info-card-content p { margin-bottom: 1rem; }
+    .info-card-content p:last-child { margin-bottom: 0; }
+
+    .abilities-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 0.75rem; }
+
+    @media (max-width: 600px) {
+      .abilities-grid { grid-template-columns: repeat(3, 1fr); }
+    }
+
+    .ability-box {
+      background: rgba(139, 26, 26, 0.08);
+      border: 1px solid rgba(139, 26, 26, 0.2);
+      border-radius: 8px;
+      padding: 0.75rem;
+      text-align: center;
+    }
+
+    .ability-name { font-size: 0.75rem; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.25rem; }
+    .ability-score { font-family: 'Cinzel', serif; font-size: 1.5rem; font-weight: 700; color: var(--text-primary); }
+    .ability-mod { font-size: 0.85rem; color: var(--silver-dim); }
+
+    .traits-list { display: flex; flex-direction: column; gap: 1rem; }
+
+    .trait-item {
+      padding: 1rem;
+      background: rgba(139, 26, 26, 0.05);
+      border-left: 3px solid var(--crimson-dim);
+      border-radius: 0 8px 8px 0;
+    }
+
+    .trait-name { font-family: 'Cinzel', serif; font-weight: 600; color: var(--crimson-bright); margin-bottom: 0.25rem; }
+    .trait-desc { color: var(--text-secondary); font-size: 0.95rem; }
+
+    .equipment-list { list-style: none; }
+
+    .equipment-item {
+      padding: 0.5rem 0;
+      padding-left: 1.5rem;
+      position: relative;
+      color: var(--text-secondary);
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .equipment-item:last-child { border-bottom: none; }
+
+    .equipment-item::before {
+      content: '◆';
+      position: absolute;
+      left: 0;
+      color: var(--crimson-dim);
+      font-size: 0.6rem;
+      top: 0.7rem;
+    }
+
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--text-dim);
+      text-decoration: none;
+      font-family: 'Cinzel', serif;
+      font-size: 0.9rem;
+      margin-bottom: 2rem;
+      transition: color 0.3s ease;
+    }
+
+    .back-link:hover { color: var(--crimson-bright); }
+
+    .pending-note {
+      text-align: center;
+      padding: 1.5rem;
+      color: var(--text-dim);
+      font-style: italic;
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="party.html" class="back-link">← Back to Party</a>
+
+    <div class="character-layout">
+      <div class="character-sidebar">
+        <div class="character-portrait">
+          <div class="portrait-placeholder">
+            <div class="portrait-initials">FJ</div>
+            <div class="portrait-label">Portrait TBD</div>
+          </div>
+        </div>
+
+        <div class="quick-stats">
+          <h3 class="quick-stats-title">Quick Stats</h3>
+          <div class="stat-row">
+            <span class="stat-name">Level</span>
+            <span class="stat-val">Bard 1 / Druid 1</span>
+          </div>
+          <div class="stat-row">
+            <span class="stat-name">Hit Points</span>
+            <span class="stat-val">TBD</span>
+          </div>
+          <div class="stat-row">
+            <span class="stat-name">Armor Class</span>
+            <span class="stat-val">TBD</span>
+          </div>
+          <div class="stat-row">
+            <span class="stat-name">Speed</span>
+            <span class="stat-val">30 ft / 30 ft fly</span>
+          </div>
+          <div class="stat-row">
+            <span class="stat-name">Size</span>
+            <span class="stat-val">Tiny</span>
+          </div>
+          <div class="stat-row">
+            <span class="stat-name">Proficiency</span>
+            <span class="stat-val">+2</span>
+          </div>
+          <div class="stat-row">
+            <span class="stat-name">Bardic Inspiration</span>
+            <span class="stat-val">TBD / LR</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="character-main">
+        <div class="character-header-info">
+          <h1 class="char-name">Flitter D. Jibbit</h1>
+          <p class="char-title">Faerie · Bard / Druid Multiclass</p>
+          <p class="char-tagline">"I'm very small. You should assume that's on purpose."</p>
+        </div>
+
+        <div class="info-card">
+          <h3 class="info-card-title">📖 Backstory</h3>
+          <div class="info-card-content">
+            <p>Flitter D. Jibbit does not explain what the D stands for. She has given fourteen different answers to this question and stands behind all of them equally. What is consistent: she is fae, she flies, she plays music that does things music arguably should not do, and she has a very sophisticated relationship with the concept of being underestimated.</p>
+            <p>Tiny creatures in hostile environments develop one of two survival strategies: they become inconsequential, or they become useful. Flitter chose a third path that is essentially neither, which is to become so interesting that the things trying to eat her get distracted. This has worked more often than it has any right to. She has a theory that the universe will let you get away with things if you make them entertaining enough, and Barovia — with its centuries of the same grey misery — represents an almost cosmically empty audience.</p>
+            <p>The druidic side of her is less about reverence for nature and more about an instinct that the wild world has been running longer than civilization and probably has useful information. She picks up what it says and files it alongside what the music tells her, and somewhere in the overlap she usually finds an answer. Or at least an exit.</p>
+            <p>She found the mists interesting rather than threatening, which is either very brave or a significant cognitive gap. She is still deciding which.</p>
+          </div>
+        </div>
+
+        <div class="info-card">
+          <h3 class="info-card-title">🧠 The Angle</h3>
+          <div class="info-card-content">
+            <p>Where Korrin is presence — the large thing in the room that everyone is carefully not reacting to — Flitter is absence. She is not in the place where you think she is. She is in the other place, the one you stopped watching. This is not a skill she consciously developed; she is genuinely tiny and genuinely airborne and the combination means that most threat assessments simply do not account for her, which she finds both useful and slightly insulting.</p>
+            <p>Her chaos is not random. Flitter has a very clear sense of what she wants to happen and an extremely flexible approach to how it gets there. The music is the most visible expression of this — bardic magic that moves minds and bends probability — but the druidic training underneath it gives her a patience that pure bards rarely have. She can wait. She is very good at waiting in places that are not quite where you're looking.</p>
+            <p>In Barovia, where paranoia is a survival mechanism and everyone has learned to expect ambush from the direction they can see, a creature who is genuinely invisible by scale and flight is a significant asset. Flitter knows this. The question the campaign will answer is whether she uses it in service of the group or primarily in service of the bit, and whether there is actually a meaningful difference.</p>
+          </div>
+        </div>
+
+        <div class="info-card">
+          <h3 class="info-card-title">📊 Ability Scores</h3>
+          <div class="pending-note">Scores to be recorded after Session 1.</div>
+          <div class="abilities-grid">
+            <div class="ability-box">
+              <div class="ability-name">STR</div>
+              <div class="ability-score">—</div>
+              <div class="ability-mod">TBD</div>
+            </div>
+            <div class="ability-box">
+              <div class="ability-name">DEX</div>
+              <div class="ability-score">—</div>
+              <div class="ability-mod">TBD</div>
+            </div>
+            <div class="ability-box">
+              <div class="ability-name">CON</div>
+              <div class="ability-score">—</div>
+              <div class="ability-mod">TBD</div>
+            </div>
+            <div class="ability-box">
+              <div class="ability-name">INT</div>
+              <div class="ability-score">—</div>
+              <div class="ability-mod">TBD</div>
+            </div>
+            <div class="ability-box">
+              <div class="ability-name">WIS</div>
+              <div class="ability-score">—</div>
+              <div class="ability-mod">TBD</div>
+            </div>
+            <div class="ability-box">
+              <div class="ability-name">CHA</div>
+              <div class="ability-score">—</div>
+              <div class="ability-mod">TBD</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="info-card">
+          <h3 class="info-card-title">✦ Features &amp; Traits</h3>
+          <div class="traits-list">
+            <div class="trait-item">
+              <div class="trait-name">Faerie: Flight</div>
+              <div class="trait-desc">30 ft flying speed. Cannot fly while wearing medium or heavy armor. This is the primary tactical advantage Flitter has built her entire personality around.</div>
+            </div>
+            <div class="trait-item">
+              <div class="trait-name">Faerie: Fae Magic</div>
+              <div class="trait-desc">Innate spellcasting tied to fae nature — specific cantrips and spells known from heritage. Supplements both her bard and druid spell lists.</div>
+            </div>
+            <div class="trait-item">
+              <div class="trait-name">Bardic Inspiration</div>
+              <div class="trait-desc">As a bonus action, she can grant an Inspiration die to a creature within 60 ft. The recipient can add it to an ability check, attack roll, or saving throw within the next 10 minutes. The creature with the largest inspirational surface area in the party is, objectively, tiny and flying.</div>
+            </div>
+            <div class="trait-item">
+              <div class="trait-name">Spellcasting (Bard + Druid)</div>
+              <div class="trait-desc">Multiclass spellcaster — spell slots pool together. CHA drives bard spells; WIS drives druid spells. The combination is broader than either alone, if sometimes complicated to track.</div>
+            </div>
+            <div class="trait-item">
+              <div class="trait-name">Druidic &amp; Thieves' Cant</div>
+              <div class="trait-desc">Knows druidic and the secret cant of rogues. How she came to know Thieves' Cant is not something she discusses at length, though the answer probably involves the D in her middle name.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="info-card">
+          <h3 class="info-card-title">🎒 Equipment</h3>
+          <div class="pending-note">Equipment to be recorded after Session 1.</div>
+        </div>
+
+        <div class="info-card memorable-moments-card">
+          <h3 class="info-card-title">✦ Memorable Moments</h3>
+          <p class="pending-note">No moments logged yet. The mists have only just parted.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="nav.js"></script>
+  <script>initNav('characters');</script>
+</body>
+</html>

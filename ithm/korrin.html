@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Korrin Lefstryde | Into The Heckle Mist</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <meta property="og:title" content="Korrin Lefstryde | Into The Heckle Mist">
+  <meta property="og:description" content="Korrin Lefstryde — Bugbear Monk/Druid in the ITHM campaign.">
+  <meta property="og:url" content="https://richardbramlett.com/ithm/korrin.html">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="nav.css">
+  <link rel="stylesheet" href="base.css">
+  <style>
+    .character-layout {
+      display: grid;
+      grid-template-columns: 320px 1fr;
+      gap: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    @media (max-width: 900px) {
+      .character-layout { grid-template-columns: 1fr; }
+      .character-sidebar { display: flex; flex-direction: column; align-items: center; }
+    }
+
+    .character-sidebar { display: flex; flex-direction: column; gap: 1.5rem; }
+
+    .character-portrait {
+      width: 300px;
+      height: 400px;
+      border-radius: 12px;
+      border: 2px solid var(--border-glow);
+      background: var(--bg-card);
+      overflow: hidden;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+    .portrait-placeholder {
+      text-align: center;
+    }
+
+    .portrait-initials {
+      font-family: 'Cinzel', serif;
+      font-size: 5rem;
+      font-weight: 700;
+      color: var(--crimson);
+      opacity: 0.5;
+      line-height: 1;
+      margin-bottom: 0.5rem;
+    }
+
+    .portrait-label {
+      font-family: 'Cinzel', serif;
+      font-size: 0.75rem;
+      color: var(--text-dim);
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+    }
+
+    .quick-stats {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 12px;
+      padding: 1.5rem;
+    }
+
+    .quick-stats-title {
+      font-family: 'Cinzel', serif;
+      font-size: 1rem;
+      color: var(--crimson-bright);
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+
+    .stat-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 0.5rem 0;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .stat-row:last-child { border-bottom: none; }
+    .stat-name { color: var(--text-secondary); }
+    .stat-val { font-family: 'Cinzel', serif; font-weight: 600; color: var(--text-primary); }
+
+    .character-main { display: flex; flex-direction: column; gap: 1.5rem; }
+
+    .character-header-info {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 12px;
+      padding: 2rem;
+    }
+
+    .char-name {
+      font-family: 'Cinzel', serif;
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: var(--crimson-bright);
+      margin-bottom: 0.25rem;
+    }
+
+    .char-title { font-size: 1.2rem; color: var(--text-secondary); margin-bottom: 1rem; }
+
+    .char-tagline {
+      font-style: italic;
+      color: var(--text-dim);
+      font-size: 1.1rem;
+      padding-left: 1rem;
+      border-left: 3px solid var(--crimson-dim);
+    }
+
+    .info-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 12px;
+      padding: 1.5rem;
+    }
+
+    .info-card-title {
+      font-family: 'Cinzel', serif;
+      font-size: 1.25rem;
+      color: var(--crimson-bright);
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .info-card-content { color: var(--text-secondary); line-height: 1.8; }
+    .info-card-content p { margin-bottom: 1rem; }
+    .info-card-content p:last-child { margin-bottom: 0; }
+
+    .abilities-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 0.75rem; }
+
+    @media (max-width: 600px) {
+      .abilities-grid { grid-template-columns: repeat(3, 1fr); }
+    }
+
+    .ability-box {
+      background: rgba(139, 26, 26, 0.08);
+      border: 1px solid rgba(139, 26, 26, 0.2);
+      border-radius: 8px;
+      padding: 0.75rem;
+      text-align: center;
+    }
+
+    .ability-name { font-size: 0.75rem; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.25rem; }
+    .ability-score { font-family: 'Cinzel', serif; font-size: 1.5rem; font-weight: 700; color: var(--text-primary); }
+    .ability-mod { font-size: 0.85rem; color: var(--silver-dim); }
+
+    .traits-list { display: flex; flex-direction: column; gap: 1rem; }
+
+    .trait-item {
+      padding: 1rem;
+      background: rgba(139, 26, 26, 0.05);
+      border-left: 3px solid var(--crimson-dim);
+      border-radius: 0 8px 8px 0;
+    }
+
+    .trait-name { font-family: 'Cinzel', serif; font-weight: 600; color: var(--crimson-bright); margin-bottom: 0.25rem; }
+    .trait-desc { color: var(--text-secondary); font-size: 0.95rem; }
+
+    .equipment-list { list-style: none; }
+
+    .equipment-item {
+      padding: 0.5rem 0;
+      padding-left: 1.5rem;
+      position: relative;
+      color: var(--text-secondary);
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .equipment-item:last-child { border-bottom: none; }
+
+    .equipment-item::before {
+      content: '◆';
+      position: absolute;
+      left: 0;
+      color: var(--crimson-dim);
+      font-size: 0.6rem;
+      top: 0.7rem;
+    }
+
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--text-dim);
+      text-decoration: none;
+      font-family: 'Cinzel', serif;
+      font-size: 0.9rem;
+      margin-bottom: 2rem;
+      transition: color 0.3s ease;
+    }
+
+    .back-link:hover { color: var(--crimson-bright); }
+
+    .pending-note {
+      text-align: center;
+      padding: 1.5rem;
+      color: var(--text-dim);
+      font-style: italic;
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="party.html" class="back-link">← Back to Party</a>
+
+    <div class="character-layout">
+      <div class="character-sidebar">
+        <div class="character-portrait">
+          <div class="portrait-placeholder">
+            <div class="portrait-initials">KL</div>
+            <div class="portrait-label">Portrait TBD</div>
+          </div>
+        </div>
+
+        <div class="quick-stats">
+          <h3 class="quick-stats-title">Quick Stats</h3>
+          <div class="stat-row">
+            <span class="stat-name">Level</span>
+            <span class="stat-val">Monk 1 / Druid 1</span>
+          </div>
+          <div class="stat-row">
+            <span class="stat-name">Hit Points</span>
+            <span class="stat-val">TBD</span>
+          </div>
+          <div class="stat-row">
+            <span class="stat-name">Armor Class</span>
+            <span class="stat-val">TBD</span>
+          </div>
+          <div class="stat-row">
+            <span class="stat-name">Speed</span>
+            <span class="stat-val">30 ft</span>
+          </div>
+          <div class="stat-row">
+            <span class="stat-name">Proficiency</span>
+            <span class="stat-val">+2</span>
+          </div>
+          <div class="stat-row">
+            <span class="stat-name">Ki Points</span>
+            <span class="stat-val">1 / SR</span>
+          </div>
+          <div class="stat-row">
+            <span class="stat-name">Primal Order</span>
+            <span class="stat-val">Magician</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="character-main">
+        <div class="character-header-info">
+          <h1 class="char-name">Korrin Lefstryde</h1>
+          <p class="char-title">Bugbear · Monk 1 / Druid 1 (Primal Order: Magician)</p>
+          <p class="char-tagline">"The flower does not apologize for its thorns."</p>
+        </div>
+
+        <div class="info-card">
+          <h3 class="info-card-title">📖 Backstory</h3>
+          <div class="info-card-content">
+            <p>Korrin Lefstryde was not supposed to be gentle. Bugbears are not gentle. The clan that raised him expected him to grow into another raider, another shadow-hunter, another creature of ambush and appetite. What they got instead was a foundling taken in by a druid circle before he could learn to be anything else.</p>
+            <p>The druids who raised Korrin saw no contradiction in teaching a bugbear to listen — to the roots beneath stone, to the slow grammar of seasons, to the way a forest breathes differently in grief than in growth. He learned to press flowers between pages. He learned to write haiku, badly at first and then with a strange quiet precision. He learned that the impulse to destroy something beautiful because you could is exactly the impulse you needed to understand before you could resist it.</p>
+            <p>When he outgrew what the circle could teach him — not in knowledge but in the direction of that knowledge — they sent him to a monastery. Not to make him less bugbear. To give the thing already inside him somewhere to go. The monks were confused by him for approximately one week, then they put him to work. A bugbear in a gi at the training post hits much harder than a human, and is much harder to use as an excuse not to train yourself.</p>
+            <p>Barovia did not ask his permission. The mists came, as they always do, without announcement. He had his quarterstaff and his journal and the Ring of Spell Storing and the certainty that whatever was on the other side of the fog, he would rather face it present and observant than frightened and swinging.</p>
+          </div>
+        </div>
+
+        <div class="info-card">
+          <h3 class="info-card-title">🧠 The Contradiction</h3>
+          <div class="info-card-content">
+            <p>The most important thing to understand about Korrin is the gap between how he looks and what he is. He is enormous — a massive upright bugbear with a broad-jawed face, heavy brow ridges, shaggy dark brown fur, and the general silhouette of something that should be alarming. In Barovia, where everyone already lives in low-grade terror, he lands like a physiological warning. People flinch. He is used to this.</p>
+            <p>What they do not expect is that he will sit down cross-legged and open a journal full of pressed flowers and ask, in a voice that is thoughtful rather than threatening, what kind of grief this place carries. He is not performing gentleness. He earned it, slowly, against his own grain, and he holds it the way you hold something expensive that you paid for yourself.</p>
+            <p>His golden-amber eyes are the tell. They are warm, curious, and soft-focused in a way that sits strange on a face like his. They are the eyes of someone who is actually paying attention. In this campaign, in this land where most of the NPCs have learned not to see anything too clearly, that quality is either going to save the party or get Korrin into a great deal of trouble by understanding things he was not supposed to understand.</p>
+          </div>
+        </div>
+
+        <div class="info-card">
+          <h3 class="info-card-title">📊 Ability Scores</h3>
+          <div class="pending-note">Scores to be recorded after Session 1.</div>
+          <div class="abilities-grid">
+            <div class="ability-box">
+              <div class="ability-name">STR</div>
+              <div class="ability-score">—</div>
+              <div class="ability-mod">TBD</div>
+            </div>
+            <div class="ability-box">
+              <div class="ability-name">DEX</div>
+              <div class="ability-score">—</div>
+              <div class="ability-mod">TBD</div>
+            </div>
+            <div class="ability-box">
+              <div class="ability-name">CON</div>
+              <div class="ability-score">—</div>
+              <div class="ability-mod">TBD</div>
+            </div>
+            <div class="ability-box">
+              <div class="ability-name">INT</div>
+              <div class="ability-score">—</div>
+              <div class="ability-mod">TBD</div>
+            </div>
+            <div class="ability-box">
+              <div class="ability-name">WIS</div>
+              <div class="ability-score">—</div>
+              <div class="ability-mod">TBD</div>
+            </div>
+            <div class="ability-box">
+              <div class="ability-name">CHA</div>
+              <div class="ability-score">—</div>
+              <div class="ability-mod">TBD</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="info-card">
+          <h3 class="info-card-title">✦ Features &amp; Traits</h3>
+          <div class="traits-list">
+            <div class="trait-item">
+              <div class="trait-name">Bugbear: Surprise Attack</div>
+              <div class="trait-desc">If Korrin surprises a creature and hits it with an attack on the first round of combat, the attack deals an extra 2d6 damage. The nature of a creature raised by druids to value stillness — who nonetheless carries this in his blood.</div>
+            </div>
+            <div class="trait-item">
+              <div class="trait-name">Bugbear: Long-Limbed</div>
+              <div class="trait-desc">When making a melee attack, Korrin's reach is 5 feet greater than normal. He does not need to close distance the way smaller creatures do.</div>
+            </div>
+            <div class="trait-item">
+              <div class="trait-name">Unarmored Defense (Monk)</div>
+              <div class="trait-desc">AC equals 10 + DEX modifier + WIS modifier when not wearing armor. The body becomes the armor. The monastery had opinions about this.</div>
+            </div>
+            <div class="trait-item">
+              <div class="trait-name">Martial Arts</div>
+              <div class="trait-desc">Unarmed strikes and monk weapons use DEX or STR (whichever is higher). Can make one unarmed strike as a bonus action after attacking with a monk weapon or unarmed strike.</div>
+            </div>
+            <div class="trait-item">
+              <div class="trait-name">Primal Order: Magician</div>
+              <div class="trait-desc">Korrin adds his WIS modifier to his Arcana checks. He can also use INT as the ability for his druid spells instead of WIS — reflecting his scholarly, studious approach to magic.</div>
+            </div>
+            <div class="trait-item">
+              <div class="trait-name">Druidic &amp; Thieves' Cant</div>
+              <div class="trait-desc">Knows the secret language of druids and can understand hidden messages in natural settings. The journal he keeps is partly in druidic script — not for secrecy, but habit.</div>
+            </div>
+            <div class="trait-item">
+              <div class="trait-name">Ring of Spell Storing</div>
+              <div class="trait-desc">A magic ring that can store up to 5 levels of spells cast into it, to be released by the wearer at a later time. A gift from the druid circle when he left. They wanted him to have something they'd already prepared for him.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="info-card">
+          <h3 class="info-card-title">🎒 Equipment</h3>
+          <ul class="equipment-list">
+            <li class="equipment-item">Quarterstaff (carried on back)</li>
+            <li class="equipment-item">Ring of Spell Storing</li>
+            <li class="equipment-item">Journal of pressed flowers and philosophical notes</li>
+            <li class="equipment-item">Purple-indigo sleeveless martial gi</li>
+            <li class="equipment-item">Gold obi sash</li>
+            <li class="equipment-item">Steel bracers</li>
+            <li class="equipment-item">Adventuring supplies</li>
+          </ul>
+        </div>
+
+        <div class="info-card memorable-moments-card">
+          <h3 class="info-card-title">✦ Memorable Moments</h3>
+          <p class="pending-note">No moments logged yet. The mists have only just parted.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="nav.js"></script>
+  <script>initNav('characters');</script>
+</body>
+</html>

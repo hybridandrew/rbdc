@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Party | Into The Heckle Mist</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <meta property="og:title" content="The Party | Into The Heckle Mist">
+  <meta property="og:description" content="Meet the party of Into The Heckle Mist.">
+  <meta property="og:url" content="https://richardbramlett.com/ithm/party.html">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="nav.css">
+  <link rel="stylesheet" href="base.css">
+  <style>
+    .party-note {
+      background: rgba(12, 10, 18, 0.92);
+      border: 1px solid rgba(139, 26, 26, 0.2);
+      border-radius: 12px;
+      padding: 1.25rem 1.5rem;
+      margin-bottom: 2.5rem;
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+      font-style: italic;
+      text-align: center;
+    }
+
+    .character-card .player-tag {
+      display: inline-block;
+      margin-top: 0.75rem;
+      font-size: 0.8rem;
+      color: var(--text-dim);
+      font-family: 'Cinzel', serif;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .character-card .char-description {
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+      margin-top: 0.75rem;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="page-header">
+      <div class="page-icon">🌫️</div>
+      <h1 class="page-title">The Party</h1>
+      <p class="page-subtitle">Swallowed by the mists and deposited in Barovia</p>
+    </header>
+
+    <div class="party-note">
+      The mists do not care who you are or what you were. Adventurer, scholar, wanderer — you are all equally trapped. What you do with that is the only question that matters here.
+    </div>
+
+    <section class="section">
+      <h2 class="section-title">Active Members</h2>
+      <div class="grid grid-2" id="active-party"></div>
+    </section>
+  </div>
+
+  <script>
+    const partyData = {
+      active: [
+        {
+          name: 'Korrin Lefstryde',
+          page: 'korrin.html',
+          charClass: 'Bugbear · Monk 1 / Druid 1 (Magician)',
+          level: '1/1',
+          hp: 'TBD',
+          ac: 'TBD',
+          player: 'Rich (hybridxer0)',
+          description: 'A hulking bugbear raised by a druid circle and disciplined by a monastery. He keeps a journal of pressed flowers and haiku. The physical contradiction — a creature built for violence, devoted to stillness — is the whole character.'
+        },
+        {
+          name: 'Flitter D. Jibbit',
+          page: 'flitter.html',
+          charClass: 'Faerie · Bard / Druid',
+          level: '1',
+          hp: 'TBD',
+          ac: 'TBD',
+          player: 'TBD',
+          description: 'A tiny flying fae with musical magic and druidic instincts. Small enough to be underestimated and experienced enough to have built an entire tactical philosophy around it. Barovia has never seen anything like her.'
+        }
+      ]
+    };
+
+    function renderCharacterCard(char) {
+      return `
+        <a href="${char.page}" class="character-card">
+          <h3 class="character-name">${char.name}</h3>
+          <p class="character-class">${char.charClass}</p>
+          <div class="character-stats">
+            <div class="stat">
+              <div class="stat-label">Level</div>
+              <div class="stat-value">${char.level}</div>
+            </div>
+            <div class="stat">
+              <div class="stat-label">HP</div>
+              <div class="stat-value">${char.hp}</div>
+            </div>
+            <div class="stat">
+              <div class="stat-label">AC</div>
+              <div class="stat-value">${char.ac}</div>
+            </div>
+          </div>
+          <p class="char-description">${char.description}</p>
+          <span class="player-tag">Player: ${char.player}</span>
+        </a>
+      `;
+    }
+
+    document.getElementById('active-party').innerHTML =
+      partyData.active.map(char => renderCharacterCard(char)).join('');
+  </script>
+  <script src="nav.js"></script>
+  <script>initNav('characters');</script>
+</body>
+</html>

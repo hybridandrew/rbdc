@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campaign Overview | Into The Heckle Mist</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <meta property="og:title" content="Campaign Overview | Into The Heckle Mist">
+  <meta property="og:description" content="Campaign overview — Into The Heckle Mist, a Curse of Strahd D&D 5e campaign.">
+  <meta property="og:url" content="https://richardbramlett.com/ithm/overview.html">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="nav.css">
+  <link rel="stylesheet" href="base.css">
+  <style>
+    .overview-hero {
+      text-align: center;
+      padding: 2rem 0 4rem;
+    }
+
+    .overview-title {
+      font-family: 'Cinzel', serif;
+      font-size: clamp(2.5rem, 6vw, 4rem);
+      font-weight: 700;
+      background: linear-gradient(90deg, #c8b8b0, #c0392b, #c8b8b0);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 1rem;
+    }
+
+    .overview-tagline {
+      color: var(--text-secondary);
+      font-size: 1.2rem;
+      font-style: italic;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .stats-bar {
+      display: flex;
+      justify-content: center;
+      gap: 3rem;
+      flex-wrap: wrap;
+      margin: 3rem 0;
+      padding: 1.5rem;
+      background: var(--bg-card);
+      border-radius: 12px;
+      border: 1px solid var(--border-subtle);
+    }
+
+    .stat-item { text-align: center; }
+
+    .stat-number {
+      font-family: 'Cinzel', serif;
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: var(--crimson-bright);
+    }
+
+    .stat-label {
+      color: var(--text-dim);
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+
+    .quick-links {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin: 3rem 0;
+    }
+
+    .quick-link {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 12px;
+      padding: 2rem;
+      text-decoration: none;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+
+    .quick-link:hover {
+      border-color: var(--crimson);
+      transform: translateY(-4px);
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+    }
+
+    .quick-link-icon { font-size: 2.5rem; margin-bottom: 1rem; }
+
+    .quick-link-title {
+      font-family: 'Cinzel', serif;
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: var(--crimson-bright);
+      margin-bottom: 0.5rem;
+    }
+
+    .quick-link-desc { color: var(--text-secondary); font-size: 0.95rem; }
+
+    .story-section {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 12px;
+      padding: 2rem;
+      margin: 3rem 0;
+    }
+
+    .story-title {
+      font-family: 'Cinzel', serif;
+      font-size: 1.5rem;
+      color: var(--crimson-bright);
+      margin-bottom: 1rem;
+    }
+
+    .story-text {
+      color: var(--text-secondary);
+      font-size: 1.1rem;
+      line-height: 1.8;
+    }
+
+    .story-text p { margin-bottom: 1rem; }
+    .story-text p:last-child { margin-bottom: 0; }
+
+    .lore-block {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 12px;
+      padding: 2rem;
+      margin: 3rem 0;
+    }
+
+    .lore-block-title {
+      font-family: 'Cinzel', serif;
+      font-size: 1.5rem;
+      color: var(--crimson-bright);
+      margin-bottom: 1.25rem;
+    }
+
+    .lore-block-text {
+      color: var(--text-secondary);
+      font-size: 1.05rem;
+      line-height: 1.8;
+    }
+
+    .lore-block-text p { margin-bottom: 1rem; }
+    .lore-block-text p:last-child { margin-bottom: 0; }
+
+    .current-status {
+      background: linear-gradient(135deg, rgba(139, 26, 26, 0.08), var(--bg-card));
+      border: 1px solid rgba(139, 26, 26, 0.3);
+      border-radius: 12px;
+      padding: 2rem;
+      margin: 3rem 0;
+    }
+
+    .status-label {
+      font-family: 'Cinzel', serif;
+      font-size: 0.85rem;
+      color: var(--silver-dim);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 0.5rem;
+    }
+
+    .status-title {
+      font-family: 'Cinzel', serif;
+      font-size: 1.5rem;
+      color: var(--text-primary);
+      margin-bottom: 1rem;
+    }
+
+    .status-text {
+      color: var(--text-secondary);
+      font-size: 1rem;
+      margin-bottom: 1.5rem;
+      line-height: 1.7;
+    }
+
+    .status-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--crimson-bright);
+      text-decoration: none;
+      font-family: 'Cinzel', serif;
+      transition: all 0.3s ease;
+    }
+
+    .status-link:hover { color: #e05050; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="overview-hero">
+      <h1 class="overview-title">Into The Heckle Mist</h1>
+      <p class="overview-tagline">
+        Barovia has no exits. You don't find Strahd. Strahd finds you.
+        What you do between now and then is what this chronicle is about.
+      </p>
+    </header>
+
+    <div class="stats-bar">
+      <div class="stat-item">
+        <div class="stat-number">0</div>
+        <div class="stat-label">Sessions</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">2</div>
+        <div class="stat-label">Heroes</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">1</div>
+        <div class="stat-label">Level</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">1</div>
+        <div class="stat-label">Enemy (The Count)</div>
+      </div>
+    </div>
+
+    <div class="quick-links">
+      <a href="party.html" class="quick-link">
+        <div class="quick-link-icon">🌫️</div>
+        <h3 class="quick-link-title">The Party</h3>
+        <p class="quick-link-desc">Meet the two souls the mists have claimed</p>
+      </a>
+      <a href="sessions.html" class="quick-link">
+        <div class="quick-link-icon">📜</div>
+        <h3 class="quick-link-title">The Chronicle</h3>
+        <p class="quick-link-desc">Every session — victories and catastrophes alike</p>
+      </a>
+      <a href="npcs.html" class="quick-link">
+        <div class="quick-link-icon">🎭</div>
+        <h3 class="quick-link-title">The Faces</h3>
+        <p class="quick-link-desc">Friends, enemies, and those who defy classification</p>
+      </a>
+      <a href="locations.html" class="quick-link">
+        <div class="quick-link-icon">🗺️</div>
+        <h3 class="quick-link-title">The Domain</h3>
+        <p class="quick-link-desc">The cursed geography of Barovia</p>
+      </a>
+    </div>
+
+    <div class="lore-block">
+      <h2 class="lore-block-title">What Is Barovia?</h2>
+      <div class="lore-block-text">
+        <p>Barovia is not a country. It is a prison shaped like one. The Mists of Ravenloft — tendrils of the Ethereal Plane made physical and purposeful — encircle it on all sides and above. No road out of Barovia leads anywhere but back into Barovia. The sun rises here, technically, but it does not warm anything. The sky is permanently overcast. The fog rolls in at night and does not entirely leave in the morning.</p>
+        <p>The land is medieval Eastern European in character — dark forests, stone villages, mountain roads, a castle on the highest peak. The architecture is old and well-built and suffering. The villagers are human, mostly, and they know what they are living under. They light candles against it. They bolt their shutters. They have learned not to look too carefully at anything after dark and not to name the thing that owns them where it might hear.</p>
+        <p>Strahd von Zarovich owns it. He has owned it for centuries. He is a vampire lord and a dark wizard and, in the way that matters most, simply a very old and very bored man who has turned an entire domain into an expression of his interiority. He does not want to be defeated. He wants to be interested. The party's arrival is, from his perspective, the most promising thing to happen in some time.</p>
+      </div>
+    </div>
+
+    <div class="story-section">
+      <h2 class="story-title">The Module: Curse of Strahd</h2>
+      <div class="story-text">
+        <p>Curse of Strahd is Dungeons &amp; Dragons' definitive gothic horror module — a sandbox set within the closed domain of Barovia, structured around the Tarokka reading at Tser Pool that randomizes where the module's key magical artifacts are hidden, what form Strahd's allies take, and where he will make his final stand. No two runs of the module play out identically.</p>
+        <p>The party's objective, on paper, is to defeat Strahd and break the curse that has sealed Barovia from the rest of the multiverse. The module's actual objective is to make them feel what the villagers feel: watched, hunted, and very aware of how much territory Strahd controls versus how much they do.</p>
+        <p>Survival is the first lesson. The second is that you cannot fight your way through this one. Barovia has to be understood before it can be escaped.</p>
+      </div>
+    </div>
+
+    <div class="lore-block">
+      <h2 class="lore-block-title">How the Party Got Here</h2>
+      <div class="lore-block-text">
+        <p>Travelers pulled into the mists don't remember making the choice to enter them. One moment the road was the road they knew. The next, the trees were different — older, darker, spacing wrong — and the fog was behind them as well as ahead. Barovia does not have an entrance you can refuse.</p>
+        <p>The stakes are immediate and unambiguous: defeat Strahd von Zarovich, the vampire lord who has sealed this domain for centuries, and earn the right to leave. Or die trying. Or die without trying, which is simply slower.</p>
+        <p>What Barovia does to people is the actual question the campaign will answer. The fog doesn't just trap the body. It works on the mind, on hope, on the assumptions a person carried into it about how the world operates. The party will learn what they're made of by learning what Barovia is willing to do to find out.</p>
+      </div>
+    </div>
+
+    <div class="current-status">
+      <p class="status-label">Current Status</p>
+      <h3 class="status-title">Session 1 Not Yet Played</h3>
+      <p class="status-text">
+        The party has not yet entered Barovia. The chronicle is empty. The mists are waiting.
+        When Session 1 happens, this space will track where the party stands — who they've met,
+        what they know, what's hunting them, and how many hit points they have left.
+      </p>
+      <a href="sessions.html" class="status-link">
+        View Sessions →
+      </a>
+    </div>
+  </div>
+
+  <script src="nav.js"></script>
+  <script>initNav('overview');</script>
+</body>
+</html>
