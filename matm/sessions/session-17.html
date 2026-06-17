@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Session 17: The Dragon's Heart Whispers | Mage Against The Machine</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../nav.css">
+  <link rel="stylesheet" href="../base.css">
+  <style>
+    :root {
+      --bg-dark: #0a0a0f;
+      --bg-card: rgba(20, 16, 28, 0.9);
+      --bg-card-hover: rgba(30, 24, 42, 0.95);
+      --gold: #d4a857;
+      --gold-dim: #a68642;
+      --gold-bright: #ffd700;
+      --purple: #8b5cf6;
+      --purple-dim: #6d4aad;
+      --red: #dc2626;
+      --green: #22c55e;
+      --blue: #3b82f6;
+      --text-primary: #f5f5f4;
+      --text-secondary: rgba(245, 245, 244, 0.7);
+      --text-dim: rgba(245, 245, 244, 0.5);
+      --border-subtle: rgba(212, 168, 87, 0.2);
+      --border-glow: rgba(212, 168, 87, 0.4);
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Crimson Pro', Georgia, serif;
+      background: var(--bg-dark);
+      color: var(--text-primary);
+      min-height: 100vh;
+      line-height: 1.6;
+    }
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background:
+        radial-gradient(ellipse at 20% 20%, rgba(139, 92, 246, 0.1) 0%, transparent 50%),
+        radial-gradient(ellipse at 80% 80%, rgba(212, 168, 87, 0.08) 0%, transparent 50%);
+      pointer-events: none;
+      z-index: -1;
+    }
+    .container { max-width: 1000px; margin: 0 auto; padding: 2rem; padding-top: 100px; }
+    .session-hero { text-align: center; padding: 3rem 0; margin-bottom: 3rem; }
+    .session-number {
+      font-family: 'Cinzel', serif;
+      font-size: 0.9rem;
+      color: var(--gold);
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+    .session-title {
+      font-family: 'Cinzel', serif;
+      font-size: 3rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 1rem;
+      text-shadow: 0 0 40px rgba(212, 168, 87, 0.3);
+    }
+    .session-meta {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+      margin-bottom: 1.5rem;
+    }
+    .meta-item { display: flex; align-items: center; gap: 0.5rem; color: var(--text-secondary); font-size: 0.95rem; }
+    .meta-icon { color: var(--gold-dim); }
+    .session-summary { color: var(--text-secondary); font-size: 1.1rem; max-width: 800px; margin: 0 auto; }
+    .section { margin-bottom: 3rem; }
+    .section-header { display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem; }
+    .section-icon { font-size: 1.5rem; }
+    .section-title { font-family: 'Cinzel', serif; font-size: 1.5rem; font-weight: 600; color: var(--gold); }
+    .quotes-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; }
+    .quote-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 10px;
+      padding: 1.25rem;
+      transition: all 0.3s ease;
+    }
+    .quote-card:hover { border-color: var(--gold-dim); transform: translateY(-2px); }
+    .quote-text { font-size: 1rem; font-style: italic; color: var(--text-primary); margin-bottom: 0.75rem; }
+    .quote-speaker { font-family: 'Cinzel', serif; font-size: 0.85rem; color: var(--gold); margin-bottom: 0.25rem; }
+    .quote-context { font-size: 0.8rem; color: var(--text-dim); }
+    .highlights-grid { display: grid; gap: 1.25rem; }
+    .highlight-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 12px;
+      padding: 1.5rem;
+    }
+    .highlight-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; }
+    .highlight-title { font-family: 'Cinzel', serif; font-size: 1.2rem; font-weight: 600; color: var(--text-primary); }
+    .highlight-type {
+      font-size: 0.7rem;
+      padding: 0.25rem 0.75rem;
+      border-radius: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      font-family: 'Cinzel', serif;
+    }
+    .type-comedy { background: rgba(251, 191, 36, 0.2); color: #fbbf24; }
+    .type-combat { background: rgba(220, 38, 38, 0.2); color: #f87171; }
+    .type-roleplay { background: rgba(139, 92, 246, 0.2); color: #a78bfa; }
+    .type-tension { background: rgba(59, 130, 246, 0.2); color: #60a5fa; }
+    .type-plot { background: rgba(212, 168, 87, 0.2); color: #d4a857; }
+    .type-epic { background: rgba(251, 191, 36, 0.2); color: #fbbf24; }
+    .type-funny { background: rgba(251, 191, 36, 0.2); color: #fbbf24; }
+    .type-tragedy { background: rgba(139, 92, 246, 0.2); color: #a78bfa; }
+    .type-chaos { background: rgba(220, 38, 38, 0.2); color: #f87171; }
+    .highlight-description { color: var(--text-secondary); margin-bottom: 1rem; }
+    .quote-block {
+      background: rgba(0, 0, 0, 0.3);
+      padding: 0.75rem;
+      border-radius: 8px;
+      margin-top: 0.75rem;
+    }
+    .spotlight-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.25rem; }
+    .spotlight-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 12px;
+      padding: 1.5rem;
+    }
+    .spotlight-name { font-family: 'Cinzel', serif; font-size: 1.2rem; font-weight: 600; color: var(--gold); margin-bottom: 1rem; }
+    .spotlight-moments { list-style: none; margin-bottom: 1rem; }
+    .spotlight-moments li {
+      color: var(--text-secondary);
+      padding: 0.35rem 0;
+      padding-left: 1rem;
+      position: relative;
+    }
+    .spotlight-moments li::before { content: '◆'; position: absolute; left: 0; color: var(--gold-dim); font-size: 0.6rem; }
+    .spotlight-quote {
+      background: rgba(0, 0, 0, 0.3);
+      padding: 0.75rem;
+      border-radius: 8px;
+      font-style: italic;
+      color: var(--text-primary);
+      font-size: 0.95rem;
+    }
+    .combat-card {
+      background: linear-gradient(135deg, rgba(220, 38, 38, 0.1), rgba(20, 16, 28, 0.9));
+      border: 1px solid rgba(220, 38, 38, 0.3);
+      border-radius: 12px;
+      padding: 1.5rem;
+    }
+    .combat-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; }
+    .combat-name { font-family: 'Cinzel', serif; font-size: 1.3rem; font-weight: 600; color: var(--text-primary); }
+    .combat-outcome {
+      background: rgba(251, 191, 36, 0.2);
+      color: #fbbf24;
+      padding: 0.25rem 0.75rem;
+      border-radius: 1rem;
+      font-family: 'Cinzel', serif;
+      font-size: 0.8rem;
+      font-weight: 600;
+    }
+    .combat-details { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-bottom: 1rem; }
+    .combat-detail { background: rgba(0, 0, 0, 0.3); padding: 0.75rem; border-radius: 8px; }
+    .combat-detail-label { color: var(--text-dim); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.25rem; }
+    .combat-detail-value { color: var(--text-primary); font-size: 0.95rem; }
+    .combat-events { list-style: none; }
+    .combat-events li {
+      color: var(--text-secondary);
+      padding: 0.5rem 0;
+      padding-left: 1.5rem;
+      position: relative;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+    .combat-events li:last-child { border-bottom: none; }
+    .combat-events li::before { content: '⚔'; position: absolute; left: 0; color: var(--red); }
+    .plot-list { list-style: none; }
+    .plot-list li {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 8px;
+      padding: 1rem 1.25rem;
+      margin-bottom: 0.75rem;
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      transition: all 0.3s ease;
+    }
+    .plot-list li:hover { border-color: var(--purple-dim); }
+    .plot-icon { color: var(--purple); font-size: 1.2rem; margin-top: 0.1rem; }
+    .plot-text { color: var(--text-secondary); flex: 1; }
+    .end-state {
+      background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(20, 16, 28, 0.9));
+      border: 1px solid rgba(139, 92, 246, 0.3);
+      border-radius: 12px;
+      padding: 1.5rem;
+      text-align: center;
+    }
+    .end-state-title {
+      font-family: 'Cinzel', serif;
+      font-size: 1rem;
+      color: var(--purple);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 1rem;
+    }
+    .end-state-content { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1.5rem; }
+    .end-item-label { color: var(--text-dim); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.25rem; }
+    .end-item-value { color: var(--text-primary); font-size: 1.05rem; }
+    .session-nav {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 3rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--border-subtle);
+    }
+    .session-nav a {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-family: 'Cinzel', serif;
+      font-size: 0.9rem;
+      padding: 0.75rem 1.25rem;
+      border: 1px solid var(--border-subtle);
+      border-radius: 8px;
+      transition: all 0.3s ease;
+    }
+    .session-nav a:hover { color: var(--gold); border-color: var(--gold-dim); background: rgba(212, 168, 87, 0.1); }
+    .session-nav a.disabled { opacity: 0.3; pointer-events: none; }
+    @media (max-width: 768px) {
+      .container { padding: 1rem; padding-top: 80px; }
+      .session-title { font-size: 2rem; }
+      .session-meta { gap: 1rem; }
+      .quotes-grid, .spotlight-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="session-hero">
+      <div class="session-number">Session XVII</div>
+      <h1 class="session-title">The Dragon's Heart Whispers</h1>
+      <div class="session-meta">
+        <span class="meta-item">
+          <span class="meta-icon">📅</span>
+          June 2026
+        </span>
+        <span class="meta-item">
+          <span class="meta-icon">⏱</span>
+          ~3.5 hours
+        </span>
+        <span class="meta-item">
+          <span class="meta-icon">👥</span>
+          5 players
+        </span>
+      </div>
+      <p class="session-summary">The party harvested Venomfang's corpse like professionals — 13 liters of blood, 43 pounds of meat, wings worth 6,000gp, two horns, four sets of scales, and the dragon's breath pouch, all extracted through a gauntlet of escalating survival checks. Then Valrex went for the heart. He needed a 25. He got a 23. In the moments after the failure, something settled behind his eyes that wasn't entirely his — Venomfang's pride and spite, whispering from where Valrex's faith used to be. It manifested almost immediately: he walked north toward the dragon's tower, claiming its horde before he realized he'd said 'my.' Then the dragon cultists arrived in green and black robes, Valrex's next Guiding Bolt fired the wrong color, and the session ended with his hand around the cult leader's throat and three nat 20s on the enemy's initiative.</p>
+    </header>
+
+    <section class="section">
+      <div class="section-header">
+        <div class="section-icon">💬</div>
+        <h2 class="section-title">Quotes of the Session</h2>
+      </div>
+      <div class="quotes-grid">
+        <div class="quote-card">
+          <p class="quote-text">I'll be damned. You actually did it.</p>
+          <p class="quote-speaker">— Alex/GM (Reidoth)</p>
+          <p class="quote-context">Reidoth staring at the dragon's corpse — the old druid finally believing what he helped make possible</p>
+        </div>
+        <div class="quote-card">
+          <p class="quote-text">There's this flicker of contempt. When you look at these weaker people near you, this momentary thrill, the idea of seeing enemies scatter before you. It's not constant. Not yet. But it's there. The dragon is dead. But its heart now whispers to you.</p>
+          <p class="quote-speaker">— Alex/GM</p>
+          <p class="quote-context">The curse taking hold in Valrex after failing the DC 25 heart check</p>
+        </div>
+        <div class="quote-card">
+          <p class="quote-text">You almost hear yourself saying this. There's a dragon horde up there. My dragon horde. Before you even realize you said it.</p>
+          <p class="quote-speaker">— Alex/GM</p>
+          <p class="quote-context">The curse's first external symptom — Valrex claiming the horde before he knows he's spoken</p>
+        </div>
+        <div class="quote-card">
+          <p class="quote-text">You killed our dragon. Now let me become its echo.</p>
+          <p class="quote-speaker">— Alex/GM (Fabric)</p>
+          <p class="quote-context">The cult leader's offer to take Valrex's curse via ritual</p>
+        </div>
+        <div class="quote-card">
+          <p class="quote-text">I've just been someone who definitely has an addictive personality. So this is the best role I've played in the entire game.</p>
+          <p class="quote-speaker">— Darren/Valrex</p>
+          <p class="quote-context">Valrex's player explaining why he went for the heart with no resources left</p>
+        </div>
+        <div class="quote-card">
+          <p class="quote-text">Got 99 problems but a dragon ain't one.</p>
+          <p class="quote-speaker">— Sean/Belden</p>
+          <p class="quote-context">Post-session sign-off</p>
+        </div></div>
+    </section>
+
+    <section class="section">
+      <div class="section-header">
+        <div class="section-icon">⭐</div>
+        <h2 class="section-title">Best Moments</h2>
+      </div>
+      <div class="highlights-grid">
+        <div class="highlight-card">
+          <div class="highlight-header">
+            <h3 class="highlight-title">Reidoth's Verdict</h3>
+            <span class="highlight-type type-roleplay">Roleplay</span>
+          </div>
+          <p class="highlight-description">After staring at Venomfang's corpse for a long moment, Reidoth let out a low, quiet whistle. The old druid — who had spent years watching everything in Thundertree fail and die — looked at the party and said the four words that completed the arc: "I'll be damned." Then, practically: "If you're set on carving him up, best do it before the scavengers catch the scent." He'd believed in them just enough to fight. Now he believed all the way.</p>
+          <div class="quote-block">
+            <p class="quote-text">"I'll be damned. You actually did it. If you're set on carving him up, best do it before the scavengers catch the scent."</p>
+            <p class="quote-speaker">— Alex/GM (Reidoth)</p>
+          </div>
+          <div class="quote-block">
+            <p class="quote-text">"It's funny how everybody shows up when it's time to harvest a dragon. Not missing out on that part."</p>
+            <p class="quote-speaker">— Darren/Valrex</p>
+          </div>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-header">
+            <h3 class="highlight-title">The Dragon Harvest</h3>
+            <span class="highlight-type type-epic">Epic</span>
+          </div>
+          <p class="highlight-description">Valrex — who had spent all of last session losing to spiders — led the harvest with a plus-five in survival and a score to settle. Belden assisted. Semaj maintained Guidance throughout. The results: 13 liters of dragon's blood, 43 pounds of meat on a nat 20 double-yield, 8 claws, 22 teeth, 3 fangs, 6 lots of dragon bone (1,800gp), one skull, two pristine wings (6,000gp total), both horns (1,300gp). Kaelia was running math. The numbers got large.</p>
+          <div class="quote-block">
+            <p class="quote-text">"Looks like meat's back on the menu, you boys."</p>
+            <p class="quote-speaker">— Alex/GM</p>
+          </div>
+          <div class="quote-block">
+            <p class="quote-text">"We're making bank on this dragon, guys."</p>
+            <p class="quote-speaker">— Jen/Kaelia</p>
+          </div>
+          <div class="quote-block">
+            <p class="quote-text">"I need you to take this bone and make me a hammer. Put two teeth sticking out of both sides. That'd be awesome."</p>
+            <p class="quote-speaker">— Sean/Belden</p>
+          </div>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-header">
+            <h3 class="highlight-title">Belden Gets Both Horns</h3>
+            <span class="highlight-type type-epic">Epic</span>
+          </div>
+          <p class="highlight-description">DC 16, deep in the skull bone. Both inspirations used. The horns gave with grinding cracks. Belden heaved them free with a shout, held them up, and stood there for a moment just breathing hard. The brass horn that summoned Venomfang in session 16 has been eclipsed by the horns taken from Venomfang's skull. Each is worth 650gp and can be crafted into arcane staves. Sean made clear he intends to use one as an instrument.</p>
+          <div class="quote-block">
+            <p class="quote-text">"These horns often retain a piece of the dragon's power and make wonderful conduits for arcane magic."</p>
+            <p class="quote-speaker">— Alex/GM</p>
+          </div>
+          <div class="quote-block">
+            <p class="quote-text">"He's very horny."</p>
+            <p class="quote-speaker">— Alex/GM</p>
+          </div>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-header">
+            <h3 class="highlight-title">The Breath Pouch — Last Chance</h3>
+            <span class="highlight-type type-tension">Tension</span>
+          </div>
+          <p class="highlight-description">DC 20 to extract the dragon's breath pouch without rupturing it. Failure would destroy everything harvested and nearly kill the harvesters. Valrex had +5 survival. First roll: failed. Used inspiration: failed. Used his last lucky point: failed. Belden's inspiration as a proxy: failed. Final lifeline: Kaelia's Freya's Grace — a reaction spell that let Valrex reroll the check as a Charisma save with her +7 modifier. The roll: 16 + 7 + d4. It worked. The party exhaled as one.</p>
+          <div class="quote-block">
+            <p class="quote-text">"Oh. Oh. No."</p>
+            <p class="quote-speaker">— Jen/Kaelia</p>
+          </div>
+          <div class="quote-block">
+            <p class="quote-text">"You take the full weight of this in your hands."</p>
+            <p class="quote-speaker">— Alex/GM</p>
+          </div>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-header">
+            <h3 class="highlight-title">Valrex Fails the Heart</h3>
+            <span class="highlight-type type-tragedy">Tragedy</span>
+          </div>
+          <p class="highlight-description">The dragon's heart required a DC 25. Valrex was out of inspirations, out of lucky points, had only guidance. He went for it anyway. He rolled a 1. With guidance: still a 6. Total: 23. Two short. The heart released its residual magic. Tunnel vision — sickly green. His hands clenched involuntarily. A flicker of contempt at the weaker people near him. A possessive curl toward the dragon parts. "These are yours." The seed of Venomfang's pride and malice, lodged where his faith should be. The dragon is dead. But its heart whispers now.</p>
+          <div class="quote-block">
+            <p class="quote-text">"There's this flicker of contempt. When you look at these weaker people near you, this momentary thrill. A possessive curl of fingers. It's not constant. Not yet. But it's there. The seed of Venomfang's pride and malice now lodged where your faith should be."</p>
+            <p class="quote-speaker">— Alex/GM</p>
+          </div>
+          <div class="quote-block">
+            <p class="quote-text">"I've just been someone who definitely has an addictive personality. So this is the best role I've played in the entire game."</p>
+            <p class="quote-speaker">— Darren/Valrex</p>
+          </div>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-header">
+            <h3 class="highlight-title">My Dragon Horde</h3>
+            <span class="highlight-type type-comedy">Comedy</span>
+          </div>
+          <p class="highlight-description">The first symptom hit almost immediately. Valrex stood covered in blood and viscera, staring north at the tower, and said — out loud, before his conscious mind caught up — "There's a dragon horde up there. My dragon horde." Then started walking. Didn't notice no one followed. Semaj reached into his mind via Message: "Snap out of it." Valrex turned back, confused. "Does it mean we're not going to get the gold? It's going to be our gold."</p>
+          <div class="quote-block">
+            <p class="quote-text">"You almost hear yourself saying this. There's a dragon horde up there. My dragon horde. Before you even realize you said it."</p>
+            <p class="quote-speaker">— Alex/GM</p>
+          </div>
+          <div class="quote-block">
+            <p class="quote-text">"It has begun. I think we have time. Though we can't wait too long. Otherwise, we'll have to kill him in his sleep."</p>
+            <p class="quote-speaker">— Richard/Semaj</p>
+          </div>
+          <div class="quote-block">
+            <p class="quote-text">"Does it mean not go get the gold? It's going to be our gold."</p>
+            <p class="quote-speaker">— Darren/Valrex</p>
+          </div>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-header">
+            <h3 class="highlight-title">The Cultists Arrive — Faith Draining in Real Time</h3>
+            <span class="highlight-type type-epic">Epic</span>
+          </div>
+          <p class="highlight-description">They came in green and black robes expecting to serve a living Venomfang. Instead they found the skull detached and staring, the wings cut free, bones in organized piles, and a dwarf with a freshly-hollowed horn. You could see the faith drain out of them in real time. Their leader walked forward with bared teeth: "What have you done?" Valrex answered by throwing a Guiding Bolt — which fired sickly green instead of radiant. The curse had changed the color of his divine magic.</p>
+          <div class="quote-block">
+            <p class="quote-text">"What have you done?"</p>
+            <p class="quote-speaker">— Alex/GM (Fabric)</p>
+          </div>
+          <div class="quote-block">
+            <p class="quote-text">"It is a sickly green light. As this radiant energy just rips across this square, you see it glittering now in a green, which used to be a different color."</p>
+            <p class="quote-speaker">— Alex/GM</p>
+          </div>
+          <div class="quote-block">
+            <p class="quote-text">"Well, there goes diplomacy."</p>
+            <p class="quote-speaker">— Richard/Semaj</p>
+          </div>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-header">
+            <h3 class="highlight-title">Inflict Wounds on Fabric — Session Cliffhanger</h3>
+            <span class="highlight-type type-chaos">Chaos</span>
+          </div>
+          <p class="highlight-description">Fabric walked up to Valrex to begin the ritual transfer. He asked, directly: "Are you willing to give it to me?" The word "give" landed wrong in the cursed mind. The dragon's possessiveness reacted. Valrex's hand shot out. He seized Fabric by the throat. Necrotic energy spiderwebbed into the cult leader's skin — still tinted green. Fifteen damage. The cultists pulled swords. Three nat 20s on initiative. Session ended here. Next time: July 25th.</p>
+          <div class="quote-block">
+            <p class="quote-text">"Your hand just shoots out. And you seize Fabric by the throat. Fingers digging into his flesh. The dark, crackling energy from your grip starts to spiderweb into his skin like lightning. Fifteen points of necrotic energy tearing through him."</p>
+            <p class="quote-speaker">— Alex/GM</p>
+          </div>
+          <div class="quote-block">
+            <p class="quote-text">"You killed our dragon. Now let me become its echo."</p>
+            <p class="quote-speaker">— Alex/GM (Fabric)</p>
+          </div>
+          <div class="quote-block">
+            <p class="quote-text">"Got 99 problems but a dragon ain't one."</p>
+            <p class="quote-speaker">— Sean/Belden</p>
+          </div>
+        </div></div>
+    </section>
+
+    <section class="section">
+      <div class="section-header">
+        <div class="section-icon">⚔</div>
+        <h2 class="section-title">Combat Encounters</h2>
+      </div>
+
+      <div class="combat-card">
+        <div class="combat-header">
+          <h3 class="combat-name">Dragon Cultists — Opening (Cliffhanger)</h3>
+          <span class="combat-outcome">Pending — Next Session</span>
+        </div>
+        <div class="combat-details">
+          <div class="combat-detail">
+            <div class="combat-detail-label">Enemies</div>
+            <div class="combat-detail-value">Fabric/Feverick (cult leader), Dragon Cultists x5-6</div>
+          </div>
+          <div class="combat-detail">
+            <div class="combat-detail-label">Location</div>
+            <div class="combat-detail-value">Thundertree Ruins — western approach, Venomfang's harvested corpse site</div>
+          </div>
+          <div class="combat-detail">
+            <div class="combat-detail-label">MVP</div>
+            <div class="combat-detail-value">Pending (combat continues July 25th)</div>
+          </div>
+        </div>
+        <ul class="combat-events"><li>Cultists arrived in green and black robes expecting a living dragon — found a butchered carcass</li><li>Valrex attacked with Guiding Bolt before any speech — Bolt fired sickly green (curse made visible)</li><li>Fabric dodged the bolt — recognized the curse, offered to take it via ritual transfer</li><li>Semaj negotiated a tentative agreement: Fabric performs the transfer, party keeps weapons</li><li>Fabric walked up to Valrex to begin; asked if he was willing to give the curse</li><li>The word "give" triggered the curse's possessiveness — Valrex seized Fabric's throat with Inflict Wounds (15 necrotic)</li><li>Cultists rolled initiative: three nat 20s</li><li>Session ended — combat resumes July 25th</li></ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-header">
+        <div class="section-icon">👤</div>
+        <h2 class="section-title">Character Spotlight</h2>
+      </div>
+      <div class="spotlight-grid">
+        <div class="spotlight-card">
+          <h3 class="spotlight-name">Valrex</h3>
+          <ul class="spotlight-moments"><li>Led the dragon harvest with +5 survival — 11 successful checks from blood through breath pouch</li><li>Failed DC 25 on the dragon's heart — first party member to receive a long-term curse</li><li>First symptom: walked north claiming "my dragon horde" without realizing he'd spoken</li><li>Failed wisdom save vs. Semaj's Charm Person — "I never noticed how beautiful your eyes were"</li><li>Attacked Fabric with Guiding Bolt (sickly green, not radiant) — the color change is permanent</li><li>Session ends with his hand around Fabric's throat, 15 necrotic damage, cult initiating combat</li></ul>
+          <p class="spotlight-quote">"My dragon horde. Before you even realize you said it."</p>
+        </div>
+        <div class="spotlight-card">
+          <h3 class="spotlight-name">Semaj</h3>
+          <ul class="spotlight-moments"><li>Maintained Guidance on Valrex through the entire 11-check harvest sequence</li><li>Immediately recognized the curse symptoms: "It has begun"</li><li>Used Message to reach Valrex mid-trance — snapped him back from walking to the tower</li><li>Cast Charm Person on his own teammate to prevent diplomatic disaster — partially successful</li><li>Attempted to negotiate with Fabric before combat escalated</li><li>Confirmed his draconic ancestry would accelerate the curse — keeps his distance</li></ul>
+          <p class="spotlight-quote">"Otherwise we'll have to kill him in his sleep."</p>
+        </div>
+        <div class="spotlight-card">
+          <h3 class="spotlight-name">Kaelia</h3>
+          <ul class="spotlight-moments"><li>Served as the harvest bookkeeper — rolling quantity dice, tracking gold values throughout</li><li>Used Heroic Inspiration to reroll the dragon eye quantity die — got both eyes</li><li>Freya's Grace reaction: rerolled Valrex's DC 20 breath pouch check as Charisma save (+7) — the lifeline that saved the breath pouch</li><li>Energy Mastery (fire) feat at level-up — Charisma now 20, fire spells ignore resistance</li></ul>
+          <p class="spotlight-quote">"We're making bank on this dragon, guys."</p>
+        </div>
+        <div class="spotlight-card">
+          <h3 class="spotlight-name">Belden</h3>
+          <ul class="spotlight-moments"><li>Assisted Valrex on all harvest checks — proficiency in survival grants Help action advantage</li><li>Rolled 8d8 on the nat 20 dragon meat double yield: 43 pounds</li><li>Nat 20 on DC 15 wing extraction: both wings, pristine, 6,000gp total</li><li>Heaved both Venomfang horns free — the session's emotional payoff, replacing the brass horn</li><li>Great Weapon Fighting feat at level-up — weapon damage dice floor is now 3</li></ul>
+          <p class="spotlight-quote">"I need you to take this bone and make me a hammer. Put two teeth sticking out of both sides."</p>
+        </div>
+        <div class="spotlight-card">
+          <h3 class="spotlight-name">Aster</h3>
+          <ul class="spotlight-moments"><li>Drank the entire keg of strong ale with the party so the barrel could be used for dragon blood</li><li>Rolled 1d4 for dragon scale sets: 4 full sets (10,000gp)</li><li>Telekinetic feat chosen at level-up</li></ul>
+          <p class="spotlight-quote">"Yeah, let's drink up. We're not going to waste it."</p>
+        </div></div>
+    </section>
+
+    <section class="section">
+      <div class="section-header">
+        <div class="section-icon">📜</div>
+        <h2 class="section-title">Plot Developments</h2>
+      </div>
+      <ul class="plot-list">
+        <li>
+          <span class="plot-icon">⬆</span>
+          <span class="plot-text">Level 4 admin completed — feats chosen: Valrex=Lucky, Belden=Great Weapon Fighting, Aster=Telekinetic, Kaelia=Energy Mastery (fire, CHA to 20)</span>
+        </li>
+        <li>
+          <span class="plot-icon">🐉</span>
+          <span class="plot-text">Full dragon harvest completed: 13L blood, 43lbs meat, 8 claws, 22 teeth, 3 fangs, 6 lots of bone (1,800gp), 1 skull, 2 wings (6,000gp), 2 dragon eyes, 2 horns (1,300gp), 4 sets of scales (10,000gp)</span>
+        </li>
+        <li>
+          <span class="plot-icon">✅</span>
+          <span class="plot-text">Dragon breath pouch (Draconis Fundamentium) successfully extracted — DC 20, required Kaelia's Freya's Grace as the final lifeline</span>
+        </li>
+        <li>
+          <span class="plot-icon">💀</span>
+          <span class="plot-text">Valrex attempted the dragon's heart (DC 25) and failed — received Venomfang's curse (dragon's disease)</span>
+        </li>
+        <li>
+          <span class="plot-icon">⚠</span>
+          <span class="plot-text">Curse details: growing obsession with gold, personality drift toward Venomfang's traits, projected year-long transformation into a young dragon — curable by greater restoration from a high-level priest in Neverwinter or Waterdeep</span>
+        </li>
+        <li>
+          <span class="plot-icon">🟢</span>
+          <span class="plot-text">Valrex's divine magic has changed color — Guiding Bolt now fires sickly green instead of radiant</span>
+        </li>
+        <li>
+          <span class="plot-icon">👥</span>
+          <span class="plot-text">Dragon cultists (5-6 followers, cult leader Fabric/Feverick) arrived in Thundertree — their faith in Venomfang died on contact with the butchered corpse</span>
+        </li>
+        <li>
+          <span class="plot-icon">🔄</span>
+          <span class="plot-text">Fabric offered to take the curse via ritual; party tentatively agreed</span>
+        </li>
+        <li>
+          <span class="plot-icon">⚔</span>
+          <span class="plot-text">Valrex attacked Fabric with Inflict Wounds (15 necrotic) when Fabric approached to begin the transfer — the curse's possessiveness rejected the idea of "giving" anything</span>
+        </li>
+        <li>
+          <span class="plot-icon">🎲</span>
+          <span class="plot-text">Combat with dragon cultists begins — cultists rolled three nat 20s on initiative. Resumes July 25th.</span>
+        </li></ul>
+    </section>
+
+    <section class="section">
+      <div class="end-state">
+        <h3 class="end-state-title">To Be Continued...</h3>
+        <div class="end-state-content">
+          <div>
+            <div class="end-item-label">Location</div>
+            <div class="end-item-value">Thundertree ruins — standoff with dragon cultists at Venomfang's harvested corpse</div>
+          </div>
+          <div>
+            <div class="end-item-label">Party Status</div>
+            <div class="end-item-value">Full HP. Valrex cursed with Venomfang's dragon's disease. Combat beginning. Three enemy nat 20s on initiative.</div>
+          </div>
+          <div>
+            <div class="end-item-label">Next Objective</div>
+            <div class="end-item-value">Survive the cultist encounter. Cure Valrex — greater restoration from Neverwinter or Waterdeep. Decide: clear Thundertree or move to Cragmaw Castle for Gundren.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <nav class="session-nav">
+      <a href="session-16.html">
+        <span>←</span>
+        <span>Session 16</span>
+      </a>
+      <a href="session-18.html" class="disabled">
+        <span>Session 18</span>
+        <span>→</span>
+      </a>
+    </nav>
+  </div>
+  <script src="../nav.js"></script>
+  <script>initNav('sessions');</script>
+</body>
+</html>

@@ -1,0 +1,214 @@
+{
+  "session_number": 17,
+  "title": "The Dragon's Heart Whispers",
+  "date": "June 2026",
+  "summary": "The party harvested Venomfang's corpse like professionals — 13 liters of blood, 43 pounds of meat, wings worth 6,000gp, two horns, four sets of scales, and the dragon's breath pouch, all extracted through a gauntlet of escalating survival checks. Then Valrex went for the heart. He needed a 25. He got a 23. In the moments after the failure, something settled behind his eyes that wasn't entirely his — Venomfang's pride and spite, whispering from where Valrex's faith used to be. It manifested almost immediately: he walked north toward the dragon's tower, claiming its horde before he realized he'd said 'my.' Then the dragon cultists arrived in green and black robes, Valrex's next Guiding Bolt fired the wrong color, and the session ended with his hand around the cult leader's throat and three nat 20s on the enemy's initiative.",
+  "level_up": false,
+  "new_level": null,
+  "duration": "~3.5 hours",
+  "player_attendance": ["Richard (Semaj)", "Jen (Kaelia)", "Darren (Valrex)", "Sean (Belden)", "Alan (Aster)"],
+  "absent": [],
+
+  "highlights": {
+    "best_moments": [
+      {
+        "title": "Reidoth's Verdict",
+        "type": "roleplay",
+        "description": "After staring at Venomfang's corpse for a long moment, Reidoth let out a low, quiet whistle. The old druid — who had spent years watching everything in Thundertree fail and die — looked at the party and said the four words that completed the arc: 'I'll be damned.' Then, practically: 'If you're set on carving him up, best do it before the scavengers catch the scent.' He'd believed in them just enough to fight. Now he believed all the way.",
+        "quotes": [
+          {"speaker": "Alex/GM (Reidoth)", "text": "I'll be damned. You actually did it. If you're set on carving him up, best do it before the scavengers catch the scent."},
+          {"speaker": "Darren/Valrex", "text": "It's funny how everybody shows up when it's time to harvest a dragon. Not missing out on that part."}
+        ]
+      },
+      {
+        "title": "The Dragon Harvest",
+        "type": "epic",
+        "description": "Valrex — who had spent all of last session losing to spiders — led the harvest with a plus-five in survival and a score to settle. Belden assisted. Semaj maintained Guidance the entire time. The results: 13 liters of dragon's blood, 43 pounds of meat on a nat 20 double-yield, 8 claws, 22 teeth, 3 fangs, 6 lots of dragon bone (1,800gp), one dragon skull, two pristine wings (6,000gp total on Belden's nat 20), both horns (1,300gp). Kaelia was running math. The numbers got large. 'We're making bank on this dragon, guys.'",
+        "quotes": [
+          {"speaker": "Alex/GM", "text": "Looks like meat's back on the menu, you boys."},
+          {"speaker": "Jen/Kaelia", "text": "We're making bank on this dragon, guys."},
+          {"speaker": "Sean/Belden", "text": "I need you to take this bone and make me a hammer. And then on both sides of the hammer, put two little teeth sticking out. That'd be awesome."}
+        ]
+      },
+      {
+        "title": "Belden Gets Both Horns",
+        "type": "epic",
+        "description": "The horn check was DC 16, fused deep into the skull. Both inspirations used. Both horns gave with grinding cracks. Belden heaved them free with a shout, held them up, and stood there for a moment just breathing hard. The brass horn that summoned Venomfang in session 16 has been eclipsed by the horns taken from Venomfang's skull. Each is worth 650gp and can be crafted into arcane staves. The GM noted that they absorb magical enchantments easily. Sean made immediately clear he intends to use one as an instrument.",
+        "quotes": [
+          {"speaker": "Alex/GM", "text": "These horns often retain a piece of the dragon's power and make wonderful conduits for arcane magic. The horns make great trophies and can be crafted into various instruments and items."},
+          {"speaker": "Alex/GM", "text": "He's very horny."}
+        ]
+      },
+      {
+        "title": "The Breath Pouch — Last Chance",
+        "type": "tension",
+        "description": "DC 20 to extract the Draconis Fundamentium — the dragon's breath pouch — without rupturing it. A failure would destroy everything already harvested and nearly kill the harvesters. Valrex had +5 survival. First roll: failed. Used inspiration: failed. Used his last lucky point: failed. Belden's inspiration as a proxy: failed. Final lifeline: Kaelia's Freya's Grace, a reaction spell that let Valrex reroll the check as a Charisma save with her +7 modifier. The roll: 16 + 7 + d4. It worked. The party exhaled as one.",
+        "quotes": [
+          {"speaker": "Jen/Kaelia", "text": "Oh. Oh. No."},
+          {"speaker": "Alex/GM", "text": "You take the full weight of this in your hands."}
+        ]
+      },
+      {
+        "title": "Valrex Fails the Heart",
+        "type": "tragedy",
+        "description": "The dragon's heart required a DC 25. Valrex was out of inspirations, out of lucky points, had only guidance. He went for it anyway — his player described Valrex as someone with an addictive personality who 'cannot resist.' He rolled a 1. With guidance: still a 6. Total: 23. Two short. The heart released its residual magic. The dragon's presence pushed through. Tunnel vision — sickly green. His hands clenched involuntarily. A flicker of contempt at the weaker people near him. A possessive curl of fingers toward the dragon parts. 'These are yours.' The seed of Venomfang's pride and malice, lodged where his faith should be. The dragon is dead. But its heart whispers now.",
+        "quotes": [
+          {"speaker": "Alex/GM", "text": "There's this flicker of contempt. And when you look at these weaker people near you, this momentary thrill, the idea of seeing enemies scatter before you. A possessive curl of fingers. When you look at these dragon parts — these are yours. You did all the work. It's not constant. Not yet. But it's there. The seed of Venomfang's pride and malice now lodged where your faith should be. The dragon is dead. But its heart now whispers to you."},
+          {"speaker": "Darren/Valrex", "text": "I've just been someone who definitely has an addictive personality. So this is the best role I've played in the entire game."}
+        ]
+      },
+      {
+        "title": "My Dragon Horde",
+        "type": "comedy",
+        "description": "The first symptom hit almost immediately. Valrex stood covered in blood and viscera, staring north at the tower, and said — out loud, before his conscious mind caught up — 'There's a dragon horde up there. My dragon horde.' Then started walking. Didn't notice no one followed. Semaj reached into his mind via Message: 'Snap out of it.' Valrex turned back, confused, genuinely bewildered that the party wasn't already with him. 'Does it mean we're not going to get the gold? It's going to be our gold.'",
+        "quotes": [
+          {"speaker": "Alex/GM", "text": "You almost hear yourself saying this. There's a dragon horde up there. My dragon horde. Before you even realize you said it."},
+          {"speaker": "Richard/Semaj", "text": "It has begun. I think we have time. Though we can't wait too long. Otherwise, we'll have to kill him in his sleep."},
+          {"speaker": "Darren/Valrex", "text": "Does it mean not go get the gold? It's going to be our gold."}
+        ]
+      },
+      {
+        "title": "The Cultists Arrive — Faith Draining in Real Time",
+        "type": "epic",
+        "description": "They came in green and black robes with dragon amulets, expecting to serve a living Venomfang. Instead they found the skull detached and staring, the wings cut free and folded on the ground, bones in organized piles, and a dwarf wiping dragon blood off a freshly-hollowed horn. You could see the faith drain out of them in real time. Their leader — Fabric — walked forward with bared teeth: 'What have you done?' Valrex answered by throwing a Guiding Bolt. It fired the wrong color. Green.",
+        "quotes": [
+          {"speaker": "Alex/GM (as Fabric)", "text": "What have you done?"},
+          {"speaker": "Alex/GM", "text": "It is a sickly green light. As this radiant energy just rips across this square, you see it glittering now in a green, which used to be a different color."},
+          {"speaker": "Richard/Semaj", "text": "Well, there goes diplomacy."}
+        ]
+      },
+      {
+        "title": "Inflict Wounds on Fabric — Session Cliffhanger",
+        "type": "chaos",
+        "description": "Fabric walked up to Valrex to begin the ritual. They'd agreed to the transfer. He asked, directly: 'Does Venomfang's curse prefer to stay where it is, or are you willing to give it to me?' The word 'give' landed wrong in the cursed mind. The dragon-itch was offended by how much this man wanted what it considered its own. Valrex's hand shot out. He seized Fabric by the throat. Necrotic energy spiderwebbed into the cult leader's skin like dark lightning — still tinted green. Fifteen damage. The cultists pulled swords. Three nat 20s on initiative. Session ends here. Next time: July 25th.",
+        "quotes": [
+          {"speaker": "Alex/GM", "text": "Your hand just shoots out. And you seize Fabric by the throat. Fingers digging into his flesh. And for a heartbeat, his eyes kind of flare with this surprise and fury. As the dark, crackling energy from your grip starts to spiderweb into his skin like lightning."},
+          {"speaker": "Alex/GM (as Fabric)", "text": "You killed our dragon. Now let me become its echo."},
+          {"speaker": "Sean/Belden", "text": "Got 99 problems but a dragon ain't one."}
+        ]
+      }
+    ],
+    "character_spotlight": {
+      "Valrex": {
+        "moments": [
+          "Led the dragon harvest with +5 survival — 11 successful checks from blood through breath pouch",
+          "Failed DC 25 on the dragon's heart — became the first party member to receive a long-term curse",
+          "First symptom: walked north claiming the dragon's horde was 'my' horde without realizing he'd said it",
+          "Failed wisdom save vs. Semaj's Charm Person — 'I never noticed how beautiful your eyes were'",
+          "Attacked Fabric with Guiding Bolt (sickly green, not radiant) — missed, but the color change is permanent",
+          "Session ends with his hand around Fabric's throat dealing 15 necrotic damage"
+        ],
+        "one_liner": "My dragon horde. Before you even realize you said it."
+      },
+      "Semaj": {
+        "moments": [
+          "Kept Guidance active on Valrex for the entire 11-check harvest sequence",
+          "Immediately recognized the curse symptoms: 'It has begun'",
+          "Used Message to reach Valrex mid-trance, snapping him back",
+          "Cast Charm Person on his own teammate to prevent diplomatic disaster — partially successful",
+          "Attempted to negotiate with Fabric before combat — 'can we at least talk about this'",
+          "Has draconic ancestry — confirmed that the curse would accelerate in him specifically"
+        ],
+        "one_liner": "Otherwise we'll have to kill him in his sleep."
+      },
+      "Kaelia": {
+        "moments": [
+          "Served as the harvest bookkeeper — rolling quantity dice and running gold math throughout",
+          "Used Heroic Inspiration to reroll the dragon eye quantity die — got both eyes",
+          "Freya's Grace reaction save: rerolled Valrex's DC 20 breath pouch check as a Charisma save — the lifeline that saved the breath pouch",
+          "Energy Mastery (fire) feat taken at level-up — Charisma now at 20, fire damage ignores resistance"
+        ],
+        "one_liner": "We're making bank on this dragon, guys."
+      },
+      "Belden": {
+        "moments": [
+          "Assisted Valrex on all harvest checks — proficiency in survival gives him the Help action",
+          "Rolled the 8d8 on the nat 20 dragon meat double yield: 43 pounds",
+          "Nat 20 on DC 15 wing extraction: both wings, no additional roll required, 6,000gp",
+          "Heaved both Venomfang horns free — the harvest's emotional payoff, replacing the brass horn that started all of this",
+          "Great Weapon Fighting feat at level-up — floor on weapon damage dice is now 3"
+        ],
+        "one_liner": "I need you to take this bone and make me a hammer. Put two teeth sticking out of both sides."
+      },
+      "Aster": {
+        "moments": [
+          "Drank the entire keg of strong ale with the party so the barrel could be used for dragon blood",
+          "Rolled 1d4 for dragon scale sets: 4 full sets (10,000gp)",
+          "Warcaster feat at level-up (initially considered, then swapped to Telekinetic)"
+        ],
+        "one_liner": "Yeah, let's drink up. We're not going to waste it."
+      }
+    },
+    "combat_encounters": [
+      {
+        "name": "Dragon Cultists — Opening (Cliffhanger)",
+        "enemies": ["Fabric/Feverick (cult leader)", "Dragon Cultists x5-6"],
+        "outcome": "Combat initiated — session ended on initiative rolls",
+        "location": "Thundertree Ruins — western approach to Venomfang's corpse site",
+        "mvp": "Pending (combat continues next session)",
+        "notable_events": [
+          "Cultists arrived expecting to serve a living dragon — found a butchered carcass",
+          "Valrex immediately attacked with Guiding Bolt before any speech — Bolt now fires green (curse visible)",
+          "Fabric dodged the bolt — offered to take the curse via ritual transfer",
+          "Semaj negotiated a tentative agreement: Fabric performs the transfer, party keeps weapons",
+          "Fabric walked up to Valrex to begin; asked if he was willing to give the curse",
+          "The word 'give' triggered the curse — Valrex seized Fabric's throat with Inflict Wounds (15 necrotic)",
+          "Cultists rolled initiative: three nat 20s",
+          "Session ended — combat resumes July 25th"
+        ]
+      }
+    ],
+    "quotes_of_the_session": [
+      {
+        "speaker": "Alex/GM (Reidoth)",
+        "quote": "I'll be damned. You actually did it.",
+        "context": "Reidoth staring at the dragon's corpse — the old druid finally believing what he helped make possible"
+      },
+      {
+        "speaker": "Alex/GM",
+        "quote": "There's this flicker of contempt. When you look at these weaker people near you, this momentary thrill, the idea of seeing enemies scatter before you. It's not constant. Not yet. But it's there. The dragon is dead. But its heart now whispers to you.",
+        "context": "The curse taking hold in Valrex after failing the DC 25 heart check"
+      },
+      {
+        "speaker": "Alex/GM",
+        "quote": "You almost hear yourself saying this. There's a dragon horde up there. My dragon horde. Before you even realize you said it.",
+        "context": "The curse's first external symptom — Valrex claiming the horde before he knows he's spoken"
+      },
+      {
+        "speaker": "Alex/GM (as Fabric)",
+        "quote": "You killed our dragon. Now let me become its echo.",
+        "context": "The cult leader's offer to take Valrex's curse via ritual — and the simplest version of what he wants"
+      },
+      {
+        "speaker": "Darren/Valrex",
+        "quote": "I've just been someone who definitely has an addictive personality. So this is the best role I've played in the entire game.",
+        "context": "Valrex's player explaining why he went for the heart with no resources left"
+      },
+      {
+        "speaker": "Sean/Belden",
+        "quote": "Got 99 problems but a dragon ain't one.",
+        "context": "Post-session sign-off"
+      }
+    ]
+  },
+
+  "plot_developments": [
+    "Party leveled to 4 (admin completed at session start, feats chosen: Valrex=Lucky, Belden=Great Weapon Fighting, Aster=Telekinetic, Kaelia=Energy Mastery fire/CHA to 20)",
+    "Full dragon harvest completed: 13L blood, 43lbs meat, 8 claws, 22 teeth, 3 fangs, 6 lots of bone (1,800gp), 1 skull, 2 wings (6,000gp), 2 dragon eyes, 2 horns (1,300gp), 4 sets of scales (10,000gp)",
+    "Dragon breath pouch (Draconis Fundamentium) successfully extracted — DC 20, required Kaelia's Freya's Grace as a final lifeline",
+    "Valrex attempted the dragon's heart (DC 25) and failed — received Venomfang's curse (dragon's disease)",
+    "Curse: growing obsession with gold and material possession, personality drift toward Venomfang's traits, projected year-long transformation into a young dragon — curable by greater restoration from a high-level priest in Neverwinter or Waterdeep",
+    "Valrex's divine magic has changed color — Guiding Bolt now fires sickly green instead of radiant",
+    "Dragon cultists (5-6 followers, leader named Fabric/Feverick) arrived in Thundertree — their faith in Venomfang died on contact with the butchered corpse",
+    "Fabric offered to take the curse via ritual; party tentatively agreed",
+    "Valrex attacked Fabric with Inflict Wounds (15 necrotic) when Fabric walked up to begin the transfer",
+    "Combat with dragon cultists begins — cultists rolled three nat 20s on initiative",
+    "Next session: July 25th, opening in combat"
+  ],
+
+  "end_state": {
+    "location": "Thundertree Ruins — standoff with dragon cultists at Venomfang's harvested corpse",
+    "party_condition": "Full HP, all spell slots mostly recovered. Valrex cursed with Venomfang's dragon's disease. Dragon harvest complete. Massive wealth secured. Combat beginning.",
+    "next_objective": "Survive the cultist encounter. Cure Valrex — Reidoth suggests greater restoration from a high priest in Neverwinter or Waterdeep. Party has the funds to pay. Need to decide: clear remaining Thundertree threats (ash zombies, cultists) or move on to Cragmaw Castle for Gundren."
+  }
+}
