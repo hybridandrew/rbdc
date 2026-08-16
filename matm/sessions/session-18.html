@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Session 18: Hammer Time | Mage Against The Machine</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../nav.css">
+  <link rel="stylesheet" href="../base.css">
+  <style>
+    :root {
+      --bg-dark: #0a0a0f;
+      --bg-card: rgba(20, 16, 28, 0.9);
+      --bg-card-hover: rgba(30, 24, 42, 0.95);
+      --gold: #d4a857;
+      --gold-dim: #a68642;
+      --gold-bright: #ffd700;
+      --purple: #8b5cf6;
+      --purple-dim: #6d4aad;
+      --red: #dc2626;
+      --green: #22c55e;
+      --blue: #3b82f6;
+      --text-primary: #f5f5f4;
+      --text-secondary: rgba(245, 245, 244, 0.7);
+      --text-dim: rgba(245, 245, 244, 0.5);
+      --border-subtle: rgba(212, 168, 87, 0.2);
+      --border-glow: rgba(212, 168, 87, 0.4);
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Crimson Pro', Georgia, serif;
+      background: var(--bg-dark);
+      color: var(--text-primary);
+      min-height: 100vh;
+      line-height: 1.6;
+    }
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background:
+        radial-gradient(ellipse at 20% 20%, rgba(139, 92, 246, 0.1) 0%, transparent 50%),
+        radial-gradient(ellipse at 80% 80%, rgba(212, 168, 87, 0.08) 0%, transparent 50%);
+      pointer-events: none;
+      z-index: -1;
+    }
+    .container { max-width: 1000px; margin: 0 auto; padding: 2rem; padding-top: 100px; }
+    .session-hero { text-align: center; padding: 3rem 0; margin-bottom: 3rem; }
+    .session-number {
+      font-family: 'Cinzel', serif;
+      font-size: 0.9rem;
+      color: var(--gold);
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+    .session-title {
+      font-family: 'Cinzel', serif;
+      font-size: 3rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 1rem;
+      text-shadow: 0 0 40px rgba(212, 168, 87, 0.3);
+    }
+    .session-meta {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+      margin-bottom: 1.5rem;
+    }
+    .meta-item { display: flex; align-items: center; gap: 0.5rem; color: var(--text-secondary); font-size: 0.95rem; }
+    .meta-icon { color: var(--gold-dim); }
+    .level-up-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: linear-gradient(90deg, rgba(34, 197, 94, 0.2), rgba(34, 197, 94, 0.1));
+      border: 1px solid rgba(34, 197, 94, 0.4);
+      color: var(--green);
+      padding: 0.5rem 1rem;
+      border-radius: 2rem;
+      font-family: 'Cinzel', serif;
+      font-size: 0.9rem;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+    }
+    .session-summary { color: var(--text-secondary); font-size: 1.1rem; max-width: 800px; margin: 0 auto; }
+    .section { margin-bottom: 3rem; }
+    .section-header { display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem; }
+    .section-icon { font-size: 1.5rem; }
+    .section-title { font-family: 'Cinzel', serif; font-size: 1.5rem; font-weight: 600; color: var(--gold); }
+    .quotes-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; }
+    .quote-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 10px;
+      padding: 1.25rem;
+      transition: all 0.3s ease;
+    }
+    .quote-card:hover { border-color: var(--gold-dim); transform: translateY(-2px); }
+    .quote-text { font-size: 1rem; font-style: italic; color: var(--text-primary); margin-bottom: 0.75rem; }
+    .quote-speaker { font-family: 'Cinzel', serif; font-size: 0.85rem; color: var(--gold); margin-bottom: 0.25rem; }
+    .quote-context { font-size: 0.8rem; color: var(--text-dim); }
+    .highlights-grid { display: grid; gap: 1.25rem; }
+    .highlight-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 12px;
+      padding: 1.5rem;
+    }
+    .highlight-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; }
+    .highlight-title { font-family: 'Cinzel', serif; font-size: 1.2rem; font-weight: 600; color: var(--text-primary); }
+    .highlight-type {
+      font-size: 0.7rem;
+      padding: 0.25rem 0.75rem;
+      border-radius: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      font-family: 'Cinzel', serif;
+    }
+    .type-comedy { background: rgba(251, 191, 36, 0.2); color: #fbbf24; }
+    .type-combat { background: rgba(220, 38, 38, 0.2); color: #f87171; }
+    .type-roleplay { background: rgba(139, 92, 246, 0.2); color: #a78bfa; }
+    .type-tension { background: rgba(59, 130, 246, 0.2); color: #60a5fa; }
+    .type-plot { background: rgba(212, 168, 87, 0.2); color: #d4a857; }
+    .type-epic { background: rgba(251, 191, 36, 0.2); color: #fbbf24; }
+    .type-funny { background: rgba(251, 191, 36, 0.2); color: #fbbf24; }
+    .highlight-description { color: var(--text-secondary); margin-bottom: 1rem; }
+    .quote-block {
+      background: rgba(0, 0, 0, 0.3);
+      padding: 0.75rem;
+      border-radius: 8px;
+      margin-top: 0.75rem;
+    }
+    .spotlight-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.25rem; }
+    .spotlight-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 12px;
+      padding: 1.5rem;
+    }
+    .spotlight-name { font-family: 'Cinzel', serif; font-size: 1.2rem; font-weight: 600; color: var(--gold); margin-bottom: 1rem; }
+    .spotlight-moments { list-style: none; margin-bottom: 1rem; }
+    .spotlight-moments li {
+      color: var(--text-secondary);
+      padding: 0.35rem 0;
+      padding-left: 1rem;
+      position: relative;
+    }
+    .spotlight-moments li::before { content: '◆'; position: absolute; left: 0; color: var(--gold-dim); font-size: 0.6rem; }
+    .spotlight-quote {
+      background: rgba(0, 0, 0, 0.3);
+      padding: 0.75rem;
+      border-radius: 8px;
+      font-style: italic;
+      color: var(--text-primary);
+      font-size: 0.95rem;
+    }
+    .combat-card {
+      background: linear-gradient(135deg, rgba(220, 38, 38, 0.1), rgba(20, 16, 28, 0.9));
+      border: 1px solid rgba(220, 38, 38, 0.3);
+      border-radius: 12px;
+      padding: 1.5rem;
+    }
+    .combat-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; }
+    .combat-name { font-family: 'Cinzel', serif; font-size: 1.3rem; font-weight: 600; color: var(--text-primary); }
+    .combat-outcome {
+      background: rgba(34, 197, 94, 0.2);
+      color: var(--green);
+      padding: 0.25rem 0.75rem;
+      border-radius: 1rem;
+      font-family: 'Cinzel', serif;
+      font-size: 0.8rem;
+      font-weight: 600;
+    }
+    .combat-details { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-bottom: 1rem; }
+    .combat-detail { background: rgba(0, 0, 0, 0.3); padding: 0.75rem; border-radius: 8px; }
+    .combat-detail-label { color: var(--text-dim); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.25rem; }
+    .combat-detail-value { color: var(--text-primary); font-size: 0.95rem; }
+    .combat-events { list-style: none; }
+    .combat-events li {
+      color: var(--text-secondary);
+      padding: 0.5rem 0;
+      padding-left: 1.5rem;
+      position: relative;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+    .combat-events li:last-child { border-bottom: none; }
+    .combat-events li::before { content: '⚔'; position: absolute; left: 0; color: var(--red); }
+    .plot-list { list-style: none; }
+    .plot-list li {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 8px;
+      padding: 1rem 1.25rem;
+      margin-bottom: 0.75rem;
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      transition: all 0.3s ease;
+    }
+    .plot-list li:hover { border-color: var(--purple-dim); }
+    .plot-icon { color: var(--purple); font-size: 1.2rem; margin-top: 0.1rem; }
+    .plot-text { color: var(--text-secondary); flex: 1; }
+    .end-state {
+      background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(20, 16, 28, 0.9));
+      border: 1px solid rgba(139, 92, 246, 0.3);
+      border-radius: 12px;
+      padding: 1.5rem;
+      text-align: center;
+    }
+    .end-state-title {
+      font-family: 'Cinzel', serif;
+      font-size: 1rem;
+      color: var(--purple);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 1rem;
+    }
+    .end-state-content { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1.5rem; }
+    .end-item-label { color: var(--text-dim); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.25rem; }
+    .end-item-value { color: var(--text-primary); font-size: 1.05rem; }
+    .session-nav {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 3rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--border-subtle);
+    }
+    .session-nav a {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-family: 'Cinzel', serif;
+      font-size: 0.9rem;
+      padding: 0.75rem 1.25rem;
+      border: 1px solid var(--border-subtle);
+      border-radius: 8px;
+      transition: all 0.3s ease;
+    }
+    .session-nav a:hover { color: var(--gold); border-color: var(--gold-dim); background: rgba(212, 168, 87, 0.1); }
+    .session-nav a.disabled { opacity: 0.3; pointer-events: none; }
+    @media (max-width: 768px) {
+      .container { padding: 1rem; padding-top: 80px; }
+      .session-title { font-size: 2rem; }
+      .session-meta { gap: 1rem; }
+      .quotes-grid, .spotlight-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="session-hero">
+      <div class="session-number">Session XVIII</div>
+      <h1 class="session-title">Hammer Time</h1>
+      <div class="session-meta">
+        <span class="meta-item">
+          <span class="meta-icon">📅</span>
+          July 2026
+        </span>
+        <span class="meta-item">
+          <span class="meta-icon">⏱</span>
+          ~2.5 hours (late start)
+        </span>
+        <span class="meta-item">
+          <span class="meta-icon">👥</span>
+          5 players
+        </span>
+      </div>
+      
+      <p class="session-summary">One session, one battle — the full cultist fight from the initiative rolls that ended session 17 to the last skull caved in. Favric opened by force-choking Valrex with Hold Person and preaching that the curse belonged to him; Beldan answered by cleaving him through the back mid-sermon and finishing him with a warhammer. Kaelia burned the battlefield with Dragon's Breath and Mantle of Flame, Semaj threw an illusionary dragon roar so convincing the cultists forgot they were in a fight, Aster walked bodily through a cultist with Krail's Rupture, and Larry ripped out a throat to a chorus of 'good boy.' Five enemies died. One cultist fled into the woods carrying everything the cult now knows about the party — and the ritual to move Venomfang's curse may have died with Favric.</p>
+    </header>
+
+    <section class="section">
+      <div class="section-header">
+        <div class="section-icon">💬</div>
+        <h2 class="section-title">Quotes of the Session</h2>
+      </div>
+      <div class="quotes-grid">
+        <div class="quote-card">
+          <p class="quote-text">Even your rage is his rage. You cannot carry that hate without it eating you alive. Let it pass to me, cleric. I was born for this burden.</p>
+          <p class="quote-speaker">— Alex/GM (as Favric)</p>
+          <p class="quote-context">Favric force-choking Valrex with Hold Person while preaching the curse transfer</p>
+        </div>
+        <div class="quote-card">
+          <p class="quote-text">You will kill them all.</p>
+          <p class="quote-speaker">— Alex/GM (as Favric)</p>
+          <p class="quote-context">Favric's dying words to Valrex — a nod, a prophecy, and then the ground</p>
+        </div>
+        <div class="quote-card">
+          <p class="quote-text">We know the rite — but not for you to meddle in. The curse passes only to the chosen one, our leader, or no one. Stay out of our business, dragon butcher.</p>
+          <p class="quote-speaker">— Alex/GM (as a cultist)</p>
+          <p class="quote-context">Aster's mid-combat interrogation about the curse ritual — answered seconds before the ritual's 'chosen one' died to a warhammer</p>
+        </div>
+        <div class="quote-card">
+          <p class="quote-text">I cast Magic Missile into the darkness.</p>
+          <p class="quote-speaker">— Richard/Semaj</p>
+          <p class="quote-context">Semaj honoring the ancient rites of Dead Alewives' Summoner Geeks mid-combat</p>
+        </div>
+        <div class="quote-card">
+          <p class="quote-text">I'm a range fighter, you guys.</p>
+          <p class="quote-speaker">— Jen/Kaelia</p>
+          <p class="quote-context">Kaelia after scoring her first melee kill of the campaign — a staff crack to the back of a distracted cultist's head</p>
+        </div>
+        <div class="quote-card">
+          <p class="quote-text">Run away from me. I dare you.</p>
+          <p class="quote-speaker">— Sean/Belden</p>
+          <p class="quote-context">Beldan to the frightened last cultist, moments before hammer time</p>
+        </div></div>
+    </section>
+
+    <section class="section">
+      <div class="section-header">
+        <div class="section-icon">⭐</div>
+        <h2 class="section-title">Best Moments</h2>
+      </div>
+      <div class="highlights-grid">
+        <div class="highlight-card">
+          <div class="highlight-header">
+            <h3 class="highlight-title">The Disarm Heard Round Thundertree</h3>
+            <span class="highlight-type type-comedy">Comedy</span>
+          </div>
+          <p class="highlight-description">A cultist's critical fumble sent his scimitar flying out of his hand and into the dirt behind him. Beldan — greataxe on his back, options everywhere — spent his entire turn sprinting to the fallen sword, picking it up, locking eyes with its owner, and hurling it forty feet into the woods without breaking eye contact. The cultist's morale never recovered; he spent the rest of the fight running for his weapon and eventually just fled the battle entirely.</p>
+          
+          <div class="quote-block">
+            <p class="quote-text">"I want to look this cultist in the eyes, and then turn around and throw his sword as hard as I can the opposite direction."</p>
+            <p class="quote-speaker">— Sean/Belden</p>
+          </div>
+          <div class="quote-block">
+            <p class="quote-text">"You eye contact the whole time as you just sling it right into the woods. You see the cultist kind of looking around with nothing to attack with."</p>
+            <p class="quote-speaker">— Alex/GM</p>
+          </div>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-header">
+            <h3 class="highlight-title">Favric's Sermon, Interrupted</h3>
+            <span class="highlight-type type-epic">Epic</span>
+          </div>
+          <p class="highlight-description">Favric spent the fight preaching instead of fleeing — force-choking Valrex with Hold Person, promising that the curse was a blessing he had bled for, then trying to turn the party against their own cleric. He was mid-monologue, concentrating on a second Hold Person, when Beldan came through his back with a greataxe cleave, followed with a warhammer to the skull, and a Hill Strike to finish. The cult leader died at Valrex's feet — and used his last breath on a prophecy instead of a plea.</p>
+          
+          <div class="quote-block">
+            <p class="quote-text">"Even your rage is his rage. You cannot carry that hate without it eating you alive. Let it pass to me, cleric. I was born for this burden."</p>
+            <p class="quote-speaker">— Alex/GM (as Favric)</p>
+          </div>
+          <div class="quote-block">
+            <p class="quote-text">"You will kill them all."</p>
+            <p class="quote-speaker">— Alex/GM (as Favric)</p>
+          </div>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-header">
+            <h3 class="highlight-title">The Illusionary Roar</h3>
+            <span class="highlight-type type-epic">Epic</span>
+          </div>
+          <p class="highlight-description">With Favric dead and the cultists rattled, Semaj cast Minor Illusion and threw a dragon's roar behind the enemy line — betting that dragon cultists, of all people, could not ignore that sound. A 22 deception check later, every cultist on the field spun around scanning the sky, and the GM handed the entire party free opportunity attacks. Kaelia — a self-described range fighter — used hers to crack a cultist's skull with her staff, her first melee kill of the campaign.</p>
+          
+          <div class="quote-block">
+            <p class="quote-text">"This illusionary roar just echoes through Thundertree like a tidal wave of sound. Their eyes go wide for a heartbeat as they're now scanning the sky, and you can see the fear in their eyes."</p>
+            <p class="quote-speaker">— Alex/GM</p>
+          </div>
+          <div class="quote-block">
+            <p class="quote-text">"I'm a range fighter, you guys."</p>
+            <p class="quote-speaker">— Jen/Kaelia</p>
+          </div>
+          <div class="quote-block">
+            <p class="quote-text">"I'm just a kill stealer."</p>
+            <p class="quote-speaker">— Jen/Kaelia</p>
+          </div>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-header">
+            <h3 class="highlight-title">Aster Walks Through a Man</h3>
+            <span class="highlight-type type-chaos">Chaos</span>
+          </div>
+          <p class="highlight-description">Surrounded and bored of it, Aster cast Krail's Rupture — magically entering a cultist's body and exiting through the opposite side, dealing 18 necrotic damage on the way through. Two opportunity attacks whiffed as the giff simply relocated through a human being. Earlier he'd tried diplomacy mid-combat, casting Pacify Person at Favric and accidentally pacifying Valrex instead — until the dragon's rage in Valrex's blood shattered the calm from the inside.</p>
+          
+          <div class="quote-block">
+            <p class="quote-text">"The sneaky hippo just moved out of all of their attack range and passed magically through one of them."</p>
+            <p class="quote-speaker">— Alex/GM</p>
+          </div>
+          <div class="quote-block">
+            <p class="quote-text">"Valrex locks eyes with Favric. Pure rage pours out, and he screams: it's my soul now to keep."</p>
+            <p class="quote-speaker">— Darren/Valrex</p>
+          </div>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-header">
+            <h3 class="highlight-title">Larry the Best Boy</h3>
+            <span class="highlight-type type-epic">Epic</span>
+          </div>
+          <p class="highlight-description">Larry spent the fight dodging scimitars, dragging cultists prone with Pack Tactics, and — after Semaj's second-level Magic Missile softened his target — lunging at a distracted cultist's back and ripping out his throat like a dog with a chew toy. Reidoth kept him standing with Healing Word and Cure Wounds, and got a pat on the head for it. The table consensus was unanimous and repeated: good boy. Best boy.</p>
+          
+          <div class="quote-block">
+            <p class="quote-text">"Larry latches onto this cultist's neck and drags him back to the ground, tearing back and forth like a dog with a chew toy."</p>
+            <p class="quote-speaker">— Alex/GM</p>
+          </div>
+          <div class="quote-block">
+            <p class="quote-text">"Larry's such a good boy. He's the best boy."</p>
+            <p class="quote-speaker">— Alex/GM</p>
+          </div>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-header">
+            <h3 class="highlight-title">Hammer Time, Twice</h3>
+            <span class="highlight-type type-epic">Epic</span>
+          </div>
+          <p class="highlight-description">Beldan's stat line for the night: three kills. Favric via cleave-hammer-Hill Strike. A second cultist smashed beside the head as he 'casually walked by.' And the last cultist standing — already frightened by Beldan's two-fingers-to-the-eyes intimidation after watching him kill his friend — died to a raised hammer and a sucker punch that drove his nose into his brain, Roadhouse style, peeing himself in his final moments. Beldan announced 'hammer time' before both hammer kills. Nobody stopped him. Nobody could.</p>
+          
+          <div class="quote-block">
+            <p class="quote-text">"I believe it is hammer time."</p>
+            <p class="quote-speaker">— Sean/Belden</p>
+          </div>
+          <div class="quote-block">
+            <p class="quote-text">"Run away from me. I dare you."</p>
+            <p class="quote-speaker">— Sean/Belden</p>
+          </div>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-header">
+            <h3 class="highlight-title">Friendly Fire (Get It?)</h3>
+            <span class="highlight-type type-comedy">Comedy</span>
+          </div>
+          <p class="highlight-description">Kaelia rolled a nat 1 on Sorcerous Burst and shot Reidoth square in the back. The old druid looked back mid-battle and forgave her — 'in the heat of battle, sometimes friendly fire happens.' Jen doubled down with the pun, the table groaned, and the DM took one point of psychic damage for a bad joke. Kaelia immediately converted two sorcery points via Quickened Spell and burned the correct target with the do-over. Reidoth's review: 'That's the right target.'</p>
+          
+          <div class="quote-block">
+            <p class="quote-text">"Friendly fire! Get it? Cuz I got it."</p>
+            <p class="quote-speaker">— Jen/Kaelia</p>
+          </div>
+          <div class="quote-block">
+            <p class="quote-text">"The DM takes one point of psychic damage for a bad joke."</p>
+            <p class="quote-speaker">— Richard/Semaj</p>
+          </div>
+          <div class="quote-block">
+            <p class="quote-text">"That's the right target."</p>
+            <p class="quote-speaker">— Alex/GM (Reidoth)</p>
+          </div>
+        </div></div>
+    </section>
+
+    <section class="section">
+      <div class="section-header">
+        <div class="section-icon">⚔</div>
+        <h2 class="section-title">Combat Encounters</h2>
+      </div>
+      
+      <div class="combat-card">
+        <div class="combat-header">
+          <h3 class="combat-name">The Battle of the Butchered Dragon</h3>
+          <span class="combat-outcome">Decisive victory — Favric and four cultists killed; one cultist escaped down the road</span>
+        </div>
+        <div class="combat-details">
+          <div class="combat-detail">
+            <div class="combat-detail-label">Enemies</div>
+            <div class="combat-detail-value">Favric (cult leader), Dragon Cultists x5</div>
+          </div>
+          <div class="combat-detail">
+            <div class="combat-detail-label">Location</div>
+            <div class="combat-detail-value">Thundertree Ruins — Venomfang's harvested corpse site</div>
+          </div>
+          
+          <div class="combat-detail">
+            <div class="combat-detail-label">MVP</div>
+            <div class="combat-detail-value">Belden — three kills including Favric, plus the scimitar-throw disarm and the intimidation that broke the last cultist</div>
+          </div>
+        </div>
+        <ul class="combat-events"><li>Favric opened with Hold Person, paralyzing Valrex while preaching that the curse was his birthright</li><li>Kaelia's Dragon's Breath broke Favric's concentration and freed Valrex</li><li>Beldan killed Favric with Cleave + Action Surge warhammer + Hill Strike; Favric's last words: 'You will kill them all'</li><li>Semaj's Minor Illusion dragon roar (22 deception) distracted the entire enemy line — free opportunity attacks for the party</li><li>Kill tally: Beldan 3 (Favric + 2 cultists), Kaelia 1 (staff melee), Larry 1 (throat rip)</li><li>A cultist revealed the ritual rules under Aster's mid-combat questioning: the curse passes only to the cult's chosen leader — or no one</li><li>One cultist escaped down the road despite Valrex's 16-damage Guiding Bolt — the cult will learn what happened here</li><li>Reidoth fought as an ally: two heals on Larry, Produce Flame, and one Sorcerous Burst to the back (friendly fire, forgiven)</li></ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-header">
+        <div class="section-icon">👤</div>
+        <h2 class="section-title">Character Spotlight</h2>
+      </div>
+      <div class="spotlight-grid">
+        <div class="spotlight-card">
+          <h3 class="spotlight-name">Belden</h3>
+          <ul class="spotlight-moments"><li>Three kills: Favric (cleave + warhammer + Hill Strike), a cultist mid-swing at Kaelia, and the frightened last cultist</li><li>Spent a full turn picking up a disarmed cultist's scimitar and throwing it 40 feet into the woods while maintaining eye contact</li><li>First use of the Cleave weapon mastery — greataxe through Favric's back and into the cultist beside him in one swing</li><li>Action Surge into 'hammer time' — discovered mid-fight that Improved Critical (crits on 19) had been left off an earlier roll</li><li>Intimidation check at advantage after a kill: frightened the last cultist so badly he could only swing wildly with his eyes averted</li><li>Earned an inspiration for the Roadhouse-style finishing description</li></ul>
+          <p class="spotlight-quote">"I believe it is hammer time."</p>
+        </div>
+        <div class="spotlight-card">
+          <h3 class="spotlight-name">Semaj</h3>
+          <ul class="spotlight-moments"><li>Ate a critical scimitar stab (13 damage) and Decelerated it down to 4, then Shielded off the follow-up swing</li><li>Point-blank Scorching Ray at disadvantage — burned inspiration to straighten the first ray, landed two of three</li><li>Starlight Stepped out of the cultist scrum, then drank his Potion of Healing for the full 10 (action = max effect)</li><li>Minor Illusion dragon roar behind the enemy line — 22 deception, every cultist turned, whole party got opportunity attacks</li><li>Second-level Magic Missile ('I cast Magic Missile into the darkness') set up Larry's throat-rip kill</li><li>Commanded Larry all fight: dodge-and-weave positioning, Pack Tactics bites, and the kill order</li></ul>
+          <p class="spotlight-quote">"I cast Magic Missile into the darkness."</p>
+        </div>
+        <div class="spotlight-card">
+          <h3 class="spotlight-name">Kaelia</h3>
+          <ul class="spotlight-moments"><li>Opened with Mantle of Flame + Firebolt to Favric's chest for 13 — then cooked every cultist who dared melee her (5-10 burn damage per hit taken)</li><li>Decelerate saved her twice and Semaj once — 2d6 damage reduction as a reaction, the fight's quiet MVP spell</li><li>Retconned Flaming Sphere into Dragon's Breath on the GM's advice: 18/18/9/9 fire across four enemies, and it broke Favric's Hold Person concentration on Valrex</li><li>First melee kill of the campaign — staff of defense to the back of a distracted cultist's head ('I'm a range fighter, you guys')</li><li>Nat 1 Sorcerous Burst into Reidoth's back, then Quickened Spell for the make-up kill shot</li><li>Learned her Glasstaff staff of defense mechanics live: 10 charges, Mage Armor for 1, Shield for 2</li></ul>
+          <p class="spotlight-quote">"I'm a range fighter, you guys."</p>
+        </div>
+        <div class="spotlight-card">
+          <h3 class="spotlight-name">Valrex</h3>
+          <ul class="spotlight-moments"><li>Force-choked and paralyzed by Favric's Hold Person — freed when Kaelia's Dragon's Breath broke Favric's concentration</li><li>Pacified by his own ally's spell — then shattered it from within as the dragon's rage overrode the calm: 'It's my soul now to keep'</li><li>Withstood Favric's second Hold Person outright</li><li>Talon attack + War Priest bonus attack bloodied Favric before Beldan finished him</li><li>Second-level Guiding Bolt (still sickly green) for 16 lit up the fleeing cultist like a Christmas tree — but the runner escaped anyway</li><li>Favric died at his feet, nodding at him: 'You will kill them all'</li></ul>
+          <p class="spotlight-quote">"It's my soul now to keep."</p>
+        </div>
+        <div class="spotlight-card">
+          <h3 class="spotlight-name">Aster</h3>
+          <ul class="spotlight-moments"><li>Faerie fire caught all five cultists and Favric — every single save failed (light blue, per request)</li><li>Cast Pacify Person at Favric mid-combat to force the ritual conversation — Favric saved, Valrex didn't</li><li>Krail's Rupture: walked through a cultist's body for 18 necrotic, dodging both opportunity attacks on the far side</li><li>Spiny Shield turned a cultist's punch into 9 self-inflicted damage as he smashed his fist onto ethereal spikes</li><li>Interrogated a cultist mid-battle about the curse ritual and got the answer that matters: chosen one or no one</li><li>Water bullet + Shillelagh to close out the fight</li></ul>
+          <p class="spotlight-quote">"Do you know the ritual to get the dragon soul?"</p>
+        </div></div>
+    </section>
+
+    <section class="section">
+      <div class="section-header">
+        <div class="section-icon">📜</div>
+        <h2 class="section-title">Plot Developments</h2>
+      </div>
+      <ul class="plot-list">
+        <li>
+          <span class="plot-icon">🔍</span>
+          <span class="plot-text">Favric is dead — killed by Beldan mid-sermon while trying to force the curse transfer through Hold Person and persuasion</span>
+        </li>
+        <li>
+          <span class="plot-icon">🗺</span>
+          <span class="plot-text">The ritual's rules are now known (via Aster's mid-combat interrogation): Venomfang's curse can pass only to the cult's chosen one — their leader — or no one. With Favric dead, the cult's sanctioned path for the transfer may have died with him</span>
+        </li>
+        <li>
+          <span class="plot-icon">⚔</span>
+          <span class="plot-text">One cultist escaped down the road — the Cult of the Dragon will learn that the party butchered Venomfang and killed Favric</span>
+        </li>
+        <li>
+          <span class="plot-icon">👥</span>
+          <span class="plot-text">Valrex remains cursed; Greater Restoration from a high priest in Neverwinter or Waterdeep is still the known cure — and the party has the dragon-harvest wealth to pay for it</span>
+        </li>
+        <li>
+          <span class="plot-icon">📜</span>
+          <span class="plot-text">Venomfang's horde in the ruined tower remains unclaimed — and the curse is still whispering 'my dragon horde' at Valrex</span>
+        </li>
+        <li>
+          <span class="plot-icon">🏠</span>
+          <span class="plot-text">Reidoth spent nearly all his spell slots keeping Larry and himself alive — the party's druid ally is tapped out</span>
+        </li>
+        <li>
+          <span class="plot-icon">💰</span>
+          <span class="plot-text">Favric's dying prophecy to Valrex: 'You will kill them all'</span>
+        </li></ul>
+    </section>
+
+    <section class="section">
+      <div class="end-state">
+        <h3 class="end-state-title">To Be Continued...</h3>
+        <div class="end-state-content">
+          <div>
+            <div class="end-item-label">Location</div>
+            <div class="end-item-value">Thundertree Ruins — the battlefield at Venomfang's corpse, five enemy bodies among the dragon parts</div>
+          </div>
+          <div>
+            <div class="end-item-label">Party Status</div>
+            <div class="end-item-value">Victorious but dented: Semaj and Kaelia both took real hits (potions and heals spent), Larry healed to full by Reidoth, Valrex untouched physically but still cursed. Reidoth out of spell slots. Session ended immediately at combat's end.</div>
+          </div>
+          <div>
+            <div class="end-item-label">Next Objective</div>
+            <div class="end-item-value">Loot the battlefield and decide: climb the tower for Venomfang's horde, deal with the escaped cultist and remaining Thundertree threats (ash zombies), or head for Neverwinter/Waterdeep to cure Valrex. Cragmaw Castle and Gundren still waiting.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <nav class="session-nav">
+      <a href="session-17.html">
+        <span>←</span>
+        <span>Session 17</span>
+      </a>
+      <a href="session-19.html">
+        <span>Session 19</span>
+        <span>→</span>
+      </a>
+    </nav>
+  </div>
+  <script src="../nav.js"></script>
+  <script>initNav('sessions');</script>
+</body>
+</html>

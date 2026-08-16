@@ -1,9 +1,9 @@
 {
   "stats": {
-    "totalQuotes": 141,
-    "sessionsCovered": 16,
+    "totalQuotes": 158,
+    "sessionsCovered": 18,
     "topQuoter": "GM",
-    "punCount": 5
+    "punCount": 7
   },
   "quotes": [
     {
@@ -203,7 +203,7 @@
       "category": "epic"
     },
     {
-      "text": "That was a brutal duel. It was an upset victory\u2014without the victory. It was just upset.",
+      "text": "That was a brutal duel. It was an upset victory—without the victory. It was just upset.",
       "speaker": "GM",
       "session": 6,
       "context": "After Belden lost the duel",
@@ -224,7 +224,7 @@
       "category": "epic"
     },
     {
-      "text": "As a rogue, I'm not gonna honor any\u2014now you lost a duel, like, I'mma shoot him in the face.",
+      "text": "As a rogue, I'm not gonna honor any—now you lost a duel, like, I'mma shoot him in the face.",
       "speaker": "Ekran",
       "session": 6,
       "context": "Planning revenge after Belden fell",
@@ -294,7 +294,7 @@
       "category": "epic"
     },
     {
-      "text": "Firelight doesn't just burn\u2014it guides.",
+      "text": "Firelight doesn't just burn—it guides.",
       "speaker": "GM",
       "session": 8,
       "context": "Ekran's farewell to Kaelia",
@@ -329,7 +329,7 @@
       "category": "epic"
     },
     {
-      "text": "The drunken master for the win\u2014he was dodging every dude and killing everybody.",
+      "text": "The drunken master for the win—he was dodging every dude and killing everybody.",
       "speaker": "GM",
       "session": 9,
       "context": "Praising Belden's combat performance",
@@ -469,7 +469,7 @@
       "category": "epic"
     },
     {
-      "text": "The traveler's clothes whip\u2014chef's kiss.",
+      "text": "The traveler's clothes whip—chef's kiss.",
       "speaker": "GM",
       "session": 12,
       "context": "End of session appreciation",
@@ -992,6 +992,125 @@
       "session": 16,
       "context": "Explaining to the GM why he walked alone into the webbed building and triggered the spider fight.",
       "category": "chaos"
+    },
+    {
+      "text": "I'll be damned. You actually did it.",
+      "speaker": "GM (Reidoth)",
+      "session": 17,
+      "context": "Reidoth staring at Venomfang's corpse — the old druid finally believing",
+      "category": "epic"
+    },
+    {
+      "text": "It's not constant. Not yet. But it's there. The dragon is dead. But its heart now whispers to you.",
+      "speaker": "GM",
+      "session": 17,
+      "context": "The curse taking hold in Valrex after failing the DC 25 heart check",
+      "category": "wisdom"
+    },
+    {
+      "text": "There's a dragon horde up there. My dragon horde. Before you even realize you said it.",
+      "speaker": "GM",
+      "session": 17,
+      "context": "The curse's first external symptom — Valrex claiming the horde before he knows he's spoken",
+      "category": "chaos"
+    },
+    {
+      "text": "You killed our dragon. Now let me become its echo.",
+      "speaker": "GM (Favric)",
+      "session": 17,
+      "context": "The cult leader's offer to take Valrex's curse via ritual",
+      "category": "epic"
+    },
+    {
+      "text": "He's very horny.",
+      "speaker": "GM",
+      "session": 17,
+      "context": "Belden heaving both of Venomfang's horns free from the skull",
+      "category": "pun"
+    },
+    {
+      "text": "We're making bank on this dragon, guys.",
+      "speaker": "Kaelia",
+      "session": 17,
+      "context": "Running the gold math as the harvest totals kept climbing",
+      "category": "funny"
+    },
+    {
+      "text": "I've just been someone who definitely has an addictive personality. So this is the best role I've played in the entire game.",
+      "speaker": "Valrex",
+      "session": 17,
+      "context": "Explaining why he went for the DC 25 heart with no resources left",
+      "category": "meta"
+    },
+    {
+      "text": "Got 99 problems but a dragon ain't one.",
+      "speaker": "Belden",
+      "session": 17,
+      "context": "Post-session sign-off",
+      "category": "funny"
+    },
+    {
+      "text": "Even your rage is his rage. You cannot carry that hate without it eating you alive. Let it pass to me, cleric. I was born for this burden.",
+      "speaker": "GM (Favric)",
+      "session": 18,
+      "context": "Favric force-choking Valrex with Hold Person while preaching the curse transfer",
+      "category": "epic"
+    },
+    {
+      "text": "You will kill them all.",
+      "speaker": "GM (Favric)",
+      "session": 18,
+      "context": "Favric's dying words to Valrex — a nod, a prophecy, and then the ground",
+      "category": "epic"
+    },
+    {
+      "text": "We know the rite — but not for you to meddle in. The curse passes only to the chosen one, our leader, or no one. Stay out of our business, dragon butcher.",
+      "speaker": "GM (Cultist)",
+      "session": 18,
+      "context": "A cultist answering Aster's mid-combat interrogation about the ritual",
+      "category": "burn"
+    },
+    {
+      "text": "I cast Magic Missile into the darkness.",
+      "speaker": "Semaj",
+      "session": 18,
+      "context": "Honoring the ancient rites mid-combat",
+      "category": "meta"
+    },
+    {
+      "text": "I'm a range fighter, you guys.",
+      "speaker": "Kaelia",
+      "session": 18,
+      "context": "After her first melee kill of the campaign — a staff crack to a distracted cultist's head",
+      "category": "funny"
+    },
+    {
+      "text": "Run away from me. I dare you.",
+      "speaker": "Belden",
+      "session": 18,
+      "context": "To the frightened last cultist, moments before hammer time",
+      "category": "epic"
+    },
+    {
+      "text": "Friendly fire! Get it? Cuz I got it.",
+      "speaker": "Kaelia",
+      "session": 18,
+      "context": "After a nat 1 shot Reidoth in the back — the DM took one point of psychic damage for the joke",
+      "category": "pun"
+    },
+    {
+      "text": "What did we learn about backups?",
+      "speaker": "Aster",
+      "session": 18,
+      "context": "Table meta — the VTT update ate the GM's automation, in a group of IT professionals",
+      "category": "meta"
+    },
+    {
+      "text": "Larry's such a good boy. He's the best boy.",
+      "speaker": "GM",
+      "session": 18,
+      "context": "Larry executing Pack Tactics to perfection all fight",
+      "category": "funny"
     }
   ]
 }

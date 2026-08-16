@@ -1,0 +1,210 @@
+{
+  "session_number": 18,
+  "title": "Hammer Time",
+  "date": "July 2026",
+  "summary": "One session, one battle — the full cultist fight from the initiative rolls that ended session 17 to the last skull caved in. Favric opened by force-choking Valrex with Hold Person and preaching that the curse belonged to him; Beldan answered by cleaving him through the back mid-sermon and finishing him with a warhammer. Kaelia burned the battlefield with Dragon's Breath and Mantle of Flame, Semaj threw an illusionary dragon roar so convincing the cultists forgot they were in a fight, Aster walked bodily through a cultist with Krail's Rupture, and Larry ripped out a throat to a chorus of 'good boy.' Five enemies died. One cultist fled into the woods carrying everything the cult now knows about the party — and the ritual to move Venomfang's curse may have died with Favric.",
+  "level_up": false,
+  "new_level": null,
+  "duration": "~2.5 hours (late start)",
+  "player_attendance": ["Richard (Semaj)", "Jen (Kaelia)", "Darren (Valrex)", "Sean (Belden)", "Alan (Aster)"],
+  "absent": [],
+
+  "highlights": {
+    "best_moments": [
+      {
+        "title": "The Disarm Heard Round Thundertree",
+        "type": "comedy",
+        "description": "A cultist's critical fumble sent his scimitar flying out of his hand and into the dirt behind him. Beldan — greataxe on his back, options everywhere — spent his entire turn sprinting to the fallen sword, picking it up, locking eyes with its owner, and hurling it forty feet into the woods without breaking eye contact. The cultist's morale never recovered; he spent the rest of the fight running for his weapon and eventually just fled the battle entirely.",
+        "quotes": [
+          {"speaker": "Sean/Belden", "text": "I want to look this cultist in the eyes, and then turn around and throw his sword as hard as I can the opposite direction."},
+          {"speaker": "Alex/GM", "text": "You eye contact the whole time as you just sling it right into the woods. You see the cultist kind of looking around with nothing to attack with."}
+        ]
+      },
+      {
+        "title": "Favric's Sermon, Interrupted",
+        "type": "epic",
+        "description": "Favric spent the fight preaching instead of fleeing — force-choking Valrex with Hold Person, promising that the curse was a blessing he had bled for, then trying to turn the party against their own cleric. He was mid-monologue, concentrating on a second Hold Person, when Beldan came through his back with a greataxe cleave, followed with a warhammer to the skull, and a Hill Strike to finish. The cult leader died at Valrex's feet — and used his last breath on a prophecy instead of a plea.",
+        "quotes": [
+          {"speaker": "Alex/GM (as Favric)", "text": "Even your rage is his rage. You cannot carry that hate without it eating you alive. Let it pass to me, cleric. I was born for this burden."},
+          {"speaker": "Alex/GM (as Favric)", "text": "You will kill them all."}
+        ]
+      },
+      {
+        "title": "The Illusionary Roar",
+        "type": "epic",
+        "description": "With Favric dead and the cultists rattled, Semaj cast Minor Illusion and threw a dragon's roar behind the enemy line — betting that dragon cultists, of all people, could not ignore that sound. A 22 deception check later, every cultist on the field spun around scanning the sky, and the GM handed the entire party free opportunity attacks. Kaelia — a self-described range fighter — used hers to crack a cultist's skull with her staff, her first melee kill of the campaign.",
+        "quotes": [
+          {"speaker": "Alex/GM", "text": "This illusionary roar just echoes through Thundertree like a tidal wave of sound. Their eyes go wide for a heartbeat as they're now scanning the sky, and you can see the fear in their eyes."},
+          {"speaker": "Jen/Kaelia", "text": "I'm a range fighter, you guys."},
+          {"speaker": "Jen/Kaelia", "text": "I'm just a kill stealer."}
+        ]
+      },
+      {
+        "title": "Aster Walks Through a Man",
+        "type": "chaos",
+        "description": "Surrounded and bored of it, Aster cast Krail's Rupture — magically entering a cultist's body and exiting through the opposite side, dealing 18 necrotic damage on the way through. Two opportunity attacks whiffed as the giff simply relocated through a human being. Earlier he'd tried diplomacy mid-combat, casting Pacify Person at Favric and accidentally pacifying Valrex instead — until the dragon's rage in Valrex's blood shattered the calm from the inside.",
+        "quotes": [
+          {"speaker": "Alex/GM", "text": "The sneaky hippo just moved out of all of their attack range and passed magically through one of them."},
+          {"speaker": "Darren/Valrex", "text": "Valrex locks eyes with Favric. Pure rage pours out, and he screams: it's my soul now to keep."}
+        ]
+      },
+      {
+        "title": "Larry the Best Boy",
+        "type": "epic",
+        "description": "Larry spent the fight dodging scimitars, dragging cultists prone with Pack Tactics, and — after Semaj's second-level Magic Missile softened his target — lunging at a distracted cultist's back and ripping out his throat like a dog with a chew toy. Reidoth kept him standing with Healing Word and Cure Wounds, and got a pat on the head for it. The table consensus was unanimous and repeated: good boy. Best boy.",
+        "quotes": [
+          {"speaker": "Alex/GM", "text": "Larry latches onto this cultist's neck and drags him back to the ground, tearing back and forth like a dog with a chew toy."},
+          {"speaker": "Alex/GM", "text": "Larry's such a good boy. He's the best boy."}
+        ]
+      },
+      {
+        "title": "Hammer Time, Twice",
+        "type": "epic",
+        "description": "Beldan's stat line for the night: three kills. Favric via cleave-hammer-Hill Strike. A second cultist smashed beside the head as he 'casually walked by.' And the last cultist standing — already frightened by Beldan's two-fingers-to-the-eyes intimidation after watching him kill his friend — died to a raised hammer and a sucker punch that drove his nose into his brain, Roadhouse style, peeing himself in his final moments. Beldan announced 'hammer time' before both hammer kills. Nobody stopped him. Nobody could.",
+        "quotes": [
+          {"speaker": "Sean/Belden", "text": "I believe it is hammer time."},
+          {"speaker": "Sean/Belden", "text": "Run away from me. I dare you."}
+        ]
+      },
+      {
+        "title": "Friendly Fire (Get It?)",
+        "type": "comedy",
+        "description": "Kaelia rolled a nat 1 on Sorcerous Burst and shot Reidoth square in the back. The old druid looked back mid-battle and forgave her — 'in the heat of battle, sometimes friendly fire happens.' Jen doubled down with the pun, the table groaned, and the DM took one point of psychic damage for a bad joke. Kaelia immediately converted two sorcery points via Quickened Spell and burned the correct target with the do-over. Reidoth's review: 'That's the right target.'",
+        "quotes": [
+          {"speaker": "Jen/Kaelia", "text": "Friendly fire! Get it? Cuz I got it."},
+          {"speaker": "Richard/Semaj", "text": "The DM takes one point of psychic damage for a bad joke."},
+          {"speaker": "Alex/GM (Reidoth)", "text": "That's the right target."}
+        ]
+      }
+    ],
+    "character_spotlight": {
+      "Belden": {
+        "moments": [
+          "Three kills: Favric (cleave + warhammer + Hill Strike), a cultist mid-swing at Kaelia, and the frightened last cultist",
+          "Spent a full turn picking up a disarmed cultist's scimitar and throwing it 40 feet into the woods while maintaining eye contact",
+          "First use of the Cleave weapon mastery — greataxe through Favric's back and into the cultist beside him in one swing",
+          "Action Surge into 'hammer time' — discovered mid-fight that Improved Critical (crits on 19) had been left off an earlier roll",
+          "Intimidation check at advantage after a kill: frightened the last cultist so badly he could only swing wildly with his eyes averted",
+          "Earned an inspiration for the Roadhouse-style finishing description"
+        ],
+        "one_liner": "I believe it is hammer time."
+      },
+      "Semaj": {
+        "moments": [
+          "Ate a critical scimitar stab (13 damage) and Decelerated it down to 4, then Shielded off the follow-up swing",
+          "Point-blank Scorching Ray at disadvantage — burned inspiration to straighten the first ray, landed two of three",
+          "Starlight Stepped out of the cultist scrum, then drank his Potion of Healing for the full 10 (action = max effect)",
+          "Minor Illusion dragon roar behind the enemy line — 22 deception, every cultist turned, whole party got opportunity attacks",
+          "Second-level Magic Missile ('I cast Magic Missile into the darkness') set up Larry's throat-rip kill",
+          "Commanded Larry all fight: dodge-and-weave positioning, Pack Tactics bites, and the kill order"
+        ],
+        "one_liner": "I cast Magic Missile into the darkness."
+      },
+      "Kaelia": {
+        "moments": [
+          "Opened with Mantle of Flame + Firebolt to Favric's chest for 13 — then cooked every cultist who dared melee her (5-10 burn damage per hit taken)",
+          "Decelerate saved her twice and Semaj once — 2d6 damage reduction as a reaction, the fight's quiet MVP spell",
+          "Retconned Flaming Sphere into Dragon's Breath on the GM's advice: 18/18/9/9 fire across four enemies, and it broke Favric's Hold Person concentration on Valrex",
+          "First melee kill of the campaign — staff of defense to the back of a distracted cultist's head ('I'm a range fighter, you guys')",
+          "Nat 1 Sorcerous Burst into Reidoth's back, then Quickened Spell for the make-up kill shot",
+          "Learned her Glasstaff staff of defense mechanics live: 10 charges, Mage Armor for 1, Shield for 2"
+        ],
+        "one_liner": "I'm a range fighter, you guys."
+      },
+      "Valrex": {
+        "moments": [
+          "Force-choked and paralyzed by Favric's Hold Person — freed when Kaelia's Dragon's Breath broke Favric's concentration",
+          "Pacified by his own ally's spell — then shattered it from within as the dragon's rage overrode the calm: 'It's my soul now to keep'",
+          "Withstood Favric's second Hold Person outright",
+          "Talon attack + War Priest bonus attack bloodied Favric before Beldan finished him",
+          "Second-level Guiding Bolt (still sickly green) for 16 lit up the fleeing cultist like a Christmas tree — but the runner escaped anyway",
+          "Favric died at his feet, nodding at him: 'You will kill them all'"
+        ],
+        "one_liner": "It's my soul now to keep."
+      },
+      "Aster": {
+        "moments": [
+          "Faerie fire caught all five cultists and Favric — every single save failed (light blue, per request)",
+          "Cast Pacify Person at Favric mid-combat to force the ritual conversation — Favric saved, Valrex didn't",
+          "Krail's Rupture: walked through a cultist's body for 18 necrotic, dodging both opportunity attacks on the far side",
+          "Spiny Shield turned a cultist's punch into 9 self-inflicted damage as he smashed his fist onto ethereal spikes",
+          "Interrogated a cultist mid-battle about the curse ritual and got the answer that matters: chosen one or no one",
+          "Water bullet + Shillelagh to close out the fight"
+        ],
+        "one_liner": "Do you know the ritual to get the dragon soul?"
+      }
+    },
+    "combat_encounters": [
+      {
+        "name": "The Battle of the Butchered Dragon",
+        "enemies": ["Favric (cult leader)", "Dragon Cultists x5"],
+        "outcome": "Decisive victory — Favric and four cultists killed; one cultist escaped down the road",
+        "location": "Thundertree Ruins — Venomfang's harvested corpse site",
+        "mvp": "Belden — three kills including Favric, plus the scimitar-throw disarm and the intimidation that broke the last cultist",
+        "notable_events": [
+          "Favric opened with Hold Person, paralyzing Valrex while preaching that the curse was his birthright",
+          "Kaelia's Dragon's Breath broke Favric's concentration and freed Valrex",
+          "Beldan killed Favric with Cleave + Action Surge warhammer + Hill Strike; Favric's last words: 'You will kill them all'",
+          "Semaj's Minor Illusion dragon roar (22 deception) distracted the entire enemy line — free opportunity attacks for the party",
+          "Kill tally: Beldan 3 (Favric + 2 cultists), Kaelia 1 (staff melee), Larry 1 (throat rip)",
+          "A cultist revealed the ritual rules under Aster's mid-combat questioning: the curse passes only to the cult's chosen leader — or no one",
+          "One cultist escaped down the road despite Valrex's 16-damage Guiding Bolt — the cult will learn what happened here",
+          "Reidoth fought as an ally: two heals on Larry, Produce Flame, and one Sorcerous Burst to the back (friendly fire, forgiven)"
+        ]
+      }
+    ],
+    "quotes_of_the_session": [
+      {
+        "speaker": "Alex/GM (as Favric)",
+        "quote": "Even your rage is his rage. You cannot carry that hate without it eating you alive. Let it pass to me, cleric. I was born for this burden.",
+        "context": "Favric force-choking Valrex with Hold Person while preaching the curse transfer"
+      },
+      {
+        "speaker": "Alex/GM (as Favric)",
+        "quote": "You will kill them all.",
+        "context": "Favric's dying words to Valrex — a nod, a prophecy, and then the ground"
+      },
+      {
+        "speaker": "Alex/GM (as a cultist)",
+        "quote": "We know the rite — but not for you to meddle in. The curse passes only to the chosen one, our leader, or no one. Stay out of our business, dragon butcher.",
+        "context": "Aster's mid-combat interrogation about the curse ritual — answered seconds before the ritual's 'chosen one' died to a warhammer"
+      },
+      {
+        "speaker": "Richard/Semaj",
+        "quote": "I cast Magic Missile into the darkness.",
+        "context": "Semaj honoring the ancient rites of Dead Alewives' Summoner Geeks mid-combat"
+      },
+      {
+        "speaker": "Jen/Kaelia",
+        "quote": "I'm a range fighter, you guys.",
+        "context": "Kaelia after scoring her first melee kill of the campaign — a staff crack to the back of a distracted cultist's head"
+      },
+      {
+        "speaker": "Sean/Belden",
+        "quote": "Run away from me. I dare you.",
+        "context": "Beldan to the frightened last cultist, moments before hammer time"
+      },
+      {
+        "speaker": "Alan/Aster",
+        "quote": "What did we learn about backups?",
+        "context": "Table meta — the VTT update ate the GM's automation mid-session, in a group of IT professionals"
+      }
+    ]
+  },
+
+  "plot_developments": [
+    "Favric is dead — killed by Beldan mid-sermon while trying to force the curse transfer through Hold Person and persuasion",
+    "The ritual's rules are now known (via Aster's mid-combat interrogation): Venomfang's curse can pass only to the cult's chosen one — their leader — or no one. With Favric dead, the cult's sanctioned path for the transfer may have died with him",
+    "One cultist escaped down the road — the Cult of the Dragon will learn that the party butchered Venomfang and killed Favric",
+    "Valrex remains cursed; Greater Restoration from a high priest in Neverwinter or Waterdeep is still the known cure — and the party has the dragon-harvest wealth to pay for it",
+    "Venomfang's horde in the ruined tower remains unclaimed — and the curse is still whispering 'my dragon horde' at Valrex",
+    "Reidoth spent nearly all his spell slots keeping Larry and himself alive — the party's druid ally is tapped out",
+    "Favric's dying prophecy to Valrex: 'You will kill them all'"
+  ],
+
+  "end_state": {
+    "location": "Thundertree Ruins — the battlefield at Venomfang's corpse, five enemy bodies among the dragon parts",
+    "party_condition": "Victorious but dented: Semaj and Kaelia both took real hits (potions and heals spent), Larry healed to full by Reidoth, Valrex untouched physically but still cursed. Reidoth out of spell slots. Session ended immediately at combat's end.",
+    "next_objective": "Loot the battlefield and decide: climb the tower for Venomfang's horde, deal with the escaped cultist and remaining Thundertree threats (ash zombies), or head for Neverwinter/Waterdeep to cure Valrex. Cragmaw Castle and Gundren still waiting."
+  }
+}
