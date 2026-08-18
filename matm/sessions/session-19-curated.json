@@ -6,9 +6,14 @@
   "level_up": false,
   "new_level": null,
   "duration": "~3 hours",
-  "player_attendance": ["Richard (Semaj)", "Jen (Kaelia)", "Darren (Valrex)", "Sean (Belden)", "Alan (Aster)"],
+  "player_attendance": [
+    "Richard (Semaj)",
+    "Jen (Kaelia)",
+    "Darren (Valrex)",
+    "Sean (Belden)",
+    "Alan (Aster)"
+  ],
   "absent": [],
-
   "highlights": {
     "best_moments": [
       {
@@ -16,8 +21,14 @@
         "type": "tragedy",
         "description": "The moment combat ended, Valrex started walking toward the tower without a word to anyone — the curse convinced him the cultist attack had been a diversion so someone could steal his horde. He found Venomfang's lair (dead spiders mauled outside the door), a broken chest of gold, four silver goblets with moonstones, and a rusty dwarven axe — and took every piece of it. That night, sorting coins alone in the barracks, the whisper came: 'Mine.' They will call it treasure. They'll call it party spoils. Count every piece. Trust no hand.",
         "quotes": [
-          {"speaker": "Alex/GM (as the curse)", "text": "They will call it treasure. They'll call it party spoils. They will take what they believe they deserve. But you know better. You bled for this. Count every piece. Trust no hand."},
-          {"speaker": "Darren/Valrex", "text": "At any point before when we started this campaign, did y'all ever think that PvE would turn into PvP?"}
+          {
+            "speaker": "Alex/GM (as the curse)",
+            "text": "They will call it treasure. They'll call it party spoils. They will take what they believe they deserve. But you know better. You bled for this. Count every piece. Trust no hand."
+          },
+          {
+            "speaker": "Darren/Valrex",
+            "text": "At any point before when we started this campaign, did y'all ever think that PvE would turn into PvP?"
+          }
         ]
       },
       {
@@ -25,9 +36,18 @@
         "type": "comedy",
         "description": "Under the horde's gold: a rusty battleaxe with 'HEW' in dwarven runes. Aster's Detect Magic read it clean — +1 weapon, steady transmutation aura, maximum damage against plants, wood, and anything wooden, built by a dwarf with a documented grudge against druids ('You should have known he was Druish'). Beldan claimed it, immediately felt an unnatural urge to fell trees, and dropped three of them before Reidoth intervened. The Neverwinter Wood has suffered enough.",
         "quotes": [
-          {"speaker": "Richard/Semaj", "text": "You should have known he was Druish."},
-          {"speaker": "Alex/GM (Reidoth)", "text": "Belden, stop! That axe may be useful against goblins and cultists and dragons, but these trees are not enemies."},
-          {"speaker": "Sean/Belden", "text": "Not gonna lie, this is kind of therapeutic."}
+          {
+            "speaker": "Richard/Semaj",
+            "text": "You should have known he was Druish."
+          },
+          {
+            "speaker": "Alex/GM (Reidoth)",
+            "text": "Belden, stop! That axe may be useful against goblins and cultists and dragons, but these trees are not enemies."
+          },
+          {
+            "speaker": "Sean/Belden",
+            "text": "Not gonna lie, this is kind of therapeutic."
+          }
         ]
       },
       {
@@ -35,18 +55,33 @@
         "type": "comedy",
         "description": "Morning in the town square: the ten-foot wooden warrior statue that had watched over Thundertree for generations lay in splintered lumber, head several feet from the base, axe marks everywhere. Beldan — who had spent his entire night watch 'admiring the statue' with a whetstone and Hew in hand — mounted the least convincing defense in campaign history. Kaelia responded by setting the severed head's hair on fire. Belden liked this. Belden will remember this.",
         "quotes": [
-          {"speaker": "Richard/Semaj", "text": "You just couldn't help yourself, could you?"},
-          {"speaker": "Sean/Belden", "text": "Do you have any idea how much noise it would make for me to cut that down?"},
-          {"speaker": "Sean/Belden", "text": "Belden likes this. Belden will remember this."}
+          {
+            "speaker": "Richard/Semaj",
+            "text": "You just couldn't help yourself, could you?"
+          },
+          {
+            "speaker": "Sean/Belden",
+            "text": "Do you have any idea how much noise it would make for me to cut that down?"
+          },
+          {
+            "speaker": "Sean/Belden",
+            "text": "Belden likes this. Belden will remember this."
+          }
         ]
       },
       {
         "title": "Ruxithid the Chosen",
         "type": "revelation",
-        "description": "Semaj's focused astral trance finally broke the campaign's deepest mystery open. An 18 insight pulled fractured images: a jagged crystal embedded in a skull, spilling outward like needles, surrounded by goblins with elongated heads — something CHOSE Ruxithid and altered him beyond his kind. Kaelia's history check named him: Ruxithid the Chosen, tied to a goblin clan and to rumors of goblins with strange gemstones that let them hear gods in their minds. Not proof of divine favor — vessels being used. The psionic tyrant has a body, and it used to be a goblin.",
+        "description": "Semaj's focused astral trance finally broke the campaign's deepest mystery open. An 18 insight pulled fractured images: a jagged crystal embedded in a skull, spilling outward like needles, surrounded by goblins with elongated heads — something CHOSE Ruxithid and altered him beyond his kind. Kaelia's history check named him: Ruxithid the Chosen, of the Sawplee goblin clan, tied to rumors of goblins with strange gemstones that let them hear gods in their minds. Not proof of divine favor — vessels being used. The psionic tyrant has a body, and it used to be a goblin.",
         "quotes": [
-          {"speaker": "Alex/GM", "text": "A jagged crystal embedded in a skull, spilling outwards like needles — and around this skull are goblins who do not look like your normal goblins. Something has chosen him and has altered him beyond his kind."},
-          {"speaker": "Richard/Semaj", "text": "Why am I hearing the voice? Why am I being selected?"}
+          {
+            "speaker": "Alex/GM",
+            "text": "A jagged crystal embedded in a skull, spilling outwards like needles — and around this skull are goblins who do not look like your normal goblins. Something has chosen him and has altered him beyond his kind."
+          },
+          {
+            "speaker": "Richard/Semaj",
+            "text": "Why am I hearing the voice? Why am I being selected?"
+          }
         ]
       },
       {
@@ -54,8 +89,14 @@
         "type": "roleplay",
         "description": "The old druid gave the party everything he had left: the truth about the curse (indulging it strengthens it; denying it forever may be worse), the real cures (a Wish — or true death, long enough for the dragon's echo to lose its hold, followed by resurrection that might not work), and a destination — Cragmaw Castle's halls once held a library of the region's arcane histories, and what the goblins didn't destroy may hold answers. Then he clasped forearms with Semaj, bowed, and walked back into the ruins he intends to heal.",
         "quotes": [
-          {"speaker": "Alex/GM (Reidoth)", "text": "Keep your eyes open. Keep your friend close. And do not let the dead dragon decide the shape of your future."},
-          {"speaker": "Alex/GM (Reidoth)", "text": "Death may break the bond. Not simply falling unconscious. True death. But that is not a cure I would recommend lightly."}
+          {
+            "speaker": "Alex/GM (Reidoth)",
+            "text": "Keep your eyes open. Keep your friend close. And do not let the dead dragon decide the shape of your future."
+          },
+          {
+            "speaker": "Alex/GM (Reidoth)",
+            "text": "Death may break the bond. Not simply falling unconscious. True death. But that is not a cure I would recommend lightly."
+          }
         ]
       },
       {
@@ -63,7 +104,10 @@
         "type": "meta",
         "description": "Nobody at the table could remember how Droop said to find Cragmaw Castle — until the party's own campaign site got pulled up mid-session and delivered the goods: three claw marks on trees, stacked stones, torn red cloth at the forks, goblins watching from the towers, and a hidden servant's door at the back wall. Every sign checked out in play, and the back entrance is exactly how the party got inside.",
         "quotes": [
-          {"speaker": "Alex/GM", "text": "Look at that website coming in handy. That's exactly pulled from the website."}
+          {
+            "speaker": "Alex/GM",
+            "text": "Look at that website coming in handy. That's exactly pulled from the website."
+          }
         ]
       },
       {
@@ -71,9 +115,18 @@
         "type": "tension",
         "description": "Inside the castle's collapsed northeast tower, Aster's ear against a door caught the whole picture: King Grol arguing with a calm, silky-voiced woman about the dwarf, the map, and the Spider's orders — with someone's weak, uneven breathing underneath it. Gundren. Alive, badly beaten, one room away. The plan: slit four sleeping hobgoblins' throats simultaneously. The execution: Beldan's boot found the one loose stone in Cragmaw Castle. Initiative rolled — Semaj rolled a 3 and goes dead last. Session over. Beldan pre-declared his opening move for next time: toss a tree branch onto a hobgoblin so Hew gets max damage. The GM's ruling: 'You're playing the game.'",
         "quotes": [
-          {"speaker": "Alex/GM (as King Grol)", "text": "You take the dwarf. You take the map. But Grol gets paid. The Spider sends nothing but orders."},
-          {"speaker": "Alex/GM (as the woman)", "text": "The Spider will reward you when Gundren has told us everything he knows. You are being paid to hold him, King Grol."},
-          {"speaker": "Jen/Kaelia", "text": "Well, it was a great idea, guys. It's been nice knowing you."}
+          {
+            "speaker": "Alex/GM (as King Grol)",
+            "text": "You take the dwarf. You take the map. But Grol gets paid. The Spider sends nothing but orders."
+          },
+          {
+            "speaker": "Alex/GM (as the woman)",
+            "text": "The Spider will reward you when Gundren has told us everything he knows. You are being paid to hold him, King Grol."
+          },
+          {
+            "speaker": "Jen/Kaelia",
+            "text": "Well, it was a great idea, guys. It's been nice knowing you."
+          }
         ]
       }
     ],
@@ -113,7 +166,7 @@
       },
       "Kaelia": {
         "moments": [
-          "History check named the mystery: Ruxithid the Chosen — goblins with gemstones that let them 'hear gods in their minds,' vessels being used",
+          "History check named the mystery: Ruxithid the Chosen of the Sawplee clan — goblins with gemstones that let them 'hear gods in their minds,' vessels being used",
           "First watch: sculpted fire foxes and dragons from the stove flames, then snuffed the fire and used darkvision to watch twig blights scavenge the zombie corpses — and wisely left them alone",
           "Set the decapitated statue head's 'hair' on fire as a verdict on Beldan's denial",
           "Blacksmith's daughter — instantly knew what the brass dragon scales were worth",
@@ -137,7 +190,9 @@
     "combat_encounters": [
       {
         "name": "Ash Zombie Cleanup (Montage)",
-        "enemies": ["Ash Zombies x6 (two buildings)"],
+        "enemies": [
+          "Ash Zombies x6 (two buildings)"
+        ],
         "outcome": "Montaged — Valrex's mace and party cantrips cleared both buildings without initiative",
         "location": "Thundertree Ruins — intact house and old barracks",
         "mvp": "Valrex — undead are what he's built for",
@@ -148,7 +203,10 @@
       },
       {
         "name": "The Hobgoblin Barracks (Cliffhanger)",
-        "enemies": ["Hobgoblins x4 (waking)", "King Grol + unknown woman one room away"],
+        "enemies": [
+          "Hobgoblins x4 (waking)",
+          "King Grol + unknown woman one room away"
+        ],
         "outcome": "Combat initiated — initiative rolled, session ended before the first turn",
         "location": "Cragmaw Castle — barracks off the northeast collapsed-tower entrance",
         "mvp": "Pending (combat resolves next session)",
@@ -200,20 +258,18 @@
       }
     ]
   },
-
   "plot_developments": [
     "Valrex claimed Venomfang's horde alone: gold, four silver goblets with moonstones, and Hew. The curse escalated from slips of speech to behavior — solitary counting, concealment, active deception of the party (the brass-scale 'sharing' ruse, deception 10)",
     "Hew acquired: +1 dwarven battleaxe, maximum damage vs. plants/wood/wooden objects, transmutation aura, forged with anti-druid malice. Claimed by Beldan, who has already felled three trees and one beloved civic monument",
     "Curse cure options established by Reidoth: (1) a Wish spell; (2) TRUE death — long enough for the dragon's echo to lose hold — followed by resurrection, with no guarantee the curse doesn't follow the soul; (3) research: Cragmaw Castle's pre-goblin library may hold writings on 'creatures whose malice outlived their bodies'",
     "Confirmed: uncured, Valrex will physically transform into a dragon over months — scales, then wings, tail, horns, fangs",
-    "RUXITHID REVEALED: 'Ruxithid the Chosen' — a goblin altered beyond its kind by a jagged crystal embedded in its skull, surrounded by elongated-headed goblins; linked to rumors of goblins with gemstones that let them hear gods in their minds. The 'Chosen' are vessels. The psionic tyrant is connected to goblin-kind — and the party is walking into a goblin stronghold",
+    "RUXITHID REVEALED: 'Ruxithid the Chosen' — a goblin altered beyond its kind by a jagged crystal embedded in its skull, surrounded by elongated-headed goblins; of the Sawplee goblin clan, linked to rumors of goblins with gemstones that let them hear gods in their minds. The 'Chosen' are vessels. The psionic tyrant is connected to goblin-kind — and the party is walking into a goblin stronghold",
     "Reidoth stayed behind to restore Thundertree — the town is fully cleared (spiders, dragon, cult, all ash zombies) and no longer ruled by Venomfang",
     "Loot: Favric carried six amethysts (50gp each) and a Potion of Flying; ruined shop yielded a gold-and-emerald heirloom necklace (Semaj, nat 20); smithy yielded 10 brass dragon scales (75gp each, distributed)",
     "The party reached Cragmaw Castle via Droop's signs and entered through the hidden northeast servant's entrance",
     "Gundren Rockseeker CONFIRMED ALIVE — badly beaten, unconscious, held by King Grol while a silky-voiced woman (the Black Spider's agent) demands everything he knows; Grol wants gold and is close to breaking with the Spider",
     "Session ended mid-initiative against four waking hobgoblins; next session September 12"
   ],
-
   "end_state": {
     "location": "Cragmaw Castle — hobgoblin barracks off the northeast entrance, initiative rolled",
     "party_condition": "Fully rested (long rest in the Thundertree barracks) with all resources available — but standing in a cramped room with four waking hobgoblins, and King Grol, the Spider's agent, and an unconscious Gundren one room away. Semaj acts last (initiative 3); Valrex acts first.",
