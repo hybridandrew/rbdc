@@ -6,8 +6,8 @@
   "level_up": false,
   "new_level": null,
   "duration": "~2.5 hours (late start)",
-  "player_attendance": ["Richard (Semaj)", "Jen (Kaelia)", "Darren (Valrex)", "Sean (Belden)", "Alan (Aster)"],
-  "absent": [],
+  "player_attendance": ["Richard (Semaj)", "Jen (Kaelia)", "Jason (Valrex — guest, covering)", "Sean (Belden)", "Alan (Aster)"],
+  "absent": ["Darren (Valrex's regular player — Jason played the character 'exactly how you would have played it')"],
 
   "highlights": {
     "best_moments": [

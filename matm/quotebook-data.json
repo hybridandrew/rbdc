@@ -1,9 +1,9 @@
 {
   "stats": {
-    "totalQuotes": 158,
-    "sessionsCovered": 18,
+    "totalQuotes": 165,
+    "sessionsCovered": 19,
     "topQuoter": "GM",
-    "punCount": 7
+    "punCount": 8
   },
   "quotes": [
     {
@@ -1111,6 +1111,55 @@
       "session": 18,
       "context": "Larry executing Pack Tactics to perfection all fight",
       "category": "funny"
+    },
+    {
+      "text": "They will call it treasure. They'll call it party spoils. But you know better. You bled for this. Count every piece. Trust no hand.",
+      "speaker": "GM (the Curse)",
+      "session": 19,
+      "context": "Venomfang's curse teaching Valrex to count his horde alone by firelight",
+      "category": "epic"
+    },
+    {
+      "text": "Do not let the dead dragon decide the shape of your future.",
+      "speaker": "GM (Reidoth)",
+      "session": 19,
+      "context": "The old druid's parting words as he stayed behind to heal Thundertree",
+      "category": "wisdom"
+    },
+    {
+      "text": "You should have known he was Druish.",
+      "speaker": "Semaj",
+      "session": 19,
+      "context": "On learning Hew's maker was a dwarf with a grudge against druids",
+      "category": "pun"
+    },
+    {
+      "text": "Do you have any idea how much noise it would make for me to cut that down?",
+      "speaker": "Belden",
+      "session": 19,
+      "context": "The statue-decapitation defense, delivered while holding the axe that did it",
+      "category": "funny"
+    },
+    {
+      "text": "Two completely chaotic team members. We have one turning into a dragon and the other who is obsessed with blowing his horn and cutting down trees.",
+      "speaker": "Kaelia",
+      "session": 19,
+      "context": "State of the party, session 19",
+      "category": "funny"
+    },
+    {
+      "text": "Look at that website coming in handy. That's exactly pulled from the website.",
+      "speaker": "GM",
+      "session": 19,
+      "context": "The party's own campaign site supplying Droop's forgotten directions to Cragmaw Castle mid-session",
+      "category": "meta"
+    },
+    {
+      "text": "At any point before when we started this campaign, did y'all ever think that PvE would turn into PvP?",
+      "speaker": "Valrex",
+      "session": 19,
+      "context": "Reading the writing on the wall about his own curse",
+      "category": "meta"
     }
   ]
 }

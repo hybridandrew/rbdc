@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Session 19: Hew | Mage Against The Machine</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../nav.css">
+  <link rel="stylesheet" href="../base.css">
+  <style>
+    :root {
+      --bg-dark: #0a0a0f;
+      --bg-card: rgba(20, 16, 28, 0.9);
+      --bg-card-hover: rgba(30, 24, 42, 0.95);
+      --gold: #d4a857;
+      --gold-dim: #a68642;
+      --gold-bright: #ffd700;
+      --purple: #8b5cf6;
+      --purple-dim: #6d4aad;
+      --red: #dc2626;
+      --green: #22c55e;
+      --blue: #3b82f6;
+      --text-primary: #f5f5f4;
+      --text-secondary: rgba(245, 245, 244, 0.7);
+      --text-dim: rgba(245, 245, 244, 0.5);
+      --border-subtle: rgba(212, 168, 87, 0.2);
+      --border-glow: rgba(212, 168, 87, 0.4);
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Crimson Pro', Georgia, serif;
+      background: var(--bg-dark);
+      color: var(--text-primary);
+      min-height: 100vh;
+      line-height: 1.6;
+    }
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background:
+        radial-gradient(ellipse at 20% 20%, rgba(139, 92, 246, 0.1) 0%, transparent 50%),
+        radial-gradient(ellipse at 80% 80%, rgba(212, 168, 87, 0.08) 0%, transparent 50%);
+      pointer-events: none;
+      z-index: -1;
+    }
+    .container { max-width: 1000px; margin: 0 auto; padding: 2rem; padding-top: 100px; }
+    .session-hero { text-align: center; padding: 3rem 0; margin-bottom: 3rem; }
+    .session-number {
+      font-family: 'Cinzel', serif;
+      font-size: 0.9rem;
+      color: var(--gold);
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+    .session-title {
+      font-family: 'Cinzel', serif;
+      font-size: 3rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 1rem;
+      text-shadow: 0 0 40px rgba(212, 168, 87, 0.3);
+    }
+    .session-meta {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+      margin-bottom: 1.5rem;
+    }
+    .meta-item { display: flex; align-items: center; gap: 0.5rem; color: var(--text-secondary); font-size: 0.95rem; }
+    .meta-icon { color: var(--gold-dim); }
+    .level-up-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: linear-gradient(90deg, rgba(34, 197, 94, 0.2), rgba(34, 197, 94, 0.1));
+      border: 1px solid rgba(34, 197, 94, 0.4);
+      color: var(--green);
+      padding: 0.5rem 1rem;
+      border-radius: 2rem;
+      font-family: 'Cinzel', serif;
+      font-size: 0.9rem;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+    }
+    .session-summary { color: var(--text-secondary); font-size: 1.1rem; max-width: 800px; margin: 0 auto; }
+    .section { margin-bottom: 3rem; }
+    .section-header { display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem; }
+    .section-icon { font-size: 1.5rem; }
+    .section-title { font-family: 'Cinzel', serif; font-size: 1.5rem; font-weight: 600; color: var(--gold); }
+    .quotes-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; }
+    .quote-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 10px;
+      padding: 1.25rem;
+      transition: all 0.3s ease;
+    }
+    .quote-card:hover { border-color: var(--gold-dim); transform: translateY(-2px); }
+    .quote-text { font-size: 1rem; font-style: italic; color: var(--text-primary); margin-bottom: 0.75rem; }
+    .quote-speaker { font-family: 'Cinzel', serif; font-size: 0.85rem; color: var(--gold); margin-bottom: 0.25rem; }
+    .quote-context { font-size: 0.8rem; color: var(--text-dim); }
+    .highlights-grid { display: grid; gap: 1.25rem; }
+    .highlight-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 12px;
+      padding: 1.5rem;
+    }
+    .highlight-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; }
+    .highlight-title { font-family: 'Cinzel', serif; font-size: 1.2rem; font-weight: 600; color: var(--text-primary); }
+    .highlight-type {
+      font-size: 0.7rem;
+      padding: 0.25rem 0.75rem;
+      border-radius: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      font-family: 'Cinzel', serif;
+    }
+    .type-comedy { background: rgba(251, 191, 36, 0.2); color: #fbbf24; }
+    .type-combat { background: rgba(220, 38, 38, 0.2); color: #f87171; }
+    .type-roleplay { background: rgba(139, 92, 246, 0.2); color: #a78bfa; }
+    .type-tension { background: rgba(59, 130, 246, 0.2); color: #60a5fa; }
+    .type-plot { background: rgba(212, 168, 87, 0.2); color: #d4a857; }
+    .type-epic { background: rgba(251, 191, 36, 0.2); color: #fbbf24; }
+    .type-funny { background: rgba(251, 191, 36, 0.2); color: #fbbf24; }
+    .highlight-description { color: var(--text-secondary); margin-bottom: 1rem; }
+    .quote-block {
+      background: rgba(0, 0, 0, 0.3);
+      padding: 0.75rem;
+      border-radius: 8px;
+      margin-top: 0.75rem;
+    }
+    .spotlight-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.25rem; }
+    .spotlight-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 12px;
+      padding: 1.5rem;
+    }
+    .spotlight-name { font-family: 'Cinzel', serif; font-size: 1.2rem; font-weight: 600; color: var(--gold); margin-bottom: 1rem; }
+    .spotlight-moments { list-style: none; margin-bottom: 1rem; }
+    .spotlight-moments li {
+      color: var(--text-secondary);
+      padding: 0.35rem 0;
+      padding-left: 1rem;
+      position: relative;
+    }
+    .spotlight-moments li::before { content: '◆'; position: absolute; left: 0; color: var(--gold-dim); font-size: 0.6rem; }
+    .spotlight-quote {
+      background: rgba(0, 0, 0, 0.3);
+      padding: 0.75rem;
+      border-radius: 8px;
+      font-style: italic;
+      color: var(--text-primary);
+      font-size: 0.95rem;
+    }
+    .combat-card {
+      background: linear-gradient(135deg, rgba(220, 38, 38, 0.1), rgba(20, 16, 28, 0.9));
+      border: 1px solid rgba(220, 38, 38, 0.3);
+      border-radius: 12px;
+      padding: 1.5rem;
+    }
+    .combat-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; }
+    .combat-name { font-family: 'Cinzel', serif; font-size: 1.3rem; font-weight: 600; color: var(--text-primary); }
+    .combat-outcome {
+      background: rgba(34, 197, 94, 0.2);
+      color: var(--green);
+      padding: 0.25rem 0.75rem;
+      border-radius: 1rem;
+      font-family: 'Cinzel', serif;
+      font-size: 0.8rem;
+      font-weight: 600;
+    }
+    .combat-details { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-bottom: 1rem; }
+    .combat-detail { background: rgba(0, 0, 0, 0.3); padding: 0.75rem; border-radius: 8px; }
+    .combat-detail-label { color: var(--text-dim); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.25rem; }
+    .combat-detail-value { color: var(--text-primary); font-size: 0.95rem; }
+    .combat-events { list-style: none; }
+    .combat-events li {
+      color: var(--text-secondary);
+      padding: 0.5rem 0;
+      padding-left: 1.5rem;
+      position: relative;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+    .combat-events li:last-child { border-bottom: none; }
+    .combat-events li::before { content: '⚔'; position: absolute; left: 0; color: var(--red); }
+    .plot-list { list-style: none; }
+    .plot-list li {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 8px;
+      padding: 1rem 1.25rem;
+      margin-bottom: 0.75rem;
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      transition: all 0.3s ease;
+    }
+    .plot-list li:hover { border-color: var(--purple-dim); }
+    .plot-icon { color: var(--purple); font-size: 1.2rem; margin-top: 0.1rem; }
+    .plot-text { color: var(--text-secondary); flex: 1; }
+    .end-state {
+      background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(20, 16, 28, 0.9));
+      border: 1px solid rgba(139, 92, 246, 0.3);
+      border-radius: 12px;
+      padding: 1.5rem;
+      text-align: center;
+    }
+    .end-state-title {
+      font-family: 'Cinzel', serif;
+      font-size: 1rem;
+      color: var(--purple);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 1rem;
+    }
+    .end-state-content { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1.5rem; }
+    .end-item-label { color: var(--text-dim); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.25rem; }
+    .end-item-value { color: var(--text-primary); font-size: 1.05rem; }
+    .session-nav {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 3rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--border-subtle);
+    }
+    .session-nav a {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-family: 'Cinzel', serif;
+      font-size: 0.9rem;
+      padding: 0.75rem 1.25rem;
+      border: 1px solid var(--border-subtle);
+      border-radius: 8px;
+      transition: all 0.3s ease;
+    }
+    .session-nav a:hover { color: var(--gold); border-color: var(--gold-dim); background: rgba(212, 168, 87, 0.1); }
+    .session-nav a.disabled { opacity: 0.3; pointer-events: none; }
+    @media (max-width: 768px) {
+      .container { padding: 1rem; padding-top: 80px; }
+      .session-title { font-size: 2rem; }
+      .session-meta { gap: 1rem; }
+      .quotes-grid, .spotlight-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="session-hero">
+      <div class="session-number">Session XIX</div>
+      <h1 class="session-title">Hew</h1>
+      <div class="session-meta">
+        <span class="meta-item">
+          <span class="meta-icon">📅</span>
+          August 2026
+        </span>
+        <span class="meta-item">
+          <span class="meta-icon">⏱</span>
+          ~3 hours
+        </span>
+        <span class="meta-item">
+          <span class="meta-icon">👥</span>
+          5 players
+        </span>
+      </div>
+      
+      <p class="session-summary">No dice-rolling bloodbath this time — a full role-playing session where the consequences got louder than any combat. Valrex walked off alone and wordlessly claimed Venomfang's horde, and that night the curse taught him to count coins: 'Mine. Count every piece. Trust no hand.' Beldan pulled a rusty dwarven battleaxe from under the gold — Hew, +1, maximum damage against anything wooden, forged with a built-in grudge against druids — and by morning the town square's warrior statue lay decapitated with axe marks all over it ('Do you have any idea how much noise it would make for me to cut that down?'). Semaj's astral trance finally cracked the Ruxithid mystery open: Ruxithid the Chosen, a goblin altered beyond its kind by a jagged crystal in its skull. Reidoth gave the party the curse's real options — Wish, or true death and resurrection — pointed them at Cragmaw Castle's ruined library, and said goodbye. The session ended inside the castle: four waking hobgoblins, initiative rolled, King Grol arguing with a silky-voiced woman one room over, and Gundren's ragged breathing on the floor between them.</p>
+    </header>
+
+    <section class="section">
+      <div class="section-header">
+        <div class="section-icon">💬</div>
+        <h2 class="section-title">Quotes of the Session</h2>
+      </div>
+      <div class="quotes-grid">
+        <div class="quote-card">
+          <p class="quote-text">They will call it treasure. They'll call it party spoils. But you know better. You bled for this. Count every piece. Trust no hand.</p>
+          <p class="quote-speaker">— Alex/GM (as the curse)</p>
+          <p class="quote-context">The curse teaching Valrex to count his horde alone by firelight</p>
+        </div>
+        <div class="quote-card">
+          <p class="quote-text">Do not let the dead dragon decide the shape of your future.</p>
+          <p class="quote-speaker">— Alex/GM (Reidoth)</p>
+          <p class="quote-context">The old druid's parting words to the party</p>
+        </div>
+        <div class="quote-card">
+          <p class="quote-text">You should have known he was Druish.</p>
+          <p class="quote-speaker">— Richard/Semaj</p>
+          <p class="quote-context">On learning Hew's maker was a dwarf with a grudge against druids</p>
+        </div>
+        <div class="quote-card">
+          <p class="quote-text">Do you have any idea how much noise it would make for me to cut that down?</p>
+          <p class="quote-speaker">— Sean/Belden</p>
+          <p class="quote-context">The statue-decapitation defense, delivered while holding the axe that did it</p>
+        </div>
+        <div class="quote-card">
+          <p class="quote-text">Two completely chaotic team members. We have one turning into a dragon and the other who is obsessed with blowing his horn and cutting down trees.</p>
+          <p class="quote-speaker">— Jen/Kaelia</p>
+          <p class="quote-context">State of the party, session 19</p>
+        </div>
+        <div class="quote-card">
+          <p class="quote-text">Look at that website coming in handy. That's exactly pulled from the website.</p>
+          <p class="quote-speaker">— Alex/GM</p>
+          <p class="quote-context">The party's own campaign site supplying Droop's forgotten directions to Cragmaw Castle mid-session</p>
+        </div></div>
+    </section>
+
+    <section class="section">
+      <div class="section-header">
+        <div class="section-icon">⭐</div>
+        <h2 class="section-title">Best Moments</h2>
+      </div>
+      <div class="highlights-grid">
+        <div class="highlight-card">
+          <div class="highlight-header">
+            <h3 class="highlight-title">My Horde, Claimed</h3>
+            <span class="highlight-type type-tragedy">Tragedy</span>
+          </div>
+          <p class="highlight-description">The moment combat ended, Valrex started walking toward the tower without a word to anyone — the curse convinced him the cultist attack had been a diversion so someone could steal his horde. He found Venomfang's lair (dead spiders mauled outside the door), a broken chest of gold, four silver goblets with moonstones, and a rusty dwarven axe — and took every piece of it. That night, sorting coins alone in the barracks, the whisper came: 'Mine.' They will call it treasure. They'll call it party spoils. Count every piece. Trust no hand.</p>
+          
+          <div class="quote-block">
+            <p class="quote-text">"They will call it treasure. They'll call it party spoils. They will take what they believe they deserve. But you know better. You bled for this. Count every piece. Trust no hand."</p>
+            <p class="quote-speaker">— Alex/GM (as the curse)</p>
+          </div>
+          <div class="quote-block">
+            <p class="quote-text">"At any point before when we started this campaign, did y'all ever think that PvE would turn into PvP?"</p>
+            <p class="quote-speaker">— Darren/Valrex</p>
+          </div>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-header">
+            <h3 class="highlight-title">Hew</h3>
+            <span class="highlight-type type-comedy">Comedy</span>
+          </div>
+          <p class="highlight-description">Under the horde's gold: a rusty battleaxe with 'HEW' in dwarven runes. Aster's Detect Magic read it clean — +1 weapon, steady transmutation aura, maximum damage against plants, wood, and anything wooden, built by a dwarf with a documented grudge against druids ('You should have known he was Druish'). Beldan claimed it, immediately felt an unnatural urge to fell trees, and dropped three of them before Reidoth intervened. The Neverwinter Wood has suffered enough.</p>
+          
+          <div class="quote-block">
+            <p class="quote-text">"You should have known he was Druish."</p>
+            <p class="quote-speaker">— Richard/Semaj</p>
+          </div>
+          <div class="quote-block">
+            <p class="quote-text">"Belden, stop! That axe may be useful against goblins and cultists and dragons, but these trees are not enemies."</p>
+            <p class="quote-speaker">— Alex/GM (Reidoth)</p>
+          </div>
+          <div class="quote-block">
+            <p class="quote-text">"Not gonna lie, this is kind of therapeutic."</p>
+            <p class="quote-speaker">— Sean/Belden</p>
+          </div>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-header">
+            <h3 class="highlight-title">The Statue Did Not Chop Itself</h3>
+            <span class="highlight-type type-comedy">Comedy</span>
+          </div>
+          <p class="highlight-description">Morning in the town square: the ten-foot wooden warrior statue that had watched over Thundertree for generations lay in splintered lumber, head several feet from the base, axe marks everywhere. Beldan — who had spent his entire night watch 'admiring the statue' with a whetstone and Hew in hand — mounted the least convincing defense in campaign history. Kaelia responded by setting the severed head's hair on fire. Belden liked this. Belden will remember this.</p>
+          
+          <div class="quote-block">
+            <p class="quote-text">"You just couldn't help yourself, could you?"</p>
+            <p class="quote-speaker">— Richard/Semaj</p>
+          </div>
+          <div class="quote-block">
+            <p class="quote-text">"Do you have any idea how much noise it would make for me to cut that down?"</p>
+            <p class="quote-speaker">— Sean/Belden</p>
+          </div>
+          <div class="quote-block">
+            <p class="quote-text">"Belden likes this. Belden will remember this."</p>
+            <p class="quote-speaker">— Sean/Belden</p>
+          </div>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-header">
+            <h3 class="highlight-title">Ruxithid the Chosen</h3>
+            <span class="highlight-type type-revelation">Revelation</span>
+          </div>
+          <p class="highlight-description">Semaj's focused astral trance finally broke the campaign's deepest mystery open. An 18 insight pulled fractured images: a jagged crystal embedded in a skull, spilling outward like needles, surrounded by goblins with elongated heads — something CHOSE Ruxithid and altered him beyond his kind. Kaelia's history check named him: Ruxithid the Chosen, tied to a goblin clan and to rumors of goblins with strange gemstones that let them hear gods in their minds. Not proof of divine favor — vessels being used. The psionic tyrant has a body, and it used to be a goblin.</p>
+          
+          <div class="quote-block">
+            <p class="quote-text">"A jagged crystal embedded in a skull, spilling outwards like needles — and around this skull are goblins who do not look like your normal goblins. Something has chosen him and has altered him beyond his kind."</p>
+            <p class="quote-speaker">— Alex/GM</p>
+          </div>
+          <div class="quote-block">
+            <p class="quote-text">"Why am I hearing the voice? Why am I being selected?"</p>
+            <p class="quote-speaker">— Richard/Semaj</p>
+          </div>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-header">
+            <h3 class="highlight-title">Reidoth's Farewell</h3>
+            <span class="highlight-type type-roleplay">Roleplay</span>
+          </div>
+          <p class="highlight-description">The old druid gave the party everything he had left: the truth about the curse (indulging it strengthens it; denying it forever may be worse), the real cures (a Wish — or true death, long enough for the dragon's echo to lose its hold, followed by resurrection that might not work), and a destination — Cragmaw Castle's halls once held a library of the region's arcane histories, and what the goblins didn't destroy may hold answers. Then he clasped forearms with Semaj, bowed, and walked back into the ruins he intends to heal.</p>
+          
+          <div class="quote-block">
+            <p class="quote-text">"Keep your eyes open. Keep your friend close. And do not let the dead dragon decide the shape of your future."</p>
+            <p class="quote-speaker">— Alex/GM (Reidoth)</p>
+          </div>
+          <div class="quote-block">
+            <p class="quote-text">"Death may break the bond. Not simply falling unconscious. True death. But that is not a cure I would recommend lightly."</p>
+            <p class="quote-speaker">— Alex/GM (Reidoth)</p>
+          </div>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-header">
+            <h3 class="highlight-title">The Website Assist</h3>
+            <span class="highlight-type type-meta">Meta</span>
+          </div>
+          <p class="highlight-description">Nobody at the table could remember how Droop said to find Cragmaw Castle — until the party's own campaign site got pulled up mid-session and delivered the goods: three claw marks on trees, stacked stones, torn red cloth at the forks, goblins watching from the towers, and a hidden servant's door at the back wall. Every sign checked out in play, and the back entrance is exactly how the party got inside.</p>
+          
+          <div class="quote-block">
+            <p class="quote-text">"Look at that website coming in handy. That's exactly pulled from the website."</p>
+            <p class="quote-speaker">— Alex/GM</p>
+          </div>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-header">
+            <h3 class="highlight-title">Four Sleeping Hobgoblins (Cliffhanger)</h3>
+            <span class="highlight-type type-tension">Tension</span>
+          </div>
+          <p class="highlight-description">Inside the castle's collapsed northeast tower, Aster's ear against a door caught the whole picture: King Grol arguing with a calm, silky-voiced woman about the dwarf, the map, and the Spider's orders — with someone's weak, uneven breathing underneath it. Gundren. Alive, badly beaten, one room away. The plan: slit four sleeping hobgoblins' throats simultaneously. The execution: Beldan's boot found the one loose stone in Cragmaw Castle. Initiative rolled — Semaj rolled a 3 and goes dead last. Session over. Beldan pre-declared his opening move for next time: toss a tree branch onto a hobgoblin so Hew gets max damage. The GM's ruling: 'You're playing the game.'</p>
+          
+          <div class="quote-block">
+            <p class="quote-text">"You take the dwarf. You take the map. But Grol gets paid. The Spider sends nothing but orders."</p>
+            <p class="quote-speaker">— Alex/GM (as King Grol)</p>
+          </div>
+          <div class="quote-block">
+            <p class="quote-text">"The Spider will reward you when Gundren has told us everything he knows. You are being paid to hold him, King Grol."</p>
+            <p class="quote-speaker">— Alex/GM (as the woman)</p>
+          </div>
+          <div class="quote-block">
+            <p class="quote-text">"Well, it was a great idea, guys. It's been nice knowing you."</p>
+            <p class="quote-speaker">— Jen/Kaelia</p>
+          </div>
+        </div></div>
+    </section>
+
+    <section class="section">
+      <div class="section-header">
+        <div class="section-icon">⚔</div>
+        <h2 class="section-title">Combat Encounters</h2>
+      </div>
+      
+      <div class="combat-card">
+        <div class="combat-header">
+          <h3 class="combat-name">Ash Zombie Cleanup (Montage)</h3>
+          <span class="combat-outcome">Montaged — Valrex's mace and party cantrips cleared both buildings without initiative</span>
+        </div>
+        <div class="combat-details">
+          <div class="combat-detail">
+            <div class="combat-detail-label">Enemies</div>
+            <div class="combat-detail-value">Ash Zombies x6 (two buildings)</div>
+          </div>
+          <div class="combat-detail">
+            <div class="combat-detail-label">Location</div>
+            <div class="combat-detail-value">Thundertree Ruins — intact house and old barracks</div>
+          </div>
+          
+          <div class="combat-detail">
+            <div class="combat-detail-label">MVP</div>
+            <div class="combat-detail-value">Valrex — undead are what he's built for</div>
+          </div>
+        </div>
+        <ul class="combat-events"><li>The GM waved both fights: 'What are two zombies going to do?'</li><li>Clearing the barracks gave the party a defensible camp for the night</li></ul>
+      </div>
+      <div class="combat-card">
+        <div class="combat-header">
+          <h3 class="combat-name">The Hobgoblin Barracks (Cliffhanger)</h3>
+          <span class="combat-outcome">Combat initiated — initiative rolled, session ended before the first turn</span>
+        </div>
+        <div class="combat-details">
+          <div class="combat-detail">
+            <div class="combat-detail-label">Enemies</div>
+            <div class="combat-detail-value">Hobgoblins x4 (waking), King Grol + unknown woman one room away</div>
+          </div>
+          <div class="combat-detail">
+            <div class="combat-detail-label">Location</div>
+            <div class="combat-detail-value">Cragmaw Castle — barracks off the northeast collapsed-tower entrance</div>
+          </div>
+          
+          <div class="combat-detail">
+            <div class="combat-detail-label">MVP</div>
+            <div class="combat-detail-value">Pending (combat resolves next session)</div>
+          </div>
+        </div>
+        <ul class="combat-events"><li>The simultaneous-throat-slit plan died to Beldan's boot on a loose stone and Valrex's shifting gear</li><li>Hobgoblins roll initiative at disadvantage (asleep) — and still beat most of the party</li><li>Semaj rolled a 3: 'I haven't rolled one good initiative ever'</li><li>Their weapons are at their sides — they must grab weapons and stand before fighting</li><li>Gundren confirmed alive but badly beaten, one room away with King Grol and the Spider's silky-voiced agent</li><li>Next session: September 12</li></ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-header">
+        <div class="section-icon">👤</div>
+        <h2 class="section-title">Character Spotlight</h2>
+      </div>
+      <div class="spotlight-grid">
+        <div class="spotlight-card">
+          <h3 class="spotlight-name">Valrex</h3>
+          <ul class="spotlight-moments"><li>Walked to the tower alone and wordlessly the moment combat ended — the curse framed the entire cultist battle as a diversion to steal his horde</li><li>Claimed everything: gold, four moonstone goblets, and the rusty axe hiding beneath the coins</li><li>Ran the 'see, I share!' ruse with the smithy's brass dragon scales — deception 10, convincing nobody</li><li>Spent the night alone counting coins as the curse whispered: 'Mine. Count every piece. Trust no hand'</li><li>Montage-smashed six ash zombies with his mace — undead are what he's built for</li><li>Opened the hobgoblin door, saw four armed sleepers, and immediately closed it — the session's best split-second decision</li></ul>
+          <p class="spotlight-quote">"Everything's safe now. Everything's good."</p>
+        </div>
+        <div class="spotlight-card">
+          <h3 class="spotlight-name">Belden</h3>
+          <ul class="spotlight-moments"><li>Claimed Hew: +1 dwarven battleaxe, max damage vs. anything wooden, forged with anti-druid malice</li><li>Felled three trees 'therapeutically' before Reidoth begged him to stop</li><li>Chopped down the ten-foot warrior statue of Thundertree on his night watch, then denied it with the immortal defense: 'Do you have any idea how much noise it would make?'</li><li>Axed open the cultist HQ's door AND their cabinet — destroying some of the evidence inside it</li><li>Blew a horn tribute to Gundren across the ruins — remembering the actual quest before anyone else said it</li><li>Pre-declared next session's opener: throw a branch on a hobgoblin so Hew hits it for max damage. Allowed, once.</li></ul>
+          <p class="spotlight-quote">"Do you have any idea how much noise it would make for me to cut that down?"</p>
+        </div>
+        <div class="spotlight-card">
+          <h3 class="spotlight-name">Semaj</h3>
+          <ul class="spotlight-moments"><li>Convened the party's first behind-Valrex's-back conference: 'We need to talk about this Valrex problem'</li><li>Astral trance breakthrough (insight 18): Ruxithid's fractured images — the crystal-pierced skull, the elongated-headed goblins, something that chose and altered him</li><li>Nat 20 investigation found the emerald pendant heirloom in the ruined shop</li><li>Nat 20 perception on watch — third eye open, string-and-pictures conspiracy board, 'everything is connected'</li><li>Clocked Valrex's return instantly: jingling pouches, heavier steps, zero expression — instinct possessiveness</li><li>Warrior's forearm clasp with Reidoth at the farewell</li></ul>
+          <p class="spotlight-quote">"You just couldn't help yourself, could you?"</p>
+        </div>
+        <div class="spotlight-card">
+          <h3 class="spotlight-name">Kaelia</h3>
+          <ul class="spotlight-moments"><li>History check named the mystery: Ruxithid the Chosen — goblins with gemstones that let them 'hear gods in their minds,' vessels being used</li><li>First watch: sculpted fire foxes and dragons from the stove flames, then snuffed the fire and used darkvision to watch twig blights scavenge the zombie corpses — and wisely left them alone</li><li>Set the decapitated statue head's 'hair' on fire as a verdict on Beldan's denial</li><li>Blacksmith's daughter — instantly knew what the brass dragon scales were worth</li><li>Nat-20-adjacent history recall of Droop's back-entrance directions alongside Aster</li><li>'Two completely chaotic team members. One turning into a dragon, the other obsessed with blowing his horn and cutting down trees.'</li></ul>
+          <p class="spotlight-quote">"It was a good idea. In theory."</p>
+        </div>
+        <div class="spotlight-card">
+          <h3 class="spotlight-name">Aster</h3>
+          <ul class="spotlight-moments"><li>Detect Magic read Hew perfectly: transmutation aura, max damage vs. wood, anti-druid malice built in</li><li>Cast Pacify Person on his own party member AGAIN — this time on Beldan, to stop him attacking the twig blights watching from the trees</li><li>Passive perception 16 spotted the twig blights before anyone made a sound</li><li>Dirty-20 perception with his ear to the door: caught King Grol's argument, the silky-voiced woman, the Spider's orders, and Gundren's uneven breathing in one listen</li><li>Looted the cultist HQ for food first, questions later</li><li>One of three party members who long-rests in four hours — 'a crazy party if everybody just had to trance'</li></ul>
+          <p class="spotlight-quote">"Okay, but compared to a hippo — how big are they?"</p>
+        </div></div>
+    </section>
+
+    <section class="section">
+      <div class="section-header">
+        <div class="section-icon">📜</div>
+        <h2 class="section-title">Plot Developments</h2>
+      </div>
+      <ul class="plot-list">
+        <li>
+          <span class="plot-icon">🔍</span>
+          <span class="plot-text">Valrex claimed Venomfang's horde alone: gold, four silver goblets with moonstones, and Hew. The curse escalated from slips of speech to behavior — solitary counting, concealment, active deception of the party (the brass-scale 'sharing' ruse, deception 10)</span>
+        </li>
+        <li>
+          <span class="plot-icon">🗺</span>
+          <span class="plot-text">Hew acquired: +1 dwarven battleaxe, maximum damage vs. plants/wood/wooden objects, transmutation aura, forged with anti-druid malice. Claimed by Beldan, who has already felled three trees and one beloved civic monument</span>
+        </li>
+        <li>
+          <span class="plot-icon">⚔</span>
+          <span class="plot-text">Curse cure options established by Reidoth: (1) a Wish spell; (2) TRUE death — long enough for the dragon's echo to lose hold — followed by resurrection, with no guarantee the curse doesn't follow the soul; (3) research: Cragmaw Castle's pre-goblin library may hold writings on 'creatures whose malice outlived their bodies'</span>
+        </li>
+        <li>
+          <span class="plot-icon">👥</span>
+          <span class="plot-text">Confirmed: uncured, Valrex will physically transform into a dragon over months — scales, then wings, tail, horns, fangs</span>
+        </li>
+        <li>
+          <span class="plot-icon">📜</span>
+          <span class="plot-text">RUXITHID REVEALED: 'Ruxithid the Chosen' — a goblin altered beyond its kind by a jagged crystal embedded in its skull, surrounded by elongated-headed goblins; linked to rumors of goblins with gemstones that let them hear gods in their minds. The 'Chosen' are vessels. The psionic tyrant is connected to goblin-kind — and the party is walking into a goblin stronghold</span>
+        </li>
+        <li>
+          <span class="plot-icon">🏠</span>
+          <span class="plot-text">Reidoth stayed behind to restore Thundertree — the town is fully cleared (spiders, dragon, cult, all ash zombies) and no longer ruled by Venomfang</span>
+        </li>
+        <li>
+          <span class="plot-icon">💰</span>
+          <span class="plot-text">Loot: Favric carried six amethysts (50gp each) and a Potion of Flying; ruined shop yielded a gold-and-emerald heirloom necklace (Semaj, nat 20); smithy yielded 10 brass dragon scales (75gp each, distributed)</span>
+        </li>
+        <li>
+          <span class="plot-icon">🎭</span>
+          <span class="plot-text">The party reached Cragmaw Castle via Droop's signs and entered through the hidden northeast servant's entrance</span>
+        </li>
+        <li>
+          <span class="plot-icon">🔍</span>
+          <span class="plot-text">Gundren Rockseeker CONFIRMED ALIVE — badly beaten, unconscious, held by King Grol while a silky-voiced woman (the Black Spider's agent) demands everything he knows; Grol wants gold and is close to breaking with the Spider</span>
+        </li>
+        <li>
+          <span class="plot-icon">🗺</span>
+          <span class="plot-text">Session ended mid-initiative against four waking hobgoblins; next session September 12</span>
+        </li></ul>
+    </section>
+
+    <section class="section">
+      <div class="end-state">
+        <h3 class="end-state-title">To Be Continued...</h3>
+        <div class="end-state-content">
+          <div>
+            <div class="end-item-label">Location</div>
+            <div class="end-item-value">Cragmaw Castle — hobgoblin barracks off the northeast entrance, initiative rolled</div>
+          </div>
+          <div>
+            <div class="end-item-label">Party Status</div>
+            <div class="end-item-value">Fully rested (long rest in the Thundertree barracks) with all resources available — but standing in a cramped room with four waking hobgoblins, and King Grol, the Spider's agent, and an unconscious Gundren one room away. Semaj acts last (initiative 3); Valrex acts first.</div>
+          </div>
+          <div>
+            <div class="end-item-label">Next Objective</div>
+            <div class="end-item-value">Win the barracks fight FAST and quietly enough that Grol doesn't join it. Rescue Gundren. Identify the silky-voiced woman. Then: the castle's ruined library — the best lead on severing Valrex's curse.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <nav class="session-nav">
+      <a href="session-18.html">
+        <span>←</span>
+        <span>Session 18</span>
+      </a>
+      <a href="session-20.html">
+        <span>Session 20</span>
+        <span>→</span>
+      </a>
+    </nav>
+  </div>
+  <script src="../nav.js"></script>
+  <script>initNav('sessions');</script>
+</body>
+</html>

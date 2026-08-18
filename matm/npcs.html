@@ -69,9 +69,9 @@
           name: 'Gundren Rockseeker',
           portraitClass: 'ally',
           title: 'Dwarf Entrepreneur',
-          description: 'The determined dwarf who hired the party. Believes he\'s found the lost Wave Echo Cave and the legendary Forge of Spells.',
+          description: 'The determined dwarf who hired the party. Believes he\'s found the lost Wave Echo Cave and the legendary Forge of Spells. LOCATED in Session 19: alive but badly beaten and unconscious, held at Cragmaw Castle by King Grol while a silky-voiced agent of the Black Spider demands "everything he knows." The party is one room away, mid-initiative against four hobgoblins.',
           status: 'captured',
-          statusText: '⚠ Captured',
+          statusText: '⚠ Captured — Located',
           connections: [
             { name: 'Sildar Hallwinter' },
             { name: 'The Black Spider', href: 'mysteries.html' },
@@ -108,7 +108,7 @@
           name: 'Reidoth',
           portraitClass: 'ally',
           title: 'Druid of Thundertree',
-          description: 'A wiry old man in a green-brown cloak who has kept watch over Thundertree for years. Over needle tea he briefed the party on Venomfang\'s habits, the ash zombies, the spiders, and the cultists. Convinced by Semaj to join the fight in person, he supplied the party with five healing potions and a potion of growth before leading them to the spider nest. Singed his hand touching Kaelia and immediately lost concentration on Barkskin — the old man forgot she was on fire. In the cultist battle he fought as the party\'s sixth man: two heals kept Larry alive, he blocked a scimitar with his staff, took Kaelia\'s nat-1 Sorcerous Burst square in the back and forgave it mid-fight ("in the heat of battle, sometimes friendly fire happens"), and burned his last spell slot on himself. Currently out of spells.',
+          description: 'A wiry old man in a green-brown cloak who has kept watch over Thundertree for years. Over needle tea he briefed the party on Venomfang\'s habits, the ash zombies, the spiders, and the cultists. Convinced by Semaj to join the fight in person, he supplied the party with five healing potions and a potion of growth before leading them to the spider nest. Singed his hand touching Kaelia and immediately lost concentration on Barkskin — the old man forgot she was on fire. In the cultist battle he fought as the party\'s sixth man: two heals kept Larry alive, he blocked a scimitar with his staff, took Kaelia\'s nat-1 Sorcerous Burst square in the back and forgave it mid-fight ("in the heat of battle, sometimes friendly fire happens"), and burned his last spell slot on himself. Parted ways with the party in Session 19 after giving them the full truth about the curse (Wish, or true death and resurrection), pointing them at Cragmaw Castle\'s pre-goblin library, and stopping Beldan from deforesting the town. He remains in Thundertree to purify and restore it — "the dragon is dead, the cult is broken, and this land will not be poisoned any longer." His parting words: "Do not let the dead dragon decide the shape of your future."',
           status: 'ally',
           statusText: '✓ Ally',
           connections: [
@@ -178,6 +178,32 @@
         }
       ],
       enemies: [
+        {
+          name: 'King Grol',
+          portraitClass: 'enemy',
+          title: 'Cragmaw Goblin King',
+          description: 'Chief of the Cragmaw goblins, holding court at Cragmaw Castle — and holding Gundren Rockseeker. Overheard through a door in Session 19 arguing with the Black Spider\'s agent in a deep, growling voice: "You take the dwarf. You take the map. But Grol gets paid. The Spider sends nothing but orders. Grol wants gold. Grol wants tribute." His alliance with the Spider is close to breaking down over payment — a fracture the party may be able to exploit. Commands hobgoblin guards; his sentries dismissed the party\'s approach noise as wolves.',
+          status: 'enemy',
+          statusText: '✗ Enemy',
+          connections: [
+            { name: 'Gundren Rockseeker' },
+            { name: 'The Black Spider' },
+            { name: 'Droop' },
+          ]
+        },
+        {
+          name: 'The Silky-Voiced Woman',
+          portraitClass: 'enemy',
+          title: 'Agent of the Black Spider',
+          description: 'A calm, silky female voice heard through a door at Cragmaw Castle in Session 19, negotiating with King Grol on the Black Spider\'s behalf: "The Spider will reward you when Gundren has told us everything he knows. You are being paid to hold him, King Grol. Not to bargain over property that does not belong to you." Identity unknown — she is the first direct link to the Black Spider the party has encountered in person. In the room with Grol and the unconscious Gundren.',
+          status: 'enemy',
+          statusText: '? Unknown',
+          connections: [
+            { name: 'The Black Spider' },
+            { name: 'King Grol' },
+            { name: 'Who is the Black Spider?', href: 'mysteries.html' },
+          ]
+        },
         {
           name: 'Favric',
           portraitClass: 'enemy',
@@ -364,7 +390,7 @@
           name: 'Droop',
           portraitClass: 'neutral',
           title: 'Cragmaw Goblin',
-          description: 'A small, timid goblin found cowering in the barracks of the cleared Redbrand hideout. Never a willing Redbrand — bugbears dragged him there from the Cragmaw tribe as labor and entertainment. Charmed by Semaj, he provided detailed directions to Cragmaw Castle: three-claw tree marks, stacked stones, torn red cloth at trail forks. Warned the party the castle only looks dead, that goblins watch from the towers, and that there is a hidden servant\'s door in the back wall. Released into the woods.',
+          description: 'A small, timid goblin found cowering in the barracks of the cleared Redbrand hideout. Never a willing Redbrand — bugbears dragged him there from the Cragmaw tribe as labor and entertainment. Charmed by Semaj, he provided detailed directions to Cragmaw Castle: three-claw tree marks, stacked stones, torn red cloth at trail forks. Warned the party the castle only looks dead, that goblins watch from the towers, and that there is a hidden servant\'s door in the back wall. Released into the woods. VINDICATED in Session 19: every sign checked out exactly as described, and the hidden northeast entrance is how the party got inside the castle undetected.',
           status: 'neutral',
           statusText: '~ Neutral'
         },
